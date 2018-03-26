@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TEXT VIEW !-->
+    <dimen name = "txtView_h">25dp</dimen>
+    <dimen name = "txtView_w">150dp</dimen>
+
+    <!-- WIDGET TOOLBAR !-->
+    <dimen name = "toolBar_h">50dp</dimen>
+    <dimen name = "toolBar_w"></dimen>
+
+    <!-- TABS !-->
+    <dimen name = "tabs_h">50dp</dimen>
+    <dimen name = "tabs_w"></dimen>
+
+    <!-- PROFILE IMAGE !-->
+    <dimen name="profileImage_h">180dp</dimen>
+    <dimen name="profileImage_w">180dp</dimen>
+
+    <!-- INPUTS !-->
+    <dimen name="input_h"></dimen>
+    <dimen name="input_w">300dp</dimen>
+
+</resources>

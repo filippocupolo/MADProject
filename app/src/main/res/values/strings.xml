@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Laboratory1</string>
+    <string name="show_profile"> Show Profile </string>
+    <string name="edit_profile"> Edit Profile </string>
+    <string name="switchEdit"> Edit Profile </string>
+    <string name="switchShow"> Show Profile </string>
+
+</resources>

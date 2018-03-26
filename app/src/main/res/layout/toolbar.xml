@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appToolbar"
+        popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorToolBar"
+        android:elevation="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        />
+
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:text="App Name"
+        android:textColor="@color/colorTabs"
+        android:textSize="26sp" android:layout_marginStart="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/appName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:elevation="20dp"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:visibility="visible" />
+
+    <android.support.design.widget.TabLayout
+        android:background="@color/colorToolBar"
+        app:textColor="@color/colorTabs"
+        app:tabSelectedTextColor="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabs_h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tabLayout">
+
+        <android.support.design.widget.TabItem
+            android:text="Home"
+            android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TabItem
+            android:text="Profile"
+            android:layout_height="wrap_content"
+            />
+
+        <android.support.design.widget.TabItem
+            android:text="Wishlist"
+            android:layout_height="wrap_content"
+            />
+
+
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>
