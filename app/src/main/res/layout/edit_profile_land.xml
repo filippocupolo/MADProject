@@ -5,94 +5,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <TextView
-        android:id="@+id/textViewEditLand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/edit_profile_toolbar_Land"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:elevation="6dp"
-        android:labelFor="@+id/textViewEditLand"
-        android:textColor="@android:color/black"
-        android:text="@string/edit_profile"
-        android:textAlignment="center"
-        android:textSize="25sp" />
-
-    <Button
-        android:id="@+id/showProfileButtonLand"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:background="@android:color/holo_red_dark"
-        android:text="Show"
-        android:elevation="6dp"
-        android:layout_margin="5dp"
-        android:layout_alignBottom="@id/edit_profile_toolbar_Land"
-        android:layout_alignEnd="@+id/edit_profile_toolbar_Land"
-        android:visibility="visible"
-        android:textColor="@android:color/white" />
-
+    <include layout="@layout/toolbar" android:id="@+id/edit_profile_toolbar_Land"
+        />
 
     <ImageView
-        android:id="@+id/imageViewEditLand"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:id="@+id/imageViewEdit"
+        android:layout_width="@dimen/profileImage_w"
+        android:layout_height="@dimen/profileImage_h"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/edit_profile_toolbar_Land"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        android:background="@android:color/holo_green_light"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/profile_image_border"
         android:contentDescription="@string/app_name"
-        android:labelFor="@+id/imageViewEditLand" />
+        android:labelFor="@id/imageViewEdit" />
 
-    <EditText
-        android:id="@+id/nameEditLand"
-        android:labelFor="@+id/nameEditLand"
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/imageViewEditLand"
-        android:layout_alignTop="@id/imageViewEditLand"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="30dp"
-        android:layout_centerVertical="true"
-        android:inputType="textPersonName"
-        android:maxLines="1"
-        android:hint="Name" />
+        android:layout_alignEnd="@+id/imageViewEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageViewEdit"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/camera_border"
+        android:elevation="20dp"
+        android:padding="20dp"
+        android:src="@drawable/ic_photo_camera_black_24dp" />
 
-    <EditText
-        android:id="@+id/emailEditLand"
-        android:labelFor="@+id/emailEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:maxLines="1"
-        android:layout_alignStart="@+id/nameEditLand"
-        android:layout_below="@+id/nameEditLand"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="30dp"
-        android:inputType="textEmailAddress"
-        android:hint="E-Mail"/>
-
-    <EditText
-        android:id="@+id/bioEditLand"
-        android:labelFor="@+id/bioEdit"
-        android:layout_width="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_height="wrap_content"
-        android:maxLines="4"
-        android:layout_alignStart="@+id/nameEditLand"
-        android:layout_below="@+id/emailEditLand"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="12dp"
-        android:ems="250"
-        android:inputType="textMultiLine"
-        android:hint="Bio" />
 </RelativeLayout>
 
 
