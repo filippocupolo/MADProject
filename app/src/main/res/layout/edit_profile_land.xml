@@ -35,6 +35,71 @@
         android:padding="20dp"
         android:src="@drawable/ic_photo_camera_black_24dp" />
 
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="@dimen/input_w"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageViewEdit"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_toEndOf="@+id/imageViewEdit"
+        android:layout_toRightOf="@+id/imageViewEdit"
+        android:background="@drawable/my_border"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/nameEdit"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/surnameEdit"
+        android:layout_width="@dimen/input_w"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignLeft="@+id/nameEdit"
+        android:layout_alignStart="@+id/nameEdit"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginStart="114dp"
+        android:background="@drawable/my_border"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/nameEdit"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_width="@dimen/input_w"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bioEdit"
+        android:layout_alignLeft="@+id/surnameEdit"
+        android:layout_alignStart="@+id/surnameEdit"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
+        android:background="@drawable/my_border"
+        android:ems="10"
+        android:hint="E-Mail"
+        android:inputType="textEmailAddress"
+        android:labelFor="@+id/emailEdit"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/bioEdit"
+        android:layout_width="@dimen/input_w"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailEdit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/emailEdit"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/my_border"
+        android:ems="10"
+        android:hint="Bio"
+        android:inputType="textMultiLine"
+        android:labelFor="@id/bioEdit"
+        android:padding="8dp" />
+
 </RelativeLayout>
 
 
