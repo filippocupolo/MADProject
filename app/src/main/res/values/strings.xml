@@ -9,6 +9,8 @@
     <string name="wishlist">Wishlist</string>
     <string name="name">Name</string>
     <string name="surname">Surname</string>
+    <string name="name_surname">Name Surname</string>
     <string name="email">E-mail</string>
     <string name="bio">Bio</string>
+    <string name="city">City</string>
 </resources>

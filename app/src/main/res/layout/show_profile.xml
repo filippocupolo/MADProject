@@ -32,12 +32,15 @@
         android:layout_marginEnd="11dp"
         android:layout_marginRight="11dp"
         android:layout_marginTop="167dp"
-        android:ems="10"
+        android:ems="20"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/name_surname"
         android:labelFor="@+id/nameSurnameShow"
         android:padding="8dp" />
 
     <TextView
-        android:id="@+id/emailShow"
+        android:id="@+id/cityShow"
         android:layout_width="219dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -45,7 +48,47 @@
         android:layout_alignLeft="@id/nameSurnameShow"
         android:layout_marginTop="226dp"
         android:ems="10"
-        android:labelFor="@+id/emailShow"
+        android:text="@string/city"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:labelFor="@+id/cityShow"
         android:padding="8dp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="241dp"
+        android:background="@drawable/showProfile_main_info_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest book uploaded"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="The alchemist"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Paulo Coelho - 1988"
+            android:textSize="20sp" />
+    </LinearLayout>
+
 
 </RelativeLayout>

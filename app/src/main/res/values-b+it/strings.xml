@@ -10,6 +10,8 @@
     <string name="wishlist">Lista dei desideri</string>
     <string name="name">Nome</string>
     <string name="surname">Cognome</string>
+    <string name="name_surname">Nome Cognome</string>
     <string name="email">E-mail</string>
     <string name="bio">Biografia</string>
+    <string name="city">Città</string>
 </resources>

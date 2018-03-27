@@ -88,6 +88,20 @@
         android:background="@drawable/my_border"
         android:hint="@string/bio" />
 
+    <EditText
+        android:id="@+id/cityEdit"
+        android:labelFor="@id/cityEdit"
+        android:layout_width="@dimen/input_w"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bioEdit"
+        android:layout_marginTop="30dp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/my_border"
+        android:hint="@string/city" />
+
 </RelativeLayout>
 
 
