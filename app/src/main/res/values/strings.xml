@@ -1,8 +1,14 @@
 <resources>
-    <string name="app_name">Laboratory1</string>
+    <string name="app_name">Lab 1</string>
     <string name="show_profile"> Show Profile </string>
     <string name="edit_profile"> Edit Profile </string>
     <string name="switchEdit"> Edit Profile </string>
     <string name="switchShow"> Show Profile </string>
-
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="email">E-mail</string>
+    <string name="bio">Bio</string>
 </resources>
