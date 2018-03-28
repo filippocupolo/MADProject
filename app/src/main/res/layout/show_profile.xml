@@ -4,8 +4,9 @@
     android:layout_height="match_parent">
 
 
-    <include layout="@layout/toolbar" android:id="@+id/show_profile_toolbar"
-        />
+    <include
+        android:id="@+id/show_profile_toolbar"
+        layout="@layout/toolbar" />
 
 
     <ImageView
@@ -22,6 +23,17 @@
         android:background="@drawable/profile_image_border"
         android:contentDescription="@string/app_name"
         android:labelFor="@id/imageViewShow" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nameSurnameShow"
+        android:layout_alignRight="@id/nameSurnameShow"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:elevation="20dp"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:visibility="visible" />
 
     <TextView
         android:id="@+id/nameSurnameShow"
