@@ -12,12 +12,12 @@
         android:id="@+id/imageViewEdit"
         android:layout_width="@dimen/profileImage_w"
         android:layout_height="@dimen/profileImage_h"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="18dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginStart="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="74dp"
         android:background="@drawable/profile_image_border"
         android:contentDescription="@string/app_name"
         android:labelFor="@id/imageViewEdit" />
@@ -27,78 +27,105 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/imageViewEdit"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageViewEdit"
-        android:layout_marginBottom="53dp"
+        android:layout_alignRight="@id/imageViewEdit"
+        android:layout_below="@+id/imageViewEdit"
+        android:layout_marginTop="-46dp"
         android:background="@drawable/camera_border"
         android:elevation="20dp"
         android:padding="20dp"
         android:src="@drawable/ic_photo_camera_black_24dp" />
 
-    <EditText
-        android:id="@+id/nameEdit"
-        android:layout_width="@dimen/input_w"
+    <ScrollView
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageViewEdit"
-        android:layout_marginLeft="73dp"
-        android:layout_marginStart="73dp"
-        android:layout_toEndOf="@+id/imageViewEdit"
-        android:layout_toRightOf="@+id/imageViewEdit"
-        android:background="@drawable/my_border"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:labelFor="@+id/nameEdit"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/surnameEdit"
-        android:layout_width="@dimen/input_w"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/imageView2"
-        android:layout_alignLeft="@+id/nameEdit"
-        android:layout_alignStart="@+id/nameEdit"
-        android:layout_marginBottom="22dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginStart="114dp"
-        android:background="@drawable/my_border"
-        android:ems="10"
-        android:hint="Surname"
-        android:inputType="textPersonName"
-        android:labelFor="@+id/nameEdit"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/emailEdit"
-        android:layout_width="@dimen/input_w"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/bioEdit"
-        android:layout_alignLeft="@+id/surnameEdit"
-        android:layout_alignStart="@+id/surnameEdit"
-        android:layout_marginBottom="27dp"
-        android:layout_marginLeft="111dp"
-        android:layout_marginStart="111dp"
-        android:background="@drawable/my_border"
-        android:ems="10"
-        android:hint="E-Mail"
-        android:inputType="textEmailAddress"
-        android:labelFor="@+id/emailEdit"
-        android:padding="8dp" />
-
-    <EditText
-        android:id="@+id/bioEdit"
-        android:layout_width="@dimen/input_w"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/emailEdit"
+        android:layout_alignTop="@id/imageViewEdit"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/emailEdit"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/my_border"
-        android:ems="10"
-        android:hint="Bio"
-        android:inputType="textMultiLine"
-        android:labelFor="@id/bioEdit"
-        android:padding="8dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="41dp"
+        android:layout_marginBottom="12dp">
+
+        <RelativeLayout
+            android:layout_width="285dp"
+            android:layout_height="match_parent"
+            >
+
+            <EditText
+                android:id="@+id/nameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/my_border"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:labelFor="@+id/nameEdit"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/cityEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/surnameEdit"
+                android:layout_alignRight="@+id/surnameEdit"
+                android:layout_below="@+id/bioEdit"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/my_border"
+                android:ems="10"
+                android:hint="City"
+                android:inputType="text"
+                android:labelFor="@+id/cityEdit"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/surnameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/nameEdit"
+                android:layout_alignRight="@+id/nameEdit"
+                android:layout_below="@id/nameEdit"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/my_border"
+                android:ems="10"
+                android:hint="Surname"
+                android:inputType="textPersonName"
+                android:labelFor="@+id/nameEdit"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/bioEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/emailEdit"
+                android:layout_alignStart="@+id/emailEdit"
+                android:layout_below="@id/emailEdit"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/my_border"
+                android:ems="10"
+                android:hint="Bio"
+                android:inputType="textMultiLine"
+                android:labelFor="@id/bioEdit"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/surnameEdit"
+                android:layout_alignRight="@+id/surnameEdit"
+                android:layout_below="@+id/surnameEdit"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/my_border"
+                android:ems="10"
+                android:hint="E-Mail"
+                android:inputType="textEmailAddress"
+                android:labelFor="@+id/emailEdit"
+                android:padding="8dp" />
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
 

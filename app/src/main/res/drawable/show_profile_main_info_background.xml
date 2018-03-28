@@ -4,7 +4,7 @@
 
     <!-- View background color -->
     <solid
-        android:color="@android:color/white">
+        android:color="@android:color/transparent">
     </solid>
 
     <stroke

@@ -1,125 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/show_profile_toolbar_Land"
+
+    <include
+        android:id="@+id/show_profile_toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@android:color/holo_orange_light"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_height="match_parent"
+        android:layout_below="@id/show_profile_toolbar"
+        android:layout_marginBottom="12dp">
 
-        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewShow"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:background="@drawable/profile_image_border"
+                android:contentDescription="@string/app_name"
+                android:labelFor="@id/imageViewShow"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/nameSurnameShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imageViewShow"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginStart="20dp"
+
+                android:layout_toEndOf="@+id/imageViewShow"
+                android:layout_toRightOf="@+id/imageViewShow"
+                android:ems="20"
+                android:gravity="start"
+                android:labelFor="@+id/nameSurnameShow"
+                android:padding="8dp"
+                android:text="@string/name_surname"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cityShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/nameSurnameShow"
+                android:layout_alignStart="@+id/nameSurnameShow"
+                android:layout_below="@+id/nameSurnameShow"
+                android:layout_marginRight="11dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:gravity="start"
+                android:labelFor="@+id/cityShow"
+                android:padding="8dp"
+                android:text="@string/city"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/imageViewShow"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="18dp"
+
+                android:background="@drawable/show_profile_main_info_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latest book uploaded"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="The alchemist"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Paulo Coelho - 1988"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 
 
-
-
-    </android.support.v7.widget.Toolbar>
-
-
-    <TextView
-        android:id="@+id/textViewShowLand"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/show_profile_toolbar_Land"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_margin="5dp"
-        android:elevation="6dp"
-        android:labelFor="@+id/textViewShowLand"
-        android:textColor="@android:color/black"
-        android:text="@string/show_profile"
-        android:textAlignment="center"
-        android:textSize="25sp" />
-
-    <Button
-        android:id="@+id/showProfileButtonLand"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:background="@android:color/holo_red_dark"
-        android:text="Edit"
-        android:elevation="6dp"
-        android:layout_alignTop="@id/show_profile_toolbar_Land"
-        android:layout_alignBottom="@id/show_profile_toolbar_Land"
-        android:layout_margin="5dp"
-        android:layout_alignEnd="@+id/show_profile_toolbar_Land"
-        android:visibility="visible"
-        android:textColor="@android:color/white"
-        />
-
-
-    <ImageView
-        android:id="@+id/imageViewShowLand"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/show_profile_toolbar_Land"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="12dp"
-        android:background="@android:color/holo_green_light"
-        android:contentDescription="@string/app_name"
-        android:labelFor="@+id/imageViewShowLand" />
-
-    <EditText
-        android:id="@+id/nameShowLand"
-        android:labelFor="@+id/nameShowLand"
-        android:layout_width="wrap_content"
-        android:maxLines="1"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/imageViewShowLand"
-        android:layout_alignTop="@id/imageViewShowLand"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="30dp"
-        android:layout_centerVertical="true"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:editable="false"/>
-
-    <EditText
-        android:id="@+id/emailShowLand"
-        android:labelFor="@+id/emailShow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:maxLines="1"
-        android:layout_alignStart="@+id/nameShowLand"
-        android:layout_below="@+id/nameShowLand"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="30dp"
-        android:inputType="textEmailAddress"
-        android:text="E-Mail"
-        android:editable="false"/>
-
-    <EditText
-        android:id="@+id/bioShowLand"
-        android:labelFor="@+id/bioShow"
-        android:layout_width="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_height="wrap_content"
-        android:maxLines="4"
-        android:layout_alignStart="@+id/nameShowLand"
-        android:layout_below="@+id/emailShowLand"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="12dp"
-        android:ems="250"
-        android:inputType="textMultiLine"
-        android:text="Bio"
-        android:editable="false"/>
 </RelativeLayout>
-
-
-
-
-
-
-
