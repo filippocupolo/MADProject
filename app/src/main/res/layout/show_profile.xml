@@ -60,7 +60,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="241dp"
-        android:background="@drawable/showProfile_main_info_background"
+        android:background="@drawable/show_profile_main_info_background"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="10dp"
