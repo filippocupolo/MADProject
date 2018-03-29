@@ -13,4 +13,5 @@
     <string name="email">E-mail</string>
     <string name="bio">Bio</string>
     <string name="city">City</string>
+    <string name="nameSurname">%s %s</string>
 </resources>

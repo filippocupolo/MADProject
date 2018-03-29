@@ -74,7 +74,7 @@ public class editProfile extends AppCompatActivity {
         cityView.addTextChangedListener(textWatcher);
 
         //set changeImageButton
-        ImageView changeImageButton = findViewById(R.id.uploadPhotoEdit);
+        ImageView changeImageButton = findViewById(R.id.imageViewEditButton);
         changeImageButton.setClickable(true);
         changeImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +89,7 @@ public class editProfile extends AppCompatActivity {
         if( myUser.getImage() == null){
 
             //if there is not a profile image load the default one
-            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_circle_black_24dp));
+            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_24dp));
         }else{
 
             //load the profile image
@@ -132,6 +132,7 @@ public class editProfile extends AppCompatActivity {
                     //the user chose the Photos App
                     Uri selectedImageUri = data.getData();
                     bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImageUri);
+
                 }else{
 
                     //the user chose the Camera App

@@ -41,7 +41,7 @@ public class MyUser {
 
     public MyUser(Context applicationContext){
 
-        //TODO change the default value of sharedPreferences to NULL (this default value is just for debug)
+        //TODO change the default values of sharedPreferences to NULL (these default values are just for debug)
 
         this.applicationContext=applicationContext;
         //open sharedPreferences and load all the data

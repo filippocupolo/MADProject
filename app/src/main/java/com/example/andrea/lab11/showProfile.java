@@ -23,7 +23,7 @@ public class showProfile extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //creare MyUser
+        //create MyUser
         myUser = new MyUser(getApplicationContext());
 
         //+++++++++++++set fields+++++++++++++
@@ -31,7 +31,7 @@ public class showProfile extends AppCompatActivity {
 
         //set name and surname
         TextView nameSurnameView = findViewById(R.id.nameSurnameShow);
-        nameSurnameView.setText(myUser.getName() + " " + myUser.getSurname());
+        nameSurnameView.setText(getString(R.string.nameSurname,myUser.getName(),myUser.getSurname()));
 
         //set city
         TextView cityView = findViewById(R.id.cityShow);
@@ -43,7 +43,7 @@ public class showProfile extends AppCompatActivity {
 
             //if there is not a profile image load the default one
             Log.d(this.getClass().getName(),"loading default image");
-            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_account_circle_black_24dp));
+            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_24dp));
         }else{
 
             //load the profile image
@@ -52,7 +52,7 @@ public class showProfile extends AppCompatActivity {
         }
 
         //set editButton
-        ImageView editButton = findViewById(R.id.editProfileIcon);
+        ImageView editButton = findViewById(R.id.imageViewEditButton);
         editButton.setClickable(true);
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override

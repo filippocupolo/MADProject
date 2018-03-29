@@ -18,9 +18,9 @@ public class show_profile extends Activity {
         //setSupportActionBar(spTB);
         myUser = new MyUser(getApplicationContext());
         TextView nameView = findViewById(R.id.nameEdit);
-        nameView.setText(myUser.GetName());
+        nameView.setText(myUser.getName());
         TextView emailView = findViewById(R.id.emailEdit);
-        emailView.setText(myUser.GetEmail());
+        emailView.setText(myUser.getEmail());
     }
 
 }
