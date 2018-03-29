@@ -1,3 +1,4 @@
+
 package com.example.andrea.lab11;
 
 import android.content.Context;
@@ -28,134 +29,119 @@ public class MyUser {
     private String name                          = null;
     private String surname                       = null;
     private String email                         = null;
-    private String address                       = null;
+    private String city                          = null;
     private String phoneNumber                   = null;
     private String birthDay                      = null;
     private String biography                     = null;
     private String occupation                    = null;
     private HashSet<String> interests            = null;
     private SharedPreferences sharedPreferences  = null;
-    private Bitmap photo                         = null;
+    private String photo                         = null;
     private Context applicationContext           = null;
 
     public MyUser(Context applicationContext){
-        try {
 
-            this.applicationContext=applicationContext;
+        //TODO change the default value of sharedPreferences to NULL (this default value is just for debug)
 
-            //open sharedPreferences and load all the data
-            sharedPreferences = applicationContext.getSharedPreferences("Profile", MODE_PRIVATE);
-            name = sharedPreferences.getString("name", null);
-            surname = sharedPreferences.getString("surname", null);
-            email = sharedPreferences.getString("email", null);
-            address = sharedPreferences.getString("address", null);
-            phoneNumber = sharedPreferences.getString("phoneNumber", null);
-            birthDay = sharedPreferences.getString("birthDay", null);
-            biography = sharedPreferences.getString("biography", null);
-            occupation = sharedPreferences.getString("occupation", null);
+        this.applicationContext=applicationContext;
+        //open sharedPreferences and load all the data
+        sharedPreferences = applicationContext.getSharedPreferences("Profile", MODE_PRIVATE);
+        name = sharedPreferences.getString("name", "Filippo");
+        surname = sharedPreferences.getString("surname", "Cupolo");
+        email = sharedPreferences.getString("email", "f.cupolo@gmail.com");
+        city = sharedPreferences.getString("address", "Torino");
+        phoneNumber = sharedPreferences.getString("phoneNumber", "33333333");
+        birthDay = sharedPreferences.getString("birthDay", "24/11/1993");
+        biography = sharedPreferences.getString("biography", "Lorem Ipsum");
+        occupation = sharedPreferences.getString("occupation", "Student");
 
-            //load data
-            File file = new File(Utilities.ImagePath, "profile.jpg");
-            photo = BitmapFactory.decodeStream(new FileInputStream(file));
-        }catch (FileNotFoundException ex){
-
+        //set image path
+        File file = new File(applicationContext.getFilesDir(), "image.jpg");
+        if(file.exists()){
+            photo = file.getPath();
         }
-
     }
 
     //getters
-    public String GetName(){
+    public String getName(){
         return name;
     }
-    public String GetSurname(){return surname;}
-    public String GetEmail(){return email;}
-    public String GetAddress(){return  address;}
-    public String GetPhoneNumber(){return phoneNumber;}
-    public String GetBirthDay(){return birthDay;}
-    public String GetBiography(){return biography;}
-    public String GetOccupation(){
-        return occupation;
-    }
-    public File GetImage(){
-        return new File(Utilities.ImagePath);
-    }
+    public String getSurname(){return surname;}
+    public String getEmail(){return email;}
+    public String getCity(){return  city;}
+    public String getPhoneNumber(){return phoneNumber;}
+    public String getBirthDay(){return birthDay;}
+    public String getBiography(){return biography;}
+    public String getOccupation(){return occupation;}
+    public String getImage(){return photo;}
 
     //setters
-    public void SetName(String value){
+    public void setName(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("name",value);
         editor.commit();
         name = value;
     }
-    public void SetSurname(String value){
+    public void setSurname(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("surname",value);
         editor.commit();
         surname = value;
     }
-    public void SetEmail(String value){
+    public void setEmail(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("email",value);
         editor.commit();
         email = value;
     }
-    public void SetAddress(String value){
+    public void setCity(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("address",value);
         editor.commit();
-        address = value;
+        city = value;
     }
-    public void SetPhoneNumber(String value){
+    public void setPhoneNumber(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("phoneNumber",value);
         editor.commit();
         phoneNumber = value;
     }
-    public void SetBirthDay(String value){
+    public void setBirthDay(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("birthDay",value);
         editor.commit();
         birthDay = value;
     }
-    public void SetBiography(String value){
+    public void setBiography(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("biography",value);
         editor.commit();
         biography = value;
     }
-    public void SetOccupation(String value){
+    public void setOccupation(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("occupation",value);
         editor.commit();
         occupation = value;
     }
 
-    private void SetImage(File inputFile){
+    public void setImage(Bitmap bitmap){
 
-        InputStream in = null;
+        //TODO this method works just if the inputFile is a jpg so maybe is better to check the extension or find a way to accept other file
         OutputStream out = null;
         try {
 
-            in = new FileInputStream(inputFile);
-            File file = new File(Utilities.ImagePath);
+            File file = new File(applicationContext.getFilesDir(), "image.jpg");
             out = new FileOutputStream(file);
 
             // Transfer bytes from in to out
-            byte[] buf = new byte[1024];
-            int len;
-            while ((len = in.read(buf)) > 0) {
-                out.write(buf, 0, len);
-            }
-
+            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
 
         }catch (FileNotFoundException ex) {
 
-        }
-        catch (IOException ex){
 
         }finally {
             try {
-                in.close();
                 out.close();
             }catch (IOException ex){
 

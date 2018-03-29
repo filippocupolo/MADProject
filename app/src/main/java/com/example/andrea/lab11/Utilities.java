@@ -6,7 +6,13 @@ package com.example.andrea.lab11;
 
 public class Utilities {
 
+    /**
+     * This is a static class that contains all the constants and useful methods in common whit more classes
+     */
+
     private Utilities(){}
     public final static String ImagePath = "";
+    public final static String DefaultImagePath = "";
+
 
 }
