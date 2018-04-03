@@ -50,28 +50,35 @@
         android:src="@drawable/ic_photo_camera_black_24dp" />
 
     <ScrollView
-        android:layout_width="300dp"
+        android:layout_width="500dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@id/imageViewEdit"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
+
+        android:layout_marginLeft="230dp"
+        android:layout_marginStart="230dp"
         android:layout_marginTop="35dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="41dp"
+        android:layout_alignStart="@id/imageViewEdit"
+        android:layout_alignLeft="@id/imageViewEdit"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+
         android:layout_marginBottom="12dp">
 
         <RelativeLayout
-            android:layout_width="285dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
             >
 
             <EditText
                 android:id="@+id/nameEdit"
-                android:layout_width="match_parent"
+                android:layout_width="500dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
                 android:background="@drawable/my_border"
                 android:ems="10"
                 android:hint="Name"
@@ -81,7 +88,7 @@
 
             <EditText
                 android:id="@+id/cityEdit"
-                android:layout_width="match_parent"
+                android:layout_width="500dp"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/surnameEdit"
                 android:layout_alignRight="@+id/surnameEdit"
@@ -96,7 +103,7 @@
 
             <EditText
                 android:id="@+id/surnameEdit"
-                android:layout_width="match_parent"
+                android:layout_width="500dp"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/nameEdit"
                 android:layout_alignRight="@+id/nameEdit"
@@ -115,6 +122,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/emailEdit"
                 android:layout_alignStart="@+id/emailEdit"
+                android:layout_alignEnd="@+id/nameEdit"
+                android:layout_alignRight="@+id/nameEdit"
                 android:layout_below="@id/emailEdit"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/my_border"

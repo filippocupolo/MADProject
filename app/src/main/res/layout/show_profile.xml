@@ -77,10 +77,10 @@
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentBottom="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="109dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="70dp"
         android:layout_below="@id/imageViewShow"
         android:background="@drawable/show_profile_main_info_background"
         android:gravity="center"
