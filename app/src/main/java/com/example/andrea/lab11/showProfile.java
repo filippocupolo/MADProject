@@ -23,11 +23,30 @@ public class showProfile extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //create MyUser
-        myUser = new MyUser(getApplicationContext());
-
         //+++++++++++++set fields+++++++++++++
         setContentView(R.layout.show_profile);
+
+        //set editButton
+        ImageView editButton = findViewById(R.id.imageViewEditButton);
+        editButton.setClickable(true);
+        editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        editProfile.class
+                );
+                startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        //create MyUser
+        myUser = new MyUser(getApplicationContext());
 
         //set name and surname
         TextView nameSurnameView = findViewById(R.id.nameSurnameShow);
@@ -50,19 +69,5 @@ public class showProfile extends AppCompatActivity {
             Bitmap bitmap = BitmapFactory.decodeFile(myUser.getImage());
             profileView.setImageBitmap(bitmap);
         }
-
-        //set editButton
-        ImageView editButton = findViewById(R.id.imageViewEditButton);
-        editButton.setClickable(true);
-        editButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        editProfile.class
-                );
-                startActivity(intent);
-            }
-        });
     }
 }

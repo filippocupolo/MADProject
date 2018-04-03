@@ -11,8 +11,7 @@ public class Utilities {
      */
 
     private Utilities(){}
-    public final static String ImagePath = "";
-    public final static String DefaultImagePath = "";
+    public final static String ImagePath = "image.jpg";
 
 
 }

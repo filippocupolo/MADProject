@@ -25,11 +25,12 @@
         android:labelFor="@id/imageViewShow" />
 
     <ImageView
+        android:id="@+id/imageViewEditButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignEnd="@+id/nameSurnameShow"
-        android:layout_alignRight="@id/nameSurnameShow"
         android:layout_alignParentTop="true"
+        android:layout_alignRight="@id/nameSurnameShow"
         android:layout_marginTop="19dp"
         android:elevation="20dp"
         android:src="@drawable/ic_mode_edit_black_24dp"

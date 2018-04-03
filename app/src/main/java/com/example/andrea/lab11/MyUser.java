@@ -34,29 +34,26 @@ public class MyUser {
     private String birthDay                      = null;
     private String biography                     = null;
     private String occupation                    = null;
-    private HashSet<String> interests            = null;
     private SharedPreferences sharedPreferences  = null;
     private String photo                         = null;
     private Context applicationContext           = null;
 
     public MyUser(Context applicationContext){
 
-        //TODO change the default values of sharedPreferences to NULL (these default values are just for debug)
-
         this.applicationContext=applicationContext;
         //open sharedPreferences and load all the data
         sharedPreferences = applicationContext.getSharedPreferences("Profile", MODE_PRIVATE);
-        name = sharedPreferences.getString("name", "Filippo");
-        surname = sharedPreferences.getString("surname", "Cupolo");
-        email = sharedPreferences.getString("email", "f.cupolo@gmail.com");
-        city = sharedPreferences.getString("address", "Torino");
-        phoneNumber = sharedPreferences.getString("phoneNumber", "33333333");
-        birthDay = sharedPreferences.getString("birthDay", "24/11/1993");
+        name = sharedPreferences.getString("name", "Name");
+        surname = sharedPreferences.getString("surname", "Surname");
+        email = sharedPreferences.getString("email", "Email");
+        city = sharedPreferences.getString("city", "City");
+        phoneNumber = sharedPreferences.getString("phoneNumber", null);
+        birthDay = sharedPreferences.getString("birthDay", null);
         biography = sharedPreferences.getString("biography", "Lorem Ipsum");
-        occupation = sharedPreferences.getString("occupation", "Student");
+        occupation = sharedPreferences.getString("occupation", "Occupation");
 
         //set image path
-        File file = new File(applicationContext.getFilesDir(), "image.jpg");
+        File file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);
         if(file.exists()){
             photo = file.getPath();
         }
@@ -96,7 +93,7 @@ public class MyUser {
     }
     public void setCity(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString("address",value);
+        editor.putString("city",value);
         editor.commit();
         city = value;
     }
@@ -127,15 +124,14 @@ public class MyUser {
 
     public void setImage(Bitmap bitmap){
 
-        //TODO this method works just if the inputFile is a jpg so maybe is better to check the extension or find a way to accept other file
         OutputStream out = null;
         try {
 
-            File file = new File(applicationContext.getFilesDir(), "image.jpg");
+            File file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);
             out = new FileOutputStream(file);
 
             // Transfer bytes from in to out
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, out);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
 
         }catch (FileNotFoundException ex) {
 

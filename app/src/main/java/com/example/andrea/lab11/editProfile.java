@@ -31,7 +31,6 @@ import java.io.IOException;
 public class editProfile extends AppCompatActivity {
 
     private MyUser myUser;
-    private static final int REQUEST_IMAGE_CAPTURE = 321;
     private static final int MY_CAMERA_REQUEST_CODE = 432;
     private static final int PICK_IMAGE = 123;
 
@@ -83,6 +82,20 @@ public class editProfile extends AppCompatActivity {
             }
         });
 
+        //set showProfileIcon
+        ImageView showProfileIcon = findViewById(R.id.showProfileIcon);
+        showProfileIcon.setClickable(true);
+        showProfileIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        showProfile.class
+                );
+                startActivity(intent);
+                finish();
+            }
+        });
 
         //set image
         profileView = findViewById(R.id.imageViewEdit);
@@ -97,6 +110,12 @@ public class editProfile extends AppCompatActivity {
             Log.d(this.getClass().getName(),myUser.getImage());
             profileView.setImageBitmap(bitmap);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 
     private void setImage(){
@@ -182,10 +201,13 @@ public class editProfile extends AppCompatActivity {
 
     private TextWatcher textWatcher = new TextWatcher() {
 
-        //TODO at every single change of editText this method store it on disk (maybe we could find some way more efficient)
-
         @Override
         public void afterTextChanged(Editable s) {
+
+            if(getCurrentFocus()==null){
+                Log.d(this.getClass().getName(),"getCurrentFocus() è null");
+                return;
+            }
 
             switch (getCurrentFocus().getId()){
                 case R.id.nameEdit:
@@ -199,6 +221,9 @@ public class editProfile extends AppCompatActivity {
                     break;
                 case R.id.bioEdit:
                     myUser.setBiography(s.toString());
+                    break;
+                case R.id.cityEdit:
+                    myUser.setCity(s.toString());
                     break;
             }
         }
