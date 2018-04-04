@@ -19,7 +19,7 @@
         android:layout_marginStart="19dp"
         android:layout_marginLeft="19dp"
         android:layout_marginTop="140dp"
-        android:padding="8dp"
+        android:padding="0dp"
         android:background="@drawable/profile_image_border"
         android:contentDescription="@string/app_name"
         android:labelFor="@id/imageViewShow" />

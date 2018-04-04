@@ -43,14 +43,14 @@ public class MyUser {
         this.applicationContext=applicationContext;
         //open sharedPreferences and load all the data
         sharedPreferences = applicationContext.getSharedPreferences("Profile", MODE_PRIVATE);
-        name = sharedPreferences.getString("name", "Name");
-        surname = sharedPreferences.getString("surname", "Surname");
-        email = sharedPreferences.getString("email", "Email");
-        city = sharedPreferences.getString("city", "City");
+        name = sharedPreferences.getString("name", null);
+        surname = sharedPreferences.getString("surname", null);
+        email = sharedPreferences.getString("email", null);
+        city = sharedPreferences.getString("city", null);
         phoneNumber = sharedPreferences.getString("phoneNumber", null);
         birthDay = sharedPreferences.getString("birthDay", null);
-        biography = sharedPreferences.getString("biography", "Lorem Ipsum");
-        occupation = sharedPreferences.getString("occupation", "Occupation");
+        biography = sharedPreferences.getString("biography", null);
+        occupation = sharedPreferences.getString("occupation", null);
 
         //set image path
         File file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);

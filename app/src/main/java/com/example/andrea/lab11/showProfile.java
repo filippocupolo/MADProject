@@ -48,13 +48,33 @@ public class showProfile extends AppCompatActivity {
         //create MyUser
         myUser = new MyUser(getApplicationContext());
 
+        //TODO change value if myUser's elements are null (to delete in final release of app)
+        String name;
+        String surname;
+        String city;
+        if(myUser.getName() ==null){
+            name = "Name";
+        }else{
+            name = myUser.getName();
+        }
+        if(myUser.getSurname()==null){
+            surname = "Surname";
+        }else{
+            surname = myUser.getSurname();
+        }
+        if(myUser.getCity()==null){
+            city = "City";
+        }else{
+            city = myUser.getCity();
+        }
+
         //set name and surname
         TextView nameSurnameView = findViewById(R.id.nameSurnameShow);
-        nameSurnameView.setText(getString(R.string.nameSurname,myUser.getName(),myUser.getSurname()));
+        nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
 
         //set city
         TextView cityView = findViewById(R.id.cityShow);
-        cityView.setText(myUser.getCity());
+        cityView.setText(city);
 
         //set image
         ImageView profileView = findViewById(R.id.imageViewShow);

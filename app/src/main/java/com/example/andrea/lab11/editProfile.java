@@ -157,8 +157,21 @@ public class editProfile extends AppCompatActivity {
                     //the user chose the Camera App
                     bitmap = (Bitmap) extras.get("data");
                 }
-                profileView.setImageBitmap(bitmap);
-                myUser.setImage(bitmap);
+
+                //make the bitmap squared
+                Bitmap modifiedBitmap;
+                int width = bitmap.getWidth();
+                int height = bitmap.getHeight();
+
+                if(width > height){
+                    modifiedBitmap = Bitmap.createBitmap(bitmap,(width-height)/2,0,height,height);
+                }else{
+                    modifiedBitmap = Bitmap.createBitmap(bitmap,0,(height-width)/2,width,width);
+                }
+
+                //set bitmap on imageView and save it on myUser
+                profileView.setImageBitmap(modifiedBitmap);
+                myUser.setImage(modifiedBitmap);
             }
 
         }catch (IOException ex){
