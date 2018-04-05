@@ -90,27 +90,14 @@
         android:textAlignment="center">
 
         <TextView
+            android:id="@+id/showProfileBio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Latest book uploaded"
+            android:text="Bio"
             android:textSize="25sp"
             android:textStyle="bold"
 
             />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="The alchemist"
-            android:textSize="20sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:text="Paulo Coelho - 1988"
-            android:textSize="20sp" />
     </LinearLayout>
 
 
