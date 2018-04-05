@@ -76,50 +76,47 @@ public class MyUser {
     public void setName(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("name",value);
-        editor.commit();
         name = value;
     }
     public void setSurname(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("surname",value);
-        editor.commit();
         surname = value;
     }
     public void setEmail(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("email",value);
-        editor.commit();
         email = value;
     }
     public void setCity(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("city",value);
-        editor.commit();
         city = value;
     }
     public void setPhoneNumber(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("phoneNumber",value);
-        editor.commit();
         phoneNumber = value;
     }
     public void setBirthDay(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("birthDay",value);
-        editor.commit();
         birthDay = value;
     }
     public void setBiography(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("biography",value);
-        editor.commit();
         biography = value;
     }
     public void setOccupation(String value){
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("occupation",value);
-        editor.commit();
         occupation = value;
+    }
+
+    public void commit(){
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.commit();
     }
 
     public void setImage(Bitmap bitmap){
