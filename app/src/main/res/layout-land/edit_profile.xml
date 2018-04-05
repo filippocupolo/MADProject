@@ -30,6 +30,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="53dp"
         android:layout_marginStart="23dp"
+        android:layout_marginTop="18dp"
         android:background="@drawable/profile_image_border"
         android:contentDescription="@string/app_name"
         android:labelFor="@id/imageViewEdit" />
