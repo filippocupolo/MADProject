@@ -133,6 +133,12 @@ public class MyUser {
 
         }catch (FileNotFoundException ex) {
             Toast.makeText(applicationContext, R.string.toast_MyUser_setImage,Toast.LENGTH_LONG);
+        }finally {
+            try{
+                out.close();
+            }catch (IOException ioex){
+                
+            }
         }
     }
 }
