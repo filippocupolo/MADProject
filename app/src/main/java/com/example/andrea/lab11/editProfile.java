@@ -182,6 +182,7 @@ public class editProfile extends AppCompatActivity {
 
         }catch (IOException ex){
             Log.e(this.getClass().getName(),ex.toString());
+            Toast.makeText(this,R.string.toast_EditProfile_onActivityResult,Toast.LENGTH_LONG);
         }
     }
 

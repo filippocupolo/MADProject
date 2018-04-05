@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
+import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -131,14 +132,7 @@ public class MyUser {
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
 
         }catch (FileNotFoundException ex) {
-
-
-        }finally {
-            try {
-                out.close();
-            }catch (IOException ex){
-
-            }
+            Toast.makeText(applicationContext, R.string.toast_MyUser_setImage,Toast.LENGTH_LONG);
         }
     }
 }

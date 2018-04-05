@@ -15,4 +15,6 @@
     <string name="bio">Biografia</string>
     <string name="city">Città</string>
     <string name="nameSurname">%s %s</string>
+    <string name="toast_EditProfile_onActivityResult">Impossibile trovare l\'immagine</string>
+    <string name="toast_MyUser_setImage">Impossibile salvare l\'immagine</string>
 </resources>
