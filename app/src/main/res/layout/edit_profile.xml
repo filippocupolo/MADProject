@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/showProfileIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/editShowIcon_w"
+        android:layout_height="@dimen/editShowIcon_h"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -28,6 +28,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
             >
 
             <ImageView
@@ -45,6 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/imageViewEdit"
+                android:layout_alignRight="@+id/imageViewEdit"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="141dp"
                 android:background="@drawable/camera_border"

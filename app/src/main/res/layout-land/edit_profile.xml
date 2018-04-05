@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/showProfileIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/editShowIcon_w"
+        android:layout_height="@dimen/editShowIcon_h"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -28,9 +28,8 @@
         android:layout_height="@dimen/profileImage_h"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="53dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginBottom="41dp"
+        android:layout_marginStart="26dp"
         android:background="@drawable/profile_image_border"
         android:contentDescription="@string/app_name"
         android:labelFor="@id/imageViewEdit" />
@@ -41,6 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageViewEdit"
         android:layout_alignEnd="@+id/imageViewEdit"
+        android:layout_alignRight="@+id/imageViewEdit"
         android:background="@drawable/camera_border"
         android:elevation="20dp"
         android:padding="20dp"
@@ -49,11 +49,10 @@
     <ScrollView
         android:layout_width="500dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@id/imageViewEdit"
 
         android:layout_marginLeft="230dp"
         android:layout_marginStart="230dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="115dp"
         android:layout_alignStart="@id/imageViewEdit"
         android:layout_alignLeft="@id/imageViewEdit"
         android:layout_marginEnd="15dp"
