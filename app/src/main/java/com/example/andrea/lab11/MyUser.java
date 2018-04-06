@@ -38,12 +38,15 @@ public class MyUser {
     private SharedPreferences sharedPreferences  = null;
     private String photo                         = null;
     private Context applicationContext           = null;
+    private SharedPreferences.Editor editor;
 
     public MyUser(Context applicationContext){
 
         this.applicationContext=applicationContext;
+
         //open sharedPreferences and load all the data
         sharedPreferences = applicationContext.getSharedPreferences("Profile", MODE_PRIVATE);
+        editor = sharedPreferences.edit();
         name = sharedPreferences.getString("name", null);
         surname = sharedPreferences.getString("surname", null);
         email = sharedPreferences.getString("email", null);
@@ -75,48 +78,39 @@ public class MyUser {
 
     //setters
     public void setName(String value){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("name",value);
         name = value;
     }
     public void setSurname(String value){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("surname",value);
         surname = value;
     }
     public void setEmail(String value){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("email",value);
         email = value;
     }
     public void setCity(String value){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("city",value);
         city = value;
     }
     public void setPhoneNumber(String value){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("phoneNumber",value);
         phoneNumber = value;
     }
     public void setBirthDay(String value){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("birthDay",value);
         birthDay = value;
     }
     public void setBiography(String value){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("biography",value);
         biography = value;
     }
     public void setOccupation(String value){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("occupation",value);
         occupation = value;
     }
 
     public void commit(){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.commit();
     }
 
@@ -132,12 +126,12 @@ public class MyUser {
             bitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
 
         }catch (FileNotFoundException ex) {
-            Toast.makeText(applicationContext, R.string.toast_MyUser_setImage,Toast.LENGTH_LONG);
+            Toast.makeText(applicationContext, R.string.toast_MyUser_setImage,Toast.LENGTH_LONG).show();
         }finally {
             try{
                 out.close();
             }catch (IOException ioex){
-                
+
             }
         }
     }

@@ -52,6 +52,7 @@ public class showProfile extends AppCompatActivity {
         String name;
         String surname;
         String city;
+        String biography;
         if(myUser.getName() ==null){
             name = "Name";
         }else{
@@ -63,9 +64,13 @@ public class showProfile extends AppCompatActivity {
             surname = myUser.getSurname();
         }
         if(myUser.getCity()==null){
-            city = "City";
+                city = "City";
+            }else{
+                city = myUser.getCity();
+        }if(myUser.getBiography()==null){
+            biography = "Biography";
         }else{
-            city = myUser.getCity();
+            biography = myUser.getBiography();
         }
 
         //set name and surname
@@ -75,6 +80,10 @@ public class showProfile extends AppCompatActivity {
         //set city
         TextView cityView = findViewById(R.id.cityShow);
         cityView.setText(city);
+
+        //set biography
+        TextView biographyView = findViewById(R.id.showProfileBio);
+        biographyView.setText(biography);
 
         //set image
         ImageView profileView = findViewById(R.id.imageViewShow);

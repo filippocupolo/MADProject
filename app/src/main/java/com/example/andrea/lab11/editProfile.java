@@ -5,21 +5,19 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -33,6 +31,7 @@ public class editProfile extends AppCompatActivity {
     private MyUser myUser;
     private static final int MY_CAMERA_REQUEST_CODE = 432;
     private static final int PICK_IMAGE = 123;
+    private String email;
 
     //Views
     ImageView profileView;
@@ -47,6 +46,8 @@ public class editProfile extends AppCompatActivity {
         //+++++++++++++set fields//+++++++++++++
         setContentView(R.layout.edit_profile);
 
+        //TODO set maximum input lenght
+
         //set name
         EditText nameView = findViewById(R.id.nameEdit);
         nameView.setText(myUser.getName(), TextView.BufferType.NORMAL);
@@ -60,7 +61,44 @@ public class editProfile extends AppCompatActivity {
         //set email
         EditText emailView = findViewById(R.id.emailEdit);
         emailView.setText(myUser.getEmail(), TextView.BufferType.NORMAL);
+        if(Utilities.ValidateEmailAddress(myUser.getEmail())){
+
+            //if email is valid set green check
+            Drawable isValidMail = getResources().getDrawable(R.drawable.ic_check_green_24dp);
+            isValidMail.setBounds(0, 0, isValidMail.getIntrinsicWidth(), isValidMail.getIntrinsicHeight());
+            emailView.setCompoundDrawables(null, null, isValidMail, null);
+
+        }else if(myUser.getEmail() != null && !Utilities.ValidateEmailAddress(myUser.getEmail())){
+
+            //if email is NOT valid set red cross
+            Drawable isValidMail = getResources().getDrawable(R.drawable.ic_clear_red_24dp);
+            isValidMail.setBounds(0, 0, isValidMail.getIntrinsicWidth(), isValidMail.getIntrinsicHeight());
+            emailView.setCompoundDrawables(null, null, isValidMail, null);
+        }
         emailView.addTextChangedListener(textWatcher);
+        emailView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean hasFocus) {
+
+                //when is not more focused check if the mail is valid or not and put a check or a cross
+                if (!hasFocus) {
+
+                    Drawable isValidMail;
+
+                    if(Utilities.ValidateEmailAddress(email)){
+                        isValidMail = getResources().getDrawable(R.drawable.ic_check_green_24dp);
+                    }else{
+                        //put red cross
+                        isValidMail = getResources().getDrawable(R.drawable.ic_clear_red_24dp);
+                        Toast.makeText(getApplicationContext(), R.string.toast_EditProfile_onFocusChange, Toast.LENGTH_LONG).show();
+                    }
+
+                    isValidMail.setBounds(0, 0, isValidMail.getIntrinsicWidth(), isValidMail.getIntrinsicHeight());
+                    EditText et = (EditText)view;
+                    et.setCompoundDrawables(null, null, isValidMail, null);
+                }
+            }
+        });
 
         //set biography
         EditText biographyView = findViewById(R.id.bioEdit);
@@ -93,6 +131,10 @@ public class editProfile extends AppCompatActivity {
                         showProfile.class
                 );
                 startActivity(intent);
+                if(Utilities.ValidateEmailAddress(email)){
+                    myUser.setEmail(email);
+                }
+                myUser.commit();
                 finish();
             }
         });
@@ -115,6 +157,10 @@ public class editProfile extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        if(Utilities.ValidateEmailAddress(email)){
+            myUser.setEmail(email);
+        }
+        myUser.commit();
         finish();
     }
 
@@ -182,7 +228,7 @@ public class editProfile extends AppCompatActivity {
 
         }catch (IOException ex){
             Log.e(this.getClass().getName(),ex.toString());
-            Toast.makeText(this,R.string.toast_EditProfile_onActivityResult,Toast.LENGTH_LONG);
+            Toast.makeText(this,R.string.toast_EditProfile_onActivityResult,Toast.LENGTH_LONG).show();
         }
     }
 
@@ -237,7 +283,7 @@ public class editProfile extends AppCompatActivity {
                     myUser.setSurname(s.toString());
                     break;
                 case R.id.emailEdit:
-                    myUser.setEmail(s.toString());
+                    email = s.toString();
                     break;
                 case R.id.bioEdit:
                     myUser.setBiography(s.toString());

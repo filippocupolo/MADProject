@@ -17,4 +17,5 @@
     <string name="nameSurname">%s %s</string>
     <string name="toast_EditProfile_onActivityResult">Impossibile trovare l\'immagine</string>
     <string name="toast_MyUser_setImage">Impossibile salvare l\'immagine</string>
+    <string name="toast_EditProfile_onFocusChange">Email non valida</string>
 </resources>
