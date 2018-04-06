@@ -32,15 +32,16 @@
             android:focusableInTouchMode="true"
             >
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorToolBar"
                 android:id="@+id/imageViewEdit"
-                android:layout_width="@dimen/profileImage_w"
-                android:layout_height="@dimen/profileImage_h"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/profile_image_border"
-                android:contentDescription="@string/app_name"
-                android:labelFor="@id/imageViewEdit" />
+                android:src="@drawable/ic_person_black_24dp" />
 
             <ImageView
                 android:id="@+id/imageViewEditButton"
