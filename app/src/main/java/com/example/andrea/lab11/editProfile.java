@@ -130,16 +130,7 @@ public class editProfile extends AppCompatActivity {
         showProfileIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        showProfile.class
-                );
-                startActivity(intent);
-                if(Utilities.ValidateEmailAddress(email)){
-                    myUser.setEmail(email);
-                }
-                myUser.commit();
-                finish();
+                onBackPressed();
             }
         });
 
