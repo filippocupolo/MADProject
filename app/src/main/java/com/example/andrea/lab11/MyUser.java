@@ -2,22 +2,15 @@
 package com.example.andrea.lab11;
 
 import android.content.Context;
-import android.content.ContextWrapper;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.util.Log;
 import android.widget.Toast;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.HashSet;
-import java.util.logging.Logger;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -31,10 +24,7 @@ public class MyUser {
     private String surname                       = null;
     private String email                         = null;
     private String city                          = null;
-    private String phoneNumber                   = null;
-    private String birthDay                      = null;
     private String biography                     = null;
-    private String occupation                    = null;
     private SharedPreferences sharedPreferences  = null;
     private String photo                         = null;
     private Context applicationContext           = null;
@@ -51,10 +41,7 @@ public class MyUser {
         surname = sharedPreferences.getString("surname", null);
         email = sharedPreferences.getString("email", null);
         city = sharedPreferences.getString("city", null);
-        phoneNumber = sharedPreferences.getString("phoneNumber", null);
-        birthDay = sharedPreferences.getString("birthDay", null);
         biography = sharedPreferences.getString("biography", null);
-        occupation = sharedPreferences.getString("occupation", null);
 
         //set image path
         File file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);
@@ -70,10 +57,7 @@ public class MyUser {
     public String getSurname(){return surname;}
     public String getEmail(){return email;}
     public String getCity(){return  city;}
-    public String getPhoneNumber(){return phoneNumber;}
-    public String getBirthDay(){return birthDay;}
     public String getBiography(){return biography;}
-    public String getOccupation(){return occupation;}
     public String getImage(){return photo;}
 
     //setters
@@ -93,23 +77,10 @@ public class MyUser {
         editor.putString("city",value);
         city = value;
     }
-    public void setPhoneNumber(String value){
-        editor.putString("phoneNumber",value);
-        phoneNumber = value;
-    }
-    public void setBirthDay(String value){
-        editor.putString("birthDay",value);
-        birthDay = value;
-    }
     public void setBiography(String value){
         editor.putString("biography",value);
         biography = value;
     }
-    public void setOccupation(String value){
-        editor.putString("occupation",value);
-        occupation = value;
-    }
-
     public void commit(){
         editor.commit();
     }

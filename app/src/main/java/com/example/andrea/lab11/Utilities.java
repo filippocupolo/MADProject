@@ -23,5 +23,4 @@ public class Utilities {
         return !TextUtils.isEmpty(emailAddress) && Patterns.EMAIL_ADDRESS.matcher(emailAddress).matches();
     }
 
-
 }
