@@ -65,6 +65,7 @@ public class editProfile extends AppCompatActivity {
         //set email
         EditText emailView = findViewById(R.id.emailEdit);
         emailView.setText(myUser.getEmail(), TextView.BufferType.NORMAL);
+        email = myUser.getEmail();
         if(Utilities.ValidateEmailAddress(myUser.getEmail())){
 
             //if email is valid set green check
