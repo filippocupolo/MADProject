@@ -44,13 +44,13 @@ public class editProfile extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //creare MyUser
+        //create MyUser
         myUser = new MyUser(getApplicationContext());
 
         //+++++++++++++set fields//+++++++++++++
         setContentView(R.layout.edit_profile);
 
-        //TODO set maximum input lenght
+        //TODO set maximum input length
 
         //set name
         EditText nameView = findViewById(R.id.nameEdit);
