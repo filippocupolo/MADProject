@@ -10,6 +10,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -26,6 +27,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.File;
 import java.io.IOException;
 
 
@@ -35,6 +37,7 @@ public class editProfile extends AppCompatActivity {
     private static final int MY_CAMERA_REQUEST_CODE = 432;
     private static final int PICK_IMAGE = 123;
     private String email;
+    private Uri selectedImageUri;
 
     //Views
     ImageView profileView;
@@ -44,12 +47,17 @@ public class editProfile extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //creare MyUser
+        //create MyUser
         myUser = new MyUser(getApplicationContext());
 
         //+++++++++++++set fields//+++++++++++++
         setContentView(R.layout.edit_profile);
 
+<<<<<<< HEAD
+=======
+        //TODO set maximum input length
+
+>>>>>>> 6a33f079d6e6f57d26c729b211a1f3899d5a11dc
         //set name
         EditText nameView = findViewById(R.id.nameEdit);
         nameView.setText(myUser.getName(), TextView.BufferType.NORMAL);
@@ -63,6 +71,7 @@ public class editProfile extends AppCompatActivity {
         //set email
         EditText emailView = findViewById(R.id.emailEdit);
         emailView.setText(myUser.getEmail(), TextView.BufferType.NORMAL);
+        email = myUser.getEmail();
         if(Utilities.ValidateEmailAddress(myUser.getEmail())){
 
             //if email is valid set green check
@@ -128,16 +137,7 @@ public class editProfile extends AppCompatActivity {
         showProfileIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        showProfile.class
-                );
-                startActivity(intent);
-                if(Utilities.ValidateEmailAddress(email)){
-                    myUser.setEmail(email);
-                }
-                myUser.commit();
-                finish();
+                onBackPressed();
             }
         });
 
@@ -151,7 +151,10 @@ public class editProfile extends AppCompatActivity {
             Bitmap bitmap = BitmapFactory.decodeFile(myUser.getImage());
             Drawable bd = new BitmapDrawable(getResources(), bitmap);
             profileView.setImageDrawable(bd);
+<<<<<<< HEAD
             myUser.setImage(bitmap);
+=======
+>>>>>>> 6a33f079d6e6f57d26c729b211a1f3899d5a11dc
         }
     }
 
@@ -174,14 +177,17 @@ public class editProfile extends AppCompatActivity {
     private void setImage(){
 
         if ( Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission( this, android.Manifest.permission.CAMERA ) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.CAMERA},
+            requestPermissions(new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     MY_CAMERA_REQUEST_CODE);
         }else{
 
             Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
             pickIntent.setType("image/*");
 
+            File photo = new File(Environment.getExternalStorageDirectory(),  "Pic.jpg");
+            selectedImageUri = Uri.fromFile(photo);
             Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, selectedImageUri);
 
             Intent chooserIntent = Intent.createChooser(pickIntent, "Select Image");
             chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {takePictureIntent});
@@ -196,20 +202,14 @@ public class editProfile extends AppCompatActivity {
 
             if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
 
-                Bundle extras = data.getExtras();
-                Bitmap bitmap;
+                if(data.getData() != null){
 
-                if(extras==null){
-
-                    //the user chose the Photos App
-                    Uri selectedImageUri = data.getData();
-                    bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImageUri);
-
-                }else{
-
-                    //the user chose the Camera App
-                    bitmap = (Bitmap) extras.get("data");
+                    //photos app was selected
+                    selectedImageUri = data.getData();
                 }
+
+                //get bitmap
+                Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImageUri);
 
                 //make the bitmap squared
                 Bitmap modifiedBitmap;
@@ -239,18 +239,10 @@ public class editProfile extends AppCompatActivity {
 
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (requestCode == MY_CAMERA_REQUEST_CODE) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(this, "camera permission granted", Toast.LENGTH_LONG).show();
+            if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
 
-                Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                pickIntent.setType("image/*");
-
-                Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
-                Intent chooserIntent = Intent.createChooser(pickIntent, "Select Image");
-                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {takePictureIntent});
-
-                startActivityForResult(chooserIntent, PICK_IMAGE);
+                //return to setImage
+                setImage();
 
             } else {
 
@@ -261,6 +253,8 @@ public class editProfile extends AppCompatActivity {
                 chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {});
 
                 startActivityForResult(chooserIntent, PICK_IMAGE);
+
+                //TODO fai una stringa per questo toast
                 Toast.makeText(this, "camera permission denied", Toast.LENGTH_LONG).show();
             }
         }
