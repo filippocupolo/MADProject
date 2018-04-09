@@ -53,11 +53,6 @@ public class editProfile extends AppCompatActivity {
         //+++++++++++++set fields//+++++++++++++
         setContentView(R.layout.edit_profile);
 
-<<<<<<< HEAD
-=======
-        //TODO set maximum input length
-
->>>>>>> 6a33f079d6e6f57d26c729b211a1f3899d5a11dc
         //set name
         EditText nameView = findViewById(R.id.nameEdit);
         nameView.setText(myUser.getName(), TextView.BufferType.NORMAL);
@@ -151,10 +146,7 @@ public class editProfile extends AppCompatActivity {
             Bitmap bitmap = BitmapFactory.decodeFile(myUser.getImage());
             Drawable bd = new BitmapDrawable(getResources(), bitmap);
             profileView.setImageDrawable(bd);
-<<<<<<< HEAD
             myUser.setImage(bitmap);
-=======
->>>>>>> 6a33f079d6e6f57d26c729b211a1f3899d5a11dc
         }
     }
 
