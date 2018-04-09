@@ -18,4 +18,5 @@
     <string name="toast_EditProfile_onActivityResult">Cannot find the image</string>
     <string name="toast_MyUser_setImage">Cannot save the image</string>
     <string name="toast_EditProfile_onFocusChange">Email is not valid</string>
+    <string name="bio_label_show">About me</string>
 </resources>

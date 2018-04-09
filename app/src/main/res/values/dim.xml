@@ -5,11 +5,11 @@
     <dimen name = "txtView_w">150dp</dimen>
 
     <!-- WIDGET TOOLBAR !-->
-    <dimen name = "toolBar_h">50dp</dimen>
+    <dimen name = "toolBar_h">55dp</dimen>
     <dimen name = "toolBar_w"></dimen>
 
     <!-- TABS !-->
-    <dimen name = "tabs_h">50dp</dimen>
+    <dimen name = "tabs_h">35dp</dimen>
     <dimen name = "tabs_w"></dimen>
 
     <!-- PROFILE IMAGE !-->

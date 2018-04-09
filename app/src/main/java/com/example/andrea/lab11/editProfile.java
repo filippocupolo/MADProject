@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
@@ -15,9 +16,11 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
+import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -36,6 +39,7 @@ public class editProfile extends AppCompatActivity {
     //Views
     ImageView profileView;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,8 +49,6 @@ public class editProfile extends AppCompatActivity {
 
         //+++++++++++++set fields//+++++++++++++
         setContentView(R.layout.edit_profile);
-
-        //TODO set maximum input lenght
 
         //set name
         EditText nameView = findViewById(R.id.nameEdit);
@@ -139,7 +141,6 @@ public class editProfile extends AppCompatActivity {
             }
         });
 
-        //set image
         profileView = findViewById(R.id.imageViewEdit);
         if( myUser.getImage() == null){
 
@@ -147,10 +148,10 @@ public class editProfile extends AppCompatActivity {
             profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_24dp));
         }else{
 
-            //load the profile image
             Bitmap bitmap = BitmapFactory.decodeFile(myUser.getImage());
-            Log.d(this.getClass().getName(),myUser.getImage());
-            profileView.setImageBitmap(bitmap);
+            Drawable bd = new BitmapDrawable(getResources(), bitmap);
+            profileView.setImageDrawable(bd);
+            myUser.setImage(bitmap);
         }
     }
 

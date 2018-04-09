@@ -15,8 +15,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginTop="18dp"
         android:elevation="20dp"
         android:src="@drawable/ic_mode_edit_black_24dp"
@@ -26,6 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_below="@+id/show_profile_toolbar">
 
         <RelativeLayout
@@ -37,8 +38,10 @@
                 android:layout_width="180dp"
                 android:layout_height="180dp"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="61dp"
+                android:layout_marginLeft="61dp"
                 android:layout_marginTop="21dp"
                 app:civ_border_color="@color/colorToolBar"
                 app:civ_border_width="1dp" />
@@ -48,9 +51,10 @@
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-
+                android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginEnd="39dp"
+                android:layout_marginRight="39dp"
                 android:layout_marginTop="51dp"
                 android:ems="20"
                 android:gravity="start"
@@ -58,46 +62,56 @@
                 android:padding="8dp"
                 android:text="@string/name_surname"
                 android:textAlignment="textStart"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="17sp"
+                android:background="@drawable/show_profile_main_info_background"/>
 
             <TextView
                 android:id="@+id/cityShow"
                 android:layout_width="268dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:layout_alignStart="@+id/nameSurnameShow"
-                android:layout_centerVertical="true"
+                android:layout_alignLeft="@+id/nameSurnameShow"
+                android:layout_marginTop="125dp"
+                android:background="@drawable/show_profile_main_info_background"
                 android:ems="10"
                 android:gravity="start"
                 android:labelFor="@+id/cityShow"
                 android:padding="8dp"
                 android:text="@string/city"
                 android:textAlignment="textStart"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="17sp" />
 
             <LinearLayout
-                android:layout_width="300dp"
+                android:layout_width="500dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_below="@id/imageViewShow"
                 android:layout_centerHorizontal="true"
-
-                android:layout_marginTop="18dp"
-
-                android:background="@drawable/show_profile_main_info_background"
+                android:layout_marginTop="0dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp"
-                android:textAlignment="center">
+                android:textAlignment="center"
+                android:layout_marginBottom="40dp">
 
                 <TextView
-                    android:id="@+id/showProfileBio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="@string/bio_label_show"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorToolBar"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <TextView
+                    android:background="@drawable/show_profile_main_info_background"
+                    android:id="@+id/showProfileBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Bio"
-                    android:textSize="13sp"
-                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:padding="15dp"
 
                     />
             </LinearLayout>

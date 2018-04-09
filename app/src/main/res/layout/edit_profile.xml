@@ -68,7 +68,9 @@
                 android:hint="@string/name"
                 android:inputType="textPersonName"
                 android:labelFor="@+id/nameEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:imeOptions="actionDone"
+                android:maxLength="15"/>
 
             <EditText
                 android:id="@+id/surnameEdit"
@@ -82,7 +84,9 @@
                 android:hint="@string/surname"
                 android:inputType="textPersonName"
                 android:labelFor="@+id/surnameEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:imeOptions="actionDone"
+                android:maxLength="15"/>
 
             <EditText
                 android:id="@+id/cityEdit"
@@ -96,7 +100,9 @@
                 android:hint="@string/city"
                 android:inputType="text"
                 android:labelFor="@id/cityEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:maxLength="20"
+                android:imeOptions="actionDone"/>
 
             <EditText
                 android:id="@+id/emailEdit"
@@ -110,7 +116,8 @@
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:labelFor="@id/emailEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:imeOptions="actionDone"/>
 
             <EditText
                 android:id="@+id/bioEdit"
@@ -124,8 +131,11 @@
                 android:ems="10"
                 android:hint="@string/bio"
                 android:inputType="textMultiLine"
+                android:nextFocusDown="@null"
                 android:labelFor="@id/bioEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:imeOptions="actionDone"
+                android:maxLength="300"/>
 
         </RelativeLayout>
     </ScrollView>

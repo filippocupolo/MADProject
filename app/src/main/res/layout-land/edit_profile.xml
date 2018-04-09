@@ -81,7 +81,9 @@
                 android:hint="Name"
                 android:inputType="textPersonName"
                 android:labelFor="@+id/nameEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:imeOptions="actionDone"
+                android:maxLength="15"/>
 
             <EditText
                 android:id="@+id/cityEdit"
@@ -89,14 +91,16 @@
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/surnameEdit"
                 android:layout_alignRight="@+id/surnameEdit"
-                android:layout_below="@+id/bioEdit"
+                android:layout_below="@+id/surnameEdit"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/my_border"
                 android:ems="10"
                 android:hint="City"
                 android:inputType="text"
                 android:labelFor="@+id/cityEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:maxLength="20"
+                android:imeOptions="actionDone"/>
 
             <EditText
                 android:id="@+id/surnameEdit"
@@ -111,7 +115,9 @@
                 android:hint="Surname"
                 android:inputType="textPersonName"
                 android:labelFor="@+id/nameEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:imeOptions="actionDone"
+                android:maxLength="15"/>
 
             <EditText
                 android:id="@+id/bioEdit"
@@ -128,7 +134,9 @@
                 android:hint="Bio"
                 android:inputType="textMultiLine"
                 android:labelFor="@id/bioEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:imeOptions="actionDone"
+                android:maxLength="300"/>
 
             <EditText
                 android:id="@+id/emailEdit"
@@ -136,14 +144,15 @@
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/surnameEdit"
                 android:layout_alignRight="@+id/surnameEdit"
-                android:layout_below="@+id/surnameEdit"
+                android:layout_below="@+id/cityEdit"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/my_border"
                 android:ems="10"
                 android:hint="E-Mail"
                 android:inputType="textEmailAddress"
                 android:labelFor="@+id/emailEdit"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:imeOptions="actionDone"/>
         </RelativeLayout>
     </ScrollView>
 
