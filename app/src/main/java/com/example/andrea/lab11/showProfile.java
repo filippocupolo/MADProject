@@ -92,7 +92,6 @@ public class showProfile extends AppCompatActivity {
         if( myUser.getImage() == null){
 
             //if there is not a profile image load the default one
-            Log.d(this.getClass().getName(),"loading default image");
             profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_24dp));
         }else{
 
