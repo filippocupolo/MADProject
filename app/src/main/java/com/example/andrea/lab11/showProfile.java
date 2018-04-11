@@ -1,20 +1,14 @@
 package com.example.andrea.lab11;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
+import static android.graphics.drawable.Drawable.createFromPath;
 
 
 public class showProfile extends AppCompatActivity {
@@ -95,8 +89,7 @@ public class showProfile extends AppCompatActivity {
         }else{
 
             //load the profile image
-            Bitmap bitmap = BitmapFactory.decodeFile(myUser.getImage());
-            Drawable bd = new BitmapDrawable(getResources(), bitmap);
+            Drawable bd = createFromPath(myUser.getImage());
             profileView.setImageDrawable(bd);
         }
     }

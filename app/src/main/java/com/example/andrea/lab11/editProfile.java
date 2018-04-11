@@ -4,8 +4,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
@@ -17,11 +15,9 @@ import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
-import android.text.InputType;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
-import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -29,6 +25,8 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
+
+import static android.graphics.drawable.Drawable.createFromPath;
 
 public class editProfile extends AppCompatActivity {
 
@@ -142,8 +140,7 @@ public class editProfile extends AppCompatActivity {
             profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
         }else{
 
-            Bitmap bitmap = BitmapFactory.decodeFile(myUser.getImage());
-            Drawable bd = new BitmapDrawable(getResources(), bitmap);
+            Drawable bd = createFromPath(myUser.getImage());
             profileView.setImageDrawable(bd);
         }
     }
