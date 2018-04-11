@@ -78,7 +78,7 @@
                 android:padding="8dp"
                 android:text="@string/name_surname"
                 android:textAlignment="textStart"
-                android:textSize="17sp"
+                android:textSize="13sp"
                 android:background="@drawable/show_profile_main_info_background"/>
 
             <TextView
@@ -91,7 +91,7 @@
                 android:layout_marginTop="15dp"
                 android:ems="10"
                 android:text="@string/email"
-                android:textSize="17sp"
+                android:textSize="13sp"
                 android:textAlignment="textStart"
                 android:gravity="start"
                 android:labelFor="@+id/cityShow"
@@ -102,9 +102,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_below="@id/imageViewShow"
+                android:layout_below="@id/emailShow"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="30dp"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:textAlignment="center"
@@ -125,7 +125,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Bio"
-                    android:textSize="15sp"
+                    android:textSize="13sp"
                     android:padding="15dp"
                     />
             </LinearLayout>

@@ -22,111 +22,116 @@
         android:src="@drawable/ic_mode_edit_black_24dp"
         android:visibility="visible" />
 
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/show_form_wrapper"
-        android:layout_marginEnd="@dimen/margin_left_right"
-        android:layout_marginRight="@dimen/margin_left_right"
-        android:layout_marginStart="@dimen/margin_left_right"
-        android:layout_marginLeft="@dimen/margin_left_right"
-        android:layout_below="@id/show_profile_toolbar"
-        >
+        android:layout_below="@id/show_profile_toolbar">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            app:civ_border_width="1dp"
-            app:civ_border_color="@color/colorToolBar"
-            android:id="@+id/imageViewShow"
-            android:layout_width="150dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="40dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true" />
-
-        <!--
-        <ImageView
-            android:id="@+id/imageViewEditButton"
-            android:layout_width="@dimen/editShowIcon_w"
-            android:layout_height="@dimen/editShowIcon_h"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="40dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="19dp"
-            android:elevation="20dp"
-            android:src="@drawable/ic_mode_edit_black_24dp"
-            android:visibility="visible" /> !-->
-
-        <TextView
-            android:id="@+id/nameSurnameShow"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/imageViewShow"
-            android:layout_toEndOf="@+id/imageViewShow"
-            android:layout_marginTop="60dp"
-            android:ems="20"
-            android:labelFor="@+id/nameSurnameShow"
-            android:padding="8dp"
-            android:text="@string/name_surname"
-            android:textSize="17sp"
-            android:textAlignment="textStart"
-            android:gravity="start"
-            android:background="@drawable/show_profile_main_info_background"/>
+            android:id="@+id/show_form_wrapper"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginStart="@dimen/margin_left_right"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            >
 
-        <TextView
-            android:id="@+id/emailShow"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/nameSurnameShow"
-            android:layout_alignLeft="@id/nameSurnameShow"
-            android:layout_below="@+id/nameSurnameShow"
-            android:layout_marginTop="25dp"
-            android:ems="10"
-            android:text="@string/email"
-            android:textSize="17sp"
-            android:textAlignment="textStart"
-            android:gravity="start"
-            android:labelFor="@+id/cityShow"
-            android:padding="8dp"
-            android:background="@drawable/show_profile_main_info_background"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorToolBar"
+                android:id="@+id/imageViewShow"
+                android:layout_width="150dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="false"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="15dp"
-            android:layout_marginTop="45dp"
-            android:layout_below="@id/imageViewShow"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:textAlignment="center">
+            <!--
+            <ImageView
+                android:id="@+id/imageViewEditButton"
+                android:layout_width="@dimen/editShowIcon_w"
+                android:layout_height="@dimen/editShowIcon_h"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="19dp"
+                android:elevation="20dp"
+                android:src="@drawable/ic_mode_edit_black_24dp"
+                android:visibility="visible" /> !-->
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/bio_label_show"
-                android:textSize="25sp"
-                android:textColor="@color/colorToolBar"
-                />
-
-            <TextView
-                android:background="@drawable/show_profile_main_info_background"
-                android:id="@+id/showProfileBio"
+                android:id="@+id/nameSurnameShow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bio"
-                android:textSize="15sp"
-                android:padding="@dimen/margin_left_right"
-                android:layout_marginTop="15dp"/>
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageViewShow"
+                android:layout_toEndOf="@+id/imageViewShow"
+                android:layout_marginTop="50dp"
+                android:ems="20"
+                android:labelFor="@+id/nameSurnameShow"
+                android:padding="8dp"
+                android:text="@string/name_surname"
+                android:textSize="13sp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:background="@drawable/show_profile_main_info_background"/>
 
-        </LinearLayout>
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/emailShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nameSurnameShow"
+                android:layout_alignLeft="@id/nameSurnameShow"
+                android:layout_below="@+id/nameSurnameShow"
+                android:layout_marginTop="25dp"
+                android:ems="10"
+                android:text="@string/email"
+                android:textSize="13sp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:labelFor="@+id/cityShow"
+                android:padding="8dp"
+                android:background="@drawable/show_profile_main_info_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="45dp"
+                android:layout_below="@id/emailShow"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bio_label_show"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorToolBar"
+                    />
+
+                <TextView
+                    android:background="@drawable/show_profile_main_info_background"
+                    android:id="@+id/showProfileBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bio"
+                    android:textSize="13sp"
+                    android:padding="@dimen/margin_left_right"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>
