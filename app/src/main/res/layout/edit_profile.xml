@@ -6,6 +6,21 @@
 
     <include layout="@layout/toolbar" android:id="@+id/edit_profile_toolbar"/>
 
+    <ImageButton
+        android:id="@+id/showProfileIcon"
+        android:layout_width="@dimen/editShowIcon_w"
+        android:layout_height="@dimen/editShowIcon_h"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        android:src="@drawable/ic_person_black_24dp"
+        android:visibility="visible" />
+
+    <!--
     <ImageView
         android:id="@+id/showProfileIcon"
         android:layout_width="@dimen/editShowIcon_w"
@@ -18,7 +33,7 @@
         android:layout_marginTop="18dp"
         android:elevation="20dp"
         android:src="@drawable/ic_person_black_24dp"
-        android:visibility="visible" />
+        android:visibility="visible" /> !-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -41,7 +56,7 @@
                 android:layout_height="180dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/ic_person_black_24dp" />
+                android:src="@drawable/ic_person_black_40dp" />
 
             <ImageView
                 android:id="@+id/imageViewEditButton"
@@ -56,86 +71,99 @@
                 android:padding="20dp"
                 android:src="@drawable/ic_photo_camera_black_24dp" />
 
-            <EditText
-                android:id="@+id/nameEdit"
-                android:layout_width="@dimen/input_w"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/imageViewEdit"
-                android:background="@drawable/my_border"
-                android:layout_marginTop="25dp"
-                android:layout_centerHorizontal="true"
-                android:ems="10"
-                android:hint="@string/name"
-                android:inputType="textPersonName"
-                android:labelFor="@+id/nameEdit"
-                android:padding="8dp"
-                android:imeOptions="actionDone"
-                android:maxLength="15"/>
 
-            <EditText
-                android:id="@+id/surnameEdit"
-                android:layout_width="@dimen/input_w"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/nameEdit"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/my_border"
-                android:ems="10"
-                android:hint="@string/surname"
-                android:inputType="textPersonName"
-                android:labelFor="@+id/surnameEdit"
-                android:padding="8dp"
-                android:imeOptions="actionDone"
-                android:maxLength="15"/>
+                android:id="@+id/edit_form_wrapper"
+                android:layout_marginEnd="@dimen/margin_left_right"
+                android:layout_marginRight="@dimen/margin_left_right"
+                android:layout_marginStart="@dimen/margin_left_right"
+                android:layout_marginLeft="@dimen/margin_left_right"
+                android:layout_below="@id/imageViewEditButton"
+                >
 
-            <EditText
-                android:id="@+id/cityEdit"
-                android:layout_height="match_parent"
-                android:layout_width="@dimen/input_w"
-                android:layout_below="@+id/surnameEdit"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/my_border"
-                android:ems="10"
-                android:hint="@string/city"
-                android:inputType="text"
-                android:labelFor="@id/cityEdit"
-                android:padding="8dp"
-                android:maxLength="20"
-                android:imeOptions="actionDone"/>
+                <EditText
+                    android:id="@+id/nameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_border"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:ems="10"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:labelFor="@+id/nameEdit"
+                    android:padding="8dp"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"/>
 
-            <EditText
-                android:id="@+id/emailEdit"
-                android:layout_width="@dimen/input_w"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/cityEdit"
-                android:layout_centerHorizontal="true"
-                android:background="@drawable/my_border"
-                android:ems="10"
-                android:layout_marginTop="15dp"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress"
-                android:labelFor="@id/emailEdit"
-                android:padding="8dp"
-                android:imeOptions="actionDone"/>
+                <EditText
+                    android:id="@+id/surnameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nameEdit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/my_border"
+                    android:ems="10"
+                    android:hint="@string/surname"
+                    android:inputType="textPersonName"
+                    android:labelFor="@+id/surnameEdit"
+                    android:padding="8dp"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"/>
 
-            <EditText
-                android:id="@+id/bioEdit"
-                android:layout_width="@dimen/input_w"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/emailEdit"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="75dp"
-                android:background="@drawable/my_border"
-                android:ems="10"
-                android:hint="@string/bio"
-                android:inputType="textMultiLine"
-                android:nextFocusDown="@null"
-                android:labelFor="@id/bioEdit"
-                android:padding="8dp"
-                android:imeOptions="actionDone"
-                android:maxLength="300"/>
+                <EditText
+                    android:id="@+id/cityEdit"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/surnameEdit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/my_border"
+                    android:ems="10"
+                    android:hint="@string/city"
+                    android:inputType="text"
+                    android:labelFor="@id/cityEdit"
+                    android:padding="8dp"
+                    android:maxLength="20"
+                    android:imeOptions="actionDone"/>
+
+                <EditText
+                    android:id="@+id/emailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cityEdit"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/my_border"
+                    android:ems="10"
+                    android:layout_marginTop="15dp"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:labelFor="@id/emailEdit"
+                    android:padding="8dp"
+                    android:maxLength="30"
+                    android:imeOptions="actionDone"/>
+
+                <EditText
+                    android:id="@+id/bioEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailEdit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="75dp"
+                    android:background="@drawable/my_border"
+                    android:ems="10"
+                    android:hint="@string/bio"
+                    android:inputType="textMultiLine"
+                    android:nextFocusDown="@null"
+                    android:labelFor="@id/bioEdit"
+                    android:padding="8dp"
+                    android:imeOptions="actionDone"
+                    android:maxLength="300"/>
+            </RelativeLayout>
 
         </RelativeLayout>
     </ScrollView>

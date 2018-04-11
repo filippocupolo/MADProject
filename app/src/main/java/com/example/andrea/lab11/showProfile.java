@@ -80,8 +80,8 @@ public class showProfile extends AppCompatActivity {
         nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
 
         //set city
-        TextView cityView = findViewById(R.id.cityShow);
-        cityView.setText(city);
+        //TextView cityView = findViewById(R.id.cityShow);
+        //cityView.setText(city);
 
         //set biography
         TextView biographyView = findViewById(R.id.showProfileBio);
@@ -92,7 +92,7 @@ public class showProfile extends AppCompatActivity {
         if( myUser.getImage() == null){
 
             //if there is not a profile image load the default one
-            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_24dp));
+            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
         }else{
 
             //load the profile image

@@ -8,6 +8,20 @@
         android:id="@+id/show_profile_toolbar"
         layout="@layout/toolbar" />
 
+    <ImageButton
+        android:id="@+id/imageViewEditButton"
+        android:layout_width="@dimen/editShowIcon_w"
+        android:layout_height="@dimen/editShowIcon_h"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@android:color/transparent"
+        android:elevation="20dp"
+        android:src="@drawable/ic_mode_edit_black_24dp"
+        android:visibility="visible" />
+<!--
     <ImageView
         android:id="@+id/imageViewEditButton"
         android:layout_width="@dimen/editShowIcon_w"
@@ -20,18 +34,23 @@
         android:layout_marginTop="18dp"
         android:elevation="20dp"
         android:src="@drawable/ic_mode_edit_black_24dp"
-        android:visibility="visible" />
+        android:visibility="visible" /> !-->
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_marginEnd="@dimen/margin_left_right"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:layout_marginStart="@dimen/margin_left_right"
+        android:layout_marginLeft="@dimen/margin_left_right"
+        android:layout_marginBottom="40dp"
         android:layout_below="@+id/show_profile_toolbar">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/imageViewShow"
@@ -40,21 +59,18 @@
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="61dp"
-                android:layout_marginLeft="61dp"
                 android:layout_marginTop="21dp"
+                android:layout_marginRight="20dp"
                 app:civ_border_color="@color/colorToolBar"
                 app:civ_border_width="1dp" />
 
             <TextView
                 android:id="@+id/nameSurnameShow"
-                android:layout_width="271dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginEnd="39dp"
-                android:layout_marginRight="39dp"
                 android:layout_marginTop="51dp"
                 android:ems="20"
                 android:gravity="start"
@@ -66,24 +82,24 @@
                 android:background="@drawable/show_profile_main_info_background"/>
 
             <TextView
-                android:id="@+id/cityShow"
-                android:layout_width="268dp"
+                android:id="@+id/emailShow"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:layout_alignStart="@+id/nameSurnameShow"
-                android:layout_alignLeft="@+id/nameSurnameShow"
-                android:layout_marginTop="125dp"
-                android:background="@drawable/show_profile_main_info_background"
+                android:layout_alignLeft="@id/nameSurnameShow"
+                android:layout_below="@+id/nameSurnameShow"
+                android:layout_marginTop="15dp"
                 android:ems="10"
+                android:text="@string/email"
+                android:textSize="17sp"
+                android:textAlignment="textStart"
                 android:gravity="start"
                 android:labelFor="@+id/cityShow"
                 android:padding="8dp"
-                android:text="@string/city"
-                android:textAlignment="textStart"
-                android:textSize="17sp" />
+                android:background="@drawable/show_profile_main_info_background"/>
 
             <LinearLayout
-                android:layout_width="500dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_below="@id/imageViewShow"
@@ -91,7 +107,6 @@
                 android:layout_marginTop="0dp"
                 android:gravity="center"
                 android:orientation="vertical"
-                android:padding="10dp"
                 android:textAlignment="center"
                 android:layout_marginBottom="40dp">
 
@@ -112,7 +127,6 @@
                     android:text="Bio"
                     android:textSize="15sp"
                     android:padding="15dp"
-
                     />
             </LinearLayout>
         </RelativeLayout>

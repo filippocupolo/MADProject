@@ -21,8 +21,12 @@
     <dimen name="input_w">300dp</dimen>
 
     <!--EDIT/SHOW ICON !-->
-    <dimen name="editShowIcon_h">24dp</dimen>
-    <dimen name="editShowIcon_w">24dp</dimen>
+    <dimen name="editShowIcon_h">48dp</dimen>
+    <dimen name="editShowIcon_w">48dp</dimen>
+
+    <!--MARGIN LEFT/RIGHT !-->
+    <dimen name="margin_left_right">16dp</dimen>
+
 
 
 </resources>

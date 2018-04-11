@@ -30,6 +30,7 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.IOException;
 
+//TODO showProfile email isn't set
 
 public class editProfile extends AppCompatActivity {
 
@@ -140,7 +141,7 @@ public class editProfile extends AppCompatActivity {
         if( myUser.getImage() == null){
 
             //if there is not a profile image load the default one
-            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_24dp));
+            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
         }else{
 
             Bitmap bitmap = BitmapFactory.decodeFile(myUser.getImage());
