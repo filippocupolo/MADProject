@@ -49,21 +49,21 @@ public class showProfile extends AppCompatActivity {
         String email;
         String biography;
         if(myUser.getName() ==null){
-            name = "Name";
+            name = getResources().getString(R.string.name);
         }else{
             name = myUser.getName();
         }
         if(myUser.getSurname()==null){
-            surname = "Surname";
+            surname = getResources().getString(R.string.surname);
         }else{
             surname = myUser.getSurname();
         }
         if(myUser.getEmail()==null){
-                email = "Email";
+                email = getResources().getString(R.string.email);
             }else{
             email = myUser.getEmail();
         }if(myUser.getBiography()==null){
-            biography = "Biography";
+            biography = getResources().getString(R.string.bio);
         }else{
             biography = myUser.getBiography();
         }

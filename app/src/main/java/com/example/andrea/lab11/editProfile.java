@@ -189,10 +189,12 @@ public class editProfile extends AppCompatActivity {
 
             if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
 
-                if(data.getData() != null){
+                if(data != null){
+                    if(data.getData() != null){
 
-                    //photos app was selected
-                    selectedImageUri = data.getData();
+                        //photos app was selected
+                        selectedImageUri = data.getData();
+                    }
                 }
 
                 //get bitmap
