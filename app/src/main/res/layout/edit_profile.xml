@@ -162,7 +162,7 @@
                     android:labelFor="@id/bioEdit"
                     android:padding="8dp"
                     android:imeOptions="actionDone"
-                    android:maxLength="300"/>
+                    android:maxLength="150"/>
             </RelativeLayout>
 
         </RelativeLayout>

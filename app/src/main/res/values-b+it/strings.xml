@@ -20,4 +20,5 @@
     <string name="toast_EditProfile_onFocusChange">Email non valida</string>
     <string name="bio_label_show">Su di me</string>
     <string name="city_label_show">Vive a: </string>
+    <string name="toast_EditProfile_onRequestPermissionsResult">Permesso per la fotocamera non concesso</string>
 </resources>

@@ -30,7 +30,6 @@ public class showProfile extends AppCompatActivity {
 
         //set editButton
         ImageView editButton = findViewById(R.id.imageViewEditButton);
-        editButton.setClickable(true);
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +52,7 @@ public class showProfile extends AppCompatActivity {
         //TODO change value if myUser's elements are null (to delete in final release of app)
         String name;
         String surname;
-        String city;
+        String email;
         String biography;
         if(myUser.getName() ==null){
             name = "Name";
@@ -65,10 +64,10 @@ public class showProfile extends AppCompatActivity {
         }else{
             surname = myUser.getSurname();
         }
-        if(myUser.getCity()==null){
-                city = "City";
+        if(myUser.getEmail()==null){
+                email = "Email";
             }else{
-                city = myUser.getCity();
+            email = myUser.getEmail();
         }if(myUser.getBiography()==null){
             biography = "Biography";
         }else{
@@ -79,9 +78,9 @@ public class showProfile extends AppCompatActivity {
         TextView nameSurnameView = findViewById(R.id.nameSurnameShow);
         nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
 
-        //set city
-        //TextView cityView = findViewById(R.id.cityShow);
-        //cityView.setText(city);
+        //set email
+        TextView emailView = findViewById(R.id.emailShow);
+        emailView.setText(email);
 
         //set biography
         TextView biographyView = findViewById(R.id.showProfileBio);

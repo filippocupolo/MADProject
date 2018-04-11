@@ -30,8 +30,6 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.IOException;
 
-//TODO showProfile email isn't set
-
 public class editProfile extends AppCompatActivity {
 
     private MyUser myUser;
@@ -112,6 +110,7 @@ public class editProfile extends AppCompatActivity {
         biographyView.setText(myUser.getBiography(), TextView.BufferType.NORMAL);
         biographyView.addTextChangedListener(textWatcher);
 
+
         //set city
         EditText cityView = findViewById(R.id.cityEdit);
         cityView.setText(myUser.getCity(), TextView.BufferType.NORMAL);
@@ -119,7 +118,6 @@ public class editProfile extends AppCompatActivity {
 
         //set changeImageButton
         ImageView changeImageButton = findViewById(R.id.imageViewEditButton);
-        changeImageButton.setClickable(true);
         changeImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -147,7 +145,6 @@ public class editProfile extends AppCompatActivity {
             Bitmap bitmap = BitmapFactory.decodeFile(myUser.getImage());
             Drawable bd = new BitmapDrawable(getResources(), bitmap);
             profileView.setImageDrawable(bd);
-            myUser.setImage(bitmap);
         }
     }
 
@@ -169,7 +166,7 @@ public class editProfile extends AppCompatActivity {
 
     private void setImage(){
 
-        if ( Build.VERSION.SDK_INT >= 23 && ContextCompat.checkSelfPermission( this, android.Manifest.permission.CAMERA ) != PackageManager.PERMISSION_GRANTED) {
+        if ( Build.VERSION.SDK_INT >= 23 && (ContextCompat.checkSelfPermission( this, android.Manifest.permission.CAMERA ) != PackageManager.PERMISSION_GRANTED||ContextCompat.checkSelfPermission( this, Manifest.permission.WRITE_EXTERNAL_STORAGE ) != PackageManager.PERMISSION_GRANTED)) {
             requestPermissions(new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     MY_CAMERA_REQUEST_CODE);
         }else{
@@ -247,8 +244,7 @@ public class editProfile extends AppCompatActivity {
 
                 startActivityForResult(chooserIntent, PICK_IMAGE);
 
-                //TODO fai una stringa per questo toast
-                Toast.makeText(this, "camera permission denied", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, R.string.toast_EditProfile_onRequestPermissionsResult, Toast.LENGTH_LONG).show();
             }
         }
     }

@@ -20,4 +20,5 @@
     <string name="toast_EditProfile_onFocusChange">Email is not valid</string>
     <string name="bio_label_show">About me</string>
     <string name="city_label_show">Lives in: </string>
+    <string name="toast_EditProfile_onRequestPermissionsResult">Camera permission denied</string>
 </resources>
