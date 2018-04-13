@@ -1,18 +1,14 @@
 package com.example.andrea.lab11;
 
-import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -23,7 +19,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.File;
 import java.io.IOException;
 
 import static android.graphics.drawable.Drawable.createFromPath;
@@ -31,10 +26,12 @@ import static android.graphics.drawable.Drawable.createFromPath;
 public class editProfile extends AppCompatActivity {
 
     private MyUser myUser;
-    private static final int MY_CAMERA_REQUEST_CODE = 432;
+    private static final int CAMERA_REQUEST_CODE = 432;
     private static final int PICK_IMAGE = 123;
     private String email;
     private Uri selectedImageUri;
+    private Activity activity;
+    private ActivityCompat activityCompat;
 
     //Views
     ImageView profileView;
@@ -43,6 +40,9 @@ public class editProfile extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        activity = this;
+        activityCompat = this.activityCompat;
 
         //create MyUser
         myUser = new MyUser(getApplicationContext());
@@ -119,7 +119,7 @@ public class editProfile extends AppCompatActivity {
         changeImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setImage();
+                selectedImageUri = Utilities.requestImage(activityCompat,activity,CAMERA_REQUEST_CODE,PICK_IMAGE);
             }
         });
 
@@ -161,7 +161,7 @@ public class editProfile extends AppCompatActivity {
         myUser.commit();
     }
 
-    private void setImage(){
+    /*private void setImage(){
 
         if ( Build.VERSION.SDK_INT >= 23 && (ContextCompat.checkSelfPermission( this, android.Manifest.permission.CAMERA ) != PackageManager.PERMISSION_GRANTED||ContextCompat.checkSelfPermission( this, Manifest.permission.WRITE_EXTERNAL_STORAGE ) != PackageManager.PERMISSION_GRANTED)) {
             requestPermissions(new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE},
@@ -181,53 +181,42 @@ public class editProfile extends AppCompatActivity {
 
             startActivityForResult(chooserIntent, PICK_IMAGE);
         }
-    }
+    }*/
 
     //Get the photo from camera and put it as profileView
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        try {
 
-            if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
+        if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
+            try {
 
-                if(data != null){
-                    if(data.getData() != null){
-
-                        //photos app was selected
-                        selectedImageUri = data.getData();
-                    }
-                }
-
-                //get bitmap
-                Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), selectedImageUri);
-
-                //make the bitmap squared
-                Bitmap modifiedBitmap;
-                int width = bitmap.getWidth();
-                int height = bitmap.getHeight();
-
-                if(width > height){
-                    modifiedBitmap = Bitmap.createBitmap(bitmap,(width-height)/2,0,height,height);
-                }else{
-                    modifiedBitmap = Bitmap.createBitmap(bitmap,0,(height-width)/2,width,width);
-                }
+                Bitmap modifiedBitmap = Utilities.pictureActivityResult(activity,data,selectedImageUri);
 
                 //set bitmap on imageView and save it on myUser
                 profileView.setImageBitmap(modifiedBitmap);
                 myUser.setImage(modifiedBitmap);
-            }
 
-        }catch (IOException ex){
-            Log.e(this.getClass().getName(),ex.toString());
-            Toast.makeText(this,R.string.toast_EditProfile_onActivityResult,Toast.LENGTH_LONG).show();
+            }catch (IOException ex){
+                Log.e(this.getClass().getName(),ex.toString());
+                Toast.makeText(this,R.string.toast_EditProfile_onActivityResult,Toast.LENGTH_LONG).show();
+            }
         }
     }
 
     //Look if the request for the camera are positive or not. If yes send the intent to the camera.
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == MY_CAMERA_REQUEST_CODE) {
+
+        if (requestCode == CAMERA_REQUEST_CODE) {
+
+            Uri uri = Utilities.cameraRequestPermissionsResult(activity, grantResults, CAMERA_REQUEST_CODE, PICK_IMAGE);
+
+            if(uri != null){
+                selectedImageUri = uri;
+            }
+        }
+
+        /*if (requestCode == MY_CAMERA_REQUEST_CODE) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
 
                 //return to setImage
@@ -245,7 +234,7 @@ public class editProfile extends AppCompatActivity {
 
                 Toast.makeText(this, R.string.toast_EditProfile_onRequestPermissionsResult, Toast.LENGTH_LONG).show();
             }
-        }
+        }*/
     }
 
     private TextWatcher textWatcher = new TextWatcher() {
