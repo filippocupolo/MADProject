@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "802835323223",
+    "firebase_url": "https://madproject-d48a9.firebaseio.com",
+    "project_id": "madproject-d48a9",
+    "storage_bucket": "madproject-d48a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:802835323223:android:01015b70ce5cb29e",
+        "android_client_info": {
+          "package_name": "com.example.andrea.lab11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "802835323223-lsse93m6tmd7s9fota5jkatqtu1oqb3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDir_4-KlMuk2DNkvmkLN6_4bXe2wd0XzY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

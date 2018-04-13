@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bookInfoToolbar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appToolbar"
+        popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolBar_h"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorToolBar"
+        android:elevation="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        />
+
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorTabs"
+        android:textSize="26sp"
+        android:layout_marginStart="20dp" />
+
+
+    <android.support.design.widget.TabLayout
+        android:background="@color/colorToolBar"
+        android:textColor="@color/colorTabs"
+        app:tabSelectedTextColor="@android:color/holo_orange_dark"
+        app:tabIndicatorColor = "@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tabs_h"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:elevation="10dp"
+        android:id="@+id/tabLayout">
+
+
+
+
+
+    </android.support.design.widget.TabLayout>
+
+</RelativeLayout>
