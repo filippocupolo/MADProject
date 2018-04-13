@@ -48,6 +48,10 @@
         android:elevation="10dp"
         android:id="@+id/tabLayout">
 
+        <android.support.design.widget.TabItem
+            android:text="@string/book_overview"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
 
 
 
