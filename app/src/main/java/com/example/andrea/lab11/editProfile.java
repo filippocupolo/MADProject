@@ -161,28 +161,6 @@ public class editProfile extends AppCompatActivity {
         myUser.commit();
     }
 
-    /*private void setImage(){
-
-        if ( Build.VERSION.SDK_INT >= 23 && (ContextCompat.checkSelfPermission( this, android.Manifest.permission.CAMERA ) != PackageManager.PERMISSION_GRANTED||ContextCompat.checkSelfPermission( this, Manifest.permission.WRITE_EXTERNAL_STORAGE ) != PackageManager.PERMISSION_GRANTED)) {
-            requestPermissions(new String[]{Manifest.permission.CAMERA,Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                    MY_CAMERA_REQUEST_CODE);
-        }else{
-
-            Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            pickIntent.setType("image/*");
-
-            File photo = new File(Environment.getExternalStorageDirectory(),  "Pic.jpg");
-            selectedImageUri = Uri.fromFile(photo);
-            Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, selectedImageUri);
-
-            Intent chooserIntent = Intent.createChooser(pickIntent, "Select Image");
-            chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {takePictureIntent});
-
-            startActivityForResult(chooserIntent, PICK_IMAGE);
-        }
-    }*/
-
     //Get the photo from camera and put it as profileView
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
@@ -215,26 +193,6 @@ public class editProfile extends AppCompatActivity {
                 selectedImageUri = uri;
             }
         }
-
-        /*if (requestCode == MY_CAMERA_REQUEST_CODE) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
-
-                //return to setImage
-                setImage();
-
-            } else {
-
-                Intent pickIntent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-                pickIntent.setType("image/*");
-
-                Intent chooserIntent = Intent.createChooser(pickIntent, "Select Image");
-                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, new Intent[] {});
-
-                startActivityForResult(chooserIntent, PICK_IMAGE);
-
-                Toast.makeText(this, R.string.toast_EditProfile_onRequestPermissionsResult, Toast.LENGTH_LONG).show();
-            }
-        }*/
     }
 
     private TextWatcher textWatcher = new TextWatcher() {
