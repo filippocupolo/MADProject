@@ -34,22 +34,19 @@ public class showProfile extends AppCompatActivity {
 
         //set editButton
         ImageView editButton = findViewById(R.id.imageViewEditButton);
-        editButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String caller = getIntent().getStringExtra("caller");
+        editButton.setOnClickListener(v -> {
+            String caller = getIntent().getStringExtra("caller");
 
-                if(caller!="editProfile") {
-                    Intent intent = new Intent(
-                            getApplicationContext(),
-                            editProfile.class
-                    );
-                    intent.putExtra("caller", "showProfile");
-                    startActivity(intent);
-                }
-                else{
-                    onBackPressed();
-                }
+            if(caller!="editProfile") {
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        editProfile.class
+                );
+                intent.putExtra("caller", "showProfile");
+                startActivity(intent);
+            }
+            else{
+                onBackPressed();
             }
         });
     }

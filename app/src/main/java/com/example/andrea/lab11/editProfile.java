@@ -51,7 +51,7 @@ public class editProfile extends AppCompatActivity {
         setContentView(R.layout.edit_profile);
 
         //logout button listener
-        findViewById(R.id.sign_out_button).setOnClickListener(v->{
+        findViewById(R.id.sign_out_button).setOnClickListener((View v) ->{
             Utilities.signOut();
             Intent intent = new Intent(
                     getApplicationContext(),
@@ -89,27 +89,24 @@ public class editProfile extends AppCompatActivity {
             emailView.setCompoundDrawables(null, null, isValidMail, null);
         }
         emailView.addTextChangedListener(textWatcher);
-        emailView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean hasFocus) {
+        emailView.setOnFocusChangeListener((view, hasFocus) -> {
 
-                //when is not more focused check if the mail is valid or not and put a check or a cross
-                if (!hasFocus) {
+            //when is not more focused check if the mail is valid or not and put a check or a cross
+            if (!hasFocus) {
 
-                    Drawable isValidMail;
+                Drawable isValidMail;
 
-                    if(Utilities.ValidateEmailAddress(email)){
-                        isValidMail = getResources().getDrawable(R.drawable.ic_check_green_24dp);
-                    }else{
-                        //put red cross
-                        isValidMail = getResources().getDrawable(R.drawable.ic_clear_red_24dp);
-                        Toast.makeText(getApplicationContext(), R.string.toast_EditProfile_onFocusChange, Toast.LENGTH_LONG).show();
-                    }
-
-                    isValidMail.setBounds(0, 0, isValidMail.getIntrinsicWidth(), isValidMail.getIntrinsicHeight());
-                    EditText et = (EditText)view;
-                    et.setCompoundDrawables(null, null, isValidMail, null);
+                if(Utilities.ValidateEmailAddress(email)){
+                    isValidMail = getResources().getDrawable(R.drawable.ic_check_green_24dp);
+                }else{
+                    //put red cross
+                    isValidMail = getResources().getDrawable(R.drawable.ic_clear_red_24dp);
+                    Toast.makeText(getApplicationContext(), R.string.toast_EditProfile_onFocusChange, Toast.LENGTH_LONG).show();
                 }
+
+                isValidMail.setBounds(0, 0, isValidMail.getIntrinsicWidth(), isValidMail.getIntrinsicHeight());
+                EditText et = (EditText)view;
+                et.setCompoundDrawables(null, null, isValidMail, null);
             }
         });
 
@@ -126,36 +123,28 @@ public class editProfile extends AppCompatActivity {
 
         //set changeImageButton
         ImageView changeImageButton = findViewById(R.id.imageViewEditButton);
-        changeImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                selectedImageUri = Utilities.requestImage(activityCompat,activity,CAMERA_REQUEST_CODE,PICK_IMAGE);
-            }
-        });
+        changeImageButton.setOnClickListener(v -> selectedImageUri = Utilities.requestImage(activityCompat,activity,CAMERA_REQUEST_CODE,PICK_IMAGE));
 
         //set showProfileIcon
         ImageView showProfileIcon = findViewById(R.id.showProfileIcon);
         showProfileIcon.setClickable(true);
-        showProfileIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String caller = getIntent().getStringExtra("caller");
+        showProfileIcon.setOnClickListener(v -> {
+            String caller = getIntent().getStringExtra("caller");
 
-                if(caller != "showProfile"){
-                    Intent intent = new Intent(
-                            getApplicationContext(),
-                            showProfile.class
-                    );
-                    intent.putExtra("caller", "editProfile");
-                    if(Utilities.ValidateEmailAddress(email)){
-                        myUser.setEmail(email);
-                    }
-                    myUser.commit();
-                    startActivity(intent);
+            if(caller!="showProfile"){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        showProfile.class
+                );
+                intent.putExtra("caller", "editProfile");
+                if(Utilities.ValidateEmailAddress(email)){
+                    myUser.setEmail(email);
                 }
-                else {
-                    onBackPressed();
-                }
+                myUser.commit();
+                startActivity(intent);
+            }
+            else {
+                onBackPressed();
             }
         });
 
