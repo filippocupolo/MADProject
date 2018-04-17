@@ -33,6 +33,9 @@ public class Utilities {
     //path of profile image
     public final static String ImagePath = "image.jpg";
 
+    //paths of books pics
+    public final static String[] BooksImgsPath = {"BookPic1.jpg","BookPic2.jpg","BookPic3.jpg","BookPic4.jpg","BookPic5.jpg","BookPic6.jpg"};
+
     //function to validate a Email Address
     public static boolean ValidateEmailAddress(String emailAddress){
         return !TextUtils.isEmpty(emailAddress) && Patterns.EMAIL_ADDRESS.matcher(emailAddress).matches();
