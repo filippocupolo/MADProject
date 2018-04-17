@@ -94,11 +94,13 @@ public class login extends AppCompatActivity implements
 
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
+
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = task.getResult(ApiException.class);
                 firebaseAuthWithGoogle(account);
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
+                Log.d("steps", e.toString());
                 updateUI(null);
             }
         }
@@ -135,6 +137,7 @@ public class login extends AppCompatActivity implements
             user = new MyUser(getApplicationContext());
             user.setEmail(account.getEmail());
             user.setName(account.getDisplayName());
+            user.setUserID(account.getUid());
             user.commit();
 
 

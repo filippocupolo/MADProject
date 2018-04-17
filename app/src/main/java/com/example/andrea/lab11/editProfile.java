@@ -147,6 +147,10 @@ public class editProfile extends AppCompatActivity {
                             showProfile.class
                     );
                     intent.putExtra("caller", "editProfile");
+                    if(Utilities.ValidateEmailAddress(email)){
+                        myUser.setEmail(email);
+                    }
+                    myUser.commit();
                     startActivity(intent);
                 }
                 else {
