@@ -23,4 +23,6 @@
     <string name="city_label_show">Lives in: </string>
     <string name="toast_EditProfile_onRequestPermissionsResult">Camera permission denied</string>
     <string name="book_overview">Book Overview</string>
+    <string name="facebook_app_id">1668597253224052</string>
+    <string name="fb_login_protocol_scheme">fb1668597253224052</string>
 </resources>

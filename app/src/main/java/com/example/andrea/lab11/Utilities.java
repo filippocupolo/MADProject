@@ -15,6 +15,7 @@ import android.text.TextUtils;
 import android.util.Patterns;
 import android.widget.Toast;
 
+import com.facebook.login.LoginManager;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.io.File;
@@ -139,5 +140,6 @@ public class Utilities {
 
     public static void signOut(){
         FirebaseAuth.getInstance().signOut();
+        LoginManager.getInstance().logOut(); //facebook
     }
 }
