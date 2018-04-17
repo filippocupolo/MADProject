@@ -5,6 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,16 +23,33 @@ public class showProfile extends AppCompatActivity {
         //+++++++++++++set fields+++++++++++++
         setContentView(R.layout.show_profile);
 
+        findViewById(R.id.sign_out_button).setOnClickListener(v->{
+            Utilities.signOut();
+            Intent intent = new Intent(
+                    getApplicationContext(),
+                    login.class
+            );
+            startActivity(intent);
+        });
+
         //set editButton
         ImageView editButton = findViewById(R.id.imageViewEditButton);
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        editProfile.class
-                );
-                startActivity(intent);
+                String caller = getIntent().getStringExtra("caller");
+
+                if(caller!="editProfile") {
+                    Intent intent = new Intent(
+                            getApplicationContext(),
+                            editProfile.class
+                    );
+                    intent.putExtra("caller", "showProfile");
+                    startActivity(intent);
+                }
+                else{
+                    onBackPressed();
+                }
             }
         });
     }

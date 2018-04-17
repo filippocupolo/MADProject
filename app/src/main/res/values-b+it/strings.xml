@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab 1</string>
+    <string name="app_name">BookAround</string>
     <string name="show_profile"> Mostra Profilo </string>
     <string name="edit_profile"> Modifica Profilo </string>
     <string name="switchEdit"> Modifica Profilo </string>
@@ -13,6 +13,7 @@
     <string name="name_surname">Nome Cognome</string>
     <string name="email">E-mail</string>
     <string name="bio">Biografia</string>
+    <string name="pwd">Password</string>
     <string name="city">Città</string>
     <string name="nameSurname">%s %s</string>
     <string name="toast_EditProfile_onActivityResult">Impossibile trovare l\'immagine</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab 1</string>
+    <string name="app_name">BookAround</string>
     <string name="show_profile"> Show Profile </string>
     <string name="edit_profile"> Edit Profile </string>
     <string name="switchEdit"> Edit Profile </string>
@@ -12,6 +12,7 @@
     <string name="surname">Surname</string>
     <string name="name_surname">Name Surname</string>
     <string name="email">E-mail</string>
+    <string name="pwd">Password</string>
     <string name="bio">Biography</string>
     <string name="city">City</string>
     <string name="nameSurname">%s %s</string>
@@ -22,4 +23,6 @@
     <string name="city_label_show">Lives in: </string>
     <string name="toast_EditProfile_onRequestPermissionsResult">Camera permission denied</string>
     <string name="book_overview">Book Overview</string>
+    <string name="facebook_app_id">1668597253224052</string>
+    <string name="fb_login_protocol_scheme">fb1668597253224052</string>
 </resources>

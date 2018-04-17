@@ -50,6 +50,16 @@ public class editProfile extends AppCompatActivity {
         //+++++++++++++set fields//+++++++++++++
         setContentView(R.layout.edit_profile);
 
+        //logout button listener
+        findViewById(R.id.sign_out_button).setOnClickListener(v->{
+            Utilities.signOut();
+            Intent intent = new Intent(
+                    getApplicationContext(),
+                    login.class
+            );
+            startActivity(intent);
+        });
+
         //set name
         EditText nameView = findViewById(R.id.nameEdit);
         nameView.setText(myUser.getName(), TextView.BufferType.NORMAL);
@@ -129,7 +139,23 @@ public class editProfile extends AppCompatActivity {
         showProfileIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                String caller = getIntent().getStringExtra("caller");
+
+                if(caller != "showProfile"){
+                    Intent intent = new Intent(
+                            getApplicationContext(),
+                            showProfile.class
+                    );
+                    intent.putExtra("caller", "editProfile");
+                    if(Utilities.ValidateEmailAddress(email)){
+                        myUser.setEmail(email);
+                    }
+                    myUser.commit();
+                    startActivity(intent);
+                }
+                else {
+                    onBackPressed();
+                }
             }
         });
 

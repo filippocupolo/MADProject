@@ -1,10 +1,23 @@
 
 package com.example.andrea.lab11;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.util.Log;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -20,13 +33,14 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class MyUser {
 
+    private String userID                        = null;
     private String name                          = null;
     private String surname                       = null;
     private String email                         = null;
     private String city                          = null;
     private String biography                     = null;
     private SharedPreferences sharedPreferences  = null;
-    private String photo                         = null;
+    private String image                         = null;
     private Context applicationContext           = null;
     private SharedPreferences.Editor editor;
 
@@ -38,6 +52,7 @@ public class MyUser {
         sharedPreferences = applicationContext.getSharedPreferences("Profile", MODE_PRIVATE);
         editor = sharedPreferences.edit();
         name = sharedPreferences.getString("name", null);
+        userID = sharedPreferences.getString("userID", null);
         surname = sharedPreferences.getString("surname", null);
         email = sharedPreferences.getString("email", null);
         city = sharedPreferences.getString("city", null);
@@ -46,7 +61,7 @@ public class MyUser {
         //set image path
         File file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);
         if(file.exists()){
-            photo = file.getPath();
+            image = file.getPath();
         }
     }
 
@@ -58,9 +73,13 @@ public class MyUser {
     public String getEmail(){return email;}
     public String getCity(){return  city;}
     public String getBiography(){return biography;}
-    public String getImage(){return photo;}
+    public String getImage(){return image;}
 
     //setters
+    public void setUserID(String value){
+        editor.putString("userID",value);
+        userID = value;
+    }
     public void setName(String value){
         editor.putString("name",value);
         name = value;
@@ -82,15 +101,23 @@ public class MyUser {
         biography = value;
     }
     public void commit(){
+        Log.d(this.getClass().getName(),"Commit");
         editor.commit();
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
+        dbRef.child(userID).child("name").setValue(name);
+        dbRef.child(userID).child("surname").setValue(surname);
+        dbRef.child(userID).child("email").setValue(email);
+        dbRef.child(userID).child("city").setValue(city);
+        dbRef.child(userID).child("biography").setValue(biography);
     }
 
     public void setImage(Bitmap bitmap){
 
         OutputStream out = null;
+        File file = null;
         try {
 
-            File file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);
+            file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);
             out = new FileOutputStream(file);
 
             // Transfer bytes from in to out
@@ -101,9 +128,34 @@ public class MyUser {
         }finally {
             try{
                 out.close();
+                uploadImage(new File(applicationContext.getFilesDir(), Utilities.ImagePath));
             }catch (IOException ioex){
 
             }
         }
+    }
+
+    private void uploadImage(File file) {
+
+        //TODO modify toast
+        if(file.exists()){
+            Log.d(this.getClass().getName(),"esiste");
+        }
+        StorageReference ref = FirebaseStorage.getInstance().getReference().child("images/"+userID);
+        ref.putFile(Uri.fromFile(file))
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        Toast.makeText(applicationContext, "Uploaded", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.d(this.getClass().getName(),e.getMessage());
+                        Toast.makeText(applicationContext, "Failed "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                });
+
     }
 }
