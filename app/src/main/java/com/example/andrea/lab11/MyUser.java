@@ -4,7 +4,11 @@ package com.example.andrea.lab11;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -20,6 +24,7 @@ import static android.content.Context.MODE_PRIVATE;
 
 public class MyUser {
 
+    private String userID                        = null;
     private String name                          = null;
     private String surname                       = null;
     private String email                         = null;
@@ -38,6 +43,7 @@ public class MyUser {
         sharedPreferences = applicationContext.getSharedPreferences("Profile", MODE_PRIVATE);
         editor = sharedPreferences.edit();
         name = sharedPreferences.getString("name", null);
+        userID = sharedPreferences.getString("userID", null);
         surname = sharedPreferences.getString("surname", null);
         email = sharedPreferences.getString("email", null);
         city = sharedPreferences.getString("city", null);
@@ -51,6 +57,7 @@ public class MyUser {
     }
 
     //getters
+    public String getUserID(){return userID;}
     public String getName(){
         return name;
     }
@@ -61,6 +68,10 @@ public class MyUser {
     public String getImage(){return photo;}
 
     //setters
+    public void setUserID(String value){
+        editor.putString("userID",value);
+        userID = value;
+    }
     public void setName(String value){
         editor.putString("name",value);
         name = value;
@@ -82,7 +93,10 @@ public class MyUser {
         biography = value;
     }
     public void commit(){
+        Log.d(this.getClass().getName(),"Commit");
         editor.commit();
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
+        dbRef.child("user").child(userID).setValue(name);
     }
 
     public void setImage(Bitmap bitmap){
