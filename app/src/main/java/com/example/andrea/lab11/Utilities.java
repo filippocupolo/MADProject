@@ -14,6 +14,9 @@ import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.util.Patterns;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -132,5 +135,9 @@ public class Utilities {
         }
 
         return modifiedBitmap;
+    }
+
+    public static void signOut(){
+        FirebaseAuth.getInstance().signOut();
     }
 }
