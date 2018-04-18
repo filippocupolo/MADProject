@@ -42,6 +42,7 @@ public class BookInfo{
        File file;
        for(int i = 0; i < 6; i++)
         {
+
             file = new File(applicationContext.getFilesDir(),Utilities.BooksImgsPath[i]);
             if(file.exists())
             {

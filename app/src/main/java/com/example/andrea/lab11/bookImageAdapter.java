@@ -20,6 +20,11 @@ public class bookImageAdapter extends BaseAdapter{
     public bookImageAdapter(Context context)
     {
         appContext = context;
+        ImgIDs = new Uri[6];
+        for(int i = 0; i <6 ; i++)
+        {
+            ImgIDs[i] = Uri.parse(Utilities.BooksImgsPath[i]);
+        }
         imageNumber = ImgIDs.length;
     }
 
@@ -56,10 +61,7 @@ public class bookImageAdapter extends BaseAdapter{
             imageView = (ImageView) convertView;
         }
 
-        for(int i = 0; i <6 ; i++)
-        {
-            ImgIDs[i] = Uri.parse(Utilities.BooksImgsPath[i]);
-        }
+
 
         imageView.setImageURI(ImgIDs[position]);
 
