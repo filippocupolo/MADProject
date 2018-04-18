@@ -17,9 +17,11 @@ import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +37,7 @@ public class insertBook extends AppCompatActivity{
     private static final int PICK_IMAGE = 999;
     ActivityCompat compatActivity;
     Activity activity;
+    private spinnerListener SL;
 
 
 
@@ -47,9 +50,10 @@ public class insertBook extends AppCompatActivity{
         this.activity = this;
 
         setContentView(R.layout.activity_add_book_manual);
+
         myUser = new MyUser(getApplicationContext());
         book = new BookInfo(getApplicationContext());
-
+        SL = new spinnerListener(getApplicationContext(),book);
         EditText ISBNView = findViewById(R.id.ISBNaddManual);
         if(book.get_ISBN() != null)
             ISBNView.setText(book.get_ISBN(), TextView.BufferType.NORMAL);
@@ -78,6 +82,16 @@ public class insertBook extends AppCompatActivity{
             PublisherView.setHint("Publisher");
         PublisherView.addTextChangedListener(textWatcher);
 
+        Spinner spinner = (Spinner) findViewById(R.id.conditions_spinner);
+        // Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.conditions_array, android.R.layout.simple_spinner_item);
+        // Specify the layout to use when the list of choices appears
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        // Apply the adapter to the spinner
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(SL);
+
         /*EditText OwnerView = findViewById(R.id.);                                 //TODO ADD CORRESPONDENT VIEW IN XML FILE
         if(book.getOwner() != null)
             OwnerView.setText(book.getOwner(), TextView.BufferType.NORMAL);
@@ -85,19 +99,14 @@ public class insertBook extends AppCompatActivity{
             OwnerView.setText("Owner", TextView.BufferType.NORMAL);
         OwnerView.addTextChangedListener(textWatcher);*/
 
-        /*EditText EditionView = findViewById(R.id.);
+        EditText EditionView = findViewById(R.id.EditionYearAddManual);
         if(book.getEditionYear() != 0)
             EditionView.setText(Integer.toString(book.getEditionYear()), TextView.BufferType.NORMAL);
         else
-            EditionView.setText("Year", TextView.BufferType.NORMAL);
-        EditionView.addTextChangedListener(textWatcher);*/
+            EditionView.setHint("Edition Year");
+        EditionView.addTextChangedListener(textWatcher);
 
-       /* EditText ConditionView = findViewById(R.id.Conditions);
-        if(book.getConditions() != null)
-            ConditionView.setText(book.getConditions(), TextView.BufferType.NORMAL);
-        else
-            ConditionView.setText("Conditions", TextView.BufferType.NORMAL);
-        ConditionView.addTextChangedListener(textWatcher);*/
+
 
         GridView bookImageGrid = findViewById(R.id.addBookManualGrid);
 
@@ -171,9 +180,6 @@ public class insertBook extends AppCompatActivity{
                     break;*/
                 /*case R.id.EditionYear:                            //TODO ADD CORRESPONDENT VIEW IN XML
                     book.setEditionYear(s.toString());
-                    break;*/
-                /*case R.id.Conditions:
-                    book.setConditions(s.toString());
                     break;*/
                 case R.id.PublisherAddManual:
                     book.setPublisher(s.toString());
