@@ -3,6 +3,8 @@ package com.example.andrea.lab11;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 //import android.os.PersistableBundle;
@@ -98,7 +100,8 @@ public class insertBook extends AppCompatActivity{
         ConditionView.addTextChangedListener(textWatcher);*/
 
         GridView bookImageGrid = findViewById(R.id.addBookManualGrid);
-        bookImageGrid.setAdapter(new bookImageAdapter(this));
+
+        bookImageGrid.setAdapter(new bookImageAdapter(this, new Drawable[]{getResources().getDrawable(R.drawable.ic_add_button_24dp)}));
         //Listens to when a component of the AdapterView gets pressed. In case it's the add button, it asks the user to choose a new photo, otherwise it zooms in the photo already saved.
         bookImageGrid.setOnItemClickListener((parent, v, position, id) -> {
             if(position == book.getPhotosQty())

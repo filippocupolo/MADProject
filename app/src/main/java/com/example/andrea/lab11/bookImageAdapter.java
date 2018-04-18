@@ -1,7 +1,9 @@
 package com.example.andrea.lab11;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.net.Uri;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v7.app.AppCompatActivity;
@@ -14,56 +16,53 @@ import java.net.URI;
 public class bookImageAdapter extends BaseAdapter{
 
     private Context appContext;
-    private int imageNumber;
-    private Uri[] ImgIDs;
+    private Drawable[] images;
 
-    public bookImageAdapter(Context context)
+    public bookImageAdapter(Context context, Drawable[] images)
     {
         appContext = context;
-        ImgIDs = new Uri[6];
-        for(int i = 0; i <6 ; i++)
-        {
-            ImgIDs[i] = Uri.parse(Utilities.BooksImgsPath[i]);
+        if (images==null){
+            this.images = new Drawable[]{};
+        }else{
+            this.images = images;
         }
-        imageNumber = ImgIDs.length;
     }
 
     @Override
     public int getCount() {
-        return imageNumber;
+        return images.length;
     }
 
     @Override
-    public Object getItem(int i) {
-        return null;
+    public Object getItem(int position) {
+        return images[position];
     }
 
     @Override
-    public long getItemId(int i) {
-        return 0;
+    public long getItemId(int position) {
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        ImageView imageView;
         if(convertView == null)
         {
+            LayoutInflater li=(LayoutInflater) appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView=li.inflate(R.layout.back_button_toolbar, null);
+            /*
             imageView = new ImageView(appContext);
             imageView.setLayoutParams(new ViewGroup.LayoutParams(85, 85));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setVisibility(View.VISIBLE);
             if(position < 6)
                imageView.setImageResource(R.drawable.ic_add_button_24dp);
-        }
-        else
-        {
-            imageView = (ImageView) convertView;
+              */
         }
 
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.imageButton);
 
-
-        imageView.setImageURI(ImgIDs[position]);
+        imageView.setImageDrawable(images[position]);
 
         return imageView;
     }
