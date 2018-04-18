@@ -12,6 +12,7 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TabHost;
 import android.widget.TextView;
 import static android.graphics.drawable.Drawable.createFromPath;
 
@@ -54,6 +55,7 @@ public class showProfile extends AppCompatActivity{
                 onBackPressed();
             }
         });
+
     }
 
     @Override

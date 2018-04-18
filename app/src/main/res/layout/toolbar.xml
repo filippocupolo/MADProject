@@ -71,12 +71,14 @@
 
         <android.support.design.widget.TabItem
             android:text="@string/profile"
+            android:id="@+id/toolbarProfile"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             />
 
         <android.support.design.widget.TabItem
             android:text="AddBook"
+            android:id="@+id/toolbarAddBook"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             />

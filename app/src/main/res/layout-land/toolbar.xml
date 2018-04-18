@@ -60,13 +60,13 @@
         <android.support.design.widget.TabItem
             android:text="@string/profile"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             />
 
         <android.support.design.widget.TabItem
-            android:text="AddBook"
+            android:text="Add Book"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             />
 
 
