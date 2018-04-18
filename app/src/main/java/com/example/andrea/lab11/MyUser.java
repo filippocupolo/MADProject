@@ -146,6 +146,8 @@ public class MyUser {
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
+                        dbRef.child(userID).child("image").setValue(true);
                         Toast.makeText(applicationContext, "Uploaded", Toast.LENGTH_SHORT).show();
                     }
                 })
