@@ -52,28 +52,28 @@ public class insertBook extends AppCompatActivity{
         if(book.get_ISBN() != null)
             ISBNView.setText(book.get_ISBN(), TextView.BufferType.NORMAL);
         else
-            ISBNView.setText("ISBN", TextView.BufferType.NORMAL);
+            ISBNView.setHint("ISBN");
         ISBNView.addTextChangedListener(textWatcher);
 
         EditText TitleView = findViewById(R.id.TitleAddManual);
         if(book.getBookTitle() != null)
             TitleView.setText(book.getBookTitle(), TextView.BufferType.NORMAL);
         else
-            TitleView.setText("Title", TextView.BufferType.NORMAL);
+            TitleView.setHint("Title");
         TitleView.addTextChangedListener(textWatcher);
 
         EditText AuthorView = findViewById(R.id.AuthorAddManual);
         if(book.getAuthor() != null)
             AuthorView.setText(book.getAuthor(), TextView.BufferType.NORMAL);
         else
-            AuthorView.setText("Author", TextView.BufferType.NORMAL);
+            AuthorView.setHint("Author");
         AuthorView.addTextChangedListener(textWatcher);
 
         EditText PublisherView = findViewById(R.id.PublisherAddManual);
         if(book.getPublisher() != null)
             PublisherView.setText(book.getPublisher(), TextView.BufferType.NORMAL);
         else
-            PublisherView.setText("Publisher", TextView.BufferType.NORMAL);
+            PublisherView.setHint("Publisher");
         PublisherView.addTextChangedListener(textWatcher);
 
         /*EditText OwnerView = findViewById(R.id.);                                 //TODO ADD CORRESPONDENT VIEW IN XML FILE
@@ -110,7 +110,7 @@ public class insertBook extends AppCompatActivity{
 
     }
         protected void onActivityResult(int requestCode, int resultCode, Intent data){
-            ImageView bookPic = null;
+            ImageView bookPic = new ImageView(this);
             if (requestCode == PICK_IMAGE && resultCode == RESULT_OK) {
                 try {
 
