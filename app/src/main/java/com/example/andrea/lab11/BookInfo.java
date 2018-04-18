@@ -47,7 +47,7 @@ public class BookInfo{
             if(file.exists())
             {
                 bookPhotos[i] = file.getPath();
-                photosQty ++;
+
             }
         }
 

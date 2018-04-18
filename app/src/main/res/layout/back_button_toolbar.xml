@@ -26,6 +26,18 @@
             android:layout_alignParentTop="true"
             android:backgroundTint="@color/colorToolBar"
             android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingRight="70dp"
+            android:paddingEnd="70dp"
+            android:backgroundTint="@color/colorToolBar"
+            android:text="@string/add_book"
+            android:textSize="25dp"
+
+            />
     </android.support.v7.widget.Toolbar>
 
 

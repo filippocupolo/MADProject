@@ -25,6 +25,7 @@
     <string name="book_overview">Book Overview</string>
     <string name="facebook_app_id">1668597253224052</string>
     <string name="fb_login_protocol_scheme">fb1668597253224052</string>
+    <string name="add_book">Add Book</string>
     <string-array name="conditions_array">
         <item>Very Bad</item>
         <item>Bad</item>
@@ -32,4 +33,5 @@
         <item>Good</item>
         <item>Perfect</item>
     </string-array>
+
 </resources>

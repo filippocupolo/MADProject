@@ -16,13 +16,13 @@ import java.net.URI;
 public class bookImageAdapter extends BaseAdapter{
 
     private Context appContext;
-    private Drawable[] images;
+    private Uri[] images;
 
-    public bookImageAdapter(Context context, Drawable[] images)
+    public bookImageAdapter(Context context, Uri[] images)
     {
         appContext = context;
         if (images==null){
-            this.images = new Drawable[]{};
+            this.images = new Uri[]{};
         }else{
             this.images = images;
         }
@@ -49,7 +49,7 @@ public class bookImageAdapter extends BaseAdapter{
         if(convertView == null)
         {
             LayoutInflater li=(LayoutInflater) appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView=li.inflate(R.layout.back_button_toolbar, null);
+            convertView=li.inflate(R.layout.activity_add_book_manual, null);
             /*
             imageView = new ImageView(appContext);
             imageView.setLayoutParams(new ViewGroup.LayoutParams(85, 85));
@@ -61,8 +61,10 @@ public class bookImageAdapter extends BaseAdapter{
         }
 
         ImageView imageView = (ImageView) convertView.findViewById(R.id.imageButton);
-
-        imageView.setImageDrawable(images[position]);
+        imageView.setLayoutParams(new ViewGroup.LayoutParams(180,180));
+        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        imageView.setVisibility(View.VISIBLE);
+        imageView.setImageURI(images[position]);
 
         return imageView;
     }

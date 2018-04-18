@@ -32,6 +32,7 @@ public class insertBook extends AppCompatActivity{
 
     MyUser myUser;
     BookInfo book;
+    Uri[] bookImgUri = new Uri[]{Uri.parse("android.resource://com.example.andrea.lab11/drawable/ic_add_button_24dp")};
     private Uri selectedImageUri;
     private static final int CAMERA_REQUEST_CODE = 666;
     private static final int PICK_IMAGE = 999;
@@ -92,13 +93,6 @@ public class insertBook extends AppCompatActivity{
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(SL);
 
-        /*EditText OwnerView = findViewById(R.id.);                                 //TODO ADD CORRESPONDENT VIEW IN XML FILE
-        if(book.getOwner() != null)
-            OwnerView.setText(book.getOwner(), TextView.BufferType.NORMAL);
-        else
-            OwnerView.setText("Owner", TextView.BufferType.NORMAL);
-        OwnerView.addTextChangedListener(textWatcher);*/
-
         EditText EditionView = findViewById(R.id.EditionYearAddManual);
         if(book.getEditionYear() != 0)
             EditionView.setText(Integer.toString(book.getEditionYear()), TextView.BufferType.NORMAL);
@@ -110,7 +104,7 @@ public class insertBook extends AppCompatActivity{
 
         GridView bookImageGrid = findViewById(R.id.addBookManualGrid);
 
-        bookImageGrid.setAdapter(new bookImageAdapter(this, new Drawable[]{getResources().getDrawable(R.drawable.ic_add_button_24dp)}));
+        bookImageGrid.setAdapter(new bookImageAdapter(this,bookImgUri));
         //Listens to when a component of the AdapterView gets pressed. In case it's the add button, it asks the user to choose a new photo, otherwise it zooms in the photo already saved.
         bookImageGrid.setOnItemClickListener((parent, v, position, id) -> {
             if(position == book.getPhotosQty())
@@ -175,12 +169,9 @@ public class insertBook extends AppCompatActivity{
                 case R.id.AuthorAddManual:
                     book.setAuthor(s.toString());
                     break;
-                /*case R.id.BookOwner:
-                    book.setOwner(s.toString());
-                    break;*/
-                /*case R.id.EditionYear:                            //TODO ADD CORRESPONDENT VIEW IN XML
+                case R.id.EditionYearAddManual:                            //TODO ADD CORRESPONDENT VIEW IN XML
                     book.setEditionYear(s.toString());
-                    break;*/
+                    break;
                 case R.id.PublisherAddManual:
                     book.setPublisher(s.toString());
                     break;
