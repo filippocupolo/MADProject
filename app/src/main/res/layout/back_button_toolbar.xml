@@ -33,6 +33,7 @@
             android:textAlignment="center"
             android:paddingRight="70dp"
             android:paddingEnd="70dp"
+            android:textColor="#ffffffff"
             android:backgroundTint="@color/colorToolBar"
             android:text="@string/add_book"
             android:textSize="25dp"

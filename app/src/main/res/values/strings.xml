@@ -26,6 +26,13 @@
     <string name="facebook_app_id">1668597253224052</string>
     <string name="fb_login_protocol_scheme">fb1668597253224052</string>
     <string name="add_book">Add Book</string>
+    <string name="automatic_or_manual_ISBN">Insert ISBN or scan it </string>
+    <string name="add_manual_button">Insert book\'s info manually</string>
+    <string name="title_textV">Title</string>
+    <string name="author_textV">Author</string>
+    <string name="publisher_textV">Publisher</string>
+    <string name="year_textV">Edition Year</string>
+    <string name="conditions_textV">Conditions</string>
     <string-array name="conditions_array">
         <item>Very Bad</item>
         <item>Bad</item>

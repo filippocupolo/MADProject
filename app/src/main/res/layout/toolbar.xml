@@ -13,21 +13,20 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:background="@color/colorToolBar"
+        android:background="#0d47a1"
         android:elevation="10dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        />
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
 
     <TextView
         android:id="@+id/appName"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="9dp"
         android:elevation="10dp"
         android:text="@string/app_name"
         android:textColor="@color/colorTabs"
@@ -38,27 +37,31 @@
         android:id="@+id/sign_out_button"
         android:layout_width="@dimen/editShowIcon_w"
         android:layout_height="@dimen/editShowIcon_h"
+        android:layout_alignBaseline="@id/appToolbar"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
         android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
         android:background="@android:color/transparent"
         android:elevation="20dp"
-        android:src="@drawable/ic_person_black_24dp"
+        android:src="@drawable/ic_clear_red_24dp"
         android:visibility="visible" />
 
 
     <android.support.design.widget.TabLayout
-        android:background="@color/colorToolBar"
-        android:textColor="@color/colorTabs"
-        app:tabSelectedTextColor="@android:color/holo_orange_dark"
-        app:tabIndicatorColor = "@android:color/holo_orange_dark"
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/tabs_h"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:background="#0d47a1"
         android:elevation="10dp"
-        android:id="@+id/tabLayout">
+        android:textColor="@color/colorTabs"
+        app:tabIndicatorColor="@android:color/holo_orange_dark"
+        app:tabSelectedTextColor="@android:color/holo_orange_dark">
 
-       <!-- <android.support.design.widget.TabItem
+        <!-- <android.support.design.widget.TabItem
             android:text="@string/home"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"/>
@@ -70,20 +73,16 @@
             /> !-->
 
         <android.support.design.widget.TabItem
-            android:text="@string/profile"
             android:id="@+id/toolbarProfile"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            />
+            android:layout_height="wrap_content"
+            android:text="@string/profile" />
 
         <android.support.design.widget.TabItem
-            android:text="AddBook"
             android:id="@+id/toolbarAddBook"
-            android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            />
-
-
+            android:layout_height="wrap_content"
+            android:text="AddBook" />
 
 
     </android.support.design.widget.TabLayout>
