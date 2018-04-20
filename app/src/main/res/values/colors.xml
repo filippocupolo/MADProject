@@ -2,7 +2,13 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">@android:color/holo_orange_dark</color>
-    <color name="colorToolBar">#036CA4</color>
-    <color name="colorTabs">#FFF</color>
+    <color name="colorAccent">#ff9800</color>
+    <color name="lightPrimaryColor">#C5CAE9</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="textIcons">#FdFdFd</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="text_shadow_white">#FFFFFF</color>
+
 </resources>

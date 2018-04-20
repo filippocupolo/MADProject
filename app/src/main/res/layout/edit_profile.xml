@@ -17,7 +17,7 @@
         android:layout_marginRight="@dimen/margin_left_right"
         android:background="@android:color/transparent"
         android:elevation="20dp"
-        android:src="@drawable/ic_person_black_24dp"
+        android:src="@drawable/ic_person_24dp"
         android:visibility="visible" />
 
     <!--
@@ -32,7 +32,7 @@
         android:layout_marginRight="40dp"
         android:layout_marginTop="18dp"
         android:elevation="20dp"
-        android:src="@drawable/ic_person_black_24dp"
+        android:src="@drawable/ic_person_24dp"
         android:visibility="visible" /> !-->
 
     <ScrollView
@@ -50,7 +50,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 app:civ_border_width="1dp"
-                app:civ_border_color="@color/colorToolBar"
+                app:civ_border_color="@color/colorPrimary"
                 android:id="@+id/imageViewEdit"
                 android:layout_width="180dp"
                 android:layout_height="180dp"
@@ -69,7 +69,7 @@
                 android:background="@drawable/camera_border"
                 android:elevation="20dp"
                 android:padding="20dp"
-                android:src="@drawable/ic_photo_camera_black_24dp" />
+                android:src="@drawable/ic_photo_camera_24dp" />
 
 
             <RelativeLayout
@@ -92,6 +92,8 @@
                     android:layout_centerHorizontal="true"
                     android:ems="10"
                     android:hint="@string/name"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/secondaryText"
                     android:inputType="textPersonName"
                     android:labelFor="@+id/nameEdit"
                     android:padding="8dp"
@@ -108,6 +110,8 @@
                     android:background="@drawable/my_border"
                     android:ems="10"
                     android:hint="@string/surname"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/secondaryText"
                     android:inputType="textPersonName"
                     android:labelFor="@+id/surnameEdit"
                     android:padding="8dp"
@@ -124,6 +128,8 @@
                     android:background="@drawable/my_border"
                     android:ems="10"
                     android:hint="@string/city"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/secondaryText"
                     android:inputType="text"
                     android:labelFor="@id/cityEdit"
                     android:padding="8dp"
@@ -140,6 +146,8 @@
                     android:ems="10"
                     android:layout_marginTop="15dp"
                     android:hint="@string/email"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/secondaryText"
                     android:inputType="textEmailAddress"
                     android:labelFor="@id/emailEdit"
                     android:padding="8dp"
@@ -157,6 +165,8 @@
                     android:background="@drawable/my_border"
                     android:ems="10"
                     android:hint="@string/bio"
+                    android:textColor="@color/primaryText"
+                    android:textColorHint="@color/secondaryText"
                     android:inputType="textMultiLine"
                     android:nextFocusDown="@null"
                     android:labelFor="@id/bioEdit"
