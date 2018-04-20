@@ -18,16 +18,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".editProfile" />
-        <activity android:name=".showProfile" >
+        <activity android:name=".showProfile"></activity>
+        <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-        </activity>
-        <activity android:name=".login">
-
         </activity>
 
         <meta-data
@@ -50,8 +47,9 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".insertBook"></activity>
-        <activity android:name=".AddBookAutomatic"></activity>
+        <activity android:name=".insertBook" />
+        <activity android:name=".AddBookAutomatic" />
+        <activity android:name=".ScanActivity"></activity>
     </application>
 
 </manifest>
