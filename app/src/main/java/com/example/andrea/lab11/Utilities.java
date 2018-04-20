@@ -112,7 +112,7 @@ public class Utilities {
     /** function get the image from an intent
      *  required data given by onActivityResult call back
      *  selectedImageUri is a uri were the image can be. This uri is the one returned by setImage
-     *  AAA the to code has to be the same of Utilities.setImage
+     *  AAA the to selectedImageUri has to be the same of Utilities.requestImage
      **/
     public static Bitmap pictureActivityResult (Activity activity, Intent data, Uri selectedImageUri) throws IOException {
 
