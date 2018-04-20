@@ -8,6 +8,7 @@
         android:id="@+id/google_sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:background="@drawable/button_shape_login"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="62dp" />
@@ -19,6 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_shape_login"
         android:layout_marginTop="130dp"
         android:paddingBottom="12dp"
         android:paddingTop="13dp"
@@ -63,6 +65,8 @@
             android:ems="10"
             android:hint="@string/email"
             android:imeOptions="actionDone"
+            android:textColorHint="@color/secondaryText"
+            android:textColor="@color/primaryText"
             android:inputType="textEmailAddress"
             android:labelFor="@id/emailEdit"
             android:maxLength="30"
@@ -80,6 +84,8 @@
             android:hint="@string/pwd"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
+            android:textColorHint="@color/secondaryText"
+            android:textColor="@color/primaryText"
             android:labelFor="@id/login_pwd"
             android:maxLength="30"
             android:padding="8dp" />
@@ -90,6 +96,9 @@
             android:layout_below="@id/login_pwd"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
+            android:textColor="@color/textIcons"
+            android:background="@drawable/button_shape"
+            android:elevation="15dp"
             android:text="Login" />
 
     </RelativeLayout>

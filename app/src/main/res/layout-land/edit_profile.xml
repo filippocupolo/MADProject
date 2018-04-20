@@ -19,7 +19,7 @@
         android:layout_marginRight="40dp"
         android:background="@android:color/transparent"
         android:elevation="20dp"
-        android:src="@drawable/ic_person_black_24dp"
+        android:src="@drawable/ic_person_24dp"
         android:visibility="visible" />
 
     <!--
@@ -34,7 +34,7 @@
         android:layout_marginRight="40dp"
         android:layout_marginTop="18dp"
         android:elevation="20dp"
-        android:src="@drawable/ic_person_black_24dp"
+        android:src="@drawable/ic_person_24dp"
         android:visibility="visible" /> !-->
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -63,7 +63,7 @@
         android:background="@drawable/camera_border"
         android:elevation="20dp"
         android:padding="20dp"
-        android:src="@drawable/ic_photo_camera_black_24dp" />
+        android:src="@drawable/ic_photo_camera_24dp" />
 
     <ScrollView
         android:layout_width="500dp"
