@@ -77,10 +77,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="55dp"
                     android:layout_marginTop="10dp"
-<<<<<<< HEAD
                     android:onClick="scanBarcode"
-                    android:src="@drawable/ic_photo_camera_black_24dp"
-=======
                     android:background="@drawable/take_photo_isbn_button"
                     android:elevation="25dp"
                     android:shadowColor="@color/text_shadow"
@@ -88,7 +85,6 @@
                     android:shadowDy="1"
                     android:shadowRadius="2"
                     android:src="@drawable/ic_photo_camera_24dp"
->>>>>>> d58ec3ca2a505776d8043fab84afd4adc9e52c8b
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/editISBN"

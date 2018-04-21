@@ -40,7 +40,7 @@
     <de.hdodenhof.circleimageview.CircleImageView
         xmlns:app="http://schemas.android.com/apk/res-auto"
         app:civ_border_width="1dp"
-        app:civ_border_color="@color/colorToolBar"
+        app:civ_border_color="@color/colorPrimaryDark"
         android:id="@+id/imageViewEdit"
         android:layout_width="@dimen/profileImage_w"
         android:layout_height="@dimen/profileImage_h"
