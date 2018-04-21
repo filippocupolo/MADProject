@@ -26,13 +26,14 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.Serializable;
 import java.lang.String;
 import java.sql.Timestamp;
 import java.util.LinkedList;
 
 import static android.content.Context.MODE_PRIVATE;
 
-public class BookInfo{
+public class BookInfo implements Serializable {
 
 
     private String bookID = null;

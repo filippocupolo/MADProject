@@ -314,7 +314,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp"
                 android:onClick="uploadBook"
-                android:text="Button"
+                android:text="UploadBook"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/addBookManualGrid" />

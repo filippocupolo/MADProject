@@ -62,8 +62,13 @@ public class insertBook extends AppCompatActivity{
 
         setContentView(R.layout.activity_add_book_manual);
 
+        Intent intent = getIntent();
+
+        book = (BookInfo)intent.getSerializableExtra("book");
+        if(book == null){
+            book = new BookInfo(getApplicationContext());
+        }
         myUser = new MyUser(getApplicationContext());
-        book = new BookInfo(getApplicationContext());
         SL = new spinnerListener(getApplicationContext(),book);
 
         ISBNView = findViewById(R.id.ISBNaddManual);
@@ -150,7 +155,14 @@ public class insertBook extends AppCompatActivity{
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
     public void uploadBook(View view) {
+
         //TODO some field cannot be empty
         book.set_ISBN(ISBNView.getText().toString());
         book.setAuthor(authorView.getText().toString());
@@ -159,6 +171,8 @@ public class insertBook extends AppCompatActivity{
         book.setOwner(myUser.getUserID());
         book.setPublisher(publisherView.getText().toString());
         book.loadBook();
+
+        onBackPressed();
     }
 
 }
