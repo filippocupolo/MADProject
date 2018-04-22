@@ -36,7 +36,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:15.0.0'
     implementation 'com.google.firebase:firebase-auth:15.0.0'
     implementation 'com.google.android.gms:play-services-auth:15.0.0'
+    implementation 'com.google.android.gms:play-services-vision:15.0.0'
     implementation 'com.facebook.android:facebook-login:[4,5)'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
 
 }
 

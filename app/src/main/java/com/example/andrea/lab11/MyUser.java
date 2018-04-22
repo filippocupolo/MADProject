@@ -74,6 +74,7 @@ public class MyUser {
     public String getCity(){return  city;}
     public String getBiography(){return biography;}
     public String getImage(){return image;}
+    public String getUserID(){return userID;}
 
     //setters
     public void setUserID(String value){
@@ -141,11 +142,13 @@ public class MyUser {
         if(file.exists()){
             Log.d(this.getClass().getName(),"esiste");
         }
-        StorageReference ref = FirebaseStorage.getInstance().getReference().child("images/"+userID);
+        StorageReference ref = FirebaseStorage.getInstance().getReference().child("profileImages/"+userID);
         ref.putFile(Uri.fromFile(file))
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
+                        dbRef.child(userID).child("image").setValue(true);
                         Toast.makeText(applicationContext, "Uploaded", Toast.LENGTH_SHORT).show();
                     }
                 })

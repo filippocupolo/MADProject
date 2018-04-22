@@ -8,16 +8,23 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
+import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import java.io.IOException;
 
@@ -32,6 +39,7 @@ public class editProfile extends AppCompatActivity {
     private Uri selectedImageUri;
     private Activity activity;
     private ActivityCompat activityCompat;
+    private String previousActivity;
 
     //Views
     ImageView profileView;
@@ -44,21 +52,14 @@ public class editProfile extends AppCompatActivity {
         activity = this;
         activityCompat = this.activityCompat;
 
+        previousActivity = getIntent().getStringExtra("caller");
+        Log.d("popup", previousActivity);
+
         //create MyUser
         myUser = new MyUser(getApplicationContext());
 
         //+++++++++++++set fields//+++++++++++++
         setContentView(R.layout.edit_profile);
-
-        //logout button listener
-        findViewById(R.id.sign_out_button).setOnClickListener((View v) ->{
-            Utilities.signOut();
-            Intent intent = new Intent(
-                    getApplicationContext(),
-                    login.class
-            );
-            startActivity(intent);
-        });
 
         //set name
         EditText nameView = findViewById(R.id.nameEdit);
@@ -126,7 +127,7 @@ public class editProfile extends AppCompatActivity {
         changeImageButton.setOnClickListener(v -> selectedImageUri = Utilities.requestImage(activityCompat,activity,CAMERA_REQUEST_CODE,PICK_IMAGE));
 
         //set showProfileIcon
-        ImageView showProfileIcon = findViewById(R.id.showProfileIcon);
+        /*ImageView showProfileIcon = findViewById(R.id.showProfileIcon);
         showProfileIcon.setClickable(true);
         showProfileIcon.setOnClickListener(v -> {
             String caller = getIntent().getStringExtra("caller");
@@ -146,7 +147,7 @@ public class editProfile extends AppCompatActivity {
             else {
                 onBackPressed();
             }
-        });
+        });*/
 
         profileView = findViewById(R.id.imageViewEdit);
         if( myUser.getImage() == null){
@@ -158,6 +159,38 @@ public class editProfile extends AppCompatActivity {
             Drawable bd = createFromPath(myUser.getImage());
             profileView.setImageDrawable(bd);
         }
+
+        //tab listener
+        TabLayout tabs = findViewById(R.id.tabLayout);
+
+        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                //Toast.makeText(mActivity, "hai", Toast.LENGTH_SHORT).show();
+                switch (tab.getText().toString()){
+                    case "Profilo":
+                        //nothing to do
+                        break;
+                    case "AddBook":
+                        Intent intent = new Intent(
+                                getApplicationContext(),
+                                insertBook.class
+                        );
+                        intent.putExtra("caller", "editProfile");
+                        startActivity(intent);
+                        break;
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
     }
 
     @Override
@@ -247,4 +280,34 @@ public class editProfile extends AppCompatActivity {
 
         }
     };
+
+    public void showPopup(View v){
+        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.general_menu, popup.getMenu());
+
+        //hide edit profile option - useless
+        popup.getMenu().findItem(R.id.menu_edit_profile).setVisible(false);
+        popup.show();
+
+        //click listener
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu_logout:
+                        Utilities.signOut(getApplicationContext());
+                        return true;
+                    case R.id.menu_show_profile:
+                        //Log.d("popup", "ok2 " + getIntent().getStringExtra("caller"));
+                        Utilities.goToShowProfile(getApplicationContext(), previousActivity,
+                                "editProfile", editProfile.this);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
+    }
+
 }

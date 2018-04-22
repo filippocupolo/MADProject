@@ -7,8 +7,10 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +29,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
@@ -35,7 +39,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.google.firebase.auth.UserInfo;
 
+//TODO modifica database solo autenticati
 
 public class login extends AppCompatActivity implements
         View.OnClickListener {
@@ -45,6 +51,9 @@ public class login extends AppCompatActivity implements
     private static final int RC_SIGN_IN = 9001;
     private MyUser user;
     private CallbackManager mCallbackManager; //fb callback manager
+    private static final String TAG = "login";
+    private EditText email;
+    private EditText pwd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,10 +63,27 @@ public class login extends AppCompatActivity implements
         //set view
         setContentView(R.layout.login);
 
+        //HIDE SOME ELEMENTS
+        findViewById(R.id.reset_login).setVisibility(View.GONE);
+        findViewById(R.id.reset_pwd_button).setVisibility(View.GONE);
+        //findViewById(R.id.reset_pwd_help).setVisibility(View.GONE);
+
         /*-----GOOGLE------*/
 
         //button listener
         findViewById(R.id.google_sign_in_button).setOnClickListener(this);
+
+        //register button -> redirects to register activity
+        findViewById(R.id.register_link).setOnClickListener(v->{Intent intent = new Intent(
+                getApplicationContext(),
+                register.class
+        );
+        intent.putExtra("caller", "login");
+        startActivity(intent);});
+
+        //email and password fields
+        email = findViewById(R.id.login_email);
+        pwd = findViewById(R.id.login_pwd);
 
         // Configure sign-in to request the user's ID, email address, and basic
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -86,25 +112,131 @@ public class login extends AppCompatActivity implements
             @Override
             public void onCancel() {
                 Log.d("steps", "facebook3");
-                updateUIWithErrors();
+                updateUIWithErrors("Error with Facebook Authentication");
             }
 
             @Override
             public void onError(FacebookException error) {
                 Log.d("steps", "facebook3" + error.toString());
-                updateUIWithErrors();
+                updateUIWithErrors("Error with Facebook Authentication");
             }
         });
     }
 
-    //Check for existing Google/Facebook Sign In account, if the user is already signed in
-    //every time the app appears  on screen
+    //forgot password listener
+    public void reset_password(View v){
+        //reset layout
+        this.pwd.setVisibility(View.GONE);
+        findViewById(R.id.facebook_sign_in_button).setVisibility(View.GONE);
+        findViewById(R.id.google_sign_in_button).setVisibility(View.GONE);
+        findViewById(R.id.pwd_forgotten_link).setVisibility(View.GONE);
+        findViewById(R.id.register_link).setVisibility(View.GONE);
+        findViewById(R.id.reset_login).setVisibility(View.VISIBLE);
+        findViewById(R.id.reset_pwd_button).setVisibility(View.VISIBLE);
+        findViewById(R.id.login_button).setVisibility(View.GONE);
+        //findViewById(R.id.reset_pwd_help).setVisibility(View.VISIBLE);
+    }
+
+    public void reset_login(View v){
+        //reset layout
+        this.pwd.setVisibility(View.VISIBLE);
+        findViewById(R.id.facebook_sign_in_button).setVisibility(View.VISIBLE);
+        findViewById(R.id.google_sign_in_button).setVisibility(View.VISIBLE);
+        findViewById(R.id.pwd_forgotten_link).setVisibility(View.VISIBLE);
+        findViewById(R.id.register_link).setVisibility(View.VISIBLE);
+        findViewById(R.id.reset_login).setVisibility(View.GONE);
+        findViewById(R.id.reset_pwd_button).setVisibility(View.GONE);
+        findViewById(R.id.login_button).setVisibility(View.VISIBLE);
+        //findViewById(R.id.reset_pwd_help).setVisibility(View.GONE);
+    }
+
+    public void resetPasswordButton(View v){
+        String email = this.email.getText().toString();
+
+        if(TextUtils.isEmpty(email)){
+            this.email.setError(getString(R.string.required));
+            return;
+        }
+
+        mAuth.sendPasswordResetEmail(email)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Log.d(TAG, "Email sent.");
+                            reset_login(v);
+                            updateUIWithErrors(getString(R.string.reset_email_sent));
+                        }
+                        else{
+                            updateUIWithErrors(getString(R.string.reset_email_error));
+                        }
+                    }
+                });
+    }
+
+    public void loginEmailUser(View v){
+
+        if(TextUtils.isEmpty(this.email.getText().toString())){
+            email.setError(getString(R.string.required));
+            return;
+        }
+
+        if(TextUtils.isEmpty(this.pwd.getText().toString())){
+            pwd.setError(getString(R.string.required));
+            return;
+        }
+
+        String email = this.email.getText().toString();
+        String password = this.pwd.getText().toString();
+
+        mAuth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d(TAG, "signInWithEmail:success");
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            //check if email has been confirmed
+                            if (user.isEmailVerified()) {
+                                Log.d(TAG, "ok3");
+                                updateUI(user);
+                            }
+                            else{
+                                Log.d(TAG, "ok2");
+                                updateUIWithErrors(getString(R.string.verify_email));
+                            }
+                        } else {
+                            // If sign in fails, display a message to the user.
+                            Log.w(TAG, "signInWithEmail:failure", task.getException());
+                            updateUIWithErrors(getString(R.string.unknown_user));
+                        }
+                    }
+                });
+    }
+
+    //Check for existing Accounts on firebase, if the user already signed in
     @Override
     protected void onStart(){
         super.onStart();
         Log.d("steps", "onStart");
+
+
         FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
+        if(currentUser != null) {
+            String provider = currentUser.getProviders().get(0);
+            if(!provider.equals("facebook.com") && !provider.equals("google.com")) {
+                //email user -> check if the mail has been verified
+                if (currentUser.isEmailVerified()) {
+                    updateUI(currentUser);
+                } else {
+                    updateUIWithErrors(getString(R.string.verify_email));
+                }
+            }
+            else{
+                updateUI(currentUser);
+            }
+        }
     }
 
     //Result returned from launching either the Intent from GoogleSignInApi.getSignInIntent(...);
@@ -124,7 +256,7 @@ public class login extends AppCompatActivity implements
             } catch (ApiException e) {
 
                 // Google Sign In failed
-                updateUIWithErrors();
+                updateUIWithErrors("Error with Google Authentication");
 
             }
         }
@@ -154,7 +286,7 @@ public class login extends AppCompatActivity implements
                         } else {
                             //Sign in fails
                             Log.d("steps", "facebook_fails");
-                            updateUIWithErrors();
+                            updateUIWithErrors("Error with Facebook Authentication");
                         }
                     }
                 });
@@ -194,23 +326,21 @@ public class login extends AppCompatActivity implements
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w("warn", "signInWithCredential:failure", task.getException());
-                            updateUIWithErrors();
+                            updateUIWithErrors("Error with Google Authentication");
                         }
                     }
                 });
     }
 
-
     /*----- UPDATE UI --- */
     private void updateUI(@Nullable FirebaseUser account){
         if (account != null) {
-            Log.d("steps", account.getUid());
+
             user = new MyUser(getApplicationContext());
             user.setEmail(account.getEmail());
             user.setUserID(account.getUid());
 
             user.commit();
-
 
             Intent intent = new Intent(
                     getApplicationContext(),
@@ -224,9 +354,9 @@ public class login extends AppCompatActivity implements
         }
     }
 
-    private void updateUIWithErrors(){
+    private void updateUIWithErrors(String text){
         //set error message on the login screen
         TextView errorMessage = findViewById(R.id.login_error);
-        errorMessage.setText("Error with Google Authentication");
+        errorMessage.setText(text);
     }
 }

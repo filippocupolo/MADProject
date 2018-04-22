@@ -23,4 +23,54 @@
     <string name="city_label_show">Vive a: </string>
     <string name="toast_EditProfile_onRequestPermissionsResult">Permesso per la fotocamera non concesso</string>
     <string name="book_overview">Panoramica Libro</string>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <string name="login">Accedi</string>
+    <string name="register">Registrati!</string>
+    <string name="confirm_pwd">Conferma Password</string>
+    <string name="required">Obbligatoria</string>
+    <string name="pwd_unmatch">Le password non corrispondono</string>
+    <string name="pwd_short">La password deve contenere almeno 6 caratteri</string>
+    <string name="verify_email">Verifica il tuo indirizzo e-mail per completare la registrazione</string>
+    <string name="fb_auth_error">Errore durante l\'autenticazione con Facebook</string>
+    <string name="google_auth_error">Errore durante l\'autenticazione con Google</string>
+    <string name="email_auth_error">Errore durante l\'autenticazione</string>
+    <string name="unknown_user">Questo utente non esiste</string>
+    <string name="error_account_creation">Errore durante la creazione dell\'account</string>
+    <string name="pwd_forgotten">Password dimenticata?</string>
+    <string name="back_to_login">Torna al login</string>
+    <string name="reset">Reset</string>
+    <string name="reset_pwd_help">Inserisci l\'indirizzo e-mail con il quale sei iscritto.
+        Riceverai un\'e-email con la procedura di reset.</string>
+    <string name="reset_email_sent">Mail di reset inviata!</string>
+    <string name="reset_email_error">Errore nell\'inviare la mail di reset. Riprovare</string>
+    <string name="already_registered">Account già in uso, effettua il login!</string>
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+    <string name="add_book">Aggiungi Libro</string>
+    <string name="automatic_or_manual_ISBN">Inserisci ISBN o scannerizzalo</string>
+    <string name="add_manual_button">Inserisci manualmente le informazioni sul libro</string>
+    <string name="title_textV">Titolo</string>
+    <string name="author_textV">Autore</string>
+    <string name="publisher_textV">Editore</string>
+    <string name="year_textV">Anno Pubblicazione</string>
+    <string name="conditions_textV">Condizioni</string>
+    <string-array name="conditions_array">
+        <item>Pessime</item>
+        <item>Cattive</item>
+        <item>Normali</item>
+        <item>Buone</item>
+        <item>Perfette</item>
+    </string-array>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <string name="logout">Log out</string>
+=======
+
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+=======
+
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 </resources>

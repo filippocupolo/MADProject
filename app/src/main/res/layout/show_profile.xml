@@ -8,6 +8,8 @@
         android:id="@+id/show_profile_toolbar"
         layout="@layout/toolbar" />
 
+    <!--
+
     <ImageButton
         android:id="@+id/imageViewEditButton"
         android:layout_width="@dimen/editShowIcon_w"
@@ -20,7 +22,7 @@
         android:background="@android:color/transparent"
         android:elevation="20dp"
         android:src="@drawable/ic_mode_edit_black_24dp"
-        android:visibility="visible" />
+        android:visibility="visible" /> !-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -40,7 +42,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 app:civ_border_width="1dp"
-                app:civ_border_color="@color/colorToolBar"
+                app:civ_border_color="@color/colorAccent"
                 android:id="@+id/imageViewShow"
                 android:layout_width="150dp"
                 android:layout_marginRight="20dp"
@@ -77,7 +79,9 @@
                 android:ems="20"
                 android:labelFor="@+id/nameSurnameShow"
                 android:padding="8dp"
-                android:text="@string/name_surname"
+                android:hint="@string/name_surname"
+                android:textColor="@color/primaryText"
+                android:textColorHint="@color/secondaryText"
                 android:textSize="13sp"
                 android:textAlignment="textStart"
                 android:gravity="start"
@@ -92,8 +96,10 @@
                 android:layout_below="@+id/nameSurnameShow"
                 android:layout_marginTop="25dp"
                 android:ems="10"
-                android:text="@string/email"
+                android:hint="@string/email"
                 android:textSize="13sp"
+                android:textColor="@color/primaryText"
+                android:textColorHint="@color/secondaryText"
                 android:textAlignment="textStart"
                 android:gravity="start"
                 android:labelFor="@+id/cityShow"
@@ -117,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/bio_label_show"
                     android:textSize="20sp"
-                    android:textColor="@color/colorToolBar"
+                    android:textColor="@color/primaryText"
                     />
 
                 <TextView
@@ -125,8 +131,10 @@
                     android:id="@+id/showProfileBio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bio"
+                    android:hint="Bio"
                     android:textSize="13sp"
+                    android:textColorHint="@color/secondaryText"
+                    android:textColor="@color/primaryText"
                     android:padding="@dimen/margin_left_right"
                     android:layout_marginTop="15dp"/>
 

@@ -2,6 +2,7 @@ package com.example.andrea.lab11;
 
 import android.Manifest;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -12,7 +13,9 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 
 import com.facebook.login.LoginManager;
@@ -112,7 +115,7 @@ public class Utilities {
     /** function get the image from an intent
      *  required data given by onActivityResult call back
      *  selectedImageUri is a uri were the image can be. This uri is the one returned by setImage
-     *  AAA the to code has to be the same of Utilities.setImage
+     *  AAA the to selectedImageUri has to be the same of Utilities.requestImage
      **/
     public static Bitmap pictureActivityResult (Activity activity, Intent data, Uri selectedImageUri) throws IOException {
 
@@ -141,8 +144,67 @@ public class Utilities {
         return modifiedBitmap;
     }
 
-    public static void signOut(){
+    public static void signOut(Context context){
         FirebaseAuth.getInstance().signOut();
         LoginManager.getInstance().logOut(); //facebook
+
+        Intent intent = new Intent(
+                context,
+                login.class
+        );
+        context.startActivity(intent);
     }
+
+    public static void goToShowProfile(Context context, String previousCaller, String callerClass, Activity activity){
+        //String caller = previousIntent.getStringExtra("caller");
+
+        if(previousCaller != null) {
+            if (!previousCaller.equals("showProfile")) {
+                Intent intent = new Intent(
+                        context,
+                        showProfile.class
+                );
+                intent.putExtra("caller", callerClass);
+                context.startActivity(intent);
+            } else {
+                activity.onBackPressed();
+            }
+        }
+        else{
+            Intent intent = new Intent(
+                    context,
+                    showProfile.class
+            );
+            intent.putExtra("caller", callerClass);
+            context.startActivity(intent);
+        }
+    }
+
+    public static void goToEditProfile(Context context, String previousCaller, String callerClass, Activity activity){
+
+        if(previousCaller != null) {
+            if (!previousCaller.equals("editProfile")) {
+                Intent intent = new Intent(
+                        context,
+                        editProfile.class
+                );
+                intent.putExtra("caller", callerClass.toString());
+                context.startActivity(intent);
+            } else {
+                Log.d("log", "ok1");
+                activity.onBackPressed();
+            }
+        }
+        else{
+            Intent intent = new Intent(
+                    context,
+                    editProfile.class
+            );
+            intent.putExtra("caller", callerClass.toString());
+            context.startActivity(intent);
+        }
+    }
+
+
+
 }

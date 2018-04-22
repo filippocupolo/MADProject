@@ -25,4 +25,54 @@
     <string name="book_overview">Book Overview</string>
     <string name="facebook_app_id">1668597253224052</string>
     <string name="fb_login_protocol_scheme">fb1668597253224052</string>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <string name="login">Sign In</string>
+    <string name="register">Sign up!</string>
+    <string name="confirm_pwd">Password confirmation</string>
+    <string name="required">Required</string>
+    <string name="pwd_unmatch">Password don\'t match</string>
+    <string name="pwd_short">Password must be 6 characters long at least</string>
+    <string name="verify_email">Please verify your e-mail address to complete the registration</string>
+    <string name="fb_auth_error">Error with Facebook Authentication</string>
+    <string name="google_auth_error">Error with Google Authentication</string>
+    <string name="email_auth_error">Error during authentication</string>
+    <string name="unknown_user">This user does not exist</string>
+    <string name="error_account_creation">Error during the account creation</string>
+    <string name="pwd_forgotten">Password forgotten?</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="reset">Reset</string>
+    <string name="reset_pwd_help">Type the e-mail address you are registered with.
+        You will receive an e-mail with the password reset procedure.</string>
+    <string name="reset_email_sent">Reset e-mail sent!</string>
+    <string name="reset_email_error">Error sending reset e-mail. Retry.</string>
+    <string name="already_registered">Account already in use, please sign in</string>
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+    <string name="add_book">Add Book</string>
+    <string name="automatic_or_manual_ISBN">Insert ISBN or scan it </string>
+    <string name="add_manual_button">Insert book\'s info manually</string>
+    <string name="title_textV">Title</string>
+    <string name="author_textV">Author</string>
+    <string name="publisher_textV">Publisher</string>
+    <string name="year_textV">Edition Year</string>
+    <string name="conditions_textV">Conditions</string>
+    <string-array name="conditions_array">
+        <item>Very Bad</item>
+        <item>Bad</item>
+        <item>Normal</item>
+        <item>Good</item>
+        <item>Perfect</item>
+    </string-array>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <string name="logout">Log out</string>
+=======
+
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+=======
+
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 </resources>

@@ -1,20 +1,49 @@
 package com.example.andrea.lab11;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.gesture.GestureOverlayView;
 import android.graphics.drawable.Drawable;
+import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
+import android.view.GestureDetector;
+<<<<<<< HEAD
+<<<<<<< HEAD
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
+=======
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+=======
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+import android.widget.TabHost;
 import android.widget.TextView;
 import static android.graphics.drawable.Drawable.createFromPath;
 
 
-public class showProfile extends AppCompatActivity {
+public class showProfile extends AppCompatActivity{
 
     private MyUser myUser;
+    private float downX, downY,upY, upX;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    private String previousActivity;
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,17 +52,10 @@ public class showProfile extends AppCompatActivity {
         //+++++++++++++set fields+++++++++++++
         setContentView(R.layout.show_profile);
 
-        findViewById(R.id.sign_out_button).setOnClickListener(v->{
-            Utilities.signOut();
-            Intent intent = new Intent(
-                    getApplicationContext(),
-                    login.class
-            );
-            startActivity(intent);
-        });
+        previousActivity = getIntent().getStringExtra("caller");
 
         //set editButton
-        ImageView editButton = findViewById(R.id.imageViewEditButton);
+        /*ImageView editButton = findViewById(R.id.imageViewEditButton);
         editButton.setOnClickListener(v -> {
             String caller = getIntent().getStringExtra("caller");
 
@@ -48,7 +70,15 @@ public class showProfile extends AppCompatActivity {
             else{
                 onBackPressed();
             }
+<<<<<<< HEAD
+        });*/
+=======
         });
+<<<<<<< HEAD
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+
     }
 
     @Override
@@ -108,4 +138,75 @@ public class showProfile extends AppCompatActivity {
             profileView.setImageDrawable(bd);
         }
     }
+
+    //TODO make swipe properly this is just a simple way
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+
+        switch(event.getAction()) {
+            case MotionEvent.ACTION_DOWN: {
+                downX = event.getX();
+                downY = event.getY();
+            }
+            case MotionEvent.ACTION_UP: {
+                upX = event.getX();
+                upY = event.getY();
+
+                float deltaX = downX - upX;
+
+                // swipe horizontal?
+                if (Math.abs(deltaX) > 100) {
+                    // left or right
+                    if (deltaX > 0) {
+                        Log.d(this.getClass().getName(), "swipe");
+                        Intent intent = new Intent(
+                                getApplicationContext(),
+                                AddBookAutomatic.class);
+                        startActivity(intent);
+
+                    }
+                    //if(deltaX > 0) { this.onRightToLeftSwipe(v); return super.onTouchEvent(event); }
+                } else {
+                    Log.i(this.getClass().getName(), "Swipe was only " + Math.abs(deltaX) + " long, need at least 100");
+                }
+
+            }
+
+        }
+        return super.onTouchEvent(event);
+    }
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+    public void showPopup(View v){
+        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.general_menu, popup.getMenu());
+
+        //hide show profile option - useless
+        popup.getMenu().findItem(R.id.menu_show_profile).setVisible(false);
+
+        popup.show();
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu_logout:
+                        Utilities.signOut(getApplicationContext());
+                        return true;
+                    case R.id.menu_edit_profile:
+                        //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
+                        Utilities.goToEditProfile(getApplicationContext(), previousActivity,
+                                "showProfile", showProfile.this);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
+    }
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+=======
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 }

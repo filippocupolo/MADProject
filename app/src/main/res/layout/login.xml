@@ -4,10 +4,14 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+<<<<<<< HEAD
+    <ScrollView
+=======
     <com.google.android.gms.common.SignInButton
         android:id="@+id/google_sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:background="@drawable/button_shape_login"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="62dp" />
@@ -19,6 +23,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_shape_login"
         android:layout_marginTop="130dp"
         android:paddingBottom="12dp"
         android:paddingTop="13dp"
@@ -26,11 +31,178 @@
 
     <RelativeLayout
         android:id="@+id/login_form_wrapper"
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+<<<<<<< HEAD
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/login_form_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_left_right"
+            android:layout_marginLeft="@dimen/margin_left_right"
+            android:layout_marginRight="@dimen/margin_left_right"
+            android:layout_marginStart="@dimen/margin_left_right">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="26dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_launcher_foreground" />
+
+            <TextView
+                android:id="@+id/login_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/logo"
+                android:layout_marginBottom="3dp"
+                android:ems="10"
+                android:labelFor="@id/login_error"
+                android:padding="8dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="15sp" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/login_error"
+                android:layout_marginLeft="60dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="0dp" />
+
+            <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/facebook_sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/login_error"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="3.6dp"
+                android:layout_marginBottom="15dp"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:textSize="15sp"
+                facebook:com_facebook_login_text="@string/login" />
+
+            <!--<TextView
+                android:id="@+id/reset_pwd_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_pwd_help"
+                android:textSize="15sp"
+                android:textAlignment="center"/> !-->
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/facebook_sign_in_button"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/my_border"
+                android:ems="10"
+                android:hint="@string/email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:labelFor="@id/emailEdit"
+                android:maxLength="30"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/my_border"
+                android:ems="10"
+                android:hint="@string/pwd"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:labelFor="@id/login_pwd"
+                android:maxLength="30"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/pwd_forgotten_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_pwd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:onClick="reset_password"
+                android:text="@string/pwd_forgotten"
+                android:textColor="@color/colorToolBar"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/reset_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_pwd"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="reset_login"
+                android:text="@string/back_to_login"
+                android:textColor="@color/colorToolBar"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pwd_forgotten_link"
+                android:layout_marginTop="25dp">
+
+                <Button
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_border"
+                    android:onClick="loginEmailUser"
+                    android:text="@string/login"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/reset_pwd_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button_border"
+                    android:onClick="resetPasswordButton"
+                    android:text="@string/reset"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/register_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/login_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/register"
+                    android:textColor="@color/colorToolBar"
+                    android:textSize="14sp" />
+=======
         android:layout_marginBottom="124dp"
         android:layout_marginLeft="@dimen/margin_left_right"
         android:layout_marginRight="@dimen/margin_left_right"
@@ -63,6 +235,8 @@
             android:ems="10"
             android:hint="@string/email"
             android:imeOptions="actionDone"
+            android:textColorHint="@color/secondaryText"
+            android:textColor="@color/primaryText"
             android:inputType="textEmailAddress"
             android:labelFor="@id/emailEdit"
             android:maxLength="30"
@@ -80,6 +254,8 @@
             android:hint="@string/pwd"
             android:imeOptions="actionDone"
             android:inputType="textPassword"
+            android:textColorHint="@color/secondaryText"
+            android:textColor="@color/primaryText"
             android:labelFor="@id/login_pwd"
             android:maxLength="30"
             android:padding="8dp" />
@@ -90,8 +266,14 @@
             android:layout_below="@id/login_pwd"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="25dp"
+            android:textColor="@color/textIcons"
+            android:background="@drawable/button_shape"
+            android:elevation="15dp"
             android:text="Login" />
+>>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 
-    </RelativeLayout>
+            </RelativeLayout>
 
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
