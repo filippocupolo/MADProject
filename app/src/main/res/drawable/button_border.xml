@@ -4,7 +4,7 @@
 
     <!-- View background color -->
     <solid
-        android:color="@color/colorToolBar" >
+        android:color="@color/colorPrimaryDark" >
     </solid>
 
     <!-- View border color and width -->

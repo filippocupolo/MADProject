@@ -176,7 +176,7 @@ public class editProfile extends AppCompatActivity {
                     case "AddBook":
                         Intent intent = new Intent(
                                 getApplicationContext(),
-                                insertBook.class
+                                AddBookAutomatic.class
                         );
                         intent.putExtra("caller", "editProfile");
                         startActivity(intent);
