@@ -35,34 +35,14 @@
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutISBN"
                 android:layout_width="368dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                android:layout_height="106dp"
-=======
-                android:layout_height="100dp"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-                android:layout_height="100dp"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+                android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="60dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
                 android:background="@drawable/button_shape"
                 android:backgroundTint="#1976d2"
-=======
-
-                android:background="@drawable/button_shape"
-                android:backgroundTint="@color/colorPrimary"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-
-                android:background="@drawable/button_shape"
-                android:backgroundTint="@color/colorPrimary"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                 android:elevation="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -95,14 +75,6 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="55dp"
                     android:layout_marginTop="10dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    android:background="@drawable/take_photo_isbn_button"
-                    android:elevation="25dp"
-                    android:src="@drawable/ic_photo_camera_black_24dp"
-=======
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                     android:onClick="scanBarcode"
                     android:background="@drawable/take_photo_isbn_button"
                     android:elevation="25dp"
@@ -111,10 +83,6 @@
                     android:shadowDy="1"
                     android:shadowRadius="2"
                     android:src="@drawable/ic_photo_camera_24dp"
-<<<<<<< HEAD
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/editISBN"
@@ -131,14 +99,7 @@
                     android:layout_marginTop="8dp"
                     android:padding="8dp"
                     android:text="@string/automatic_or_manual_ISBN"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     android:textColor="@color/textIcons"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-                    android:textColor="@color/textIcons"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -156,21 +117,11 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/take_photo_isbn_button"
                 android:elevation="15dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                 android:shadowColor="@color/text_shadow"
                 android:shadowDx="15"
                 android:shadowDy="15"
                 android:shadowRadius="20"
                 android:textColor="@color/textIcons"
-<<<<<<< HEAD
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                 android:onClick="goToManualButtonClick"
                 android:text="@string/add_manual_button"
                 android:textAlignment="center"
@@ -181,8 +132,6 @@
         </android.support.constraint.ConstraintLayout>
 
     </ScrollView>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constrResume"
@@ -218,6 +167,8 @@
             android:layout_marginRight="100dp"
             android:textAlignment="center"
             android:hint="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:layout_editor_absoluteY="8dp"
             android:ellipsize="marquee"/>
@@ -333,8 +284,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
+
 </RelativeLayout>

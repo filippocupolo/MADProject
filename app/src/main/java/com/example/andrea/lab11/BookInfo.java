@@ -49,32 +49,7 @@ public class BookInfo implements Serializable {
 
     public BookInfo(Context applicationContext)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-       bookPhotos = new String[6];
-       photosQty = 0;
-       this.applicationContext = applicationContext;
-       File file;
-       for(int i = 0; i < 6; i++)
-        {
-
-            file = new File(applicationContext.getFilesDir(),Utilities.BooksImgsPath[i]);
-            if(file.exists())
-            {
-                bookPhotos[i] = file.getPath();
-
-            }
-        }
-
-
-=======
         imageList = new LinkedList<>();
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-        imageList = new LinkedList<>();
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
     }
 
     public String get_ISBN() {

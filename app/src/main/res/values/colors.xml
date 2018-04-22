@@ -2,14 +2,8 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <color name="colorAccent">@android:color/holo_orange_dark</color>
     <color name="colorToolBar">#0d47a1</color>
     <color name="colorTabs">#FFF</color>
-=======
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
     <color name="colorAccent">#ff9800</color>
     <color name="lightPrimaryColor">#C5CAE9</color>
     <color name="primaryText">#212121</color>
@@ -18,9 +12,4 @@
     <color name="divider">#BDBDBD</color>
     <color name="text_shadow">#7F000000</color>
     <color name="text_shadow_white">#FFFFFF</color>
-
-<<<<<<< HEAD
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 </resources>

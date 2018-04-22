@@ -1,5 +1,7 @@
 package com.example.andrea.lab11;
 
+//TODO loading page spinner
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;

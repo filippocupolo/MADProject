@@ -3,7 +3,6 @@ package com.example.andrea.lab11;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,26 +20,6 @@ import java.util.List;
 public class bookImageAdapter extends BaseAdapter{
 
     private Context appContext;
-    private Uri[] images;
-
-    public bookImageAdapter(Context context, Uri[] images)
-    {
-        appContext = context;
-        if (images==null){
-            this.images = new Uri[]{};
-        }else{
-            this.images = images;
-        }
-    private LinkedList<Bitmap> images;
-    private Uri drawableUri;
-    private String deBugTag;
-
-    public bookImageAdapter(Context context,LinkedList<Bitmap> images)
-    {
-        appContext = context;
-        this.images = images;
-        drawableUri = Uri.parse("android.resource://com.example.andrea.lab11/drawable/ic_add_button_24dp");
-        deBugTag = this.getClass().getName();
     private LinkedList<Bitmap> images;
     private Uri drawableUri;
     private String deBugTag;
@@ -55,27 +34,12 @@ public class bookImageAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return images.length;
-=======
         return images.size() + 1;
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-        return images.size() + 1;
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
     }
 
     @Override
     public Object getItem(int position) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        return images[position];
-=======
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
         return null;
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
     }
 
     @Override
@@ -90,26 +54,6 @@ public class bookImageAdapter extends BaseAdapter{
         {
             LayoutInflater li=(LayoutInflater) appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView=li.inflate(R.layout.activity_add_book_manual, null);
-<<<<<<< HEAD
-<<<<<<< HEAD
-            /*
-            imageView = new ImageView(appContext);
-            imageView.setLayoutParams(new ViewGroup.LayoutParams(85, 85));
-            imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-            imageView.setVisibility(View.VISIBLE);
-            if(position < 6)
-               imageView.setImageResource(R.drawable.ic_add_button_24dp);
-              */
-        }
-
-        ImageView imageView = (ImageView) convertView.findViewById(R.id.imageButton);
-        imageView.setLayoutParams(new ViewGroup.LayoutParams(180,180));
-        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        imageView.setVisibility(View.VISIBLE);
-        imageView.setImageURI(images[position]);
-=======
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 
         }
 
@@ -127,10 +71,6 @@ public class bookImageAdapter extends BaseAdapter{
         imageView.setFocusable(false);
         imageView.setFocusableInTouchMode(false);
         imageView.setClickable(false);
-<<<<<<< HEAD
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 
         return imageView;
     }

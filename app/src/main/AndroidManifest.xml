@@ -26,7 +26,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -47,12 +46,9 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
         <activity android:name=".insertBook"></activity>
         <activity android:name=".register"></activity>
         <activity android:name=".AddBookAutomatic"></activity>
         <activity android:name=".ScanActivity"></activity>
-
     </application>
-
 </manifest>

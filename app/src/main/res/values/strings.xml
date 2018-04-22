@@ -25,8 +25,6 @@
     <string name="book_overview">Book Overview</string>
     <string name="facebook_app_id">1668597253224052</string>
     <string name="fb_login_protocol_scheme">fb1668597253224052</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <string name="login">Sign In</string>
     <string name="register">Sign up!</string>
     <string name="confirm_pwd">Password confirmation</string>
@@ -47,10 +45,6 @@
     <string name="reset_email_sent">Reset e-mail sent!</string>
     <string name="reset_email_error">Error sending reset e-mail. Retry.</string>
     <string name="already_registered">Account already in use, please sign in</string>
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
     <string name="add_book">Add Book</string>
     <string name="automatic_or_manual_ISBN">Insert ISBN or scan it </string>
     <string name="add_manual_button">Insert book\'s info manually</string>
@@ -66,13 +60,5 @@
         <item>Good</item>
         <item>Perfect</item>
     </string-array>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <string name="logout">Log out</string>
-=======
-
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 </resources>

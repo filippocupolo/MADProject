@@ -23,8 +23,6 @@
     <string name="city_label_show">Vive a: </string>
     <string name="toast_EditProfile_onRequestPermissionsResult">Permesso per la fotocamera non concesso</string>
     <string name="book_overview">Panoramica Libro</string>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <string name="login">Accedi</string>
     <string name="register">Registrati!</string>
     <string name="confirm_pwd">Conferma Password</string>
@@ -45,10 +43,6 @@
     <string name="reset_email_sent">Mail di reset inviata!</string>
     <string name="reset_email_error">Errore nell\'inviare la mail di reset. Riprovare</string>
     <string name="already_registered">Account già in uso, effettua il login!</string>
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
     <string name="add_book">Aggiungi Libro</string>
     <string name="automatic_or_manual_ISBN">Inserisci ISBN o scannerizzalo</string>
     <string name="add_manual_button">Inserisci manualmente le informazioni sul libro</string>
@@ -64,13 +58,5 @@
         <item>Buone</item>
         <item>Perfette</item>
     </string-array>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <string name="logout">Log out</string>
-=======
-
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 </resources>

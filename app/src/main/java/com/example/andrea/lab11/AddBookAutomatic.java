@@ -1,14 +1,5 @@
 package com.example.andrea.lab11;
 
-import android.content.Intent;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Button;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -51,7 +42,7 @@ public class AddBookAutomatic extends AppCompatActivity {
     private Context context;
     private BookInfo book;
     private MyUser user;
-    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +64,7 @@ public class AddBookAutomatic extends AppCompatActivity {
                         return false;
                     }
                 });
+
     }
 
     public void goToManualButtonClick(View v){
@@ -80,41 +72,6 @@ public class AddBookAutomatic extends AppCompatActivity {
                 getApplicationContext(),
                 insertBook.class);
         startActivity(intent);
-    }
-
-    public boolean onTouchEvent(MotionEvent event) {
-
-        switch(event.getAction()) {
-            case MotionEvent.ACTION_DOWN: {
-                downX = event.getX();
-                downY = event.getY();
-            }
-            case MotionEvent.ACTION_UP: {
-                upX = event.getX();
-                upY = event.getY();
-
-                float deltaX = downX - upX;
-
-                // swipe horizontal?
-                if (Math.abs(deltaX) > 100) {
-                    // left or right
-                    if (deltaX < 0) {
-                        Log.d(this.getClass().getName(), "swipe");
-                        Intent intent = new Intent(
-                                getApplicationContext(),
-                                showProfile.class);
-                        startActivity(intent);
-
-                    }
-                    //if(deltaX > 0) { this.onRightToLeftSwipe(v); return super.onTouchEvent(event); }
-                } else {
-                    Log.i(this.getClass().getName(), "Swipe was only " + Math.abs(deltaX) + " long, need at least 100");
-                }
-
-            }
-
-        }
-        return super.onTouchEvent(event);
     }
 
     public void scanBarcode(View view){

@@ -10,24 +10,15 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.GestureDetector;
-<<<<<<< HEAD
-<<<<<<< HEAD
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
-=======
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.ImageView;
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 import android.widget.TabHost;
 import android.widget.TextView;
 import static android.graphics.drawable.Drawable.createFromPath;
@@ -37,14 +28,7 @@ public class showProfile extends AppCompatActivity{
 
     private MyUser myUser;
     private float downX, downY,upY, upX;
-<<<<<<< HEAD
-<<<<<<< HEAD
     private String previousActivity;
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,31 +37,6 @@ public class showProfile extends AppCompatActivity{
         setContentView(R.layout.show_profile);
 
         previousActivity = getIntent().getStringExtra("caller");
-
-        //set editButton
-        /*ImageView editButton = findViewById(R.id.imageViewEditButton);
-        editButton.setOnClickListener(v -> {
-            String caller = getIntent().getStringExtra("caller");
-
-            if(caller!="editProfile") {
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        editProfile.class
-                );
-                intent.putExtra("caller", "showProfile");
-                startActivity(intent);
-            }
-            else{
-                onBackPressed();
-            }
-<<<<<<< HEAD
-        });*/
-=======
-        });
-<<<<<<< HEAD
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 
     }
 
@@ -175,8 +134,6 @@ public class showProfile extends AppCompatActivity{
         }
         return super.onTouchEvent(event);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
     public void showPopup(View v){
         PopupMenu popup = new PopupMenu(getApplicationContext(), v);
@@ -205,8 +162,4 @@ public class showProfile extends AppCompatActivity{
             }
         });
     }
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 }

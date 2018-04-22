@@ -34,31 +34,6 @@
         android:textSize="26sp"
         android:layout_marginStart="20dp" />
 
-    <ImageButton
-<<<<<<< HEAD
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:elevation="30dp"
-        style="?android:attr/actionOverflowButtonStyle"
-        android:onClick="showPopup" />
-=======
-        android:id="@+id/sign_out_button"
-        android:layout_width="@dimen/editShowIcon_w"
-        android:layout_height="@dimen/editShowIcon_h"
-        android:layout_alignBaseline="@id/appToolbar"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="30dp"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
-        android:background="@android:color/transparent"
-        android:elevation="20dp"
-        android:src="@drawable/ic_clear_red_24dp"
-        android:visibility="visible" />
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-
-
     <android.support.design.widget.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
@@ -66,26 +41,11 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-<<<<<<< HEAD
-<<<<<<< HEAD
         android:background="#0d47a1"
         android:elevation="10dp"
         android:textColor="@color/colorTabs"
-        app:tabIndicatorColor="@android:color/holo_orange_dark"
-        app:tabSelectedTextColor="@android:color/holo_orange_dark">
-=======
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-        android:background="@color/colorPrimaryDark"
-        android:elevation="10dp"
-        android:textColor="@color/textIcons"
-        app:tabTextColor="@color/textIcons"
         app:tabIndicatorColor="@color/colorAccent"
         app:tabSelectedTextColor="@color/colorAccent">
-<<<<<<< HEAD
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 
         <!-- <android.support.design.widget.TabItem
             android:text="@string/home"

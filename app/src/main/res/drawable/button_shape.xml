@@ -2,14 +2,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle" android:padding="10dp">
     <!-- you can use any color you want I used here gray color-->
-<<<<<<< HEAD
-<<<<<<< HEAD
     <solid android:color="#1976d2"/>
-=======
-    <solid android:color="@color/colorAccent"/>
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-    <solid android:color="@color/colorAccent"/>
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
     <corners android:radius="10dp"/>
 </shape>

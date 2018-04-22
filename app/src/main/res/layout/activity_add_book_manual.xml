@@ -225,14 +225,7 @@
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="8dp"
                     android:text="Edition Year"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     android:textColor="@color/primaryText"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-                    android:textColor="@color/primaryText"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -276,14 +269,7 @@
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="8dp"
                     android:text="Conditions"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     android:textColor="@color/primaryText"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-                    android:textColor="@color/primaryText"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -296,14 +282,7 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="30dp"
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     android:spinnerMode="dropdown"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
-                    android:spinnerMode="dropdown"
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
@@ -324,11 +303,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayoutConditions" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
 
             <Button
                 android:id="@+id/uploadButton"
@@ -346,11 +320,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/addBookManualGrid" />
                 tools:layout_editor_absoluteX="148dp"
                 tools:layout_editor_absoluteY="556dp" />
-<<<<<<< HEAD
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-=======
->>>>>>> 7ac6f863517a60ba0a259e459b431bee73b9bd15
-
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
