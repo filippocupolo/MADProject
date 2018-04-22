@@ -14,7 +14,7 @@
         <RelativeLayout
             android:id="@+id/login_form_wrapper"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginEnd="@dimen/margin_left_right"
             android:layout_marginLeft="@dimen/margin_left_right"
             android:layout_marginRight="@dimen/margin_left_right"
@@ -24,8 +24,8 @@
                 android:id="@+id/logo"
                 android:layout_width="match_parent"
                 android:layout_height="136dp"
-                android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="26dp"
                 android:background="@android:color/transparent"
@@ -35,8 +35,8 @@
                 android:id="@+id/login_error"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
                 android:layout_marginBottom="3dp"
                 android:ems="10"
                 android:labelFor="@id/login_error"
@@ -52,9 +52,10 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@id/login_error"
-                android:layout_marginLeft="60dp"
                 android:layout_marginBottom="15dp"
-                android:layout_marginTop="0dp" />
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@id/facebook_sign_in_button" />
 
             <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/facebook_sign_in_button"
@@ -63,10 +64,11 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_below="@id/login_error"
-                android:layout_centerHorizontal="true"
-                android:layout_marginRight="60dp"
-                android:layout_marginTop="3.6dp"
+                android:layout_centerHorizontal="false"
                 android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3.6dp"
                 android:paddingBottom="7dp"
                 android:paddingTop="7dp"
                 android:textSize="15sp"
@@ -121,20 +123,21 @@
                 android:clickable="true"
                 android:onClick="reset_password"
                 android:text="@string/pwd_forgotten"
-                android:textColor="@color/colorToolBar"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/reset_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/login_pwd"
+                android:layout_below="@id/pwd_forgotten_link"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:clickable="true"
+
                 android:onClick="reset_login"
                 android:text="@string/back_to_login"
-                android:textColor="@color/colorToolBar"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="14sp" />
 
             <RelativeLayout
@@ -147,11 +150,12 @@
                     android:id="@+id/login_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/button_border"
                     android:onClick="loginEmailUser"
                     android:text="@string/login"
-                    android:textColor="@android:color/white" />
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/reset_pwd_button"
@@ -162,7 +166,7 @@
                     android:background="@drawable/button_border"
                     android:onClick="resetPasswordButton"
                     android:text="@string/reset"
-                    android:textColor="@android:color/white" />
+                    android:textColor="#FFFFFF" />
 
                 <TextView
                     android:id="@+id/register_link"
@@ -172,7 +176,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
                     android:text="@string/register"
-                    android:textColor="@color/colorToolBar"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp" />
             </RelativeLayout>
 

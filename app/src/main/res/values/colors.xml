@@ -2,8 +2,6 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorToolBar">#0d47a1</color>
-    <color name="colorTabs">#FFF</color>
     <color name="colorAccent">#ff9800</color>
     <color name="lightPrimaryColor">#C5CAE9</color>
     <color name="primaryText">#212121</color>
