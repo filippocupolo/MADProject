@@ -48,7 +48,8 @@
         </activity>
         <activity android:name=".insertBook"></activity>
         <activity android:name=".register"></activity>
-        <activity android:name=".AddBookAutomatic"></activity>
+        <activity android:name=".AddBookAutomatic"
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity android:name=".ScanActivity"></activity>
     </application>
 </manifest>

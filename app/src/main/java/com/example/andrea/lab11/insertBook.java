@@ -80,12 +80,13 @@ public class insertBook extends AppCompatActivity{
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if(hasFocus && error){
+                    /*
                     ISBNView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
                     titleView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
                     authorView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
                     publisherView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
                     editionView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
-
+*/
                     error = false;
                 }
             }

@@ -112,6 +112,9 @@ public class editProfile extends AppCompatActivity {
         cityView.setText(myUser.getCity(), TextView.BufferType.NORMAL);
         cityView.setOnFocusChangeListener(focusListener);
 
+        TextView t = findViewById(R.id.back_toolbar_text);
+        t.setText(R.string.edit_profile);
+
         //set changeImageButton
         ImageView changeImageButton = findViewById(R.id.imageViewEditButton);
         changeImageButton.setOnClickListener(v -> selectedImageUri = Utilities.requestImage(activityCompat,activity,CAMERA_REQUEST_CODE,PICK_IMAGE));
