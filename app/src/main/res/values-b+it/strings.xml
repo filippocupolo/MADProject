@@ -59,4 +59,5 @@
         <item>Perfette</item>
     </string-array>
     <string name="logout">Log out</string>
+    <string name="saveEditProfileButton">Salva</string>
 </resources>
