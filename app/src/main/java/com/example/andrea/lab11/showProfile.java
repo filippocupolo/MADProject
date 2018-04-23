@@ -26,6 +26,8 @@ import static android.graphics.drawable.Drawable.createFromPath;
 
 public class showProfile extends AppCompatActivity{
 
+    //todo open progileImage full screen
+
     private MyUser myUser;
     private float downX, downY,upY, upX;
     private String previousActivity;

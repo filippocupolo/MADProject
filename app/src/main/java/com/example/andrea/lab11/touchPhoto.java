@@ -11,6 +11,7 @@ import java.lang.Math;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 //TODO probabilmente eliminare questa classe
@@ -35,7 +36,7 @@ public class touchPhoto implements OnTouchListener {
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-        ImageView view = (ImageView) v;
+        ImageButton view = (ImageButton) v;
         // Dump touch event to log
         //dumpEvent(event);
 

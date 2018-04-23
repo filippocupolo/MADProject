@@ -1,8 +1,10 @@
 package com.example.andrea.lab11;
 
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,9 +25,12 @@ public class bookImageAdapter extends BaseAdapter{
     private LinkedList<Bitmap> images;
     private Uri drawableUri;
     private String deBugTag;
+    private Boolean allImages;
+    final private int MAX_IMAGES = 4;
 
-    public bookImageAdapter(Context context,LinkedList<Bitmap> images)
+    public bookImageAdapter(Context context, LinkedList<Bitmap> images )
     {
+        allImages = false;
         appContext = context;
         this.images = images;
         drawableUri = Uri.parse("android.resource://com.example.andrea.lab11/drawable/ic_add_button_24dp");
@@ -34,7 +39,16 @@ public class bookImageAdapter extends BaseAdapter{
 
     @Override
     public int getCount() {
-        return images.size() + 1;
+
+        int imagesSize = images.size();
+        if(imagesSize == MAX_IMAGES){
+            allImages = true;
+            return imagesSize;
+        }else{
+            allImages = false;
+            return images.size() + 1;
+        }
+
     }
 
     @Override
@@ -53,32 +67,40 @@ public class bookImageAdapter extends BaseAdapter{
         if(convertView == null)
         {
             LayoutInflater li=(LayoutInflater) appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView=li.inflate(R.layout.activity_add_book_manual, null);
+            convertView=li.inflate(R.layout.book_image_adapter_layout, parent,false);
 
         }
 
-        ImageView imageView = convertView.findViewById(R.id.imageButton);
-        imageView.setLayoutParams(new ViewGroup.LayoutParams(180,180));
-        imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
-        imageView.setVisibility(View.VISIBLE);
+        ImageButton bookPhoto = convertView.findViewById(R.id.bookPhoto);
+        ImageButton deleteButton = convertView.findViewById(R.id.deleteButton);
 
-        if(position==getCount()-1){
-            imageView.setImageURI(drawableUri);
+        if(position==getCount()-1 && !allImages){
+            deleteButton.setVisibility(View.GONE);
+            bookPhoto.setImageURI(drawableUri);
         }else{
-            imageView.setImageBitmap(images.get(position));
+            deleteButton.setVisibility(View.VISIBLE);
+            bookPhoto.setImageBitmap(images.get(position));
         }
 
-        imageView.setFocusable(false);
-        imageView.setFocusableInTouchMode(false);
-        imageView.setClickable(false);
+        bookPhoto.setFocusable(false);
+        bookPhoto.setFocusableInTouchMode(false);
+        bookPhoto.setClickable(false);
 
-        return imageView;
+        bookPhoto.setScaleType(ImageView.ScaleType.CENTER_CROP);
+
+        deleteButton.setImageResource(R.drawable.ic_delete_black_24dp);
+        deleteButton.setOnClickListener(e->{
+            removeImage(position);
+        });
+
+        return convertView;
     }
 
     public void addImage(Bitmap bitmap){
         //add element
         images.push(bitmap);
         notifyDataSetChanged();
+
     }
 
     public void removeImage(int position){

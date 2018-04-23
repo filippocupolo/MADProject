@@ -105,6 +105,7 @@ public class insertBook extends AppCompatActivity{
         myAdapter = new bookImageAdapter(this,book.getImageList());
         bookImageGrid.setAdapter(myAdapter);
 
+
         //Listens to when a component of the AdapterView gets pressed. In case it's the add button, it asks the user to choose a new photo, otherwise it zooms in the photo already saved.
         bookImageGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -114,7 +115,7 @@ public class insertBook extends AppCompatActivity{
                     selectedImageUri = Utilities.requestImage(compatActivity, activity, CAMERA_REQUEST_CODE, PICK_IMAGE);
 
                 }else{
-                    view.setOnTouchListener(new touchPhoto());
+                    //view.setOnTouchListener(new touchPhoto());
                 }
             }
         });
