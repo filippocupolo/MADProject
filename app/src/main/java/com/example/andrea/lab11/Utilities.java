@@ -176,7 +176,7 @@ public class Utilities {
                     showProfile.class
             );
             intent.putExtra("caller", callerClass);
-            context.startActivity(intent);
+            activity.startActivity(intent);
         }
     }
 
@@ -188,8 +188,8 @@ public class Utilities {
                         context,
                         editProfile.class
                 );
-                intent.putExtra("caller", callerClass.toString());
-                context.startActivity(intent);
+                intent.putExtra("caller", callerClass);
+                activity.startActivity(intent);
             } else {
                 activity.onBackPressed();
             }
@@ -199,8 +199,8 @@ public class Utilities {
                     context,
                     editProfile.class
             );
-            intent.putExtra("caller", callerClass.toString());
-            context.startActivity(intent);
+            intent.putExtra("caller", callerClass);
+            activity.startActivity(intent);
         }
     }
 
@@ -212,8 +212,8 @@ public class Utilities {
                         context,
                         AddBookAutomatic.class
                 );
-                intent.putExtra("caller", callerClass.toString());
-                context.startActivity(intent);
+                intent.putExtra("caller", callerClass);
+                activity.startActivity(intent);
             }
             else{
                 activity.onBackPressed();
@@ -223,8 +223,8 @@ public class Utilities {
                     context,
                     AddBookAutomatic.class
             );
-            intent.putExtra("caller", callerClass.toString());
-            context.startActivity(intent);
+            intent.putExtra("caller", callerClass);
+            activity.startActivity(intent);
         }
 
     }

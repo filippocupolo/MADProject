@@ -67,7 +67,6 @@ public class editProfile extends AppCompatActivity {
         doubleBackToExitPressedOnce = false;
 
         previousActivity = getIntent().getStringExtra("caller");
-        Log.d("popup", previousActivity);
 
         //create MyUser
         myUser = new MyUser(getApplicationContext());
@@ -140,9 +139,7 @@ public class editProfile extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        String caller = getIntent().getStringExtra("caller");
-
-        if(caller!="showProfile"){
+        if(previousActivity.equals("login")){
 
             if (doubleBackToExitPressedOnce) {
 
@@ -254,35 +251,6 @@ public class editProfile extends AppCompatActivity {
         return !error;
     }
 
-    public void showPopup(View v){
-        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.general_menu, popup.getMenu());
-
-        //hide edit profile option - useless
-        popup.getMenu().findItem(R.id.menu_edit_profile).setVisible(false);
-        popup.show();
-
-        //click listener
-        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.menu_logout:
-                        Utilities.signOut(getApplicationContext());
-                        return true;
-                    case R.id.menu_show_profile:
-                        //Log.d("popup", "ok2 " + getIntent().getStringExtra("caller"));
-                        Utilities.goToShowProfile(getApplicationContext(), previousActivity,
-                                "editProfile", editProfile.this);
-                        return true;
-                    default:
-                        return false;
-                }
-            }
-        });
-    }
-
     public void saveButtonClick(View view){
 
         if(saveUser()){
@@ -296,6 +264,7 @@ public class editProfile extends AppCompatActivity {
                 );
                 intent.putExtra("caller", "editProfile");
                 startActivity(intent);
+                finish();
             }
             else {
                 onBackPressed();

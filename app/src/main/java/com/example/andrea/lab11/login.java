@@ -339,15 +339,25 @@ public class login extends AppCompatActivity implements
             user = new MyUser(getApplicationContext());
             user.setEmail(account.getEmail());
             user.setUserID(account.getUid());
-
             user.commit();
 
-            Intent intent = new Intent(
-                    getApplicationContext(),
-                    editProfile.class
-            );
-            intent.putExtra("caller", "login");
+            Intent intent;
+            if(user.isCompleted()){
+                intent = new Intent(
+                        getApplicationContext(),
+                        showProfile.class
+                );
+                intent.putExtra("caller", "login");
+            }else {
+                intent = new Intent(
+                        getApplicationContext(),
+                        editProfile.class
+                );
+                intent.putExtra("caller", "login");
+            }
+
             startActivity(intent);
+            finish();
         }
         else{
             Log.d("steps", "Google_updateUi null");

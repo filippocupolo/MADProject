@@ -9,8 +9,5 @@
     <item android:id="@+id/menu_edit_profile"
         android:title="@string/edit_profile"
         app:showAsAction="always|withText"/>
-    <item android:id="@+id/menu_show_profile"
-        android:title="@string/show_profile"
-        app:showAsAction="always|withText"/>
 
 </menu>

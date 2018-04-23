@@ -50,6 +50,7 @@ public class register extends AppCompatActivity {
         );
         intent.putExtra("caller", "register");
         startActivity(intent);
+        finish();
     }
 
     public void registerOnClick(View v){
@@ -98,6 +99,7 @@ public class register extends AppCompatActivity {
         );
         intent.putExtra("info", "register_successful");
         startActivity(intent);
+        finish();
     }
 
     private void updateUIWithErrors(String text){

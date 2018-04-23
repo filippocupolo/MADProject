@@ -137,6 +137,7 @@ public class showProfile extends AppCompatActivity{
         }
     }
 
+    /*
     //TODO make swipe properly this is just a simple way
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -172,15 +173,12 @@ public class showProfile extends AppCompatActivity{
 
         }
         return super.onTouchEvent(event);
-    }
+    }*/
 
     public void showPopup(View v){
         PopupMenu popup = new PopupMenu(getApplicationContext(), v);
         MenuInflater inflater = popup.getMenuInflater();
         inflater.inflate(R.menu.general_menu, popup.getMenu());
-
-        //hide show profile option - useless
-        popup.getMenu().findItem(R.id.menu_show_profile).setVisible(false);
 
         popup.show();
         popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {

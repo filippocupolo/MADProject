@@ -164,7 +164,7 @@ public class AddBookAutomatic extends AppCompatActivity {
                     Log.e(deBugTag,e.getMessage());
 
                     //TODO cambia stringa toast
-                    Toast.makeText(context,"impossibile trovare libro aggiungi libro manualmente",Toast.LENGTH_SHORT);
+                    Toast.makeText(context,"impossibile trovare libro aggiungi libro manualmente",Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -198,10 +198,6 @@ public class AddBookAutomatic extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.menu_logout:
                         Utilities.signOut(getApplicationContext());
-                        return true;
-                    case R.id.menu_show_profile:
-                        Utilities.goToShowProfile(getApplicationContext(), previousActivity,
-                                "addBookAutomatic", AddBookAutomatic.this);
                         return true;
                     case R.id.menu_edit_profile:
                         //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
