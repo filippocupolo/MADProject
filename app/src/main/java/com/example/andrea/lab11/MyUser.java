@@ -136,6 +136,13 @@ public class MyUser {
         }
     }
 
+    public boolean isCompleted(){
+        if(email==null || name==null || surname==null || city==null)
+            return false;
+        else
+            return true;
+    }
+
     private void uploadImage(File file) {
 
         //TODO modify toast

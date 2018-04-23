@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <include layout="@layout/toolbar" android:id="@+id/edit_profile_toolbar_Land"
+    <include layout="@layout/back_button_toolbar" android:id="@+id/edit_profile_toolbar_Land"
         />
 
     <ImageButton
@@ -140,6 +140,7 @@
             <EditText
                 android:id="@+id/emailEdit"
                 android:layout_width="match_parent"
+                android:focusable="false"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/surnameEdit"
                 android:layout_alignRight="@+id/surnameEdit"
@@ -172,6 +173,18 @@
                 android:padding="8dp"
                 android:imeOptions="actionDone"
                 android:maxLength="300"/>
+
+            <Button
+                android:id="@+id/saveProfileButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/bioEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/my_border"
+                android:onClick="saveButtonClick"
+                android:text="@string/saveEditProfileButton" />
 
         </RelativeLayout>
     </ScrollView>

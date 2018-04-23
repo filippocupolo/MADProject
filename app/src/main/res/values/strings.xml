@@ -62,4 +62,5 @@
     </string-array>
     <string name="logout">Log out</string>
     <string name="or">Or</string>
+    <string name="saveEditProfileButton">Save</string>
 </resources>
