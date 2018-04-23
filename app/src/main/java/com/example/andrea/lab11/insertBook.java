@@ -43,6 +43,7 @@ public class insertBook extends AppCompatActivity{
     private spinnerListener SL;
     private String deBugTag;
     private bookImageAdapter myAdapter;
+    private boolean error;
 
     //EdiTexts
     private EditText ISBNView;
@@ -55,53 +56,81 @@ public class insertBook extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //initializations
         deBugTag = this.getClass().getName();
-
         this.compatActivity = compatActivity;
         this.activity = this;
+        error = false;
 
+        //set fields
         setContentView(R.layout.activity_add_book_manual);
 
+        //get Book from previous activity
         Intent intent = getIntent();
-
         book = (BookInfo)intent.getSerializableExtra("book");
         if(book == null){
             book = new BookInfo(getApplicationContext());
         }
-        myUser = new MyUser(getApplicationContext());
-        SL = new spinnerListener(getApplicationContext(),book);
 
+        //get user
+        myUser = new MyUser(getApplicationContext());
+
+        //set focus listener
+        View.OnFocusChangeListener focusListener = new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus && error){
+                    ISBNView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
+                    titleView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
+                    authorView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
+                    publisherView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
+                    editionView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
+
+                    error = false;
+                }
+            }
+        };
+
+        //set ISBN
         ISBNView = findViewById(R.id.ISBNaddManual);
         ISBNView.setText(book.get_ISBN(), TextView.BufferType.NORMAL);
+        ISBNView.setOnFocusChangeListener(focusListener);
 
+        //set title
         titleView = findViewById(R.id.TitleAddManual);
         titleView.setText(book.getBookTitle(), TextView.BufferType.NORMAL);
+        titleView.setOnFocusChangeListener(focusListener);
 
+        //set author
         authorView = findViewById(R.id.AuthorAddManual);
         authorView.setText(book.getAuthor(), TextView.BufferType.NORMAL);
+        authorView.setOnFocusChangeListener(focusListener);
 
+        //set publisher
         publisherView = findViewById(R.id.PublisherAddManual);
         publisherView.setText(book.getPublisher(), TextView.BufferType.NORMAL);
+        publisherView.setOnFocusChangeListener(focusListener);
 
         //TODO make list
+        //set edition year
         editionView = findViewById(R.id.EditionYearAddManual);
         editionView.setText(Integer.toString(book.getEditionYear()), TextView.BufferType.NORMAL);
+        editionView.setOnFocusChangeListener(focusListener);
 
+        //set conditions
+        SL = new spinnerListener(getApplicationContext(),book);
         Spinner spinner = (Spinner) findViewById(R.id.conditions_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.conditions_array, android.R.layout.simple_spinner_item);
         // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(SL);
 
+        //set book photos
         GridView bookImageGrid = findViewById(R.id.addBookManualGrid);
-
-        //TODO make a limit a images
-        //TODO delete image
         myAdapter = new bookImageAdapter(this,book.getImageList());
         bookImageGrid.setAdapter(myAdapter);
 
@@ -120,6 +149,7 @@ public class insertBook extends AppCompatActivity{
             }
         });
 
+        //set back button toolbar
         ImageButton backButton = findViewById(R.id.imageButton);
         backButton.setOnClickListener((parent) -> {
             onBackPressed();
@@ -174,6 +204,45 @@ public class insertBook extends AppCompatActivity{
         book.loadBook();
 
         onBackPressed();
+    }
+
+    private boolean canUpload(){
+
+        //check if ISBN is empty and in case put red background
+        if(ISBNView.getText().length()==0){
+            ISBNView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
+        }
+
+        //check if title is empty and in case put red background
+        if(titleView.getText().length()==0){
+            titleView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
+        }
+
+        //check if author is empty and in case put red background
+        if(authorView.getText().length()==0){
+            authorView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
+        }
+
+        //check if publisher is empty and in case put red background
+        if(publisherView.getText().length()==0){
+            publisherView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
+        }
+
+        //check if edition year is empty and in case put red background
+        if(editionView.getText().length()==0){
+            editionView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
+        }
+
+        //todo fai stringa
+        if(error)
+            Toast.makeText(this,"all fields are mandatory",Toast.LENGTH_SHORT).show();
+
+        return !error;
     }
 
 }
