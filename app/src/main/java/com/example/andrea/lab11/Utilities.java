@@ -191,7 +191,6 @@ public class Utilities {
                 intent.putExtra("caller", callerClass.toString());
                 context.startActivity(intent);
             } else {
-                Log.d("log", "ok1");
                 activity.onBackPressed();
             }
         }
@@ -203,6 +202,31 @@ public class Utilities {
             intent.putExtra("caller", callerClass.toString());
             context.startActivity(intent);
         }
+    }
+
+    public static void goToAddBook(Context context, String previousCaller, String callerClass, Activity activity){
+
+        if(previousCaller != null){
+            if(!previousCaller.equals("addBookAutomatic")){
+                Intent intent = new Intent(
+                        context,
+                        AddBookAutomatic.class
+                );
+                intent.putExtra("caller", callerClass.toString());
+                context.startActivity(intent);
+            }
+            else{
+                activity.onBackPressed();
+            }
+        }else{
+            Intent intent = new Intent(
+                    context,
+                    AddBookAutomatic.class
+            );
+            intent.putExtra("caller", callerClass.toString());
+            context.startActivity(intent);
+        }
+
     }
 
 

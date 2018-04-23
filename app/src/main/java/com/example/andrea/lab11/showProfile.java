@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.gesture.GestureOverlayView;
 import android.graphics.drawable.Drawable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,6 +41,42 @@ public class showProfile extends AppCompatActivity{
 
         previousActivity = getIntent().getStringExtra("caller");
 
+        //tab listener
+        TabLayout tabs = findViewById(R.id.tabLayout);
+        tabs.getTabAt(0).select();
+
+        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                switch (tab.getText().toString()){
+                    case "Profilo":
+
+                        break;
+                    case "AddBook":
+                        Utilities.goToAddBook(getApplicationContext(), previousActivity,
+                                "showProfile", showProfile.this);
+                        break;
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+                Log.d("tab", "edit-unselected");
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+                Log.d("tab", "edit-reselected" + tab.getText());
+            }
+        });
+
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        TabLayout tabs = findViewById(R.id.tabLayout);
+        tabs.getTabAt(0).select();
     }
 
     @Override
