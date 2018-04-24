@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.BaseAdapter;
+import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.graphics.drawable.Drawable;
@@ -86,7 +87,7 @@ public class bookImageAdapter extends BaseAdapter{
         bookPhoto.setFocusableInTouchMode(false);
         bookPhoto.setClickable(false);
 
-        bookPhoto.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        bookPhoto.setScaleType(ImageView.ScaleType.FIT_XY);
 
         deleteButton.setImageResource(R.drawable.ic_delete_black_24dp);
         deleteButton.setOnClickListener(e->{

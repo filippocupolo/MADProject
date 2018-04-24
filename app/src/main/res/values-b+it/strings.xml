@@ -61,4 +61,8 @@
     <string name="logout">Log out</string>
     <string name="or">Oppure</string>
     <string name="saveEditProfileButton">Salva</string>
+    <string name="click_to_exit">Clicca indietro un\'altra volta per uscire</string>
+    <string name="mandatory_fields">Nome, Cognome e Città sono obbligatori</string>
+    <string name="all_fields_mandatory">Tutti i campi sono obbligatori</string>
+    <string name="camera_permission">Per proseguire devi acconsentire all\'utilizzo della fotocamera</string>
 </resources>

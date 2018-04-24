@@ -1,6 +1,5 @@
 package com.example.andrea.lab11;
 
-//TODO loading page spinner
 //todo controllare che per tutti i toast venga chiamato il .show()
 
 import android.app.Activity;
@@ -98,7 +97,7 @@ public class editProfile extends AppCompatActivity {
         surnameView.setOnFocusChangeListener(focusListener);
 
         //set email
-        EditText emailView = findViewById(R.id.emailEdit);
+        TextView emailView = findViewById(R.id.emailEdit);
         emailView.setText(myUser.getEmail(), TextView.BufferType.NORMAL);
 
         //set biography
@@ -153,8 +152,7 @@ public class editProfile extends AppCompatActivity {
 
             doubleBackToExitPressedOnce = true;
 
-            //todo make string
-            Toast.makeText(this, "Please click BACK again to exit", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,  getString(R.string.click_to_exit), Toast.LENGTH_SHORT).show();
 
             //after 2 seconds reset doubleBackToExitPressedOnce to false
             new Handler().postDelayed(new Runnable() {
@@ -244,9 +242,8 @@ public class editProfile extends AppCompatActivity {
             error = true;
         }
 
-        //todo fai stringa
         if(error)
-            Toast.makeText(this,"name, surname and city are mandatory",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.mandatory_fields),Toast.LENGTH_SHORT).show();
 
         return !error;
     }
