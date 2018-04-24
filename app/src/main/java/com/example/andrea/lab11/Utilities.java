@@ -15,7 +15,11 @@ import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.widget.PopupMenu;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.facebook.login.LoginManager;
@@ -23,6 +27,8 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import java.io.File;
 import java.io.IOException;
+
+import static android.support.constraint.Constraints.TAG;
 
 
 /**
@@ -229,6 +235,22 @@ public class Utilities {
 
     }
 
+    public static void loading_and_blur_background(View v, ProgressBar spinner){
+        AlphaAnimation alpha = new AlphaAnimation(0.6F, 0.6F);
+        alpha.setDuration(0); // Make animation instant
+        alpha.setFillAfter(true);
+        spinner.setVisibility(View.VISIBLE);
+        v.startAnimation(alpha);
+        return;
+    }
 
+    public static void show_background(View v, ProgressBar spinner){
+        AlphaAnimation alpha = new AlphaAnimation(1F, 1F);
+        alpha.setDuration(0); // Make animation instant
+        alpha.setFillAfter(true);
+        spinner.setVisibility(View.GONE);
+        v.startAnimation(alpha);
+        return;
+    }
 
 }

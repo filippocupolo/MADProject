@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -54,6 +56,8 @@ public class login extends AppCompatActivity implements
     private static final String TAG = "login";
     private EditText email;
     private EditText pwd;
+    private ProgressBar spinner;
+    private RelativeLayout layout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +66,12 @@ public class login extends AppCompatActivity implements
 
         //set view
         setContentView(R.layout.login);
+
+        //hide spinner
+        spinner = findViewById(R.id.progressBarLogin);
+        spinner.setVisibility(View.GONE);
+
+        layout = findViewById(R.id.login_form_wrapper);
 
         //HIDE SOME ELEMENTS
         findViewById(R.id.reset_login).setVisibility(View.GONE);
@@ -186,6 +196,8 @@ public class login extends AppCompatActivity implements
             return;
         }
 
+        Utilities.loading_and_blur_background(layout, spinner);
+
         String email = this.email.getText().toString();
         String password = this.pwd.getText().toString();
 
@@ -200,15 +212,18 @@ public class login extends AppCompatActivity implements
                             //check if email has been confirmed
                             if (user.isEmailVerified()) {
                                 Log.d(TAG, "ok3");
+
                                 updateUI(user);
                             }
                             else{
                                 Log.d(TAG, "ok2");
+
                                 updateUIWithErrors(getString(R.string.verify_email));
                             }
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
+
                             updateUIWithErrors(getString(R.string.unknown_user));
                         }
                     }
@@ -271,7 +286,7 @@ public class login extends AppCompatActivity implements
     //called when the access token is issued correctly
     private void handleFacebookAccessToken(AccessToken token) {
         Log.d("steps", "handleFacebookAccessToken:" + token.getToken());
-
+        Utilities.loading_and_blur_background(layout, spinner);
         AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -297,6 +312,8 @@ public class login extends AppCompatActivity implements
     @Override
     public void onClick(View v) {
         Log.d("steps", "Google_onClick");
+        Utilities.loading_and_blur_background(layout, spinner);
+
         switch (v.getId()) {
             case R.id.google_sign_in_button:
                 signIn();
@@ -306,6 +323,7 @@ public class login extends AppCompatActivity implements
 
     //intent to select a google account
     private void signIn() {
+        Utilities.show_background(layout, spinner);
         Log.d("steps", "Google_signIn");
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -313,6 +331,7 @@ public class login extends AppCompatActivity implements
 
     private void firebaseAuthWithGoogle(GoogleSignInAccount acct) {
         Log.d("steps", "firebaseAuthWithGoogle");
+        Utilities.loading_and_blur_background(layout, spinner);
         AuthCredential credential = GoogleAuthProvider.getCredential(acct.getIdToken(), null);
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -321,6 +340,7 @@ public class login extends AppCompatActivity implements
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("steps", "signInWithCredential:success");
+
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateUI(user);
                         } else {
@@ -334,6 +354,9 @@ public class login extends AppCompatActivity implements
 
     /*----- UPDATE UI --- */
     private void updateUI(@Nullable FirebaseUser account){
+
+        Utilities.show_background(layout, spinner);
+
         if (account != null) {
 
             user = new MyUser(getApplicationContext());
@@ -365,6 +388,7 @@ public class login extends AppCompatActivity implements
     }
 
     private void updateUIWithErrors(String text){
+        Utilities.show_background(layout, spinner);
         //set error message on the login screen
         TextView errorMessage = findViewById(R.id.login_error);
         errorMessage.setText(text);

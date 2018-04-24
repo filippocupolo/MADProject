@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.gesture.GestureOverlayView;
 import android.graphics.drawable.Drawable;
+import android.media.Image;
+import android.os.Build;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.MotionEventCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +17,8 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.view.MotionEvent;
@@ -23,6 +27,7 @@ import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
 import static android.graphics.drawable.Drawable.createFromPath;
+import static android.support.constraint.Constraints.TAG;
 
 
 public class showProfile extends AppCompatActivity{
@@ -33,6 +38,7 @@ public class showProfile extends AppCompatActivity{
     private MyUser myUser;
     private float downX, downY,upY, upX;
     private String previousActivity;
+    private String fullScreenInd;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -126,6 +132,7 @@ public class showProfile extends AppCompatActivity{
 
         //set image
         ImageView profileView = findViewById(R.id.imageViewShow);
+
         if( myUser.getImage() == null){
 
             //if there is not a profile image load the default one
@@ -200,4 +207,5 @@ public class showProfile extends AppCompatActivity{
             }
         });
     }
+
 }

@@ -18,7 +18,7 @@
         android:elevation="10dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
 
-    
+
     <TextView
         android:id="@+id/appName"
         android:layout_width="wrap_content"
