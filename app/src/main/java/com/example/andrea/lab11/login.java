@@ -1,16 +1,14 @@
 package com.example.andrea.lab11;
 
-import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -28,20 +26,21 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
-import com.google.firebase.auth.UserInfo;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
+
 
 //TODO modifica database solo autenticati
 
@@ -58,11 +57,17 @@ public class login extends AppCompatActivity implements
     private EditText pwd;
     private ProgressBar spinner;
     private RelativeLayout layout;
+    private String deBugTag;
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        deBugTag = this.getClass().getName();
+
         mAuth = FirebaseAuth.getInstance();
+        context = getApplicationContext();
 
         //set view
         setContentView(R.layout.login);
@@ -355,36 +360,110 @@ public class login extends AppCompatActivity implements
     /*----- UPDATE UI --- */
     private void updateUI(@Nullable FirebaseUser account){
 
-        Utilities.show_background(layout, spinner);
-
         if (account != null) {
 
-            user = new MyUser(getApplicationContext());
-            user.setEmail(account.getEmail());
-            user.setUserID(account.getUid());
-            user.commit();
-
             Intent intent;
-            if(user.isCompleted()){
-                intent = new Intent(
-                        getApplicationContext(),
-                        showProfile.class
-                );
-                intent.putExtra("caller", "login");
-            }else {
-                intent = new Intent(
-                        getApplicationContext(),
-                        editProfile.class
-                );
-                intent.putExtra("caller", "login");
-            }
+            user = new MyUser(getApplicationContext());
 
-            startActivity(intent);
-            finish();
+            if(user.getUserID()!=null){
+                if(user.getUserID().equals(account.getUid())){
+                    //user already on the phone
+                    intent = new Intent(
+                            getApplicationContext(),
+                            showProfile.class
+                    );
+                    intent.putExtra("caller", "login");
+                    Utilities.show_background(layout, spinner);
+                    startActivity(intent);
+                    finish();
+                }else {
+                    lookForUser(account.getUid(), account.getEmail());
+                }
+            }
+            else{
+                lookForUser(account.getUid(),account.getEmail());
+            }
         }
         else{
             Log.d("steps", "Google_updateUi null");
         }
+
+    }
+
+    private void lookForUser(String userIdLogin, String email){
+
+        //look if there is the user on Firebase
+        Query dbQuery = FirebaseDatabase.getInstance().getReference().child("users").orderByKey().equalTo(userIdLogin);
+        Log.d(deBugTag,"creo listener e cerco "+ userIdLogin);
+        dbQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                Log.d(deBugTag,"onDataChange");
+
+                if(dataSnapshot.exists()){
+
+                    for( DataSnapshot d : dataSnapshot.child(userIdLogin).getChildren()){
+
+                        if(d.getKey().equals("name")){
+                            user.setName(d.getValue(String.class));
+                        }else if(d.getKey().equals("surname")){
+                            user.setSurname(d.getValue(String.class));
+                        }else if(d.getKey().equals("email")){
+                            user.setEmail(d.getValue(String.class));
+                        }else if(d.getKey().equals("city")){
+                            user.setCity(d.getValue(String.class));
+                        }else if(d.getKey().equals("biography")){
+                            user.setBiography(d.getValue(String.class));
+                        }else if(d.getKey().equals("image")){
+                            if(d.getValue(Boolean.class) == true){
+                                Log.d(deBugTag,"Download image");
+                                user.downloadImage();
+                            }
+                        }
+                    }
+
+                    user.setUserID(userIdLogin);
+
+                    Intent intent = new Intent(
+                            getApplicationContext(),
+                            showProfile.class
+                    );
+                    intent.putExtra("caller", "login");
+                    Utilities.show_background(layout, spinner);
+                    startActivity(intent);
+                    finish();
+
+                }else{
+
+                    //reset user
+                    user.setUserID(userIdLogin);
+                    user.setBiography(null);
+                    user.setCity(null);
+                    user.setEmail(email);
+                    user.setSurname(null);
+                    user.setName(null);
+                    user.setImageExist(false);
+
+                    //launch EditProfile
+                    Intent intent = new Intent(
+                            getApplicationContext(),
+                            editProfile.class
+                    );
+                    intent.putExtra("caller", "login");
+                    Utilities.show_background(layout, spinner);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                //todo fai string
+                Log.d(deBugTag,"onCancelled");
+                Utilities.show_background(layout, spinner);
+                Toast.makeText(context,"Errore di connesione",Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void updateUIWithErrors(String text){

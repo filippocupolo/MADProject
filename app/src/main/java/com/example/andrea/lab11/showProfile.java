@@ -1,6 +1,7 @@
 package com.example.andrea.lab11;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.gesture.GestureOverlayView;
 import android.graphics.drawable.Drawable;
@@ -39,9 +40,13 @@ public class showProfile extends AppCompatActivity{
     private float downX, downY,upY, upX;
     private String previousActivity;
     private String fullScreenInd;
+    private Context context;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        context = getApplicationContext();
 
         //+++++++++++++set fields+++++++++++++
         setContentView(R.layout.show_profile);
@@ -133,14 +138,14 @@ public class showProfile extends AppCompatActivity{
         //set image
         ImageView profileView = findViewById(R.id.imageViewShow);
 
-        if( myUser.getImage() == null){
+        if( myUser.getImageExist() == false){
 
             //if there is not a profile image load the default one
             profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
         }else{
 
             //load the profile image
-            Drawable bd = createFromPath(myUser.getImage());
+            Drawable bd = createFromPath(myUser.getImagePath());
             profileView.setImageDrawable(bd);
         }
     }
@@ -194,7 +199,7 @@ public class showProfile extends AppCompatActivity{
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.menu_logout:
-                        Utilities.signOut(getApplicationContext());
+                        Utilities.signOut(context);
                         return true;
                     case R.id.menu_edit_profile:
                         //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());

@@ -197,7 +197,7 @@ public class AddBookAutomatic extends AppCompatActivity {
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.menu_logout:
-                        Utilities.signOut(getApplicationContext());
+                        Utilities.signOut(context);
                         return true;
                     case R.id.menu_edit_profile:
                         //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());

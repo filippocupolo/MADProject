@@ -158,6 +158,7 @@ public class Utilities {
                 context,
                 login.class
         );
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
 

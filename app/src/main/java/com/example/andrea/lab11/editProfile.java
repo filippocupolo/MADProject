@@ -125,13 +125,13 @@ public class editProfile extends AppCompatActivity {
         });
 
         profileView = findViewById(R.id.imageViewEdit);
-        if( myUser.getImage() == null){
+        if( myUser.getImageExist() == false){
 
             //if there is not a profile image load the default one
             profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
         }else{
 
-            Drawable bd = createFromPath(myUser.getImage());
+            Drawable bd = createFromPath(myUser.getImagePath());
             profileView.setImageDrawable(bd);
         }
     }
