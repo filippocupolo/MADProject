@@ -24,7 +24,7 @@
     <string name="toast_EditProfile_onRequestPermissionsResult">Permesso per la fotocamera non concesso</string>
     <string name="book_overview">Panoramica Libro</string>
     <string name="login">Accedi</string>
-    <string name="register">Registrati!</string>
+    <string name="register">Registrati</string>
     <string name="confirm_pwd">Conferma Password</string>
     <string name="required">Obbligatoria</string>
     <string name="pwd_unmatch">Le password non corrispondono</string>
@@ -51,6 +51,8 @@
     <string name="publisher_textV">Editore</string>
     <string name="year_textV">Anno Pubblicazione</string>
     <string name="conditions_textV">Condizioni</string>
+    <string name="upload_book">Carica Libro</string>
+
     <string-array name="conditions_array">
         <item>Pessime</item>
         <item>Cattive</item>

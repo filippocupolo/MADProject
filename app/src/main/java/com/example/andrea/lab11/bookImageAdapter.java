@@ -29,6 +29,7 @@ public class bookImageAdapter extends BaseAdapter{
         appContext = context;
         this.images = images;
         drawableUri = Uri.parse("android.resource://com.example.andrea.lab11/drawable/ic_add_button_24dp");
+
         deBugTag = this.getClass().getName();
     }
 
@@ -58,12 +59,16 @@ public class bookImageAdapter extends BaseAdapter{
         }
 
         ImageView imageView = convertView.findViewById(R.id.imageButton);
+
         imageView.setLayoutParams(new ViewGroup.LayoutParams(180,180));
         imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
         imageView.setVisibility(View.VISIBLE);
 
         if(position==getCount()-1){
+
+
             imageView.setImageURI(drawableUri);
+
         }else{
             imageView.setImageBitmap(images.get(position));
         }

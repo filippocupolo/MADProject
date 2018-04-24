@@ -26,7 +26,7 @@
     <string name="facebook_app_id">1668597253224052</string>
     <string name="fb_login_protocol_scheme">fb1668597253224052</string>
     <string name="login">Sign In</string>
-    <string name="register">Sign up!</string>
+    <string name="register">Sign up</string>
     <string name="confirm_pwd">Password confirmation</string>
     <string name="required">Required</string>
     <string name="pwd_unmatch">Password don\'t match</string>
@@ -53,6 +53,8 @@
     <string name="publisher_textV">Publisher</string>
     <string name="year_textV">Edition Year</string>
     <string name="conditions_textV">Conditions</string>
+    <string name="upload_book">Upload Book</string>
+
     <string-array name="conditions_array">
         <item>Very Bad</item>
         <item>Bad</item>

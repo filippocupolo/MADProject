@@ -9,6 +9,7 @@
     <include
         android:id="@+id/backButtonToolbar"
         layout="@layout/back_button_toolbar"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +29,7 @@
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutISBN"
-                android:layout_width="368dp"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginLeft="16dp"
@@ -37,7 +38,6 @@
                 android:layout_marginTop="8dp"
                 android:background="@drawable/shape_show_book"
 
-
                 android:elevation="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -45,13 +45,9 @@
 
                 <EditText
                     android:id="@+id/ISBNaddManual"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="46dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_margin="15dp"
                     android:ems="10"
                     android:inputType="number"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -60,11 +56,14 @@
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginStart="9dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="30dp"
                     android:text="ISBN"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
@@ -73,7 +72,7 @@
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutTitle"
-                android:layout_width="368dp"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginLeft="16dp"
@@ -88,25 +87,24 @@
 
                 <TextView
                     android:id="@+id/labolTitleAddBookManually"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginStart="9dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Title"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/title_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/TitleAddManual"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="46dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_margin="15dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -117,7 +115,7 @@
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutAuthor"
-                android:layout_width="368dp"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginLeft="16dp"
@@ -132,25 +130,24 @@
 
                 <TextView
                     android:id="@+id/labolAuthorAddBookManually"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginStart="9dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Author"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/author_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/AuthorAddManual"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="46dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_margin="15dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -161,8 +158,8 @@
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutPublisher"
-                android:layout_width="368dp"
-                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginEnd="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -176,25 +173,24 @@
 
                 <TextView
                     android:id="@+id/labolPublisherAddBookManually"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginStart="9dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Publisher"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/publisher_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/PublisherAddManual"
-                    android:layout_width="0dp"
-                    android:layout_height="46dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_margin="15dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -205,8 +201,8 @@
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutEditionYear"
-                android:layout_width="368dp"
-                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginEnd="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -220,25 +216,24 @@
 
                 <TextView
                     android:id="@+id/labolEditionYearAddBookManually"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginStart="9dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Edition Year"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/year_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/EditionYearAddManual"
-                    android:layout_width="0dp"
-                    android:layout_height="46dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:layout_margin="15dp"
                     android:ems="10"
                     android:inputType="number"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -249,7 +244,7 @@
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutConditions"
-                android:layout_width="368dp"
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginLeft="16dp"
@@ -264,12 +259,15 @@
 
                 <TextView
                     android:id="@+id/labolConditionsAddBookManually"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="9dp"
-                    android:layout_marginStart="9dp"
-                    android:layout_marginTop="8dp"
-                    android:text="Conditions"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/conditions_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -277,7 +275,7 @@
                 <Spinner
                     android:id="@+id/conditions_spinner"
                     android:layout_width="fill_parent"
-                    android:layout_height="46dp"
+                    android:layout_height="50dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
@@ -293,9 +291,9 @@
 
             <GridView
                 android:id="@+id/addBookManualGrid"
-                android:elevation="20dp"
                 android:layout_width="0dp"
                 android:layout_height="113dp"
+                android:elevation="20dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -317,13 +315,12 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
+                android:background="@drawable/button_shape"
                 android:elevation="30dp"
                 android:stateListAnimator="@null"
-                android:background="@drawable/button_shape"
                 android:backgroundTint="@color/colorAccent"
                 android:onClick="uploadBook"
                 android:padding="10dp"
-                android:paddingBottom="12dp"
                 android:text="@string/upload_book"
                 android:textColor="@color/textIcons"
                 app:layout_constraintBottom_toBottomOf="parent"
