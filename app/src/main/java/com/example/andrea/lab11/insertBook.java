@@ -206,8 +206,6 @@ public class insertBook extends AppCompatActivity{
 
     public void uploadBook(View view) {
 
-        //TODO some field cannot be empty
-
         if(!canUpload())
             return;
 

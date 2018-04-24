@@ -163,8 +163,7 @@ public class AddBookAutomatic extends AppCompatActivity {
                     Log.e(deBugTag,"JSONException");
                     Log.e(deBugTag,e.getMessage());
 
-                    //TODO cambia stringa toast
-                    Toast.makeText(context,"impossibile trovare libro aggiungi libro manualmente",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,getString(R.string.book_not_found),Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -173,8 +172,7 @@ public class AddBookAutomatic extends AppCompatActivity {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
                 Log.d(deBugTag,statusCode+"");
-                //TODO cambia stringa toast
-                Toast.makeText(context,"impossibile connettersi riprova o aggiungi libro manualmente",Toast.LENGTH_SHORT);
+                Toast.makeText(context,getString(R.string.book_not_found),Toast.LENGTH_SHORT);
             }
 
             @Override

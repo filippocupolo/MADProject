@@ -33,7 +33,6 @@ import static android.support.constraint.Constraints.TAG;
 public class showProfile extends AppCompatActivity{
 
     //todo open profileImage full screen
-    //todo aggiungere un strings a toolbar addbook
 
     private MyUser myUser;
     private float downX, downY,upY, upX;

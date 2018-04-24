@@ -1,7 +1,5 @@
 package com.example.andrea.lab11;
 
-//todo controllare che per tutti i toast venga chiamato il .show()
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;

@@ -43,8 +43,6 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 import com.google.firebase.auth.UserInfo;
 
-//TODO modifica database solo autenticati
-
 public class login extends AppCompatActivity implements
         View.OnClickListener {
 
