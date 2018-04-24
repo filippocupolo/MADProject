@@ -131,6 +131,17 @@ public class editProfile extends AppCompatActivity {
             Drawable bd = createFromPath(myUser.getImage());
             profileView.setImageDrawable(bd);
         }
+        profileView.setOnClickListener(v -> {
+            String path = myUser.getImage();
+            if(path != null){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        fullScreenImage.class
+                );
+                intent.putExtra("path", path);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
