@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.gesture.GestureOverlayView;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 import android.media.Image;
 import android.os.Build;
@@ -21,10 +23,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TabHost;
 import android.widget.TextView;
 import static android.graphics.drawable.Drawable.createFromPath;
@@ -34,14 +38,14 @@ import static android.support.constraint.Constraints.TAG;
 public class showProfile extends AppCompatActivity{
 
     //todo open profileImage full screen
-    //todo aggiungere un strings a toolbar addbook
 
     private MyUser myUser;
     private float downX, downY,upY, upX;
     private String previousActivity;
     private String fullScreenInd;
     private Context context;
-
+    private ImageView profile_image;
+    
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,6 +84,21 @@ public class showProfile extends AppCompatActivity{
             public void onTabReselected(TabLayout.Tab tab) {
                 Log.d("tab", "edit-reselected" + tab.getText());
             }
+        });
+
+        profile_image = findViewById(R.id.imageViewShow);
+        profile_image.setOnClickListener(v -> {
+
+            String path = myUser.getImage();
+            if(path != null){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        fullScreenImage.class
+                );
+                intent.putExtra("path", path);
+                startActivity(intent);
+            }
+            //profile_image.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
         });
 
     }

@@ -42,8 +42,6 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 
-//TODO modifica database solo autenticati
-
 public class login extends AppCompatActivity implements
         View.OnClickListener {
 

@@ -22,8 +22,6 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 
-//TODO xml login - register text
-//TODO MAIL field blocked in edit profile
 public class register extends AppCompatActivity {
 
     private FirebaseAuth mAuth;

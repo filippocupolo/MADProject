@@ -186,7 +186,6 @@ public class MyUser {
 
     private void uploadImage(File file) {
 
-        //TODO modify toast
         if(file.exists()){
             Log.d(this.getClass().getName(),"esiste");
         }
@@ -197,7 +196,7 @@ public class MyUser {
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
                         dbRef.child(userID).child("image").setValue(true);
-                        Toast.makeText(applicationContext, "Uploaded", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(applicationContext, applicationContext.getString(R.string.image_uploaded), Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

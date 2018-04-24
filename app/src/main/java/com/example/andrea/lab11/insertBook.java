@@ -24,6 +24,7 @@ import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -52,6 +53,12 @@ public class insertBook extends AppCompatActivity{
     private EditText publisherView;
     private EditText editionView;
 
+    //gridview
+    private GridView bookImageGrid;
+
+    //loading spinner
+    private ProgressBar spinner;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +71,9 @@ public class insertBook extends AppCompatActivity{
 
         //set fields
         setContentView(R.layout.activity_add_book_manual);
+
+        spinner = findViewById(R.id.progressBarAddBook);
+        spinner.setVisibility(View.GONE);
 
         //get Book from previous activity
         Intent intent = getIntent();
@@ -79,16 +89,15 @@ public class insertBook extends AppCompatActivity{
         View.OnFocusChangeListener focusListener = new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
+                /*
                 if(hasFocus && error){
-                    /*
                     ISBNView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
                     titleView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
                     authorView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
                     publisherView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
                     editionView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
-*/
                     error = false;
-                }
+                }*/
             }
         };
 
@@ -131,8 +140,8 @@ public class insertBook extends AppCompatActivity{
         spinner.setOnItemSelectedListener(SL);
 
         //set book photos
-        GridView bookImageGrid = findViewById(R.id.addBookManualGrid);
-        myAdapter = new bookImageAdapter(this,book.getImageList());
+        bookImageGrid = findViewById(R.id.addBookManualGrid);
+        myAdapter = new bookImageAdapter(this,book.getImageList(), compatActivity);
         bookImageGrid.setAdapter(myAdapter);
 
 
@@ -140,12 +149,12 @@ public class insertBook extends AppCompatActivity{
         bookImageGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+                Log.d("ciao", "p: "+ position);
                 if(position == myAdapter.getCount()-1){
                     selectedImageUri = Utilities.requestImage(compatActivity, activity, CAMERA_REQUEST_CODE, PICK_IMAGE);
 
                 }else{
-                    //view.setOnTouchListener(new touchPhoto());
+
                 }
             }
         });
@@ -165,6 +174,8 @@ public class insertBook extends AppCompatActivity{
 
                 Bitmap modifiedBitmap = Utilities.pictureActivityResult(activity, data, selectedImageUri);
                 myAdapter.addImage(modifiedBitmap);
+                bookImageGrid.requestFocus();
+
                 } catch (IOException ex) {
                 Log.e(this.getClass().getName(), ex.toString());
                 Toast.makeText(this, R.string.toast_EditProfile_onActivityResult, Toast.LENGTH_LONG).show();
@@ -195,15 +206,19 @@ public class insertBook extends AppCompatActivity{
 
     public void uploadBook(View view) {
 
-        //TODO some field cannot be empty
+        if(!canUpload())
+            return;
+
         book.set_ISBN(ISBNView.getText().toString());
         book.setAuthor(authorView.getText().toString());
         book.setBookTitle(titleView.getText().toString());
         book.setEditionYear(editionView.getText().toString());
         book.setOwner(myUser.getUserID());
         book.setPublisher(publisherView.getText().toString());
-        book.loadBook();
 
+        Utilities.loading_and_blur_background(view, spinner);
+        book.loadBook();
+        Utilities.show_background(view, spinner);
         onBackPressed();
     }
 
@@ -211,37 +226,44 @@ public class insertBook extends AppCompatActivity{
 
         //check if ISBN is empty and in case put red background
         if(ISBNView.getText().length()==0){
-            ISBNView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            ISBNView.setError(getString(R.string.required));
+
+            //ISBNView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }
 
         //check if title is empty and in case put red background
         if(titleView.getText().length()==0){
-            titleView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            titleView.setError(getString(R.string.required));
+
+            //titleView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }
 
         //check if author is empty and in case put red background
         if(authorView.getText().length()==0){
-            authorView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            authorView.setError(getString(R.string.required));
+
+            //authorView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }
 
         //check if publisher is empty and in case put red background
         if(publisherView.getText().length()==0){
-            publisherView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            publisherView.setError(getString(R.string.required));
+            //publisherView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }
 
         //check if edition year is empty and in case put red background
         if(editionView.getText().length()==0){
-            editionView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            editionView.setError(getString(R.string.required));
+            //editionView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }
 
-        //todo fai stringa
         if(error)
-            Toast.makeText(this,"all fields are mandatory",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,getString(R.string.all_fields_mandatory),Toast.LENGTH_SHORT).show();
 
         return !error;
     }

@@ -63,4 +63,11 @@
     <string name="logout">Log out</string>
     <string name="or">Or</string>
     <string name="saveEditProfileButton">Save</string>
+    <string name="click_to_exit">Click back button again to exit</string>
+    <string name="mandatory_fields">Name, Surname and City are required</string>
+    <string name="all_fields_mandatory">All fields are required</string>
+    <string name="camera_permission">You should grant camera permission to proceed</string>
+    <string name="book_not_found">Book not found, please add it manually</string>
+    <string name="book_uploaded">Book correctly uploaded!</string>
+    <string name="image_uploaded">Image correctly uploaded</string>
 </resources>

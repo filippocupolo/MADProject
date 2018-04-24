@@ -114,8 +114,7 @@ public class ScanActivity extends AppCompatActivity {
             }
 
         } else {
-            //todo change string toast
-            Toast.makeText(this,"Impossible to scan with out camera permission", Toast.LENGTH_SHORT);
+            Toast.makeText(this, getString(R.string.camera_permission), Toast.LENGTH_SHORT);
             onBackPressed();
         }
     }
