@@ -132,7 +132,7 @@ public class editProfile extends AppCompatActivity {
             profileView.setImageDrawable(bd);
         }
         profileView.setOnClickListener(v -> {
-            String path = myUser.getImage();
+            String path = myUser.getImagePath();
             if(path != null){
                 Intent intent = new Intent(
                         getApplicationContext(),

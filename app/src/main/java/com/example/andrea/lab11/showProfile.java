@@ -37,15 +37,13 @@ import static android.support.constraint.Constraints.TAG;
 
 public class showProfile extends AppCompatActivity{
 
-    //todo open profileImage full screen
-
     private MyUser myUser;
     private float downX, downY,upY, upX;
     private String previousActivity;
     private String fullScreenInd;
     private Context context;
     private ImageView profile_image;
-    
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,7 +87,7 @@ public class showProfile extends AppCompatActivity{
         profile_image = findViewById(R.id.imageViewShow);
         profile_image.setOnClickListener(v -> {
 
-            String path = myUser.getImage();
+            String path = myUser.getImagePath();
             if(path != null){
                 Intent intent = new Intent(
                         getApplicationContext(),
@@ -168,44 +166,6 @@ public class showProfile extends AppCompatActivity{
             profileView.setImageDrawable(bd);
         }
     }
-
-    /*
-    //TODO make swipe properly this is just a simple way
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-
-        switch(event.getAction()) {
-            case MotionEvent.ACTION_DOWN: {
-                downX = event.getX();
-                downY = event.getY();
-            }
-            case MotionEvent.ACTION_UP: {
-                upX = event.getX();
-                upY = event.getY();
-
-                float deltaX = downX - upX;
-
-                // swipe horizontal?
-                if (Math.abs(deltaX) > 100) {
-                    // left or right
-                    if (deltaX > 0) {
-                        Log.d(this.getClass().getName(), "swipe");
-                        Intent intent = new Intent(
-                                getApplicationContext(),
-                                AddBookAutomatic.class);
-                        startActivity(intent);
-
-                    }
-                    //if(deltaX > 0) { this.onRightToLeftSwipe(v); return super.onTouchEvent(event); }
-                } else {
-                    Log.i(this.getClass().getName(), "Swipe was only " + Math.abs(deltaX) + " long, need at least 100");
-                }
-
-            }
-
-        }
-        return super.onTouchEvent(event);
-    }*/
 
     public void showPopup(View v){
         PopupMenu popup = new PopupMenu(getApplicationContext(), v);

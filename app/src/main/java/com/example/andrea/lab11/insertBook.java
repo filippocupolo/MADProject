@@ -3,8 +3,6 @@ package com.example.andrea.lab11;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 //import android.os.PersistableBundle;
@@ -12,27 +10,23 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
-import com.example.andrea.lab11.touchPhoto;
 
 public class insertBook extends AppCompatActivity{
+
+    //todo fare stringe di tutti i textview presenti nell'XML
 
     MyUser myUser;
     BookInfo book;
@@ -224,11 +218,13 @@ public class insertBook extends AppCompatActivity{
 
     private boolean canUpload(){
 
+        error = false;
+
         //check if ISBN is empty and in case put red background
         if(ISBNView.getText().length()==0){
             ISBNView.setError(getString(R.string.required));
 
-            //ISBNView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            Log.d(deBugTag,"ISBNView è 0");
             error = true;
         }
 
@@ -236,29 +232,31 @@ public class insertBook extends AppCompatActivity{
         if(titleView.getText().length()==0){
             titleView.setError(getString(R.string.required));
 
-            //titleView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            Log.d(deBugTag,"titleView è 0");
             error = true;
         }
 
         //check if author is empty and in case put red background
-        if(authorView.getText().length()==0){
+        if(publisherView.getText().length()==0){
             authorView.setError(getString(R.string.required));
 
-            //authorView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            Log.d(deBugTag,"publisherView è 0");
             error = true;
         }
 
         //check if publisher is empty and in case put red background
         if(publisherView.getText().length()==0){
             publisherView.setError(getString(R.string.required));
-            //publisherView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+
+            Log.d(deBugTag,"publisherView è 0");
             error = true;
         }
 
         //check if edition year is empty and in case put red background
         if(editionView.getText().length()==0){
             editionView.setError(getString(R.string.required));
-            //editionView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+
+            Log.d(deBugTag,"editionView è 0");
             error = true;
         }
 
