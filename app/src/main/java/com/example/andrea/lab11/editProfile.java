@@ -1,13 +1,12 @@
 package com.example.andrea.lab11;
 
-//TODO loading page spinner
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -21,6 +20,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.TableLayout;
@@ -37,15 +37,20 @@ public class editProfile extends AppCompatActivity {
     private MyUser myUser;
     private static final int CAMERA_REQUEST_CODE = 432;
     private static final int PICK_IMAGE = 123;
-    private String email;
+    private String deBugTag;
     private Uri selectedImageUri;
     private Activity activity;
     private ActivityCompat activityCompat;
     private String previousActivity;
+    private boolean error;
+    private boolean doubleBackToExitPressedOnce;
 
     //Views
-    ImageView profileView;
-
+    private EditText nameView;
+    private ImageView profileView;
+    private EditText surnameView;
+    private EditText cityView;
+    private EditText biographyView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,9 +58,12 @@ public class editProfile extends AppCompatActivity {
 
         activity = this;
         activityCompat = this.activityCompat;
+        deBugTag = this.getClass().getName();
+        Log.d(deBugTag,deBugTag);
+        error = false;
+        doubleBackToExitPressedOnce = false;
 
         previousActivity = getIntent().getStringExtra("caller");
-        Log.d("popup", previousActivity);
 
         //create MyUser
         myUser = new MyUser(getApplicationContext());
@@ -63,152 +71,113 @@ public class editProfile extends AppCompatActivity {
         //+++++++++++++set fields//+++++++++++++
         setContentView(R.layout.edit_profile);
 
+        //set focus listener
+        View.OnFocusChangeListener focusListener = new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if(hasFocus && error){
+                    nameView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
+                    surnameView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
+                    cityView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
+                    error = false;
+                }
+            }
+        };
+
         //set name
-        EditText nameView = findViewById(R.id.nameEdit);
+        nameView = findViewById(R.id.nameEdit);
         nameView.setText(myUser.getName(), TextView.BufferType.NORMAL);
-        nameView.addTextChangedListener(textWatcher);
+        nameView.setOnFocusChangeListener(focusListener);
 
         //set surname
-        EditText surnameView = findViewById(R.id.surnameEdit);
+        surnameView = findViewById(R.id.surnameEdit);
         surnameView.setText(myUser.getSurname(), TextView.BufferType.NORMAL);
-        surnameView.addTextChangedListener(textWatcher);
+        surnameView.setOnFocusChangeListener(focusListener);
 
         //set email
-        EditText emailView = findViewById(R.id.emailEdit);
+        TextView emailView = findViewById(R.id.emailEdit);
         emailView.setText(myUser.getEmail(), TextView.BufferType.NORMAL);
-        email = myUser.getEmail();
-        if(Utilities.ValidateEmailAddress(myUser.getEmail())){
-
-            //if email is valid set green check
-            Drawable isValidMail = getResources().getDrawable(R.drawable.ic_check_green_24dp);
-            isValidMail.setBounds(0, 0, isValidMail.getIntrinsicWidth(), isValidMail.getIntrinsicHeight());
-            emailView.setCompoundDrawables(null, null, isValidMail, null);
-
-        }else if(myUser.getEmail() != null && !Utilities.ValidateEmailAddress(myUser.getEmail())){
-
-            //if email is NOT valid set red cross
-            Drawable isValidMail = getResources().getDrawable(R.drawable.ic_clear_red_24dp);
-            isValidMail.setBounds(0, 0, isValidMail.getIntrinsicWidth(), isValidMail.getIntrinsicHeight());
-            emailView.setCompoundDrawables(null, null, isValidMail, null);
-        }
-        emailView.addTextChangedListener(textWatcher);
-        emailView.setOnFocusChangeListener((view, hasFocus) -> {
-
-            //when is not more focused check if the mail is valid or not and put a check or a cross
-            if (!hasFocus) {
-
-                Drawable isValidMail;
-
-                if(Utilities.ValidateEmailAddress(email)){
-                    isValidMail = getResources().getDrawable(R.drawable.ic_check_green_24dp);
-                }else{
-                    //put red cross
-                    isValidMail = getResources().getDrawable(R.drawable.ic_clear_red_24dp);
-                    Toast.makeText(getApplicationContext(), R.string.toast_EditProfile_onFocusChange, Toast.LENGTH_LONG).show();
-                }
-
-                isValidMail.setBounds(0, 0, isValidMail.getIntrinsicWidth(), isValidMail.getIntrinsicHeight());
-                EditText et = (EditText)view;
-                et.setCompoundDrawables(null, null, isValidMail, null);
-            }
-        });
 
         //set biography
-        EditText biographyView = findViewById(R.id.bioEdit);
+        biographyView = findViewById(R.id.bioEdit);
         biographyView.setText(myUser.getBiography(), TextView.BufferType.NORMAL);
-        biographyView.addTextChangedListener(textWatcher);
-
+        biographyView.setOnFocusChangeListener(focusListener);
 
         //set city
-        EditText cityView = findViewById(R.id.cityEdit);
+        cityView = findViewById(R.id.cityEdit);
         cityView.setText(myUser.getCity(), TextView.BufferType.NORMAL);
-        cityView.addTextChangedListener(textWatcher);
+        cityView.setOnFocusChangeListener(focusListener);
+
+        TextView t = findViewById(R.id.back_toolbar_text);
+        t.setText(R.string.edit_profile);
 
         //set changeImageButton
         ImageView changeImageButton = findViewById(R.id.imageViewEditButton);
         changeImageButton.setOnClickListener(v -> selectedImageUri = Utilities.requestImage(activityCompat,activity,CAMERA_REQUEST_CODE,PICK_IMAGE));
 
-        //set showProfileIcon
-        /*ImageView showProfileIcon = findViewById(R.id.showProfileIcon);
-        showProfileIcon.setClickable(true);
-        showProfileIcon.setOnClickListener(v -> {
-            String caller = getIntent().getStringExtra("caller");
-
-            if(caller!="showProfile"){
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        showProfile.class
-                );
-                intent.putExtra("caller", "editProfile");
-                if(Utilities.ValidateEmailAddress(email)){
-                    myUser.setEmail(email);
-                }
-                myUser.commit();
-                startActivity(intent);
-            }
-            else {
-                onBackPressed();
-            }
-        });*/
+        //set backButton
+        ImageButton backButton = findViewById(R.id.imageButton);
+        backButton.setOnClickListener((parent) -> {
+            onBackPressed();
+        });
 
         profileView = findViewById(R.id.imageViewEdit);
-        if( myUser.getImage() == null){
+        if( myUser.getImageExist() == false){
 
             //if there is not a profile image load the default one
             profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
         }else{
 
-            Drawable bd = createFromPath(myUser.getImage());
+            Drawable bd = createFromPath(myUser.getImagePath());
             profileView.setImageDrawable(bd);
         }
-
-        //tab listener
-        TabLayout tabs = findViewById(R.id.tabLayout);
-
-        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                //Toast.makeText(mActivity, "hai", Toast.LENGTH_SHORT).show();
-                switch (tab.getText().toString()){
-                    case "Profilo":
-                        //nothing to do
-                        break;
-                    case "AddBook":
-                        Intent intent = new Intent(
-                                getApplicationContext(),
-                                AddBookAutomatic.class
-                        );
-                        intent.putExtra("caller", "editProfile");
-                        startActivity(intent);
-                        break;
-                }
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-
+        profileView.setOnClickListener(v -> {
+            String path = myUser.getImagePath();
+            if(path != null){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        fullScreenImage.class
+                );
+                intent.putExtra("path", path);
+                startActivity(intent);
             }
         });
     }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        if(Utilities.ValidateEmailAddress(email)){
-            myUser.setEmail(email);
-        }
-        myUser.commit();
-        finish();
-    }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        myUser.commit();
+        if(previousActivity.equals("login")){
+
+            if (doubleBackToExitPressedOnce) {
+
+                //exit application
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+                return;
+            }
+
+            doubleBackToExitPressedOnce = true;
+
+            Toast.makeText(this,  getString(R.string.click_to_exit), Toast.LENGTH_SHORT).show();
+
+            //after 2 seconds reset doubleBackToExitPressedOnce to false
+            new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {doubleBackToExitPressedOnce=false;
+                    }
+                }, 2000);
+        }
+        else {
+            if(saveUser()){
+                super.onBackPressed();
+                finish();
+            }
+        }
+
+
     }
 
     //Get the photo from camera and put it as profileView
@@ -245,71 +214,68 @@ public class editProfile extends AppCompatActivity {
         }
     }
 
-    private TextWatcher textWatcher = new TextWatcher() {
+    //function to call before leave activity if true ok else error occurred and the activity cannot be leaved
+    private boolean saveUser(){
 
-        @Override
-        public void afterTextChanged(Editable s) {
+        if(canExit()){
 
-            if(getCurrentFocus()==null){
-                Log.d(this.getClass().getName(),"getCurrentFocus() è null");
-                return;
-            }
+            myUser.setName(nameView.getText().toString());
+            myUser.setSurname(surnameView.getText().toString());
+            myUser.setBiography(biographyView.getText().toString());
+            myUser.setCity(cityView.getText().toString());
 
-            switch (getCurrentFocus().getId()){
-                case R.id.nameEdit:
-                    myUser.setName(s.toString());
-                    break;
-                case R.id.surnameEdit:
-                    myUser.setSurname(s.toString());
-                    break;
-                case R.id.emailEdit:
-                    email = s.toString();
-                    break;
-                case R.id.bioEdit:
-                    myUser.setBiography(s.toString());
-                    break;
-                case R.id.cityEdit:
-                    myUser.setCity(s.toString());
-                    break;
-            }
+            myUser.commit();
+
+            return true;
+        }
+        return false;
+    }
+
+    private boolean canExit(){
+
+        //check if name is empty and in case put red background
+        if(nameView.getText().length()==0){
+            nameView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
         }
 
-        public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+        //check if surname is empty and in case put red background
+        if(surnameView.getText().length()==0){
+            surnameView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
         }
 
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+        //check if city is empty and in case put red background
+        if(cityView.getText().length()==0){
+            cityView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
         }
-    };
 
-    public void showPopup(View v){
-        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.general_menu, popup.getMenu());
+        if(error)
+            Toast.makeText(this, getString(R.string.mandatory_fields),Toast.LENGTH_SHORT).show();
 
-        //hide edit profile option - useless
-        popup.getMenu().findItem(R.id.menu_edit_profile).setVisible(false);
-        popup.show();
+        return !error;
+    }
 
-        //click listener
-        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.menu_logout:
-                        Utilities.signOut(getApplicationContext());
-                        return true;
-                    case R.id.menu_show_profile:
-                        //Log.d("popup", "ok2 " + getIntent().getStringExtra("caller"));
-                        Utilities.goToShowProfile(getApplicationContext(), previousActivity,
-                                "editProfile", editProfile.this);
-                        return true;
-                    default:
-                        return false;
-                }
+    public void saveButtonClick(View view){
+
+        if(saveUser()){
+
+            String caller = getIntent().getStringExtra("caller");
+
+            if(caller!="showProfile"){
+                Intent intent = new Intent(
+                        getApplicationContext(),
+                        showProfile.class
+                );
+                intent.putExtra("caller", "editProfile");
+                startActivity(intent);
+                finish();
             }
-        });
+            else {
+                onBackPressed();
+            }
+        }
     }
 
 }

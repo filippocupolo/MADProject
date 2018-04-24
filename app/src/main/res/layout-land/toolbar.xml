@@ -33,6 +33,17 @@
         android:textSize="26sp"
         android:layout_marginStart="20dp" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:elevation="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="@dimen/margin_left_right"
+        android:layout_marginEnd="@dimen/margin_left_right"
+        android:onClick="showPopup"/>
+
 
     <android.support.design.widget.TabLayout
         android:background="@color/colorPrimaryDark"
@@ -59,16 +70,16 @@
             /> !-->
 
         <android.support.design.widget.TabItem
-            android:text="@string/profile"
+            android:id="@+id/toolbarProfile"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            />
+            android:text="@string/profile" />
 
         <android.support.design.widget.TabItem
-            android:text="Add Book"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            />
+        android:id="@+id/toolbarAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AddBook" />
 
 
 

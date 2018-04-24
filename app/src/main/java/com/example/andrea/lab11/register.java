@@ -8,6 +8,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,8 +22,6 @@ import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.auth.FirebaseUser;
 
-//TODO xml login - register text
-//TODO MAIL field blocked in edit profile
 public class register extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
@@ -29,6 +29,8 @@ public class register extends AppCompatActivity {
     private EditText pwd;
     private EditText confirm_pwd;
     private static final String TAG = "registrazione";
+    private RelativeLayout layout;
+    private ProgressBar spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,9 @@ public class register extends AppCompatActivity {
         pwd = findViewById(R.id.register_pwd);
         confirm_pwd = findViewById(R.id.register_confirm_pwd);
 
+        layout = findViewById(R.id.register_form_wrapper);
+        spinner = findViewById(R.id.progressBarRegister);
+        spinner.setVisibility(View.GONE);
     }
 
     public void loginOnClick(View v){
@@ -50,9 +55,11 @@ public class register extends AppCompatActivity {
         );
         intent.putExtra("caller", "register");
         startActivity(intent);
+        finish();
     }
 
     public void registerOnClick(View v){
+        Utilities.loading_and_blur_background(layout, spinner);
         createAccount(email.getText().toString(), pwd.getText().toString(), confirm_pwd.getText().toString());
     }
 
@@ -91,6 +98,7 @@ public class register extends AppCompatActivity {
     }
 
     private void updateUI(FirebaseUser user){
+        Utilities.show_background(layout, spinner);
         Log.d(TAG, "registration_ok");
         Intent intent = new Intent(
                 getApplicationContext(),
@@ -98,9 +106,11 @@ public class register extends AppCompatActivity {
         );
         intent.putExtra("info", "register_successful");
         startActivity(intent);
+        finish();
     }
 
     private void updateUIWithErrors(String text){
+        Utilities.show_background(layout, spinner);
         //set error message on the login screen
         TextView errorMessage = findViewById(R.id.register_error);
         errorMessage.setText(text);

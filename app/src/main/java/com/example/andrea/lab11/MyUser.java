@@ -1,7 +1,7 @@
 
 package com.example.andrea.lab11;
 
-import android.app.ProgressDialog;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
@@ -14,8 +14,8 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
@@ -40,11 +40,15 @@ public class MyUser {
     private String city                          = null;
     private String biography                     = null;
     private SharedPreferences sharedPreferences  = null;
-    private String image                         = null;
+    private String imagePath                     = null;
+    private boolean imageExist                   = false;
     private Context applicationContext           = null;
     private SharedPreferences.Editor editor;
+    private String deBugTag;
 
     public MyUser(Context applicationContext){
+
+        deBugTag = this.getClass().getName();
 
         this.applicationContext=applicationContext;
 
@@ -57,11 +61,12 @@ public class MyUser {
         email = sharedPreferences.getString("email", null);
         city = sharedPreferences.getString("city", null);
         biography = sharedPreferences.getString("biography", null);
+        imageExist = sharedPreferences.getBoolean("imageExist", false);
 
         //set image path
         File file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);
         if(file.exists()){
-            image = file.getPath();
+            imagePath = file.getPath();
         }
     }
 
@@ -73,37 +78,49 @@ public class MyUser {
     public String getEmail(){return email;}
     public String getCity(){return  city;}
     public String getBiography(){return biography;}
-    public String getImage(){return image;}
+    public String getImagePath(){return imagePath;}
+    public boolean getImageExist(){return imageExist;}
     public String getUserID(){return userID;}
 
     //setters
     public void setUserID(String value){
         editor.putString("userID",value);
         userID = value;
+        editor.commit();
     }
     public void setName(String value){
         editor.putString("name",value);
         name = value;
+        editor.commit();
     }
     public void setSurname(String value){
         editor.putString("surname",value);
         surname = value;
+        editor.commit();
     }
     public void setEmail(String value){
         editor.putString("email",value);
         email = value;
+        editor.commit();
     }
     public void setCity(String value){
         editor.putString("city",value);
         city = value;
+        editor.commit();
     }
     public void setBiography(String value){
         editor.putString("biography",value);
         biography = value;
+        editor.commit();
+    }
+    public void setImageExist(boolean value){
+        editor.putBoolean("imageExist",value);
+        imageExist = value;
+        editor.commit();
     }
     public void commit(){
-        Log.d(this.getClass().getName(),"Commit");
-        editor.commit();
+
+        Log.d(deBugTag,"Commit");
         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
         dbRef.child(userID).child("name").setValue(name);
         dbRef.child(userID).child("surname").setValue(surname);
@@ -129,6 +146,7 @@ public class MyUser {
         }finally {
             try{
                 out.close();
+                setImageExist(true);
                 uploadImage(new File(applicationContext.getFilesDir(), Utilities.ImagePath));
             }catch (IOException ioex){
 
@@ -136,9 +154,38 @@ public class MyUser {
         }
     }
 
+    public boolean isCompleted(){
+        if(email==null || name==null || surname==null || city==null)
+            return false;
+        else
+            return true;
+    }
+
+    public void downloadImage(){
+
+        setImageExist(false);
+        StorageReference ref = FirebaseStorage.getInstance().getReference().child("profileImages/"+userID);
+        File file = new File(applicationContext.getFilesDir(), Utilities.ImagePath);
+
+        ref.getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                // Local temp file has been created
+                Log.d(deBugTag,"fileCreato");
+                setImageExist(true);
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception exception) {
+                // Handle any errors
+                //todo gestire
+                Log.d(deBugTag,"eccezione " + exception.toString() + exception.getMessage() + " " + exception.getStackTrace());
+            }
+        });
+    }
+
     private void uploadImage(File file) {
 
-        //TODO modify toast
         if(file.exists()){
             Log.d(this.getClass().getName(),"esiste");
         }
@@ -149,7 +196,7 @@ public class MyUser {
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
                         dbRef.child(userID).child("image").setValue(true);
-                        Toast.makeText(applicationContext, "Uploaded", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(applicationContext, applicationContext.getString(R.string.image_uploaded), Toast.LENGTH_SHORT).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

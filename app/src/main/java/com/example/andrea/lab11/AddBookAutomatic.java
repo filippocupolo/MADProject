@@ -3,15 +3,20 @@ package com.example.andrea.lab11;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.JsonReader;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,12 +41,16 @@ import cz.msebera.android.httpclient.Header;
 
 public class AddBookAutomatic extends AppCompatActivity {
 
+    //todo fare stringa della toolbar aggiungilibro(vedere XML)
+    //todo in landscape non funziona
+
     private float downX, downY,upY, upX;
     private String deBugTag;
     final private int SCAN_INTENT = 943;
     private Context context;
     private BookInfo book;
     private MyUser user;
+    private String previousActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +60,7 @@ public class AddBookAutomatic extends AppCompatActivity {
         context  = getApplicationContext();
         user = new MyUser(context);
         book = new BookInfo(context);
+        previousActivity = getIntent().getStringExtra("caller");
 
         EditText editISBN = findViewById(R.id.editISBN);
         editISBN.setOnEditorActionListener(
@@ -65,6 +75,40 @@ public class AddBookAutomatic extends AppCompatActivity {
                     }
                 });
 
+        //tab listener
+        TabLayout tabs = findViewById(R.id.tabLayout);
+        tabs.getTabAt(1).select();
+
+        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                Log.d("tab", "add-selected" + tab.getText());
+                switch (tab.getText().toString()){
+                    case "Profilo":
+                        Utilities.goToShowProfile(getApplicationContext(), previousActivity,
+                                "addBookAutomatic", AddBookAutomatic.this);
+                        break;
+                    case "AddBook":
+                        break;
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab){
+            }
+        });
+
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        TabLayout tabs = findViewById(R.id.tabLayout);
+        tabs.getTabAt(1).select();
     }
 
     public void goToManualButtonClick(View v){
@@ -122,8 +166,7 @@ public class AddBookAutomatic extends AppCompatActivity {
                     Log.e(deBugTag,"JSONException");
                     Log.e(deBugTag,e.getMessage());
 
-                    //TODO cambia stringa toast
-                    Toast.makeText(context,"impossibile trovare libro aggiungi libro manualmente",Toast.LENGTH_SHORT);
+                    Toast.makeText(context,getString(R.string.book_not_found),Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -132,13 +175,39 @@ public class AddBookAutomatic extends AppCompatActivity {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
                 Log.d(deBugTag,statusCode+"");
-                //TODO cambia stringa toast
-                Toast.makeText(context,"impossibile connettersi riprova o aggiungi libro manualmente",Toast.LENGTH_SHORT);
+                Toast.makeText(context,getString(R.string.book_not_found),Toast.LENGTH_SHORT);
             }
 
             @Override
             public void onRetry(int retryNo) {
                 // called when request is retried
+            }
+        });
+    }
+
+    public void showPopup(View v){
+        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.general_menu, popup.getMenu());
+
+        popup.show();
+
+        //click listener
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu_logout:
+                        Utilities.signOut(context);
+                        return true;
+                    case R.id.menu_edit_profile:
+                        //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
+                        Utilities.goToEditProfile(getApplicationContext(), previousActivity,
+                                "addBookAutomatic", AddBookAutomatic.this);
+                        return true;
+                    default:
+                        return false;
+                }
             }
         });
     }
