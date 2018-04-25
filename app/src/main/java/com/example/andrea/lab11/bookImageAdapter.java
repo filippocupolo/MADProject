@@ -29,7 +29,6 @@ public class bookImageAdapter extends BaseAdapter{
         appContext = context;
         this.images = images;
         drawableUri = Uri.parse("android.resource://com.example.andrea.lab11/drawable/ic_add_button_24dp");
-
         deBugTag = this.getClass().getName();
     }
 
@@ -54,7 +53,7 @@ public class bookImageAdapter extends BaseAdapter{
         if(convertView == null)
         {
             LayoutInflater li=(LayoutInflater) appContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView=li.inflate(R.layout.activity_add_book_manual, null);
+            convertView=li.inflate(R.layout.book_image_adapter_layout, null);
 
         }
 

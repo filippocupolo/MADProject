@@ -135,7 +135,7 @@ public class insertBook extends AppCompatActivity{
 
         //set book photos
         bookImageGrid = findViewById(R.id.addBookManualGrid);
-        myAdapter = new bookImageAdapter(this,book.getImageList(), compatActivity);
+        myAdapter = new bookImageAdapter(this,book.getImageList());
         bookImageGrid.setAdapter(myAdapter);
 
 
