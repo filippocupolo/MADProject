@@ -79,47 +79,26 @@ public class insertBook extends AppCompatActivity{
         //get user
         myUser = new MyUser(getApplicationContext());
 
-        //set focus listener
-        View.OnFocusChangeListener focusListener = new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-                /*
-                if(hasFocus && error){
-                    ISBNView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
-                    titleView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
-                    authorView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
-                    publisherView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
-                    editionView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border));
-                    error = false;
-                }*/
-            }
-        };
-
         //set ISBN
         ISBNView = findViewById(R.id.ISBNaddManual);
         ISBNView.setText(book.get_ISBN(), TextView.BufferType.NORMAL);
-        ISBNView.setOnFocusChangeListener(focusListener);
 
         //set title
         titleView = findViewById(R.id.TitleAddManual);
         titleView.setText(book.getBookTitle(), TextView.BufferType.NORMAL);
-        titleView.setOnFocusChangeListener(focusListener);
 
         //set author
         authorView = findViewById(R.id.AuthorAddManual);
         authorView.setText(book.getAuthor(), TextView.BufferType.NORMAL);
-        authorView.setOnFocusChangeListener(focusListener);
 
         //set publisher
         publisherView = findViewById(R.id.PublisherAddManual);
         publisherView.setText(book.getPublisher(), TextView.BufferType.NORMAL);
-        publisherView.setOnFocusChangeListener(focusListener);
 
         //TODO make list
         //set edition year
         editionView = findViewById(R.id.EditionYearAddManual);
         editionView.setText(Integer.toString(book.getEditionYear()), TextView.BufferType.NORMAL);
-        editionView.setOnFocusChangeListener(focusListener);
 
         //set conditions
         SL = new spinnerListener(getApplicationContext(),book);

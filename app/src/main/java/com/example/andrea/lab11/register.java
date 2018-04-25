@@ -49,13 +49,7 @@ public class register extends AppCompatActivity {
     }
 
     public void loginOnClick(View v){
-        Intent intent = new Intent(
-                getApplicationContext(),
-                login.class
-        );
-        intent.putExtra("caller", "register");
-        startActivity(intent);
-        finish();
+        onBackPressed();
     }
 
     public void registerOnClick(View v){
