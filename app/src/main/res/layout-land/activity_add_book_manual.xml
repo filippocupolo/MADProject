@@ -309,7 +309,6 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="20dp"
                 android:numColumns="4"
-                android:background="@drawable/gridview_show_book"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayoutConditions" />
