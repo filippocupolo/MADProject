@@ -263,7 +263,7 @@ public class editProfile extends AppCompatActivity {
 
             String caller = getIntent().getStringExtra("caller");
 
-            if(caller!="showProfile"){
+            if(caller.equals("login")){
                 Intent intent = new Intent(
                         getApplicationContext(),
                         showProfile.class

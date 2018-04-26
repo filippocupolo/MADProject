@@ -42,7 +42,7 @@ public class BookInfo implements Serializable {
     private String author = null;
     private String publisher = null;
     private String owner = null;
-    private int editionYear;
+    private String editionYear;
     private String conditions = null;
     private LinkedList<Bitmap> imageList;
     private Context applicationContext = null;
@@ -68,7 +68,7 @@ public class BookInfo implements Serializable {
         return publisher;
     }
 
-    public int getEditionYear() { return editionYear; }
+    public String getEditionYear() { return editionYear; }
 
     public String getConditions() {
         return conditions;
@@ -101,7 +101,7 @@ public class BookInfo implements Serializable {
         this.publisher = publisher;
     }
 
-    public void setEditionYear(String editionYear) {this.editionYear = Integer.parseInt(editionYear); }
+    public void setEditionYear(String editionYear) {this.editionYear = editionYear; }
 
     public void setConditions(String conditions)
     {

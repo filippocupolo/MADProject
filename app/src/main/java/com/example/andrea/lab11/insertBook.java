@@ -96,7 +96,7 @@ public class insertBook extends AppCompatActivity{
         //TODO make list
         //set edition year
         editionView = findViewById(R.id.EditionYearAddManual);
-        editionView.setText(Integer.toString(book.getEditionYear()), TextView.BufferType.NORMAL);
+        editionView.setText(book.getEditionYear(), TextView.BufferType.NORMAL);
 
         //set conditions
         SL = new spinnerListener(getApplicationContext(),book);
@@ -214,7 +214,7 @@ public class insertBook extends AppCompatActivity{
         }
 
         //check if author is empty and in case put red background
-        if(publisherView.getText().length()==0){
+        if(authorView.getText().length()==0){
             authorView.setError(getString(R.string.required));
 
             Log.d(deBugTag,"publisherView è 0");

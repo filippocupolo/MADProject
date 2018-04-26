@@ -190,6 +190,7 @@ public class Utilities {
     public static void goToEditProfile(Context context, String previousCaller, String callerClass, Activity activity){
 
         if(previousCaller != null) {
+            /*
             if (!previousCaller.equals("editProfile")) {
                 Intent intent = new Intent(
                         context,
@@ -199,7 +200,13 @@ public class Utilities {
                 activity.startActivity(intent);
             } else {
                 activity.onBackPressed();
-            }
+            }*/
+            Intent intent = new Intent(
+                    context,
+                    editProfile.class
+            );
+            intent.putExtra("caller", callerClass);
+            activity.startActivity(intent);
         }
         else{
             Intent intent = new Intent(

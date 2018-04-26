@@ -139,7 +139,7 @@ public class MyUser {
             out = new FileOutputStream(file);
 
             // Transfer bytes from in to out
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 60, out);
+            bitmap.compress(Bitmap.CompressFormat.JPEG, 40, out);
 
         }catch (FileNotFoundException ex) {
             Toast.makeText(applicationContext, R.string.toast_MyUser_setImage,Toast.LENGTH_LONG).show();
