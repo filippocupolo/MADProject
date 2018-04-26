@@ -43,10 +43,13 @@ public class showProfile extends AppCompatActivity{
     private String fullScreenInd;
     private Context context;
     private ImageView profile_image;
+    private String deBugTag;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        deBugTag = this.getClass().getName();
 
         context = getApplicationContext();
 
@@ -62,11 +65,12 @@ public class showProfile extends AppCompatActivity{
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                switch (tab.getText().toString()){
-                    case "Profilo":
+
+                switch (tab.getPosition()){
+                    case 0:
 
                         break;
-                    case "AddBook":
+                    case 1:
                         Utilities.goToAddBook(getApplicationContext(), previousActivity,
                                 "showProfile", showProfile.this);
                         break;

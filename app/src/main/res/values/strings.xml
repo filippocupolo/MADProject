@@ -72,4 +72,5 @@
     <string name="book_not_found">Book not found, please add it manually</string>
     <string name="book_uploaded">Book correctly uploaded!</string>
     <string name="image_uploaded">Image correctly uploaded</string>
+
 </resources>

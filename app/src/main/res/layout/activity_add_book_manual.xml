@@ -102,7 +102,7 @@
                     android:layout_marginLeft="9dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="8dp"
-                    android:text="Title"
+                    android:text="@string/title_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -146,7 +146,7 @@
                     android:layout_marginLeft="9dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="8dp"
-                    android:text="Author"
+                    android:text="@string/author_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -190,7 +190,7 @@
                     android:layout_marginLeft="9dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="8dp"
-                    android:text="Publisher"
+                    android:text="@string/publisher_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -234,7 +234,7 @@
                     android:layout_marginLeft="9dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="8dp"
-                    android:text="Edition Year"
+                    android:text="@string/year_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -278,7 +278,7 @@
                     android:layout_marginLeft="9dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="8dp"
-                    android:text="Conditions"
+                    android:text="@string/conditions_textV"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

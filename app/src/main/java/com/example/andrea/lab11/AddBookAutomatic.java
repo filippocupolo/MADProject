@@ -68,7 +68,10 @@ public class AddBookAutomatic extends AppCompatActivity {
                     @Override
                     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                         if (actionId == EditorInfo.IME_ACTION_DONE) {
-                            apiRequest(editISBN.getText().toString());
+                            String isbnEditText = editISBN.getText().toString();
+                            if(isbnEditText.equals(""))
+                                return false;
+                            apiRequest(isbnEditText);
                             return true;
                         }
                         return false;
@@ -82,13 +85,12 @@ public class AddBookAutomatic extends AppCompatActivity {
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                Log.d("tab", "add-selected" + tab.getText());
-                switch (tab.getText().toString()){
-                    case "Profilo":
+                switch (tab.getPosition()){
+                    case 0:
                         Utilities.goToShowProfile(getApplicationContext(), previousActivity,
                                 "addBookAutomatic", AddBookAutomatic.this);
                         break;
-                    case "AddBook":
+                    case 1:
                         break;
                 }
             }
