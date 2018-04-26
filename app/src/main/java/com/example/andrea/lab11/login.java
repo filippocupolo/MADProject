@@ -400,6 +400,8 @@ public class login extends AppCompatActivity implements
 
                 if(dataSnapshot.exists()){
 
+                    user.setUserID(userIdLogin);
+
                     for( DataSnapshot d : dataSnapshot.child(userIdLogin).getChildren()){
 
                         if(d.getKey().equals("name")){
@@ -419,8 +421,6 @@ public class login extends AppCompatActivity implements
                             }
                         }
                     }
-
-                    user.setUserID(userIdLogin);
 
                     Intent intent = new Intent(
                             getApplicationContext(),
@@ -469,5 +469,17 @@ public class login extends AppCompatActivity implements
         //set error message on the login screen
         TextView errorMessage = findViewById(R.id.login_error);
         errorMessage.setText(text);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        
+        //exit application
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        return;
     }
 }
