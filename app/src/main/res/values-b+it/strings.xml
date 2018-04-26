@@ -33,7 +33,7 @@
     <string name="fb_auth_error">Errore durante l\'autenticazione con Facebook</string>
     <string name="google_auth_error">Errore durante l\'autenticazione con Google</string>
     <string name="email_auth_error">Errore durante l\'autenticazione</string>
-    <string name="unknown_user">Questo utente non esiste</string>
+    <string name="unknown_user">Utente e/o password errati</string>
     <string name="error_account_creation">Errore durante la creazione dell\'account</string>
     <string name="pwd_forgotten">Password dimenticata?</string>
     <string name="back_to_login">Torna al login</string>

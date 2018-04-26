@@ -92,7 +92,7 @@ public class showProfile extends AppCompatActivity{
         profile_image.setOnClickListener(v -> {
 
             String path = myUser.getImagePath();
-            if(path != null){
+            if(myUser.getImageExist() == false){
                 Intent intent = new Intent(
                         getApplicationContext(),
                         fullScreenImage.class
