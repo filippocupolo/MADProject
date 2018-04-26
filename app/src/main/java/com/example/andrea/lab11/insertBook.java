@@ -26,8 +26,6 @@ import java.io.IOException;
 
 public class insertBook extends AppCompatActivity{
 
-    //todo fare stringe di tutti i textview presenti nell'XML
-
     MyUser myUser;
     BookInfo book;
     private Uri selectedImageUri;

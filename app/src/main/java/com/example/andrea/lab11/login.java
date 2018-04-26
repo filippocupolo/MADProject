@@ -456,10 +456,10 @@ public class login extends AppCompatActivity implements
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                //todo fai string
+
                 Log.d(deBugTag,"onCancelled");
                 Utilities.show_background(layout, spinner);
-                Toast.makeText(context,"Errore di connesione",Toast.LENGTH_SHORT).show();
+                Toast.makeText(context,getString(R.string.connection_error),Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -473,7 +473,7 @@ public class login extends AppCompatActivity implements
 
     @Override
     public void onBackPressed() {
-        
+
         //exit application
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);

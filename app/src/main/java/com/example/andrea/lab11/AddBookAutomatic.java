@@ -41,9 +41,6 @@ import cz.msebera.android.httpclient.Header;
 
 public class AddBookAutomatic extends AppCompatActivity {
 
-    //todo fare stringa della toolbar aggiungilibro(vedere XML)
-    //todo in landscape non funziona
-
     private float downX, downY,upY, upX;
     private String deBugTag;
     final private int SCAN_INTENT = 943;

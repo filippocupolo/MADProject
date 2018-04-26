@@ -10,17 +10,18 @@ import android.widget.ImageView;
 public class fullScreenImage extends AppCompatActivity {
 
     private Bitmap bmp;
+    String deBugTag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        deBugTag = this.getClass().getName();
+
         setContentView(R.layout.activity_full_screen_image);
         ImageView image = findViewById(R.id.full_screen_image);
         String path = getIntent().getStringExtra("path");
-        Log.d("ciao","ciao");
 
-        //TODO add try catch
         if(path!=null){
             bmp = BitmapFactory.decodeFile(path);
         }else{
@@ -29,7 +30,8 @@ public class fullScreenImage extends AppCompatActivity {
                 bmp = BitmapFactory.decodeByteArray(byteArray, 0, byteArray.length);
             }
             catch (Exception e){
-                Log.d("ciao", e.getMessage());
+                Log.d(deBugTag, e.getMessage());
+                onBackPressed();
             }
         }
 

@@ -178,7 +178,6 @@ public class MyUser {
             @Override
             public void onFailure(@NonNull Exception exception) {
                 // Handle any errors
-                //todo gestire
                 Log.d(deBugTag,"eccezione " + exception.toString() + exception.getMessage() + " " + exception.getStackTrace());
             }
         });
