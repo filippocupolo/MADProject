@@ -23,10 +23,10 @@
         android:layout_centerHorizontal="true" />
 
     <ScrollView
+        android:id="@+id/scrollV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="75dp"
-        android:id="@+id/scrollV"
+        android:layout_marginTop="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backButtonToolbar">
@@ -324,18 +324,18 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/button_shape"
-                android:elevation="30dp"
-                android:stateListAnimator="@null"
                 android:backgroundTint="@color/colorAccent"
+                android:elevation="30dp"
                 android:onClick="uploadBook"
                 android:padding="10dp"
+                android:stateListAnimator="@null"
                 android:text="@string/upload_book"
                 android:textColor="@color/textIcons"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/addBookManualGrid" />
-            
+
         </android.support.constraint.ConstraintLayout>
     </ScrollView>
 
