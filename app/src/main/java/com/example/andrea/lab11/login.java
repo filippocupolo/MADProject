@@ -474,7 +474,7 @@ public class login extends AppCompatActivity implements
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        
+
         //exit application
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addCategory(Intent.CATEGORY_HOME);
