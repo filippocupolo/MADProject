@@ -52,6 +52,12 @@
     <string name="year_textV">Anno Pubblicazione</string>
     <string name="conditions_textV">Condizioni</string>
     <string name="upload_book">Carica Libro</string>
+    <string name="search_book">Cerca un Libro</string>
+    <string name="keyWords_textV">Parole Chiave</string>
+    <string name="hint_author_textV">Cerca un libro per autore</string>
+    <string name="hint_title_textV">Cerca un libro per titolo</string>
+    <string name="hint_publisher_textV">Cerca un libro per editore</string>
+    <string name="hint_keyWords_textV">Cerca un libro per parole chiave</string>
 
     <string-array name="conditions_array">
         <item>Pessime</item>
