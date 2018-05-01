@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:elevation="45dp"
+            android:layout_below="@id/resultBook"
+            android:id="@+id/cardViewBook"
+            app:cardCornerRadius="15dp"
+            app:cardBackgroundColor="@color/lightPrimaryColor">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="12dp"
+                    android:id="@+id/imageResult"
+                    android:background="@color/colorAccent"
+                    android:elevation="50dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleResult"
+                    android:text="TITLE"
+                    android:ellipsize="end"
+                    android:layout_margin="4dp"
+                    android:layout_toRightOf="@id/imageResult"
+                    android:layout_toEndOf="@id/imageResult"
+                    android:layout_alignTop="@id/imageResult"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/authorResult"
+                    android:layout_margin="4dp"
+                    android:ellipsize="end"
+                    android:layout_below="@id/titleResult"
+                    android:layout_toRightOf="@id/imageResult"
+                    android:layout_toEndOf="@id/imageResult"
+                    android:text="AUTHOR"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:ellipsize="end"
+                    android:id="@+id/ISBNresult"
+                    android:layout_below="@id/authorResult"
+                    android:layout_toRightOf="@id/imageResult"
+                    android:layout_toEndOf="@id/imageResult"
+                    android:text="ISBN"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:ellipsize="end"
+                    android:id="@+id/yearResult"
+                    android:layout_below="@+id/ISBNresult"
+                    android:layout_toRightOf="@id/imageResult"
+                    android:layout_toEndOf="@id/imageResult"
+                    android:text="YEAR"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+</RelativeLayout>

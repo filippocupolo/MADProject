@@ -60,6 +60,7 @@
     <string name="hint_title_textV">Search for a book by title</string>
     <string name="hint_publisher_textV">Search for a book by publisher</string>
     <string name="hint_keyWords_textV">Search for a book by keywords </string>
+    <string name="book_search_results">Search Results</string>
 
     <string-array name="conditions_array">
         <item>Very Bad</item>
