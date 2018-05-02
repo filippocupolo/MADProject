@@ -113,6 +113,8 @@ public class BookInfo implements Serializable {
         return imageList;
     }
 
+    public Bitmap getFirstPhoto(){return imageList.getFirst();}
+
     public void loadBook(){
 
         Timestamp t = new Timestamp(System.currentTimeMillis());

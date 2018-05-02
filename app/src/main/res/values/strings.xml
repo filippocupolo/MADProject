@@ -54,6 +54,13 @@
     <string name="year_textV">Edition Year</string>
     <string name="conditions_textV">Conditions</string>
     <string name="upload_book">Upload Book</string>
+    <string name="search_book">Search for a Book</string>
+    <string name="keyWords_textV">Key words</string>
+    <string name="hint_author_textV">Search for a book by author</string>
+    <string name="hint_title_textV">Search for a book by title</string>
+    <string name="hint_publisher_textV">Search for a book by publisher</string>
+    <string name="hint_keyWords_textV">Search for a book by keywords </string>
+    <string name="book_search_results">Search Results</string>
 
     <string-array name="conditions_array">
         <item>Very Bad</item>
