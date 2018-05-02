@@ -10,11 +10,11 @@ import android.widget.TextView;
 
 import java.util.List;
 
-public class recyclerView_adapter extends RecyclerView.Adapter<recyclerView_adapter.BookViewHolder> {
+public class recyclerView_list_results_adapter extends RecyclerView.Adapter<recyclerView_list_results_adapter.BookViewHolder> {
 
    private List<BookInfo> books;
 
-    recyclerView_adapter(List<BookInfo> books)
+    recyclerView_list_results_adapter(List<BookInfo> books)
     {
         this.books = books;
     }
