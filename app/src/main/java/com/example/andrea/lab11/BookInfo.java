@@ -45,9 +45,8 @@ public class BookInfo implements Serializable {
     private String editionYear;
     private String conditions = null;
     private LinkedList<Bitmap> imageList;
-    private Context applicationContext = null;
 
-    public BookInfo(Context applicationContext)
+    public BookInfo()
     {
         imageList = new LinkedList<>();
     }

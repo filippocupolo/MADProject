@@ -56,7 +56,7 @@ public class AddBookAutomatic extends AppCompatActivity {
         deBugTag = this.getClass().getName();
         context  = getApplicationContext();
         user = new MyUser(context);
-        book = new BookInfo(context);
+        book = new BookInfo();
         previousActivity = getIntent().getStringExtra("caller");
 
         EditText editISBN = findViewById(R.id.editISBN);
