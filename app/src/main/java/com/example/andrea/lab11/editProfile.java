@@ -19,10 +19,12 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
+import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -49,7 +51,7 @@ public class editProfile extends AppCompatActivity {
     private EditText nameView;
     private ImageView profileView;
     private EditText surnameView;
-    private EditText cityView;
+    private Spinner cityView;
     private EditText biographyView;
 
     @Override
@@ -104,10 +106,18 @@ public class editProfile extends AppCompatActivity {
         biographyView.setOnFocusChangeListener(focusListener);
 
         //set city
+        Location location = new Location();
         cityView = findViewById(R.id.cityEdit);
-        cityView.setText(myUser.getCity(), TextView.BufferType.NORMAL);
-        cityView.setOnFocusChangeListener(focusListener);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                this, android.R.layout.simple_spinner_item, location.getItalianSuburbsList());
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        cityView.setAdapter(adapter);
+        if (myUser.getCity() != null) {
+            int spinnerPosition = adapter.getPosition(myUser.getCity());
+            cityView.setSelection(spinnerPosition);
+        }
 
+        //set name toolbar
         TextView t = findViewById(R.id.back_toolbar_text);
         t.setText(R.string.edit_profile);
 
@@ -222,7 +232,7 @@ public class editProfile extends AppCompatActivity {
             myUser.setName(nameView.getText().toString());
             myUser.setSurname(surnameView.getText().toString());
             myUser.setBiography(biographyView.getText().toString());
-            myUser.setCity(cityView.getText().toString());
+            myUser.setCity(cityView.getSelectedItem().toString());
 
             myUser.commit();
 
@@ -246,7 +256,7 @@ public class editProfile extends AppCompatActivity {
         }
 
         //check if city is empty and in case put red background
-        if(cityView.getText().length()==0){
+        if(cityView.getSelectedItem().toString().length()==0){
             cityView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }

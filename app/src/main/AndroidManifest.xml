@@ -55,7 +55,16 @@
             android:name=".AddBookAutomatic"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ScanActivity" />
-        <activity android:name=".fullScreenImage"></activity>
+        <activity android:name=".fullScreenImage"/>
+        <activity android:name=".ResultsList"/>
+        <activity android:name=".SearchBook">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+
     </application>
 
 </manifest>
