@@ -48,9 +48,10 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         this.ISBN.setText(ISBN);
         this.editionYear.setText(editionYear);
 
-        StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/0");
+        itemView.setClickable(true);
+        itemView.setOnClickListener(v -> {/*todo apri il libro*/});
 
-        Log.d(deBugTag,"bookImages/"+ bookId + "/0");
+        StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/0");
 
         ref.getBytes(4 * 1024 * 1024).addOnCompleteListener(new OnCompleteListener<byte[]>() {
             @Override

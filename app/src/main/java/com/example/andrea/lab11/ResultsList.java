@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoQuery;
@@ -30,14 +31,36 @@ public class ResultsList extends AppCompatActivity {
     private String deBugTag;
     private FirebaseRecyclerAdapter adapter;
     private RecyclerView list;
+    private TextView emptyListMessage;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.recycler_view_search_list);
-
         deBugTag = this.getClass().getName();
+
+        //set query based on the user research
+        Intent intent = getIntent();
+        Query query = FirebaseDatabase.getInstance().getReference().child("books");
+
+        if(intent.getStringExtra("author")!=null){
+
+            query = query.orderByChild("author").equalTo(intent.getStringExtra("author"));
+
+        }else if(intent.getStringExtra("title")!=null){
+
+            query = query.orderByChild("bookTitle").equalTo(intent.getStringExtra("title"));
+
+        }else if(intent.getStringExtra("ISBN")!=null){
+
+            query = query.orderByChild("ISBN").equalTo(intent.getStringExtra("ISBN"));
+
+        }else {
+
+            query = query.orderByChild("publisher").equalTo(intent.getStringExtra("publisher"));
+        }
+
+        setContentView(R.layout.recycler_view_search_list);
 
         //set toolbar
         ImageButton backArrow = findViewById(R.id.backButton);
@@ -50,17 +73,7 @@ public class ResultsList extends AppCompatActivity {
 
         //get elements
         list = findViewById(R.id.rv);
-
-        //get user and user position
-        Location location = new Location();
-        MyUser user = new MyUser(getApplicationContext());
-
-        //set GeoQuery
-        GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
-        GeoQuery geoQuery = geoFire.queryAtLocation(location.getCoordinates(user.getCity()),50);
-
-        /*
-        Query query = FirebaseDatabase.getInstance().getReference().child("books");
+        emptyListMessage = findViewById(R.id.emptyListMessage);
 
         FirebaseRecyclerOptions<BookInfo> options = new FirebaseRecyclerOptions.Builder<BookInfo>()
             .setQuery(query, new SnapshotParser<BookInfo>() {
@@ -104,7 +117,6 @@ public class ResultsList extends AppCompatActivity {
             @Override
             public CardViewBook onCreateViewHolder(ViewGroup parent, int viewType) {
 
-                Log.d(deBugTag,"onCreateViewHolder");
                 View view = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.card_view_search_results_list, parent, false);
 
@@ -113,21 +125,29 @@ public class ResultsList extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(CardViewBook holder, int position, BookInfo model) {
-                Log.d(deBugTag,"onBindViewHolder");
+
                 holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID());
             }
 
             @Override
             public void onError(@NonNull DatabaseError error) {
                 super.onError(error);
+
                 //todo gestire errore
                 Log.d(deBugTag,"Error: " + error.getMessage());
+            }
+
+            @Override
+            public void onDataChanged() {
+                super.onDataChanged();
+
+                //todo fai stinga di emptyListMessage
+                emptyListMessage.setVisibility(getItemCount() == 0 ? View.VISIBLE : View.GONE);
             }
         };
 
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
-        */
     }
 
 
