@@ -1,5 +1,6 @@
 package com.example.andrea.lab11;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -40,6 +41,10 @@ public class ResultsList extends AppCompatActivity {
         ImageButton backArrow = findViewById(R.id.backButton);
         backArrow.setOnClickListener((v) -> {onBackPressed();});
         ImageButton mapButton = findViewById(R.id.mapButton);
+        mapButton.setOnClickListener((v) -> {
+            Intent mapIntent = new Intent(getApplicationContext(),search_results_map.class);
+            startActivity(mapIntent);
+        });
 
         //get elements
         list = findViewById(R.id.rv);

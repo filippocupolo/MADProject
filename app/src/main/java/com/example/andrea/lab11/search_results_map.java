@@ -60,8 +60,8 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
         mapFragment.getMapAsync(this);
 
 
-        DatabaseReference DBREF = FirebaseDatabase.getInstance().getReference("https://madproject-d48a9.firebaseio.com/usersPosition");
-        geoFire = new GeoFire(DBREF);
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("https://madproject-d48a9.firebaseio.com/usersPosition");
+        geoFire = new GeoFire(dbRef);
 
         geoFire.getLocation(researcher.getUserID(), new LocationCallback() {
             @Override
