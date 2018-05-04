@@ -62,6 +62,7 @@
             android:name=".AddBookAutomatic"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ScanActivity" />
+
 <<<<<<< HEAD
         <activity android:name=".fullScreenImage" />
         <!--
@@ -79,7 +80,9 @@
         <activity
             android:name=".search_results_map"
             android:label="@string/title_activity_search_results_map"></activity>
+<!--=======
 =======
+>>>>>>> c51c633cc8f57b2f8a376e62cc9c5b339881ccbb-->
         <activity android:name=".fullScreenImage"/>
         <activity android:name=".ResultsList"/>
         <activity android:name=".SearchBook">
@@ -90,6 +93,9 @@
             </intent-filter> -->
         </activity>
 
+<!--<<<<<<< HEAD
+>>>>>>> c51c633cc8f57b2f8a376e62cc9c5b339881ccbb
+======= -->
 >>>>>>> c51c633cc8f57b2f8a376e62cc9c5b339881ccbb
     </application>
 
