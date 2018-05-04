@@ -63,7 +63,7 @@
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ScanActivity" />
 
-<<<<<<< HEAD
+<!--<<<<<<< HEAD-->
         <activity android:name=".fullScreenImage" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -79,11 +79,11 @@
 
         <activity
             android:name=".search_results_map"
-            android:label="@string/title_activity_search_results_map"></activity>
+            android:label="@string/title_activity_search_results_map"/>
 <!--=======
 =======
 >>>>>>> c51c633cc8f57b2f8a376e62cc9c5b339881ccbb-->
-        <activity android:name=".fullScreenImage"/>
+
         <activity android:name=".ResultsList"/>
         <activity android:name=".SearchBook">
             <!--<intent-filter>
@@ -95,8 +95,8 @@
 
 <!--<<<<<<< HEAD
 >>>>>>> c51c633cc8f57b2f8a376e62cc9c5b339881ccbb
-======= -->
->>>>>>> c51c633cc8f57b2f8a376e62cc9c5b339881ccbb
+=======
+>>>>>>> c51c633cc8f57b2f8a376e62cc9c5b339881ccbb-->
     </application>
 
 </manifest>

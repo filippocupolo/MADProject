@@ -5,14 +5,22 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.ArraySet;
 import android.util.Log;
+import android.view.ViewTreeObserver;
 import android.widget.Toast;
 
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoLocation;
+import com.firebase.geofire.LocationCallback;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 
@@ -20,6 +28,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.lang.reflect.Array;
+import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
@@ -28,7 +37,12 @@ import cz.msebera.android.httpclient.Header;
 public class search_results_map extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private Map<String,Vector<Float>> cities;
+    DatabaseReference DBREF;
+    List<MyUser> userResults;
+    MyUser researcher;
+    GeoFire geoFire;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,53 +52,14 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapFragment);
         mapFragment.getMapAsync(this);
+
+
+
+        DBREF = FirebaseDatabase.getInstance().getReference("https://madproject-d48a9.firebaseio.com/usersPosition");
+        geoFire = new GeoFire(DBREF);
     }
 
-    private void apiRequest(String city){
 
-        AsyncHttpClient client = new AsyncHttpClient();
-        client.get("https://maps.googleapis.com/maps/api/geocode/json?address="+city+"&key=AIzaSyCUHon0d5OjPqv03FrbViO1VfD8WxkZQoY", new AsyncHttpResponseHandler() {
-
-            @Override
-            public void onStart() {
-                // called before request is started
-            }
-
-            @Override
-            public void onSuccess(int statusCode, Header[] headers, byte[] response) {
-                // called when response HTTP status is "200 OK"
-                try{
-                    JSONObject rootJSON=new JSONObject(new String(response));
-                    JSONObject cityInfo = rootJSON.getJSONArray("items").optJSONObject(0).getJSONObject("results");
-
-
-
-                    Intent intent = new Intent(getApplicationContext(),insertBook.class);
-                    intent.putExtra("city", cities.get());
-                    startActivity(intent);
-
-                }catch (JSONException e){
-                    Log.e(deBugTag,"JSONException");
-                    Log.e(deBugTag,e.getMessage());
-
-                    Toast.makeText(context,getString(R.string.book_not_found),Toast.LENGTH_SHORT).show();
-                }
-
-
-            }
-
-            @Override
-            public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
-                Log.d(deBugTag,statusCode+"");
-                Toast.makeText(context,getString(R.string.book_not_found),Toast.LENGTH_SHORT);
-            }
-
-            @Override
-            public void onRetry(int retryNo) {
-                // called when request is retried
-            }
-        });
-    }
 
 
     /**
@@ -100,9 +75,58 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        int i = 0;
+        while(userResults.listIterator().hasNext())
+        {
+            geoFire.getLocation(userResults.get(i).getUserID(), new LocationCallback() {
+                @Override
+                public void onLocationResult(String key, GeoLocation location) {
+
+                    if(location!=null)
+                    {
+                        LatLng latlng = new LatLng(location.latitude,location.longitude);
+                        mMap.addMarker(new MarkerOptions().position(latlng));
+                    }
+                    else
+                    {
+                        System.out.println(String.format("Location for key %s not found",key));
+
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
+                    System.err.println("There was an error getting the GeoFire location: " + databaseError);
+                }
+            });
+
+            i++;
+        }
+
+        geoFire.getLocation(researcher.getUserID(), new LocationCallback() {
+            @Override
+            public void onLocationResult(String key, GeoLocation location) {
+                if(location!=null)
+                {
+                    LatLng latlng = new LatLng(location.latitude,location.longitude);
+                    mMap.addMarker(new MarkerOptions().position(latlng).title("I'm Here"));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(latlng));
+                    mMap.moveCamera(CameraUpdateFactory.zoomTo(10));
+                }
+                else
+                {
+                    System.out.println(String.format("Location for key %s not found",key));
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+                System.err.println("There was an error getting the GeoFire location: " + databaseError);
+            }
+        });
+
     }
 }
