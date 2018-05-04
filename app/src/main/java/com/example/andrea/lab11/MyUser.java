@@ -10,8 +10,11 @@ import android.support.annotation.NonNull;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoLocation;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FileDownloadTask;
@@ -120,6 +123,9 @@ public class MyUser {
     }
     public void commit(){
 
+        Location location = new Location();
+        GeoLocation coordinates = location.getCoordinates(city);
+
         Log.d(deBugTag,"Commit");
         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
         dbRef.child(userID).child("name").setValue(name);
@@ -127,6 +133,14 @@ public class MyUser {
         dbRef.child(userID).child("email").setValue(email);
         dbRef.child(userID).child("city").setValue(city);
         dbRef.child(userID).child("biography").setValue(biography);
+
+        GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
+        geoFire.setLocation(userID, coordinates, new GeoFire.CompletionListener() {
+            @Override
+            public void onComplete(String key, DatabaseError error) {
+
+            }
+        });
     }
 
     public void setImage(Bitmap bitmap){

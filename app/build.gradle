@@ -43,6 +43,7 @@ dependencies {
     implementation 'com.loopj.android:android-async-http:1.4.9'
     implementation 'com.firebaseui:firebase-ui-database:3.3.1'
     implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    implementation 'com.firebase:geofire-android:2.3.1'
 
 }
 

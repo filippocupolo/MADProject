@@ -107,7 +107,7 @@
                 android:imeOptions="actionDone"
                 android:maxLength="15"/>
 
-            <EditText
+            <Spinner
                 android:id="@+id/cityEdit"
                 android:layout_width="500dp"
                 android:layout_height="wrap_content"
