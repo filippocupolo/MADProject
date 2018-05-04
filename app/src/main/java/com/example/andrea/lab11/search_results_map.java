@@ -63,22 +63,9 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
         DatabaseReference DBREF = FirebaseDatabase.getInstance().getReference("https://madproject-d48a9.firebaseio.com/usersPosition");
         geoFire = new GeoFire(DBREF);
 
-        geoFire.getLocation(researcher.getUserID(), new LocationCallback() {
-            @Override
-            public void onLocationResult(String key, GeoLocation location) {
-                if(location != null)
-                {
-                    researcherLoc = location;                                       //Gets researcher location. Used later.
+        Location location = new Location();
 
-                }
-                else System.out.println(String.format("Location for key %s not found",key));
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
+        researcherLoc = location.getCoordinates(researcher.getCity());
 
         GeoQuery geoQuery = geoFire.queryAtLocation(researcherLoc, 10);     //Query geoFire for all locations in 10km radius. Save the keys in an arrayList used later
         geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
