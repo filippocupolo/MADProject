@@ -204,6 +204,10 @@ public class AddBookAutomatic extends AppCompatActivity {
                         Utilities.goToEditProfile(getApplicationContext(), previousActivity,
                                 "addBookAutomatic", AddBookAutomatic.this);
                         return true;
+                    case R.id.menu_search_book:
+                        Intent intent = new Intent(getApplicationContext(),SearchBook.class);
+                        startActivity(intent);
+                        return true;
                     default:
                         return false;
                 }

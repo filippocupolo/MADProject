@@ -69,6 +69,8 @@ public class BookInfo implements Serializable {
 
     public String getEditionYear() { return editionYear; }
 
+    public String getBookID() { return bookID; }
+
     public String getConditions() {
         return conditions;
     }
@@ -101,6 +103,8 @@ public class BookInfo implements Serializable {
     }
 
     public void setEditionYear(String editionYear) {this.editionYear = editionYear; }
+
+    public void setBookID(String bookID) {this.bookID = bookID; }
 
     public void setConditions(String conditions)
     {

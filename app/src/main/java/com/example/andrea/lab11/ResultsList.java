@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -35,6 +36,11 @@ public class ResultsList extends AppCompatActivity {
 
         deBugTag = this.getClass().getName();
 
+        //set toolbar
+        ImageButton backArrow = findViewById(R.id.backButton);
+        backArrow.setOnClickListener((v) -> {onBackPressed();});
+        ImageButton mapButton = findViewById(R.id.mapButton);
+
         //get elements
         list = findViewById(R.id.rv);
 
@@ -47,7 +53,11 @@ public class ResultsList extends AppCompatActivity {
                 public BookInfo parseSnapshot(@NonNull DataSnapshot dataSnapshot) {
                     BookInfo book = new BookInfo();
                     if(dataSnapshot.exists()){
+
+                        book.setBookID(dataSnapshot.getKey());
+
                         for(DataSnapshot s : dataSnapshot.getChildren()){
+
                             switch (s.getKey()){
                                 case "ISBN":
                                     book.set_ISBN((String)s.getValue());
@@ -88,7 +98,7 @@ public class ResultsList extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(CardViewBook holder, int position, BookInfo model) {
                 Log.d(deBugTag,"onBindViewHolder");
-                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear());
+                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID());
             }
 
             @Override

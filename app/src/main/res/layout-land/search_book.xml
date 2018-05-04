@@ -9,7 +9,7 @@
 
     <include
         android:id="@+id/searchBook"
-        layout="@layout/toolbar_search_book"
+        layout="@layout/back_button_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

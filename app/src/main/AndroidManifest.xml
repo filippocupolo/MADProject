@@ -26,7 +26,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            </intent-filter> 
         </activity>
 
         <meta-data
@@ -57,13 +57,7 @@
         <activity android:name=".ScanActivity" />
         <activity android:name=".fullScreenImage"/>
         <activity android:name=".ResultsList"/>
-        <activity android:name=".SearchBook">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
-        </activity>
+        <activity android:name=".SearchBook"/>
 
     </application>
 
