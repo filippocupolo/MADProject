@@ -38,6 +38,7 @@
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@null"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp"
         android:src="@drawable/ic_arrow_back_24dp"
@@ -51,6 +52,7 @@
 
     <ImageButton
         android:id="@+id/mapButton"
+        android:background="@null"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="12dp"
