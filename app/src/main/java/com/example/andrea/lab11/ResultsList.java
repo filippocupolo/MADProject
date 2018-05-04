@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoQuery;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
@@ -49,6 +51,15 @@ public class ResultsList extends AppCompatActivity {
         //get elements
         list = findViewById(R.id.rv);
 
+        //get user and user position
+        Location location = new Location();
+        MyUser user = new MyUser(getApplicationContext());
+
+        //set GeoQuery
+        GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
+        GeoQuery geoQuery = geoFire.queryAtLocation(location.getCoordinates(user.getCity()),50);
+
+        /*
         Query query = FirebaseDatabase.getInstance().getReference().child("books");
 
         FirebaseRecyclerOptions<BookInfo> options = new FirebaseRecyclerOptions.Builder<BookInfo>()
@@ -116,6 +127,7 @@ public class ResultsList extends AppCompatActivity {
 
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
+        */
     }
 
 
