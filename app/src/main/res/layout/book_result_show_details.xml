@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ResultsList">
+    tools:context=".ShowBook">
 
     <include
         android:id="@+id/resultBook"
-        layout="@layout/toolbar_book_details"
+        layout="@layout/back_button_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,8 +41,6 @@
                 android:id="@+id/bookTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="TITLE"
-                android:inputType="text"
                 android:ellipsize="end"
                 app:layout_constraintStart_toEndOf="@id/imageBook"
                 app:layout_constraintTop_toTopOf="@id/constrTop"
@@ -53,8 +51,6 @@
                 android:id="@+id/bookAuthor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="AUTHOR"
-                android:inputType="text"
                 android:ellipsize="end"
                 app:layout_constraintStart_toEndOf="@id/imageBook"
                 app:layout_constraintTop_toBottomOf="@id/bookTitle"
@@ -64,8 +60,6 @@
                 android:id="@+id/bookISBN"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="ISBN"
-                android:inputType="number"
                 android:ellipsize="end"
                 app:layout_constraintStart_toEndOf="@id/imageBook"
                 app:layout_constraintTop_toBottomOf="@id/bookAuthor"
@@ -75,8 +69,6 @@
                 android:id="@+id/bookEdition"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="EDITION"
-                android:inputType="number"
                 app:layout_constraintStart_toEndOf="@id/imageBook"
                 app:layout_constraintTop_toBottomOf="@id/bookISBN"
                 android:layout_margin="15dp"/>
@@ -85,8 +77,6 @@
                 android:id="@+id/Owner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="NAME SURNAME"
-                android:inputType="text"
                 android:ellipsize="end"
                 app:layout_constraintStart_toStartOf="@id/imageBook"
                 app:layout_constraintTop_toBottomOf="@id/imageBook"
@@ -96,8 +86,6 @@
                 android:id="@+id/ownerCity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="CITY"
-                android:inputType="text"
                 android:ellipsize="end"
                 app:layout_constraintStart_toStartOf="@id/imageBook"
                 app:layout_constraintTop_toBottomOf="@id/Owner"
