@@ -60,7 +60,7 @@ public class SearchBook extends AppCompatActivity {
                 //todo gestire il caso in cui il text è vuoto
             }else{
                 Intent intent = new Intent(getApplicationContext(),ResultsList.class);
-                intent.putExtra("title",titleEditText.getText().toString());
+                intent.putExtra("bookTitle",titleEditText.getText().toString());
                 startActivity(intent);
             }
         });

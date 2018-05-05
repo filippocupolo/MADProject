@@ -15,6 +15,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -53,15 +55,21 @@ public class CardViewBook extends RecyclerView.ViewHolder {
 
         StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/0");
 
-        ref.getBytes(4 * 1024 * 1024).addOnCompleteListener(new OnCompleteListener<byte[]>() {
+        //todo ref.getBytes lancia degli errori cercare di capire cosa sono
+        //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
+        ref.getBytes(10 * 1024 * 1024).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+
             @Override
-            public void onComplete(@NonNull Task<byte[]> task) {
-                if(task.isSuccessful()){
-                    byte[] bitmapData = task.getResult();
-                    photo.setImageDrawable(new BitmapDrawable(BitmapFactory.decodeByteArray(bitmapData, 0, bitmapData.length)));
-                }else{
-                    //todo gestisci quando non ci sono foto
-                }
+            public void onSuccess(byte[] bytes) {
+                photo.setImageDrawable(new BitmapDrawable(BitmapFactory.decodeByteArray(bytes, 0, bytes.length)));
+
+            }
+
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                //todo gestire
+                Log.e(deBugTag,e.getMessage());
             }
         });
     }

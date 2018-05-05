@@ -42,23 +42,21 @@ public class ResultsList extends AppCompatActivity {
         //set query based on the user research
         Intent intent = getIntent();
         Query query = FirebaseDatabase.getInstance().getReference().child("books");
+        String keyExtra;
+        String valueExtra;
 
         if(intent.getStringExtra("author")!=null){
-
-            query = query.orderByChild("author").equalTo(intent.getStringExtra("author"));
-
-        }else if(intent.getStringExtra("title")!=null){
-
-            query = query.orderByChild("bookTitle").equalTo(intent.getStringExtra("title"));
-
+            keyExtra = "author";
+        }else if(intent.getStringExtra("bookTitle")!=null){
+            keyExtra = "bookTitle";
         }else if(intent.getStringExtra("ISBN")!=null){
-
-            query = query.orderByChild("ISBN").equalTo(intent.getStringExtra("ISBN"));
-
+            keyExtra = "ISBN";
         }else {
-
-            query = query.orderByChild("publisher").equalTo(intent.getStringExtra("publisher"));
+            keyExtra = "publisher";
         }
+
+        valueExtra = intent.getStringExtra(keyExtra);
+        query = query.orderByChild(keyExtra).equalTo(valueExtra);
 
         setContentView(R.layout.recycler_view_search_list);
 
@@ -68,6 +66,7 @@ public class ResultsList extends AppCompatActivity {
         ImageButton mapButton = findViewById(R.id.mapButton);
         mapButton.setOnClickListener((v) -> {
             Intent mapIntent = new Intent(getApplicationContext(),search_results_map.class);
+            mapIntent.putExtra(keyExtra,valueExtra);
             startActivity(mapIntent);
         });
 

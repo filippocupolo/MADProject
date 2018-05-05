@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.ArraySet;
 import android.util.Log;
 import android.view.ViewTreeObserver;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.firebase.geofire.GeoFire;
@@ -17,10 +18,13 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -35,120 +39,183 @@ import org.json.JSONObject;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Vector;
+import java.util.concurrent.ConcurrentHashMap;
 
 import cz.msebera.android.httpclient.Header;
 
 public class search_results_map extends FragmentActivity implements OnMapReadyCallback {
 
-    private GoogleMap mMap;
-    private List<String> userResults = new ArrayList<>();
-    private MyUser researcher;
+    private ConcurrentHashMap<LatLng,HashSet<String>> position_users;
+    private ConcurrentHashMap<String,HashSet<String>> user_books;
     private GeoLocation researcherLoc;
-    private GeoFire geoFire;
-
+    private String deBugTag;
+    private GoogleMap googleMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        deBugTag = this.getClass().getName();
+        position_users = new ConcurrentHashMap<>();
+        user_books = new ConcurrentHashMap<>();
         setContentView(R.layout.search_results_map);
+
+        //set buttons
+        ImageButton backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(v -> onBackPressed());
+
+        //get query from previous activity
+        Intent intent = getIntent();
+        Query bookQuery = FirebaseDatabase.getInstance().getReference().child("books");
+
+        if(intent.getStringExtra("author")!=null){
+
+            bookQuery = bookQuery.orderByChild("author").equalTo(intent.getStringExtra("author"));
+
+        }else if(intent.getStringExtra("bookTitle")!=null){
+
+            bookQuery = bookQuery.orderByChild("bookTitle").equalTo(intent.getStringExtra("bookTitle"));
+
+        }else if(intent.getStringExtra("ISBN")!=null){
+
+            bookQuery = bookQuery.orderByChild("ISBN").equalTo(intent.getStringExtra("ISBN"));
+
+        }else {
+
+            bookQuery = bookQuery.orderByChild("publisher").equalTo(intent.getStringExtra("publisher"));
+        }
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapFragment);
         mapFragment.getMapAsync(this);
 
-        researcher  = new MyUser(getApplicationContext());
-        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("usersPosition");
-        geoFire = new GeoFire(dbRef);
-
+        //get position of the user
+        MyUser researcher  = new MyUser(getApplicationContext());
         Location location = new Location();
-
         researcherLoc = location.getCoordinates(researcher.getCity());
 
-        GeoQuery geoQuery = geoFire.queryAtLocation(researcherLoc, 10);     //Query geoFire for all locations in 10km radius. Save the keys in an arrayList used later
-        geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
+        bookQuery.addChildEventListener(new ChildEventListener() {
             @Override
-            public void onKeyEntered(String key, GeoLocation location) {
-                    if(!userResults.contains(key)) {
-                        userResults.add(key);
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
+                String ownerID = dataSnapshot.child("owner").getValue().toString();
+                String bookID = dataSnapshot.getKey();
+
+                //set ownerID and book ID on user_books map
+                HashSet<String> booksSet = user_books.get(ownerID);
+                if(booksSet==null){
+                    booksSet = new HashSet<>();
+                    booksSet.add(bookID);
+                    user_books.put(ownerID,booksSet);
+                }else{
+                    booksSet.add(bookID);
+                }
+
+                //search owner position
+                DatabaseReference positionRef = FirebaseDatabase.getInstance().getReference().child("usersPosition");
+                GeoFire geoFire = new GeoFire(positionRef);
+                geoFire.getLocation(ownerID, new LocationCallback() {
+                    @Override
+                    public void onLocationResult(String key, GeoLocation location) {
+
+                        if (location == null) {
+                            Log.e(deBugTag, "NOT location for key: " + key);
+                        } else {
+
+                            LatLng userLocation = new LatLng(location.latitude, location.longitude);
+
+                            //set position and userID on position_users map
+                            HashSet<String> usersSet = position_users.get(userLocation);
+                            if(usersSet==null){
+                                usersSet = new HashSet<>();
+                                usersSet.add(key);
+                                position_users.put(userLocation,usersSet);
+                            }else{
+                                if(!usersSet.contains(key))
+                                    usersSet.add(key);
+                            }
+
+                            //add marker on map
+                            googleMap.addMarker(new MarkerOptions().position(userLocation));
+                        }
                     }
-            }
 
-
-            @Override
-            public void onKeyExited(String key) {
-
-            }
-
-            @Override
-            public void onKeyMoved(String key, GeoLocation location) {
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        //todo gestire
+                    }
+                });
 
             }
 
             @Override
-            public void onGeoQueryReady() {
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 
             }
 
             @Override
-            public void onGeoQueryError(DatabaseError error) {
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                //todo rimuovi puntatore dalla mappa
+            }
 
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                //todo gestire
             }
         });
     }
 
-
-
-
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
 
+        this.googleMap = googleMap;
 
-        int i = 0;
+        UiSettings settings = googleMap.getUiSettings();
+        settings.setMapToolbarEnabled(false);
 
+        //set map zoom on user location
         LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
-        final CameraPosition cameraPosition = new CameraPosition.Builder()
+        CameraPosition cameraPosition = new CameraPosition.Builder()
                 .target(latlng)
                 .zoom(10)
                 .bearing(0)
                 .tilt(30)
                 .build();
-        mMap.addMarker(new MarkerOptions().position(latlng).title("I'm Here"));
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-        //mMap.moveCamera(CameraUpdateFactory.zoomTo(10));
+        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
-        while(userResults.listIterator().hasNext())
-        {
-            geoFire.getLocation(userResults.get(i), new LocationCallback() {
-                @Override
-                public void onLocationResult(String key, GeoLocation location) {
-
-                    if(location!=null)
-                    {
-                        LatLng latlng = new LatLng(location.latitude,location.longitude);
-                        mMap.addMarker(new MarkerOptions().position(latlng));
-                    }
-                    else
-                    {
-                        System.out.println(String.format("Location for key %s not found",key));
-
-                    }
+        googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                HashSet<String> usersAtPosition = position_users.get(marker.getPosition());
+                LinkedList<String> selectedBook = new LinkedList<>();
+                for(String user : usersAtPosition){
+                    selectedBook.addAll(user_books.get(user));
                 }
 
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                    System.err.println("There was an error getting the GeoFire location: " + databaseError);
+                if(selectedBook.size()==1){
+                    //todo apri show book
+                }else{
+                    //todo apri una lista di libri
                 }
-            });
 
-            i++;
-        }
+                for(String s : selectedBook)
+                    Log.d(deBugTag, "libro selezionato: " + s);
+
+                return true;
+            }
+        });
+
     }
 }

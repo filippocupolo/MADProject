@@ -34,12 +34,13 @@
         android:textColor="@color/textIcons"
         android:textSize="26sp" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
         android:layout_marginStart="12dp"
+        android:background="@null"
         android:src="@drawable/ic_arrow_back_24dp"
         android:elevation="10dp"
         android:layout_alignBottom="@id/searchResultText"
@@ -49,7 +50,7 @@
         android:layout_alignParentStart="true"
         />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/mapButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,6 +58,7 @@
         android:layout_marginEnd="12dp"
         android:src="@drawable/ic_list_24dp"
         android:elevation="10dp"
+        android:background="@null"
         android:layout_alignBottom="@id/searchResultText"
         android:layout_alignTop="@id/searchResultText"
         android:textAlignment="center"

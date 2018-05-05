@@ -138,7 +138,9 @@ public class MyUser {
         geoFire.setLocation(userID, coordinates, new GeoFire.CompletionListener() {
             @Override
             public void onComplete(String key, DatabaseError error) {
-
+                if(error!= null){
+                    //todo gestisci
+                }
             }
         });
     }
