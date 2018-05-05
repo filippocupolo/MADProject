@@ -68,7 +68,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
         researcherLoc = location.getCoordinates(researcher.getCity());
 
-        GeoQuery geoQuery = geoFire.queryAtLocation(researcherLoc, 10);     //Query geoFire for all locations in 10km radius. Save the keys in an arrayList used later
+        GeoQuery geoQuery = geoFire.queryAtLocation(researcherLoc, 30);     //Query geoFire for all locations in 30km radius. Save the keys in an arrayList used later
         geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
             @Override
             public void onKeyEntered(String key, GeoLocation location) {
@@ -121,7 +121,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
                 .build();
         mMap.addMarker(new MarkerOptions().position(latlng).title("I'm Here"));
         mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-        //mMap.moveCamera(CameraUpdateFactory.zoomTo(10));
+
 
         while(userResults.listIterator().hasNext())
         {

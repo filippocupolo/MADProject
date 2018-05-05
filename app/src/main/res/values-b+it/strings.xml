@@ -59,6 +59,7 @@
     <string name="hint_publisher_textV">Cerca un libro per editore</string>
     <string name="hint_keyWords_textV">Cerca un libro per parole chiave</string>
     <string name="book_search_results">Risultati della Ricerca</string>
+    <string name="book_details">Dettagli Libro</string>
 
     <string-array name="conditions_array">
         <item>Pessime</item>
