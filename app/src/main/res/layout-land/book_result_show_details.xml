@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResultsList">
+
+    <include
+        android:id="@+id/resultBook"
+        layout="@layout/toolbar_book_details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/resultBook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constrTop">
+
+            <ImageView
+                android:id="@+id/imageBook"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:padding="12dp"
+                android:layout_margin="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constrTop"
+                android:background="@color/colorAccent"
+                />
+
+            <TextView
+                android:id="@+id/bookTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="TITLE"
+                android:inputType="text"
+                android:ellipsize="end"
+                app:layout_constraintStart_toEndOf="@id/imageBook"
+                app:layout_constraintTop_toTopOf="@id/constrTop"
+                android:layout_margin="15dp"
+                />
+
+            <TextView
+                android:id="@+id/bookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="AUTHOR"
+                android:ellipsize="end"
+                android:inputType="text"
+                app:layout_constraintStart_toEndOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/bookTitle"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/bookISBN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="ISBN"
+                android:inputType="number"
+                android:ellipsize="end"
+                app:layout_constraintStart_toEndOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/bookAuthor"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/bookEdition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="EDITION"
+                android:ellipsize="end"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/bookISBN"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/Owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="NAME SURNAME"
+                android:ellipsize="end"
+                android:inputType="text"
+                app:layout_constraintStart_toEndOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/bookEdition"
+                android:layout_margin="15dp"/>
+
+            <TextView
+                android:id="@+id/ownerCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="CITY"
+                android:inputType="text"
+                android:ellipsize="end"
+                app:layout_constraintStart_toEndOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/Owner"
+                android:layout_margin="15dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

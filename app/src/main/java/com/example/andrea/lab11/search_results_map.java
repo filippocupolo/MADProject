@@ -51,7 +51,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class search_results_map extends FragmentActivity implements OnMapReadyCallback {
 
-    private ConcurrentHashMap<LatLng,HashSet<String>> position_users;
+    private ConcurrentHashMap<Marker,HashSet<String>> position_users;
     private ConcurrentHashMap<String,HashSet<String>> user_books;
     private GeoLocation researcherLoc;
     private String deBugTag;
@@ -102,6 +102,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
         researcherLoc = location.getCoordinates(researcher.getCity());
 
         bookQuery.addChildEventListener(new ChildEventListener() {
+
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
@@ -131,19 +132,21 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
                             LatLng userLocation = new LatLng(location.latitude, location.longitude);
 
+                            //add marker on map
+                            Marker marker = googleMap.addMarker(new MarkerOptions().position(userLocation));
+
                             //set position and userID on position_users map
                             HashSet<String> usersSet = position_users.get(userLocation);
                             if(usersSet==null){
                                 usersSet = new HashSet<>();
                                 usersSet.add(key);
-                                position_users.put(userLocation,usersSet);
+                                position_users.put(marker,usersSet);
                             }else{
                                 if(!usersSet.contains(key))
                                     usersSet.add(key);
                             }
 
-                            //add marker on map
-                            googleMap.addMarker(new MarkerOptions().position(userLocation));
+
                         }
                     }
 
@@ -162,7 +165,42 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
             @Override
             public void onChildRemoved(DataSnapshot dataSnapshot) {
-                //todo rimuovi puntatore dalla mappa
+
+                //todo testare l'eliminazione di un oggetto
+
+                String ownerID = dataSnapshot.child("owner").getValue().toString();
+                String bookID = dataSnapshot.getKey();
+
+                HashSet <String> bookList = user_books.get(ownerID);
+
+                if(bookList.size()>1){
+                    bookList.remove(bookID);
+                }else{
+
+                    user_books.remove(ownerID);
+
+                    Marker toRemove = null;
+
+                    for (Map.Entry<Marker, HashSet<String>> entry : position_users.entrySet()) {
+
+                        if (entry.getValue().contains(ownerID)) {
+                            toRemove = entry.getKey();
+                            break;
+                        }
+                    }
+
+                    HashSet <String> userList = position_users.get(toRemove);
+
+                    if(userList.size()>1){
+                        userList.remove(ownerID);
+                    }else {
+
+                        position_users.remove(toRemove);
+                        toRemove.remove();
+                    }
+
+                }
+
             }
 
             @Override
@@ -193,12 +231,14 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
                 .bearing(0)
                 .tilt(30)
                 .build();
+
         googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+
             @Override
             public boolean onMarkerClick(Marker marker) {
-                HashSet<String> usersAtPosition = position_users.get(marker.getPosition());
+                HashSet<String> usersAtPosition = position_users.get(marker);
                 LinkedList<String> selectedBook = new LinkedList<>();
                 for(String user : usersAtPosition){
                     selectedBook.addAll(user_books.get(user));
