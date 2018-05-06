@@ -1,5 +1,7 @@
 package com.example.andrea.lab11;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -29,11 +31,13 @@ public class CardViewBook extends RecyclerView.ViewHolder {
     private TextView ISBN;
     private TextView editionYear;
     private ImageView photo;
+    private Context context;
 
     public CardViewBook(View view){
         super(view);
 
         deBugTag = this.getClass().getName();
+        context = itemView.getContext();
 
         //get elements
         title = itemView.findViewById(R.id.titleResult);
@@ -50,8 +54,13 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         this.ISBN.setText(ISBN);
         this.editionYear.setText(editionYear);
 
+        //open Show Book if card is pressed
         itemView.setClickable(true);
-        itemView.setOnClickListener(v -> {/*todo apri il libro*/});
+        itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, ShowBook.class);
+            intent.putExtra("bookId",bookId);
+            context.startActivity(intent);
+        });
 
         StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/0");
 

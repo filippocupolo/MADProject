@@ -245,9 +245,18 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
                 }
 
                 if(selectedBook.size()==1){
-                    //todo apri show book
+
+                    //open show book
+                    Intent intent = new Intent(getApplicationContext(), ShowBook.class);
+                    intent.putExtra("bookId",selectedBook.get(0));
+                    startActivity(intent);
+
                 }else{
-                    //todo apri una lista di libri
+
+                    //open a list of the selected books
+                    Intent intent = new Intent(getApplicationContext(),ResultsList.class);
+                    intent.putExtra("bookIdList",selectedBook);
+                    startActivity(intent);
                 }
 
                 for(String s : selectedBook)

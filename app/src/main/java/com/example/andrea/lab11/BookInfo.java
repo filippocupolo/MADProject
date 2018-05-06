@@ -51,6 +51,18 @@ public class BookInfo implements Serializable {
         imageList = new LinkedList<>();
     }
 
+    public BookInfo(BookInfo another) {
+        this.bookID = another.bookID;
+        this.ISBN = another.ISBN;
+        this.bookTitle = another.bookTitle;
+        this.author = another.author;
+        this.publisher = another.publisher;
+        this.owner = another.owner;
+        this.editionYear = another.editionYear;
+        this.conditions = another.conditions;
+        this.imageList = new LinkedList<>(another.imageList);
+    }
+
     public String get_ISBN() {
         return ISBN;
     }

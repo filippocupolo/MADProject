@@ -68,6 +68,7 @@
         <activity android:name=".search_results_map" android:label="@string/title_activity_search_results_map"/>
         <activity android:name=".ResultsList"/>
         <activity android:name=".SearchBook"/>
+        <activity android:name=".ShowBook"/>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
