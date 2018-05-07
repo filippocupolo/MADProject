@@ -195,10 +195,6 @@ public class ResultsList extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
 
-                    Log.d(deBugTag,dataSnapshot.toString());
-                    Log.d(deBugTag,dataSnapshot.getKey());
-                    Log.d(deBugTag,dataSnapshot.getValue().toString());
-
                     BookInfo book = parseDataSnapshotBook(dataSnapshot.getChildren().iterator().next());
                     if(book == null)
                         return;
@@ -216,9 +212,12 @@ public class ResultsList extends AppCompatActivity {
 
     }
 
-    private BookInfo parseDataSnapshotBook(DataSnapshot dataSnapshot){
+    public static BookInfo parseDataSnapshotBook(DataSnapshot dataSnapshot){
 
         BookInfo book = null;
+
+        if(dataSnapshot==null)
+            return null;
 
         if(dataSnapshot.exists()){
 
@@ -239,6 +238,12 @@ public class ResultsList extends AppCompatActivity {
                         break;
                     case "editionYear":
                         book.setEditionYear(child.getValue().toString());
+                        break;
+                    case "owner":
+                        book.setOwner((String) child.getValue());
+                        break;
+                    case "publisher":
+                        book.setPublisher((String) child.getValue());
                         break;
                 }
 

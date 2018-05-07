@@ -175,6 +175,32 @@
                     android:layout_alignStart="@id/ownerCity"
                     android:layout_alignLeft="@id/ownerCity"/>
             </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/ISBN">
+
+                <TextView
+                    android:id="@+id/bookPublisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:ellipsize="end"
+                    android:hint="Publisher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/bookPublisher"
+                    android:layout_alignStart="@id/bookPublisher"
+                    android:ellipsize="end"
+                    android:text="Publisher" />
+            </RelativeLayout>
         </android.support.constraint.ConstraintLayout>
 
     </ScrollView>

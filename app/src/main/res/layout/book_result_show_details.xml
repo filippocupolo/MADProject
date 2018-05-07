@@ -32,7 +32,6 @@
                 android:layout_height="wrap_content"
                 android:numColumns="4"
                 android:columnWidth="75dp"
-
                 android:padding="12dp"
                 android:layout_margin="25dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -115,7 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/Edition"
-                app:layout_constraintTop_toBottomOf="@id/ISBN"
+                app:layout_constraintTop_toBottomOf="@id/Publisher"
                 app:layout_constraintStart_toStartOf="@id/imageBook">
                 <TextView
                     android:id="@+id/bookEdition"
@@ -173,6 +172,31 @@
                     android:ellipsize="end"
                     android:layout_alignStart="@id/ownerCity"
                     android:layout_alignLeft="@id/ownerCity"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ISBN"
+                app:layout_constraintStart_toStartOf="@id/imageBook"
+                tools:layout_editor_absoluteX="25dp">
+
+                <TextView
+                    android:id="@+id/bookPublisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:ellipsize="end"
+                    android:hint="Publisher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/bookPublisher"
+                    android:layout_alignStart="@id/bookPublisher"
+                    android:ellipsize="end"
+                    android:text="Publisher" />
             </RelativeLayout>
         </android.support.constraint.ConstraintLayout>
 
