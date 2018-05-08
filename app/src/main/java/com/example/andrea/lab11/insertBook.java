@@ -71,7 +71,7 @@ public class insertBook extends AppCompatActivity{
         Intent intent = getIntent();
         book = (BookInfo)intent.getSerializableExtra("book");
         if(book == null){
-            book = new BookInfo(getApplicationContext());
+            book = new BookInfo();
         }
 
         //get user

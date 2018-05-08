@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchBook">
 
 
 
     <include
         android:id="@+id/searchBook"
-        layout="@layout/toolbar_search_book"
+        layout="@layout/back_button_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +27,7 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/constSearchAuthor"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="50dp">
 
             <android.support.constraint.ConstraintLayout
@@ -55,7 +56,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="30dp"
                     android:ems="10"
-                    android:inputType="number"
+                    android:inputType="text"
                     app:layout_constraintEnd_toStartOf="@id/authorSearchButton"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -113,7 +114,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="30dp"
                     android:ems="10"
-                    android:inputType="number"
+                    android:inputType="text"
                     app:layout_constraintEnd_toStartOf="@id/titleSearchButton"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -174,7 +175,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="30dp"
                     android:ems="10"
-                    android:inputType="number"
+                    android:inputType="text"
                     app:layout_constraintEnd_toStartOf="@id/publisherSearchButton"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -226,7 +227,7 @@
                 >
 
                 <EditText
-                    android:id="@+id/searchKeyWords"
+                    android:id="@+id/searchISBN"
                     android:layout_width="0dp"
                     android:layout_height="46dp"
                     android:layout_marginEnd="8dp"
@@ -236,24 +237,24 @@
                     android:layout_marginTop="30dp"
                     android:ems="10"
                     android:inputType="number"
-                    app:layout_constraintEnd_toStartOf="@id/keyWordsSearchButton"
+                    app:layout_constraintEnd_toStartOf="@id/ISBNSearchButton"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textViewKeyWords"
+                    android:id="@+id/textViewISBN"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="9dp"
                     android:layout_marginStart="9dp"
                     android:layout_marginTop="8dp"
-                    android:text="@string/keyWords_textV"
+                    android:text="ISBN"
                     android:textColor="@color/primaryText"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageButton
-                    android:id="@+id/keyWordsSearchButton"
+                    android:id="@+id/ISBNSearchButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="12dp"
@@ -262,8 +263,8 @@
                     android:elevation="25dp"
                     android:src="@drawable/ic_search_24dp"
                     app:layout_constraintEnd_toEndOf="@id/constraintLayoutSearchKeyWords"
-                    app:layout_constraintLeft_toRightOf="@id/searchKeyWords"
-                    app:layout_constraintTop_toTopOf="@id/searchKeyWords" />
+                    app:layout_constraintLeft_toRightOf="@id/searchISBN"
+                    app:layout_constraintTop_toTopOf="@id/searchISBN" />
             </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

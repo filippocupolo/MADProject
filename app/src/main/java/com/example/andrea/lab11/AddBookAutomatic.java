@@ -56,7 +56,7 @@ public class AddBookAutomatic extends AppCompatActivity {
         deBugTag = this.getClass().getName();
         context  = getApplicationContext();
         user = new MyUser(context);
-        book = new BookInfo(context);
+        book = new BookInfo();
         previousActivity = getIntent().getStringExtra("caller");
 
         EditText editISBN = findViewById(R.id.editISBN);
@@ -203,6 +203,10 @@ public class AddBookAutomatic extends AppCompatActivity {
                         //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
                         Utilities.goToEditProfile(getApplicationContext(), previousActivity,
                                 "addBookAutomatic", AddBookAutomatic.this);
+                        return true;
+                    case R.id.menu_search_book:
+                        Intent intent = new Intent(getApplicationContext(),SearchBook.class);
+                        startActivity(intent);
                         return true;
                     default:
                         return false;

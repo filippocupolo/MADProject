@@ -38,9 +38,7 @@ import static android.support.constraint.Constraints.TAG;
 public class showProfile extends AppCompatActivity{
 
     private MyUser myUser;
-    private float downX, downY,upY, upX;
     private String previousActivity;
-    private String fullScreenInd;
     private Context context;
     private ImageView profile_image;
     private String deBugTag;
@@ -188,6 +186,10 @@ public class showProfile extends AppCompatActivity{
                         //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
                         Utilities.goToEditProfile(getApplicationContext(), previousActivity,
                                 "showProfile", showProfile.this);
+                        return true;
+                    case R.id.menu_search_book:
+                        Intent intent = new Intent(getApplicationContext(),SearchBook.class);
+                        startActivity(intent);
                         return true;
                     default:
                         return false;

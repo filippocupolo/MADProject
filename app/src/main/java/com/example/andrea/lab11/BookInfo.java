@@ -45,11 +45,22 @@ public class BookInfo implements Serializable {
     private String editionYear;
     private String conditions = null;
     private LinkedList<Bitmap> imageList;
-    private Context applicationContext = null;
 
-    public BookInfo(Context applicationContext)
+    public BookInfo()
     {
         imageList = new LinkedList<>();
+    }
+
+    public BookInfo(BookInfo another) {
+        this.bookID = another.bookID;
+        this.ISBN = another.ISBN;
+        this.bookTitle = another.bookTitle;
+        this.author = another.author;
+        this.publisher = another.publisher;
+        this.owner = another.owner;
+        this.editionYear = another.editionYear;
+        this.conditions = another.conditions;
+        this.imageList = new LinkedList<>(another.imageList);
     }
 
     public String get_ISBN() {
@@ -69,6 +80,8 @@ public class BookInfo implements Serializable {
     }
 
     public String getEditionYear() { return editionYear; }
+
+    public String getBookID() { return bookID; }
 
     public String getConditions() {
         return conditions;
@@ -102,6 +115,8 @@ public class BookInfo implements Serializable {
     }
 
     public void setEditionYear(String editionYear) {this.editionYear = editionYear; }
+
+    public void setBookID(String bookID) {this.bookID = bookID; }
 
     public void setConditions(String conditions)
     {

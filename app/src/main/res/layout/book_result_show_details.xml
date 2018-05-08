@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ShowBook">
+
+    <include
+        android:id="@+id/resultBook"
+        layout="@layout/back_button_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/resultBook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/constrTop">
+
+            <GridView
+                android:id="@+id/imageBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"
+                android:columnWidth="75dp"
+                android:padding="12dp"
+                android:layout_margin="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constrTop"
+                android:background="@color/colorAccent"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/imageBook">
+                <TextView
+                    android:id="@+id/bookTitle"
+                    android:layout_width="wrap_content"
+                    android:hint="Title"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_margin="15dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/hintTitle"
+                    android:text="Title"
+                    android:ellipsize="end"
+                    android:layout_alignStart="@id/bookTitle"
+                    android:layout_alignLeft="@id/bookTitle"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/author"
+                app:layout_constraintStart_toStartOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/title">
+                <TextView
+                    android:id="@+id/bookAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Author"
+                    android:layout_margin="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/authorHint"
+                    android:text="Author"
+                    android:ellipsize="end"
+                    android:layout_alignStart="@id/bookAuthor"
+                    android:layout_alignLeft="@id/bookAuthor"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ISBN"
+                app:layout_constraintStart_toStartOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/author">
+                <TextView
+                    android:id="@+id/bookISBN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="ISBN"
+                    android:layout_margin="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ISBNhint"
+                    android:text="ISBN"
+                    android:layout_alignStart="@id/bookISBN"
+                    android:layout_alignLeft="@id/bookISBN"
+                    android:ellipsize="end"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Edition"
+                app:layout_constraintTop_toBottomOf="@id/Publisher"
+                app:layout_constraintStart_toStartOf="@id/imageBook">
+                <TextView
+                    android:id="@+id/bookEdition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Edition"
+                    android:layout_margin="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/bookEdition"
+                    android:layout_alignLeft="@id/bookEdition"
+                    android:text="Edition"
+                    android:ellipsize="end"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/Owner"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Edition"
+                app:layout_constraintStart_toStartOf="@id/imageBook">
+                <TextView
+                    android:id="@+id/bookOwner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Owner"
+                    android:layout_margin="15dp"
+                    android:ellipsize="end"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Owner"
+                    android:ellipsize="end"
+                    android:layout_alignStart="@id/bookOwner"
+                    android:layout_alignLeft="@id/bookOwner"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/imageBook"
+                app:layout_constraintTop_toBottomOf="@id/Owner">
+                <TextView
+                    android:id="@+id/ownerCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="City"
+                    android:layout_margin="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City"
+                    android:ellipsize="end"
+                    android:layout_alignStart="@id/ownerCity"
+                    android:layout_alignLeft="@id/ownerCity"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/ISBN"
+                app:layout_constraintStart_toStartOf="@id/imageBook"
+                tools:layout_editor_absoluteX="25dp">
+
+                <TextView
+                    android:id="@+id/bookPublisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:ellipsize="end"
+                    android:hint="Publisher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/bookPublisher"
+                    android:layout_alignStart="@id/bookPublisher"
+                    android:ellipsize="end"
+                    android:text="Publisher" />
+            </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
