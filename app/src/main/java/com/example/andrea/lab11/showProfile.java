@@ -1,38 +1,27 @@
 package com.example.andrea.lab11;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.gesture.GestureOverlayView;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
-import android.media.Image;
-import android.os.Build;
 import android.support.design.widget.TabLayout;
-import android.support.v4.view.MotionEventCompat;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.PopupMenu;
-import android.view.MotionEvent;
-import android.view.View;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TabHost;
 import android.widget.TextView;
 import static android.graphics.drawable.Drawable.createFromPath;
-import static android.support.constraint.Constraints.TAG;
 
 
 public class showProfile extends AppCompatActivity{
@@ -42,6 +31,9 @@ public class showProfile extends AppCompatActivity{
     private Context context;
     private ImageView profile_image;
     private String deBugTag;
+    private float x1,x2;
+    static final int MIN_DISTANCE = 150;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -55,36 +47,6 @@ public class showProfile extends AppCompatActivity{
         setContentView(R.layout.show_profile);
 
         previousActivity = getIntent().getStringExtra("caller");
-
-        //tab listener
-        TabLayout tabs = findViewById(R.id.tabLayout);
-        tabs.getTabAt(0).select();
-
-        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-
-                switch (tab.getPosition()){
-                    case 0:
-
-                        break;
-                    case 1:
-                        Utilities.goToAddBook(getApplicationContext(), previousActivity,
-                                "showProfile", showProfile.this);
-                        break;
-                }
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-                Log.d("tab", "edit-unselected");
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-                Log.d("tab", "edit-reselected" + tab.getText());
-            }
-        });
 
         profile_image = findViewById(R.id.imageViewShow);
         profile_image.setOnClickListener(v -> {
@@ -169,7 +131,7 @@ public class showProfile extends AppCompatActivity{
         }
     }
 
-    public void showPopup(View v){
+    public void showPopup(View v) {
         PopupMenu popup = new PopupMenu(getApplicationContext(), v);
         MenuInflater inflater = popup.getMenuInflater();
         inflater.inflate(R.menu.general_menu, popup.getMenu());
@@ -188,7 +150,7 @@ public class showProfile extends AppCompatActivity{
                                 "showProfile", showProfile.this);
                         return true;
                     case R.id.menu_search_book:
-                        Intent intent = new Intent(getApplicationContext(),SearchBook.class);
+                        Intent intent = new Intent(getApplicationContext(), SearchBook.class);
                         startActivity(intent);
                         return true;
                     default:

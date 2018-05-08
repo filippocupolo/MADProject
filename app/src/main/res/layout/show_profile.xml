@@ -26,8 +26,10 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/show_profile_toolbar">
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/show_profile_toolbar"
+        android:id="@+id/show_profile_swipe">
 
         <RelativeLayout
             android:layout_width="match_parent"

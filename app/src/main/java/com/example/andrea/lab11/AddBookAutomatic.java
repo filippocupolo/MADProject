@@ -16,6 +16,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -59,6 +60,12 @@ public class AddBookAutomatic extends AppCompatActivity {
         book = new BookInfo();
         previousActivity = getIntent().getStringExtra("caller");
 
+        //set toolbar
+        ImageButton backArrow = findViewById(R.id.imageButton);
+        backArrow.setOnClickListener((v) -> {onBackPressed();});
+        TextView toolbarTitle = findViewById(R.id.back_toolbar_text);
+        toolbarTitle.setText(R.string.add_book);
+
         EditText editISBN = findViewById(R.id.editISBN);
         editISBN.setOnEditorActionListener(
                 new EditText.OnEditorActionListener() {
@@ -75,39 +82,11 @@ public class AddBookAutomatic extends AppCompatActivity {
                     }
                 });
 
-        //tab listener
-        TabLayout tabs = findViewById(R.id.tabLayout);
-        tabs.getTabAt(1).select();
-
-        tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                switch (tab.getPosition()){
-                    case 0:
-                        Utilities.goToShowProfile(getApplicationContext(), previousActivity,
-                                "addBookAutomatic", AddBookAutomatic.this);
-                        break;
-                    case 1:
-                        break;
-                }
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab){
-            }
-        });
-
     }
 
     @Override
     protected void onStart(){
         super.onStart();
-        TabLayout tabs = findViewById(R.id.tabLayout);
-        tabs.getTabAt(1).select();
     }
 
     public void goToManualButtonClick(View v){

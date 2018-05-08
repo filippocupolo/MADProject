@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_books_swipe"
+    tools:context=".ResultsList">
+
+    <include
+        android:id="@+id/my_books_tool"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_books_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/resultBook"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_books_tool" />
+
+    <TextView
+        android:id="@+id/my_books_emptyListMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Research did not produce any results"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/my_books_rv"
+        app:layout_constraintStart_toStartOf="@+id/my_books_rv"
+        app:layout_constraintTop_toBottomOf="@+id/my_books_tool" />
+
+    <ImageView
+        android:id="@+id/imageViewEditButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/camera_border"
+        app:layout_constraintTop_toBottomOf="@id/my_books_tool"
+        app:layout_constraintRight_toRightOf="@id/my_books_tool"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:onClick="addBook"
+        android:padding="20dp"
+        android:src="@drawable/ic_add_button_24dp" />
+
+</android.support.constraint.ConstraintLayout>

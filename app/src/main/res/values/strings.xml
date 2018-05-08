@@ -82,5 +82,6 @@
     <string name="image_uploaded">Image correctly uploaded</string>
     <string name="connection_error">Connection error</string>
     <string name="title_activity_search_results_map">Map</string>
+    <string name="my_books">My Books</string>
 
 </resources>

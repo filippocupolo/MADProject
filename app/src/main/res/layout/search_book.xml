@@ -7,10 +7,9 @@
     tools:context=".SearchBook">
 
 
-
     <include
         android:id="@+id/searchBook"
-        layout="@layout/back_button_toolbar"
+        layout="@layout/toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
