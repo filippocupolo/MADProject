@@ -2,7 +2,11 @@ package com.example.andrea.lab11;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -21,19 +25,23 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+
 import static android.graphics.drawable.Drawable.createFromPath;
 
 
 public class showProfile extends AppCompatActivity{
 
-    private MyUser myUser;
-    private String previousActivity;
     private Context context;
-    private ImageView profile_image;
     private String deBugTag;
-    private float x1,x2;
-    static final int MIN_DISTANCE = 150;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,118 +54,97 @@ public class showProfile extends AppCompatActivity{
         //+++++++++++++set fields+++++++++++++
         setContentView(R.layout.show_profile);
 
-        previousActivity = getIntent().getStringExtra("caller");
+        String userId = getIntent().getStringExtra("userId");
 
-        profile_image = findViewById(R.id.imageViewShow);
-        profile_image.setOnClickListener(v -> {
-
-            String path = myUser.getImagePath();
-            if(myUser.getImageExist() == false){
-                Intent intent = new Intent(
-                        getApplicationContext(),
-                        fullScreenImage.class
-                );
-                intent.putExtra("path", path);
-                startActivity(intent);
-            }
-            //profile_image.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-        });
-
-    }
-
-    @Override
-    protected void onStart(){
-        super.onStart();
-        TabLayout tabs = findViewById(R.id.tabLayout);
-        tabs.getTabAt(0).select();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        //create MyUser
-        myUser = new MyUser(getApplicationContext());
-
-        //TODO change value if myUser's elements are null (to delete in final release of app)
-        String name;
-        String surname;
-        String email;
-        String biography;
-        if(myUser.getName() ==null){
-            name = getResources().getString(R.string.name);
-        }else{
-            name = myUser.getName();
-        }
-        if(myUser.getSurname()==null){
-            surname = getResources().getString(R.string.surname);
-        }else{
-            surname = myUser.getSurname();
-        }
-        if(myUser.getEmail()==null){
-                email = getResources().getString(R.string.email);
-            }else{
-            email = myUser.getEmail();
-        }if(myUser.getBiography()==null){
-            biography = getResources().getString(R.string.bio);
-        }else{
-            biography = myUser.getBiography();
-        }
-
-        //set name and surname
+        //get elements
         TextView nameSurnameView = findViewById(R.id.nameSurnameShow);
-        nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
-
-        //set email
         TextView emailView = findViewById(R.id.emailShow);
-        emailView.setText(email);
-
-        //set biography
         TextView biographyView = findViewById(R.id.showProfileBio);
-        biographyView.setText(biography);
-
-        //set image
         ImageView profileView = findViewById(R.id.imageViewShow);
 
-        if( myUser.getImageExist() == false){
-
-            //if there is not a profile image load the default one
-            profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
-        }else{
-
-            //load the profile image
-            Drawable bd = createFromPath(myUser.getImagePath());
-            profileView.setImageDrawable(bd);
-        }
-    }
-
-    public void showPopup(View v) {
-        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.general_menu, popup.getMenu());
-
-        popup.show();
-        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+        //Get information from FireBase
+        FirebaseDatabase.getInstance().getReference().child("users").orderByKey().equalTo(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.menu_logout:
-                        Utilities.signOut(context);
-                        return true;
-                    case R.id.menu_edit_profile:
-                        //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
-                        Utilities.goToEditProfile(getApplicationContext(), previousActivity,
-                                "showProfile", showProfile.this);
-                        return true;
-                    case R.id.menu_search_book:
-                        Intent intent = new Intent(getApplicationContext(), SearchBook.class);
-                        startActivity(intent);
-                        return true;
-                    default:
-                        return false;
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                dataSnapshot = dataSnapshot.getChildren().iterator().next();
+
+                String name = null;
+                String surname = null;
+                String email = null;
+                String biography = null;
+                String city = null;
+
+                for(DataSnapshot child : dataSnapshot.getChildren()){
+
+                    switch (child.getKey()){
+                        case "name":
+                            name = (String)child.getValue();
+                            break;
+                        case "surname":
+                            surname = (String)child.getValue();
+                            break;
+                        case "email":
+                            email = (String)child.getValue();
+                            break;
+                        case "biography":
+                            biography = child.getValue().toString();
+                            break;
+                        case "city":
+                            city = (String) child.getValue();
+                            break;
+                    }
                 }
+                nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
+                emailView.setText(email);
+                biographyView.setText(biography);
+                //todo put city
+
+                //set default image
+                profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
+
+                //set container visible
+                findViewById(R.id.show_form_wrapper).setVisibility(View.VISIBLE);
+
+                //check if the profile image is available and load it
+                StorageReference ref = FirebaseStorage.getInstance().getReference().child("profileImages/"+ userId);
+
+                //todo ref.getBytes lancia degli errori cercare di capire cosa sono
+                //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
+                ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                    @Override
+                    public void onSuccess(Uri uri) {
+                        FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes(10 * 1024 * 1024).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+
+                            @Override
+                            public void onSuccess(byte[] bytes) {
+
+                                profileView.setImageDrawable(new BitmapDrawable(BitmapFactory.decodeByteArray(bytes, 0, bytes.length)));
+                            }
+
+                        }).addOnFailureListener(new OnFailureListener() {
+                            @Override
+                            public void onFailure(@NonNull Exception e) {
+
+                                //todo gestire se il file non esiste non fare nulla
+                                Log.e(deBugTag,e.getMessage());
+
+                            }
+                        });
+
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        //todo gestire se il file non esiste non fare nulla
+                        Log.e(deBugTag,e.getMessage());
+                    }
+                });
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
             }
         });
     }
-
 }

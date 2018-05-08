@@ -6,7 +6,7 @@
 
     <include
         android:id="@+id/show_profile_toolbar"
-        layout="@layout/toolbar" />
+        layout="@layout/back_button_toolbar" />
 
 <!--
     <ImageView
@@ -37,6 +37,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
+            android:id="@+id/show_form_wrapper"
+            android:visibility="gone"
             android:layout_height="wrap_content">
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"

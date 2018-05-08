@@ -6,7 +6,7 @@
 
     <include
         android:id="@+id/show_profile_toolbar"
-        layout="@layout/toolbar" />
+        layout="@layout/back_button_toolbar" />
 
     <!--
 
@@ -35,6 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/show_form_wrapper"
+            android:visibility="gone"
             android:layout_marginEnd="@dimen/margin_left_right"
             android:layout_marginRight="@dimen/margin_left_right"
             android:layout_marginStart="@dimen/margin_left_right"

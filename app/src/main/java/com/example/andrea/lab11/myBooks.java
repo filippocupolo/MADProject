@@ -3,15 +3,29 @@ package com.example.andrea.lab11;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.PopupMenu;
+
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.firebase.ui.database.SnapshotParser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+
+import java.util.List;
 
 public class myBooks extends AppCompatActivity{
 
@@ -25,8 +39,47 @@ public class myBooks extends AppCompatActivity{
         super.onCreate(savedInstanceState);
 
         context = getApplicationContext();
+
         //set layout
         setContentView(R.layout.my_books);
+
+        //set query
+        Query query = FirebaseDatabase.getInstance().getReference().child("books").orderByChild("owner").equalTo(new MyUser(context).getUserID());
+
+        //get and populate list
+        RecyclerView list = findViewById(R.id.my_books_rv);
+        FirebaseRecyclerOptions<BookInfo> options = new FirebaseRecyclerOptions.Builder<BookInfo>()
+                .setQuery(query, new SnapshotParser<BookInfo>() {
+                    @NonNull
+                    @Override
+                    public BookInfo parseSnapshot(@NonNull DataSnapshot snapshot) {
+
+                        return ResultsList.parseDataSnapshotBook(snapshot);
+
+                    }
+                })
+                .setLifecycleOwner(this)
+                .build();
+        FirebaseRecyclerAdapter<BookInfo, CardViewBook> adapter = new FirebaseRecyclerAdapter<BookInfo, CardViewBook>(options) {
+
+            @NonNull
+            @Override
+            public CardViewBook onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.card_view_search_results_list, parent, false);
+
+                return new CardViewBook(view);
+            }
+
+            @Override
+            protected void onBindViewHolder(@NonNull CardViewBook holder, int position, @NonNull BookInfo model) {
+
+                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID());
+            }
+        };
+        list.setLayoutManager(new LinearLayoutManager(this));
+        list.setAdapter(adapter);
+
 
         //attach the ontouchlistener to the entire view
         View myView = findViewById(R.id.my_books_swipe);
@@ -119,10 +172,6 @@ public class myBooks extends AppCompatActivity{
                         //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
                         Utilities.goToEditProfile(getApplicationContext(), previousActivity,
                                 "myBooks", myBooks.this);
-                        return true;
-                    case R.id.menu_search_book:
-                        Intent intent = new Intent(getApplicationContext(),SearchBook.class);
-                        startActivity(intent);
                         return true;
                     default:
                         return false;

@@ -162,36 +162,5 @@ public class AddBookAutomatic extends AppCompatActivity {
             }
         });
     }
-
-    public void showPopup(View v){
-        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.general_menu, popup.getMenu());
-
-        popup.show();
-
-        //click listener
-        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.menu_logout:
-                        Utilities.signOut(context);
-                        return true;
-                    case R.id.menu_edit_profile:
-                        //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
-                        Utilities.goToEditProfile(getApplicationContext(), previousActivity,
-                                "addBookAutomatic", AddBookAutomatic.this);
-                        return true;
-                    case R.id.menu_search_book:
-                        Intent intent = new Intent(getApplicationContext(),SearchBook.class);
-                        startActivity(intent);
-                        return true;
-                    default:
-                        return false;
-                }
-            }
-        });
-    }
 }
 
