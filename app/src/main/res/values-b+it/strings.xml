@@ -86,4 +86,5 @@
     <string name="title">Titolo</string>
     <string name="bookEdition">Anno</string>
     <string name="owner">Proprietario</string>
+    <string name="no_results">La ricerca non ha prodotto risultati</string>
 </resources>

@@ -89,5 +89,6 @@
     <string name="title">Title</string>
     <string name="bookEdition">Year</string>
     <string name="owner">Owner</string>
+    <string name="no_results">Research did not produce any results</string>
 
 </resources>

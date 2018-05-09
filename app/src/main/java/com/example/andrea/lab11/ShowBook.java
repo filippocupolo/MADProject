@@ -51,6 +51,7 @@ public class ShowBook extends AppCompatActivity {
     private TextView cityOwner;
     private BookInfo book;
     private ConstraintLayout container;
+    private ImageButton goToProfileButton;
     private CopyOnWriteArrayList<Drawable> imagesList;
 
     //todo set sting on xml
@@ -74,6 +75,7 @@ public class ShowBook extends AppCompatActivity {
         owner = findViewById(R.id.bookOwner);
         cityOwner = findViewById(R.id.ownerCity);
         container = findViewById(R.id.constrTop);
+        goToProfileButton = findViewById(R.id.gotoProfileButton);
         GridView gridView = findViewById(R.id.imageBook);
 
         //set toolbar
@@ -184,6 +186,11 @@ public class ShowBook extends AppCompatActivity {
                         ISBN.setText(book.get_ISBN());
                         owner.setText(name_surname);
                         cityOwner.setText(city);
+                        goToProfileButton.setOnClickListener(v->{
+                            Intent showProfileIntent = new Intent(getApplicationContext(),showProfile.class);
+                            showProfileIntent.putExtra("userId",book.getOwner());
+                            startActivity(showProfileIntent);
+                        });
 
                         for (int i = 0; i<4; i++){
 
