@@ -54,10 +54,10 @@
     <string name="upload_book">Carica Libro</string>
     <string name="search_book">Cerca un Libro</string>
     <string name="keyWords_textV">Parole Chiave</string>
-    <string name="hint_author_textV">Cerca un libro per autore</string>
-    <string name="hint_title_textV">Cerca un libro per titolo</string>
-    <string name="hint_publisher_textV">Cerca un libro per editore</string>
-    <string name="hint_keyWords_textV">Cerca un libro per parole chiave</string>
+    <string name="hint_author_textV">Cerca per autore</string>
+    <string name="hint_title_textV">Cerca per titolo</string>
+    <string name="hint_publisher_textV">Cerca per editore</string>
+    <string name="hint_keyWords_textV">Cerca per parole chiave</string>
     <string name="book_search_results">Risultati della Ricerca</string>
     <string name="book_details">Dettagli Libro</string>
 
