@@ -80,8 +80,9 @@ public class showProfile extends AppCompatActivity{
         RecyclerView list = findViewById(R.id.published_books_rv);
 
         //set toolbar
-        findViewById(R.id.back_toolbar_text).setVisibility(View.GONE);
+        TextView toolbarTitle = findViewById(R.id.back_toolbar_text);
         findViewById(R.id.imageButton).setOnClickListener(v -> onBackPressed());
+        toolbarTitle.setText(R.string.user_info);
 
         //set FireBaseReference
         DatabaseReference fireBaseRef = FirebaseDatabase.getInstance().getReference();

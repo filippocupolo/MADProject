@@ -78,8 +78,9 @@ public class ShowBook extends AppCompatActivity {
         GridView gridView = findViewById(R.id.imageBook);
 
         //set toolbar
-        findViewById(R.id.back_toolbar_text).setVisibility(View.GONE);
+        TextView toolbarTitle = findViewById(R.id.back_toolbar_text);
         findViewById(R.id.imageButton).setOnClickListener(v->onBackPressed());
+        toolbarTitle.setText(R.string.book_info);
 
         //hide container until information are got
         container.setVisibility(View.GONE);

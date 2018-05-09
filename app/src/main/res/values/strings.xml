@@ -92,5 +92,7 @@
     <string name="no_results">Research did not produce any results</string>
     <string name="no_book_uploaded_profile">This user did not shared any book</string>
     <string name="empty_search">Field cannot be empty</string>
+    <string name="book_info">Book info</string>
+    <string name="user_info">User info</string>
 
 </resources>

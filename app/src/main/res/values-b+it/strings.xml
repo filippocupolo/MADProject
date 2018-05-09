@@ -89,4 +89,6 @@
     <string name="no_results">La ricerca non ha prodotto risultati</string>
     <string name="no_book_uploaded_profile">Questo utente non ha condiviso nessun libro</string>
     <string name="empty_search">Il campo non può essere vuoto</string>
+    <string name="book_info">Info sul libro</string>
+    <string name="user_info">Info sull\'utente</string>
 </resources>

@@ -35,8 +35,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class ResultsList extends AppCompatActivity {
 
-    //todo put firebase rules to "auth != null" after debug work is finished
-
     private String deBugTag;
     private RecyclerView.Adapter adapter;
     private RecyclerView list;
