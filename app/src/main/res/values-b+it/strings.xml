@@ -80,5 +80,9 @@
     <string name="image_uploaded">Immagine aggiunta correttamente!</string>
     <string name="connection_error">Errore di connessione</string>
     <string name="my_books">I miei libri</string>
+    <string name="published_books">Libri pubblicati</string>
+    <string name="not_existing_user">L\'utente non esiste</string>
+    <string name="network_problem">Errore di connesione riprovare più tardi</string>
+
 
 </resources>

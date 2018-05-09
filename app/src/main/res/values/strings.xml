@@ -83,5 +83,8 @@
     <string name="connection_error">Connection error</string>
     <string name="title_activity_search_results_map">Map</string>
     <string name="my_books">My Books</string>
+    <string name="published_books">Published books</string>
+    <string name="not_existing_user">User does not exist</string>
+    <string name="network_problem">Network problem try later</string>
 
 </resources>

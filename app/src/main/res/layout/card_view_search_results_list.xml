@@ -28,7 +28,7 @@
                     android:layout_height="100dp"
                     android:layout_margin="12dp"
                     android:id="@+id/imageResult"
-                    android:background="@color/colorAccent"
+                    android:background="@null"
                     android:elevation="50dp"/>
 
 
