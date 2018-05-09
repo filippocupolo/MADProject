@@ -164,7 +164,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
-                        networkProblem();
+                        networkProblem(databaseError);
                     }
                 });
 
@@ -222,7 +222,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                networkProblem();
+                networkProblem(databaseError);
             }
         });
     }
@@ -280,8 +280,10 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
     }
 
-    private void networkProblem(){
-        Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
-        onBackPressed();
+    private void networkProblem(DatabaseError databaseError){
+        if(databaseError.getCode()!=-3){
+            Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
+            onBackPressed();
+        }
     }
 }

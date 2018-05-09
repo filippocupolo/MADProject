@@ -145,7 +145,7 @@ public class ResultsList extends AppCompatActivity {
         });
 
         //download items and put them or remove them from the list
-        query.addChildEventListener(new ChildEventListener() {
+        ChildEventListener childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
@@ -180,9 +180,11 @@ public class ResultsList extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                networkProblem();
+                Log.d(deBugTag,databaseError.getMessage()+databaseError.getCode());
+                networkProblem(databaseError);
             }
-        });
+        };
+        query.addChildEventListener(childEventListener);
     }
 
     //search of userID passed by the Map activity
@@ -203,7 +205,8 @@ public class ResultsList extends AppCompatActivity {
 
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
-                    networkProblem();
+                    Log.d(deBugTag,databaseError.getMessage());
+                    networkProblem(databaseError);
                 }
             });
         }
@@ -251,9 +254,11 @@ public class ResultsList extends AppCompatActivity {
         return book;
     }
 
-    private void networkProblem(){
-        Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
-        onBackPressed();
+    private void networkProblem(DatabaseError databaseError){
+        if(databaseError.getCode()!=-3){
+            Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
+            onBackPressed();
+        }
     }
 
 }
