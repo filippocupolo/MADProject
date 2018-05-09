@@ -87,10 +87,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-
-                        //todo gestire se il file non esiste non fare nulla
                         Log.e(deBugTag,e.getMessage());
-
                     }
                 });
 
@@ -98,7 +95,6 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                //todo gestire se il file non esiste non fare nulla
                 Log.e(deBugTag,e.getMessage());
             }
         });

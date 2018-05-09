@@ -78,7 +78,7 @@ public class ScanActivity extends AppCompatActivity {
             public void receiveDetections(Detector.Detections<Barcode> detections) {
                 SparseArray<Barcode> barcodes = detections.getDetectedItems();
                 if (barcodes.size() != 0){
-                    //TODO check that is a ISBN
+
                     Log.d(deBugTag,barcodes.valueAt(0).displayValue);
                     Intent returnIntent = new Intent();
                     returnIntent.putExtra("result",barcodes.valueAt(0).displayValue);

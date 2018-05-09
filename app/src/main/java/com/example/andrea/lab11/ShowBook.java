@@ -54,7 +54,6 @@ public class ShowBook extends AppCompatActivity {
     private ImageButton goToProfileButton;
     private CopyOnWriteArrayList<Drawable> imagesList;
 
-    //todo set sting on xml
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -215,7 +214,6 @@ public class ShowBook extends AppCompatActivity {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
 
-                                            //todo gestire se il file non esiste non fare nulla
                                             Log.e(deBugTag,e.getMessage());
 
                                         }
@@ -225,7 +223,7 @@ public class ShowBook extends AppCompatActivity {
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    //todo gestire se il file non esiste non fare nulla
+
                                     Log.e(deBugTag,e.getMessage());
                                 }
                             });

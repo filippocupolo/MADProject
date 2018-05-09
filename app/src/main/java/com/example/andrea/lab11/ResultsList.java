@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoQuery;
@@ -136,7 +137,6 @@ public class ResultsList extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                //todo fai stinga di emptyListMessage
                 emptyListMessage.setVisibility(!dataSnapshot.exists() ? View.VISIBLE : View.GONE);
             }
 
@@ -182,7 +182,7 @@ public class ResultsList extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                //todo gestire
+                networkProblem();
             }
         });
     }
@@ -205,8 +205,7 @@ public class ResultsList extends AppCompatActivity {
 
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
-                    //todo gestire
-                    Log.d(deBugTag,databaseError.getMessage());
+                    networkProblem();
                 }
             });
         }
@@ -252,6 +251,11 @@ public class ResultsList extends AppCompatActivity {
         }
 
         return book;
+    }
+
+    private void networkProblem(){
+        Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
+        onBackPressed();
     }
 
 }

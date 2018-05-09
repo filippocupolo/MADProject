@@ -144,7 +144,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
-                android:background="@color/colorAccent"
+                android:background="@null"
                 android:columnWidth="75dp"
                 android:numColumns="4"
                 android:padding="12dp"

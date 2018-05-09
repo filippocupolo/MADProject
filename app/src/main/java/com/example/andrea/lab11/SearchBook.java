@@ -60,7 +60,8 @@ public class SearchBook extends AppCompatActivity {
 
         authorSearchButton.setOnClickListener(v -> {
             if(authorEditText.getText().toString().equals("")){
-                //todo gestire il caso in cui il text è vuoto
+                //field cannot be empty
+                authorEditText.setError(getString(R.string.empty_search));
             }else{
                 Intent intent = new Intent(getApplicationContext(),ResultsList.class);
                 intent.putExtra("author",authorEditText.getText().toString());
@@ -70,7 +71,8 @@ public class SearchBook extends AppCompatActivity {
 
         titleSearchButton.setOnClickListener(v -> {
             if(titleEditText.getText().toString().equals("")){
-                //todo gestire il caso in cui il text è vuoto
+                //field cannot be empty
+                titleEditText.setError(getString(R.string.empty_search));
             }else{
                 Intent intent = new Intent(getApplicationContext(),ResultsList.class);
                 intent.putExtra("bookTitle",titleEditText.getText().toString());
@@ -80,7 +82,8 @@ public class SearchBook extends AppCompatActivity {
 
         publisherSearchButton.setOnClickListener(v -> {
             if(publisherEditText.getText().toString().equals("")){
-                //todo gestire il caso in cui il text è vuoto
+                //field cannot be empty
+                publisherEditText.setError(getString(R.string.empty_search));
             }else{
                 Intent intent = new Intent(getApplicationContext(),ResultsList.class);
                 intent.putExtra("publisher",publisherEditText.getText().toString());
@@ -90,7 +93,8 @@ public class SearchBook extends AppCompatActivity {
 
         ISBNSearchButton.setOnClickListener(v -> {
             if(ISBNEditText.getText().toString().equals("")){
-                //todo gestire il caso in cui il text è vuoto
+                //field cannot be empty
+                ISBNEditText.setError(getString(R.string.empty_search));
             }else{
                 Intent intent = new Intent(getApplicationContext(),ResultsList.class);
                 intent.putExtra("ISBN",ISBNEditText.getText().toString());

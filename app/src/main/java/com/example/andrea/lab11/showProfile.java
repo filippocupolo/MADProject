@@ -31,6 +31,7 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -74,6 +75,7 @@ public class showProfile extends AppCompatActivity{
         TextView emailView = findViewById(R.id.emailShow);
         TextView biographyView = findViewById(R.id.showProfileBio);
         TextView cityView = findViewById(R.id.showProfileCity);
+        TextView noBookMessage = findViewById(R.id.noBookMessage);
         ImageView profileView = findViewById(R.id.imageViewShow);
         RecyclerView list = findViewById(R.id.published_books_rv);
 
@@ -146,8 +148,6 @@ public class showProfile extends AppCompatActivity{
                         }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
-
-                                //todo gestire se il file non esiste non fare nulla
                                 Log.e(deBugTag,e.getMessage());
 
                             }
@@ -157,7 +157,6 @@ public class showProfile extends AppCompatActivity{
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        //todo gestire se il file non esiste non fare nulla
                         Log.e(deBugTag,e.getMessage());
                     }
                 });
@@ -165,7 +164,7 @@ public class showProfile extends AppCompatActivity{
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                //todo gestire
+                networkProblem();
             }
         });
 
@@ -217,7 +216,7 @@ public class showProfile extends AppCompatActivity{
             public void onDataChanged() {
                 super.onDataChanged();
                 if(getItemCount()==0){
-                    //todo metti messaggio di errore ("non sono stati trovati libri")
+                    noBookMessage.setVisibility(View.VISIBLE);
                 }
                 Log.d(deBugTag,"ondatachanged");
             }
@@ -225,5 +224,10 @@ public class showProfile extends AppCompatActivity{
         list.setItemAnimator(new DefaultItemAnimator());
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
+    }
+
+    private void networkProblem(){
+        Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
+        onBackPressed();
     }
 }

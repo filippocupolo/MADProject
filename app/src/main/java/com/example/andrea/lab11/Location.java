@@ -36,8 +36,8 @@ public class Location {
             }
         }
         catch(JSONException e){
-            //todo gestire
             Log.e(deBugTag,e.getMessage());
+            return;
         }
     }
 
