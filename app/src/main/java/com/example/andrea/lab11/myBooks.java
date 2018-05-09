@@ -33,6 +33,7 @@ public class myBooks extends AppCompatActivity{
     private float x1,x2;
     private Context context;
     static final int MIN_DISTANCE = 100;
+    private TabLayout tabs;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -88,9 +89,7 @@ public class myBooks extends AppCompatActivity{
         previousActivity = getIntent().getStringExtra("caller");
 
         //tab listener
-        TabLayout tabs = findViewById(R.id.tabLayout);
-        tabs.getTabAt(0).select();
-
+        tabs = findViewById(R.id.tabLayout);
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
@@ -108,6 +107,7 @@ public class myBooks extends AppCompatActivity{
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
+
                 Log.d("tab", "edit-unselected");
             }
 
@@ -121,7 +121,6 @@ public class myBooks extends AppCompatActivity{
     @Override
     protected void onStart() {
         super.onStart();
-        TabLayout tabs = findViewById(R.id.tabLayout);
         tabs.getTabAt(0).select();
     }
 

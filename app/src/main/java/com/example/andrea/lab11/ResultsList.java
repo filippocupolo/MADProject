@@ -85,6 +85,7 @@ public class ResultsList extends AppCompatActivity {
                 Intent mapIntent = new Intent(getApplicationContext(),search_results_map.class);
                 mapIntent.putExtra(keyExtra,valueExtra);
                 startActivity(mapIntent);
+                finish();
             });
         }
 
