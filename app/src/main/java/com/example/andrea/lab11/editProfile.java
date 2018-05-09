@@ -276,7 +276,7 @@ public class editProfile extends AppCompatActivity {
             if(caller.equals("login")){
                 Intent intent = new Intent(
                         getApplicationContext(),
-                        showProfile.class
+                        myBooks.class
                 );
                 intent.putExtra("caller", "editProfile");
                 startActivity(intent);

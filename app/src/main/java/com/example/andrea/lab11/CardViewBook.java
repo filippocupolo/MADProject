@@ -59,6 +59,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         this.author.setText(author);
         this.ISBN.setText(ISBN);
         this.editionYear.setText(editionYear);
+        this.photo.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_image_black_24dp));
 
         //open Show Book if card is pressed
         itemView.setClickable(true);

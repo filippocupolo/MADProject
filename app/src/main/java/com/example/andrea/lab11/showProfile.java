@@ -1,5 +1,6 @@
 package com.example.andrea.lab11;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
@@ -16,21 +17,31 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.firebase.ui.database.SnapshotParser;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -42,13 +53,15 @@ public class showProfile extends AppCompatActivity{
 
     private Context context;
     private String deBugTag;
+    private AppCompatActivity activity;
+    private FirebaseRecyclerAdapter<BookInfo, CardViewBook> adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         deBugTag = this.getClass().getName();
-
+        activity = this;
         context = getApplicationContext();
 
         //+++++++++++++set fields+++++++++++++
@@ -60,10 +73,19 @@ public class showProfile extends AppCompatActivity{
         TextView nameSurnameView = findViewById(R.id.nameSurnameShow);
         TextView emailView = findViewById(R.id.emailShow);
         TextView biographyView = findViewById(R.id.showProfileBio);
+        TextView cityView = findViewById(R.id.showProfileCity);
         ImageView profileView = findViewById(R.id.imageViewShow);
+        RecyclerView list = findViewById(R.id.published_books_rv);
+
+        //set toolbar
+        findViewById(R.id.back_toolbar_text).setVisibility(View.GONE);
+        findViewById(R.id.imageButton).setOnClickListener(v -> onBackPressed());
+
+        //set FireBaseReference
+        DatabaseReference fireBaseRef = FirebaseDatabase.getInstance().getReference();
 
         //Get information from FireBase
-        FirebaseDatabase.getInstance().getReference().child("users").orderByKey().equalTo(userId).addListenerForSingleValueEvent(new ValueEventListener() {
+        fireBaseRef.child("users").orderByKey().equalTo(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 dataSnapshot = dataSnapshot.getChildren().iterator().next();
@@ -97,7 +119,7 @@ public class showProfile extends AppCompatActivity{
                 nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
                 emailView.setText(email);
                 biographyView.setText(biography);
-                //todo put city
+                cityView.setText(city);
 
                 //set default image
                 profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
@@ -143,8 +165,65 @@ public class showProfile extends AppCompatActivity{
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                //todo gestire
             }
         });
+
+
+        //fill up the published book list
+        Log.d(deBugTag,"userId: "+ userId);
+        Query publishedBookQuery = fireBaseRef.child("books").orderByChild("owner").equalTo(userId);
+
+        FirebaseRecyclerOptions<BookInfo> options = new FirebaseRecyclerOptions.Builder<BookInfo>()
+                .setQuery(publishedBookQuery, new SnapshotParser<BookInfo>() {
+                    @NonNull
+                    @Override
+                    public BookInfo parseSnapshot(@NonNull DataSnapshot snapshot) {
+
+                        if(snapshot==null){
+                            Log.d(deBugTag,"snapshot null");
+                        }
+                        if(!snapshot.exists()){
+                            Log.d(deBugTag,"snapshot non esiste");
+                        }else{
+                            Log.d(deBugTag,"snapshot: " + snapshot.toString());
+                        }
+
+                        return ResultsList.parseDataSnapshotBook(snapshot);
+
+                    }
+                })
+                .setLifecycleOwner(this)
+                .build();
+
+        adapter = new FirebaseRecyclerAdapter<BookInfo, CardViewBook>(options) {
+
+            @NonNull
+            @Override
+            public CardViewBook onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.card_view_search_results_list, parent, false);
+
+                return new CardViewBook(view);
+            }
+
+            @Override
+            protected void onBindViewHolder(@NonNull CardViewBook holder, int position, @NonNull BookInfo model) {
+
+                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID());
+            }
+
+            @Override
+            public void onDataChanged() {
+                super.onDataChanged();
+                if(getItemCount()==0){
+                    //todo metti messaggio di errore ("non sono stati trovati libri")
+                }
+                Log.d(deBugTag,"ondatachanged");
+            }
+        };
+        list.setItemAnimator(new DefaultItemAnimator());
+        list.setLayoutManager(new LinearLayoutManager(this));
+        list.setAdapter(adapter);
     }
 }

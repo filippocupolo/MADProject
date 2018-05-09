@@ -21,6 +21,7 @@ import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -40,6 +41,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ShowBook extends AppCompatActivity {
 
     private String deBugTag;
+    private Context context;
     private TextView title;
     private TextView author;
     private TextView editionYear;
@@ -58,6 +60,7 @@ public class ShowBook extends AppCompatActivity {
 
         deBugTag = this.getClass().getName();
         imagesList = new CopyOnWriteArrayList<>();
+        context = getApplicationContext();
 
         //set layout
         setContentView(R.layout.book_result_show_details);
@@ -134,7 +137,7 @@ public class ShowBook extends AppCompatActivity {
                 //get book
                 book = ResultsList.parseDataSnapshotBook(dataSnapshot.getChildren().iterator().next());
                 if(book == null){
-                    //todo gestire penso nello stesso modo di onCancelled
+                    errorMethod(R.string.network_problem);
                 }
 
                 //make FireBase request for book Owner
@@ -144,12 +147,10 @@ public class ShowBook extends AppCompatActivity {
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
                         if(dataSnapshot == null){
-                            //todo gestire penso nello stesso modo di onCancelled
-                            Log.e(deBugTag,"dataSnapshot è null");
+                            errorMethod(R.string.not_existing_user);
                         }
                         if(!dataSnapshot.exists()){
-                            //todo gestire penso nello stesso modo di onCancelled
-                            Log.e(deBugTag,"dataSnapshot non esiste");
+                            errorMethod(R.string.not_existing_user);
                         }
 
                         dataSnapshot = dataSnapshot.getChildren().iterator().next();
@@ -227,7 +228,7 @@ public class ShowBook extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
-                        //todo gestire penso nello stesso modo dell'altro onCancelled
+                        errorMethod(R.string.network_problem);
                     }
                 });
 
@@ -235,9 +236,16 @@ public class ShowBook extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                //todo gestire
+                errorMethod(R.string.network_problem);
             }
         });
 
+    }
+
+    private void errorMethod(int txt){
+
+        Toast.makeText(context,txt,Toast.LENGTH_SHORT).show();
+        Log.e(deBugTag,"dataSnapshot non esiste");
+        onBackPressed();
     }
 }
