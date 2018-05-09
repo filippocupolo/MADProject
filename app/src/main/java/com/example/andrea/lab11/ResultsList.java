@@ -130,20 +130,6 @@ public class ResultsList extends AppCompatActivity {
     //normal research of book based author, title, ecc.
     private void normalResearch(Query query){
 
-        //check if not item are found
-        query.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-
-                emptyListMessage.setVisibility(!dataSnapshot.exists() ? View.VISIBLE : View.GONE);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-
         //download items and put them or remove them from the list
         ChildEventListener childEventListener = new ChildEventListener() {
             @Override
@@ -154,6 +140,7 @@ public class ResultsList extends AppCompatActivity {
                     return;
                 bookList.add(book);
                 adapter.notifyDataSetChanged();
+                emptyListMessage.setVisibility(View.GONE);
             }
 
             @Override
@@ -169,6 +156,8 @@ public class ResultsList extends AppCompatActivity {
                 if(book == null)
                     return;
                 bookList.remove(book);
+                if(bookList.size()==0)
+                    emptyListMessage.setVisibility(View.VISIBLE);
                 adapter.notifyDataSetChanged();
 
             }

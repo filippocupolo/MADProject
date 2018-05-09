@@ -216,9 +216,10 @@ public class showProfile extends AppCompatActivity{
             @Override
             public void onDataChanged() {
                 super.onDataChanged();
-                if(getItemCount()==0){
+                if(getItemCount()==0)
                     noBookMessage.setVisibility(View.VISIBLE);
-                }
+                else
+                    noBookMessage.setVisibility(View.GONE);
                 Log.d(deBugTag,"ondatachanged");
             }
         };
