@@ -123,9 +123,9 @@ public class ShowBook extends AppCompatActivity {
         };
         gridView.setAdapter(adapter);
 
-
-        //get bookId from intent
+        //get bookId and showProfile from intent
         String bookId = getIntent().getStringExtra("bookId");
+        Boolean showProfile = getIntent().getBooleanExtra("showProfile",true);
 
         //set database Ref
         DatabaseReference dbRef =  FirebaseDatabase.getInstance().getReference();
@@ -186,11 +186,15 @@ public class ShowBook extends AppCompatActivity {
                         ISBN.setText(book.get_ISBN());
                         owner.setText(name_surname);
                         cityOwner.setText(city);
-                        goToProfileButton.setOnClickListener(v->{
-                            Intent showProfileIntent = new Intent(getApplicationContext(),showProfile.class);
-                            showProfileIntent.putExtra("userId",book.getOwner());
-                            startActivity(showProfileIntent);
-                        });
+                        if(showProfile){
+                            goToProfileButton.setOnClickListener(v->{
+                                Intent showProfileIntent = new Intent(getApplicationContext(),showProfile.class);
+                                showProfileIntent.putExtra("userId",book.getOwner());
+                                startActivity(showProfileIntent);
+                            });
+                        }else{
+                            goToProfileButton.setVisibility(View.GONE);
+                        }
 
                         for (int i = 0; i<4; i++){
 

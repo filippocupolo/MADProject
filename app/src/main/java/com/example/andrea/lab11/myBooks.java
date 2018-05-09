@@ -75,7 +75,7 @@ public class myBooks extends AppCompatActivity{
             @Override
             protected void onBindViewHolder(@NonNull CardViewBook holder, int position, @NonNull BookInfo model) {
 
-                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID());
+                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID(),true);
             }
         };
         list.setLayoutManager(new LinearLayoutManager(this));

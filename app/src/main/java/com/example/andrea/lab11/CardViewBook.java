@@ -53,7 +53,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         photo = itemView.findViewById(R.id.imageResult);
     }
 
-    public void bindData(String title, String author, String ISBN, String editionYear, String bookId){
+    public void bindData(String title, String author, String ISBN, String editionYear, String bookId, Boolean showProfile){
 
         this.title.setText(title);
         this.author.setText(author);
@@ -66,6 +66,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         itemView.setOnClickListener(v -> {
             Intent intent = new Intent(context, ShowBook.class);
             intent.putExtra("bookId",bookId);
+            intent.putExtra("showProfile",showProfile);
             context.startActivity(intent);
         });
 
