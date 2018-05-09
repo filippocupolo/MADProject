@@ -26,8 +26,9 @@
         <android.support.constraint.ConstraintLayout
             android:id="@+id/constSearchAuthor"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="50dp">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp">
 
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutSearchAuthor"
@@ -95,7 +96,7 @@
                 android:layout_marginLeft="26dp"
                 android:layout_marginRight="26dp"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/shape_show_book"
                 android:elevation="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -155,7 +156,7 @@
                 android:layout_marginLeft="26dp"
                 android:layout_marginRight="26dp"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/shape_show_book"
                 android:elevation="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -206,24 +207,23 @@
             </android.support.constraint.ConstraintLayout>
 
 
-
-
             <android.support.constraint.ConstraintLayout
                 android:id="@+id/constraintLayoutSearchKeyWords"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:layout_marginEnd="26dp"
                 android:layout_marginLeft="26dp"
                 android:layout_marginRight="26dp"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/shape_show_book"
                 android:elevation="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.6"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/constraintLayoutSearchPublisher"
-                >
+                app:layout_constraintTop_toBottomOf="@id/constraintLayoutSearchPublisher">
 
                 <EditText
                     android:id="@+id/searchISBN"
