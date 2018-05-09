@@ -66,30 +66,42 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
         user_books = new ConcurrentHashMap<>();
         setContentView(R.layout.search_results_map);
 
-        //set buttons
-        ImageButton backButton = findViewById(R.id.backButton);
-        backButton.setOnClickListener(v -> onBackPressed());
-
         //get query from previous activity
         Intent intent = getIntent();
         Query bookQuery = FirebaseDatabase.getInstance().getReference().child("books");
 
+        String keyExtra;
         if(intent.getStringExtra("author")!=null){
 
+            keyExtra = "author";
             bookQuery = bookQuery.orderByChild("author").equalTo(intent.getStringExtra("author"));
 
         }else if(intent.getStringExtra("bookTitle")!=null){
 
+            keyExtra = "bookTitle";
             bookQuery = bookQuery.orderByChild("bookTitle").equalTo(intent.getStringExtra("bookTitle"));
 
         }else if(intent.getStringExtra("ISBN")!=null){
 
+            keyExtra = "ISBN";
             bookQuery = bookQuery.orderByChild("ISBN").equalTo(intent.getStringExtra("ISBN"));
 
         }else {
 
+            keyExtra = "publisher";
             bookQuery = bookQuery.orderByChild("publisher").equalTo(intent.getStringExtra("publisher"));
         }
+
+        //set buttons
+        ImageButton backButton = findViewById(R.id.backButton);
+        backButton.setOnClickListener(v -> onBackPressed());
+        ImageButton listButton = findViewById(R.id.mapButton);
+        listButton.setOnClickListener(v->{
+            Intent listIntent = new Intent(getApplicationContext(),ResultsList.class);
+            listIntent.putExtra(keyExtra,intent.getStringExtra(keyExtra));
+            startActivity(listIntent);
+            finish();
+        });
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()

@@ -31,6 +31,7 @@ public class SearchBook extends AppCompatActivity {
     static final int MIN_DISTANCE = 100;
     private String previousActivity;
     private Context context;
+    private TabLayout tabs;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -104,30 +105,32 @@ public class SearchBook extends AppCompatActivity {
         previousActivity = getIntent().getStringExtra("caller");
 
         //tab listener
-        TabLayout tabs = findViewById(R.id.tabLayout);
-        tabs.getTabAt(1).select();
-
+        tabs = findViewById(R.id.tabLayout);
         tabs.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
+
                 switch (tab.getPosition()){
                     case 0:
-                        Log.d("tabss", "ok");
+                        Log.d(deBugTag, "ok");
                         Utilities.goToMyBooks(getApplicationContext(), previousActivity,
                                 "SearchBook", SearchBook.this);
                         break;
                     case 1:
-                        Log.d("tabss", "ok2");
+                        Log.d(deBugTag, "ok2");
                         break;
                 }
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
+
+                Log.d(deBugTag, "edit-unselected");
             }
 
             @Override
-            public void onTabReselected(TabLayout.Tab tab){
+            public void onTabReselected(TabLayout.Tab tab) {
+                Log.d(deBugTag, "edit-reselected" + tab.getText());
             }
         });
     }
@@ -135,7 +138,6 @@ public class SearchBook extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        TabLayout tabs = findViewById(R.id.tabLayout);
         tabs.getTabAt(1).select();
     }
 
