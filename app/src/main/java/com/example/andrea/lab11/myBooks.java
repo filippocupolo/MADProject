@@ -32,7 +32,7 @@ public class myBooks extends AppCompatActivity{
     private String previousActivity;
     private float x1,x2;
     private Context context;
-    static final int MIN_DISTANCE = 150;
+    static final int MIN_DISTANCE = 100;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -82,8 +82,8 @@ public class myBooks extends AppCompatActivity{
 
 
         //attach the ontouchlistener to the entire view
-        View myView = findViewById(R.id.my_books_swipe);
-        myView.setOnTouchListener(touchListener);
+        //View myView = findViewById(R.id.my_books_swipe);
+        //myView.setOnTouchListener(touchListener);
 
         previousActivity = getIntent().getStringExtra("caller");
 
@@ -125,6 +125,7 @@ public class myBooks extends AppCompatActivity{
         tabs.getTabAt(0).select();
     }
 
+    /*
     View.OnTouchListener touchListener = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
@@ -151,7 +152,7 @@ public class myBooks extends AppCompatActivity{
             }
             return true;
         }
-    };
+    };*/
 
     public void showPopup(View v){
         PopupMenu popup = new PopupMenu(getApplicationContext(), v);

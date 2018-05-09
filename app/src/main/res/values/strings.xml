@@ -49,7 +49,7 @@
     <string name="automatic_or_manual_ISBN">Insert ISBN or scan it </string>
     <string name="add_manual_button">Insert book\'s info manually</string>
     <string name="title_textV">Title</string>
-    <string name="author_textV">Author</string>
+    <string name="author_textV">By</string>
     <string name="publisher_textV">Publisher</string>
     <string name="year_textV">Edition Year</string>
     <string name="conditions_textV">Conditions</string>
@@ -86,5 +86,8 @@
     <string name="published_books">Published books</string>
     <string name="not_existing_user">User does not exist</string>
     <string name="network_problem">Network problem try later</string>
+    <string name="title">Title</string>
+    <string name="bookEdition">Year</string>
+    <string name="owner">Owner</string>
 
 </resources>

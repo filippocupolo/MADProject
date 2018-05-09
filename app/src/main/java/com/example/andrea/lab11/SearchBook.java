@@ -1,15 +1,19 @@
 package com.example.andrea.lab11;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.PopupMenu;
 import android.widget.TextView;
 
 public class SearchBook extends AppCompatActivity {
@@ -24,13 +28,15 @@ public class SearchBook extends AppCompatActivity {
     private EditText publisherEditText;
     private EditText ISBNEditText;
     private float x1,x2;
-    static final int MIN_DISTANCE = 150;
+    static final int MIN_DISTANCE = 100;
     private String previousActivity;
+    private Context context;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        context = getApplicationContext();
         deBugTag = this.getClass().getName();
 
         setContentView(R.layout.search_book);
@@ -92,8 +98,8 @@ public class SearchBook extends AppCompatActivity {
         });
 
         //attach the ontouchlistener to the entire view
-        View myView = findViewById(R.id.scrollV);
-        myView.setOnTouchListener(touchListener);
+        //View myView = findViewById(R.id.scrollV);
+        //myView.setOnTouchListener(touchListener);
 
         previousActivity = getIntent().getStringExtra("caller");
 
@@ -106,10 +112,12 @@ public class SearchBook extends AppCompatActivity {
             public void onTabSelected(TabLayout.Tab tab) {
                 switch (tab.getPosition()){
                     case 0:
+                        Log.d("tabss", "ok");
                         Utilities.goToMyBooks(getApplicationContext(), previousActivity,
-                                "searchBook", SearchBook.this);
+                                "SearchBook", SearchBook.this);
                         break;
                     case 1:
+                        Log.d("tabss", "ok2");
                         break;
                 }
             }
@@ -131,6 +139,7 @@ public class SearchBook extends AppCompatActivity {
         tabs.getTabAt(1).select();
     }
 
+    /*
     View.OnTouchListener touchListener = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
@@ -146,7 +155,7 @@ public class SearchBook extends AppCompatActivity {
                     if (-deltaX > MIN_DISTANCE)
                     {
                         Utilities.goToMyBooks(getApplicationContext(), previousActivity,
-                                "searchBook", SearchBook.this);
+                                "SearchBook", SearchBook.this);
                     }
                     else
                     {
@@ -156,5 +165,32 @@ public class SearchBook extends AppCompatActivity {
             }
             return true;
         }
-    };
+    };*/
+
+    public void showPopup(View v){
+        PopupMenu popup = new PopupMenu(getApplicationContext(), v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.general_menu, popup.getMenu());
+
+        popup.show();
+
+        //click listener
+        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu_logout:
+                        Utilities.signOut(context);
+                        return true;
+                    case R.id.menu_edit_profile:
+                        //Log.d("popup", "i:" + getIntent().getStringExtra("caller") + " c:"+this.getClass()+ "a: "+getApplicationContext());
+                        Utilities.goToEditProfile(getApplicationContext(), previousActivity,
+                                "SearchBook", SearchBook.this);
+                        return true;
+                    default:
+                        return false;
+                }
+            }
+        });
+    }
 }

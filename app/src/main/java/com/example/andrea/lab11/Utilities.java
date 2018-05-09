@@ -265,13 +265,12 @@ public class Utilities {
             intent.putExtra("caller", callerClass);
             activity.startActivity(intent);
         }
-
     }
 
     public static void goToSearchBook(Context context, String previousCaller, String callerClass, Activity activity){
 
         if(previousCaller != null){
-            if(!previousCaller.equals("searchBook")){
+            if(!previousCaller.equals("SearchBook")){
                 Intent intent = new Intent(
                         context,
                         SearchBook.class
