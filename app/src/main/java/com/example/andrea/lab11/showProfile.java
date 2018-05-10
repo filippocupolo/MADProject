@@ -44,8 +44,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
+
+import java.io.File;
 
 import static android.graphics.drawable.Drawable.createFromPath;
 
@@ -138,15 +141,42 @@ public class showProfile extends AppCompatActivity{
                 ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
                     public void onSuccess(Uri uri) {
-                        FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes(10 * 1024 * 1024).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+
+                        //create File
+                        File file = new File(getFilesDir(), "profile.jpg");
+
+                        FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                            @Override
+                            public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+                                profileView.setImageDrawable(Drawable.createFromPath(file.getPath()));
+                                profileView.setOnClickListener(v -> {
+                                    Intent fullImageIntent = new Intent(
+                                            getApplicationContext(),
+                                            fullScreenImage.class
+                                    );
+                                    fullImageIntent.putExtra("path", file.getPath());
+                                    startActivity(fullImageIntent);
+
+                                });
+                            }
+                        }/*new OnSuccessListener<byte[]>() {
 
                             @Override
                             public void onSuccess(byte[] bytes) {
 
                                 profileView.setImageDrawable(new BitmapDrawable(BitmapFactory.decodeByteArray(bytes, 0, bytes.length)));
+                                profileView.setOnClickListener(v -> {
+                                    Intent fullImageIntent = new Intent(
+                                            getApplicationContext(),
+                                            fullScreenImage.class
+                                    );
+                                    fullImageIntent.putExtra("image", bytes);
+                                    startActivity(fullImageIntent);
+
+                                });
                             }
 
-                        }).addOnFailureListener(new OnFailureListener() {
+                        }*/).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Log.e(deBugTag,e.getMessage());

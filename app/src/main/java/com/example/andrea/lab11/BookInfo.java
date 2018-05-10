@@ -152,7 +152,7 @@ public class BookInfo implements Serializable {
         //load book images
         for(Bitmap image : imageList) {
             ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            image.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+            image.compress(Bitmap.CompressFormat.JPEG, 50, baos);
             byte[] data = baos.toByteArray();
             ref.child(count + "").putBytes(data);
             count ++;

@@ -143,7 +143,7 @@ public class editProfile extends AppCompatActivity {
         }
         profileView.setOnClickListener(v -> {
             String path = myUser.getImagePath();
-            if(path != null){
+            if(myUser.getImageExist() && path != null){
                 Intent intent = new Intent(
                         getApplicationContext(),
                         fullScreenImage.class

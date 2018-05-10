@@ -116,7 +116,6 @@ public class ShowBook extends AppCompatActivity {
                 deleteButton.setVisibility(View.GONE);
                 bookPhoto.setClickable(false);
                 bookPhoto.setImageDrawable(imagesList.get(position));
-                //bookPhoto.setImageDrawable(imagesList.get(position));
                 bookPhoto.setScaleType(ImageButton.ScaleType.FIT_XY);
                 return convertView;
             }

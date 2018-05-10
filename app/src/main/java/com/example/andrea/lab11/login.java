@@ -417,7 +417,11 @@ public class login extends AppCompatActivity implements
                         }else if(d.getKey().equals("image")){
                             if(d.getValue(Boolean.class) == true){
                                 Log.d(deBugTag,"Download image");
+                                user.setImageExist(true);
                                 user.downloadImage();
+                            }else{
+                                Log.d(deBugTag,"imagedoesnotExist");
+                                user.setImageExist(false);
                             }
                         }
                     }

@@ -133,6 +133,7 @@ public class MyUser {
         dbRef.child(userID).child("email").setValue(email);
         dbRef.child(userID).child("city").setValue(city);
         dbRef.child(userID).child("biography").setValue(biography);
+        dbRef.child(userID).child("image").setValue(imageExist);
 
         GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
         geoFire.setLocation(userID, coordinates, new GeoFire.CompletionListener() {
