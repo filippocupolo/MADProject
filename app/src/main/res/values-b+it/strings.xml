@@ -47,7 +47,7 @@
     <string name="automatic_or_manual_ISBN">Inserisci ISBN o scannerizzalo</string>
     <string name="add_manual_button">Inserisci manualmente le informazioni sul libro</string>
     <string name="title_textV">Titolo</string>
-    <string name="author_textV">Di</string>
+    <string name="author_textV">Autore</string>
     <string name="publisher_textV">Editore</string>
     <string name="year_textV">Anno Pubblicazione</string>
     <string name="conditions_textV">Condizioni</string>
