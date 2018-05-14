@@ -27,7 +27,6 @@
         <activity android:name=".editProfile" />
         <activity android:name=".showProfile" />
         <activity android:name=".myBooks" />
-        <activity android:name=".Chat" />
         <activity
             android:name=".login"
             android:windowSoftInputMode="stateHidden">
@@ -83,8 +82,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
-
-        <activity android:name=".Chat"></activity>
+        <activity android:name=".MainPageActivity"></activity>
     </application>
 
 </manifest>
