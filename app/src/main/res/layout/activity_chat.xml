@@ -6,54 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".Chat">
 
-    <fragment
-        android:layout_width="match_parent"
-        android:name="com.example.andrea.lab11.Chat"
-        android:layout_height="wrap_content">
+    <include
+        android:id="@+id/toolbar_chat"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_chat">
 
-            <android.support.design.widget.FloatingActionButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:id="@+id/fab"
-                android:tint="@android:color/white"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                app:fabSize="mini" />
-
-            <android.support.design.widget.TextInputLayout
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@id/fab"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true">
+                android:id="@+id/chat_constraint_wrapper"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp">
 
-                <EditText
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:id="@+id/fab"
+                    android:tint="@android:color/white"
+                    app:layout_constraintTop_toBottomOf="@id/chat_constraint_wrapper"
+                    app:fabSize="mini" />
+
+                <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Input"
-                    android:id="@+id/input"
-                    />
-            </android.support.design.widget.TextInputLayout>
+                    android:layout_toLeftOf="@id/fab"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    app:layout_constraintTop_toBottomOf="@id/fab"
+                    android:layout_alignParentLeft="true">
 
-            <ListView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_above="@id/fab"
-                android:dividerHeight="16dp"
-                android:divider="@android:color/transparent"
-                android:id="@+id/list_of_messages"
-                android:layout_marginBottom="16dp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Input"
+                        android:id="@+id/input"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_above="@id/fab"
+                    android:dividerHeight="16dp"
+                    android:divider="@android:color/transparent"
+                    android:id="@+id/list_of_messages"
+                    android:layout_marginBottom="16dp"/>
+            </android.support.constraint.ConstraintLayout>
         </ScrollView>
-    </fragment>
 
 </android.support.constraint.ConstraintLayout>
