@@ -110,7 +110,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
         //get position of the user
         MyUser researcher  = new MyUser(getApplicationContext());
-        Location location = new Location();
+        Location location = new Location(this.getApplicationContext());
         researcherLoc = location.getCoordinates(researcher.getCity());
 
         bookQuery.addChildEventListener(new ChildEventListener() {

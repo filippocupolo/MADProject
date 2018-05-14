@@ -52,6 +52,7 @@ public class editProfile extends AppCompatActivity {
     private ImageView profileView;
     private EditText surnameView;
     private Spinner cityView;
+    private Spinner townView;
     private EditText biographyView;
 
     @Override
@@ -106,8 +107,9 @@ public class editProfile extends AppCompatActivity {
         biographyView.setOnFocusChangeListener(focusListener);
 
         //set city
-        Location location = new Location();
+        Location location = new Location(getApplicationContext());
         cityView = findViewById(R.id.cityEdit);
+        townView = findViewById(R.id.townEdit);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                 this, android.R.layout.simple_spinner_item, location.getItalianSuburbsList());
         adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
@@ -115,6 +117,13 @@ public class editProfile extends AppCompatActivity {
         if (myUser.getCity() != null) {
             int spinnerPosition = adapter.getPosition(myUser.getCity());
             cityView.setSelection(spinnerPosition);
+
+            //towns spinner according to the city selected
+            ArrayAdapter<String> townAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
+                    location.getItalianTowns(myUser.getCity(), getApplicationContext()));
+
+            townAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+            townView.setAdapter(townAdapter);
         }
 
         //set name toolbar

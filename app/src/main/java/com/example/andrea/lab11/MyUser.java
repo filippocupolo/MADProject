@@ -123,7 +123,7 @@ public class MyUser {
     }
     public void commit(){
 
-        Location location = new Location();
+        Location location = new Location(applicationContext);
         GeoLocation coordinates = location.getCoordinates(city);
 
         Log.d(deBugTag,"Commit");
