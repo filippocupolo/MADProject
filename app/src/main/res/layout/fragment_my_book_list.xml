@@ -8,7 +8,7 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_books_rv"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"/>
 
     <!-- todo fai stringa-->
@@ -21,18 +21,19 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        android:layout_gravity="center"
         android:text="Research did not produce any results"
         android:visibility="gone" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageViewEditButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/camera_border"
-        android:onClick="addBook"
         android:padding="20dp"
+        android:layout_gravity="end|bottom"
         android:src="@drawable/ic_add_button_24dp" />
 
 </FrameLayout>

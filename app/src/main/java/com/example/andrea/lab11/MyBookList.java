@@ -12,13 +12,17 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 
 /**
@@ -46,6 +50,8 @@ public class MyBookList extends Fragment {
     private String deBugTag;
     private Context context;
     private RecyclerView list;
+    private ImageButton addBookButton;
+    private TextView noItemMessage;
 
     public MyBookList() {
         // Required empty public constructor
@@ -87,9 +93,10 @@ public class MyBookList extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_my_book_list, container, false);
 
+        //get elements
         list = view.findViewById(R.id.my_books_rv);
-
-        Log.d(deBugTag,"user: "+ new MyUser(context).getUserID());
+        addBookButton = view.findViewById(R.id.imageViewEditButton);
+        noItemMessage = view.findViewById(R.id.my_books_emptyListMessage);
 
         //set query
         Query query = FirebaseDatabase.getInstance().getReference().child("books").orderByChild("owner").equalTo(new MyUser(context).getUserID());
@@ -116,8 +123,6 @@ public class MyBookList extends Fragment {
                 View view = LayoutInflater.from(parent.getContext())
                         .inflate(R.layout.card_view_search_results_list, parent, false);
 
-                Log.d(deBugTag,"onCreateViewHolder");
-
                 return new CardViewBook(view);
             }
 
@@ -130,12 +135,18 @@ public class MyBookList extends Fragment {
             @Override
             public void onDataChanged() {
                 super.onDataChanged();
-                Log.d(deBugTag,"ciao");
+                noItemMessage.setVisibility(
+                        getItemCount() == 0 ? View.VISIBLE : View.INVISIBLE
+                );
             }
+
         };
 
         list.setLayoutManager(new LinearLayoutManager(context));
         list.setAdapter(adapter);
+
+        //set addBookButton
+        addBookButton.setOnClickListener( v -> addBook());
 
         return view;
     }
@@ -180,7 +191,7 @@ public class MyBookList extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
-    public void addBook(View v){
+    public void addBook(){
         Intent intent = new Intent(context,AddBookAutomatic.class);
         startActivity(intent);
     }

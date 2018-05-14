@@ -1,6 +1,9 @@
 package com.example.andrea.lab11;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -19,6 +22,7 @@ public class MainPageActivity extends AppCompatActivity {
     private Context context;
     private ViewPager viewPager;
     private FragmentPagerAdapter pagerAdapter;
+    private TabLayout tab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +34,11 @@ public class MainPageActivity extends AppCompatActivity {
         deBugTag = this.getClass().getName();
         context = getApplicationContext();
         viewPager = findViewById(R.id.pageViewer);
+        tab = findViewById(R.id.tabLayout);
+
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
-        if(viewPager == null){
-            Log.d(deBugTag, "viewPager è null");
-        }
         viewPager.setAdapter(pagerAdapter);
+        tab.setupWithViewPager(viewPager);
 
     }
 
@@ -54,7 +58,8 @@ public class MainPageActivity extends AppCompatActivity {
                         Utilities.signOut(context);
                         return true;
                     case R.id.menu_edit_profile:
-                        //todo goto editprofile
+                        Intent editProfileIntent = new Intent(getApplicationContext(),editProfile.class);
+                        startActivity(editProfileIntent);
                         return true;
                     default:
                         return false;
@@ -65,7 +70,7 @@ public class MainPageActivity extends AppCompatActivity {
 
     private class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
 
-        private final static int NUM_PAGES = 3;
+        private final static int NUM_PAGES = 2;
 
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
@@ -86,6 +91,24 @@ public class MainPageActivity extends AppCompatActivity {
                     break;
             }
             return fragment;
+        }
+
+        @Nullable
+        @Override
+        public CharSequence getPageTitle(int position) {
+            String title = null;
+            switch (position){
+                case 0:
+                    title = getString(R.string.search_book);
+                    break;
+                case 1:
+                    title = getString(R.string.my_books);
+                    break;
+                case 2:
+                    title = "Chat";
+                    break;
+            }
+            return title;
         }
 
         @Override
