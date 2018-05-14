@@ -368,7 +368,7 @@ public class login extends AppCompatActivity implements
                     //user already on the phone
                     intent = new Intent(
                             getApplicationContext(),
-                            myBooks.class
+                            MainPageActivity.class
                     );
                     intent.putExtra("caller", "login");
                     Utilities.show_background(layout, spinner);
@@ -428,7 +428,7 @@ public class login extends AppCompatActivity implements
 
                     Intent intent = new Intent(
                             getApplicationContext(),
-                            myBooks.class
+                            MainPageActivity.class
                     );
                     intent.putExtra("caller", "login");
                     Utilities.show_background(layout, spinner);
