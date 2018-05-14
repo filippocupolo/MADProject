@@ -36,7 +36,7 @@ class Chat : Fragment() {
 
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_chat, container, false)
-        view.findViewById<>()
+        
 
         return view
     }
