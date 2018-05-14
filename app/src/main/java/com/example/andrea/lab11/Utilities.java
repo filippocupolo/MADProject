@@ -243,55 +243,6 @@ public class Utilities {
 
     }
 
-    public static void goToMyBooks(Context context, String previousCaller, String callerClass, Activity activity){
-
-        if(previousCaller != null){
-            if(!previousCaller.equals("myBooks")){
-                Intent intent = new Intent(
-                        context,
-                        myBooks.class
-                );
-                intent.putExtra("caller", callerClass);
-                activity.startActivity(intent);
-            }
-            else{
-                activity.onBackPressed();
-            }
-        }else{
-            Intent intent = new Intent(
-                    context,
-                    myBooks.class
-            );
-            intent.putExtra("caller", callerClass);
-            activity.startActivity(intent);
-        }
-    }
-
-    public static void goToSearchBook(Context context, String previousCaller, String callerClass, Activity activity){
-
-        if(previousCaller != null){
-            if(!previousCaller.equals("SearchBook")){
-                Intent intent = new Intent(
-                        context,
-                        SearchBook.class
-                );
-                intent.putExtra("caller", callerClass);
-                activity.startActivity(intent);
-            }
-            else{
-                activity.onBackPressed();
-            }
-        }else{
-            Intent intent = new Intent(
-                    context,
-                    SearchBook.class
-            );
-            intent.putExtra("caller", callerClass);
-            activity.startActivity(intent);
-        }
-
-    }
-
     public static void loading_and_blur_background(View v, ProgressBar spinner){
         AlphaAnimation alpha = new AlphaAnimation(0.6F, 0.6F);
         alpha.setDuration(0); // Make animation instant

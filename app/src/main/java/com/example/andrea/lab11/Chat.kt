@@ -1,92 +1,43 @@
 package com.example.andrea.lab11
 
-import android.app.Activity
 import android.content.Context
-import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
-import android.support.design.widget.FloatingActionButton
+import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
-import android.widget.ListView
-import kotlinx.android.synthetic.main.activity_chat.view.*
-import android.widget.ArrayAdapter
-import android.widget.BaseAdapter
 
 
-class Chat : android.support.v4.app.Fragment() {
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
 
-    private var messageList: ArrayList<ChatMessage>? = null
+/**
+ * A simple [Fragment] subclass.
+ * Activities that contain this fragment must implement the
+ * [Chat.OnFragmentInteractionListener] interface
+ * to handle interaction events.
+ * Use the [Chat.newInstance] factory method to
+ * create an instance of this fragment.
+ *
+ */
+class Chat : Fragment() {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var rootView = inflater?.inflate(R.layout.activity_chat, container, false)
-
-        //list view
-        val lv = rootView.findViewById(R.id.list_of_messages) as ListView
-        lv.adapter = MessageListAdapter(this.requireContext())
-
-        /*
-        // This is the array adapter, it takes the context of the activity as a
-        // first parameter, the type of list view as a second parameter and your
-        // array as a third parameter.
-        var arrayAdapter = ArrayAdapter<ChatMessage>(
-                this,
-                lv,
-                messageList)
-
-        //set adapter to list view - ? means to do it if not null
-        lv?.adapter = arrayAdapter*/
-
-
-        //new message
-        var newMessageButton = rootView.findViewById<ImageButton>(R.id.fab);
-        newMessageButton.setOnClickListener{
-
-        }
-
-
-        return rootView
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
     }
 
-    private class MessageListAdapter(context: Context) : BaseAdapter() {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
 
-        init {
-            this.mInflator = LayoutInflater.from(context)
-        }
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_chat, container, false)
+        view.findViewById<>()
 
-        override fun getCount(): Int {
-            return sList.size
-        }
-
-        override fun getItemId(position: Int): Long {
-            return position.toLong()
-        }
-
-        override fun getView(position: Int, convertView: View?, parent: ViewGroup): View? {
-            val view: View?
-            val vh: ListRowHolder
-            if (convertView == null) {
-                view = this.mInflator.inflate(R.layout., parent, false)
-                vh = ListRowHolder(view)
-                view.tag = vh
-            } else {
-                view = convertView
-                vh = view.tag as ListRowHolder
-            }
-
-            vh.label.text = sList[position]
-            return view
-        }
+        return view
     }
 
-    private class ListRowHolder(row: View?) {
-        public val label: TextView
-
-        init {
-            this.label = row?.findViewById(R.id.label) as TextView
-        }
-    }
 }

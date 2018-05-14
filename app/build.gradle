@@ -46,7 +46,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-database:3.3.1'
     implementation 'com.google.android.gms:play-services-maps:15.0.0'
     implementation 'com.firebase:geofire-android:2.3.1'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
 }
 

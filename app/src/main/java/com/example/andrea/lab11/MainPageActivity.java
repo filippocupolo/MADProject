@@ -87,7 +87,7 @@ public class MainPageActivity extends AppCompatActivity {
                     fragment = Fragment.instantiate(context, MyBookList.class.getName());
                     break;
                 case 2:
-                    fragment = Fragment.instantiate(context, Chat.class.getName());
+                    //fragment = Fragment.instantiate(context, Chat.class.getName());
                     break;
             }
             return fragment;

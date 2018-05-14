@@ -26,7 +26,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".editProfile" />
         <activity android:name=".showProfile" />
-        <activity android:name=".myBooks" />
         <activity
             android:name=".login"
             android:windowSoftInputMode="stateHidden">
@@ -68,7 +67,6 @@
             android:name=".search_results_map"
             android:label="@string/title_activity_search_results_map" />
         <activity android:name=".ResultsList" />
-        <activity android:name=".SearchBook" />
         <activity android:name=".ShowBook" />
 
         <!--
