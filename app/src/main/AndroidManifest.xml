@@ -27,6 +27,7 @@
         <activity android:name=".editProfile" />
         <activity android:name=".showProfile" />
         <activity android:name=".myBooks" />
+        <activity android:name=".Chat" />
         <activity
             android:name=".login"
             android:windowSoftInputMode="stateHidden">
@@ -34,7 +35,7 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> 
+            </intent-filter>
         </activity>
 
         <meta-data
@@ -63,13 +64,13 @@
             android:name=".AddBookAutomatic"
             android:windowSoftInputMode="stateHidden" />
         <activity android:name=".ScanActivity" />
-
         <activity android:name=".fullScreenImage" />
-
-        <activity android:name=".search_results_map" android:label="@string/title_activity_search_results_map"/>
-        <activity android:name=".ResultsList"/>
-        <activity android:name=".SearchBook"/>
-        <activity android:name=".ShowBook"/>
+        <activity
+            android:name=".search_results_map"
+            android:label="@string/title_activity_search_results_map" />
+        <activity android:name=".ResultsList" />
+        <activity android:name=".SearchBook" />
+        <activity android:name=".ShowBook" />
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -83,6 +84,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity android:name=".Chat"></activity>
     </application>
 
 </manifest>
