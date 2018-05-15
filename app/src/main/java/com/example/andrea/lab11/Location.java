@@ -148,7 +148,7 @@ public class Location {
     }
 
     public GeoLocation getCoordinates(String suburbs){
-        return italianTowns_coordinates_Map.get(suburbs);
+        return italianSuburbs_coordinates_Map.get(suburbs);
     }
 
     public String getSuburbs(GeoLocation geoLocation){

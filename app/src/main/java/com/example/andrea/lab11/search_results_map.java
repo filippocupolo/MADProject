@@ -56,6 +56,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
     private GeoLocation researcherLoc;
     private String deBugTag;
     private GoogleMap googleMap;
+    private Query bookQuery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +69,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
         //get query from previous activity
         Intent intent = getIntent();
-        Query bookQuery = FirebaseDatabase.getInstance().getReference().child("books");
+        bookQuery = FirebaseDatabase.getInstance().getReference().child("books");
 
         String keyExtra;
         if(intent.getStringExtra("author")!=null){
@@ -108,10 +109,64 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
                 .findFragmentById(R.id.mapFragment);
         mapFragment.getMapAsync(this);
 
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+
+        this.googleMap = googleMap;
+
+        UiSettings settings = googleMap.getUiSettings();
+        settings.setMapToolbarEnabled(false);
+
         //get position of the user
         MyUser researcher  = new MyUser(getApplicationContext());
         Location location = new Location(this.getApplicationContext());
-        researcherLoc = location.getCoordinates(researcher.getCity());
+        researcherLoc = location.getTownCoordinates(researcher.getTown(), researcher.getCity(), this.getApplicationContext());
+
+        //set map zoom on user location
+        LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(latlng)
+                .zoom(10)
+                .bearing(0)
+                .tilt(30)
+                .build();
+
+        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
+        googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                HashSet<String> usersAtPosition = position_users.get(marker);
+                LinkedList<String> selectedBook = new LinkedList<>();
+                for(String user : usersAtPosition){
+                    selectedBook.addAll(user_books.get(user));
+                }
+
+                if(selectedBook.size()==1){
+
+                    //open show book
+                    Intent intent = new Intent(getApplicationContext(), ShowBook.class);
+                    intent.putExtra("bookId",selectedBook.get(0));
+                    startActivity(intent);
+
+                }else{
+
+                    //open a list of the selected books
+                    Intent intent = new Intent(getApplicationContext(),ResultsList.class);
+                    intent.putExtra("bookIdList",selectedBook);
+                    startActivity(intent);
+                }
+
+                for(String s : selectedBook)
+                    Log.d(deBugTag, "libro selezionato: " + s);
+
+                return true;
+            }
+        });
+
 
         bookQuery.addChildEventListener(new ChildEventListener() {
 
@@ -223,58 +278,6 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 networkProblem(databaseError);
-            }
-        });
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-
-        this.googleMap = googleMap;
-
-        UiSettings settings = googleMap.getUiSettings();
-        settings.setMapToolbarEnabled(false);
-
-        //set map zoom on user location
-        LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
-        CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(latlng)
-                .zoom(10)
-                .bearing(0)
-                .tilt(30)
-                .build();
-
-        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-
-        googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-
-            @Override
-            public boolean onMarkerClick(Marker marker) {
-                HashSet<String> usersAtPosition = position_users.get(marker);
-                LinkedList<String> selectedBook = new LinkedList<>();
-                for(String user : usersAtPosition){
-                    selectedBook.addAll(user_books.get(user));
-                }
-
-                if(selectedBook.size()==1){
-
-                    //open show book
-                    Intent intent = new Intent(getApplicationContext(), ShowBook.class);
-                    intent.putExtra("bookId",selectedBook.get(0));
-                    startActivity(intent);
-
-                }else{
-
-                    //open a list of the selected books
-                    Intent intent = new Intent(getApplicationContext(),ResultsList.class);
-                    intent.putExtra("bookIdList",selectedBook);
-                    startActivity(intent);
-                }
-
-                for(String s : selectedBook)
-                    Log.d(deBugTag, "libro selezionato: " + s);
-
-                return true;
             }
         });
 
