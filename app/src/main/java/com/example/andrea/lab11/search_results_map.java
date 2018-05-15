@@ -122,18 +122,33 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
         //get position of the user
         MyUser researcher  = new MyUser(getApplicationContext());
         Location location = new Location(this.getApplicationContext());
-        researcherLoc = location.getTownCoordinates(researcher.getTown(), researcher.getCity(), this.getApplicationContext());
 
-        //set map zoom on user location
-        LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
-        CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(latlng)
-                .zoom(10)
-                .bearing(0)
-                .tilt(30)
-                .build();
+        GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
+        geoFire.getLocation(researcher.getUserID(), new LocationCallback() {
+            @Override
+            public void onLocationResult(String key, GeoLocation location) {
+                if (location != null) {
+                    researcherLoc = location;
+                    //set map zoom on user location
+                    LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
+                    CameraPosition cameraPosition = new CameraPosition.Builder()
+                            .target(latlng)
+                            .zoom(10)
+                            .bearing(0)
+                            .tilt(30)
+                            .build();
+                    googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
-        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                } else {
+                    //When location is null
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                //LogDatabase error
+            }
+        });
 
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 

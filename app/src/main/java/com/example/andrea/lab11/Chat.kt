@@ -56,7 +56,7 @@ class Chat : Fragment() {
         val noChatMessage = view.findViewById<TextView>(R.id.no_chat_message)
 
         //set Query
-        val query = FirebaseDatabase.getInstance().reference.child("usersChat").orderByKey().equalTo(MyUser(applicationContext).userID).
+        val query = FirebaseDatabase.getInstance().reference.child("usersChat").orderByKey().equalTo(MyUser(applicationContext).userID)
 
         query.addChildEventListener(object : ChildEventListener {
 

@@ -11,6 +11,12 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -20,7 +26,7 @@ import android.widget.ImageButton;
  * Use the {@link SearchBookFragment} factory method to
  * create an instance of this fragment.
  */
-public class SearchBookFragment extends Fragment {
+public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
     private String deBugTag;
     private ImageButton authorSearchButton;
@@ -32,6 +38,8 @@ public class SearchBookFragment extends Fragment {
     private EditText publisherEditText;
     private EditText ISBNEditText;
     private Context context;
+    private GoogleMap googleMap;
+    private MapView mapView;
 
     /*
     // TODO: Rename parameter arguments, choose names that match
@@ -84,13 +92,15 @@ public class SearchBookFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_search_book, container, false);
         authorSearchButton = view.findViewById(R.id.authorSearchButton);
-        titleSearchButton = view.findViewById(R.id.titleSearchButton);
-        publisherSearchButton = view.findViewById(R.id.publisherSearchButton);
-        ISBNSearchButton = view.findViewById(R.id.ISBNSearchButton);
+        //titleSearchButton = view.findViewById(R.id.titleSearchButton);
+        //publisherSearchButton = view.findViewById(R.id.publisherSearchButton);
+        //ISBNSearchButton = view.findViewById(R.id.ISBNSearchButton);
         authorEditText = view.findViewById(R.id.searchAuthor);
-        titleEditText = view.findViewById(R.id.searchTitle);
-        publisherEditText = view.findViewById(R.id.searchPublisher);
-        ISBNEditText = view.findViewById(R.id.searchISBN);
+        //titleEditText = view.findViewById(R.id.searchTitle);
+        //publisherEditText = view.findViewById(R.id.searchPublisher);
+        //ISBNEditText = view.findViewById(R.id.searchISBN);
+        mapView = view.findViewById(R.id.mapViewSearchBook);
+        mapView.onCreate(savedInstanceState);
 
         authorSearchButton.setOnClickListener(v -> {
             if(authorEditText.getText().toString().equals("")){
@@ -103,6 +113,9 @@ public class SearchBookFragment extends Fragment {
             }
         });
 
+        mapView.getMapAsync(this);
+
+        /*
         titleSearchButton.setOnClickListener(v -> {
             if(titleEditText.getText().toString().equals("")){
                 //field cannot be empty
@@ -134,9 +147,41 @@ public class SearchBookFragment extends Fragment {
                 intent.putExtra("ISBN",ISBNEditText.getText().toString());
                 startActivity(intent);
             }
-        });
+        });*/
 
         return view;
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        googleMap = googleMap;
+        googleMap.getUiSettings().setMyLocationButtonEnabled(false);
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mapView.onResume();
+    }
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mapView.onLowMemory();
     }
 
     /*
