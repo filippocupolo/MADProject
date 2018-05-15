@@ -1,9 +1,5 @@
 package com.example.andrea.lab11
 
-class ChatPreviewModel(){
-
-    var user : String = "ciao"
-    var lastMessage : String = "ciao 2"
-
+class ChatPreviewModel constructor(var user: String, var lastMessage: String){
 
 }

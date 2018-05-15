@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,10 @@ import android.widget.TextView
 import com.firebase.ui.database.FirebaseListAdapter
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
+import com.firebase.ui.database.SnapshotParser
+import com.google.firebase.database.ChildEventListener
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 
 
@@ -51,11 +56,55 @@ class Chat : Fragment() {
         val noChatMessage = view.findViewById<TextView>(R.id.no_chat_message)
 
         //set Query
-        val query = FirebaseDatabase.getInstance().reference.child("usersChat").orderByKey().equalTo(MyUser(applicationContext).userID)
+        val query = FirebaseDatabase.getInstance().reference.child("usersChat").orderByKey().equalTo(MyUser(applicationContext).userID).
 
+        query.addChildEventListener(object : ChildEventListener {
+
+            override fun onChildAdded( dataSnapshot:DataSnapshot?,  s:String?) {
+
+                Log.d("Chat", dataSnapshot.toString())
+            }
+
+
+            override fun onChildChanged(dataSnapshot:DataSnapshot,  s:String) {
+
+            }
+
+            override fun onChildRemoved(dataSnapshot:DataSnapshot) {
+
+                /*
+                //todo testare
+                BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                if(book == null)
+                    return;
+                bookList.remove(book);
+                if(bookList.size()==0)
+                    emptyListMessage.setVisibility(View.VISIBLE);
+                adapter.notifyDataSetChanged()*/
+
+            }
+
+            override fun onChildMoved(dataSnapshot:DataSnapshot, s: String) {
+
+            }
+
+            override fun onCancelled(databaseError: DatabaseError) {
+                Log.e("Chat",databaseError.getMessage()+databaseError.getCode());
+                //todo gestire
+            }
+        })
+        /*
         //get and populate list
         val options = FirebaseRecyclerOptions.Builder<ChatPreviewModel>()
-                .setQuery(query,ChatPreviewModel::class.java)
+                .setQuery(query, object :SnapshotParser<ChatPreviewModel> {
+                    override fun parseSnapshot(snapshot: DataSnapshot): ChatPreviewModel {
+
+                        Log.d("Chat", snapshot.toString())
+
+                        return ChatPreviewModel(snapshot.value.toString(),"")
+
+                    }
+                })
                 .setLifecycleOwner(activity)
                 .build()
 
@@ -82,7 +131,7 @@ class Chat : Fragment() {
         }
 
         recyclerView.layoutManager = LinearLayoutManager(applicationContext)
-        recyclerView.adapter = adapter
+        recyclerView.adapter = adapter*/
 
         return view
     }
