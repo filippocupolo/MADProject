@@ -1,0 +1,482 @@
+[
+  {
+    "id": "33001",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Agazzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A067",
+    "latitudine": 44.947623,
+    "longitudine": 9.521966
+  },
+  {
+    "id": "33002",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Alseno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A223",
+    "latitudine": 44.896564,
+    "longitudine": 9.967159
+  },
+  {
+    "id": "33003",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Besenzone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A823",
+    "latitudine": 44.986566,
+    "longitudine": 9.952704
+  },
+  {
+    "id": "33004",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Bettola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A831",
+    "latitudine": 44.776523,
+    "longitudine": 9.605883
+  },
+  {
+    "id": "33005",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Bobbio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A909",
+    "latitudine": 44.770088,
+    "longitudine": 9.38595
+  },
+  {
+    "id": "33006",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Borgonovo Val Tidone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B025",
+    "latitudine": 45.015843,
+    "longitudine": 9.44467
+  },
+  {
+    "id": "33007",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Cadeo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B332",
+    "latitudine": 44.974378,
+    "longitudine": 9.831081
+  },
+  {
+    "id": "33008",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Calendasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B405",
+    "latitudine": 45.087901,
+    "longitudine": 9.5936
+  },
+  {
+    "id": "33009",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Caminata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B479",
+    "latitudine": 44.909245,
+    "longitudine": 9.308411
+  },
+  {
+    "id": "33010",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Caorso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B643",
+    "latitudine": 45.047979,
+    "longitudine": 9.874764
+  },
+  {
+    "id": "33011",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Carpaneto Piacentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B812",
+    "latitudine": 44.913721,
+    "longitudine": 9.788066
+  },
+  {
+    "id": "33013",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Castel San Giovanni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C261",
+    "latitudine": 45.057109,
+    "longitudine": 9.437144
+  },
+  {
+    "id": "33012",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Castell'Arquato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C145",
+    "latitudine": 44.853425,
+    "longitudine": 9.870468
+  },
+  {
+    "id": "33014",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Castelvetro Piacentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C288",
+    "latitudine": 45.094529,
+    "longitudine": 9.990912
+  },
+  {
+    "id": "33015",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Cerignale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C513",
+    "latitudine": 44.677224,
+    "longitudine": 9.350947
+  },
+  {
+    "id": "33016",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Coli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C838",
+    "latitudine": 44.744857,
+    "longitudine": 9.414617
+  },
+  {
+    "id": "33017",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Corte Brugnatella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D054",
+    "latitudine": 44.722974,
+    "longitudine": 9.352608
+  },
+  {
+    "id": "33018",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Cortemaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D061",
+    "latitudine": 44.993714,
+    "longitudine": 9.930247
+  },
+  {
+    "id": "33019",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Farini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D502",
+    "latitudine": 44.713212,
+    "longitudine": 9.568822
+  },
+  {
+    "id": "33020",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Ferriere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D555",
+    "latitudine": 44.643927,
+    "longitudine": 9.497959
+  },
+  {
+    "id": "33021",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Fiorenzuola d'Arda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D611",
+    "latitudine": 44.92785,
+    "longitudine": 9.913146
+  },
+  {
+    "id": "33022",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Gazzola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D958",
+    "latitudine": 44.958817,
+    "longitudine": 9.547821
+  },
+  {
+    "id": "33023",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Gossolengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E114",
+    "latitudine": 45.003847,
+    "longitudine": 9.615586
+  },
+  {
+    "id": "33024",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Gragnano Trebbiense",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E132",
+    "latitudine": 45.016251,
+    "longitudine": 9.567808
+  },
+  {
+    "id": "33025",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Gropparello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E196",
+    "latitudine": 44.831708,
+    "longitudine": 9.729637
+  },
+  {
+    "id": "33026",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Lugagnano Val d'Arda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E726",
+    "latitudine": 44.823488,
+    "longitudine": 9.828076
+  },
+  {
+    "id": "33027",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Monticelli d'Ongina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F671",
+    "latitudine": 45.091461,
+    "longitudine": 9.929659
+  },
+  {
+    "id": "33028",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Morfasso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F724",
+    "latitudine": 44.722813,
+    "longitudine": 9.702441
+  },
+  {
+    "id": "33029",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Nibbiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F885",
+    "latitudine": 44.905725,
+    "longitudine": 9.331091
+  },
+  {
+    "id": "33030",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Ottone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G195",
+    "latitudine": 44.624087,
+    "longitudine": 9.331504
+  },
+  {
+    "id": "33031",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Pecorara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G399",
+    "latitudine": 44.87473,
+    "longitudine": 9.384442
+  },
+  {
+    "id": "33032",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Piacenza",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G535",
+    "latitudine": 45.052621,
+    "longitudine": 9.692985
+  },
+  {
+    "id": "33033",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Pianello Val Tidone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G557",
+    "latitudine": 44.945813,
+    "longitudine": 9.406974
+  },
+  {
+    "id": "33034",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Piozzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G696",
+    "latitudine": 44.925469,
+    "longitudine": 9.495757
+  },
+  {
+    "id": "33035",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Podenzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G747",
+    "latitudine": 44.956771,
+    "longitudine": 9.681257
+  },
+  {
+    "id": "33036",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Ponte dell'Olio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G842",
+    "latitudine": 44.87079,
+    "longitudine": 9.64133
+  },
+  {
+    "id": "33037",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Pontenure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G852",
+    "latitudine": 44.997496,
+    "longitudine": 9.792303
+  },
+  {
+    "id": "33038",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Rivergaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H350",
+    "latitudine": 44.911446,
+    "longitudine": 9.597796
+  },
+  {
+    "id": "33039",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Rottofreno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H593",
+    "latitudine": 45.057944,
+    "longitudine": 9.550118
+  },
+  {
+    "id": "33040",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "San Giorgio Piacentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H887",
+    "latitudine": 44.956667,
+    "longitudine": 9.738655
+  },
+  {
+    "id": "33041",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "San Pietro in Cerro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G788",
+    "latitudine": 45.021426,
+    "longitudine": 9.94841
+  },
+  {
+    "id": "33042",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Sarmato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I434",
+    "latitudine": 45.059661,
+    "longitudine": 9.491441
+  },
+  {
+    "id": "33043",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Travo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L348",
+    "latitudine": 44.861443,
+    "longitudine": 9.54384
+  },
+  {
+    "id": "33044",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Vernasca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L772",
+    "latitudine": 44.799744,
+    "longitudine": 9.831323
+  },
+  {
+    "id": "33045",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Vigolzone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L897",
+    "latitudine": 44.918476,
+    "longitudine": 9.669927
+  },
+  {
+    "id": "33046",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Villanova sull'Arda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L980",
+    "latitudine": 45.038785,
+    "longitudine": 10.008346
+  },
+  {
+    "id": "33047",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Zerba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M165",
+    "latitudine": 44.664955,
+    "longitudine": 9.289324
+  },
+  {
+    "id": "33048",
+    "id_regione": "8",
+    "id_provincia": "33",
+    "nome": "Ziano Piacentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L848",
+    "latitudine": 45.002053,
+    "longitudine": 9.401941
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "id": "109001",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Altidona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A233",
+    "latitudine": 43.106963,
+    "longitudine": 13.794938
+  },
+  {
+    "id": "109002",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Amandola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A252",
+    "latitudine": 42.980007,
+    "longitudine": 13.3556
+  },
+  {
+    "id": "109003",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Belmonte Piceno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A760",
+    "latitudine": 43.092832,
+    "longitudine": 13.535957
+  },
+  {
+    "id": "109004",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Campofilone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B534",
+    "latitudine": 43.080796,
+    "longitudine": 13.819759
+  },
+  {
+    "id": "109005",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Falerone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D477",
+    "latitudine": 43.105682,
+    "longitudine": 13.470261
+  },
+  {
+    "id": "109006",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Fermo",
+    "capoluogo_provincia": true,
+    "codice_catastale": "D542",
+    "latitudine": 43.158873,
+    "longitudine": 13.720088
+  },
+  {
+    "id": "109007",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Francavilla d'Ete",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D760",
+    "latitudine": 43.186795,
+    "longitudine": 13.54109
+  },
+  {
+    "id": "109008",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Grottazzolina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E208",
+    "latitudine": 43.11559,
+    "longitudine": 13.607632
+  },
+  {
+    "id": "109009",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Lapedona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E447",
+    "latitudine": 43.107182,
+    "longitudine": 13.765955
+  },
+  {
+    "id": "109010",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Magliano di Tenna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E807",
+    "latitudine": 43.138559,
+    "longitudine": 13.585208
+  },
+  {
+    "id": "109011",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Massa Fermana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F021",
+    "latitudine": 43.145517,
+    "longitudine": 13.475077
+  },
+  {
+    "id": "109012",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monsampietro Morico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F379",
+    "latitudine": 43.067436,
+    "longitudine": 13.555652
+  },
+  {
+    "id": "109013",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Montappone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F428",
+    "latitudine": 43.135408,
+    "longitudine": 13.468831
+  },
+  {
+    "id": "109016",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monte Giberto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F517",
+    "latitudine": 43.091885,
+    "longitudine": 13.62943
+  },
+  {
+    "id": "109021",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monte Rinaldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F599",
+    "latitudine": 43.028119,
+    "longitudine": 13.579693
+  },
+  {
+    "id": "109023",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monte San Pietrangeli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F626",
+    "latitudine": 43.191576,
+    "longitudine": 13.57795
+  },
+  {
+    "id": "109024",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monte Urano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F653",
+    "latitudine": 43.206678,
+    "longitudine": 13.672063
+  },
+  {
+    "id": "109025",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monte Vidon Combatte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F664",
+    "latitudine": 43.051308,
+    "longitudine": 13.631678
+  },
+  {
+    "id": "109026",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monte Vidon Corrado",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F665",
+    "latitudine": 43.120877,
+    "longitudine": 13.487759
+  },
+  {
+    "id": "109014",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Montefalcone Appennino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F493",
+    "latitudine": 42.988602,
+    "longitudine": 13.45836
+  },
+  {
+    "id": "109015",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Montefortino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F509",
+    "latitudine": 42.94301,
+    "longitudine": 13.344672
+  },
+  {
+    "id": "109017",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Montegiorgio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F520",
+    "latitudine": 43.13272,
+    "longitudine": 13.539021
+  },
+  {
+    "id": "109018",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Montegranaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F522",
+    "latitudine": 43.230387,
+    "longitudine": 13.628525
+  },
+  {
+    "id": "109019",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monteleone di Fermo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F536",
+    "latitudine": 43.048141,
+    "longitudine": 13.52814
+  },
+  {
+    "id": "109020",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Montelparo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F549",
+    "latitudine": 43.018807,
+    "longitudine": 13.539168
+  },
+  {
+    "id": "109022",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Monterubbiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F614",
+    "latitudine": 43.08724,
+    "longitudine": 13.717853
+  },
+  {
+    "id": "109027",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Montottone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F697",
+    "latitudine": 43.062388,
+    "longitudine": 13.588144
+  },
+  {
+    "id": "109028",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Moresco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F722",
+    "latitudine": 43.085474,
+    "longitudine": 13.731366
+  },
+  {
+    "id": "109029",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Ortezzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G137",
+    "latitudine": 43.031892,
+    "longitudine": 13.60688
+  },
+  {
+    "id": "109030",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Pedaso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G403",
+    "latitudine": 43.098017,
+    "longitudine": 13.840093
+  },
+  {
+    "id": "109031",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Petritoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G516",
+    "latitudine": 43.067963,
+    "longitudine": 13.65814
+  },
+  {
+    "id": "109032",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Ponzano di Fermo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G873",
+    "latitudine": 43.103391,
+    "longitudine": 13.659314
+  },
+  {
+    "id": "109033",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Porto San Giorgio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G920",
+    "latitudine": 43.180176,
+    "longitudine": 13.792964
+  },
+  {
+    "id": "109034",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Porto Sant'Elpidio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G921",
+    "latitudine": 43.256333,
+    "longitudine": 13.759298
+  },
+  {
+    "id": "109035",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Rapagnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H182",
+    "latitudine": 43.160874,
+    "longitudine": 13.591999
+  },
+  {
+    "id": "109037",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Sant'Elpidio a Mare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I324",
+    "latitudine": 43.231906,
+    "longitudine": 13.683893
+  },
+  {
+    "id": "109036",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Santa Vittoria in Matenano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I315",
+    "latitudine": 43.019267,
+    "longitudine": 13.495258
+  },
+  {
+    "id": "109038",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Servigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C070",
+    "latitudine": 43.078685,
+    "longitudine": 13.489673
+  },
+  {
+    "id": "109039",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Smerillo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I774",
+    "latitudine": 43.005679,
+    "longitudine": 13.445141
+  },
+  {
+    "id": "109040",
+    "id_regione": "11",
+    "id_provincia": "109",
+    "nome": "Torre San Patrizio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L279",
+    "latitudine": 43.183295,
+    "longitudine": 13.612789
+  }
+]

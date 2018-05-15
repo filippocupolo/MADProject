@@ -1,0 +1,592 @@
+[
+  {
+    "id": "41001",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Acqualagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A035",
+    "latitudine": 43.619495,
+    "longitudine": 12.673332
+  },
+  {
+    "id": "41002",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Apecchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A327",
+    "latitudine": 43.559025,
+    "longitudine": 12.420129
+  },
+  {
+    "id": "41003",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Auditore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A493",
+    "latitudine": 43.822016,
+    "longitudine": 12.571755
+  },
+  {
+    "id": "41004",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Barchi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A639",
+    "latitudine": 43.671097,
+    "longitudine": 12.9309
+  },
+  {
+    "id": "41005",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Belforte all'Isauro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A740",
+    "latitudine": 43.719433,
+    "longitudine": 12.372162
+  },
+  {
+    "id": "41006",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Borgo Pace",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B026",
+    "latitudine": 43.658096,
+    "longitudine": 12.293412
+  },
+  {
+    "id": "41007",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Cagli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B352",
+    "latitudine": 43.544053,
+    "longitudine": 12.649725
+  },
+  {
+    "id": "41008",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Cantiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B636",
+    "latitudine": 43.476423,
+    "longitudine": 12.629302
+  },
+  {
+    "id": "41009",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Carpegna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B816",
+    "latitudine": 43.783177,
+    "longitudine": 12.339935
+  },
+  {
+    "id": "41010",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Cartoceto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B846",
+    "latitudine": 43.764599,
+    "longitudine": 12.883255
+  },
+  {
+    "id": "41013",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Fano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D488",
+    "latitudine": 43.839816,
+    "longitudine": 13.01942
+  },
+  {
+    "id": "41014",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Fermignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D541",
+    "latitudine": 43.675039,
+    "longitudine": 12.648388
+  },
+  {
+    "id": "41015",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Fossombrone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D749",
+    "latitudine": 43.688659,
+    "longitudine": 12.803319
+  },
+  {
+    "id": "41016",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Fratte Rosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D791",
+    "latitudine": 43.632758,
+    "longitudine": 12.90111
+  },
+  {
+    "id": "41017",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Frontino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D807",
+    "latitudine": 43.764059,
+    "longitudine": 12.375436
+  },
+  {
+    "id": "41018",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Frontone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D808",
+    "latitudine": 43.513975,
+    "longitudine": 12.737875
+  },
+  {
+    "id": "41019",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Gabicce Mare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D836",
+    "latitudine": 43.966752,
+    "longitudine": 12.756528
+  },
+  {
+    "id": "41020",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Gradara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E122",
+    "latitudine": 43.939581,
+    "longitudine": 12.771033
+  },
+  {
+    "id": "41021",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Isola del Piano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E351",
+    "latitudine": 43.735642,
+    "longitudine": 12.781335
+  },
+  {
+    "id": "41022",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Lunano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E743",
+    "latitudine": 43.729846,
+    "longitudine": 12.441788
+  },
+  {
+    "id": "41023",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Macerata Feltria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E785",
+    "latitudine": 43.803213,
+    "longitudine": 12.440741
+  },
+  {
+    "id": "41025",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Mercatello sul Metauro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F135",
+    "latitudine": 43.645898,
+    "longitudine": 12.33523
+  },
+  {
+    "id": "41026",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Mercatino Conca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F136",
+    "latitudine": 43.869594,
+    "longitudine": 12.489189
+  },
+  {
+    "id": "41027",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Mombaroccio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F310",
+    "latitudine": 43.795796,
+    "longitudine": 12.853991
+  },
+  {
+    "id": "41028",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Mondavio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F347",
+    "latitudine": 43.676086,
+    "longitudine": 12.970142
+  },
+  {
+    "id": "41029",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Mondolfo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F348",
+    "latitudine": 43.753573,
+    "longitudine": 13.095758
+  },
+  {
+    "id": "41031",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Monte Cerignone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F467",
+    "latitudine": 43.842443,
+    "longitudine": 12.412158
+  },
+  {
+    "id": "41035",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Monte Grimano Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F524",
+    "latitudine": 0,
+    "longitudine": 0
+  },
+  {
+    "id": "41038",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Monte Porzio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F589",
+    "latitudine": 43.692236,
+    "longitudine": 13.042872
+  },
+  {
+    "id": "41030",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Montecalvo in Foglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F450",
+    "latitudine": 43.811437,
+    "longitudine": 12.631983
+  },
+  {
+    "id": "41032",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Monteciccardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F474",
+    "latitudine": 43.819272,
+    "longitudine": 12.808795
+  },
+  {
+    "id": "41033",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Montecopiolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F478",
+    "latitudine": 43.842204,
+    "longitudine": 12.348145
+  },
+  {
+    "id": "41034",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Montefelcino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F497",
+    "latitudine": 43.738243,
+    "longitudine": 12.834809
+  },
+  {
+    "id": "41036",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Montelabbate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F533",
+    "latitudine": 43.849745,
+    "longitudine": 12.789121
+  },
+  {
+    "id": "41037",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Montemaggiore al Metauro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F555",
+    "latitudine": 43.736741,
+    "longitudine": 12.947376
+  },
+  {
+    "id": "41040",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Orciano di Pesaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G089",
+    "latitudine": 43.686632,
+    "longitudine": 12.962775
+  },
+  {
+    "id": "41041",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Peglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G416",
+    "latitudine": 43.695846,
+    "longitudine": 12.49409
+  },
+  {
+    "id": "41043",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Pergola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G453",
+    "latitudine": 43.563013,
+    "longitudine": 12.836208
+  },
+  {
+    "id": "41044",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Pesaro",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G479",
+    "latitudine": 43.912476,
+    "longitudine": 12.915549
+  },
+  {
+    "id": "41045",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Petriano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G514",
+    "latitudine": 43.779295,
+    "longitudine": 12.732474
+  },
+  {
+    "id": "41046",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Piagge",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G537",
+    "latitudine": 43.734619,
+    "longitudine": 12.969477
+  },
+  {
+    "id": "41047",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Piandimeleto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G551",
+    "latitudine": 43.726087,
+    "longitudine": 12.412865
+  },
+  {
+    "id": "41048",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Pietrarubbia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G627",
+    "latitudine": 43.803314,
+    "longitudine": 12.384218
+  },
+  {
+    "id": "41049",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Piobbico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G682",
+    "latitudine": 43.588971,
+    "longitudine": 12.510586
+  },
+  {
+    "id": "41050",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Saltara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H721",
+    "latitudine": 43.753018,
+    "longitudine": 12.896288
+  },
+  {
+    "id": "41051",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "San Costanzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H809",
+    "latitudine": 43.762908,
+    "longitudine": 13.068976
+  },
+  {
+    "id": "41052",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "San Giorgio di Pesaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H886",
+    "latitudine": 43.717368,
+    "longitudine": 12.979091
+  },
+  {
+    "id": "41054",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "San Lorenzo in Campo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H958",
+    "latitudine": 43.601396,
+    "longitudine": 12.944838
+  },
+  {
+    "id": "41057",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Sant'Angelo in Vado",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I287",
+    "latitudine": 43.662828,
+    "longitudine": 12.413531
+  },
+  {
+    "id": "41058",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Sant'Ippolito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I344",
+    "latitudine": 43.687227,
+    "longitudine": 12.871462
+  },
+  {
+    "id": "41059",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Sassocorvaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I459",
+    "latitudine": 43.782833,
+    "longitudine": 12.499867
+  },
+  {
+    "id": "41060",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Sassofeltrio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I460",
+    "latitudine": 43.892484,
+    "longitudine": 12.509336
+  },
+  {
+    "id": "41061",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Serra Sant'Abbondio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I654",
+    "latitudine": 43.491816,
+    "longitudine": 12.772847
+  },
+  {
+    "id": "41062",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Serrungarina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I670",
+    "latitudine": 43.746413,
+    "longitudine": 12.874917
+  },
+  {
+    "id": "41064",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Tavoleto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L078",
+    "latitudine": 43.844964,
+    "longitudine": 12.591024
+  },
+  {
+    "id": "41065",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Tavullia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L081",
+    "latitudine": 43.897922,
+    "longitudine": 12.75129
+  },
+  {
+    "id": "41066",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Urbania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L498",
+    "latitudine": 43.671289,
+    "longitudine": 12.518064
+  },
+  {
+    "id": "41067",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Urbino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L500",
+    "latitudine": 43.726257,
+    "longitudine": 12.636563
+  },
+  {
+    "id": "41068",
+    "id_regione": "11",
+    "id_provincia": "41",
+    "nome": "Vallefoglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M331",
+    "latitudine": 43.826936,
+    "longitudine": 12.80157
+  }
+]

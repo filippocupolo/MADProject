@@ -1,0 +1,312 @@
+[
+  {
+    "id": "77001",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Accettura",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A017",
+    "latitudine": 40.49242,
+    "longitudine": 16.157905
+  },
+  {
+    "id": "77002",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Aliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A196",
+    "latitudine": 40.313824,
+    "longitudine": 16.230216
+  },
+  {
+    "id": "77003",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Bernalda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A801",
+    "latitudine": 40.410981,
+    "longitudine": 16.689595
+  },
+  {
+    "id": "77004",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Calciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B391",
+    "latitudine": 40.587929,
+    "longitudine": 16.193166
+  },
+  {
+    "id": "77005",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Cirigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C723",
+    "latitudine": 40.392556,
+    "longitudine": 16.171766
+  },
+  {
+    "id": "77006",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Colobraro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C888",
+    "latitudine": 40.186416,
+    "longitudine": 16.426854
+  },
+  {
+    "id": "77007",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Craco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D128",
+    "latitudine": 40.377998,
+    "longitudine": 16.440161
+  },
+  {
+    "id": "77008",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Ferrandina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D547",
+    "latitudine": 40.498456,
+    "longitudine": 16.457053
+  },
+  {
+    "id": "77009",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Garaguso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D909",
+    "latitudine": 40.547655,
+    "longitudine": 16.226499
+  },
+  {
+    "id": "77010",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Gorgoglione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E093",
+    "latitudine": 40.395148,
+    "longitudine": 16.1424
+  },
+  {
+    "id": "77011",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Grassano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E147",
+    "latitudine": 40.632733,
+    "longitudine": 16.285722
+  },
+  {
+    "id": "77012",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Grottole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E213",
+    "latitudine": 40.597715,
+    "longitudine": 16.387558
+  },
+  {
+    "id": "77013",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Irsina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E326",
+    "latitudine": 40.743363,
+    "longitudine": 16.24376
+  },
+  {
+    "id": "77014",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Matera",
+    "capoluogo_provincia": true,
+    "codice_catastale": "F052",
+    "latitudine": 40.666379,
+    "longitudine": 16.60432
+  },
+  {
+    "id": "77015",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Miglionico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F201",
+    "latitudine": 40.569464,
+    "longitudine": 16.502066
+  },
+  {
+    "id": "77016",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Montalbano Jonico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F399",
+    "latitudine": 40.291991,
+    "longitudine": 16.567256
+  },
+  {
+    "id": "77017",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Montescaglioso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F637",
+    "latitudine": 40.557324,
+    "longitudine": 16.664267
+  },
+  {
+    "id": "77018",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Nova Siri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A942",
+    "latitudine": 40.149093,
+    "longitudine": 16.538277
+  },
+  {
+    "id": "77019",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Oliveto Lucano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G037",
+    "latitudine": 40.535975,
+    "longitudine": 16.18482
+  },
+  {
+    "id": "77020",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Pisticci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G712",
+    "latitudine": 40.390117,
+    "longitudine": 16.552898
+  },
+  {
+    "id": "77021",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Policoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G786",
+    "latitudine": 40.214105,
+    "longitudine": 16.679656
+  },
+  {
+    "id": "77022",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Pomarico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G806",
+    "latitudine": 40.514217,
+    "longitudine": 16.548427
+  },
+  {
+    "id": "77023",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Rotondella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H591",
+    "latitudine": 40.170331,
+    "longitudine": 16.524359
+  },
+  {
+    "id": "77024",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Salandra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H687",
+    "latitudine": 40.526447,
+    "longitudine": 16.319627
+  },
+  {
+    "id": "77025",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "San Giorgio Lucano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H888",
+    "latitudine": 40.11449,
+    "longitudine": 16.391123
+  },
+  {
+    "id": "77026",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "San Mauro Forte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I029",
+    "latitudine": 40.486239,
+    "longitudine": 16.24873
+  },
+  {
+    "id": "77031",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Scanzano Jonico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M256",
+    "latitudine": 40.248437,
+    "longitudine": 16.697989
+  },
+  {
+    "id": "77027",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Stigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I954",
+    "latitudine": 40.402571,
+    "longitudine": 16.230323
+  },
+  {
+    "id": "77028",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Tricarico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L418",
+    "latitudine": 40.617828,
+    "longitudine": 16.147275
+  },
+  {
+    "id": "77029",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Tursi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L477",
+    "latitudine": 40.244668,
+    "longitudine": 16.464241
+  },
+  {
+    "id": "77030",
+    "id_regione": "17",
+    "id_provincia": "77",
+    "nome": "Valsinni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D513",
+    "latitudine": 40.170216,
+    "longitudine": 16.441704
+  }
+]

@@ -1,0 +1,1902 @@
+[
+  {
+    "id": "6001",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Acqui Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A052",
+    "latitudine": 44.676385,
+    "longitudine": 8.467029
+  },
+  {
+    "id": "6002",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Albera Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A146",
+    "latitudine": 44.702551,
+    "longitudine": 9.065688
+  },
+  {
+    "id": "6003",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Alessandria",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A182",
+    "latitudine": 44.907273,
+    "longitudine": 8.61168
+  },
+  {
+    "id": "6004",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Alfiano Natta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A189",
+    "latitudine": 45.0464,
+    "longitudine": 8.208565
+  },
+  {
+    "id": "6005",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Alice Bel Colle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A197",
+    "latitudine": 44.726117,
+    "longitudine": 8.449748
+  },
+  {
+    "id": "6006",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Alluvioni Cambiò",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A211",
+    "latitudine": 44.999827,
+    "longitudine": 8.795549
+  },
+  {
+    "id": "6007",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Altavilla Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A227",
+    "latitudine": 44.995096,
+    "longitudine": 8.376025
+  },
+  {
+    "id": "6008",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Alzano Scrivia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A245",
+    "latitudine": 45.016781,
+    "longitudine": 8.880183
+  },
+  {
+    "id": "6009",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Arquata Scrivia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A436",
+    "latitudine": 44.687857,
+    "longitudine": 8.886028
+  },
+  {
+    "id": "6010",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Avolasca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A523",
+    "latitudine": 44.804034,
+    "longitudine": 8.965204
+  },
+  {
+    "id": "6011",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Balzola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A605",
+    "latitudine": 45.183581,
+    "longitudine": 8.402291
+  },
+  {
+    "id": "6012",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Basaluzzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A689",
+    "latitudine": 44.766212,
+    "longitudine": 8.706162
+  },
+  {
+    "id": "6013",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Bassignana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A708",
+    "latitudine": 45.003474,
+    "longitudine": 8.730872
+  },
+  {
+    "id": "6014",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Belforte Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A738",
+    "latitudine": 44.625003,
+    "longitudine": 8.661747
+  },
+  {
+    "id": "6015",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Bergamasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A793",
+    "latitudine": 44.827723,
+    "longitudine": 8.454619
+  },
+  {
+    "id": "6016",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Berzano di Tortona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A813",
+    "latitudine": 44.876347,
+    "longitudine": 8.950717
+  },
+  {
+    "id": "6017",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Bistagno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A889",
+    "latitudine": 44.660504,
+    "longitudine": 8.368943
+  },
+  {
+    "id": "6018",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Borghetto di Borbera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A998",
+    "latitudine": 44.730634,
+    "longitudine": 8.943275
+  },
+  {
+    "id": "6020",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Borgo San Martino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B037",
+    "latitudine": 45.089111,
+    "longitudine": 8.525728
+  },
+  {
+    "id": "6019",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Borgoratto Alessandrino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B029",
+    "latitudine": 44.836267,
+    "longitudine": 8.539896
+  },
+  {
+    "id": "6021",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Bosco Marengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B071",
+    "latitudine": 44.822541,
+    "longitudine": 8.678611
+  },
+  {
+    "id": "6022",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Bosio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B080",
+    "latitudine": 44.646865,
+    "longitudine": 8.79101
+  },
+  {
+    "id": "6023",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Bozzole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B109",
+    "latitudine": 45.06847,
+    "longitudine": 8.604922
+  },
+  {
+    "id": "6024",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Brignano-Frascata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B179",
+    "latitudine": 44.814857,
+    "longitudine": 9.04005
+  },
+  {
+    "id": "6025",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cabella Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B311",
+    "latitudine": 44.679852,
+    "longitudine": 9.149182
+  },
+  {
+    "id": "6026",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Camagna Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B453",
+    "latitudine": 45.018206,
+    "longitudine": 8.430774
+  },
+  {
+    "id": "6027",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Camino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B482",
+    "latitudine": -34.598524,
+    "longitudine": -58.947875
+  },
+  {
+    "id": "6028",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cantalupo Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B629",
+    "latitudine": 44.718612,
+    "longitudine": 9.045495
+  },
+  {
+    "id": "6029",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Capriata d'Orba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B701",
+    "latitudine": 44.728428,
+    "longitudine": 8.690351
+  },
+  {
+    "id": "6030",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Carbonara Scrivia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B736",
+    "latitudine": 44.848797,
+    "longitudine": 8.870855
+  },
+  {
+    "id": "6031",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Carentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B765",
+    "latitudine": 44.828724,
+    "longitudine": 8.47048
+  },
+  {
+    "id": "6032",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Carezzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B769",
+    "latitudine": 44.812876,
+    "longitudine": 8.904935
+  },
+  {
+    "id": "6033",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Carpeneto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B818",
+    "latitudine": 44.678748,
+    "longitudine": 8.605533
+  },
+  {
+    "id": "6034",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Carrega Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B836",
+    "latitudine": 44.618878,
+    "longitudine": 9.175889
+  },
+  {
+    "id": "6035",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Carrosio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B840",
+    "latitudine": 44.659472,
+    "longitudine": 8.831287
+  },
+  {
+    "id": "6036",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cartosio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B847",
+    "latitudine": 44.591716,
+    "longitudine": 8.419827
+  },
+  {
+    "id": "6037",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Casal Cermelli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B870",
+    "latitudine": 44.835173,
+    "longitudine": 8.626125
+  },
+  {
+    "id": "6039",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Casale Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B885",
+    "latitudine": 45.131609,
+    "longitudine": 8.450503
+  },
+  {
+    "id": "6038",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Casaleggio Boiro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B882",
+    "latitudine": 44.634068,
+    "longitudine": 8.731012
+  },
+  {
+    "id": "6040",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Casalnoceto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B902",
+    "latitudine": 44.913364,
+    "longitudine": 8.981829
+  },
+  {
+    "id": "6041",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Casasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B941",
+    "latitudine": 44.826423,
+    "longitudine": 9.005205
+  },
+  {
+    "id": "6042",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cassano Spinola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C005",
+    "latitudine": 44.761287,
+    "longitudine": 8.859896
+  },
+  {
+    "id": "6043",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cassine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C027",
+    "latitudine": 44.752153,
+    "longitudine": 8.526164
+  },
+  {
+    "id": "6044",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cassinelle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C030",
+    "latitudine": 44.603585,
+    "longitudine": 8.562019
+  },
+  {
+    "id": "6045",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castellania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C137",
+    "latitudine": 44.798476,
+    "longitudine": 8.928985
+  },
+  {
+    "id": "6046",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castellar Guidobono",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C142",
+    "latitudine": 44.904994,
+    "longitudine": 8.945362
+  },
+  {
+    "id": "6047",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castellazzo Bormida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C148",
+    "latitudine": 44.846987,
+    "longitudine": 8.576723
+  },
+  {
+    "id": "6048",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castelletto d'Erro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C156",
+    "latitudine": 44.631032,
+    "longitudine": 8.391013
+  },
+  {
+    "id": "6049",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castelletto d'Orba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C158",
+    "latitudine": 44.684195,
+    "longitudine": 8.705761
+  },
+  {
+    "id": "6050",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castelletto Merli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C160",
+    "latitudine": 45.083821,
+    "longitudine": 8.229094
+  },
+  {
+    "id": "6051",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castelletto Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C162",
+    "latitudine": 44.979762,
+    "longitudine": 8.566756
+  },
+  {
+    "id": "6052",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castelnuovo Bormida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C229",
+    "latitudine": 44.743793,
+    "longitudine": 8.545897
+  },
+  {
+    "id": "6053",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castelnuovo Scrivia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C243",
+    "latitudine": 44.980769,
+    "longitudine": 8.881079
+  },
+  {
+    "id": "6054",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Castelspina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C274",
+    "latitudine": 44.804028,
+    "longitudine": 8.580159
+  },
+  {
+    "id": "6055",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cavatore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C387",
+    "latitudine": 44.630861,
+    "longitudine": 8.454044
+  },
+  {
+    "id": "6056",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cella Monte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C432",
+    "latitudine": 45.073115,
+    "longitudine": 8.392656
+  },
+  {
+    "id": "6057",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cereseto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C503",
+    "latitudine": 45.087242,
+    "longitudine": 8.321313
+  },
+  {
+    "id": "6058",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cerreto Grue",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C507",
+    "latitudine": 44.842585,
+    "longitudine": 8.932976
+  },
+  {
+    "id": "6059",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cerrina Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C531",
+    "latitudine": 45.120761,
+    "longitudine": 8.214739
+  },
+  {
+    "id": "6060",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Coniolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C962",
+    "latitudine": 45.147654,
+    "longitudine": 8.373503
+  },
+  {
+    "id": "6061",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Conzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C977",
+    "latitudine": 45.020978,
+    "longitudine": 8.454473
+  },
+  {
+    "id": "6062",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Costa Vescovato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D102",
+    "latitudine": 44.814296,
+    "longitudine": 8.926792
+  },
+  {
+    "id": "6063",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cremolino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D149",
+    "latitudine": 44.634103,
+    "longitudine": 8.585988
+  },
+  {
+    "id": "6064",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Cuccaro Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D194",
+    "latitudine": 44.990565,
+    "longitudine": 8.453648
+  },
+  {
+    "id": "6065",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Denice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D272",
+    "latitudine": 44.598052,
+    "longitudine": 8.333708
+  },
+  {
+    "id": "6066",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Dernice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D277",
+    "latitudine": 44.766578,
+    "longitudine": 9.050744
+  },
+  {
+    "id": "6067",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Fabbrica Curone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D447",
+    "latitudine": 44.786021,
+    "longitudine": 9.146865
+  },
+  {
+    "id": "6068",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Felizzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D528",
+    "latitudine": 44.89768,
+    "longitudine": 8.437421
+  },
+  {
+    "id": "6069",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Fraconalto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D559",
+    "latitudine": 44.590613,
+    "longitudine": 8.878605
+  },
+  {
+    "id": "6070",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Francavilla Bisio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D759",
+    "latitudine": 44.734004,
+    "longitudine": 8.732956
+  },
+  {
+    "id": "6071",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Frascaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D770",
+    "latitudine": 44.827037,
+    "longitudine": 8.529291
+  },
+  {
+    "id": "6072",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Frassinello Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D777",
+    "latitudine": 45.033419,
+    "longitudine": 8.38641
+  },
+  {
+    "id": "6073",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Frassineto Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D780",
+    "latitudine": 45.13327,
+    "longitudine": 8.534751
+  },
+  {
+    "id": "6074",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Fresonara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D797",
+    "latitudine": 44.784217,
+    "longitudine": 8.687705
+  },
+  {
+    "id": "6075",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Frugarolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D813",
+    "latitudine": 44.837723,
+    "longitudine": 8.680062
+  },
+  {
+    "id": "6076",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Fubine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D814",
+    "latitudine": 44.966075,
+    "longitudine": 8.427758
+  },
+  {
+    "id": "6077",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Gabiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D835",
+    "latitudine": 45.155718,
+    "longitudine": 8.193924
+  },
+  {
+    "id": "6078",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Gamalero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D890",
+    "latitudine": 44.808962,
+    "longitudine": 8.541665
+  },
+  {
+    "id": "6079",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Garbagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D910",
+    "latitudine": 44.779031,
+    "longitudine": 8.995321
+  },
+  {
+    "id": "6080",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Gavazzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D941",
+    "latitudine": 44.775729,
+    "longitudine": 8.886205
+  },
+  {
+    "id": "6081",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Gavi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D944",
+    "latitudine": 44.688092,
+    "longitudine": 8.803747
+  },
+  {
+    "id": "6082",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Giarole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E015",
+    "latitudine": 45.061321,
+    "longitudine": 8.566098
+  },
+  {
+    "id": "6083",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Gremiasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E164",
+    "latitudine": 44.795628,
+    "longitudine": 9.109559
+  },
+  {
+    "id": "6084",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Grognardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E188",
+    "latitudine": 44.630122,
+    "longitudine": 8.492921
+  },
+  {
+    "id": "6085",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Grondona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E191",
+    "latitudine": 44.697769,
+    "longitudine": 8.961217
+  },
+  {
+    "id": "6086",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Guazzora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E255",
+    "latitudine": 45.01532,
+    "longitudine": 8.844798
+  },
+  {
+    "id": "6087",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Isola Sant'Antonio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E360",
+    "latitudine": 45.032297,
+    "longitudine": 8.847903
+  },
+  {
+    "id": "6088",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Lerma",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E543",
+    "latitudine": 44.635575,
+    "longitudine": 8.713839
+  },
+  {
+    "id": "6089",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Lu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E712",
+    "latitudine": 43.837674,
+    "longitudine": 10.495053
+  },
+  {
+    "id": "6090",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Malvicino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E870",
+    "latitudine": 44.559243,
+    "longitudine": 8.414391
+  },
+  {
+    "id": "6091",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Masio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F015",
+    "latitudine": 44.868599,
+    "longitudine": 8.401125
+  },
+  {
+    "id": "6092",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Melazzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F096",
+    "latitudine": 44.643573,
+    "longitudine": 8.426549
+  },
+  {
+    "id": "6093",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Merana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F131",
+    "latitudine": 44.517906,
+    "longitudine": 8.297728
+  },
+  {
+    "id": "6094",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Mirabello Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F232",
+    "latitudine": 45.033929,
+    "longitudine": 8.523276
+  },
+  {
+    "id": "6095",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Molare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F281",
+    "latitudine": 44.618713,
+    "longitudine": 8.599954
+  },
+  {
+    "id": "6096",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Molino dei Torti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F293",
+    "latitudine": 45.024359,
+    "longitudine": 8.892362
+  },
+  {
+    "id": "6097",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Mombello Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F313",
+    "latitudine": 45.133903,
+    "longitudine": 8.252148
+  },
+  {
+    "id": "6098",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Momperone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F320",
+    "latitudine": 44.838045,
+    "longitudine": 9.033359
+  },
+  {
+    "id": "6099",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Moncestino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F337",
+    "latitudine": 45.154392,
+    "longitudine": 8.160381
+  },
+  {
+    "id": "6100",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Mongiardino Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F365",
+    "latitudine": 44.634492,
+    "longitudine": 9.064864
+  },
+  {
+    "id": "6101",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Monleale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F374",
+    "latitudine": 44.883165,
+    "longitudine": 8.973993
+  },
+  {
+    "id": "6102",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Montacuto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F387",
+    "latitudine": 44.766803,
+    "longitudine": 9.104175
+  },
+  {
+    "id": "6103",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Montaldeo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F403",
+    "latitudine": 44.666377,
+    "longitudine": 8.730446
+  },
+  {
+    "id": "6104",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Montaldo Bormida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F404",
+    "latitudine": 44.683352,
+    "longitudine": 8.588908
+  },
+  {
+    "id": "6105",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Montecastello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F455",
+    "latitudine": 44.947113,
+    "longitudine": 8.686936
+  },
+  {
+    "id": "6106",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Montechiaro d'Acqui",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F469",
+    "latitudine": 44.5936,
+    "longitudine": 8.378414
+  },
+  {
+    "id": "6107",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Montegioco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F518",
+    "latitudine": 44.841396,
+    "longitudine": 8.962117
+  },
+  {
+    "id": "6108",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Montemarzino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F562",
+    "latitudine": 44.848735,
+    "longitudine": 8.992174
+  },
+  {
+    "id": "6109",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Morano sul Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F707",
+    "latitudine": 45.165211,
+    "longitudine": 8.366769
+  },
+  {
+    "id": "6110",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Morbello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F713",
+    "latitudine": 44.606879,
+    "longitudine": 8.511796
+  },
+  {
+    "id": "6111",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Mornese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F737",
+    "latitudine": 44.638284,
+    "longitudine": 8.756213
+  },
+  {
+    "id": "6112",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Morsasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F751",
+    "latitudine": 44.664703,
+    "longitudine": 8.549356
+  },
+  {
+    "id": "6113",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Murisengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F814",
+    "latitudine": 45.081608,
+    "longitudine": 8.132619
+  },
+  {
+    "id": "6114",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Novi Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F965",
+    "latitudine": 44.762005,
+    "longitudine": 8.785896
+  },
+  {
+    "id": "6115",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Occimiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F995",
+    "latitudine": 45.058911,
+    "longitudine": 8.509842
+  },
+  {
+    "id": "6116",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Odalengo Grande",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F997",
+    "latitudine": 45.106311,
+    "longitudine": 8.163128
+  },
+  {
+    "id": "6117",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Odalengo Piccolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F998",
+    "latitudine": 45.074695,
+    "longitudine": 8.210459
+  },
+  {
+    "id": "6118",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Olivola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G042",
+    "latitudine": 45.036365,
+    "longitudine": 8.367833
+  },
+  {
+    "id": "6119",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Orsara Bormida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G124",
+    "latitudine": 44.69097,
+    "longitudine": 8.561617
+  },
+  {
+    "id": "6120",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Ottiglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G193",
+    "latitudine": 45.052836,
+    "longitudine": 8.338763
+  },
+  {
+    "id": "6121",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Ovada",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G197",
+    "latitudine": 44.636157,
+    "longitudine": 8.639676
+  },
+  {
+    "id": "6122",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Oviglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G199",
+    "latitudine": 44.86061,
+    "longitudine": 8.485207
+  },
+  {
+    "id": "6123",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Ozzano Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G204",
+    "latitudine": 45.103264,
+    "longitudine": 8.372239
+  },
+  {
+    "id": "6124",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Paderna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G215",
+    "latitudine": 44.821255,
+    "longitudine": 8.892407
+  },
+  {
+    "id": "6125",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pareto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G334",
+    "latitudine": 44.518618,
+    "longitudine": 8.381909
+  },
+  {
+    "id": "6126",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Parodi Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G338",
+    "latitudine": 44.669057,
+    "longitudine": 8.757277
+  },
+  {
+    "id": "6127",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pasturana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G367",
+    "latitudine": 44.749995,
+    "longitudine": 8.750191
+  },
+  {
+    "id": "6128",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pecetto di Valenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G397",
+    "latitudine": 44.98844,
+    "longitudine": 8.670612
+  },
+  {
+    "id": "6129",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pietra Marazzi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G619",
+    "latitudine": 44.942969,
+    "longitudine": 8.669753
+  },
+  {
+    "id": "6130",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Piovera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G695",
+    "latitudine": 44.958389,
+    "longitudine": 8.733635
+  },
+  {
+    "id": "6131",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pomaro Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G807",
+    "latitudine": 45.062578,
+    "longitudine": 8.594686
+  },
+  {
+    "id": "6132",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pontecurone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G839",
+    "latitudine": 44.956535,
+    "longitudine": 8.928521
+  },
+  {
+    "id": "6133",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pontestura",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G858",
+    "latitudine": 45.142464,
+    "longitudine": 8.335953
+  },
+  {
+    "id": "6134",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Ponti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G861",
+    "latitudine": 44.626005,
+    "longitudine": 8.365343
+  },
+  {
+    "id": "6135",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Ponzano Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G872",
+    "latitudine": 45.084744,
+    "longitudine": 8.263816
+  },
+  {
+    "id": "6136",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Ponzone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G877",
+    "latitudine": 44.587152,
+    "longitudine": 8.460397
+  },
+  {
+    "id": "6137",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pozzol Groppo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G960",
+    "latitudine": 44.881085,
+    "longitudine": 9.030308
+  },
+  {
+    "id": "6138",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Pozzolo Formigaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G961",
+    "latitudine": 44.794454,
+    "longitudine": 8.783866
+  },
+  {
+    "id": "6139",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Prasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G987",
+    "latitudine": 44.639626,
+    "longitudine": 8.552711
+  },
+  {
+    "id": "6140",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Predosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H021",
+    "latitudine": 44.754808,
+    "longitudine": 8.658502
+  },
+  {
+    "id": "6141",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Quargnento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H104",
+    "latitudine": 44.947549,
+    "longitudine": 8.48563
+  },
+  {
+    "id": "6142",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Quattordio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H121",
+    "latitudine": 44.898038,
+    "longitudine": 8.405902
+  },
+  {
+    "id": "6143",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Ricaldone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H272",
+    "latitudine": 44.732292,
+    "longitudine": 8.469462
+  },
+  {
+    "id": "6144",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Rivalta Bormida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H334",
+    "latitudine": 44.710202,
+    "longitudine": 8.549704
+  },
+  {
+    "id": "6145",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Rivarone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H343",
+    "latitudine": 44.975344,
+    "longitudine": 8.713023
+  },
+  {
+    "id": "6147",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Rocca Grimalda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H414",
+    "latitudine": 44.670128,
+    "longitudine": 8.647007
+  },
+  {
+    "id": "6146",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Roccaforte Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H406",
+    "latitudine": 44.677436,
+    "longitudine": 9.027901
+  },
+  {
+    "id": "6148",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Rocchetta Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H465",
+    "latitudine": 44.70773,
+    "longitudine": 9.051528
+  },
+  {
+    "id": "6149",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Rosignano Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H569",
+    "latitudine": 45.078751,
+    "longitudine": 8.400452
+  },
+  {
+    "id": "6150",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Sala Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H677",
+    "latitudine": 45.074488,
+    "longitudine": 8.358851
+  },
+  {
+    "id": "6151",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Sale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H694",
+    "latitudine": 44.985397,
+    "longitudine": 8.808719
+  },
+  {
+    "id": "6152",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "San Cristoforo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H810",
+    "latitudine": 46.039463,
+    "longitudine": 11.234685
+  },
+  {
+    "id": "6153",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "San Giorgio Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H878",
+    "latitudine": 45.106952,
+    "longitudine": 8.414144
+  },
+  {
+    "id": "6154",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "San Salvatore Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I144",
+    "latitudine": 44.992542,
+    "longitudine": 8.563783
+  },
+  {
+    "id": "6155",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "San Sebastiano Curone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I150",
+    "latitudine": 44.786188,
+    "longitudine": 9.064286
+  },
+  {
+    "id": "6156",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Sant'Agata Fossili",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I190",
+    "latitudine": 44.785718,
+    "longitudine": 8.918938
+  },
+  {
+    "id": "6157",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Sardigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I429",
+    "latitudine": 44.753671,
+    "longitudine": 8.893738
+  },
+  {
+    "id": "6158",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Sarezzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I432",
+    "latitudine": 44.867446,
+    "longitudine": 8.915071
+  },
+  {
+    "id": "6159",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Serralunga di Crea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I645",
+    "latitudine": 45.099971,
+    "longitudine": 8.28373
+  },
+  {
+    "id": "6160",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Serravalle Scrivia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I657",
+    "latitudine": 44.723208,
+    "longitudine": 8.857401
+  },
+  {
+    "id": "6161",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Sezzadio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I711",
+    "latitudine": 44.785431,
+    "longitudine": 8.57333
+  },
+  {
+    "id": "6162",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Silvano d'Orba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I738",
+    "latitudine": 44.687567,
+    "longitudine": 8.672892
+  },
+  {
+    "id": "6163",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Solero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I798",
+    "latitudine": 44.919624,
+    "longitudine": 8.506769
+  },
+  {
+    "id": "6164",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Solonghello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I808",
+    "latitudine": 45.129425,
+    "longitudine": 8.283111
+  },
+  {
+    "id": "6165",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Spigno Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I901",
+    "latitudine": 44.542548,
+    "longitudine": 8.333265
+  },
+  {
+    "id": "6166",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Spineto Scrivia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I911",
+    "latitudine": 44.837642,
+    "longitudine": 8.870096
+  },
+  {
+    "id": "6167",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Stazzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I941",
+    "latitudine": 44.722855,
+    "longitudine": 8.866777
+  },
+  {
+    "id": "6168",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Strevi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I977",
+    "latitudine": 44.700419,
+    "longitudine": 8.523498
+  },
+  {
+    "id": "6169",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Tagliolo Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L027",
+    "latitudine": 44.636023,
+    "longitudine": 8.671271
+  },
+  {
+    "id": "6170",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Tassarolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L059",
+    "latitudine": 44.728342,
+    "longitudine": 8.770255
+  },
+  {
+    "id": "6171",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Terruggia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L139",
+    "latitudine": 45.082404,
+    "longitudine": 8.444647
+  },
+  {
+    "id": "6172",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Terzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L143",
+    "latitudine": 44.671584,
+    "longitudine": 8.429284
+  },
+  {
+    "id": "6173",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Ticineto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L165",
+    "latitudine": 45.096204,
+    "longitudine": 8.551306
+  },
+  {
+    "id": "6174",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Tortona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L304",
+    "latitudine": 44.895212,
+    "longitudine": 8.863333
+  },
+  {
+    "id": "6175",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Treville",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L403",
+    "latitudine": 45.097227,
+    "longitudine": 8.361358
+  },
+  {
+    "id": "6176",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Trisobbio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L432",
+    "latitudine": 44.659986,
+    "longitudine": 8.585143
+  },
+  {
+    "id": "6177",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Valenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L570",
+    "latitudine": 45.012288,
+    "longitudine": 8.644111
+  },
+  {
+    "id": "6178",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Valmacca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L633",
+    "latitudine": 45.101249,
+    "longitudine": 8.581873
+  },
+  {
+    "id": "6179",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Vignale Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L881",
+    "latitudine": 45.009772,
+    "longitudine": 8.400034
+  },
+  {
+    "id": "6180",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Vignole Borbera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L887",
+    "latitudine": 44.708522,
+    "longitudine": 8.891369
+  },
+  {
+    "id": "6181",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Viguzzolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L904",
+    "latitudine": 44.903764,
+    "longitudine": 8.920642
+  },
+  {
+    "id": "6182",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Villadeati",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L931",
+    "latitudine": 45.073501,
+    "longitudine": 8.172515
+  },
+  {
+    "id": "6183",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Villalvernia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L963",
+    "latitudine": 44.817554,
+    "longitudine": 8.854969
+  },
+  {
+    "id": "6184",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Villamiroglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L970",
+    "latitudine": 45.13443,
+    "longitudine": 8.169475
+  },
+  {
+    "id": "6185",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Villanova Monferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L972",
+    "latitudine": 45.182159,
+    "longitudine": 8.478578
+  },
+  {
+    "id": "6186",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Villaromagnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M009",
+    "latitudine": 44.849329,
+    "longitudine": 8.888423
+  },
+  {
+    "id": "6187",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Visone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M077",
+    "latitudine": 44.662601,
+    "longitudine": 8.502745
+  },
+  {
+    "id": "6188",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Volpedo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M120",
+    "latitudine": 44.889464,
+    "longitudine": 8.98363
+  },
+  {
+    "id": "6189",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Volpeglino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M121",
+    "latitudine": 44.892383,
+    "longitudine": 8.958959
+  },
+  {
+    "id": "6190",
+    "id_regione": "1",
+    "id_provincia": "6",
+    "nome": "Voltaggio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M123",
+    "latitudine": 44.62238,
+    "longitudine": 8.842666
+  }
+]

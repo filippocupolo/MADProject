@@ -1,0 +1,422 @@
+[
+  {
+    "id": "48001",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Bagno a Ripoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A564",
+    "latitudine": 43.752273,
+    "longitudine": 11.319688
+  },
+  {
+    "id": "48002",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Barberino di Mugello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A632",
+    "latitudine": 44.00691,
+    "longitudine": 11.237651
+  },
+  {
+    "id": "48003",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Barberino Val d'Elsa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A633",
+    "latitudine": 43.545874,
+    "longitudine": 11.175108
+  },
+  {
+    "id": "48004",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Borgo San Lorenzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B036",
+    "latitudine": 43.954379,
+    "longitudine": 11.384748
+  },
+  {
+    "id": "48005",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Calenzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B406",
+    "latitudine": 43.86604,
+    "longitudine": 11.167318
+  },
+  {
+    "id": "48006",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Campi Bisenzio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B507",
+    "latitudine": 43.825977,
+    "longitudine": 11.127647
+  },
+  {
+    "id": "48008",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Capraia e Limite",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B684",
+    "latitudine": 43.765113,
+    "longitudine": 10.992005
+  },
+  {
+    "id": "48010",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Castelfiorentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C101",
+    "latitudine": 43.604185,
+    "longitudine": 10.969713
+  },
+  {
+    "id": "48011",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Cerreto Guidi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C529",
+    "latitudine": 43.759797,
+    "longitudine": 10.8802
+  },
+  {
+    "id": "48012",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Certaldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C540",
+    "latitudine": 43.547659,
+    "longitudine": 11.041546
+  },
+  {
+    "id": "48013",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Dicomano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D299",
+    "latitudine": 43.890989,
+    "longitudine": 11.523296
+  },
+  {
+    "id": "48014",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Empoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D403",
+    "latitudine": 43.717892,
+    "longitudine": 10.947778
+  },
+  {
+    "id": "48015",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Fiesole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D575",
+    "latitudine": 43.806479,
+    "longitudine": 11.293153
+  },
+  {
+    "id": "48052",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Figline e Incisa Valdarno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M321",
+    "latitudine": 43.661706,
+    "longitudine": 11.448866
+  },
+  {
+    "id": "48017",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Firenze",
+    "capoluogo_provincia": true,
+    "codice_catastale": "D612",
+    "latitudine": 43.76956,
+    "longitudine": 11.255814
+  },
+  {
+    "id": "48018",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Firenzuola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D613",
+    "latitudine": 44.119784,
+    "longitudine": 11.378555
+  },
+  {
+    "id": "48019",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Fucecchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D815",
+    "latitudine": 43.727867,
+    "longitudine": 10.806722
+  },
+  {
+    "id": "48020",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Gambassi Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D895",
+    "latitudine": 43.540696,
+    "longitudine": 10.954902
+  },
+  {
+    "id": "48021",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Greve in Chianti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E169",
+    "latitudine": 43.583064,
+    "longitudine": 11.318682
+  },
+  {
+    "id": "48022",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Impruneta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E291",
+    "latitudine": 43.684516,
+    "longitudine": 11.25814
+  },
+  {
+    "id": "48024",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Lastra a Signa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E466",
+    "latitudine": 43.770164,
+    "longitudine": 11.112896
+  },
+  {
+    "id": "48025",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Londa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E668",
+    "latitudine": 43.861615,
+    "longitudine": 11.565571
+  },
+  {
+    "id": "48026",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Marradi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E971",
+    "latitudine": 44.077757,
+    "longitudine": 11.613709
+  },
+  {
+    "id": "48027",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Montaione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F398",
+    "latitudine": 43.552746,
+    "longitudine": 10.914063
+  },
+  {
+    "id": "48028",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Montelupo Fiorentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F551",
+    "latitudine": 43.733189,
+    "longitudine": 11.020616
+  },
+  {
+    "id": "48030",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Montespertoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F648",
+    "latitudine": 43.644467,
+    "longitudine": 11.071105
+  },
+  {
+    "id": "48031",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Palazzuolo sul Senio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G270",
+    "latitudine": 44.114126,
+    "longitudine": 11.545954
+  },
+  {
+    "id": "48032",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Pelago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G420",
+    "latitudine": 43.772697,
+    "longitudine": 11.503284
+  },
+  {
+    "id": "48033",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Pontassieve",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G825",
+    "latitudine": 43.774718,
+    "longitudine": 11.438469
+  },
+  {
+    "id": "48035",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Reggello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H222",
+    "latitudine": 43.683109,
+    "longitudine": 11.53275
+  },
+  {
+    "id": "48036",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Rignano sull'Arno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H286",
+    "latitudine": 43.723531,
+    "longitudine": 11.44688
+  },
+  {
+    "id": "48037",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Rufina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H635",
+    "latitudine": 43.826896,
+    "longitudine": 11.491227
+  },
+  {
+    "id": "48038",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "San Casciano in Val di Pesa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H791",
+    "latitudine": 43.658355,
+    "longitudine": 11.188767
+  },
+  {
+    "id": "48039",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "San Godenzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H937",
+    "latitudine": 43.924889,
+    "longitudine": 11.619174
+  },
+  {
+    "id": "48041",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Scandicci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B962",
+    "latitudine": 43.754217,
+    "longitudine": 11.192284
+  },
+  {
+    "id": "48053",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Scarperia e San Piero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M326",
+    "latitudine": 43.993749,
+    "longitudine": 11.353346
+  },
+  {
+    "id": "48043",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Sesto Fiorentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I684",
+    "latitudine": 43.832097,
+    "longitudine": 11.204269
+  },
+  {
+    "id": "48044",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Signa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I728",
+    "latitudine": 43.782325,
+    "longitudine": 11.093247
+  },
+  {
+    "id": "48045",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Tavarnelle Val di Pesa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L067",
+    "latitudine": 43.563604,
+    "longitudine": 11.174477
+  },
+  {
+    "id": "48046",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Vaglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L529",
+    "latitudine": 43.910364,
+    "longitudine": 11.27946
+  },
+  {
+    "id": "48049",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Vicchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L838",
+    "latitudine": 43.933094,
+    "longitudine": 11.464747
+  },
+  {
+    "id": "48050",
+    "id_regione": "9",
+    "id_provincia": "48",
+    "nome": "Vinci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M059",
+    "latitudine": 43.784177,
+    "longitudine": 10.924427
+  }
+]

@@ -1,0 +1,882 @@
+[
+  {
+    "id": "95001",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Abbasanta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A007",
+    "latitudine": 40.126939,
+    "longitudine": 8.816705
+  },
+  {
+    "id": "95002",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Aidomaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A097",
+    "latitudine": 40.170921,
+    "longitudine": 8.856296
+  },
+  {
+    "id": "95003",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Albagiara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A126",
+    "latitudine": 39.786857,
+    "longitudine": 8.861913
+  },
+  {
+    "id": "95004",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Ales",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A180",
+    "latitudine": 39.769915,
+    "longitudine": 8.811501
+  },
+  {
+    "id": "95005",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Allai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A204",
+    "latitudine": 39.958408,
+    "longitudine": 8.862307
+  },
+  {
+    "id": "95006",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Arborea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A357",
+    "latitudine": 39.773493,
+    "longitudine": 8.582388
+  },
+  {
+    "id": "95007",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Ardauli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A380",
+    "latitudine": 40.080228,
+    "longitudine": 8.911668
+  },
+  {
+    "id": "95008",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Assolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A477",
+    "latitudine": 45.799259,
+    "longitudine": 11.91411
+  },
+  {
+    "id": "95009",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Asuni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A480",
+    "latitudine": 39.87105,
+    "longitudine": 8.948016
+  },
+  {
+    "id": "95010",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Baradili",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A614",
+    "latitudine": 39.722552,
+    "longitudine": 8.897448
+  },
+  {
+    "id": "95011",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Baratili San Pietro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A621",
+    "latitudine": 39.992772,
+    "longitudine": 8.554515
+  },
+  {
+    "id": "95012",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Baressa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A655",
+    "latitudine": 39.714233,
+    "longitudine": 8.875777
+  },
+  {
+    "id": "95013",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Bauladu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A721",
+    "latitudine": 40.02176,
+    "longitudine": 8.670111
+  },
+  {
+    "id": "95014",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Bidonì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A856",
+    "latitudine": 40.113209,
+    "longitudine": 8.935919
+  },
+  {
+    "id": "95015",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Bonarcado",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A960",
+    "latitudine": 40.09815,
+    "longitudine": 8.655028
+  },
+  {
+    "id": "95016",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Boroneddu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B055",
+    "latitudine": 40.1129,
+    "longitudine": 8.871783
+  },
+  {
+    "id": "95079",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Bosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B068",
+    "latitudine": 40.295231,
+    "longitudine": 8.503666
+  },
+  {
+    "id": "95017",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Busachi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B281",
+    "latitudine": 40.033223,
+    "longitudine": 8.899325
+  },
+  {
+    "id": "95018",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Cabras",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B314",
+    "latitudine": 39.929073,
+    "longitudine": 8.530551
+  },
+  {
+    "id": "95019",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Cuglieri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D200",
+    "latitudine": 40.187799,
+    "longitudine": 8.565211
+  },
+  {
+    "id": "95077",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Curcuris",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D214",
+    "latitudine": 39.746111,
+    "longitudine": 8.830073
+  },
+  {
+    "id": "95080",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Flussio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D640",
+    "latitudine": 40.266857,
+    "longitudine": 8.538691
+  },
+  {
+    "id": "95020",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Fordongianus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D695",
+    "latitudine": 39.993544,
+    "longitudine": 8.812363
+  },
+  {
+    "id": "95081",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Genoni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D968",
+    "latitudine": 39.793012,
+    "longitudine": 9.006988
+  },
+  {
+    "id": "95021",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Ghilarza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E004",
+    "latitudine": 40.1243,
+    "longitudine": 8.838343
+  },
+  {
+    "id": "95022",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Gonnoscodina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E087",
+    "latitudine": 39.701607,
+    "longitudine": 8.837256
+  },
+  {
+    "id": "95023",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Gonnosnò",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D585",
+    "latitudine": 39.760426,
+    "longitudine": 8.871429
+  },
+  {
+    "id": "95024",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Gonnostramatza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E088",
+    "latitudine": 39.685218,
+    "longitudine": 8.831605
+  },
+  {
+    "id": "95082",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Laconi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E400",
+    "latitudine": 39.851201,
+    "longitudine": 9.051844
+  },
+  {
+    "id": "95083",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Magomadas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E825",
+    "latitudine": 40.264381,
+    "longitudine": 8.525584
+  },
+  {
+    "id": "95025",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Marrubiu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E972",
+    "latitudine": 39.752335,
+    "longitudine": 8.641015
+  },
+  {
+    "id": "95026",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Masullas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F050",
+    "latitudine": 39.701871,
+    "longitudine": 8.783714
+  },
+  {
+    "id": "95027",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Milis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F208",
+    "latitudine": 40.048654,
+    "longitudine": 8.637014
+  },
+  {
+    "id": "95084",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Modolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F261",
+    "latitudine": 40.274934,
+    "longitudine": 8.529756
+  },
+  {
+    "id": "95028",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Mogorella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F270",
+    "latitudine": 39.863288,
+    "longitudine": 8.857264
+  },
+  {
+    "id": "95029",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Mogoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F272",
+    "latitudine": 39.682302,
+    "longitudine": 8.775101
+  },
+  {
+    "id": "95085",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Montresta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F698",
+    "latitudine": 40.375735,
+    "longitudine": 8.49897
+  },
+  {
+    "id": "95030",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Morgongiori",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F727",
+    "latitudine": 39.745568,
+    "longitudine": 8.770605
+  },
+  {
+    "id": "95031",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Narbolia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F840",
+    "latitudine": 40.048921,
+    "longitudine": 8.577459
+  },
+  {
+    "id": "95032",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Neoneli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F867",
+    "latitudine": 40.061314,
+    "longitudine": 8.944123
+  },
+  {
+    "id": "95033",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Norbello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F934",
+    "latitudine": 40.136675,
+    "longitudine": 8.832332
+  },
+  {
+    "id": "95034",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Nughedu Santa Vittoria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F974",
+    "latitudine": 40.102078,
+    "longitudine": 8.953564
+  },
+  {
+    "id": "95035",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Nurachi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F980",
+    "latitudine": 39.973818,
+    "longitudine": 8.538938
+  },
+  {
+    "id": "95036",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Nureci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F985",
+    "latitudine": 39.824459,
+    "longitudine": 8.974571
+  },
+  {
+    "id": "95037",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Ollastra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G043",
+    "latitudine": 39.952992,
+    "longitudine": 8.734622
+  },
+  {
+    "id": "95038",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Oristano",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G113",
+    "latitudine": 39.906182,
+    "longitudine": 8.588386
+  },
+  {
+    "id": "95039",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Palmas Arborea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G286",
+    "latitudine": 39.875497,
+    "longitudine": 8.645085
+  },
+  {
+    "id": "95040",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Pau",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G379",
+    "latitudine": 39.792074,
+    "longitudine": 8.802822
+  },
+  {
+    "id": "95041",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Paulilatino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G384",
+    "latitudine": 40.082333,
+    "longitudine": 8.762375
+  },
+  {
+    "id": "95042",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Pompu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G817",
+    "latitudine": 39.724704,
+    "longitudine": 8.796684
+  },
+  {
+    "id": "95043",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Riola Sardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H301",
+    "latitudine": 39.997588,
+    "longitudine": 8.538384
+  },
+  {
+    "id": "95044",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Ruinas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F271",
+    "latitudine": 39.911074,
+    "longitudine": 8.897033
+  },
+  {
+    "id": "95086",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Sagama",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H661",
+    "latitudine": 40.260812,
+    "longitudine": 8.57876
+  },
+  {
+    "id": "95045",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Samugheo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H756",
+    "latitudine": 39.954955,
+    "longitudine": 8.947903
+  },
+  {
+    "id": "95046",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "San Nicolò d'Arcidano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A368",
+    "latitudine": 39.684326,
+    "longitudine": 8.645639
+  },
+  {
+    "id": "95050",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "San Vero Milis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I384",
+    "latitudine": 40.014673,
+    "longitudine": 8.598356
+  },
+  {
+    "id": "95047",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Santa Giusta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I205",
+    "latitudine": 39.875995,
+    "longitudine": 8.610892
+  },
+  {
+    "id": "95049",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Santu Lussurgiu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I374",
+    "latitudine": 40.142249,
+    "longitudine": 8.657025
+  },
+  {
+    "id": "95051",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Scano di Montiferro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I503",
+    "latitudine": 40.216991,
+    "longitudine": 8.586527
+  },
+  {
+    "id": "95052",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Sedilo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I564",
+    "latitudine": 40.170422,
+    "longitudine": 8.916968
+  },
+  {
+    "id": "95053",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Seneghe",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I605",
+    "latitudine": 40.080924,
+    "longitudine": 8.611248
+  },
+  {
+    "id": "95054",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Senis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I609",
+    "latitudine": 39.823829,
+    "longitudine": 8.940199
+  },
+  {
+    "id": "95055",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Sennariolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I613",
+    "latitudine": 40.213146,
+    "longitudine": 8.555406
+  },
+  {
+    "id": "95056",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Siamaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I717",
+    "latitudine": 39.949432,
+    "longitudine": 8.639157
+  },
+  {
+    "id": "95057",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Siamanna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I718",
+    "latitudine": 39.920139,
+    "longitudine": 8.7604
+  },
+  {
+    "id": "95076",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Siapiccia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I721",
+    "latitudine": 39.928132,
+    "longitudine": 8.763212
+  },
+  {
+    "id": "95058",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Simala",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I742",
+    "latitudine": 39.720883,
+    "longitudine": 8.827154
+  },
+  {
+    "id": "95059",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Simaxis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I743",
+    "latitudine": 39.930234,
+    "longitudine": 8.693091
+  },
+  {
+    "id": "95060",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Sini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I749",
+    "latitudine": 39.754436,
+    "longitudine": 8.89925
+  },
+  {
+    "id": "95061",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Siris",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I757",
+    "latitudine": 39.71269,
+    "longitudine": 8.773432
+  },
+  {
+    "id": "95078",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Soddì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I778",
+    "latitudine": 40.130345,
+    "longitudine": 8.87839
+  },
+  {
+    "id": "95062",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Solarussa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I791",
+    "latitudine": 39.956125,
+    "longitudine": 8.67517
+  },
+  {
+    "id": "95063",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Sorradile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I861",
+    "latitudine": 40.106875,
+    "longitudine": 8.933246
+  },
+  {
+    "id": "95087",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Suni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L006",
+    "latitudine": 40.2818,
+    "longitudine": 8.549248
+  },
+  {
+    "id": "95064",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Tadasuni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L023",
+    "latitudine": 40.110188,
+    "longitudine": 8.88436
+  },
+  {
+    "id": "95065",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Terralba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L122",
+    "latitudine": 39.718623,
+    "longitudine": 8.63388
+  },
+  {
+    "id": "95088",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Tinnura",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L172",
+    "latitudine": 40.268267,
+    "longitudine": 8.547809
+  },
+  {
+    "id": "95066",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Tramatza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L321",
+    "latitudine": 40.003209,
+    "longitudine": 8.648741
+  },
+  {
+    "id": "95067",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Tresnuraghes",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L393",
+    "latitudine": 40.246774,
+    "longitudine": 8.518422
+  },
+  {
+    "id": "95068",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Ulà Tirso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L488",
+    "latitudine": 40.045172,
+    "longitudine": 8.901989
+  },
+  {
+    "id": "95069",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Uras",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L496",
+    "latitudine": 39.698287,
+    "longitudine": 8.701255
+  },
+  {
+    "id": "95070",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Usellus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L508",
+    "latitudine": 39.813566,
+    "longitudine": 8.849713
+  },
+  {
+    "id": "95048",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Villa Sant'Antonio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I298",
+    "latitudine": 39.86023,
+    "longitudine": 8.901268
+  },
+  {
+    "id": "95073",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Villa Verde",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A609",
+    "latitudine": 39.795998,
+    "longitudine": 8.822194
+  },
+  {
+    "id": "95071",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Villanova Truschedu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L991",
+    "latitudine": 39.988634,
+    "longitudine": 8.752764
+  },
+  {
+    "id": "95072",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Villaurbana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M030",
+    "latitudine": 39.885011,
+    "longitudine": 8.779229
+  },
+  {
+    "id": "95074",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Zeddiani",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M153",
+    "latitudine": 39.988108,
+    "longitudine": 8.595992
+  },
+  {
+    "id": "95075",
+    "id_regione": "20",
+    "id_provincia": "95",
+    "nome": "Zerfaliu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M168",
+    "latitudine": 39.958086,
+    "longitudine": 8.706351
+  }
+]

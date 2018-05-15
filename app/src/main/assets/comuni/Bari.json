@@ -1,0 +1,412 @@
+[
+  {
+    "id": "72001",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Acquaviva delle Fonti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A048",
+    "latitudine": 40.897194,
+    "longitudine": 16.845436
+  },
+  {
+    "id": "72002",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Adelfia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A055",
+    "latitudine": 41.003795,
+    "longitudine": 16.872188
+  },
+  {
+    "id": "72003",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Alberobello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A149",
+    "latitudine": 40.786423,
+    "longitudine": 17.24093
+  },
+  {
+    "id": "72004",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Altamura",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A225",
+    "latitudine": 40.825392,
+    "longitudine": 16.552787
+  },
+  {
+    "id": "72006",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Bari",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A662",
+    "latitudine": 41.117143,
+    "longitudine": 16.871872
+  },
+  {
+    "id": "72008",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Binetto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A874",
+    "latitudine": 41.024764,
+    "longitudine": 16.710316
+  },
+  {
+    "id": "72010",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Bitetto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A892",
+    "latitudine": 41.040109,
+    "longitudine": 16.74811
+  },
+  {
+    "id": "72011",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Bitonto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A893",
+    "latitudine": 41.107825,
+    "longitudine": 16.691057
+  },
+  {
+    "id": "72012",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Bitritto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A894",
+    "latitudine": 41.042238,
+    "longitudine": 16.824794
+  },
+  {
+    "id": "72014",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Capurso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B716",
+    "latitudine": 41.048901,
+    "longitudine": 16.919264
+  },
+  {
+    "id": "72015",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Casamassima",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B923",
+    "latitudine": 40.9548,
+    "longitudine": 16.918453
+  },
+  {
+    "id": "72016",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Cassano delle Murge",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B998",
+    "latitudine": 40.890868,
+    "longitudine": 16.769053
+  },
+  {
+    "id": "72017",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Castellana Grotte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C134",
+    "latitudine": 40.883772,
+    "longitudine": 17.167858
+  },
+  {
+    "id": "72018",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Cellamare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C436",
+    "latitudine": 41.020387,
+    "longitudine": 16.928618
+  },
+  {
+    "id": "72019",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Conversano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C975",
+    "latitudine": 40.96736,
+    "longitudine": 17.117119
+  },
+  {
+    "id": "72020",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Corato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C983",
+    "latitudine": 41.153489,
+    "longitudine": 16.41316
+  },
+  {
+    "id": "72021",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Gioia del Colle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E038",
+    "latitudine": 40.799071,
+    "longitudine": 16.922159
+  },
+  {
+    "id": "72022",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Giovinazzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E047",
+    "latitudine": 41.186684,
+    "longitudine": 16.673597
+  },
+  {
+    "id": "72023",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Gravina in Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E155",
+    "latitudine": 40.817145,
+    "longitudine": 16.418512
+  },
+  {
+    "id": "72024",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Grumo Appula",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E223",
+    "latitudine": 41.013532,
+    "longitudine": 16.710303
+  },
+  {
+    "id": "72025",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Locorotondo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E645",
+    "latitudine": 40.755913,
+    "longitudine": 17.326281
+  },
+  {
+    "id": "72027",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Modugno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F262",
+    "latitudine": 41.082721,
+    "longitudine": 16.782442
+  },
+  {
+    "id": "72028",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Mola di Bari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F280",
+    "latitudine": 41.062973,
+    "longitudine": 17.090303
+  },
+  {
+    "id": "72029",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Molfetta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F284",
+    "latitudine": 41.202777,
+    "longitudine": 16.598719
+  },
+  {
+    "id": "72030",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Monopoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F376",
+    "latitudine": 40.952517,
+    "longitudine": 17.298556
+  },
+  {
+    "id": "72031",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Noci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F915",
+    "latitudine": 40.793902,
+    "longitudine": 17.12586
+  },
+  {
+    "id": "72032",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Noicattaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F923",
+    "latitudine": 41.033466,
+    "longitudine": 16.988324
+  },
+  {
+    "id": "72033",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Palo del Colle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G291",
+    "latitudine": 41.05571,
+    "longitudine": 16.706627
+  },
+  {
+    "id": "72034",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Poggiorsini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G769",
+    "latitudine": 40.914709,
+    "longitudine": 16.254118
+  },
+  {
+    "id": "72035",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Polignano a Mare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G787",
+    "latitudine": 40.9949,
+    "longitudine": 17.222539
+  },
+  {
+    "id": "72036",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Putignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H096",
+    "latitudine": 40.85441,
+    "longitudine": 17.120409
+  },
+  {
+    "id": "72037",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Rutigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H643",
+    "latitudine": 41.009259,
+    "longitudine": 17.003563
+  },
+  {
+    "id": "72038",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Ruvo di Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H645",
+    "latitudine": 41.117291,
+    "longitudine": 16.483725
+  },
+  {
+    "id": "72039",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Sammichele di Bari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H749",
+    "latitudine": 40.887319,
+    "longitudine": 16.948917
+  },
+  {
+    "id": "72040",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Sannicandro di Bari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I053",
+    "latitudine": 41.000301,
+    "longitudine": 16.799571
+  },
+  {
+    "id": "72041",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Santeramo in Colle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I330",
+    "latitudine": 40.791808,
+    "longitudine": 16.75286
+  },
+  {
+    "id": "72043",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Terlizzi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L109",
+    "latitudine": 41.130147,
+    "longitudine": 16.542728
+  },
+  {
+    "id": "72044",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Toritto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L220",
+    "latitudine": 40.997782,
+    "longitudine": 16.679435
+  },
+  {
+    "id": "72046",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Triggiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L425",
+    "latitudine": 41.062163,
+    "longitudine": 16.926017
+  },
+  {
+    "id": "72047",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Turi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L472",
+    "latitudine": 40.917552,
+    "longitudine": 17.021448
+  },
+  {
+    "id": "72048",
+    "id_regione": "16",
+    "id_provincia": "72",
+    "nome": "Valenzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L571",
+    "latitudine": 41.043781,
+    "longitudine": 16.884203
+  }
+]

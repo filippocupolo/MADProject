@@ -1,0 +1,1162 @@
+[
+  {
+    "id": "21001",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Aldino / Aldein",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A179",
+    "latitudine": 46.365524,
+    "longitudine": 11.355575
+  },
+  {
+    "id": "21002",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Andriano / Andrian",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A286",
+    "latitudine": 46.518955,
+    "longitudine": 11.233687
+  },
+  {
+    "id": "21003",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Anterivo / Altrei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A306",
+    "latitudine": 46.277785,
+    "longitudine": 11.366539
+  },
+  {
+    "id": "21004",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Appiano sulla strada del vino / Eppan an der Weinstraße",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A332",
+    "latitudine": 46.474554,
+    "longitudine": 11.247903
+  },
+  {
+    "id": "21005",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Avelengo / Hafling",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A507",
+    "latitudine": 46.646686,
+    "longitudine": 11.224403
+  },
+  {
+    "id": "21006",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Badia / Abtei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A537",
+    "latitudine": 46.609176,
+    "longitudine": 11.894178
+  },
+  {
+    "id": "21007",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Barbiano / Barbian",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A635",
+    "latitudine": 46.600948,
+    "longitudine": 11.518852
+  },
+  {
+    "id": "21008",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Bolzano / Bozen",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A952",
+    "latitudine": 46.498295,
+    "longitudine": 11.354758
+  },
+  {
+    "id": "21009",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Braies / Prags",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B116",
+    "latitudine": 46.717467,
+    "longitudine": 12.128142
+  },
+  {
+    "id": "21010",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Brennero / Brenner",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B145",
+    "latitudine": 46.999103,
+    "longitudine": 11.502498
+  },
+  {
+    "id": "21011",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Bressanone / Brixen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B160",
+    "latitudine": 46.717705,
+    "longitudine": 11.657244
+  },
+  {
+    "id": "21012",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Bronzolo / Branzoll",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B203",
+    "latitudine": 46.404048,
+    "longitudine": 11.320642
+  },
+  {
+    "id": "21013",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Brunico / Bruneck",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B220",
+    "latitudine": 46.796574,
+    "longitudine": 11.938042
+  },
+  {
+    "id": "21014",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Caines / Kuens",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B364",
+    "latitudine": 46.696344,
+    "longitudine": 11.17536
+  },
+  {
+    "id": "21015",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Caldaro sulla strada del vino / Kaltern an der Weinstraße",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B397",
+    "latitudine": 46.412975,
+    "longitudine": 11.240259
+  },
+  {
+    "id": "21016",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Campo di Trens / Freienfeld",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B529",
+    "latitudine": 46.872137,
+    "longitudine": 11.482971
+  },
+  {
+    "id": "21017",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Campo Tures / Sand in Taufers",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B570",
+    "latitudine": 46.919552,
+    "longitudine": 11.951966
+  },
+  {
+    "id": "21018",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Castelbello-Ciardes / Kastelbell-Tschars",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C062",
+    "latitudine": 46.628325,
+    "longitudine": 10.905767
+  },
+  {
+    "id": "21019",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Castelrotto / Kastelruth",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C254",
+    "latitudine": 46.568135,
+    "longitudine": 11.563965
+  },
+  {
+    "id": "21020",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Cermes / Tscherms",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A022",
+    "latitudine": 46.633047,
+    "longitudine": 11.146247
+  },
+  {
+    "id": "21021",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Chienes / Kiens",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C625",
+    "latitudine": 46.806052,
+    "longitudine": 11.83857
+  },
+  {
+    "id": "21022",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Chiusa / Klausen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C652",
+    "latitudine": 46.639996,
+    "longitudine": 11.566211
+  },
+  {
+    "id": "21023",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Cornedo all'Isarco / Karneid",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B799",
+    "latitudine": 46.471559,
+    "longitudine": 11.471924
+  },
+  {
+    "id": "21024",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Cortaccia sulla strada del vino / Kurtatsch an der Weinstraße",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D048",
+    "latitudine": 46.311402,
+    "longitudine": 11.220691
+  },
+  {
+    "id": "21025",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Cortina sulla strada del vino / Kurtinig an der Weinstraße",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D075",
+    "latitudine": 46.267991,
+    "longitudine": 11.221082
+  },
+  {
+    "id": "21026",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Corvara in Badia / Corvara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D079",
+    "latitudine": 46.552591,
+    "longitudine": 11.874275
+  },
+  {
+    "id": "21027",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Curon Venosta / Graun im Vinschgau",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D222",
+    "latitudine": 46.808111,
+    "longitudine": 10.540743
+  },
+  {
+    "id": "21028",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Dobbiaco / Toblach",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D311",
+    "latitudine": 46.735536,
+    "longitudine": 12.221377
+  },
+  {
+    "id": "21029",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Egna / Neumarkt",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D392",
+    "latitudine": 46.31159,
+    "longitudine": 11.272514
+  },
+  {
+    "id": "21030",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Falzes / Pfalzen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D484",
+    "latitudine": 46.811343,
+    "longitudine": 11.8834
+  },
+  {
+    "id": "21031",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Fiè allo Sciliar / Völs am Schlern",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D571",
+    "latitudine": 46.517311,
+    "longitudine": 11.504745
+  },
+  {
+    "id": "21032",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Fortezza / Franzensfeste",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D731",
+    "latitudine": 46.796898,
+    "longitudine": 11.603122
+  },
+  {
+    "id": "21033",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Funes / Villnöß",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D821",
+    "latitudine": 46.640598,
+    "longitudine": 11.684697
+  },
+  {
+    "id": "21034",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Gais / Gais",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D860",
+    "latitudine": 46.833856,
+    "longitudine": 11.948507
+  },
+  {
+    "id": "21035",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Gargazzone / Gargazon",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D923",
+    "latitudine": 46.585885,
+    "longitudine": 11.202205
+  },
+  {
+    "id": "21036",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Glorenza / Glurns",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E069",
+    "latitudine": 46.670629,
+    "longitudine": 10.552948
+  },
+  {
+    "id": "21117",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "La Valle / Wengen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E491",
+    "latitudine": 46.658286,
+    "longitudine": 11.923845
+  },
+  {
+    "id": "21037",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Laces / Latsch",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E398",
+    "latitudine": 46.617706,
+    "longitudine": 10.858964
+  },
+  {
+    "id": "21038",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Lagundo / Algund",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E412",
+    "latitudine": 46.680488,
+    "longitudine": 11.133237
+  },
+  {
+    "id": "21039",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Laion / Lajen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E420",
+    "latitudine": 46.608233,
+    "longitudine": 11.565819
+  },
+  {
+    "id": "21040",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Laives / Leifers",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E421",
+    "latitudine": 46.427114,
+    "longitudine": 11.337291
+  },
+  {
+    "id": "21041",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Lana / Lana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E434",
+    "latitudine": 46.611591,
+    "longitudine": 11.162954
+  },
+  {
+    "id": "21042",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Lasa / Laas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E457",
+    "latitudine": 46.619888,
+    "longitudine": 10.694778
+  },
+  {
+    "id": "21043",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Lauregno / Laurein",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E481",
+    "latitudine": 46.453552,
+    "longitudine": 11.062215
+  },
+  {
+    "id": "21044",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Luson / Lüsen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E764",
+    "latitudine": 46.745307,
+    "longitudine": 11.762162
+  },
+  {
+    "id": "21045",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Magrè sulla strada del vino / Margreid an der Weinstraße",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E829",
+    "latitudine": 46.286842,
+    "longitudine": 11.211402
+  },
+  {
+    "id": "21046",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Malles Venosta / Mals",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E862",
+    "latitudine": 46.686399,
+    "longitudine": 10.55141
+  },
+  {
+    "id": "21047",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Marebbe / Enneberg",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E938",
+    "latitudine": 46.700043,
+    "longitudine": 11.93043
+  },
+  {
+    "id": "21048",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Marlengo / Marling",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E959",
+    "latitudine": 46.652234,
+    "longitudine": 11.137803
+  },
+  {
+    "id": "21049",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Martello / Martell",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E981",
+    "latitudine": 46.558505,
+    "longitudine": 10.781569
+  },
+  {
+    "id": "21050",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Meltina / Mölten",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F118",
+    "latitudine": 46.585174,
+    "longitudine": 11.253482
+  },
+  {
+    "id": "21051",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Merano / Meran",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F132",
+    "latitudine": 46.671294,
+    "longitudine": 11.152518
+  },
+  {
+    "id": "21052",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Monguelfo-Tesido / Welsberg-Taisten",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F371",
+    "latitudine": 46.754757,
+    "longitudine": 12.106709
+  },
+  {
+    "id": "21053",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Montagna / Montan",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F392",
+    "latitudine": 46.330995,
+    "longitudine": 11.304137
+  },
+  {
+    "id": "21054",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Moso in Passiria / Moos in Passeier",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F766",
+    "latitudine": 46.830254,
+    "longitudine": 11.169109
+  },
+  {
+    "id": "21055",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Nalles / Nals",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F836",
+    "latitudine": 46.54282,
+    "longitudine": 11.202956
+  },
+  {
+    "id": "21056",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Naturno / Naturns",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F849",
+    "latitudine": 46.650242,
+    "longitudine": 11.008112
+  },
+  {
+    "id": "21057",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Naz-Sciaves / Natz-Schabs",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F856",
+    "latitudine": 46.769606,
+    "longitudine": 11.663513
+  },
+  {
+    "id": "21058",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Nova Levante / Welschnofen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F949",
+    "latitudine": 46.429891,
+    "longitudine": 11.534676
+  },
+  {
+    "id": "21059",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Nova Ponente / Deutschnofen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F950",
+    "latitudine": 46.413751,
+    "longitudine": 11.425513
+  },
+  {
+    "id": "21060",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Ora / Auer",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G083",
+    "latitudine": 46.34818,
+    "longitudine": 11.299035
+  },
+  {
+    "id": "21061",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Ortisei / St. Ulrich",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G140",
+    "latitudine": 46.573435,
+    "longitudine": 11.674203
+  },
+  {
+    "id": "21062",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Parcines / Partschins",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G328",
+    "latitudine": 46.684155,
+    "longitudine": 11.07354
+  },
+  {
+    "id": "21063",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Perca / Percha",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G443",
+    "latitudine": 46.791492,
+    "longitudine": 11.982399
+  },
+  {
+    "id": "21064",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Plaus / Plaus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G299",
+    "latitudine": 46.655359,
+    "longitudine": 11.042665
+  },
+  {
+    "id": "21065",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Ponte Gardena / Waidbruck",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G830",
+    "latitudine": 46.597785,
+    "longitudine": 11.531265
+  },
+  {
+    "id": "21066",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Postal / Burgstall",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G936",
+    "latitudine": 46.609767,
+    "longitudine": 11.19236
+  },
+  {
+    "id": "21067",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Prato allo Stelvio / Prad am Stilfserjoch",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H004",
+    "latitudine": 46.621841,
+    "longitudine": 10.5914
+  },
+  {
+    "id": "21068",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Predoi / Prettau",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H019",
+    "latitudine": 47.037848,
+    "longitudine": 12.103138
+  },
+  {
+    "id": "21069",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Proves / Proveis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H081",
+    "latitudine": 46.474612,
+    "longitudine": 11.022152
+  },
+  {
+    "id": "21070",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Racines / Ratschings",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H152",
+    "latitudine": 46.868482,
+    "longitudine": 11.317394
+  },
+  {
+    "id": "21071",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Rasun-Anterselva / Rasen-Antholz",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H189",
+    "latitudine": 46.777832,
+    "longitudine": 12.04975
+  },
+  {
+    "id": "21072",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Renon / Ritten",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H236",
+    "latitudine": 46.552253,
+    "longitudine": 11.431383
+  },
+  {
+    "id": "21073",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Rifiano / Riffian",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H284",
+    "latitudine": 46.703101,
+    "longitudine": 11.180675
+  },
+  {
+    "id": "21074",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Rio di Pusteria / Mühlbach",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H299",
+    "latitudine": 46.796521,
+    "longitudine": 11.6681
+  },
+  {
+    "id": "21075",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Rodengo / Rodeneck",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H475",
+    "latitudine": 46.7787,
+    "longitudine": 11.690317
+  },
+  {
+    "id": "21076",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Salorno / Salurn",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H719",
+    "latitudine": 46.239346,
+    "longitudine": 11.21819
+  },
+  {
+    "id": "21077",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "San Candido / Innichen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H786",
+    "latitudine": 46.730043,
+    "longitudine": 12.280521
+  },
+  {
+    "id": "21079",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "San Genesio Atesino / Jenesien",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H858",
+    "latitudine": 46.535235,
+    "longitudine": 11.330217
+  },
+  {
+    "id": "21080",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "San Leonardo in Passiria / St. Leonhard in Passeier",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H952",
+    "latitudine": 46.81286,
+    "longitudine": 11.245723
+  },
+  {
+    "id": "21081",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "San Lorenzo di Sebato / St. Lorenzen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H956",
+    "latitudine": 46.782299,
+    "longitudine": 11.904268
+  },
+  {
+    "id": "21082",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "San Martino in Badia / St. Martin in Thurn",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H988",
+    "latitudine": 46.68206,
+    "longitudine": 11.897825
+  },
+  {
+    "id": "21083",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "San Martino in Passiria / St. Martin in Passeier",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H989",
+    "latitudine": 46.785823,
+    "longitudine": 11.230245
+  },
+  {
+    "id": "21084",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "San Pancrazio / St. Pankraz",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I065",
+    "latitudine": 46.583942,
+    "longitudine": 11.08456
+  },
+  {
+    "id": "21085",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Santa Cristina Valgardena / St. Christina in Gröden",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I173",
+    "latitudine": 46.558085,
+    "longitudine": 11.7198
+  },
+  {
+    "id": "21086",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Sarentino / Sarntal",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I431",
+    "latitudine": 46.641214,
+    "longitudine": 11.354108
+  },
+  {
+    "id": "21087",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Scena / Schenna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I519",
+    "latitudine": 46.686931,
+    "longitudine": 11.188801
+  },
+  {
+    "id": "21088",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Selva dei Molini / Mühlwald",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I593",
+    "latitudine": 46.889803,
+    "longitudine": 11.862948
+  },
+  {
+    "id": "21089",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Selva di Val Gardena / Wolkenstein in Gröden",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I591",
+    "latitudine": 46.556462,
+    "longitudine": 11.754658
+  },
+  {
+    "id": "21118",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Senale-San Felice / Unsere Liebe Frau im Walde-St. Felix",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I603",
+    "latitudine": 46.505161,
+    "longitudine": 11.135248
+  },
+  {
+    "id": "21091",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Senales / Schnals",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I604",
+    "latitudine": 46.647627,
+    "longitudine": 10.977728
+  },
+  {
+    "id": "21092",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Sesto / Sexten",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I687",
+    "latitudine": 46.701861,
+    "longitudine": 12.350254
+  },
+  {
+    "id": "21093",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Silandro / Schlanders",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I729",
+    "latitudine": 46.627677,
+    "longitudine": 10.773689
+  },
+  {
+    "id": "21094",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Sluderno / Schluderns",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I771",
+    "latitudine": 46.664767,
+    "longitudine": 10.586308
+  },
+  {
+    "id": "21095",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Stelvio / Stilfs",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I948",
+    "latitudine": 46.597857,
+    "longitudine": 10.544426
+  },
+  {
+    "id": "21096",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Terento / Terenten",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L106",
+    "latitudine": 46.829902,
+    "longitudine": 11.778406
+  },
+  {
+    "id": "21097",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Terlano / Terlan",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L108",
+    "latitudine": 46.529331,
+    "longitudine": 11.248429
+  },
+  {
+    "id": "21098",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Termeno sulla strada del vino / Tramin an der Weinstraße",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L111",
+    "latitudine": 46.34081,
+    "longitudine": 11.242166
+  },
+  {
+    "id": "21099",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Tesimo / Tisens",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L149",
+    "latitudine": 46.565686,
+    "longitudine": 11.169672
+  },
+  {
+    "id": "21100",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Tires / Tiers",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L176",
+    "latitudine": 46.469274,
+    "longitudine": 11.523642
+  },
+  {
+    "id": "21101",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Tirolo / Tirol",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L178",
+    "latitudine": 46.690721,
+    "longitudine": 11.15554
+  },
+  {
+    "id": "21102",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Trodena nel parco naturale / Truden im Naturpark",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L444",
+    "latitudine": 46.322538,
+    "longitudine": 11.349729
+  },
+  {
+    "id": "21103",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Tubre / Taufers im Münstertal",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L455",
+    "latitudine": 46.641331,
+    "longitudine": 10.462814
+  },
+  {
+    "id": "21104",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Ultimo / Ulten",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L490",
+    "latitudine": 46.547808,
+    "longitudine": 11.007077
+  },
+  {
+    "id": "21105",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Vadena / Pfatten",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L527",
+    "latitudine": 46.413345,
+    "longitudine": 11.305072
+  },
+  {
+    "id": "21107",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Val di Vizze / Pfitsch",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L564",
+    "latitudine": 46.970261,
+    "longitudine": 11.594396
+  },
+  {
+    "id": "21106",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Valdaora / Olang",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L552",
+    "latitudine": 46.761208,
+    "longitudine": 12.030449
+  },
+  {
+    "id": "21108",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Valle Aurina / Ahrntal",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L595",
+    "latitudine": 46.990808,
+    "longitudine": 11.963752
+  },
+  {
+    "id": "21109",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Valle di Casies / Gsies",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L601",
+    "latitudine": 46.814749,
+    "longitudine": 12.212455
+  },
+  {
+    "id": "21110",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Vandoies / Vintl",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L660",
+    "latitudine": 46.815725,
+    "longitudine": 11.721557
+  },
+  {
+    "id": "21111",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Varna / Vahrn",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L687",
+    "latitudine": 46.732186,
+    "longitudine": 11.649724
+  },
+  {
+    "id": "21116",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Velturno / Feldthurns",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L724",
+    "latitudine": 46.669132,
+    "longitudine": 11.598838
+  },
+  {
+    "id": "21112",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Verano / Vöran",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L745",
+    "latitudine": 46.605232,
+    "longitudine": 11.227898
+  },
+  {
+    "id": "21113",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Villabassa / Niederdorf",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L915",
+    "latitudine": 46.735835,
+    "longitudine": 12.185836
+  },
+  {
+    "id": "21114",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Villandro / Villanders",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L971",
+    "latitudine": 46.630518,
+    "longitudine": 11.53753
+  },
+  {
+    "id": "21115",
+    "id_regione": "4",
+    "id_provincia": "21",
+    "nome": "Vipiteno / Sterzing",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M067",
+    "latitudine": 46.892673,
+    "longitudine": 11.433619
+  }
+]

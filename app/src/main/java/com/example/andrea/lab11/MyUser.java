@@ -41,6 +41,7 @@ public class MyUser {
     private String surname                       = null;
     private String email                         = null;
     private String city                          = null;
+    private String town                          = null;
     private String biography                     = null;
     private SharedPreferences sharedPreferences  = null;
     private String imagePath                     = null;
@@ -63,6 +64,7 @@ public class MyUser {
         surname = sharedPreferences.getString("surname", null);
         email = sharedPreferences.getString("email", null);
         city = sharedPreferences.getString("city", null);
+        town = sharedPreferences.getString("town", null);
         biography = sharedPreferences.getString("biography", null);
         imageExist = sharedPreferences.getBoolean("imageExist", false);
 
@@ -80,6 +82,7 @@ public class MyUser {
     public String getSurname(){return surname;}
     public String getEmail(){return email;}
     public String getCity(){return  city;}
+    public String getTown(){return  town;}
     public String getBiography(){return biography;}
     public String getImagePath(){return imagePath;}
     public boolean getImageExist(){return imageExist;}
@@ -111,6 +114,13 @@ public class MyUser {
         city = value;
         editor.commit();
     }
+
+    public void setTown(String value){
+        editor.putString("town", value);
+        town = value;
+        editor.commit();
+
+    }
     public void setBiography(String value){
         editor.putString("biography",value);
         biography = value;
@@ -124,7 +134,7 @@ public class MyUser {
     public void commit(){
 
         Location location = new Location(applicationContext);
-        GeoLocation coordinates = location.getCoordinates(city);
+        GeoLocation coordinates = location.getTownCoordinates(town, city, applicationContext);
 
         Log.d(deBugTag,"Commit");
         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("users");
@@ -134,6 +144,7 @@ public class MyUser {
         dbRef.child(userID).child("city").setValue(city);
         dbRef.child(userID).child("biography").setValue(biography);
         dbRef.child(userID).child("image").setValue(imageExist);
+        dbRef.child(userID).child("town").setValue(town);
 
         GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
         geoFire.setLocation(userID, coordinates, new GeoFire.CompletionListener() {

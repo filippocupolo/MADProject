@@ -1,0 +1,582 @@
+[
+  {
+    "id": "87001",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Aci Bonaccorsi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A025",
+    "latitudine": 37.595517,
+    "longitudine": 15.109543
+  },
+  {
+    "id": "87002",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Aci Castello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A026",
+    "latitudine": 37.555722,
+    "longitudine": 15.14448
+  },
+  {
+    "id": "87003",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Aci Catena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A027",
+    "latitudine": 37.606435,
+    "longitudine": 15.141925
+  },
+  {
+    "id": "87005",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Aci Sant'Antonio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A029",
+    "latitudine": 37.606255,
+    "longitudine": 15.12597
+  },
+  {
+    "id": "87004",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Acireale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A028",
+    "latitudine": 37.607802,
+    "longitudine": 15.166736
+  },
+  {
+    "id": "87006",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Adrano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A056",
+    "latitudine": 37.662756,
+    "longitudine": 14.832615
+  },
+  {
+    "id": "87007",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Belpasso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A766",
+    "latitudine": 37.58982,
+    "longitudine": 14.976828
+  },
+  {
+    "id": "87008",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Biancavilla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A841",
+    "latitudine": 37.641213,
+    "longitudine": 14.870591
+  },
+  {
+    "id": "87009",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Bronte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B202",
+    "latitudine": 37.78835,
+    "longitudine": 14.830666
+  },
+  {
+    "id": "87010",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Calatabiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B384",
+    "latitudine": 37.822859,
+    "longitudine": 15.227613
+  },
+  {
+    "id": "87011",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Caltagirone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B428",
+    "latitudine": 37.238093,
+    "longitudine": 14.512607
+  },
+  {
+    "id": "87012",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Camporotondo Etneo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B561",
+    "latitudine": 37.57053,
+    "longitudine": 15.003261
+  },
+  {
+    "id": "87013",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Castel di Iudica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C091",
+    "latitudine": 37.493617,
+    "longitudine": 14.650766
+  },
+  {
+    "id": "87014",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Castiglione di Sicilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C297",
+    "latitudine": 37.880942,
+    "longitudine": 15.124028
+  },
+  {
+    "id": "87015",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Catania",
+    "capoluogo_provincia": true,
+    "codice_catastale": "C351",
+    "latitudine": 37.507877,
+    "longitudine": 15.08303
+  },
+  {
+    "id": "87016",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Fiumefreddo di Sicilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D623",
+    "latitudine": 37.793014,
+    "longitudine": 15.207856
+  },
+  {
+    "id": "87017",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Giarre",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E017",
+    "latitudine": 37.726987,
+    "longitudine": 15.184244
+  },
+  {
+    "id": "87018",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Grammichele",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E133",
+    "latitudine": 37.214765,
+    "longitudine": 14.6364
+  },
+  {
+    "id": "87019",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Gravina di Catania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E156",
+    "latitudine": 37.560682,
+    "longitudine": 15.060904
+  },
+  {
+    "id": "87020",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Licodia Eubea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E578",
+    "latitudine": 37.155144,
+    "longitudine": 14.700238
+  },
+  {
+    "id": "87021",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Linguaglossa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E602",
+    "latitudine": 37.842771,
+    "longitudine": 15.141768
+  },
+  {
+    "id": "87022",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Maletto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E854",
+    "latitudine": 37.831769,
+    "longitudine": 14.86617
+  },
+  {
+    "id": "87057",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Maniace",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M283",
+    "latitudine": 37.884008,
+    "longitudine": 14.798006
+  },
+  {
+    "id": "87023",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Mascali",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F004",
+    "latitudine": 37.751651,
+    "longitudine": 15.193514
+  },
+  {
+    "id": "87024",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Mascalucia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F005",
+    "latitudine": 37.574146,
+    "longitudine": 15.050643
+  },
+  {
+    "id": "87056",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Mazzarrone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M271",
+    "latitudine": 37.082559,
+    "longitudine": 14.55896
+  },
+  {
+    "id": "87025",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Militello in Val di Catania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F209",
+    "latitudine": 37.273482,
+    "longitudine": 14.793682
+  },
+  {
+    "id": "87026",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Milo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F214",
+    "latitudine": 37.722899,
+    "longitudine": 15.114442
+  },
+  {
+    "id": "87027",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Mineo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F217",
+    "latitudine": 37.265866,
+    "longitudine": 14.690683
+  },
+  {
+    "id": "87028",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Mirabella Imbaccari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F231",
+    "latitudine": 37.328938,
+    "longitudine": 14.443606
+  },
+  {
+    "id": "87029",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Misterbianco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F250",
+    "latitudine": 37.51831,
+    "longitudine": 15.00774
+  },
+  {
+    "id": "87030",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Motta Sant'Anastasia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F781",
+    "latitudine": 37.512943,
+    "longitudine": 14.969807
+  },
+  {
+    "id": "87031",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Nicolosi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F890",
+    "latitudine": 37.617495,
+    "longitudine": 15.024093
+  },
+  {
+    "id": "87032",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Palagonia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G253",
+    "latitudine": 37.328218,
+    "longitudine": 14.746705
+  },
+  {
+    "id": "87033",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Paternò",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G371",
+    "latitudine": 37.56718,
+    "longitudine": 14.901757
+  },
+  {
+    "id": "87034",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Pedara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G402",
+    "latitudine": 37.618616,
+    "longitudine": 15.060823
+  },
+  {
+    "id": "87035",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Piedimonte Etneo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G597",
+    "latitudine": 37.807174,
+    "longitudine": 15.178467
+  },
+  {
+    "id": "87036",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Raddusa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H154",
+    "latitudine": 37.4727,
+    "longitudine": 14.53197
+  },
+  {
+    "id": "87058",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Ragalna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M287",
+    "latitudine": 37.634749,
+    "longitudine": 14.950012
+  },
+  {
+    "id": "87037",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Ramacca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H168",
+    "latitudine": 37.385143,
+    "longitudine": 14.693538
+  },
+  {
+    "id": "87038",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Randazzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H175",
+    "latitudine": 37.877882,
+    "longitudine": 14.950737
+  },
+  {
+    "id": "87039",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Riposto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H325",
+    "latitudine": 37.732124,
+    "longitudine": 15.205427
+  },
+  {
+    "id": "87040",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "San Cono",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H805",
+    "latitudine": 37.28937,
+    "longitudine": 14.364202
+  },
+  {
+    "id": "87041",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "San Giovanni la Punta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H922",
+    "latitudine": 37.578276,
+    "longitudine": 15.094772
+  },
+  {
+    "id": "87042",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "San Gregorio di Catania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H940",
+    "latitudine": 37.565835,
+    "longitudine": 15.113845
+  },
+  {
+    "id": "87043",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "San Michele di Ganzaria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I035",
+    "latitudine": 37.280145,
+    "longitudine": 14.426699
+  },
+  {
+    "id": "87044",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "San Pietro Clarenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I098",
+    "latitudine": 37.572016,
+    "longitudine": 15.022778
+  },
+  {
+    "id": "87045",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Sant'Agata li Battiati",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I202",
+    "latitudine": 37.553523,
+    "longitudine": 15.080187
+  },
+  {
+    "id": "87046",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Sant'Alfio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I216",
+    "latitudine": 37.742798,
+    "longitudine": 15.139043
+  },
+  {
+    "id": "87047",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Santa Maria di Licodia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I240",
+    "latitudine": 37.616902,
+    "longitudine": 14.886807
+  },
+  {
+    "id": "87048",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Santa Venerina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I314",
+    "latitudine": 37.68609,
+    "longitudine": 15.134939
+  },
+  {
+    "id": "87049",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Scordia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I548",
+    "latitudine": 37.293883,
+    "longitudine": 14.842801
+  },
+  {
+    "id": "87050",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Trecastagni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L355",
+    "latitudine": 37.616226,
+    "longitudine": 15.078651
+  },
+  {
+    "id": "87051",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Tremestieri Etneo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L369",
+    "latitudine": 37.575476,
+    "longitudine": 15.073384
+  },
+  {
+    "id": "87052",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Valverde",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L658",
+    "latitudine": 37.578885,
+    "longitudine": 15.123242
+  },
+  {
+    "id": "87053",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Viagrande",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L828",
+    "latitudine": 37.609461,
+    "longitudine": 15.097494
+  },
+  {
+    "id": "87054",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Vizzini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M100",
+    "latitudine": 37.161319,
+    "longitudine": 14.748868
+  },
+  {
+    "id": "87055",
+    "id_regione": "19",
+    "id_provincia": "87",
+    "nome": "Zafferana Etnea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M139",
+    "latitudine": 37.689744,
+    "longitudine": 15.105272
+  }
+]

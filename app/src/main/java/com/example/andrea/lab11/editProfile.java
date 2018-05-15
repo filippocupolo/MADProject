@@ -19,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -43,7 +44,7 @@ public class editProfile extends AppCompatActivity {
     private Uri selectedImageUri;
     private Activity activity;
     private ActivityCompat activityCompat;
-    private String previousActivity;
+    private String previousActivity = null;
     private boolean error;
     private boolean doubleBackToExitPressedOnce;
 
@@ -117,14 +118,30 @@ public class editProfile extends AppCompatActivity {
         if (myUser.getCity() != null) {
             int spinnerPosition = adapter.getPosition(myUser.getCity());
             cityView.setSelection(spinnerPosition);
-
-            //towns spinner according to the city selected
-            ArrayAdapter<String> townAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item,
-                    location.getItalianTowns(myUser.getCity(), getApplicationContext()));
-
-            townAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
-            townView.setAdapter(townAdapter);
         }
+
+        //towns according to city chosen
+        cityView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                //towns spinner according to the city selected
+                ArrayAdapter<String> townAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item,
+                        location.getItalianTowns(cityView.getSelectedItem().toString(), getApplicationContext()));
+
+                townAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+                townView.setAdapter(townAdapter);
+                if(myUser.getTown() != null){
+                    int townPosition = townAdapter.getPosition(myUser.getTown());
+                    if(townPosition != -1)
+                        townView.setSelection(townPosition);
+                    else
+                        townView.setSelection(0);
+                }
+            }
+
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                return;
+            }
+        });
 
         //set name toolbar
         TextView t = findViewById(R.id.back_toolbar_text);
@@ -242,7 +259,7 @@ public class editProfile extends AppCompatActivity {
             myUser.setSurname(surnameView.getText().toString());
             myUser.setBiography(biographyView.getText().toString());
             myUser.setCity(cityView.getSelectedItem().toString());
-
+            myUser.setTown(townView.getSelectedItem().toString());
             myUser.commit();
 
             return true;
@@ -282,7 +299,19 @@ public class editProfile extends AppCompatActivity {
 
             String caller = getIntent().getStringExtra("caller");
 
-            if(caller.equals("login")){
+            if(caller != "nulll") {
+                if (caller.equals("login")) {
+                    Intent intent = new Intent(
+                            getApplicationContext(),
+                            MainPageActivity.class
+                    );
+                    intent.putExtra("caller", "editProfile");
+                    startActivity(intent);
+                    finish();
+                } else {
+                    onBackPressed();
+                }
+            }else{
                 Intent intent = new Intent(
                         getApplicationContext(),
                         MainPageActivity.class
@@ -291,9 +320,7 @@ public class editProfile extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-            else {
-                onBackPressed();
-            }
+
         }
     }
 

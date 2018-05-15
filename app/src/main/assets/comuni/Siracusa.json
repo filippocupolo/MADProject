@@ -1,0 +1,212 @@
+[
+  {
+    "id": "89001",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Augusta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A494",
+    "latitudine": 37.250068,
+    "longitudine": 15.221697
+  },
+  {
+    "id": "89002",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Avola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A522",
+    "latitudine": 36.909532,
+    "longitudine": 15.134889
+  },
+  {
+    "id": "89003",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Buccheri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B237",
+    "latitudine": 37.126949,
+    "longitudine": 14.848111
+  },
+  {
+    "id": "89004",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Buscemi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B287",
+    "latitudine": 37.086207,
+    "longitudine": 14.885022
+  },
+  {
+    "id": "89005",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Canicattini Bagni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B603",
+    "latitudine": 37.030342,
+    "longitudine": 15.06796
+  },
+  {
+    "id": "89006",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Carlentini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B787",
+    "latitudine": 37.269823,
+    "longitudine": 15.014569
+  },
+  {
+    "id": "89007",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Cassaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C006",
+    "latitudine": 37.105618,
+    "longitudine": 14.948131
+  },
+  {
+    "id": "89008",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Ferla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D540",
+    "latitudine": 37.119438,
+    "longitudine": 14.940008
+  },
+  {
+    "id": "89009",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Floridia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D636",
+    "latitudine": 37.083337,
+    "longitudine": 15.152012
+  },
+  {
+    "id": "89010",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Francofonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D768",
+    "latitudine": 37.226051,
+    "longitudine": 14.878619
+  },
+  {
+    "id": "89011",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Lentini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E532",
+    "latitudine": 37.283819,
+    "longitudine": 14.996114
+  },
+  {
+    "id": "89012",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Melilli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F107",
+    "latitudine": 37.181034,
+    "longitudine": 15.125389
+  },
+  {
+    "id": "89013",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Noto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F943",
+    "latitudine": 36.892443,
+    "longitudine": 15.065195
+  },
+  {
+    "id": "89014",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Pachino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G211",
+    "latitudine": 36.712461,
+    "longitudine": 15.094004
+  },
+  {
+    "id": "89015",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Palazzolo Acreide",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G267",
+    "latitudine": 37.061862,
+    "longitudine": 14.904141
+  },
+  {
+    "id": "89020",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Portopalo di Capo Passero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M257",
+    "latitudine": 36.68169,
+    "longitudine": 15.133875
+  },
+  {
+    "id": "89021",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Priolo Gargallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M279",
+    "latitudine": 37.157858,
+    "longitudine": 15.183701
+  },
+  {
+    "id": "89016",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Rosolini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H574",
+    "latitudine": 36.819998,
+    "longitudine": 14.953812
+  },
+  {
+    "id": "89017",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Siracusa",
+    "capoluogo_provincia": true,
+    "codice_catastale": "I754",
+    "latitudine": 37.075474,
+    "longitudine": 15.286586
+  },
+  {
+    "id": "89018",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Solarino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I785",
+    "latitudine": 37.10085,
+    "longitudine": 15.119678
+  },
+  {
+    "id": "89019",
+    "id_regione": "19",
+    "id_provincia": "89",
+    "nome": "Sortino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I864",
+    "latitudine": 37.157968,
+    "longitudine": 15.027738
+  }
+]

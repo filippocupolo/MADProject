@@ -1,0 +1,552 @@
+[
+  {
+    "id": "37062",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Alto Reno Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M369",
+    "latitudine": 44.155343,
+    "longitudine": 10.976185
+  },
+  {
+    "id": "37001",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Anzola dell'Emilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A324",
+    "latitudine": 44.54619,
+    "longitudine": 11.192749
+  },
+  {
+    "id": "37002",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Argelato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A392",
+    "latitudine": 44.644762,
+    "longitudine": 11.344743
+  },
+  {
+    "id": "37003",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Baricella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A665",
+    "latitudine": 44.645236,
+    "longitudine": 11.531191
+  },
+  {
+    "id": "37005",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Bentivoglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A785",
+    "latitudine": 44.635923,
+    "longitudine": 11.416759
+  },
+  {
+    "id": "37006",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Bologna",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A944",
+    "latitudine": 44.494887,
+    "longitudine": 11.342616
+  },
+  {
+    "id": "37007",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Borgo Tossignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B044",
+    "latitudine": 44.280108,
+    "longitudine": 11.588195
+  },
+  {
+    "id": "37008",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Budrio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B249",
+    "latitudine": 44.538854,
+    "longitudine": 11.536048
+  },
+  {
+    "id": "37009",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Calderara di Reno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B399",
+    "latitudine": 44.567481,
+    "longitudine": 11.272618
+  },
+  {
+    "id": "37010",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Camugnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B572",
+    "latitudine": 44.1692,
+    "longitudine": 11.089188
+  },
+  {
+    "id": "37011",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Casalecchio di Reno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B880",
+    "latitudine": 44.478247,
+    "longitudine": 11.27738
+  },
+  {
+    "id": "37012",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Casalfiumanese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B892",
+    "latitudine": 44.30047,
+    "longitudine": 11.614773
+  },
+  {
+    "id": "37013",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castel d'Aiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C075",
+    "latitudine": 44.280492,
+    "longitudine": 11.00469
+  },
+  {
+    "id": "37014",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castel del Rio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C086",
+    "latitudine": 44.213201,
+    "longitudine": 11.503518
+  },
+  {
+    "id": "37015",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castel di Casio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B969",
+    "latitudine": 44.164115,
+    "longitudine": 11.038001
+  },
+  {
+    "id": "37016",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castel Guelfo di Bologna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C121",
+    "latitudine": 44.432853,
+    "longitudine": 11.675086
+  },
+  {
+    "id": "37019",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castel Maggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C204",
+    "latitudine": 44.575165,
+    "longitudine": 11.363731
+  },
+  {
+    "id": "37020",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castel San Pietro Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C265",
+    "latitudine": 44.399693,
+    "longitudine": 11.589128
+  },
+  {
+    "id": "37017",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castello d'Argile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C185",
+    "latitudine": 44.680003,
+    "longitudine": 11.295266
+  },
+  {
+    "id": "37021",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castenaso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C292",
+    "latitudine": 44.509969,
+    "longitudine": 11.465386
+  },
+  {
+    "id": "37022",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Castiglione dei Pepoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C296",
+    "latitudine": 44.144515,
+    "longitudine": 11.167101
+  },
+  {
+    "id": "37024",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Crevalcore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D166",
+    "latitudine": 44.720029,
+    "longitudine": 11.148594
+  },
+  {
+    "id": "37025",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Dozza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D360",
+    "latitudine": 44.358768,
+    "longitudine": 11.625741
+  },
+  {
+    "id": "37026",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Fontanelice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D668",
+    "latitudine": 44.258051,
+    "longitudine": 11.557857
+  },
+  {
+    "id": "37027",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Gaggio Montano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D847",
+    "latitudine": 44.197314,
+    "longitudine": 10.936892
+  },
+  {
+    "id": "37028",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Galliera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D878",
+    "latitudine": 44.748258,
+    "longitudine": 11.394115
+  },
+  {
+    "id": "37030",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Granarolo dell'Emilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E136",
+    "latitudine": 44.552917,
+    "longitudine": 11.444934
+  },
+  {
+    "id": "37031",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Grizzana Morandi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E187",
+    "latitudine": 44.257629,
+    "longitudine": 11.152564
+  },
+  {
+    "id": "37032",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Imola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E289",
+    "latitudine": 44.36,
+    "longitudine": 11.712429
+  },
+  {
+    "id": "37033",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Lizzano in Belvedere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A771",
+    "latitudine": 44.164569,
+    "longitudine": 10.890991
+  },
+  {
+    "id": "37034",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Loiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E655",
+    "latitudine": 44.271933,
+    "longitudine": 11.317553
+  },
+  {
+    "id": "37035",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Malalbergo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E844",
+    "latitudine": 44.717908,
+    "longitudine": 11.529721
+  },
+  {
+    "id": "37036",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Marzabotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B689",
+    "latitudine": 44.342263,
+    "longitudine": 11.205288
+  },
+  {
+    "id": "37037",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Medicina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F083",
+    "latitudine": 44.477495,
+    "longitudine": 11.635789
+  },
+  {
+    "id": "37038",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Minerbio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F219",
+    "latitudine": 44.626831,
+    "longitudine": 11.492105
+  },
+  {
+    "id": "37039",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Molinella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F288",
+    "latitudine": 44.62269,
+    "longitudine": 11.669638
+  },
+  {
+    "id": "37040",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Monghidoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F363",
+    "latitudine": 44.219723,
+    "longitudine": 11.313209
+  },
+  {
+    "id": "37042",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Monte San Pietro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F627",
+    "latitudine": 44.438676,
+    "longitudine": 11.134104
+  },
+  {
+    "id": "37041",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Monterenzio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F597",
+    "latitudine": 44.328056,
+    "longitudine": 11.405058
+  },
+  {
+    "id": "37044",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Monzuno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F706",
+    "latitudine": 44.278539,
+    "longitudine": 11.270582
+  },
+  {
+    "id": "37045",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Mordano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F718",
+    "latitudine": 44.395115,
+    "longitudine": 11.810103
+  },
+  {
+    "id": "37046",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Ozzano dell'Emilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G205",
+    "latitudine": 44.448215,
+    "longitudine": 11.467291
+  },
+  {
+    "id": "37047",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Pianoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G570",
+    "latitudine": 44.391043,
+    "longitudine": 11.341226
+  },
+  {
+    "id": "37048",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Pieve di Cento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G643",
+    "latitudine": 44.714926,
+    "longitudine": 11.304061
+  },
+  {
+    "id": "37050",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Sala Bolognese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H678",
+    "latitudine": 44.619156,
+    "longitudine": 11.257817
+  },
+  {
+    "id": "37051",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "San Benedetto Val di Sambro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G566",
+    "latitudine": 44.213997,
+    "longitudine": 11.236408
+  },
+  {
+    "id": "37052",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "San Giorgio di Piano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H896",
+    "latitudine": 44.646387,
+    "longitudine": 11.376528
+  },
+  {
+    "id": "37053",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "San Giovanni in Persiceto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G467",
+    "latitudine": 44.640543,
+    "longitudine": 11.189305
+  },
+  {
+    "id": "37054",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "San Lazzaro di Savena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H945",
+    "latitudine": 44.47292,
+    "longitudine": 11.402955
+  },
+  {
+    "id": "37055",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "San Pietro in Casale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I110",
+    "latitudine": 44.700568,
+    "longitudine": 11.404001
+  },
+  {
+    "id": "37056",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Sant'Agata Bolognese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I191",
+    "latitudine": 44.664776,
+    "longitudine": 11.134232
+  },
+  {
+    "id": "37057",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Sasso Marconi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G972",
+    "latitudine": 44.398765,
+    "longitudine": 11.248204
+  },
+  {
+    "id": "37061",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Valsamoggia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M320",
+    "latitudine": 44.504314,
+    "longitudine": 11.07995
+  },
+  {
+    "id": "37059",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Vergato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L762",
+    "latitudine": 44.283303,
+    "longitudine": 11.111007
+  },
+  {
+    "id": "37060",
+    "id_regione": "8",
+    "id_provincia": "37",
+    "nome": "Zola Predosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M185",
+    "latitudine": 44.493368,
+    "longitudine": 11.211634
+  }
+]

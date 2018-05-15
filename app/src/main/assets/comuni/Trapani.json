@@ -1,0 +1,242 @@
+[
+  {
+    "id": "81001",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Alcamo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A176",
+    "latitudine": 37.978395,
+    "longitudine": 12.968626
+  },
+  {
+    "id": "81002",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Buseto Palizzolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B288",
+    "latitudine": 38.002146,
+    "longitudine": 12.716941
+  },
+  {
+    "id": "81003",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Calatafimi-Segesta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B385",
+    "latitudine": 37.914934,
+    "longitudine": 12.859696
+  },
+  {
+    "id": "81004",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Campobello di Mazara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B521",
+    "latitudine": 37.632305,
+    "longitudine": 12.748371
+  },
+  {
+    "id": "81005",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Castellammare del Golfo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C130",
+    "latitudine": 38.026491,
+    "longitudine": 12.880926
+  },
+  {
+    "id": "81006",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Castelvetrano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C286",
+    "latitudine": 37.677871,
+    "longitudine": 12.791538
+  },
+  {
+    "id": "81007",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Custonaci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D234",
+    "latitudine": 38.078822,
+    "longitudine": 12.675117
+  },
+  {
+    "id": "81008",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Erice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D423",
+    "latitudine": 38.038089,
+    "longitudine": 12.587351
+  },
+  {
+    "id": "81009",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Favignana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D518",
+    "latitudine": 37.931076,
+    "longitudine": 12.328613
+  },
+  {
+    "id": "81010",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Gibellina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E023",
+    "latitudine": 37.786003,
+    "longitudine": 12.973271
+  },
+  {
+    "id": "81011",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Marsala",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E974",
+    "latitudine": 37.798045,
+    "longitudine": 12.437016
+  },
+  {
+    "id": "81012",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Mazara del Vallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F061",
+    "latitudine": 37.655093,
+    "longitudine": 12.589962
+  },
+  {
+    "id": "81013",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Paceco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G208",
+    "latitudine": 37.979907,
+    "longitudine": 12.559223
+  },
+  {
+    "id": "81014",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Pantelleria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G315",
+    "latitudine": 36.828221,
+    "longitudine": 11.940496
+  },
+  {
+    "id": "81015",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Partanna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G347",
+    "latitudine": 37.724838,
+    "longitudine": 12.887163
+  },
+  {
+    "id": "81024",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Petrosino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M281",
+    "latitudine": 37.711007,
+    "longitudine": 12.487887
+  },
+  {
+    "id": "81016",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Poggioreale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G767",
+    "latitudine": 37.76165,
+    "longitudine": 13.034921
+  },
+  {
+    "id": "81017",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Salaparuta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H688",
+    "latitudine": 37.758554,
+    "longitudine": 13.010526
+  },
+  {
+    "id": "81018",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Salemi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H700",
+    "latitudine": 37.818967,
+    "longitudine": 12.798878
+  },
+  {
+    "id": "81020",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "San Vito Lo Capo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I407",
+    "latitudine": 38.17503,
+    "longitudine": 12.733462
+  },
+  {
+    "id": "81019",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Santa Ninfa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I291",
+    "latitudine": 37.771995,
+    "longitudine": 12.879125
+  },
+  {
+    "id": "81021",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Trapani",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L331",
+    "latitudine": 38.017618,
+    "longitudine": 12.537202
+  },
+  {
+    "id": "81022",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Valderice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G319",
+    "latitudine": 38.036929,
+    "longitudine": 12.612129
+  },
+  {
+    "id": "81023",
+    "id_regione": "19",
+    "id_provincia": "81",
+    "nome": "Vita",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M081",
+    "latitudine": 37.872344,
+    "longitudine": 12.820958
+  }
+]

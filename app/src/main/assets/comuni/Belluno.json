@@ -1,0 +1,642 @@
+[
+  {
+    "id": "25001",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Agordo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A083",
+    "latitudine": 46.283894,
+    "longitudine": 12.034502
+  },
+  {
+    "id": "25002",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Alano di Piave",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A121",
+    "latitudine": 45.903272,
+    "longitudine": 11.905139
+  },
+  {
+    "id": "25003",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Alleghe",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A206",
+    "latitudine": 46.406965,
+    "longitudine": 12.020396
+  },
+  {
+    "id": "25072",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Alpago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M375",
+    "latitudine": 46.132004,
+    "longitudine": 12.332205
+  },
+  {
+    "id": "25004",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Arsiè",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A443",
+    "latitudine": 45.98301,
+    "longitudine": 11.756288
+  },
+  {
+    "id": "25005",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Auronzo di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A501",
+    "latitudine": 46.55097,
+    "longitudine": 12.443592
+  },
+  {
+    "id": "25006",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Belluno",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A757",
+    "latitudine": 46.142464,
+    "longitudine": 12.216709
+  },
+  {
+    "id": "25007",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Borca di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A982",
+    "latitudine": 46.435751,
+    "longitudine": 12.21939
+  },
+  {
+    "id": "25008",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Calalzo di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B375",
+    "latitudine": 46.446255,
+    "longitudine": 12.380745
+  },
+  {
+    "id": "25023",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Canale d'Agordo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B574",
+    "latitudine": 46.359813,
+    "longitudine": 11.917327
+  },
+  {
+    "id": "25010",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Cencenighe Agordino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C458",
+    "latitudine": 46.353799,
+    "longitudine": 11.966004
+  },
+  {
+    "id": "25011",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Cesiomaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C577",
+    "latitudine": 46.087646,
+    "longitudine": 11.986348
+  },
+  {
+    "id": "25012",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Chies d'Alpago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C630",
+    "latitudine": 46.16497,
+    "longitudine": 12.393437
+  },
+  {
+    "id": "25013",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Cibiana di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C672",
+    "latitudine": 46.387513,
+    "longitudine": 12.286486
+  },
+  {
+    "id": "25014",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Colle Santa Lucia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C872",
+    "latitudine": 46.448755,
+    "longitudine": 12.015248
+  },
+  {
+    "id": "25015",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Comelico Superiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C920",
+    "latitudine": 46.627463,
+    "longitudine": 12.489825
+  },
+  {
+    "id": "25016",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Cortina d'Ampezzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A266",
+    "latitudine": 46.540471,
+    "longitudine": 12.135652
+  },
+  {
+    "id": "25017",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Danta di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D247",
+    "latitudine": 46.567038,
+    "longitudine": 12.520684
+  },
+  {
+    "id": "25018",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Domegge di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D330",
+    "latitudine": 46.459197,
+    "longitudine": 12.412731
+  },
+  {
+    "id": "25019",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Falcade",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D470",
+    "latitudine": 46.357745,
+    "longitudine": 11.873307
+  },
+  {
+    "id": "25021",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Feltre",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D530",
+    "latitudine": 46.017851,
+    "longitudine": 11.900584
+  },
+  {
+    "id": "25022",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Fonzaso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D686",
+    "latitudine": 46.016643,
+    "longitudine": 11.80078
+  },
+  {
+    "id": "25025",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Gosaldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E113",
+    "latitudine": 46.221216,
+    "longitudine": 11.955975
+  },
+  {
+    "id": "25027",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "La Valle Agordina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E490",
+    "latitudine": 46.28131,
+    "longitudine": 12.065724
+  },
+  {
+    "id": "25026",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Lamon",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E429",
+    "latitudine": 46.045215,
+    "longitudine": 11.748191
+  },
+  {
+    "id": "25028",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Lentiai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C562",
+    "latitudine": 46.044482,
+    "longitudine": 12.018585
+  },
+  {
+    "id": "25029",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Limana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E588",
+    "latitudine": 46.100168,
+    "longitudine": 12.187049
+  },
+  {
+    "id": "25030",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Livinallongo del Col di Lana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E622",
+    "latitudine": 46.493291,
+    "longitudine": 11.921815
+  },
+  {
+    "id": "25071",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Longarone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M342",
+    "latitudine": 46.272357,
+    "longitudine": 12.300581
+  },
+  {
+    "id": "25032",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Lorenzago di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E687",
+    "latitudine": 46.479449,
+    "longitudine": 12.459955
+  },
+  {
+    "id": "25033",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Lozzo di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E708",
+    "latitudine": 46.48948,
+    "longitudine": 12.451168
+  },
+  {
+    "id": "25034",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Mel",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F094",
+    "latitudine": 46.06177,
+    "longitudine": 12.078847
+  },
+  {
+    "id": "25035",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Ospitale di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G169",
+    "latitudine": 46.327076,
+    "longitudine": 12.322298
+  },
+  {
+    "id": "25036",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Pedavena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G404",
+    "latitudine": 46.040742,
+    "longitudine": 11.879323
+  },
+  {
+    "id": "25037",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Perarolo di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G442",
+    "latitudine": 46.394077,
+    "longitudine": 12.356124
+  },
+  {
+    "id": "25039",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Pieve di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G642",
+    "latitudine": 46.428831,
+    "longitudine": 12.373898
+  },
+  {
+    "id": "25040",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Ponte nelle Alpi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B662",
+    "latitudine": 46.174392,
+    "longitudine": 12.283583
+  },
+  {
+    "id": "25070",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Quero Vas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M332",
+    "latitudine": 45.91379,
+    "longitudine": 11.953924
+  },
+  {
+    "id": "25043",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Rivamonte Agordino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H327",
+    "latitudine": 46.252589,
+    "longitudine": 12.024388
+  },
+  {
+    "id": "25044",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Rocca Pietore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H379",
+    "latitudine": 46.434305,
+    "longitudine": 11.977997
+  },
+  {
+    "id": "25045",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "San Gregorio nelle Alpi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H938",
+    "latitudine": 46.104295,
+    "longitudine": 12.027973
+  },
+  {
+    "id": "25046",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "San Nicolò di Comelico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I063",
+    "latitudine": 46.582287,
+    "longitudine": 12.527506
+  },
+  {
+    "id": "25047",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "San Pietro di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I088",
+    "latitudine": 46.571419,
+    "longitudine": 12.587775
+  },
+  {
+    "id": "25049",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "San Tomaso Agordino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I347",
+    "latitudine": 46.381347,
+    "longitudine": 11.975655
+  },
+  {
+    "id": "25051",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "San Vito di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I392",
+    "latitudine": 46.459212,
+    "longitudine": 12.206856
+  },
+  {
+    "id": "25048",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Santa Giustina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I206",
+    "latitudine": 46.082918,
+    "longitudine": 12.041874
+  },
+  {
+    "id": "25050",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Santo Stefano di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C919",
+    "latitudine": 46.558017,
+    "longitudine": 12.549624
+  },
+  {
+    "id": "25052",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Sappada",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I421",
+    "latitudine": 46.567111,
+    "longitudine": 12.685344
+  },
+  {
+    "id": "25053",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Sedico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I563",
+    "latitudine": 46.109338,
+    "longitudine": 12.095518
+  },
+  {
+    "id": "25054",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Selva di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I592",
+    "latitudine": 46.451139,
+    "longitudine": 12.037193
+  },
+  {
+    "id": "25055",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Seren del Grappa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I626",
+    "latitudine": 45.989739,
+    "longitudine": 11.842532
+  },
+  {
+    "id": "25056",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Sospirolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I866",
+    "latitudine": 46.142986,
+    "longitudine": 12.073899
+  },
+  {
+    "id": "25057",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Soverzene",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I876",
+    "latitudine": 46.206321,
+    "longitudine": 12.302855
+  },
+  {
+    "id": "25058",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Sovramonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I673",
+    "latitudine": 46.056252,
+    "longitudine": 11.776746
+  },
+  {
+    "id": "25059",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Taibon Agordino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L030",
+    "latitudine": 46.300292,
+    "longitudine": 12.011244
+  },
+  {
+    "id": "25060",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Tambre",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L040",
+    "latitudine": 46.125757,
+    "longitudine": 12.418556
+  },
+  {
+    "id": "25061",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Trichiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L422",
+    "latitudine": 46.073713,
+    "longitudine": 12.131993
+  },
+  {
+    "id": "25073",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Val di Zoldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M374",
+    "latitudine": 46.299722,
+    "longitudine": 12.228056
+  },
+  {
+    "id": "25062",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Vallada Agordina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L584",
+    "latitudine": 46.369517,
+    "longitudine": 11.93082
+  },
+  {
+    "id": "25063",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Valle di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L590",
+    "latitudine": 46.415067,
+    "longitudine": 12.325158
+  },
+  {
+    "id": "25065",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Vigo di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L890",
+    "latitudine": 46.498656,
+    "longitudine": 12.471661
+  },
+  {
+    "id": "25066",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Vodo Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M108",
+    "latitudine": 46.419477,
+    "longitudine": 12.246952
+  },
+  {
+    "id": "25067",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Voltago Agordino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M124",
+    "latitudine": 46.271994,
+    "longitudine": 12.004934
+  },
+  {
+    "id": "25069",
+    "id_regione": "5",
+    "id_provincia": "25",
+    "nome": "Zoppè di Cadore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M189",
+    "latitudine": 46.386364,
+    "longitudine": 12.17336
+  }
+]

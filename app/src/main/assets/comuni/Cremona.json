@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "19001",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Acquanegra Cremonese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A039",
+    "latitudine": 45.168564,
+    "longitudine": 9.89084
+  },
+  {
+    "id": "19002",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Agnadello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A076",
+    "latitudine": 45.446418,
+    "longitudine": 9.562287
+  },
+  {
+    "id": "19003",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Annicco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A299",
+    "latitudine": 45.243513,
+    "longitudine": 9.877927
+  },
+  {
+    "id": "19004",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Azzanello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A526",
+    "latitudine": 45.312681,
+    "longitudine": 9.920142
+  },
+  {
+    "id": "19005",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Bagnolo Cremasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A570",
+    "latitudine": 45.359726,
+    "longitudine": 9.614062
+  },
+  {
+    "id": "19006",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Bonemerse",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A972",
+    "latitudine": 45.1128,
+    "longitudine": 10.07957
+  },
+  {
+    "id": "19007",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Bordolano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A986",
+    "latitudine": 45.289636,
+    "longitudine": 9.987103
+  },
+  {
+    "id": "19008",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Ca' d'Andrea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B320",
+    "latitudine": 45.119625,
+    "longitudine": 10.277011
+  },
+  {
+    "id": "19009",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Calvatone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B439",
+    "latitudine": 45.126731,
+    "longitudine": 10.440834
+  },
+  {
+    "id": "19010",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Camisano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B484",
+    "latitudine": 45.442908,
+    "longitudine": 9.743972
+  },
+  {
+    "id": "19011",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Campagnola Cremasca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B498",
+    "latitudine": 45.398286,
+    "longitudine": 9.668764
+  },
+  {
+    "id": "19012",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Capergnanica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B650",
+    "latitudine": 45.337903,
+    "longitudine": 9.644093
+  },
+  {
+    "id": "19013",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Cappella Cantone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B679",
+    "latitudine": 45.245663,
+    "longitudine": 9.839178
+  },
+  {
+    "id": "19014",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Cappella de' Picenardi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B680",
+    "latitudine": 45.158467,
+    "longitudine": 10.229879
+  },
+  {
+    "id": "19015",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Capralba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B686",
+    "latitudine": 45.445087,
+    "longitudine": 9.644792
+  },
+  {
+    "id": "19016",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Casalbuttano ed Uniti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B869",
+    "latitudine": 45.251473,
+    "longitudine": 9.962462
+  },
+  {
+    "id": "19017",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Casale Cremasco-Vidolasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B881",
+    "latitudine": 45.433442,
+    "longitudine": 9.713201
+  },
+  {
+    "id": "19018",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Casaletto Ceredano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B889",
+    "latitudine": 45.317874,
+    "longitudine": 9.618205
+  },
+  {
+    "id": "19019",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Casaletto di Sopra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B890",
+    "latitudine": 45.419232,
+    "longitudine": 9.782809
+  },
+  {
+    "id": "19020",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Casaletto Vaprio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B891",
+    "latitudine": 45.407777,
+    "longitudine": 9.626899
+  },
+  {
+    "id": "19021",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Casalmaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B898",
+    "latitudine": 44.988309,
+    "longitudine": 10.419619
+  },
+  {
+    "id": "19022",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Casalmorano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B900",
+    "latitudine": 45.286282,
+    "longitudine": 9.898362
+  },
+  {
+    "id": "19024",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Castel Gabbiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C115",
+    "latitudine": 45.469638,
+    "longitudine": 9.717237
+  },
+  {
+    "id": "19023",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Casteldidone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C089",
+    "latitudine": 45.070429,
+    "longitudine": 10.404694
+  },
+  {
+    "id": "19025",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Castelleone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C153",
+    "latitudine": 45.294752,
+    "longitudine": 9.766294
+  },
+  {
+    "id": "19026",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Castelverde",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B129",
+    "latitudine": 45.188088,
+    "longitudine": 9.999174
+  },
+  {
+    "id": "19027",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Castelvisconti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C290",
+    "latitudine": 45.304418,
+    "longitudine": 9.942664
+  },
+  {
+    "id": "19028",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Cella Dati",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C435",
+    "latitudine": 45.095896,
+    "longitudine": 10.221447
+  },
+  {
+    "id": "19029",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Chieve",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C634",
+    "latitudine": 45.340311,
+    "longitudine": 9.614695
+  },
+  {
+    "id": "19030",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Cicognolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C678",
+    "latitudine": 45.164175,
+    "longitudine": 10.195837
+  },
+  {
+    "id": "19031",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Cingia de' Botti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C703",
+    "latitudine": 45.084009,
+    "longitudine": 10.277034
+  },
+  {
+    "id": "19032",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Corte de' Cortesi con Cignone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D056",
+    "latitudine": 45.270779,
+    "longitudine": 10.002217
+  },
+  {
+    "id": "19033",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Corte de' Frati",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D057",
+    "latitudine": 45.219114,
+    "longitudine": 10.098437
+  },
+  {
+    "id": "19034",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Credera Rubbiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D141",
+    "latitudine": 45.304616,
+    "longitudine": 9.656622
+  },
+  {
+    "id": "19035",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Crema",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D142",
+    "latitudine": 45.364338,
+    "longitudine": 9.682484
+  },
+  {
+    "id": "19036",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Cremona",
+    "capoluogo_provincia": true,
+    "codice_catastale": "D150",
+    "latitudine": 45.133249,
+    "longitudine": 10.022651
+  },
+  {
+    "id": "19037",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Cremosano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D151",
+    "latitudine": 45.394651,
+    "longitudine": 9.639439
+  },
+  {
+    "id": "19038",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Crotta d'Adda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D186",
+    "latitudine": 45.158263,
+    "longitudine": 9.854789
+  },
+  {
+    "id": "19039",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Cumignano sul Naviglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D203",
+    "latitudine": 45.354786,
+    "longitudine": 9.835653
+  },
+  {
+    "id": "19040",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Derovere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D278",
+    "latitudine": 45.110289,
+    "longitudine": 10.249048
+  },
+  {
+    "id": "19041",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Dovera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D358",
+    "latitudine": 45.363688,
+    "longitudine": 9.536983
+  },
+  {
+    "id": "19042",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Drizzona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D370",
+    "latitudine": 45.141732,
+    "longitudine": 10.351378
+  },
+  {
+    "id": "19043",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Fiesco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D574",
+    "latitudine": 45.336991,
+    "longitudine": 9.77823
+  },
+  {
+    "id": "19044",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Formigara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D710",
+    "latitudine": 45.222445,
+    "longitudine": 9.769297
+  },
+  {
+    "id": "19045",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Gabbioneta-Binanuova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D834",
+    "latitudine": 45.21564,
+    "longitudine": 10.221538
+  },
+  {
+    "id": "19046",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Gadesco-Pieve Delmona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D841",
+    "latitudine": 45.152128,
+    "longitudine": 10.12301
+  },
+  {
+    "id": "19047",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Genivolta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D966",
+    "latitudine": 45.333003,
+    "longitudine": 9.877046
+  },
+  {
+    "id": "19048",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Gerre de' Caprioli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D993",
+    "latitudine": 45.090831,
+    "longitudine": 10.051609
+  },
+  {
+    "id": "19049",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Gombito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E082",
+    "latitudine": 45.261377,
+    "longitudine": 9.730162
+  },
+  {
+    "id": "19050",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Grontardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E193",
+    "latitudine": 45.201676,
+    "longitudine": 10.150779
+  },
+  {
+    "id": "19051",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Grumello Cremonese ed Uniti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E217",
+    "latitudine": 45.207303,
+    "longitudine": 9.862551
+  },
+  {
+    "id": "19052",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Gussola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E272",
+    "latitudine": 45.013175,
+    "longitudine": 10.351978
+  },
+  {
+    "id": "19053",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Isola Dovarese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E356",
+    "latitudine": 45.175972,
+    "longitudine": 10.312234
+  },
+  {
+    "id": "19054",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Izano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E380",
+    "latitudine": 45.35507,
+    "longitudine": 9.754793
+  },
+  {
+    "id": "19055",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Madignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E793",
+    "latitudine": 45.344206,
+    "longitudine": 9.729805
+  },
+  {
+    "id": "19056",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Malagnino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E843",
+    "latitudine": 45.133631,
+    "longitudine": 10.115974
+  },
+  {
+    "id": "19057",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Martignana di Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E983",
+    "latitudine": 45.011446,
+    "longitudine": 10.382845
+  },
+  {
+    "id": "19058",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Monte Cremasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F434",
+    "latitudine": 45.376492,
+    "longitudine": 9.573126
+  },
+  {
+    "id": "19059",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Montodine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F681",
+    "latitudine": 45.2862,
+    "longitudine": 9.709857
+  },
+  {
+    "id": "19060",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Moscazzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F761",
+    "latitudine": 45.292822,
+    "longitudine": 9.682368
+  },
+  {
+    "id": "19061",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Motta Baluffi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F771",
+    "latitudine": 45.05531,
+    "longitudine": 10.257303
+  },
+  {
+    "id": "19062",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Offanengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G004",
+    "latitudine": 45.379474,
+    "longitudine": 9.744391
+  },
+  {
+    "id": "19063",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Olmeneta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G047",
+    "latitudine": 45.236167,
+    "longitudine": 10.020885
+  },
+  {
+    "id": "19064",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Ostiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G185",
+    "latitudine": 45.223894,
+    "longitudine": 10.253582
+  },
+  {
+    "id": "19065",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Paderno Ponchielli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G222",
+    "latitudine": 45.238046,
+    "longitudine": 9.927785
+  },
+  {
+    "id": "19066",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Palazzo Pignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G260",
+    "latitudine": 45.391361,
+    "longitudine": 9.570709
+  },
+  {
+    "id": "19067",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pandino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G306",
+    "latitudine": 45.405159,
+    "longitudine": 9.551625
+  },
+  {
+    "id": "19068",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Persico Dosimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G469",
+    "latitudine": 45.172477,
+    "longitudine": 10.068083
+  },
+  {
+    "id": "19069",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pescarolo ed Uniti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G483",
+    "latitudine": 45.194268,
+    "longitudine": 10.187229
+  },
+  {
+    "id": "19070",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pessina Cremonese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G504",
+    "latitudine": 45.186055,
+    "longitudine": 10.247878
+  },
+  {
+    "id": "19071",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Piadena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G536",
+    "latitudine": 45.130334,
+    "longitudine": 10.366704
+  },
+  {
+    "id": "19072",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pianengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G558",
+    "latitudine": 45.40143,
+    "longitudine": 9.693205
+  },
+  {
+    "id": "19073",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pieranica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G603",
+    "latitudine": 45.425511,
+    "longitudine": 9.607491
+  },
+  {
+    "id": "19074",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pieve d'Olmi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G647",
+    "latitudine": 45.088279,
+    "longitudine": 10.125303
+  },
+  {
+    "id": "19075",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pieve San Giacomo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G651",
+    "latitudine": 45.127522,
+    "longitudine": 10.187064
+  },
+  {
+    "id": "19076",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pizzighettone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G721",
+    "latitudine": 45.186408,
+    "longitudine": 9.790182
+  },
+  {
+    "id": "19077",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Pozzaglio ed Uniti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B914",
+    "latitudine": 45.2,
+    "longitudine": 10.049491
+  },
+  {
+    "id": "19078",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Quintano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H130",
+    "latitudine": 45.419287,
+    "longitudine": 9.615832
+  },
+  {
+    "id": "19079",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Ricengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H276",
+    "latitudine": 45.40659,
+    "longitudine": 9.72697
+  },
+  {
+    "id": "19080",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Ripalta Arpina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H314",
+    "latitudine": 45.302001,
+    "longitudine": 9.727228
+  },
+  {
+    "id": "19081",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Ripalta Cremasca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H315",
+    "latitudine": 45.332756,
+    "longitudine": 9.693684
+  },
+  {
+    "id": "19082",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Ripalta Guerina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H316",
+    "latitudine": 45.305906,
+    "longitudine": 9.705221
+  },
+  {
+    "id": "19083",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Rivarolo del Re ed Uniti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H341",
+    "latitudine": 45.03419,
+    "longitudine": 10.476576
+  },
+  {
+    "id": "19084",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Rivolta d'Adda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H357",
+    "latitudine": 45.470508,
+    "longitudine": 9.513021
+  },
+  {
+    "id": "19085",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Robecco d'Oglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H372",
+    "latitudine": 45.258852,
+    "longitudine": 10.078076
+  },
+  {
+    "id": "19086",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Romanengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H508",
+    "latitudine": 45.37917,
+    "longitudine": 9.7837
+  },
+  {
+    "id": "19087",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Salvirola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H731",
+    "latitudine": 45.355558,
+    "longitudine": 9.780604
+  },
+  {
+    "id": "19088",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "San Bassano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H767",
+    "latitudine": 45.243123,
+    "longitudine": 9.806812
+  },
+  {
+    "id": "19089",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "San Daniele Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H815",
+    "latitudine": 45.066561,
+    "longitudine": 10.177157
+  },
+  {
+    "id": "19090",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "San Giovanni in Croce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H918",
+    "latitudine": 45.078912,
+    "longitudine": 10.373753
+  },
+  {
+    "id": "19091",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "San Martino del Lago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I007",
+    "latitudine": 45.072796,
+    "longitudine": 10.316341
+  },
+  {
+    "id": "19092",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Scandolara Ravara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I497",
+    "latitudine": 45.050444,
+    "longitudine": 10.303045
+  },
+  {
+    "id": "19093",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Scandolara Ripa d'Oglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I498",
+    "latitudine": 45.221506,
+    "longitudine": 10.156126
+  },
+  {
+    "id": "19094",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Sergnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I627",
+    "latitudine": 45.426678,
+    "longitudine": 9.70214
+  },
+  {
+    "id": "19095",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Sesto ed Uniti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I683",
+    "latitudine": 45.183003,
+    "longitudine": 9.924391
+  },
+  {
+    "id": "19096",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Solarolo Rainerio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I790",
+    "latitudine": 45.081521,
+    "longitudine": 10.355806
+  },
+  {
+    "id": "19097",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Soncino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I827",
+    "latitudine": 45.399776,
+    "longitudine": 9.873389
+  },
+  {
+    "id": "19098",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Soresina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I849",
+    "latitudine": 45.287284,
+    "longitudine": 9.857631
+  },
+  {
+    "id": "19099",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Sospiro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I865",
+    "latitudine": 45.105906,
+    "longitudine": 10.159339
+  },
+  {
+    "id": "19100",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Spinadesco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I906",
+    "latitudine": 45.148164,
+    "longitudine": 9.927851
+  },
+  {
+    "id": "19101",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Spineda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I909",
+    "latitudine": 45.060521,
+    "longitudine": 10.515387
+  },
+  {
+    "id": "19102",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Spino d'Adda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I914",
+    "latitudine": 45.403385,
+    "longitudine": 9.492744
+  },
+  {
+    "id": "19103",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Stagno Lombardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I935",
+    "latitudine": 45.072395,
+    "longitudine": 10.088099
+  },
+  {
+    "id": "19104",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Ticengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L164",
+    "latitudine": 45.37024,
+    "longitudine": 9.826538
+  },
+  {
+    "id": "19105",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Torlino Vimercati",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L221",
+    "latitudine": 45.418068,
+    "longitudine": 9.596217
+  },
+  {
+    "id": "19106",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Tornata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L225",
+    "latitudine": 45.105231,
+    "longitudine": 10.430781
+  },
+  {
+    "id": "19107",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Torre de' Picenardi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L258",
+    "latitudine": 45.144229,
+    "longitudine": 10.287183
+  },
+  {
+    "id": "19108",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Torricella del Pizzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L296",
+    "latitudine": 45.01897,
+    "longitudine": 10.291472
+  },
+  {
+    "id": "19109",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Trescore Cremasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L389",
+    "latitudine": 45.400887,
+    "longitudine": 9.630124
+  },
+  {
+    "id": "19110",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Trigolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L426",
+    "latitudine": 45.33011,
+    "longitudine": 9.813089
+  },
+  {
+    "id": "19111",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Vaiano Cremasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L535",
+    "latitudine": 45.369866,
+    "longitudine": 9.589125
+  },
+  {
+    "id": "19112",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Vailate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L539",
+    "latitudine": 45.461816,
+    "longitudine": 9.602649
+  },
+  {
+    "id": "19113",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Vescovato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L806",
+    "latitudine": 45.178948,
+    "longitudine": 10.167066
+  },
+  {
+    "id": "19114",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Volongo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M116",
+    "latitudine": 45.212301,
+    "longitudine": 10.300181
+  },
+  {
+    "id": "19115",
+    "id_regione": "3",
+    "id_provincia": "19",
+    "nome": "Voltido",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M127",
+    "latitudine": 45.111395,
+    "longitudine": 10.335026
+  }
+]

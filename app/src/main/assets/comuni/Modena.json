@@ -1,0 +1,472 @@
+[
+  {
+    "id": "36001",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Bastiglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A713",
+    "latitudine": 44.725429,
+    "longitudine": 11.002363
+  },
+  {
+    "id": "36002",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Bomporto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A959",
+    "latitudine": 44.728428,
+    "longitudine": 11.041672
+  },
+  {
+    "id": "36003",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Campogalliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B539",
+    "latitudine": 44.691763,
+    "longitudine": 10.844855
+  },
+  {
+    "id": "36004",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Camposanto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B566",
+    "latitudine": 44.79031,
+    "longitudine": 11.136823
+  },
+  {
+    "id": "36005",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Carpi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B819",
+    "latitudine": 44.783878,
+    "longitudine": 10.879663
+  },
+  {
+    "id": "36006",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Castelfranco Emilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C107",
+    "latitudine": 44.595111,
+    "longitudine": 11.052239
+  },
+  {
+    "id": "36007",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Castelnuovo Rangone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C242",
+    "latitudine": 44.549028,
+    "longitudine": 10.939022
+  },
+  {
+    "id": "36008",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Castelvetro di Modena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C287",
+    "latitudine": 44.50415,
+    "longitudine": 10.945781
+  },
+  {
+    "id": "36009",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Cavezzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C398",
+    "latitudine": 44.840881,
+    "longitudine": 11.024405
+  },
+  {
+    "id": "36010",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Concordia sulla Secchia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C951",
+    "latitudine": 44.913866,
+    "longitudine": 10.985886
+  },
+  {
+    "id": "36011",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Fanano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D486",
+    "latitudine": 44.207978,
+    "longitudine": 10.796983
+  },
+  {
+    "id": "36012",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Finale Emilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D599",
+    "latitudine": 44.832458,
+    "longitudine": 11.29116
+  },
+  {
+    "id": "36013",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Fiorano Modenese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D607",
+    "latitudine": 44.539145,
+    "longitudine": 10.809882
+  },
+  {
+    "id": "36014",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Fiumalbo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D617",
+    "latitudine": 44.177895,
+    "longitudine": 10.649536
+  },
+  {
+    "id": "36015",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Formigine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D711",
+    "latitudine": 44.572779,
+    "longitudine": 10.84784
+  },
+  {
+    "id": "36016",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Frassinoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D783",
+    "latitudine": 44.296834,
+    "longitudine": 10.572998
+  },
+  {
+    "id": "36017",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Guiglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E264",
+    "latitudine": 44.426532,
+    "longitudine": 10.957949
+  },
+  {
+    "id": "36018",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Lama Mocogno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E426",
+    "latitudine": 44.304787,
+    "longitudine": 10.725287
+  },
+  {
+    "id": "36019",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Maranello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E904",
+    "latitudine": 44.526302,
+    "longitudine": 10.866683
+  },
+  {
+    "id": "36020",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Marano sul Panaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E905",
+    "latitudine": 44.456151,
+    "longitudine": 10.964492
+  },
+  {
+    "id": "36021",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Medolla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F087",
+    "latitudine": 44.849046,
+    "longitudine": 11.073776
+  },
+  {
+    "id": "36022",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Mirandola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F240",
+    "latitudine": 44.886361,
+    "longitudine": 11.063297
+  },
+  {
+    "id": "36023",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Modena",
+    "capoluogo_provincia": true,
+    "codice_catastale": "F257",
+    "latitudine": 44.647128,
+    "longitudine": 10.925227
+  },
+  {
+    "id": "36024",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Montecreto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F484",
+    "latitudine": 44.248939,
+    "longitudine": 10.719094
+  },
+  {
+    "id": "36025",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Montefiorino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F503",
+    "latitudine": 44.357019,
+    "longitudine": 10.621852
+  },
+  {
+    "id": "36026",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Montese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F642",
+    "latitudine": 44.269293,
+    "longitudine": 10.93924
+  },
+  {
+    "id": "36027",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Nonantola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F930",
+    "latitudine": 44.678875,
+    "longitudine": 11.04116
+  },
+  {
+    "id": "36028",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Novi di Modena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F966",
+    "latitudine": 44.892153,
+    "longitudine": 10.898035
+  },
+  {
+    "id": "36029",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Palagano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G250",
+    "latitudine": 44.322558,
+    "longitudine": 10.648161
+  },
+  {
+    "id": "36030",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Pavullo nel Frignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G393",
+    "latitudine": 44.336594,
+    "longitudine": 10.833563
+  },
+  {
+    "id": "36031",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Pievepelago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G649",
+    "latitudine": 44.206055,
+    "longitudine": 10.616916
+  },
+  {
+    "id": "36032",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Polinago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G789",
+    "latitudine": 44.345341,
+    "longitudine": 10.723993
+  },
+  {
+    "id": "36033",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Prignano sulla Secchia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H061",
+    "latitudine": 44.442764,
+    "longitudine": 10.687246
+  },
+  {
+    "id": "36034",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Ravarino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H195",
+    "latitudine": 44.723219,
+    "longitudine": 11.10176
+  },
+  {
+    "id": "36035",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Riolunato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H303",
+    "latitudine": 44.230953,
+    "longitudine": 10.653117
+  },
+  {
+    "id": "36036",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "San Cesario sul Panaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H794",
+    "latitudine": 44.562105,
+    "longitudine": 11.034807
+  },
+  {
+    "id": "36037",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "San Felice sul Panaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H835",
+    "latitudine": 44.845936,
+    "longitudine": 11.140309
+  },
+  {
+    "id": "36038",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "San Possidonio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I128",
+    "latitudine": 44.89178,
+    "longitudine": 10.994898
+  },
+  {
+    "id": "36039",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "San Prospero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I133",
+    "latitudine": 44.788301,
+    "longitudine": 11.018706
+  },
+  {
+    "id": "36040",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Sassuolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I462",
+    "latitudine": 44.54433,
+    "longitudine": 10.784774
+  },
+  {
+    "id": "36041",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Savignano sul Panaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I473",
+    "latitudine": 44.479598,
+    "longitudine": 11.037509
+  },
+  {
+    "id": "36042",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Serramazzoni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F357",
+    "latitudine": 44.422704,
+    "longitudine": 10.789671
+  },
+  {
+    "id": "36043",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Sestola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I689",
+    "latitudine": 44.230085,
+    "longitudine": 10.770168
+  },
+  {
+    "id": "36044",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Soliera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I802",
+    "latitudine": 44.739641,
+    "longitudine": 10.923146
+  },
+  {
+    "id": "36045",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Spilamberto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I903",
+    "latitudine": 44.531819,
+    "longitudine": 11.020449
+  },
+  {
+    "id": "36046",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Vignola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L885",
+    "latitudine": 44.483586,
+    "longitudine": 11.013122
+  },
+  {
+    "id": "36047",
+    "id_regione": "8",
+    "id_provincia": "36",
+    "nome": "Zocca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M183",
+    "latitudine": 44.344871,
+    "longitudine": 10.995224
+  }
+]

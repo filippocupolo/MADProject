@@ -1,0 +1,222 @@
+[
+  {
+    "id": "85001",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Acquaviva Platani",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A049",
+    "latitudine": 37.572339,
+    "longitudine": 13.701135
+  },
+  {
+    "id": "85002",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Bompensiere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A957",
+    "latitudine": 37.473826,
+    "longitudine": 13.780775
+  },
+  {
+    "id": "85003",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Butera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B302",
+    "latitudine": 37.191646,
+    "longitudine": 14.182458
+  },
+  {
+    "id": "85004",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Caltanissetta",
+    "capoluogo_provincia": true,
+    "codice_catastale": "B429",
+    "latitudine": 37.490112,
+    "longitudine": 14.062893
+  },
+  {
+    "id": "85005",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Campofranco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B537",
+    "latitudine": 37.509686,
+    "longitudine": 13.710389
+  },
+  {
+    "id": "85006",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Delia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D267",
+    "latitudine": 37.356288,
+    "longitudine": 13.926812
+  },
+  {
+    "id": "85007",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Gela",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D960",
+    "latitudine": 37.074153,
+    "longitudine": 14.240354
+  },
+  {
+    "id": "85008",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Marianopoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E953",
+    "latitudine": 37.599206,
+    "longitudine": 13.914941
+  },
+  {
+    "id": "85009",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Mazzarino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F065",
+    "latitudine": 37.303934,
+    "longitudine": 14.211789
+  },
+  {
+    "id": "85010",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Milena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E618",
+    "latitudine": 37.47053,
+    "longitudine": 13.736559
+  },
+  {
+    "id": "85011",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Montedoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F489",
+    "latitudine": 37.454521,
+    "longitudine": 13.815503
+  },
+  {
+    "id": "85012",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Mussomeli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F830",
+    "latitudine": 37.575674,
+    "longitudine": 13.752969
+  },
+  {
+    "id": "85013",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Niscemi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F899",
+    "latitudine": 37.148551,
+    "longitudine": 14.387814
+  },
+  {
+    "id": "85014",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Resuttano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H245",
+    "latitudine": 37.676592,
+    "longitudine": 14.029896
+  },
+  {
+    "id": "85015",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Riesi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H281",
+    "latitudine": 37.28083,
+    "longitudine": 14.080807
+  },
+  {
+    "id": "85016",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "San Cataldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H792",
+    "latitudine": 37.483155,
+    "longitudine": 13.988098
+  },
+  {
+    "id": "85017",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Santa Caterina Villarmosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I169",
+    "latitudine": 37.589439,
+    "longitudine": 14.035528
+  },
+  {
+    "id": "85018",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Serradifalco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I644",
+    "latitudine": 37.456549,
+    "longitudine": 13.882577
+  },
+  {
+    "id": "85019",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Sommatino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I824",
+    "latitudine": 37.334322,
+    "longitudine": 13.994476
+  },
+  {
+    "id": "85020",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Sutera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L016",
+    "latitudine": 37.52085,
+    "longitudine": 13.735535
+  },
+  {
+    "id": "85021",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Vallelunga Pratameno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L609",
+    "latitudine": 37.683932,
+    "longitudine": 13.832395
+  },
+  {
+    "id": "85022",
+    "id_regione": "19",
+    "id_provincia": "85",
+    "nome": "Villalba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L959",
+    "latitudine": 37.655767,
+    "longitudine": 13.845487
+  }
+]

@@ -1,0 +1,472 @@
+[
+  {
+    "id": "42001",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Agugliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A092",
+    "latitudine": 43.542592,
+    "longitudine": 13.389187
+  },
+  {
+    "id": "42002",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Ancona",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A271",
+    "latitudine": 43.61583,
+    "longitudine": 13.518915
+  },
+  {
+    "id": "42003",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Arcevia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A366",
+    "latitudine": 43.49813,
+    "longitudine": 12.9391
+  },
+  {
+    "id": "42004",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Barbara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A626",
+    "latitudine": 43.579099,
+    "longitudine": 13.025437
+  },
+  {
+    "id": "42005",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Belvedere Ostrense",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A769",
+    "latitudine": 43.583066,
+    "longitudine": 13.169001
+  },
+  {
+    "id": "42006",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Camerano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B468",
+    "latitudine": 43.531351,
+    "longitudine": 13.548959
+  },
+  {
+    "id": "42007",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Camerata Picena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B470",
+    "latitudine": 43.579206,
+    "longitudine": 13.352322
+  },
+  {
+    "id": "42008",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Castelbellino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C060",
+    "latitudine": 43.487121,
+    "longitudine": 13.145121
+  },
+  {
+    "id": "42010",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Castelfidardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C100",
+    "latitudine": 43.463115,
+    "longitudine": 13.551422
+  },
+  {
+    "id": "42011",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Castelleone di Suasa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C152",
+    "latitudine": 43.608715,
+    "longitudine": 12.977401
+  },
+  {
+    "id": "42012",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Castelplanio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C248",
+    "latitudine": 43.490389,
+    "longitudine": 13.083683
+  },
+  {
+    "id": "42013",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Cerreto d'Esi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C524",
+    "latitudine": 43.324096,
+    "longitudine": 12.988182
+  },
+  {
+    "id": "42014",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Chiaravalle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C615",
+    "latitudine": 43.59894,
+    "longitudine": 13.325212
+  },
+  {
+    "id": "42015",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Corinaldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D007",
+    "latitudine": 43.648797,
+    "longitudine": 13.049839
+  },
+  {
+    "id": "42016",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Cupramontana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D211",
+    "latitudine": 43.44585,
+    "longitudine": 13.115434
+  },
+  {
+    "id": "42017",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Fabriano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D451",
+    "latitudine": 43.344967,
+    "longitudine": 12.906215
+  },
+  {
+    "id": "42018",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Falconara Marittima",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D472",
+    "latitudine": 43.627608,
+    "longitudine": 13.40292
+  },
+  {
+    "id": "42019",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Filottrano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D597",
+    "latitudine": 43.438159,
+    "longitudine": 13.355319
+  },
+  {
+    "id": "42020",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Genga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D965",
+    "latitudine": 43.429139,
+    "longitudine": 12.935166
+  },
+  {
+    "id": "42021",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Jesi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E388",
+    "latitudine": 43.527086,
+    "longitudine": 13.24638
+  },
+  {
+    "id": "42022",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Loreto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E690",
+    "latitudine": 43.439642,
+    "longitudine": 13.606567
+  },
+  {
+    "id": "42023",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Maiolati Spontini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E837",
+    "latitudine": 43.47442,
+    "longitudine": 13.114835
+  },
+  {
+    "id": "42024",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Mergo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F145",
+    "latitudine": 43.471911,
+    "longitudine": 13.037105
+  },
+  {
+    "id": "42025",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Monsano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F381",
+    "latitudine": 43.562682,
+    "longitudine": 13.248231
+  },
+  {
+    "id": "42029",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Monte Roberto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F600",
+    "latitudine": 43.481567,
+    "longitudine": 13.138524
+  },
+  {
+    "id": "42030",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Monte San Vito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F634",
+    "latitudine": 43.599111,
+    "longitudine": 13.274666
+  },
+  {
+    "id": "42026",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Montecarotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F453",
+    "latitudine": 43.526904,
+    "longitudine": 13.064804
+  },
+  {
+    "id": "42027",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Montemarciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F560",
+    "latitudine": 43.639489,
+    "longitudine": 13.307119
+  },
+  {
+    "id": "42031",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Morro d'Alba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F745",
+    "latitudine": 43.601913,
+    "longitudine": 13.213503
+  },
+  {
+    "id": "42032",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Numana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F978",
+    "latitudine": 43.510502,
+    "longitudine": 13.62218
+  },
+  {
+    "id": "42033",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Offagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G003",
+    "latitudine": 43.528286,
+    "longitudine": 13.443523
+  },
+  {
+    "id": "42034",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Osimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G157",
+    "latitudine": 43.488403,
+    "longitudine": 13.478543
+  },
+  {
+    "id": "42035",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Ostra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F401",
+    "latitudine": 43.614141,
+    "longitudine": 13.15699
+  },
+  {
+    "id": "42036",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Ostra Vetere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F581",
+    "latitudine": 43.603387,
+    "longitudine": 13.061588
+  },
+  {
+    "id": "42037",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Poggio San Marcello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G771",
+    "latitudine": 43.511448,
+    "longitudine": 13.076122
+  },
+  {
+    "id": "42038",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Polverigi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G803",
+    "latitudine": 43.524852,
+    "longitudine": 13.393872
+  },
+  {
+    "id": "42040",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Rosora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H575",
+    "latitudine": 43.484684,
+    "longitudine": 13.067333
+  },
+  {
+    "id": "42041",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "San Marcello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H979",
+    "latitudine": 43.576239,
+    "longitudine": 13.205013
+  },
+  {
+    "id": "42042",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "San Paolo di Jesi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I071",
+    "latitudine": 43.454572,
+    "longitudine": 13.172508
+  },
+  {
+    "id": "42043",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Santa Maria Nuova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I251",
+    "latitudine": 43.496327,
+    "longitudine": 13.308849
+  },
+  {
+    "id": "42044",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Sassoferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I461",
+    "latitudine": 43.430807,
+    "longitudine": 12.857673
+  },
+  {
+    "id": "42045",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Senigallia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I608",
+    "latitudine": 43.719793,
+    "longitudine": 13.215222
+  },
+  {
+    "id": "42046",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Serra de' Conti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I643",
+    "latitudine": 43.544464,
+    "longitudine": 13.036928
+  },
+  {
+    "id": "42047",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Serra San Quirico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I653",
+    "latitudine": 43.447757,
+    "longitudine": 13.014845
+  },
+  {
+    "id": "42048",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Sirolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I758",
+    "latitudine": 43.519101,
+    "longitudine": 13.621703
+  },
+  {
+    "id": "42049",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Staffolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I932",
+    "latitudine": 43.432858,
+    "longitudine": 13.183671
+  },
+  {
+    "id": "42050",
+    "id_regione": "11",
+    "id_provincia": "42",
+    "nome": "Trecastelli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M318",
+    "latitudine": 43.670742,
+    "longitudine": 13.106531
+  }
+]

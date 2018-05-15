@@ -1,0 +1,972 @@
+[
+  {
+    "id": "75001",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Acquarica del Capo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A042",
+    "latitudine": 39.914457,
+    "longitudine": 18.245032
+  },
+  {
+    "id": "75002",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Alessano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A184",
+    "latitudine": 39.889496,
+    "longitudine": 18.331497
+  },
+  {
+    "id": "75003",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Alezio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A185",
+    "latitudine": 40.060034,
+    "longitudine": 18.053434
+  },
+  {
+    "id": "75004",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Alliste",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A208",
+    "latitudine": 39.947527,
+    "longitudine": 18.086225
+  },
+  {
+    "id": "75005",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Andrano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A281",
+    "latitudine": 39.986893,
+    "longitudine": 18.381967
+  },
+  {
+    "id": "75006",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Aradeo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A350",
+    "latitudine": 40.130055,
+    "longitudine": 18.130877
+  },
+  {
+    "id": "75007",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Arnesano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A425",
+    "latitudine": 40.33648,
+    "longitudine": 18.090654
+  },
+  {
+    "id": "75008",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Bagnolo del Salento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A572",
+    "latitudine": 40.149481,
+    "longitudine": 18.351999
+  },
+  {
+    "id": "75009",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Botrugno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B086",
+    "latitudine": 40.064338,
+    "longitudine": 18.324451
+  },
+  {
+    "id": "75010",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Calimera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B413",
+    "latitudine": 40.246709,
+    "longitudine": 18.271918
+  },
+  {
+    "id": "75011",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Campi Salentina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B506",
+    "latitudine": 40.398562,
+    "longitudine": 18.015417
+  },
+  {
+    "id": "75012",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Cannole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B616",
+    "latitudine": 40.166443,
+    "longitudine": 18.366086
+  },
+  {
+    "id": "75013",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Caprarica di Lecce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B690",
+    "latitudine": 40.261771,
+    "longitudine": 18.24497
+  },
+  {
+    "id": "75014",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Carmiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B792",
+    "latitudine": 40.350277,
+    "longitudine": 18.046016
+  },
+  {
+    "id": "75015",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Carpignano Salentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B822",
+    "latitudine": 40.197979,
+    "longitudine": 18.340554
+  },
+  {
+    "id": "75016",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Casarano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B936",
+    "latitudine": 40.011357,
+    "longitudine": 18.161431
+  },
+  {
+    "id": "75017",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Castri di Lecce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C334",
+    "latitudine": 40.273055,
+    "longitudine": 18.258281
+  },
+  {
+    "id": "75018",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Castrignano de' Greci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C335",
+    "latitudine": 40.173308,
+    "longitudine": 18.291644
+  },
+  {
+    "id": "75019",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Castrignano del Capo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C336",
+    "latitudine": 39.831589,
+    "longitudine": 18.352012
+  },
+  {
+    "id": "75096",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Castro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M261",
+    "latitudine": 40.003414,
+    "longitudine": 18.423264
+  },
+  {
+    "id": "75020",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Cavallino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C377",
+    "latitudine": 40.311162,
+    "longitudine": 18.201528
+  },
+  {
+    "id": "75021",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Collepasso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C865",
+    "latitudine": 40.071751,
+    "longitudine": 18.171323
+  },
+  {
+    "id": "75022",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Copertino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C978",
+    "latitudine": 40.269638,
+    "longitudine": 18.060489
+  },
+  {
+    "id": "75023",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Corigliano d'Otranto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D006",
+    "latitudine": 40.161167,
+    "longitudine": 18.256656
+  },
+  {
+    "id": "75024",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Corsano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D044",
+    "latitudine": 39.888004,
+    "longitudine": 18.365701
+  },
+  {
+    "id": "75025",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Cursi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D223",
+    "latitudine": 40.150975,
+    "longitudine": 18.31678
+  },
+  {
+    "id": "75026",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Cutrofiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D237",
+    "latitudine": 40.125349,
+    "longitudine": 18.205232
+  },
+  {
+    "id": "75027",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Diso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D305",
+    "latitudine": 40.009158,
+    "longitudine": 18.392155
+  },
+  {
+    "id": "75028",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Gagliano del Capo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D851",
+    "latitudine": 39.848201,
+    "longitudine": 18.370554
+  },
+  {
+    "id": "75029",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Galatina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D862",
+    "latitudine": 40.175823,
+    "longitudine": 18.172476
+  },
+  {
+    "id": "75030",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Galatone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D863",
+    "latitudine": 40.150666,
+    "longitudine": 18.07098
+  },
+  {
+    "id": "75031",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Gallipoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D883",
+    "latitudine": 40.055851,
+    "longitudine": 17.992614
+  },
+  {
+    "id": "75032",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Giuggianello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E053",
+    "latitudine": 40.095296,
+    "longitudine": 18.369531
+  },
+  {
+    "id": "75033",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Giurdignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E061",
+    "latitudine": 40.122814,
+    "longitudine": 18.431744
+  },
+  {
+    "id": "75034",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Guagnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E227",
+    "latitudine": 40.401245,
+    "longitudine": 17.951444
+  },
+  {
+    "id": "75035",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Lecce",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E506",
+    "latitudine": 40.351516,
+    "longitudine": 18.175016
+  },
+  {
+    "id": "75036",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Lequile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E538",
+    "latitudine": 40.306493,
+    "longitudine": 18.140504
+  },
+  {
+    "id": "75037",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Leverano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E563",
+    "latitudine": 40.29775,
+    "longitudine": 17.994832
+  },
+  {
+    "id": "75038",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Lizzanello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E629",
+    "latitudine": 40.304619,
+    "longitudine": 18.221423
+  },
+  {
+    "id": "75039",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Maglie",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E815",
+    "latitudine": 40.117885,
+    "longitudine": 18.298741
+  },
+  {
+    "id": "75040",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Martano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E979",
+    "latitudine": 40.202493,
+    "longitudine": 18.302589
+  },
+  {
+    "id": "75041",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Martignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E984",
+    "latitudine": 40.241398,
+    "longitudine": 18.256744
+  },
+  {
+    "id": "75042",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Matino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F054",
+    "latitudine": 40.033547,
+    "longitudine": 18.133579
+  },
+  {
+    "id": "75043",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Melendugno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F101",
+    "latitudine": 40.271488,
+    "longitudine": 18.336338
+  },
+  {
+    "id": "75044",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Melissano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F109",
+    "latitudine": 39.96974,
+    "longitudine": 18.117078
+  },
+  {
+    "id": "75045",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Melpignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F117",
+    "latitudine": 40.156237,
+    "longitudine": 18.293179
+  },
+  {
+    "id": "75046",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Miggiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F194",
+    "latitudine": 39.965694,
+    "longitudine": 18.315154
+  },
+  {
+    "id": "75047",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Minervino di Lecce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F221",
+    "latitudine": 40.091415,
+    "longitudine": 18.41997
+  },
+  {
+    "id": "75048",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Monteroni di Lecce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F604",
+    "latitudine": 40.325335,
+    "longitudine": 18.102332
+  },
+  {
+    "id": "75049",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Montesano Salentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F623",
+    "latitudine": 39.975027,
+    "longitudine": 18.3225
+  },
+  {
+    "id": "75050",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Morciano di Leuca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F716",
+    "latitudine": 39.850226,
+    "longitudine": 18.311546
+  },
+  {
+    "id": "75051",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Muro Leccese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F816",
+    "latitudine": 40.103734,
+    "longitudine": 18.33697
+  },
+  {
+    "id": "75052",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Nardò",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F842",
+    "latitudine": 40.179849,
+    "longitudine": 18.033159
+  },
+  {
+    "id": "75053",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Neviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F881",
+    "latitudine": 40.106863,
+    "longitudine": 18.116392
+  },
+  {
+    "id": "75054",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Nociglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F916",
+    "latitudine": 40.039198,
+    "longitudine": 18.326058
+  },
+  {
+    "id": "75055",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Novoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F970",
+    "latitudine": 40.373009,
+    "longitudine": 18.053807
+  },
+  {
+    "id": "75056",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Ortelle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G136",
+    "latitudine": 40.034596,
+    "longitudine": 18.391072
+  },
+  {
+    "id": "75057",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Otranto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G188",
+    "latitudine": 40.143898,
+    "longitudine": 18.491168
+  },
+  {
+    "id": "75058",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Palmariggi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G285",
+    "latitudine": 40.132241,
+    "longitudine": 18.380782
+  },
+  {
+    "id": "75059",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Parabita",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G325",
+    "latitudine": 40.050954,
+    "longitudine": 18.125297
+  },
+  {
+    "id": "75060",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Patù",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G378",
+    "latitudine": 39.842225,
+    "longitudine": 18.337115
+  },
+  {
+    "id": "75061",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Poggiardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G751",
+    "latitudine": 40.053497,
+    "longitudine": 18.378473
+  },
+  {
+    "id": "75097",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Porto Cesareo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M263",
+    "latitudine": 40.260374,
+    "longitudine": 17.893091
+  },
+  {
+    "id": "75062",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Presicce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H047",
+    "latitudine": 39.901561,
+    "longitudine": 18.262741
+  },
+  {
+    "id": "75063",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Racale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H147",
+    "latitudine": 39.958485,
+    "longitudine": 18.094261
+  },
+  {
+    "id": "75064",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Ruffano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H632",
+    "latitudine": 39.982922,
+    "longitudine": 18.249016
+  },
+  {
+    "id": "75065",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Salice Salentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H708",
+    "latitudine": 40.385073,
+    "longitudine": 17.965252
+  },
+  {
+    "id": "75066",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Salve",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H729",
+    "latitudine": 39.858938,
+    "longitudine": 18.297203
+  },
+  {
+    "id": "75095",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "San Cassiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M264",
+    "latitudine": 40.056324,
+    "longitudine": 18.333848
+  },
+  {
+    "id": "75068",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "San Cesario di Lecce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H793",
+    "latitudine": 40.305097,
+    "longitudine": 18.163969
+  },
+  {
+    "id": "75069",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "San Donato di Lecce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H826",
+    "latitudine": 40.265033,
+    "longitudine": 18.183711
+  },
+  {
+    "id": "75071",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "San Pietro in Lama",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I115",
+    "latitudine": 40.305181,
+    "longitudine": 18.124692
+  },
+  {
+    "id": "75067",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Sanarica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H757",
+    "latitudine": 40.089635,
+    "longitudine": 18.347279
+  },
+  {
+    "id": "75070",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Sannicola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I059",
+    "latitudine": 40.09386,
+    "longitudine": 18.063946
+  },
+  {
+    "id": "75072",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Santa Cesarea Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I172",
+    "latitudine": 40.035218,
+    "longitudine": 18.455894
+  },
+  {
+    "id": "75073",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Scorrano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I549",
+    "latitudine": 40.093616,
+    "longitudine": 18.300523
+  },
+  {
+    "id": "75074",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Seclì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I559",
+    "latitudine": 40.132263,
+    "longitudine": 18.104945
+  },
+  {
+    "id": "75075",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Sogliano Cavour",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I780",
+    "latitudine": 40.147098,
+    "longitudine": 18.19663
+  },
+  {
+    "id": "75076",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Soleto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I800",
+    "latitudine": 40.187676,
+    "longitudine": 18.206716
+  },
+  {
+    "id": "75077",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Specchia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I887",
+    "latitudine": 39.941167,
+    "longitudine": 18.299996
+  },
+  {
+    "id": "75078",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Spongano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I923",
+    "latitudine": 40.021101,
+    "longitudine": 18.361038
+  },
+  {
+    "id": "75079",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Squinzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I930",
+    "latitudine": 40.434991,
+    "longitudine": 18.042174
+  },
+  {
+    "id": "75080",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Sternatia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I950",
+    "latitudine": 40.224544,
+    "longitudine": 18.225066
+  },
+  {
+    "id": "75081",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Supersano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L008",
+    "latitudine": 40.013268,
+    "longitudine": 18.243645
+  },
+  {
+    "id": "75082",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Surano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L010",
+    "latitudine": 40.028167,
+    "longitudine": 18.346695
+  },
+  {
+    "id": "75083",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Surbo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L011",
+    "latitudine": 40.395327,
+    "longitudine": 18.135011
+  },
+  {
+    "id": "75084",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Taurisano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L064",
+    "latitudine": 39.958071,
+    "longitudine": 18.213021
+  },
+  {
+    "id": "75085",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Taviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L074",
+    "latitudine": 39.979054,
+    "longitudine": 18.085181
+  },
+  {
+    "id": "75086",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Tiggiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L166",
+    "latitudine": 39.905057,
+    "longitudine": 18.368672
+  },
+  {
+    "id": "75087",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Trepuzzi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L383",
+    "latitudine": 40.404391,
+    "longitudine": 18.071592
+  },
+  {
+    "id": "75088",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Tricase",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L419",
+    "latitudine": 39.930207,
+    "longitudine": 18.358437
+  },
+  {
+    "id": "75089",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Tuglie",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L462",
+    "latitudine": 40.078783,
+    "longitudine": 18.096749
+  },
+  {
+    "id": "75090",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Ugento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L484",
+    "latitudine": 39.927113,
+    "longitudine": 18.161456
+  },
+  {
+    "id": "75091",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Uggiano la Chiesa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L485",
+    "latitudine": 40.100304,
+    "longitudine": 18.454201
+  },
+  {
+    "id": "75092",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Veglie",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L711",
+    "latitudine": 40.335201,
+    "longitudine": 17.96656
+  },
+  {
+    "id": "75093",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Vernole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L776",
+    "latitudine": 40.286563,
+    "longitudine": 18.300841
+  },
+  {
+    "id": "75094",
+    "id_regione": "16",
+    "id_provincia": "75",
+    "nome": "Zollino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M187",
+    "latitudine": 40.206796,
+    "longitudine": 18.251646
+  }
+]

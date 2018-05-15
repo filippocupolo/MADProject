@@ -1,0 +1,202 @@
+[
+  {
+    "id": "49001",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Bibbona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A852",
+    "latitudine": 43.269564,
+    "longitudine": 10.595233
+  },
+  {
+    "id": "49002",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Campiglia Marittima",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B509",
+    "latitudine": 43.060088,
+    "longitudine": 10.614245
+  },
+  {
+    "id": "49003",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Campo nell'Elba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B553",
+    "latitudine": 42.748683,
+    "longitudine": 10.23493
+  },
+  {
+    "id": "49004",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Capoliveri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B669",
+    "latitudine": 42.747237,
+    "longitudine": 10.379755
+  },
+  {
+    "id": "49005",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Capraia Isola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B685",
+    "latitudine": 43.037783,
+    "longitudine": 9.818073
+  },
+  {
+    "id": "49006",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Castagneto Carducci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C044",
+    "latitudine": 43.159729,
+    "longitudine": 10.611713
+  },
+  {
+    "id": "49007",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Cecina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C415",
+    "latitudine": 43.30853,
+    "longitudine": 10.518859
+  },
+  {
+    "id": "49008",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Collesalvetti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C869",
+    "latitudine": 43.591571,
+    "longitudine": 10.475699
+  },
+  {
+    "id": "49009",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Livorno",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E625",
+    "latitudine": 43.548473,
+    "longitudine": 10.310567
+  },
+  {
+    "id": "49010",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Marciana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E930",
+    "latitudine": 42.790929,
+    "longitudine": 10.167376
+  },
+  {
+    "id": "49011",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Marciana Marina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E931",
+    "latitudine": 42.805405,
+    "longitudine": 10.201326
+  },
+  {
+    "id": "49012",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Piombino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G687",
+    "latitudine": 42.925634,
+    "longitudine": 10.525889
+  },
+  {
+    "id": "49013",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Porto Azzurro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E680",
+    "latitudine": 42.763233,
+    "longitudine": 10.39478
+  },
+  {
+    "id": "49014",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Portoferraio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G912",
+    "latitudine": 42.810857,
+    "longitudine": 10.32118
+  },
+  {
+    "id": "49015",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Rio Marina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H305",
+    "latitudine": 42.816042,
+    "longitudine": 10.42781
+  },
+  {
+    "id": "49016",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Rio nell'Elba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H297",
+    "latitudine": 42.813873,
+    "longitudine": 10.401098
+  },
+  {
+    "id": "49017",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Rosignano Marittimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H570",
+    "latitudine": 43.409171,
+    "longitudine": 10.472119
+  },
+  {
+    "id": "49018",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "San Vincenzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I390",
+    "latitudine": 43.10238,
+    "longitudine": 10.539351
+  },
+  {
+    "id": "49019",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Sassetta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I454",
+    "latitudine": 43.128538,
+    "longitudine": 10.643963
+  },
+  {
+    "id": "49020",
+    "id_regione": "9",
+    "id_provincia": "49",
+    "nome": "Suvereto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L019",
+    "latitudine": 43.076683,
+    "longitudine": 10.678444
+  }
+]

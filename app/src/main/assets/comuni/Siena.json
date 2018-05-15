@@ -1,0 +1,362 @@
+[
+    {
+        "id": "52001",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Abbadia San Salvatore",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A006",
+        "latitudine": 42.881815,
+        "longitudine": 11.673932
+    },
+    {
+        "id": "52002",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Asciano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A461",
+        "latitudine": 43.23397,
+        "longitudine": 11.560631
+    },
+    {
+        "id": "52003",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Buonconvento",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B269",
+        "latitudine": 43.136057,
+        "longitudine": 11.479605
+    },
+    {
+        "id": "52004",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Casole d'Elsa",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B984",
+        "latitudine": 43.342623,
+        "longitudine": 11.045027
+    },
+    {
+        "id": "52005",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Castellina in Chianti",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C172",
+        "latitudine": 43.471514,
+        "longitudine": 11.285668
+    },
+    {
+        "id": "52006",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Castelnuovo Berardenga",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C227",
+        "latitudine": 43.346819,
+        "longitudine": 11.503927
+    },
+    {
+        "id": "52007",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Castiglione d'Orcia",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C313",
+        "latitudine": 43.00583,
+        "longitudine": 11.616126
+    },
+    {
+        "id": "52008",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Cetona",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C587",
+        "latitudine": 42.963185,
+        "longitudine": 11.900072
+    },
+    {
+        "id": "52009",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Chianciano Terme",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C608",
+        "latitudine": 43.044344,
+        "longitudine": 11.813762
+    },
+    {
+        "id": "52010",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Chiusdino",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C661",
+        "latitudine": 43.15539,
+        "longitudine": 11.088472
+    },
+    {
+        "id": "52011",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Chiusi",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C662",
+        "latitudine": 43.015519,
+        "longitudine": 11.944775
+    },
+    {
+        "id": "52012",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Colle di Val d'Elsa",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C847",
+        "latitudine": 43.419964,
+        "longitudine": 11.127206
+    },
+    {
+        "id": "52013",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Gaiole in Chianti",
+        "capoluogo_provincia": false,
+        "codice_catastale": "D858",
+        "latitudine": 43.467307,
+        "longitudine": 11.43423
+    },
+    {
+        "id": "52014",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Montalcino",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F402",
+        "latitudine": 43.055102,
+        "longitudine": 11.489003
+    },
+    {
+        "id": "52015",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Montepulciano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F592",
+        "latitudine": 43.098694,
+        "longitudine": 11.787247
+    },
+    {
+        "id": "52016",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Monteriggioni",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F598",
+        "latitudine": 43.390135,
+        "longitudine": 11.223386
+    },
+    {
+        "id": "52017",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Monteroni d'Arbia",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F605",
+        "latitudine": 43.229679,
+        "longitudine": 11.422277
+    },
+    {
+        "id": "52018",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Monticiano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F676",
+        "latitudine": 43.139471,
+        "longitudine": 11.177748
+    },
+    {
+        "id": "52019",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Murlo",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F815",
+        "latitudine": 43.160747,
+        "longitudine": 11.387978
+    },
+    {
+        "id": "52020",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Piancastagnaio",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G547",
+        "latitudine": 42.850032,
+        "longitudine": 11.686677
+    },
+    {
+        "id": "52021",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Pienza",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G602",
+        "latitudine": 43.07745,
+        "longitudine": 11.677595
+    },
+    {
+        "id": "52022",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Poggibonsi",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G752",
+        "latitudine": 43.472565,
+        "longitudine": 11.146754
+    },
+    {
+        "id": "52023",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Radda in Chianti",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H153",
+        "latitudine": 43.4861,
+        "longitudine": 11.370762
+    },
+    {
+        "id": "52024",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Radicofani",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H156",
+        "latitudine": 42.895922,
+        "longitudine": 11.767384
+    },
+    {
+        "id": "52025",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Radicondoli",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H157",
+        "latitudine": 43.261179,
+        "longitudine": 11.043548
+    },
+    {
+        "id": "52026",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Rapolano Terme",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H185",
+        "latitudine": 43.284974,
+        "longitudine": 11.604671
+    },
+    {
+        "id": "52027",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "San Casciano dei Bagni",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H790",
+        "latitudine": 42.871555,
+        "longitudine": 11.875334
+    },
+    {
+        "id": "52028",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "San Gimignano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H875",
+        "latitudine": 43.467632,
+        "longitudine": 11.043491
+    },
+    {
+        "id": "52029",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "San Giovanni d'Asso",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H911",
+        "latitudine": 43.151806,
+        "longitudine": 11.589052
+    },
+    {
+        "id": "52030",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "San Quirico d'Orcia",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I135",
+        "latitudine": 43.05818,
+        "longitudine": 11.606064
+    },
+    {
+        "id": "52031",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Sarteano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I445",
+        "latitudine": 42.989238,
+        "longitudine": 11.870103
+    },
+    {
+        "id": "52032",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Siena",
+        "capoluogo_provincia": true,
+        "codice_catastale": "I726",
+        "latitudine": 43.318809,
+        "longitudine": 11.330757
+    },
+    {
+        "id": "52033",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Sinalunga",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A468",
+        "latitudine": 43.212311,
+        "longitudine": 11.736501
+    },
+    {
+        "id": "52034",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Sovicille",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I877",
+        "latitudine": 43.277705,
+        "longitudine": 11.228348
+    },
+    {
+        "id": "52035",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Torrita di Siena",
+        "capoluogo_provincia": false,
+        "codice_catastale": "L303",
+        "latitudine": 43.168926,
+        "longitudine": 11.774908
+    },
+    {
+        "id": "52036",
+        "id_regione": "9",
+        "id_provincia": "52",
+        "nome": "Trequanda",
+        "capoluogo_provincia": false,
+        "codice_catastale": "L384",
+        "latitudine": 43.187887,
+        "longitudine": 11.667759
+    }
+]

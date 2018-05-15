@@ -1,0 +1,612 @@
+[
+  {
+    "id": "71001",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Accadia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A015",
+    "latitudine": 41.156489,
+    "longitudine": 15.331564
+  },
+  {
+    "id": "71002",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Alberona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A150",
+    "latitudine": 41.432188,
+    "longitudine": 15.124244
+  },
+  {
+    "id": "71003",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Anzano di Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A320",
+    "latitudine": 41.118815,
+    "longitudine": 15.291501
+  },
+  {
+    "id": "71004",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Apricena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A339",
+    "latitudine": 41.783662,
+    "longitudine": 15.444434
+  },
+  {
+    "id": "71005",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Ascoli Satriano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A463",
+    "latitudine": 41.203341,
+    "longitudine": 15.562745
+  },
+  {
+    "id": "71006",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Biccari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A854",
+    "latitudine": 41.398475,
+    "longitudine": 15.198079
+  },
+  {
+    "id": "71007",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Bovino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B104",
+    "latitudine": 41.248454,
+    "longitudine": 15.33953
+  },
+  {
+    "id": "71008",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Cagnano Varano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B357",
+    "latitudine": 41.829639,
+    "longitudine": 15.772777
+  },
+  {
+    "id": "71009",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Candela",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B584",
+    "latitudine": 41.134858,
+    "longitudine": 15.514859
+  },
+  {
+    "id": "71010",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Carapelle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B724",
+    "latitudine": 41.364622,
+    "longitudine": 15.690551
+  },
+  {
+    "id": "71011",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Carlantino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B784",
+    "latitudine": 41.597536,
+    "longitudine": 14.97426
+  },
+  {
+    "id": "71012",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Carpino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B829",
+    "latitudine": 41.844893,
+    "longitudine": 15.858239
+  },
+  {
+    "id": "71013",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Casalnuovo Monterotaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B904",
+    "latitudine": 41.619778,
+    "longitudine": 15.104596
+  },
+  {
+    "id": "71014",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Casalvecchio di Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B917",
+    "latitudine": 41.59603,
+    "longitudine": 15.110978
+  },
+  {
+    "id": "71015",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Castelluccio dei Sauri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C198",
+    "latitudine": 41.30504,
+    "longitudine": 15.478812
+  },
+  {
+    "id": "71016",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Castelluccio Valmaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C202",
+    "latitudine": 41.342146,
+    "longitudine": 15.201171
+  },
+  {
+    "id": "71017",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Castelnuovo della Daunia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C222",
+    "latitudine": 41.584045,
+    "longitudine": 15.120416
+  },
+  {
+    "id": "71018",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Celenza Valfortore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C429",
+    "latitudine": 41.560379,
+    "longitudine": 14.981584
+  },
+  {
+    "id": "71019",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Celle di San Vito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C442",
+    "latitudine": 41.322318,
+    "longitudine": 15.180548
+  },
+  {
+    "id": "71020",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Cerignola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C514",
+    "latitudine": 41.265659,
+    "longitudine": 15.893916
+  },
+  {
+    "id": "71021",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Chieuti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C633",
+    "latitudine": 41.847294,
+    "longitudine": 15.167388
+  },
+  {
+    "id": "71022",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Deliceto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D269",
+    "latitudine": 41.223017,
+    "longitudine": 15.386195
+  },
+  {
+    "id": "71023",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Faeto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D459",
+    "latitudine": 41.323397,
+    "longitudine": 15.162688
+  },
+  {
+    "id": "71024",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Foggia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "D643",
+    "latitudine": 41.462198,
+    "longitudine": 15.54463
+  },
+  {
+    "id": "71025",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Ischitella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E332",
+    "latitudine": 41.905415,
+    "longitudine": 15.899096
+  },
+  {
+    "id": "71026",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Isole Tremiti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E363",
+    "latitudine": 42.120144,
+    "longitudine": 15.503783
+  },
+  {
+    "id": "71027",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Lesina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E549",
+    "latitudine": 41.862799,
+    "longitudine": 15.353152
+  },
+  {
+    "id": "71028",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Lucera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E716",
+    "latitudine": 41.505481,
+    "longitudine": 15.338528
+  },
+  {
+    "id": "71029",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Manfredonia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E885",
+    "latitudine": 41.630735,
+    "longitudine": 15.916511
+  },
+  {
+    "id": "71031",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Mattinata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F059",
+    "latitudine": 41.710619,
+    "longitudine": 16.049088
+  },
+  {
+    "id": "71033",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Monte Sant'Angelo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F631",
+    "latitudine": 41.704556,
+    "longitudine": 15.9677
+  },
+  {
+    "id": "71032",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Monteleone di Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F538",
+    "latitudine": 41.165268,
+    "longitudine": 15.25677
+  },
+  {
+    "id": "71034",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Motta Montecorvino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F777",
+    "latitudine": 41.507755,
+    "longitudine": 15.116031
+  },
+  {
+    "id": "71063",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Ordona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M266",
+    "latitudine": 41.314417,
+    "longitudine": 15.626645
+  },
+  {
+    "id": "71035",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Orsara di Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G125",
+    "latitudine": 41.278189,
+    "longitudine": 15.266736
+  },
+  {
+    "id": "71036",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Orta Nova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G131",
+    "latitudine": 41.327992,
+    "longitudine": 15.709254
+  },
+  {
+    "id": "71037",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Panni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G312",
+    "latitudine": 41.220796,
+    "longitudine": 15.276185
+  },
+  {
+    "id": "71038",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Peschici",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G487",
+    "latitudine": 41.9469,
+    "longitudine": 16.012776
+  },
+  {
+    "id": "71039",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Pietramontecorvino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G604",
+    "latitudine": 41.543231,
+    "longitudine": 15.131663
+  },
+  {
+    "id": "71040",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Poggio Imperiale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G761",
+    "latitudine": 41.824788,
+    "longitudine": 15.367254
+  },
+  {
+    "id": "71041",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Rignano Garganico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H287",
+    "latitudine": 41.676663,
+    "longitudine": 15.587623
+  },
+  {
+    "id": "71042",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Rocchetta Sant'Antonio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H467",
+    "latitudine": 41.103494,
+    "longitudine": 15.461033
+  },
+  {
+    "id": "71043",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Rodi Garganico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H480",
+    "latitudine": 41.929828,
+    "longitudine": 15.886029
+  },
+  {
+    "id": "71044",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Roseto Valfortore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H568",
+    "latitudine": 41.374295,
+    "longitudine": 15.096914
+  },
+  {
+    "id": "71046",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "San Giovanni Rotondo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H926",
+    "latitudine": 41.70659,
+    "longitudine": 15.729179
+  },
+  {
+    "id": "71047",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "San Marco in Lamis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H985",
+    "latitudine": 41.712443,
+    "longitudine": 15.638065
+  },
+  {
+    "id": "71048",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "San Marco la Catola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H986",
+    "latitudine": 41.526029,
+    "longitudine": 15.003865
+  },
+  {
+    "id": "71049",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "San Nicandro Garganico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I054",
+    "latitudine": 41.834578,
+    "longitudine": 15.571685
+  },
+  {
+    "id": "71050",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "San Paolo di Civitate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I072",
+    "latitudine": 41.740389,
+    "longitudine": 15.260111
+  },
+  {
+    "id": "71051",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "San Severo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I158",
+    "latitudine": 41.68542,
+    "longitudine": 15.379516
+  },
+  {
+    "id": "71052",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Sant'Agata di Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I193",
+    "latitudine": 41.150795,
+    "longitudine": 15.38218
+  },
+  {
+    "id": "71053",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Serracapriola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I641",
+    "latitudine": 41.808592,
+    "longitudine": 15.159901
+  },
+  {
+    "id": "71054",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Stornara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I962",
+    "latitudine": 41.285927,
+    "longitudine": 15.768243
+  },
+  {
+    "id": "71055",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Stornarella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I963",
+    "latitudine": 41.255693,
+    "longitudine": 15.728725
+  },
+  {
+    "id": "71056",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Torremaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L273",
+    "latitudine": 41.686832,
+    "longitudine": 15.292553
+  },
+  {
+    "id": "71058",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Troia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L447",
+    "latitudine": 41.35978,
+    "longitudine": 15.308114
+  },
+  {
+    "id": "71059",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Vico del Gargano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L842",
+    "latitudine": 41.895999,
+    "longitudine": 15.959619
+  },
+  {
+    "id": "71060",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Vieste",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L858",
+    "latitudine": 41.882476,
+    "longitudine": 16.176749
+  },
+  {
+    "id": "71061",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Volturara Appula",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M131",
+    "latitudine": 41.496316,
+    "longitudine": 15.053884
+  },
+  {
+    "id": "71062",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Volturino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M132",
+    "latitudine": 41.477582,
+    "longitudine": 15.123393
+  },
+  {
+    "id": "71064",
+    "id_regione": "16",
+    "id_provincia": "71",
+    "nome": "Zapponeta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M267",
+    "latitudine": 41.455576,
+    "longitudine": 15.95854
+  }
+]

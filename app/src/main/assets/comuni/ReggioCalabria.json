@@ -1,0 +1,972 @@
+[
+  {
+    "id": "80001",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Africo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A065",
+    "latitudine": 38.050034,
+    "longitudine": 16.134276
+  },
+  {
+    "id": "80002",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Agnana Calabra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A077",
+    "latitudine": 38.302341,
+    "longitudine": 16.224566
+  },
+  {
+    "id": "80003",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Anoia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A303",
+    "latitudine": 38.435612,
+    "longitudine": 16.080507
+  },
+  {
+    "id": "80004",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Antonimina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A314",
+    "latitudine": 38.272536,
+    "longitudine": 16.149126
+  },
+  {
+    "id": "80005",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Ardore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A385",
+    "latitudine": 38.193091,
+    "longitudine": 16.165721
+  },
+  {
+    "id": "80006",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Bagaladi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A544",
+    "latitudine": 38.025443,
+    "longitudine": 15.821031
+  },
+  {
+    "id": "80007",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Bagnara Calabra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A552",
+    "latitudine": 38.283768,
+    "longitudine": 15.803375
+  },
+  {
+    "id": "80008",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Benestare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A780",
+    "latitudine": 38.183635,
+    "longitudine": 16.139372
+  },
+  {
+    "id": "80009",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Bianco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A843",
+    "latitudine": 38.087502,
+    "longitudine": 16.151946
+  },
+  {
+    "id": "80010",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Bivongi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A897",
+    "latitudine": 38.483673,
+    "longitudine": 16.451628
+  },
+  {
+    "id": "80011",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Bova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B097",
+    "latitudine": 37.995152,
+    "longitudine": 15.928891
+  },
+  {
+    "id": "80013",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Bova Marina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B099",
+    "latitudine": 37.930448,
+    "longitudine": 15.924597
+  },
+  {
+    "id": "80012",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Bovalino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B098",
+    "latitudine": 38.151217,
+    "longitudine": 16.169489
+  },
+  {
+    "id": "80014",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Brancaleone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B118",
+    "latitudine": 37.971467,
+    "longitudine": 16.098253
+  },
+  {
+    "id": "80015",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Bruzzano Zeffirio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B234",
+    "latitudine": 38.012582,
+    "longitudine": 16.081876
+  },
+  {
+    "id": "80016",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Calanna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B379",
+    "latitudine": 38.185811,
+    "longitudine": 15.724058
+  },
+  {
+    "id": "80017",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Camini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B481",
+    "latitudine": 38.431071,
+    "longitudine": 16.483113
+  },
+  {
+    "id": "80018",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Campo Calabro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B516",
+    "latitudine": 38.213373,
+    "longitudine": 15.659302
+  },
+  {
+    "id": "80019",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Candidoni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B591",
+    "latitudine": 38.505477,
+    "longitudine": 16.086104
+  },
+  {
+    "id": "80020",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Canolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B617",
+    "latitudine": 38.31461,
+    "longitudine": 16.200804
+  },
+  {
+    "id": "80021",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Caraffa del Bianco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B718",
+    "latitudine": 38.092333,
+    "longitudine": 16.087552
+  },
+  {
+    "id": "80022",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Cardeto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B756",
+    "latitudine": 38.083853,
+    "longitudine": 15.766233
+  },
+  {
+    "id": "80023",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Careri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B766",
+    "latitudine": 38.177369,
+    "longitudine": 16.112826
+  },
+  {
+    "id": "80024",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Casignana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B966",
+    "latitudine": 38.104172,
+    "longitudine": 16.092074
+  },
+  {
+    "id": "80025",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Caulonia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C285",
+    "latitudine": 38.380679,
+    "longitudine": 16.409586
+  },
+  {
+    "id": "80026",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Ciminà",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C695",
+    "latitudine": 38.246275,
+    "longitudine": 16.140819
+  },
+  {
+    "id": "80027",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Cinquefrondi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C710",
+    "latitudine": 38.417894,
+    "longitudine": 16.092324
+  },
+  {
+    "id": "80028",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Cittanova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C747",
+    "latitudine": 38.353727,
+    "longitudine": 16.077214
+  },
+  {
+    "id": "80029",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Condofuri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C954",
+    "latitudine": 38.004767,
+    "longitudine": 15.858603
+  },
+  {
+    "id": "80030",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Cosoleto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D089",
+    "latitudine": 38.274742,
+    "longitudine": 15.925072
+  },
+  {
+    "id": "80031",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Delianuova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D268",
+    "latitudine": 38.233573,
+    "longitudine": 15.919195
+  },
+  {
+    "id": "80032",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Feroleto della Chiesa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D545",
+    "latitudine": 38.466197,
+    "longitudine": 16.066265
+  },
+  {
+    "id": "80033",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Ferruzzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D557",
+    "latitudine": 38.039161,
+    "longitudine": 16.088124
+  },
+  {
+    "id": "80034",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Fiumara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D619",
+    "latitudine": 38.15244,
+    "longitudine": 14.853124
+  },
+  {
+    "id": "80035",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Galatro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D864",
+    "latitudine": 38.459331,
+    "longitudine": 16.109924
+  },
+  {
+    "id": "80036",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Gerace",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D975",
+    "latitudine": 38.272021,
+    "longitudine": 16.221787
+  },
+  {
+    "id": "80037",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Giffone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E025",
+    "latitudine": 38.438833,
+    "longitudine": 16.151397
+  },
+  {
+    "id": "80038",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Gioia Tauro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E041",
+    "latitudine": 38.426226,
+    "longitudine": 15.898867
+  },
+  {
+    "id": "80039",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Gioiosa Ionica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E044",
+    "latitudine": 38.33972,
+    "longitudine": 16.306
+  },
+  {
+    "id": "80040",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Grotteria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E212",
+    "latitudine": 38.364233,
+    "longitudine": 16.265899
+  },
+  {
+    "id": "80041",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Laganadi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E402",
+    "latitudine": 38.174206,
+    "longitudine": 15.742073
+  },
+  {
+    "id": "80042",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Laureana di Borrello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E479",
+    "latitudine": 38.490526,
+    "longitudine": 16.080395
+  },
+  {
+    "id": "80043",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Locri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D976",
+    "latitudine": 38.233719,
+    "longitudine": 16.263801
+  },
+  {
+    "id": "80044",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Mammola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E873",
+    "latitudine": 38.362282,
+    "longitudine": 16.238551
+  },
+  {
+    "id": "80045",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Marina di Gioiosa Ionica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E956",
+    "latitudine": 38.302238,
+    "longitudine": 16.334421
+  },
+  {
+    "id": "80046",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Maropati",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E968",
+    "latitudine": 38.442233,
+    "longitudine": 16.098494
+  },
+  {
+    "id": "80047",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Martone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E993",
+    "latitudine": 38.354648,
+    "longitudine": 16.289406
+  },
+  {
+    "id": "80048",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Melicuccà",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F105",
+    "latitudine": 38.303392,
+    "longitudine": 15.881143
+  },
+  {
+    "id": "80049",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Melicucco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F106",
+    "latitudine": 38.432903,
+    "longitudine": 16.060272
+  },
+  {
+    "id": "80050",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Melito di Porto Salvo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F112",
+    "latitudine": 37.920703,
+    "longitudine": 15.784013
+  },
+  {
+    "id": "80051",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Molochio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F301",
+    "latitudine": 38.310087,
+    "longitudine": 16.031403
+  },
+  {
+    "id": "80052",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Monasterace",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F324",
+    "latitudine": 38.452934,
+    "longitudine": 16.551326
+  },
+  {
+    "id": "80053",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Montebello Ionico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D746",
+    "latitudine": 37.981706,
+    "longitudine": 15.758761
+  },
+  {
+    "id": "80054",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Motta San Giovanni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F779",
+    "latitudine": 38.001031,
+    "longitudine": 15.694976
+  },
+  {
+    "id": "80055",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Oppido Mamertina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G082",
+    "latitudine": 38.291643,
+    "longitudine": 15.985869
+  },
+  {
+    "id": "80056",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Palizzi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G277",
+    "latitudine": 37.965891,
+    "longitudine": 15.987591
+  },
+  {
+    "id": "80057",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Palmi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G288",
+    "latitudine": 38.357568,
+    "longitudine": 15.846525
+  },
+  {
+    "id": "80058",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Pazzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G394",
+    "latitudine": 38.476999,
+    "longitudine": 16.451193
+  },
+  {
+    "id": "80059",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Placanica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G729",
+    "latitudine": 38.413979,
+    "longitudine": 16.450646
+  },
+  {
+    "id": "80060",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Platì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G735",
+    "latitudine": 38.220841,
+    "longitudine": 16.044914
+  },
+  {
+    "id": "80061",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Polistena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G791",
+    "latitudine": 38.405598,
+    "longitudine": 16.072975
+  },
+  {
+    "id": "80062",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Portigliola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G905",
+    "latitudine": 38.228213,
+    "longitudine": 16.202099
+  },
+  {
+    "id": "80063",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Reggio di Calabria",
+    "capoluogo_provincia": true,
+    "codice_catastale": "H224",
+    "latitudine": 38.111301,
+    "longitudine": 15.647291
+  },
+  {
+    "id": "80064",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Riace",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H265",
+    "latitudine": 38.418846,
+    "longitudine": 16.480328
+  },
+  {
+    "id": "80065",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Rizziconi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H359",
+    "latitudine": 38.413914,
+    "longitudine": 15.959264
+  },
+  {
+    "id": "80066",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Roccaforte del Greco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H408",
+    "latitudine": 38.046303,
+    "longitudine": 15.897471
+  },
+  {
+    "id": "80067",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Roccella Ionica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H456",
+    "latitudine": 38.326849,
+    "longitudine": 16.405743
+  },
+  {
+    "id": "80068",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Roghudi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H489",
+    "latitudine": 37.932368,
+    "longitudine": 15.769709
+  },
+  {
+    "id": "80069",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Rosarno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H558",
+    "latitudine": 38.487272,
+    "longitudine": 15.976057
+  },
+  {
+    "id": "80070",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Samo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H013",
+    "latitudine": 38.073277,
+    "longitudine": 16.056118
+  },
+  {
+    "id": "80097",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "San Ferdinando",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M277",
+    "latitudine": 38.482738,
+    "longitudine": 15.919075
+  },
+  {
+    "id": "80071",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "San Giorgio Morgeto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H889",
+    "latitudine": 38.385899,
+    "longitudine": 16.106792
+  },
+  {
+    "id": "80072",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "San Giovanni di Gerace",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H903",
+    "latitudine": 38.36585,
+    "longitudine": 16.277478
+  },
+  {
+    "id": "80073",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "San Lorenzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H959",
+    "latitudine": 38.010491,
+    "longitudine": 15.831647
+  },
+  {
+    "id": "80074",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "San Luca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H970",
+    "latitudine": 38.147053,
+    "longitudine": 16.063258
+  },
+  {
+    "id": "80075",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "San Pietro di Caridà",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I102",
+    "latitudine": 38.523286,
+    "longitudine": 16.133835
+  },
+  {
+    "id": "80076",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "San Procopio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I132",
+    "latitudine": 38.281925,
+    "longitudine": 15.8899
+  },
+  {
+    "id": "80077",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "San Roberto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I139",
+    "latitudine": 38.211154,
+    "longitudine": 15.736485
+  },
+  {
+    "id": "80079",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Sant'Agata del Bianco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I198",
+    "latitudine": 38.092905,
+    "longitudine": 16.083
+  },
+  {
+    "id": "80080",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Sant'Alessio in Aspromonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I214",
+    "latitudine": 38.173072,
+    "longitudine": 15.75811
+  },
+  {
+    "id": "80081",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Sant'Eufemia d'Aspromonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I333",
+    "latitudine": 38.264707,
+    "longitudine": 15.853837
+  },
+  {
+    "id": "80082",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Sant'Ilario dello Ionio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I341",
+    "latitudine": 38.219698,
+    "longitudine": 16.195911
+  },
+  {
+    "id": "80078",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Santa Cristina d'Aspromonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I176",
+    "latitudine": 38.255483,
+    "longitudine": 15.970231
+  },
+  {
+    "id": "80083",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Santo Stefano in Aspromonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I371",
+    "latitudine": 38.168927,
+    "longitudine": 15.789738
+  },
+  {
+    "id": "80084",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Scido",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I536",
+    "latitudine": 38.246071,
+    "longitudine": 15.933676
+  },
+  {
+    "id": "80085",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Scilla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I537",
+    "latitudine": 38.251201,
+    "longitudine": 15.718025
+  },
+  {
+    "id": "80086",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Seminara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I600",
+    "latitudine": 38.335155,
+    "longitudine": 15.870861
+  },
+  {
+    "id": "80087",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Serrata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I656",
+    "latitudine": 38.51251,
+    "longitudine": 16.103444
+  },
+  {
+    "id": "80088",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Siderno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I725",
+    "latitudine": 38.269366,
+    "longitudine": 16.298309
+  },
+  {
+    "id": "80089",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Sinopoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I753",
+    "latitudine": 38.265024,
+    "longitudine": 15.87768
+  },
+  {
+    "id": "80090",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Staiti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I936",
+    "latitudine": 37.999886,
+    "longitudine": 16.032177
+  },
+  {
+    "id": "80091",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Stignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I955",
+    "latitudine": 38.418924,
+    "longitudine": 16.469717
+  },
+  {
+    "id": "80092",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Stilo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I956",
+    "latitudine": 38.477287,
+    "longitudine": 16.46875
+  },
+  {
+    "id": "80093",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Taurianova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L063",
+    "latitudine": 38.353425,
+    "longitudine": 16.017728
+  },
+  {
+    "id": "80094",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Terranova Sappo Minulio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L127",
+    "latitudine": 38.322209,
+    "longitudine": 16.006434
+  },
+  {
+    "id": "80095",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Varapodio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L673",
+    "latitudine": 38.314349,
+    "longitudine": 15.984094
+  },
+  {
+    "id": "80096",
+    "id_regione": "18",
+    "id_provincia": "80",
+    "nome": "Villa San Giovanni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M018",
+    "latitudine": 38.216746,
+    "longitudine": 15.636238
+  }
+]

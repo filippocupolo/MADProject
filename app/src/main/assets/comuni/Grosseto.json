@@ -1,0 +1,282 @@
+[
+  {
+    "id": "53001",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Arcidosso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A369",
+    "latitudine": 42.87111,
+    "longitudine": 11.540109
+  },
+  {
+    "id": "53002",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Campagnatico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B497",
+    "latitudine": 42.883741,
+    "longitudine": 11.273746
+  },
+  {
+    "id": "53003",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Capalbio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B646",
+    "latitudine": 42.453387,
+    "longitudine": 11.4237
+  },
+  {
+    "id": "53004",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Castel del Piano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C085",
+    "latitudine": 42.888634,
+    "longitudine": 11.535785
+  },
+  {
+    "id": "53005",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Castell'Azzara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C147",
+    "latitudine": 42.774358,
+    "longitudine": 11.697004
+  },
+  {
+    "id": "53006",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Castiglione della Pescaia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C310",
+    "latitudine": 42.763895,
+    "longitudine": 10.87502
+  },
+  {
+    "id": "53007",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Cinigiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C705",
+    "latitudine": 42.890593,
+    "longitudine": 11.39
+  },
+  {
+    "id": "53008",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Civitella Paganico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C782",
+    "latitudine": 42.930811,
+    "longitudine": 11.26818
+  },
+  {
+    "id": "53009",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Follonica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D656",
+    "latitudine": 42.922689,
+    "longitudine": 10.7593
+  },
+  {
+    "id": "53010",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Gavorrano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D948",
+    "latitudine": 42.925068,
+    "longitudine": 10.907817
+  },
+  {
+    "id": "53011",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Grosseto",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E202",
+    "latitudine": 42.763525,
+    "longitudine": 11.112363
+  },
+  {
+    "id": "53012",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Isola del Giglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E348",
+    "latitudine": 42.353631,
+    "longitudine": 10.901604
+  },
+  {
+    "id": "53013",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Magliano in Toscana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E810",
+    "latitudine": 42.599864,
+    "longitudine": 11.291225
+  },
+  {
+    "id": "53014",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Manciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E875",
+    "latitudine": 42.588929,
+    "longitudine": 11.51738
+  },
+  {
+    "id": "53015",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Massa Marittima",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F032",
+    "latitudine": 43.05325,
+    "longitudine": 10.888032
+  },
+  {
+    "id": "53016",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Monte Argentario",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F437",
+    "latitudine": 42.425566,
+    "longitudine": 11.118568
+  },
+  {
+    "id": "53027",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Monterotondo Marittimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F612",
+    "latitudine": 43.115711,
+    "longitudine": 10.811289
+  },
+  {
+    "id": "53017",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Montieri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F677",
+    "latitudine": 43.130666,
+    "longitudine": 11.016069
+  },
+  {
+    "id": "53018",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Orbetello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G088",
+    "latitudine": 42.439647,
+    "longitudine": 11.212408
+  },
+  {
+    "id": "53019",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Pitigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G716",
+    "latitudine": 42.635318,
+    "longitudine": 11.669991
+  },
+  {
+    "id": "53020",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Roccalbegna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H417",
+    "latitudine": 42.786651,
+    "longitudine": 11.510087
+  },
+  {
+    "id": "53021",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Roccastrada",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H449",
+    "latitudine": 43.011109,
+    "longitudine": 11.167209
+  },
+  {
+    "id": "53022",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Santa Fiora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I187",
+    "latitudine": 42.83242,
+    "longitudine": 11.584614
+  },
+  {
+    "id": "53023",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Scansano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I504",
+    "latitudine": 42.686386,
+    "longitudine": 11.33392
+  },
+  {
+    "id": "53024",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Scarlino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I510",
+    "latitudine": 42.90724,
+    "longitudine": 10.851002
+  },
+  {
+    "id": "53025",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Seggiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I571",
+    "latitudine": 42.927801,
+    "longitudine": 11.55758
+  },
+  {
+    "id": "53028",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Semproniano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I601",
+    "latitudine": 42.72996,
+    "longitudine": 11.540566
+  },
+  {
+    "id": "53026",
+    "id_regione": "9",
+    "id_provincia": "53",
+    "nome": "Sorano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I841",
+    "latitudine": 42.682631,
+    "longitudine": 11.714159
+  }
+]

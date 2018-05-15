@@ -1,0 +1,692 @@
+[
+  {
+    "id": "20001",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Acquanegra sul Chiese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A038",
+    "latitudine": 45.163577,
+    "longitudine": 10.43277
+  },
+  {
+    "id": "20002",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Asola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A470",
+    "latitudine": 45.220129,
+    "longitudine": 10.413014
+  },
+  {
+    "id": "20003",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Bagnolo San Vito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A575",
+    "latitudine": 45.092303,
+    "longitudine": 10.878107
+  },
+  {
+    "id": "20004",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Bigarello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A866",
+    "latitudine": 45.202476,
+    "longitudine": 10.926173
+  },
+  {
+    "id": "20071",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Borgo Virgilio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M340",
+    "latitudine": 45.113601,
+    "longitudine": 10.782717
+  },
+  {
+    "id": "20006",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Borgofranco sul Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B013",
+    "latitudine": 45.041198,
+    "longitudine": 11.192445
+  },
+  {
+    "id": "20007",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Bozzolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B110",
+    "latitudine": 45.103606,
+    "longitudine": 10.482932
+  },
+  {
+    "id": "20008",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Canneto sull'Oglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B612",
+    "latitudine": 45.151554,
+    "longitudine": 10.38289
+  },
+  {
+    "id": "20009",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Carbonara di Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B739",
+    "latitudine": 45.037716,
+    "longitudine": 11.226521
+  },
+  {
+    "id": "20010",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Casalmoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B901",
+    "latitudine": 45.260398,
+    "longitudine": 10.405654
+  },
+  {
+    "id": "20011",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Casaloldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B907",
+    "latitudine": 45.2544,
+    "longitudine": 10.473407
+  },
+  {
+    "id": "20012",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Casalromano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B911",
+    "latitudine": 45.198403,
+    "longitudine": 10.367157
+  },
+  {
+    "id": "20014",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Castel d'Ario",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C076",
+    "latitudine": 45.188702,
+    "longitudine": 10.976023
+  },
+  {
+    "id": "20015",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Castel Goffredo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C118",
+    "latitudine": 45.29894,
+    "longitudine": 10.476779
+  },
+  {
+    "id": "20013",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Castelbelforte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C059",
+    "latitudine": 45.21502,
+    "longitudine": 10.89193
+  },
+  {
+    "id": "20016",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Castellucchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C195",
+    "latitudine": 45.152336,
+    "longitudine": 10.650047
+  },
+  {
+    "id": "20017",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Castiglione delle Stiviere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C312",
+    "latitudine": 45.387398,
+    "longitudine": 10.482958
+  },
+  {
+    "id": "20018",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Cavriana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C406",
+    "latitudine": 45.347467,
+    "longitudine": 10.602616
+  },
+  {
+    "id": "20019",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Ceresara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C502",
+    "latitudine": 45.262576,
+    "longitudine": 10.564844
+  },
+  {
+    "id": "20020",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Commessaggio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C930",
+    "latitudine": 45.035222,
+    "longitudine": 10.544238
+  },
+  {
+    "id": "20021",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Curtatone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D227",
+    "latitudine": 45.153118,
+    "longitudine": 10.714877
+  },
+  {
+    "id": "20022",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Dosolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D351",
+    "latitudine": 44.953004,
+    "longitudine": 10.634974
+  },
+  {
+    "id": "20023",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Felonica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D529",
+    "latitudine": 44.978864,
+    "longitudine": 11.353915
+  },
+  {
+    "id": "20024",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Gazoldo degli Ippoliti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D949",
+    "latitudine": 45.200487,
+    "longitudine": 10.582181
+  },
+  {
+    "id": "20025",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Gazzuolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D959",
+    "latitudine": 45.068292,
+    "longitudine": 10.582207
+  },
+  {
+    "id": "20026",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Goito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E078",
+    "latitudine": 45.251706,
+    "longitudine": 10.666083
+  },
+  {
+    "id": "20027",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Gonzaga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E089",
+    "latitudine": 44.952515,
+    "longitudine": 10.822742
+  },
+  {
+    "id": "20028",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Guidizzolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E261",
+    "latitudine": 45.320137,
+    "longitudine": 10.578176
+  },
+  {
+    "id": "20029",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Magnacavallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E818",
+    "latitudine": 45.004838,
+    "longitudine": 11.18201
+  },
+  {
+    "id": "20030",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Mantova",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E897",
+    "latitudine": 45.156417,
+    "longitudine": 10.791375
+  },
+  {
+    "id": "20031",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Marcaria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E922",
+    "latitudine": 45.119415,
+    "longitudine": 10.533891
+  },
+  {
+    "id": "20032",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Mariana Mantovana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E949",
+    "latitudine": 45.192808,
+    "longitudine": 10.487529
+  },
+  {
+    "id": "20033",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Marmirolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E962",
+    "latitudine": 45.220005,
+    "longitudine": 10.758025
+  },
+  {
+    "id": "20034",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Medole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F086",
+    "latitudine": 45.326299,
+    "longitudine": 10.51219
+  },
+  {
+    "id": "20035",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Moglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F267",
+    "latitudine": 44.933819,
+    "longitudine": 10.912078
+  },
+  {
+    "id": "20036",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Monzambano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F705",
+    "latitudine": 45.386839,
+    "longitudine": 10.693692
+  },
+  {
+    "id": "20037",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Motteggiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B012",
+    "latitudine": 45.03279,
+    "longitudine": 10.762829
+  },
+  {
+    "id": "20038",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Ostiglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G186",
+    "latitudine": 45.071407,
+    "longitudine": 11.13391
+  },
+  {
+    "id": "20039",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Pegognaga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G417",
+    "latitudine": 44.997033,
+    "longitudine": 10.85768
+  },
+  {
+    "id": "20040",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Pieve di Coriano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G633",
+    "latitudine": 45.03341,
+    "longitudine": 11.107049
+  },
+  {
+    "id": "20041",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Piubega",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G717",
+    "latitudine": 45.226218,
+    "longitudine": 10.53305
+  },
+  {
+    "id": "20042",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Poggio Rusco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G753",
+    "latitudine": 44.978137,
+    "longitudine": 11.117891
+  },
+  {
+    "id": "20043",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Pomponesco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G816",
+    "latitudine": 44.929779,
+    "longitudine": 10.597409
+  },
+  {
+    "id": "20044",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Ponti sul Mincio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G862",
+    "latitudine": 45.417292,
+    "longitudine": 10.685104
+  },
+  {
+    "id": "20045",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Porto Mantovano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G917",
+    "latitudine": 45.18944,
+    "longitudine": 10.789934
+  },
+  {
+    "id": "20046",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Quingentole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H129",
+    "latitudine": 45.036259,
+    "longitudine": 11.044924
+  },
+  {
+    "id": "20047",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Quistello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H143",
+    "latitudine": 45.009215,
+    "longitudine": 10.980518
+  },
+  {
+    "id": "20048",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Redondesco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H218",
+    "latitudine": 45.168414,
+    "longitudine": 10.51419
+  },
+  {
+    "id": "20049",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Revere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H248",
+    "latitudine": 45.054418,
+    "longitudine": 11.133106
+  },
+  {
+    "id": "20050",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Rivarolo Mantovano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H342",
+    "latitudine": 45.072059,
+    "longitudine": 10.432592
+  },
+  {
+    "id": "20051",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Rodigo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H481",
+    "latitudine": 45.198808,
+    "longitudine": 10.625472
+  },
+  {
+    "id": "20052",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Roncoferraro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H541",
+    "latitudine": 45.134777,
+    "longitudine": 10.954617
+  },
+  {
+    "id": "20053",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Roverbella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H604",
+    "latitudine": 45.266808,
+    "longitudine": 10.77001
+  },
+  {
+    "id": "20054",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Sabbioneta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H652",
+    "latitudine": 44.998985,
+    "longitudine": 10.488928
+  },
+  {
+    "id": "20055",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "San Benedetto Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H771",
+    "latitudine": 45.039114,
+    "longitudine": 10.928197
+  },
+  {
+    "id": "20056",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "San Giacomo delle Segnate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H870",
+    "latitudine": 44.97383,
+    "longitudine": 11.030064
+  },
+  {
+    "id": "20057",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "San Giorgio di Mantova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H883",
+    "latitudine": 45.159655,
+    "longitudine": 10.846754
+  },
+  {
+    "id": "20058",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "San Giovanni del Dosso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H912",
+    "latitudine": 44.968579,
+    "longitudine": 11.082211
+  },
+  {
+    "id": "20059",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "San Martino dall'Argine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I005",
+    "latitudine": 45.097812,
+    "longitudine": 10.518014
+  },
+  {
+    "id": "20060",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Schivenoglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I532",
+    "latitudine": 44.996285,
+    "longitudine": 11.070453
+  },
+  {
+    "id": "20061",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Sermide",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I632",
+    "latitudine": 45.003993,
+    "longitudine": 11.299153
+  },
+  {
+    "id": "20062",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Serravalle a Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I662",
+    "latitudine": 45.072309,
+    "longitudine": 11.099867
+  },
+  {
+    "id": "20063",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Solferino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I801",
+    "latitudine": 45.372476,
+    "longitudine": 10.566752
+  },
+  {
+    "id": "20064",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Sustinente",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L015",
+    "latitudine": 45.069478,
+    "longitudine": 11.018228
+  },
+  {
+    "id": "20065",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Suzzara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L020",
+    "latitudine": 44.991873,
+    "longitudine": 10.742497
+  },
+  {
+    "id": "20066",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Viadana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L826",
+    "latitudine": 44.928624,
+    "longitudine": 10.522915
+  },
+  {
+    "id": "20067",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Villa Poma",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F804",
+    "latitudine": 45.000367,
+    "longitudine": 11.113947
+  },
+  {
+    "id": "20068",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Villimpenta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M044",
+    "latitudine": 45.14576,
+    "longitudine": 11.031186
+  },
+  {
+    "id": "20070",
+    "id_regione": "3",
+    "id_provincia": "20",
+    "nome": "Volta Mantovana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M125",
+    "latitudine": 45.322677,
+    "longitudine": 10.659454
+  }
+]

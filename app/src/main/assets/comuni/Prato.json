@@ -1,0 +1,72 @@
+[
+  {
+    "id": "100001",
+    "id_regione": "9",
+    "id_provincia": "100",
+    "nome": "Cantagallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B626",
+    "latitudine": 44.021743,
+    "longitudine": 11.079748
+  },
+  {
+    "id": "100002",
+    "id_regione": "9",
+    "id_provincia": "100",
+    "nome": "Carmignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B794",
+    "latitudine": 43.814318,
+    "longitudine": 11.019482
+  },
+  {
+    "id": "100003",
+    "id_regione": "9",
+    "id_provincia": "100",
+    "nome": "Montemurlo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F572",
+    "latitudine": 43.926862,
+    "longitudine": 11.037207
+  },
+  {
+    "id": "100004",
+    "id_regione": "9",
+    "id_provincia": "100",
+    "nome": "Poggio a Caiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G754",
+    "latitudine": 43.81553,
+    "longitudine": 11.058277
+  },
+  {
+    "id": "100005",
+    "id_regione": "9",
+    "id_provincia": "100",
+    "nome": "Prato",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G999",
+    "latitudine": 43.877705,
+    "longitudine": 11.102228
+  },
+  {
+    "id": "100006",
+    "id_regione": "9",
+    "id_provincia": "100",
+    "nome": "Vaiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L537",
+    "latitudine": 43.967209,
+    "longitudine": 11.124032
+  },
+  {
+    "id": "100007",
+    "id_regione": "9",
+    "id_provincia": "100",
+    "nome": "Vernio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L775",
+    "latitudine": 44.047484,
+    "longitudine": 11.153135
+  }
+]

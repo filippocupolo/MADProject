@@ -1,0 +1,712 @@
+[
+  {
+    "id": "92002",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Armungia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A419",
+    "latitudine": 39.520649,
+    "longitudine": 9.378321
+  },
+  {
+    "id": "92003",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Assemini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A474",
+    "latitudine": 39.2915,
+    "longitudine": 8.997758
+  },
+  {
+    "id": "92004",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Ballao",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A597",
+    "latitudine": 39.548476,
+    "longitudine": 9.361993
+  },
+  {
+    "id": "92005",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Barrali",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A677",
+    "latitudine": 39.476114,
+    "longitudine": 9.101177
+  },
+  {
+    "id": "92008",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Burcei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B274",
+    "latitudine": 39.345498,
+    "longitudine": 9.360528
+  },
+  {
+    "id": "92009",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Cagliari",
+    "capoluogo_provincia": true,
+    "codice_catastale": "B354",
+    "latitudine": 39.223841,
+    "longitudine": 9.121661
+  },
+  {
+    "id": "92011",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Capoterra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B675",
+    "latitudine": 39.178886,
+    "longitudine": 8.970983
+  },
+  {
+    "id": "92106",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Castiadas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M288",
+    "latitudine": 39.236726,
+    "longitudine": 9.501185
+  },
+  {
+    "id": "92015",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Decimomannu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D259",
+    "latitudine": 39.311247,
+    "longitudine": 8.966219
+  },
+  {
+    "id": "92016",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Decimoputzu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D260",
+    "latitudine": 39.338415,
+    "longitudine": 8.920056
+  },
+  {
+    "id": "92017",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Dolianova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D323",
+    "latitudine": 39.377209,
+    "longitudine": 9.175792
+  },
+  {
+    "id": "92018",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Domus de Maria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D333",
+    "latitudine": 38.942504,
+    "longitudine": 8.864457
+  },
+  {
+    "id": "92020",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Donori",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D344",
+    "latitudine": 39.43131,
+    "longitudine": 9.124863
+  },
+  {
+    "id": "92108",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Elmas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D399",
+    "latitudine": 39.267963,
+    "longitudine": 9.048514
+  },
+  {
+    "id": "92110",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Escalaplano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D430",
+    "latitudine": 39.622185,
+    "longitudine": 9.34747
+  },
+  {
+    "id": "92111",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Escolca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D431",
+    "latitudine": 39.699001,
+    "longitudine": 9.119566
+  },
+  {
+    "id": "92112",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Esterzili",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D443",
+    "latitudine": 39.779612,
+    "longitudine": 9.282677
+  },
+  {
+    "id": "92113",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Gergei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D982",
+    "latitudine": 39.698283,
+    "longitudine": 9.097046
+  },
+  {
+    "id": "92024",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Gesico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D994",
+    "latitudine": 39.613225,
+    "longitudine": 9.108173
+  },
+  {
+    "id": "92027",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Goni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E084",
+    "latitudine": 39.577966,
+    "longitudine": 9.28677
+  },
+  {
+    "id": "92030",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Guamaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E234",
+    "latitudine": 39.569691,
+    "longitudine": 9.073952
+  },
+  {
+    "id": "92031",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Guasila",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E252",
+    "latitudine": 39.559452,
+    "longitudine": 9.043751
+  },
+  {
+    "id": "92114",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Isili",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E336",
+    "latitudine": 39.742187,
+    "longitudine": 9.105814
+  },
+  {
+    "id": "92036",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Mandas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E877",
+    "latitudine": 39.652415,
+    "longitudine": 9.13075
+  },
+  {
+    "id": "92037",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Maracalagonis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E903",
+    "latitudine": 39.286107,
+    "longitudine": 9.22467
+  },
+  {
+    "id": "92038",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Monastir",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F333",
+    "latitudine": 39.386602,
+    "longitudine": 9.043471
+  },
+  {
+    "id": "92109",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Monserrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F383",
+    "latitudine": 39.256019,
+    "longitudine": 9.145358
+  },
+  {
+    "id": "92039",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Muravera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F808",
+    "latitudine": 39.420927,
+    "longitudine": 9.5756
+  },
+  {
+    "id": "92115",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Nuragus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F981",
+    "latitudine": 39.777265,
+    "longitudine": 9.039647
+  },
+  {
+    "id": "92116",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Nurallao",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F982",
+    "latitudine": 39.791345,
+    "longitudine": 9.079206
+  },
+  {
+    "id": "92042",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Nuraminis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F983",
+    "latitudine": 39.441601,
+    "longitudine": 9.012723
+  },
+  {
+    "id": "92117",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Nurri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F986",
+    "latitudine": 39.709155,
+    "longitudine": 9.230552
+  },
+  {
+    "id": "92118",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Orroli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G122",
+    "latitudine": 39.693805,
+    "longitudine": 9.252588
+  },
+  {
+    "id": "92044",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Ortacesus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G133",
+    "latitudine": 39.539116,
+    "longitudine": 9.084248
+  },
+  {
+    "id": "92048",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Pimentel",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G669",
+    "latitudine": 39.487588,
+    "longitudine": 9.064886
+  },
+  {
+    "id": "92050",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Pula",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H088",
+    "latitudine": 39.012985,
+    "longitudine": 9.0014
+  },
+  {
+    "id": "92051",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Quartu Sant'Elena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H118",
+    "latitudine": 39.241349,
+    "longitudine": 9.183646
+  },
+  {
+    "id": "92105",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Quartucciu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H119",
+    "latitudine": 39.253722,
+    "longitudine": 9.174747
+  },
+  {
+    "id": "92119",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Sadali",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H659",
+    "latitudine": 39.816782,
+    "longitudine": 9.270064
+  },
+  {
+    "id": "92053",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Samatzai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H739",
+    "latitudine": 39.483451,
+    "longitudine": 9.034527
+  },
+  {
+    "id": "92054",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "San Basilio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H766",
+    "latitudine": 39.538451,
+    "longitudine": 9.197565
+  },
+  {
+    "id": "92058",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "San Nicolò Gerrei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G383",
+    "latitudine": 39.497024,
+    "longitudine": 9.306976
+  },
+  {
+    "id": "92059",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "San Sperate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I166",
+    "latitudine": 39.361019,
+    "longitudine": 9.00476
+  },
+  {
+    "id": "92064",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "San Vito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I402",
+    "latitudine": 39.436783,
+    "longitudine": 9.544328
+  },
+  {
+    "id": "92061",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Sant'Andrea Frius",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I271",
+    "latitudine": 39.476768,
+    "longitudine": 9.169911
+  },
+  {
+    "id": "92066",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Sarroch",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I443",
+    "latitudine": 39.065497,
+    "longitudine": 9.010838
+  },
+  {
+    "id": "92068",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Selargius",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I580",
+    "latitudine": 39.259677,
+    "longitudine": 9.162937
+  },
+  {
+    "id": "92069",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Selegas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I582",
+    "latitudine": 39.568245,
+    "longitudine": 9.102897
+  },
+  {
+    "id": "92070",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Senorbì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I615",
+    "latitudine": 39.533533,
+    "longitudine": 9.130396
+  },
+  {
+    "id": "92071",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Serdiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I624",
+    "latitudine": 39.373064,
+    "longitudine": 9.157212
+  },
+  {
+    "id": "92120",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Serri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I668",
+    "latitudine": 39.703319,
+    "longitudine": 9.145885
+  },
+  {
+    "id": "92074",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Sestu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I695",
+    "latitudine": 39.30079,
+    "longitudine": 9.091943
+  },
+  {
+    "id": "92075",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Settimo San Pietro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I699",
+    "latitudine": 39.293238,
+    "longitudine": 9.189505
+  },
+  {
+    "id": "92121",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Seulo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I707",
+    "latitudine": 39.870016,
+    "longitudine": 9.235615
+  },
+  {
+    "id": "92078",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Siliqua",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I734",
+    "latitudine": 39.300011,
+    "longitudine": 8.811359
+  },
+  {
+    "id": "92079",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Silius",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I735",
+    "latitudine": 39.516936,
+    "longitudine": 9.291085
+  },
+  {
+    "id": "92080",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Sinnai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I752",
+    "latitudine": 39.302879,
+    "longitudine": 9.198013
+  },
+  {
+    "id": "92081",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Siurgus Donigala",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I765",
+    "latitudine": 39.595862,
+    "longitudine": 9.183549
+  },
+  {
+    "id": "92082",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Soleminis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I797",
+    "latitudine": 39.345611,
+    "longitudine": 9.179775
+  },
+  {
+    "id": "92083",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Suelli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I995",
+    "latitudine": 39.560878,
+    "longitudine": 9.131047
+  },
+  {
+    "id": "92084",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Teulada",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L154",
+    "latitudine": 38.968814,
+    "longitudine": 8.770015
+  },
+  {
+    "id": "92088",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Ussana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L512",
+    "latitudine": 39.395235,
+    "longitudine": 9.075528
+  },
+  {
+    "id": "92090",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Uta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L521",
+    "latitudine": 39.287758,
+    "longitudine": 8.959861
+  },
+  {
+    "id": "92091",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Vallermosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L613",
+    "latitudine": 39.365263,
+    "longitudine": 8.800248
+  },
+  {
+    "id": "92099",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Villa San Pietro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I118",
+    "latitudine": 39.033945,
+    "longitudine": 8.996168
+  },
+  {
+    "id": "92122",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Villanova Tulo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L992",
+    "latitudine": 39.779225,
+    "longitudine": 9.212691
+  },
+  {
+    "id": "92097",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Villaputzu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L998",
+    "latitudine": 39.439203,
+    "longitudine": 9.576749
+  },
+  {
+    "id": "92098",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Villasalto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M016",
+    "latitudine": 39.492668,
+    "longitudine": 9.392922
+  },
+  {
+    "id": "92100",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Villasimius",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B738",
+    "latitudine": 39.145776,
+    "longitudine": 9.51699
+  },
+  {
+    "id": "92101",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Villasor",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M025",
+    "latitudine": 39.381016,
+    "longitudine": 8.93865
+  },
+  {
+    "id": "92102",
+    "id_regione": "20",
+    "id_provincia": "92",
+    "nome": "Villaspeciosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M026",
+    "latitudine": 39.313229,
+    "longitudine": 8.926604
+  }
+]

@@ -1,0 +1,232 @@
+[
+    {
+        "id": "107001",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Buggerru",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B250",
+        "latitudine": 39.399722,
+        "longitudine": 8.40243
+    },
+    {
+        "id": "107002",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Calasetta",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B383",
+        "latitudine": 39.109794,
+        "longitudine": 8.369289
+    },
+    {
+        "id": "107003",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Carbonia",
+        "capoluogo_provincia": true,
+        "codice_catastale": "B745",
+        "latitudine": 39.164428,
+        "longitudine": 8.522885
+    },
+    {
+        "id": "107004",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Carloforte",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B789",
+        "latitudine": 39.140126,
+        "longitudine": 8.302981
+    },
+    {
+        "id": "107005",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Domusnovas",
+        "capoluogo_provincia": false,
+        "codice_catastale": "D334",
+        "latitudine": 39.320952,
+        "longitudine": 8.649627
+    },
+    {
+        "id": "107006",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Fluminimaggiore",
+        "capoluogo_provincia": false,
+        "codice_catastale": "D639",
+        "latitudine": 39.43689,
+        "longitudine": 8.4975
+    },
+    {
+        "id": "107007",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Giba",
+        "capoluogo_provincia": false,
+        "codice_catastale": "E022",
+        "latitudine": 39.071528,
+        "longitudine": 8.635262
+    },
+    {
+        "id": "107008",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Gonnesa",
+        "capoluogo_provincia": false,
+        "codice_catastale": "E086",
+        "latitudine": 39.267092,
+        "longitudine": 8.471074
+    },
+    {
+        "id": "107009",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Iglesias",
+        "capoluogo_provincia": true,
+        "codice_catastale": "E281",
+        "latitudine": 39.310645,
+        "longitudine": 8.536624
+    },
+    {
+        "id": "107010",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Masainas",
+        "capoluogo_provincia": false,
+        "codice_catastale": "M270",
+        "latitudine": 39.050011,
+        "longitudine": 8.629897
+    },
+    {
+        "id": "107011",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Musei",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F822",
+        "latitudine": 39.301207,
+        "longitudine": 8.667042
+    },
+    {
+        "id": "107012",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Narcao",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F841",
+        "latitudine": 39.167219,
+        "longitudine": 8.677008
+    },
+    {
+        "id": "107013",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Nuxis",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F991",
+        "latitudine": 39.155266,
+        "longitudine": 8.742
+    },
+    {
+        "id": "107014",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Perdaxius",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G446",
+        "latitudine": 39.161969,
+        "longitudine": 8.608944
+    },
+    {
+        "id": "107015",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Piscinas",
+        "capoluogo_provincia": false,
+        "codice_catastale": "M291",
+        "latitudine": 39.077304,
+        "longitudine": 8.665286
+    },
+    {
+        "id": "107016",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Portoscuso",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G922",
+        "latitudine": 39.206621,
+        "longitudine": 8.379174
+    },
+    {
+        "id": "107017",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "San Giovanni Suergiu",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G287",
+        "latitudine": 39.112961,
+        "longitudine": 8.519521
+    },
+    {
+        "id": "107019",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Sant'Anna Arresi",
+        "capoluogo_provincia": false,
+        "codice_catastale": "M209",
+        "latitudine": 39.009694,
+        "longitudine": 8.638421
+    },
+    {
+        "id": "107020",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Sant'Antioco",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I294",
+        "latitudine": 39.068981,
+        "longitudine": 8.454395
+    },
+    {
+        "id": "107018",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Santadi",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I182",
+        "latitudine": 39.092181,
+        "longitudine": 8.715811
+    },
+    {
+        "id": "107021",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Tratalias",
+        "capoluogo_provincia": false,
+        "codice_catastale": "L337",
+        "latitudine": 39.10117,
+        "longitudine": 8.582629
+    },
+    {
+        "id": "107022",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Villamassargia",
+        "capoluogo_provincia": false,
+        "codice_catastale": "L968",
+        "latitudine": 39.277584,
+        "longitudine": 8.642631
+    },
+    {
+        "id": "107023",
+        "id_regione": "20",
+        "id_provincia": "107",
+        "nome": "Villaperuccio",
+        "capoluogo_provincia": false,
+        "codice_catastale": "M278",
+        "latitudine": 39.112678,
+        "longitudine": 8.673169
+    }
+]

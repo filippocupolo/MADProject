@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "30001",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Aiello del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A103",
+    "latitudine": 45.876064,
+    "longitudine": 13.348587
+  },
+  {
+    "id": "30002",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Amaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A254",
+    "latitudine": 46.372823,
+    "longitudine": 13.092285
+  },
+  {
+    "id": "30003",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Ampezzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A267",
+    "latitudine": 46.417335,
+    "longitudine": 12.79009
+  },
+  {
+    "id": "30004",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Aquileia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A346",
+    "latitudine": 45.768169,
+    "longitudine": 13.36872
+  },
+  {
+    "id": "30005",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Arta Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A447",
+    "latitudine": 46.47325,
+    "longitudine": 13.025671
+  },
+  {
+    "id": "30006",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Artegna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A448",
+    "latitudine": 46.23911,
+    "longitudine": 13.155558
+  },
+  {
+    "id": "30007",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Attimis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A491",
+    "latitudine": 46.188266,
+    "longitudine": 13.305888
+  },
+  {
+    "id": "30008",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Bagnaria Arsa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A553",
+    "latitudine": 45.883588,
+    "longitudine": 13.284748
+  },
+  {
+    "id": "30009",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Basiliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A700",
+    "latitudine": 46.014448,
+    "longitudine": 13.106035
+  },
+  {
+    "id": "30010",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Bertiolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A810",
+    "latitudine": 45.943896,
+    "longitudine": 13.047528
+  },
+  {
+    "id": "30011",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Bicinicco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A855",
+    "latitudine": 45.93173,
+    "longitudine": 13.250274
+  },
+  {
+    "id": "30012",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Bordano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A983",
+    "latitudine": 46.315386,
+    "longitudine": 13.104498
+  },
+  {
+    "id": "30013",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Buja",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B259",
+    "latitudine": 46.215271,
+    "longitudine": 13.111245
+  },
+  {
+    "id": "30014",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Buttrio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B309",
+    "latitudine": 46.019099,
+    "longitudine": 13.339836
+  },
+  {
+    "id": "30015",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Camino al Tagliamento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B483",
+    "latitudine": 45.929489,
+    "longitudine": 12.944641
+  },
+  {
+    "id": "30016",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Campoformido",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B536",
+    "latitudine": 46.020164,
+    "longitudine": 13.162698
+  },
+  {
+    "id": "30138",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Campolongo Tapogliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M311",
+    "latitudine": 45.865945,
+    "longitudine": 13.401429
+  },
+  {
+    "id": "30018",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Carlino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B788",
+    "latitudine": 45.802217,
+    "longitudine": 13.188164
+  },
+  {
+    "id": "30019",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Cassacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B994",
+    "latitudine": 46.174468,
+    "longitudine": 13.184169
+  },
+  {
+    "id": "30020",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Castions di Strada",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C327",
+    "latitudine": 45.908085,
+    "longitudine": 13.18338
+  },
+  {
+    "id": "30021",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Cavazzo Carnico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C389",
+    "latitudine": 46.368282,
+    "longitudine": 13.039081
+  },
+  {
+    "id": "30022",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Cercivento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C494",
+    "latitudine": 46.528011,
+    "longitudine": 12.987168
+  },
+  {
+    "id": "30023",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Cervignano del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C556",
+    "latitudine": 45.821617,
+    "longitudine": 13.333381
+  },
+  {
+    "id": "30024",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Chiopris-Viscone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C641",
+    "latitudine": 45.925184,
+    "longitudine": 13.391273
+  },
+  {
+    "id": "30025",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Chiusaforte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C656",
+    "latitudine": 46.408839,
+    "longitudine": 13.311317
+  },
+  {
+    "id": "30026",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Cividale del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C758",
+    "latitudine": 46.096171,
+    "longitudine": 13.429201
+  },
+  {
+    "id": "30027",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Codroipo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C817",
+    "latitudine": 45.961394,
+    "longitudine": 12.976781
+  },
+  {
+    "id": "30028",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Colloredo di Monte Albano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C885",
+    "latitudine": 46.163967,
+    "longitudine": 13.136427
+  },
+  {
+    "id": "30029",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Comeglians",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C918",
+    "latitudine": 46.516445,
+    "longitudine": 12.866624
+  },
+  {
+    "id": "30030",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Corno di Rosazzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D027",
+    "latitudine": 45.991558,
+    "longitudine": 13.441593
+  },
+  {
+    "id": "30031",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Coseano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D085",
+    "latitudine": 46.096257,
+    "longitudine": 13.01583
+  },
+  {
+    "id": "30032",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Dignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D300",
+    "latitudine": 46.085532,
+    "longitudine": 12.937452
+  },
+  {
+    "id": "30033",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Dogna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D316",
+    "latitudine": 46.446746,
+    "longitudine": 13.314638
+  },
+  {
+    "id": "30034",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Drenchia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D366",
+    "latitudine": 46.183573,
+    "longitudine": 13.635816
+  },
+  {
+    "id": "30035",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Enemonzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D408",
+    "latitudine": 46.409575,
+    "longitudine": 12.878567
+  },
+  {
+    "id": "30036",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Faedis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D455",
+    "latitudine": 46.151083,
+    "longitudine": 13.348346
+  },
+  {
+    "id": "30037",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Fagagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D461",
+    "latitudine": 46.117736,
+    "longitudine": 13.08185
+  },
+  {
+    "id": "30038",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Fiumicello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D627",
+    "latitudine": 45.777945,
+    "longitudine": 13.41055
+  },
+  {
+    "id": "30039",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Flaibano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D630",
+    "latitudine": 46.057844,
+    "longitudine": 12.983633
+  },
+  {
+    "id": "30137",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Forgaria nel Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D700",
+    "latitudine": 46.224893,
+    "longitudine": 12.96518
+  },
+  {
+    "id": "30040",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Forni Avoltri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D718",
+    "latitudine": 46.584885,
+    "longitudine": 12.778166
+  },
+  {
+    "id": "30041",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Forni di Sopra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D719",
+    "latitudine": 46.421734,
+    "longitudine": 12.582437
+  },
+  {
+    "id": "30042",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Forni di Sotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D720",
+    "latitudine": 46.392673,
+    "longitudine": 12.669694
+  },
+  {
+    "id": "30043",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Gemona del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D962",
+    "latitudine": 46.275267,
+    "longitudine": 13.142677
+  },
+  {
+    "id": "30044",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Gonars",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E083",
+    "latitudine": 45.896546,
+    "longitudine": 13.237514
+  },
+  {
+    "id": "30045",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Grimacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E179",
+    "latitudine": 46.157062,
+    "longitudine": 13.586763
+  },
+  {
+    "id": "30046",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Latisana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E473",
+    "latitudine": 45.782291,
+    "longitudine": 12.994342
+  },
+  {
+    "id": "30047",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Lauco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E476",
+    "latitudine": 46.423395,
+    "longitudine": 12.932963
+  },
+  {
+    "id": "30048",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Lestizza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E553",
+    "latitudine": 45.955222,
+    "longitudine": 13.141879
+  },
+  {
+    "id": "30049",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Lignano Sabbiadoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E584",
+    "latitudine": 45.668555,
+    "longitudine": 13.104086
+  },
+  {
+    "id": "30050",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Ligosullo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E586",
+    "latitudine": 46.539706,
+    "longitudine": 13.076066
+  },
+  {
+    "id": "30051",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Lusevera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E760",
+    "latitudine": 46.274734,
+    "longitudine": 13.269733
+  },
+  {
+    "id": "30052",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Magnano in Riviera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E820",
+    "latitudine": 46.231127,
+    "longitudine": 13.176872
+  },
+  {
+    "id": "30053",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Majano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E833",
+    "latitudine": 46.184726,
+    "longitudine": 13.0685
+  },
+  {
+    "id": "30054",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Malborghetto Valbruna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E847",
+    "latitudine": 46.507204,
+    "longitudine": 13.434814
+  },
+  {
+    "id": "30055",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Manzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E899",
+    "latitudine": 45.988842,
+    "longitudine": 13.376344
+  },
+  {
+    "id": "30056",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Marano Lagunare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E910",
+    "latitudine": 45.764147,
+    "longitudine": 13.16688
+  },
+  {
+    "id": "30057",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Martignacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E982",
+    "latitudine": 46.096781,
+    "longitudine": 13.134248
+  },
+  {
+    "id": "30058",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Mereto di Tomba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F144",
+    "latitudine": 46.049759,
+    "longitudine": 13.041048
+  },
+  {
+    "id": "30059",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Moggio Udinese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F266",
+    "latitudine": 46.409984,
+    "longitudine": 13.197011
+  },
+  {
+    "id": "30060",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Moimacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F275",
+    "latitudine": 46.091326,
+    "longitudine": 13.38183
+  },
+  {
+    "id": "30061",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Montenars",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F574",
+    "latitudine": 46.253523,
+    "longitudine": 13.166354
+  },
+  {
+    "id": "30062",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Mortegliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F756",
+    "latitudine": 45.944829,
+    "longitudine": 13.172422
+  },
+  {
+    "id": "30063",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Moruzzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F760",
+    "latitudine": 46.119754,
+    "longitudine": 13.123248
+  },
+  {
+    "id": "30064",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Muzzana del Turgnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F832",
+    "latitudine": 45.81866,
+    "longitudine": 13.125983
+  },
+  {
+    "id": "30065",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Nimis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F898",
+    "latitudine": 46.197184,
+    "longitudine": 13.262912
+  },
+  {
+    "id": "30066",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Osoppo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G163",
+    "latitudine": 46.25822,
+    "longitudine": 13.078799
+  },
+  {
+    "id": "30067",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Ovaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G198",
+    "latitudine": 46.480746,
+    "longitudine": 12.866844
+  },
+  {
+    "id": "30068",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Pagnacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G238",
+    "latitudine": 46.124403,
+    "longitudine": 13.186538
+  },
+  {
+    "id": "30069",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Palazzolo dello Stella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G268",
+    "latitudine": 45.803508,
+    "longitudine": 13.080766
+  },
+  {
+    "id": "30070",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Palmanova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G284",
+    "latitudine": 45.909424,
+    "longitudine": 13.305729
+  },
+  {
+    "id": "30071",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Paluzza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G300",
+    "latitudine": 46.529479,
+    "longitudine": 13.019768
+  },
+  {
+    "id": "30072",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Pasian di Prato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G352",
+    "latitudine": 46.050127,
+    "longitudine": 13.187472
+  },
+  {
+    "id": "30073",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Paularo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G381",
+    "latitudine": 46.531054,
+    "longitudine": 13.115538
+  },
+  {
+    "id": "30074",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Pavia di Udine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G389",
+    "latitudine": 45.996285,
+    "longitudine": 13.302528
+  },
+  {
+    "id": "30075",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Pocenia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G743",
+    "latitudine": 45.836312,
+    "longitudine": 13.099256
+  },
+  {
+    "id": "30076",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Pontebba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G831",
+    "latitudine": 46.506451,
+    "longitudine": 13.306246
+  },
+  {
+    "id": "30077",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Porpetto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G891",
+    "latitudine": 45.862069,
+    "longitudine": 13.223621
+  },
+  {
+    "id": "30078",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Povoletto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G949",
+    "latitudine": 46.118187,
+    "longitudine": 13.298147
+  },
+  {
+    "id": "30079",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Pozzuolo del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G966",
+    "latitudine": 45.986291,
+    "longitudine": 13.195687
+  },
+  {
+    "id": "30080",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Pradamano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G969",
+    "latitudine": 46.032482,
+    "longitudine": 13.302946
+  },
+  {
+    "id": "30081",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Prato Carnico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H002",
+    "latitudine": 46.520063,
+    "longitudine": 12.75011
+  },
+  {
+    "id": "30082",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Precenicco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H014",
+    "latitudine": 45.787604,
+    "longitudine": 13.077459
+  },
+  {
+    "id": "30083",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Premariacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H029",
+    "latitudine": 46.057393,
+    "longitudine": 13.394197
+  },
+  {
+    "id": "30084",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Preone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H038",
+    "latitudine": 46.394257,
+    "longitudine": 12.865679
+  },
+  {
+    "id": "30085",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Prepotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H040",
+    "latitudine": 46.046026,
+    "longitudine": 13.480235
+  },
+  {
+    "id": "30086",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Pulfero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H089",
+    "latitudine": 46.174177,
+    "longitudine": 13.481946
+  },
+  {
+    "id": "30087",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Ragogna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H161",
+    "latitudine": 46.179153,
+    "longitudine": 12.977905
+  },
+  {
+    "id": "30088",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Ravascletto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H196",
+    "latitudine": 46.52509,
+    "longitudine": 12.924046
+  },
+  {
+    "id": "30089",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Raveo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H200",
+    "latitudine": 46.434332,
+    "longitudine": 12.871168
+  },
+  {
+    "id": "30090",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Reana del Rojale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H206",
+    "latitudine": 46.141874,
+    "longitudine": 13.237619
+  },
+  {
+    "id": "30091",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Remanzacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H229",
+    "latitudine": 46.085167,
+    "longitudine": 13.321004
+  },
+  {
+    "id": "30092",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Resia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H242",
+    "latitudine": 46.355998,
+    "longitudine": 13.29449
+  },
+  {
+    "id": "30093",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Resiutta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H244",
+    "latitudine": 46.393133,
+    "longitudine": 13.218164
+  },
+  {
+    "id": "30094",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Rigolato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H289",
+    "latitudine": 46.552131,
+    "longitudine": 12.851897
+  },
+  {
+    "id": "30095",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Rive d'Arcano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H347",
+    "latitudine": 46.125476,
+    "longitudine": 13.02461
+  },
+  {
+    "id": "30188",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Rivignano Teor",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M317",
+    "latitudine": 45.877927,
+    "longitudine": 13.040156
+  },
+  {
+    "id": "30097",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Ronchis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H533",
+    "latitudine": 45.80797,
+    "longitudine": 12.995937
+  },
+  {
+    "id": "30098",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Ruda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H629",
+    "latitudine": 45.8383,
+    "longitudine": 13.401582
+  },
+  {
+    "id": "30099",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "San Daniele del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H816",
+    "latitudine": 46.157858,
+    "longitudine": 13.010011
+  },
+  {
+    "id": "30100",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "San Giorgio di Nogaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H895",
+    "latitudine": 45.832602,
+    "longitudine": 13.207705
+  },
+  {
+    "id": "30101",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "San Giovanni al Natisone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H906",
+    "latitudine": 45.979008,
+    "longitudine": 13.396816
+  },
+  {
+    "id": "30102",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "San Leonardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H951",
+    "latitudine": 46.098008,
+    "longitudine": 12.682433
+  },
+  {
+    "id": "30103",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "San Pietro al Natisone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I092",
+    "latitudine": 46.125529,
+    "longitudine": 13.483926
+  },
+  {
+    "id": "30105",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "San Vito al Torre",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I404",
+    "latitudine": 45.895321,
+    "longitudine": 13.371934
+  },
+  {
+    "id": "30106",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "San Vito di Fagagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I405",
+    "latitudine": 46.091042,
+    "longitudine": 13.067278
+  },
+  {
+    "id": "30104",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Santa Maria la Longa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I248",
+    "latitudine": 45.933186,
+    "longitudine": 13.291548
+  },
+  {
+    "id": "30107",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Sauris",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I464",
+    "latitudine": 46.466675,
+    "longitudine": 12.697044
+  },
+  {
+    "id": "30108",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Savogna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I478",
+    "latitudine": 46.160432,
+    "longitudine": 13.533196
+  },
+  {
+    "id": "30109",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Sedegliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I562",
+    "latitudine": 46.013716,
+    "longitudine": 12.975976
+  },
+  {
+    "id": "30110",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Socchieve",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I777",
+    "latitudine": 46.396722,
+    "longitudine": 12.848256
+  },
+  {
+    "id": "30111",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Stregna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I974",
+    "latitudine": 46.127006,
+    "longitudine": 13.577371
+  },
+  {
+    "id": "30112",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Sutrio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L018",
+    "latitudine": 46.511772,
+    "longitudine": 12.98981
+  },
+  {
+    "id": "30113",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Taipana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G736",
+    "latitudine": 46.249628,
+    "longitudine": 13.341608
+  },
+  {
+    "id": "30114",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Talmassons",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L039",
+    "latitudine": 45.930543,
+    "longitudine": 13.119952
+  },
+  {
+    "id": "30116",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Tarcento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L050",
+    "latitudine": 46.215048,
+    "longitudine": 13.212941
+  },
+  {
+    "id": "30117",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Tarvisio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L057",
+    "latitudine": 46.504434,
+    "longitudine": 13.579959
+  },
+  {
+    "id": "30118",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Tavagnacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L065",
+    "latitudine": 46.127465,
+    "longitudine": 13.210952
+  },
+  {
+    "id": "30120",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Terzo d'Aquileia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L144",
+    "latitudine": 45.798952,
+    "longitudine": 13.351341
+  },
+  {
+    "id": "30121",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Tolmezzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L195",
+    "latitudine": 46.403496,
+    "longitudine": 13.018212
+  },
+  {
+    "id": "30122",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Torreano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L246",
+    "latitudine": 46.1231,
+    "longitudine": 13.423832
+  },
+  {
+    "id": "30123",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Torviscosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L309",
+    "latitudine": 45.821814,
+    "longitudine": 13.274633
+  },
+  {
+    "id": "30124",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Trasaghis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L335",
+    "latitudine": 46.282599,
+    "longitudine": 13.074516
+  },
+  {
+    "id": "30125",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Treppo Carnico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L381",
+    "latitudine": 46.534286,
+    "longitudine": 13.04459
+  },
+  {
+    "id": "30126",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Treppo Grande",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L382",
+    "latitudine": 46.190425,
+    "longitudine": 13.157504
+  },
+  {
+    "id": "30127",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Tricesimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L421",
+    "latitudine": 46.16192,
+    "longitudine": 13.210492
+  },
+  {
+    "id": "30128",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Trivignano Udinese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L438",
+    "latitudine": 45.943274,
+    "longitudine": 13.337552
+  },
+  {
+    "id": "30129",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Udine",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L483",
+    "latitudine": 46.071067,
+    "longitudine": 13.234579
+  },
+  {
+    "id": "30130",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Varmo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L686",
+    "latitudine": 45.88729,
+    "longitudine": 12.989709
+  },
+  {
+    "id": "30131",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Venzone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L743",
+    "latitudine": 46.333802,
+    "longitudine": 13.13928
+  },
+  {
+    "id": "30132",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Verzegnis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L801",
+    "latitudine": 46.389562,
+    "longitudine": 12.993483
+  },
+  {
+    "id": "30133",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Villa Santina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L909",
+    "latitudine": 46.416869,
+    "longitudine": 12.920924
+  },
+  {
+    "id": "30134",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Villa Vicentina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M034",
+    "latitudine": 45.813704,
+    "longitudine": 13.395283
+  },
+  {
+    "id": "30135",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Visco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M073",
+    "latitudine": 45.892315,
+    "longitudine": 13.346233
+  },
+  {
+    "id": "30136",
+    "id_regione": "6",
+    "id_provincia": "30",
+    "nome": "Zuglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M200",
+    "latitudine": 46.459431,
+    "longitudine": 13.026531
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "id": "34001",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Albareto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A138",
+    "latitudine": 44.445527,
+    "longitudine": 9.699566
+  },
+  {
+    "id": "34002",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Bardi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A646",
+    "latitudine": 44.633691,
+    "longitudine": 9.731369
+  },
+  {
+    "id": "34003",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Bedonia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A731",
+    "latitudine": 44.509301,
+    "longitudine": 9.632699
+  },
+  {
+    "id": "34004",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Berceto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A788",
+    "latitudine": 44.514311,
+    "longitudine": 9.990054
+  },
+  {
+    "id": "34005",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Bore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A987",
+    "latitudine": 44.717847,
+    "longitudine": 9.791866
+  },
+  {
+    "id": "34006",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Borgo Val di Taro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B042",
+    "latitudine": 44.489974,
+    "longitudine": 9.76824
+  },
+  {
+    "id": "34007",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Busseto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B293",
+    "latitudine": 44.978989,
+    "longitudine": 10.039052
+  },
+  {
+    "id": "34008",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Calestano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B408",
+    "latitudine": 44.59777,
+    "longitudine": 10.121954
+  },
+  {
+    "id": "34009",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Collecchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C852",
+    "latitudine": 44.752004,
+    "longitudine": 10.21645
+  },
+  {
+    "id": "34010",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Colorno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C904",
+    "latitudine": 44.931881,
+    "longitudine": 10.377692
+  },
+  {
+    "id": "34011",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Compiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C934",
+    "latitudine": 44.496454,
+    "longitudine": 9.661437
+  },
+  {
+    "id": "34012",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Corniglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D026",
+    "latitudine": 44.477145,
+    "longitudine": 10.08552
+  },
+  {
+    "id": "34013",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Felino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D526",
+    "latitudine": 44.693583,
+    "longitudine": 10.241981
+  },
+  {
+    "id": "34014",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Fidenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B034",
+    "latitudine": 44.866279,
+    "longitudine": 10.061595
+  },
+  {
+    "id": "34015",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Fontanellato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D673",
+    "latitudine": 44.880913,
+    "longitudine": 10.171959
+  },
+  {
+    "id": "34016",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Fontevivo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D685",
+    "latitudine": 44.855385,
+    "longitudine": 10.176162
+  },
+  {
+    "id": "34017",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Fornovo di Taro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D728",
+    "latitudine": 44.695968,
+    "longitudine": 10.105875
+  },
+  {
+    "id": "34018",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Langhirano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E438",
+    "latitudine": 44.61455,
+    "longitudine": 10.268695
+  },
+  {
+    "id": "34019",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Lesignano de' Bagni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E547",
+    "latitudine": 44.642976,
+    "longitudine": 10.299399
+  },
+  {
+    "id": "34020",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Medesano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F082",
+    "latitudine": 44.756265,
+    "longitudine": 10.140725
+  },
+  {
+    "id": "34021",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Mezzani",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F174",
+    "latitudine": 44.921852,
+    "longitudine": 10.441904
+  },
+  {
+    "id": "34022",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Monchio delle Corti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F340",
+    "latitudine": 44.414476,
+    "longitudine": 10.122402
+  },
+  {
+    "id": "34023",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Montechiarugolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F473",
+    "latitudine": 44.693291,
+    "longitudine": 10.420673
+  },
+  {
+    "id": "34024",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Neviano degli Arduini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F882",
+    "latitudine": 44.583378,
+    "longitudine": 10.316495
+  },
+  {
+    "id": "34025",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Noceto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F914",
+    "latitudine": 44.809222,
+    "longitudine": 10.179127
+  },
+  {
+    "id": "34026",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Palanzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G255",
+    "latitudine": 44.436788,
+    "longitudine": 10.198312
+  },
+  {
+    "id": "34027",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Parma",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G337",
+    "latitudine": 44.801485,
+    "longitudine": 10.327904
+  },
+  {
+    "id": "34028",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Pellegrino Parmense",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G424",
+    "latitudine": 44.73444,
+    "longitudine": 9.92569
+  },
+  {
+    "id": "34050",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Polesine Zibello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M367",
+    "latitudine": 44.993984,
+    "longitudine": 10.121285
+  },
+  {
+    "id": "34030",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Roccabianca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H384",
+    "latitudine": 45.006726,
+    "longitudine": 10.216608
+  },
+  {
+    "id": "34031",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Sala Baganza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H682",
+    "latitudine": 44.714291,
+    "longitudine": 10.225103
+  },
+  {
+    "id": "34032",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Salsomaggiore Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H720",
+    "latitudine": 44.818312,
+    "longitudine": 9.982512
+  },
+  {
+    "id": "34033",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "San Secondo Parmense",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I153",
+    "latitudine": 44.922757,
+    "longitudine": 10.228657
+  },
+  {
+    "id": "34049",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Sissa Trecasali",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M325",
+    "latitudine": 44.962074,
+    "longitudine": 10.265706
+  },
+  {
+    "id": "34035",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Solignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I803",
+    "latitudine": 44.615392,
+    "longitudine": 9.979096
+  },
+  {
+    "id": "34036",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Soragna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I840",
+    "latitudine": 44.927302,
+    "longitudine": 10.126673
+  },
+  {
+    "id": "34037",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Sorbolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I845",
+    "latitudine": 44.849318,
+    "longitudine": 10.449758
+  },
+  {
+    "id": "34038",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Terenzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E548",
+    "latitudine": 44.610308,
+    "longitudine": 10.090104
+  },
+  {
+    "id": "34039",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Tizzano Val Parma",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L183",
+    "latitudine": 44.523853,
+    "longitudine": 10.200901
+  },
+  {
+    "id": "34040",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Tornolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L229",
+    "latitudine": 44.485379,
+    "longitudine": 9.629041
+  },
+  {
+    "id": "34041",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Torrile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L299",
+    "latitudine": 44.921959,
+    "longitudine": 10.326934
+  },
+  {
+    "id": "34042",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Traversetolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L346",
+    "latitudine": 44.639223,
+    "longitudine": 10.381755
+  },
+  {
+    "id": "34044",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Valmozzola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L641",
+    "latitudine": 44.568864,
+    "longitudine": 9.882883
+  },
+  {
+    "id": "34045",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Varano de' Melegari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L672",
+    "latitudine": 44.686002,
+    "longitudine": 10.016304
+  },
+  {
+    "id": "34046",
+    "id_regione": "8",
+    "id_provincia": "34",
+    "nome": "Varsi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L689",
+    "latitudine": 44.661308,
+    "longitudine": 9.848843
+  }
+]

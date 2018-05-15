@@ -1,0 +1,332 @@
+[
+  {
+    "id": "55001",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Acquasparta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A045",
+    "latitudine": 42.690841,
+    "longitudine": 12.541873
+  },
+  {
+    "id": "55002",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Allerona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A207",
+    "latitudine": 42.812556,
+    "longitudine": 11.973853
+  },
+  {
+    "id": "55003",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Alviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A242",
+    "latitudine": 42.591092,
+    "longitudine": 12.297819
+  },
+  {
+    "id": "55004",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Amelia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A262",
+    "latitudine": 42.556772,
+    "longitudine": 12.414636
+  },
+  {
+    "id": "55005",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Arrone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A439",
+    "latitudine": 42.584025,
+    "longitudine": 12.768178
+  },
+  {
+    "id": "55006",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Attigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A490",
+    "latitudine": 42.516839,
+    "longitudine": 12.292242
+  },
+  {
+    "id": "55033",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Avigliano Umbro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M258",
+    "latitudine": 42.651604,
+    "longitudine": 12.429611
+  },
+  {
+    "id": "55007",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Baschi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A691",
+    "latitudine": 42.669387,
+    "longitudine": 12.216308
+  },
+  {
+    "id": "55008",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Calvi dell'Umbria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B446",
+    "latitudine": 42.403861,
+    "longitudine": 12.569369
+  },
+  {
+    "id": "55009",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Castel Giorgio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C117",
+    "latitudine": 42.70782,
+    "longitudine": 11.979397
+  },
+  {
+    "id": "55010",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Castel Viscardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C289",
+    "latitudine": 42.755699,
+    "longitudine": 12.002735
+  },
+  {
+    "id": "55011",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Fabro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D454",
+    "latitudine": 42.87251,
+    "longitudine": 12.016545
+  },
+  {
+    "id": "55012",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Ferentillo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D538",
+    "latitudine": 42.620443,
+    "longitudine": 12.784383
+  },
+  {
+    "id": "55013",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Ficulle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D570",
+    "latitudine": 42.836976,
+    "longitudine": 12.065611
+  },
+  {
+    "id": "55014",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Giove",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E045",
+    "latitudine": 42.510698,
+    "longitudine": 12.334255
+  },
+  {
+    "id": "55015",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Guardea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E241",
+    "latitudine": 42.62764,
+    "longitudine": 12.296279
+  },
+  {
+    "id": "55016",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Lugnano in Teverina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E729",
+    "latitudine": 42.575165,
+    "longitudine": 12.332085
+  },
+  {
+    "id": "55017",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Montecastrilli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F457",
+    "latitudine": 42.646012,
+    "longitudine": 12.482361
+  },
+  {
+    "id": "55018",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Montecchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F462",
+    "latitudine": 42.662525,
+    "longitudine": 12.287121
+  },
+  {
+    "id": "55019",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Montefranco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F510",
+    "latitudine": 42.597856,
+    "longitudine": 12.765172
+  },
+  {
+    "id": "55020",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Montegabbione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F513",
+    "latitudine": 42.922441,
+    "longitudine": 12.091175
+  },
+  {
+    "id": "55021",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Monteleone d'Orvieto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F543",
+    "latitudine": 42.921443,
+    "longitudine": 12.053923
+  },
+  {
+    "id": "55022",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Narni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F844",
+    "latitudine": 42.517602,
+    "longitudine": 12.51563
+  },
+  {
+    "id": "55023",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Orvieto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G148",
+    "latitudine": 42.718507,
+    "longitudine": 12.110745
+  },
+  {
+    "id": "55024",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Otricoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G189",
+    "latitudine": 42.422032,
+    "longitudine": 12.47766
+  },
+  {
+    "id": "55025",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Parrano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G344",
+    "latitudine": 42.863716,
+    "longitudine": 12.106103
+  },
+  {
+    "id": "55026",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Penna in Teverina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G432",
+    "latitudine": 42.493321,
+    "longitudine": 12.354819
+  },
+  {
+    "id": "55027",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Polino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G790",
+    "latitudine": 42.583438,
+    "longitudine": 12.844418
+  },
+  {
+    "id": "55028",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Porano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G881",
+    "latitudine": 42.686878,
+    "longitudine": 12.102811
+  },
+  {
+    "id": "55029",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "San Gemini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H857",
+    "latitudine": 42.611675,
+    "longitudine": 12.547853
+  },
+  {
+    "id": "55030",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "San Venanzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I381",
+    "latitudine": 42.868647,
+    "longitudine": 12.269217
+  },
+  {
+    "id": "55031",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Stroncone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I981",
+    "latitudine": 42.499741,
+    "longitudine": 12.663682
+  },
+  {
+    "id": "55032",
+    "id_regione": "10",
+    "id_provincia": "55",
+    "nome": "Terni",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L117",
+    "latitudine": 42.563617,
+    "longitudine": 12.64266
+  }
+]

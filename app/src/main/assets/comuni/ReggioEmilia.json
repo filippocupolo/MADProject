@@ -1,0 +1,422 @@
+[
+  {
+    "id": "35001",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Albinea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A162",
+    "latitudine": 44.619854,
+    "longitudine": 10.602593
+  },
+  {
+    "id": "35002",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Bagnolo in Piano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A573",
+    "latitudine": 44.763813,
+    "longitudine": 10.673365
+  },
+  {
+    "id": "35003",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Baiso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A586",
+    "latitudine": 44.495737,
+    "longitudine": 10.599595
+  },
+  {
+    "id": "35004",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Bibbiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A850",
+    "latitudine": 44.664164,
+    "longitudine": 10.473589
+  },
+  {
+    "id": "35005",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Boretto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A988",
+    "latitudine": 44.900947,
+    "longitudine": 10.557896
+  },
+  {
+    "id": "35006",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Brescello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B156",
+    "latitudine": 44.898769,
+    "longitudine": 10.518078
+  },
+  {
+    "id": "35008",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Cadelbosco di Sopra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B328",
+    "latitudine": 44.762406,
+    "longitudine": 10.600387
+  },
+  {
+    "id": "35009",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Campagnola Emilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B499",
+    "latitudine": 44.8411,
+    "longitudine": 10.759347
+  },
+  {
+    "id": "35010",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Campegine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B502",
+    "latitudine": 44.784029,
+    "longitudine": 10.537148
+  },
+  {
+    "id": "35018",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Canossa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C669",
+    "latitudine": 44.575938,
+    "longitudine": 10.45557
+  },
+  {
+    "id": "35011",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Carpineti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B825",
+    "latitudine": 44.454716,
+    "longitudine": 10.519166
+  },
+  {
+    "id": "35012",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Casalgrande",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B893",
+    "latitudine": 44.588001,
+    "longitudine": 10.737545
+  },
+  {
+    "id": "35013",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Casina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B967",
+    "latitudine": 44.51288,
+    "longitudine": 10.502384
+  },
+  {
+    "id": "35014",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Castellarano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C141",
+    "latitudine": 44.513251,
+    "longitudine": 10.733162
+  },
+  {
+    "id": "35015",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Castelnovo di Sotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C218",
+    "latitudine": 44.813076,
+    "longitudine": 10.562265
+  },
+  {
+    "id": "35016",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Castelnovo ne' Monti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C219",
+    "latitudine": 44.433842,
+    "longitudine": 10.400609
+  },
+  {
+    "id": "35017",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Cavriago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C405",
+    "latitudine": 44.692348,
+    "longitudine": 10.523885
+  },
+  {
+    "id": "35020",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Correggio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D037",
+    "latitudine": 44.770857,
+    "longitudine": 10.781908
+  },
+  {
+    "id": "35021",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Fabbrico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D450",
+    "latitudine": 44.870434,
+    "longitudine": 10.809467
+  },
+  {
+    "id": "35022",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Gattatico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D934",
+    "latitudine": 44.794098,
+    "longitudine": 10.445497
+  },
+  {
+    "id": "35023",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Gualtieri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E232",
+    "latitudine": 44.900488,
+    "longitudine": 10.631376
+  },
+  {
+    "id": "35024",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Guastalla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E253",
+    "latitudine": 44.921235,
+    "longitudine": 10.654396
+  },
+  {
+    "id": "35026",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Luzzara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E772",
+    "latitudine": 44.960858,
+    "longitudine": 10.688769
+  },
+  {
+    "id": "35027",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Montecchio Emilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F463",
+    "latitudine": 44.698402,
+    "longitudine": 10.448505
+  },
+  {
+    "id": "35028",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Novellara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F960",
+    "latitudine": 44.849296,
+    "longitudine": 10.731754
+  },
+  {
+    "id": "35029",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Poviglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G947",
+    "latitudine": 44.842752,
+    "longitudine": 10.541068
+  },
+  {
+    "id": "35030",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Quattro Castella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H122",
+    "latitudine": 44.636398,
+    "longitudine": 10.472768
+  },
+  {
+    "id": "35033",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Reggio nell'Emilia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "H223",
+    "latitudine": 44.698993,
+    "longitudine": 10.629686
+  },
+  {
+    "id": "35032",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Reggiolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H225",
+    "latitudine": 44.917759,
+    "longitudine": 10.802527
+  },
+  {
+    "id": "35034",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Rio Saliceto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H298",
+    "latitudine": 44.8106,
+    "longitudine": 10.804409
+  },
+  {
+    "id": "35035",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Rolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H500",
+    "latitudine": 44.886896,
+    "longitudine": 10.856463
+  },
+  {
+    "id": "35036",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Rubiera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H628",
+    "latitudine": 44.652983,
+    "longitudine": 10.780638
+  },
+  {
+    "id": "35037",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "San Martino in Rio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I011",
+    "latitudine": 44.732602,
+    "longitudine": 10.787673
+  },
+  {
+    "id": "35038",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "San Polo d'Enza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I123",
+    "latitudine": 44.625863,
+    "longitudine": 10.422137
+  },
+  {
+    "id": "35039",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Sant'Ilario d'Enza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I342",
+    "latitudine": 44.760691,
+    "longitudine": 10.4512
+  },
+  {
+    "id": "35040",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Scandiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I496",
+    "latitudine": 44.598234,
+    "longitudine": 10.690927
+  },
+  {
+    "id": "35041",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Toano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L184",
+    "latitudine": 44.376222,
+    "longitudine": 10.562485
+  },
+  {
+    "id": "35046",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Ventasso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M364",
+    "latitudine": 44.386884,
+    "longitudine": 10.274735
+  },
+  {
+    "id": "35042",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Vetto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L815",
+    "latitudine": 44.483838,
+    "longitudine": 10.33834
+  },
+  {
+    "id": "35043",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Vezzano sul Crostolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L820",
+    "latitudine": 44.601992,
+    "longitudine": 10.546817
+  },
+  {
+    "id": "35044",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Viano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L831",
+    "latitudine": 44.543414,
+    "longitudine": 10.620756
+  },
+  {
+    "id": "35045",
+    "id_regione": "8",
+    "id_provincia": "35",
+    "nome": "Villa Minozzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L969",
+    "latitudine": 44.36487,
+    "longitudine": 10.466681
+  }
+]

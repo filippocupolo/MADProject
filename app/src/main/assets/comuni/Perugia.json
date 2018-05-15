@@ -1,0 +1,592 @@
+[
+  {
+    "id": "54001",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Assisi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A475",
+    "latitudine": 43.070702,
+    "longitudine": 12.619597
+  },
+  {
+    "id": "54002",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Bastia Umbra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A710",
+    "latitudine": 43.069059,
+    "longitudine": 12.549245
+  },
+  {
+    "id": "54003",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Bettona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A832",
+    "latitudine": 43.011556,
+    "longitudine": 12.486327
+  },
+  {
+    "id": "54004",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Bevagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A835",
+    "latitudine": 42.937286,
+    "longitudine": 12.609268
+  },
+  {
+    "id": "54005",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Campello sul Clitunno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B504",
+    "latitudine": 42.830001,
+    "longitudine": 12.769247
+  },
+  {
+    "id": "54006",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Cannara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B609",
+    "latitudine": 42.991944,
+    "longitudine": 12.582354
+  },
+  {
+    "id": "54007",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Cascia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B948",
+    "latitudine": 42.716923,
+    "longitudine": 13.011907
+  },
+  {
+    "id": "54008",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Castel Ritaldi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C252",
+    "latitudine": 42.821825,
+    "longitudine": 12.674519
+  },
+  {
+    "id": "54009",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Castiglione del Lago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C309",
+    "latitudine": 43.12645,
+    "longitudine": 12.04784
+  },
+  {
+    "id": "54010",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Cerreto di Spoleto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C527",
+    "latitudine": 42.821554,
+    "longitudine": 12.918199
+  },
+  {
+    "id": "54011",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Citerna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C742",
+    "latitudine": 43.498013,
+    "longitudine": 12.117846
+  },
+  {
+    "id": "54012",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Città della Pieve",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C744",
+    "latitudine": 42.953541,
+    "longitudine": 12.004533
+  },
+  {
+    "id": "54013",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Città di Castello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C745",
+    "latitudine": 43.463978,
+    "longitudine": 12.240487
+  },
+  {
+    "id": "54014",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Collazzone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C845",
+    "latitudine": 42.903691,
+    "longitudine": 12.434798
+  },
+  {
+    "id": "54015",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Corciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C990",
+    "latitudine": 43.123787,
+    "longitudine": 12.28926
+  },
+  {
+    "id": "54016",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Costacciaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D108",
+    "latitudine": 43.35862,
+    "longitudine": 12.715621
+  },
+  {
+    "id": "54017",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Deruta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D279",
+    "latitudine": 42.980894,
+    "longitudine": 12.421785
+  },
+  {
+    "id": "54018",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Foligno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D653",
+    "latitudine": 42.950868,
+    "longitudine": 12.701475
+  },
+  {
+    "id": "54019",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Fossato di Vico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D745",
+    "latitudine": 43.298249,
+    "longitudine": 12.762585
+  },
+  {
+    "id": "54020",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Fratta Todina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D787",
+    "latitudine": 42.857933,
+    "longitudine": 12.363446
+  },
+  {
+    "id": "54021",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Giano dell'Umbria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E012",
+    "latitudine": 42.836321,
+    "longitudine": 12.587181
+  },
+  {
+    "id": "54022",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Gualdo Cattaneo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E229",
+    "latitudine": 42.91205,
+    "longitudine": 12.556193
+  },
+  {
+    "id": "54023",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Gualdo Tadino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E230",
+    "latitudine": 43.234139,
+    "longitudine": 12.782241
+  },
+  {
+    "id": "54024",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Gubbio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E256",
+    "latitudine": 43.351319,
+    "longitudine": 12.575317
+  },
+  {
+    "id": "54025",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Lisciano Niccone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E613",
+    "latitudine": 43.247227,
+    "longitudine": 12.14203
+  },
+  {
+    "id": "54026",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Magione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E805",
+    "latitudine": 43.142126,
+    "longitudine": 12.203915
+  },
+  {
+    "id": "54027",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Marsciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E975",
+    "latitudine": 42.909725,
+    "longitudine": 12.33514
+  },
+  {
+    "id": "54028",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Massa Martana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F024",
+    "latitudine": 42.776649,
+    "longitudine": 12.523263
+  },
+  {
+    "id": "54029",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Monte Castello di Vibio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F456",
+    "latitudine": 42.837947,
+    "longitudine": 12.348275
+  },
+  {
+    "id": "54032",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Monte Santa Maria Tiberina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F629",
+    "latitudine": 43.436136,
+    "longitudine": 12.163184
+  },
+  {
+    "id": "54030",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Montefalco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F492",
+    "latitudine": 42.889294,
+    "longitudine": 12.650284
+  },
+  {
+    "id": "54031",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Monteleone di Spoleto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F540",
+    "latitudine": 42.650439,
+    "longitudine": 12.951629
+  },
+  {
+    "id": "54033",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Montone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F685",
+    "latitudine": 42.768336,
+    "longitudine": 13.914329
+  },
+  {
+    "id": "54034",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Nocera Umbra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F911",
+    "latitudine": 43.113495,
+    "longitudine": 12.787561
+  },
+  {
+    "id": "54035",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Norcia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F935",
+    "latitudine": 42.791675,
+    "longitudine": 13.094734
+  },
+  {
+    "id": "54036",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Paciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G212",
+    "latitudine": 43.024165,
+    "longitudine": 12.066139
+  },
+  {
+    "id": "54037",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Panicale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G308",
+    "latitudine": 43.028628,
+    "longitudine": 12.097475
+  },
+  {
+    "id": "54038",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Passignano sul Trasimeno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G359",
+    "latitudine": 43.18763,
+    "longitudine": 12.134165
+  },
+  {
+    "id": "54039",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Perugia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G478",
+    "latitudine": 43.110717,
+    "longitudine": 12.390828
+  },
+  {
+    "id": "54040",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Piegaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G601",
+    "latitudine": 42.9627,
+    "longitudine": 12.0848
+  },
+  {
+    "id": "54041",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Pietralunga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G618",
+    "latitudine": 43.442952,
+    "longitudine": 12.448589
+  },
+  {
+    "id": "54042",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Poggiodomo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G758",
+    "latitudine": 42.711309,
+    "longitudine": 12.93506
+  },
+  {
+    "id": "54043",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Preci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H015",
+    "latitudine": 42.880664,
+    "longitudine": 13.039639
+  },
+  {
+    "id": "54044",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "San Giustino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H935",
+    "latitudine": 43.551795,
+    "longitudine": 12.172452
+  },
+  {
+    "id": "54045",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Sant'Anatolia di Narco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I263",
+    "latitudine": 42.733038,
+    "longitudine": 12.836001
+  },
+  {
+    "id": "54046",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Scheggia e Pascelupo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I522",
+    "latitudine": 43.40306,
+    "longitudine": 12.666326
+  },
+  {
+    "id": "54047",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Scheggino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I523",
+    "latitudine": 42.712143,
+    "longitudine": 12.829464
+  },
+  {
+    "id": "54048",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Sellano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I585",
+    "latitudine": 42.888039,
+    "longitudine": 12.925263
+  },
+  {
+    "id": "54049",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Sigillo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I727",
+    "latitudine": 43.331295,
+    "longitudine": 12.741104
+  },
+  {
+    "id": "54050",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Spello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I888",
+    "latitudine": 42.987653,
+    "longitudine": 12.67119
+  },
+  {
+    "id": "54051",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Spoleto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I921",
+    "latitudine": 42.741222,
+    "longitudine": 12.738521
+  },
+  {
+    "id": "54052",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Todi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L188",
+    "latitudine": 42.781935,
+    "longitudine": 12.406569
+  },
+  {
+    "id": "54053",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Torgiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L216",
+    "latitudine": 43.027316,
+    "longitudine": 12.432391
+  },
+  {
+    "id": "54054",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Trevi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L397",
+    "latitudine": 42.877641,
+    "longitudine": 12.748808
+  },
+  {
+    "id": "54055",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Tuoro sul Trasimeno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L466",
+    "latitudine": 43.207908,
+    "longitudine": 12.070589
+  },
+  {
+    "id": "54056",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Umbertide",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D786",
+    "latitudine": 43.305573,
+    "longitudine": 12.327868
+  },
+  {
+    "id": "54057",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Valfabbrica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L573",
+    "latitudine": 43.158881,
+    "longitudine": 12.601164
+  },
+  {
+    "id": "54058",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Vallo di Nera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L627",
+    "latitudine": 42.75529,
+    "longitudine": 12.865048
+  },
+  {
+    "id": "54059",
+    "id_regione": "10",
+    "id_provincia": "54",
+    "nome": "Valtopina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L653",
+    "latitudine": 43.05875,
+    "longitudine": 12.75437
+  }
+]

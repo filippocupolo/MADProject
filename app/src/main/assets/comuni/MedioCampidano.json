@@ -1,0 +1,282 @@
+[
+  {
+    "id": "106001",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Arbus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A359",
+    "latitudine": 39.528184,
+    "longitudine": 8.600804
+  },
+  {
+    "id": "106002",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Barumini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A681",
+    "latitudine": 39.703672,
+    "longitudine": 9.001347
+  },
+  {
+    "id": "106003",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Collinas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C882",
+    "latitudine": 39.641291,
+    "longitudine": 8.839922
+  },
+  {
+    "id": "106004",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Furtei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D827",
+    "latitudine": 39.563363,
+    "longitudine": 8.945069
+  },
+  {
+    "id": "106005",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Genuri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D970",
+    "latitudine": 39.744385,
+    "longitudine": 8.922276
+  },
+  {
+    "id": "106006",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Gesturi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D997",
+    "latitudine": 39.734358,
+    "longitudine": 9.02356
+  },
+  {
+    "id": "106007",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Gonnosfanadiga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E085",
+    "latitudine": 39.496033,
+    "longitudine": 8.66297
+  },
+  {
+    "id": "106008",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Guspini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E270",
+    "latitudine": 39.53931,
+    "longitudine": 8.627334
+  },
+  {
+    "id": "106009",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Las Plassas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E464",
+    "latitudine": 39.680636,
+    "longitudine": 8.985579
+  },
+  {
+    "id": "106010",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Lunamatrona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E742",
+    "latitudine": 39.647233,
+    "longitudine": 8.900265
+  },
+  {
+    "id": "106011",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Pabillonis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G207",
+    "latitudine": 39.595765,
+    "longitudine": 8.718636
+  },
+  {
+    "id": "106012",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Pauli Arbarei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G382",
+    "latitudine": 39.663316,
+    "longitudine": 8.922547
+  },
+  {
+    "id": "106013",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Samassi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H738",
+    "latitudine": 39.483755,
+    "longitudine": 8.899099
+  },
+  {
+    "id": "106014",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "San Gavino Monreale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H856",
+    "latitudine": 39.54829,
+    "longitudine": 8.789438
+  },
+  {
+    "id": "106015",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Sanluri",
+    "capoluogo_provincia": true,
+    "codice_catastale": "H974",
+    "latitudine": 39.562868,
+    "longitudine": 8.899895
+  },
+  {
+    "id": "106016",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Sardara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I428",
+    "latitudine": 39.613836,
+    "longitudine": 8.820994
+  },
+  {
+    "id": "106017",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Segariu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I570",
+    "latitudine": 39.563676,
+    "longitudine": 8.981496
+  },
+  {
+    "id": "106018",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Serramanna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I647",
+    "latitudine": 39.422514,
+    "longitudine": 8.921749
+  },
+  {
+    "id": "106019",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Serrenti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I667",
+    "latitudine": 39.495726,
+    "longitudine": 8.974947
+  },
+  {
+    "id": "106020",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Setzu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I705",
+    "latitudine": 39.724028,
+    "longitudine": 8.938864
+  },
+  {
+    "id": "106021",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Siddi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I724",
+    "latitudine": 39.67237,
+    "longitudine": 8.88819
+  },
+  {
+    "id": "106022",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Tuili",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L463",
+    "latitudine": 39.713458,
+    "longitudine": 8.95909
+  },
+  {
+    "id": "106023",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Turri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L473",
+    "latitudine": 39.70377,
+    "longitudine": 8.913369
+  },
+  {
+    "id": "106024",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Ussaramanna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L513",
+    "latitudine": 39.690292,
+    "longitudine": 8.909731
+  },
+  {
+    "id": "106025",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Villacidro",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L924",
+    "latitudine": 39.462863,
+    "longitudine": 8.741191
+  },
+  {
+    "id": "106026",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Villamar",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L966",
+    "latitudine": 39.622644,
+    "longitudine": 8.960566
+  },
+  {
+    "id": "106027",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Villanovaforru",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L986",
+    "latitudine": 39.632484,
+    "longitudine": 8.868971
+  },
+  {
+    "id": "106028",
+    "id_regione": "20",
+    "id_provincia": "106",
+    "nome": "Villanovafranca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L987",
+    "latitudine": 39.645081,
+    "longitudine": 9.001969
+  }
+]

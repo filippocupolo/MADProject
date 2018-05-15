@@ -1,0 +1,612 @@
+[
+  {
+    "id": "98001",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Abbadia Cerreto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A004",
+    "latitudine": 45.312481,
+    "longitudine": 9.592938
+  },
+  {
+    "id": "98002",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Bertonico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A811",
+    "latitudine": 45.2346,
+    "longitudine": 9.668788
+  },
+  {
+    "id": "98003",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Boffalora d'Adda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A919",
+    "latitudine": 45.362753,
+    "longitudine": 9.482708
+  },
+  {
+    "id": "98004",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Borghetto Lodigiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A995",
+    "latitudine": 45.21254,
+    "longitudine": 9.498034
+  },
+  {
+    "id": "98005",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Borgo San Giovanni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B017",
+    "latitudine": 45.277609,
+    "longitudine": 9.436007
+  },
+  {
+    "id": "98006",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Brembio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B141",
+    "latitudine": 45.210753,
+    "longitudine": 9.572152
+  },
+  {
+    "id": "98007",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Camairago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B456",
+    "latitudine": 45.205949,
+    "longitudine": 9.72603
+  },
+  {
+    "id": "98008",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Casaletto Lodigiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B887",
+    "latitudine": 45.293062,
+    "longitudine": 9.362259
+  },
+  {
+    "id": "98009",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Casalmaiocco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B899",
+    "latitudine": 45.351867,
+    "longitudine": 9.366824
+  },
+  {
+    "id": "98010",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Casalpusterlengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B910",
+    "latitudine": 45.17586,
+    "longitudine": 9.65557
+  },
+  {
+    "id": "98011",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Caselle Landi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B961",
+    "latitudine": 45.1033,
+    "longitudine": 9.792787
+  },
+  {
+    "id": "98012",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Caselle Lurani",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B958",
+    "latitudine": 45.279112,
+    "longitudine": 9.358656
+  },
+  {
+    "id": "98013",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Castelnuovo Bocca d'Adda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C228",
+    "latitudine": 45.112963,
+    "longitudine": 9.867759
+  },
+  {
+    "id": "98014",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Castiglione d'Adda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C304",
+    "latitudine": 45.218223,
+    "longitudine": 9.691838
+  },
+  {
+    "id": "98015",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Castiraga Vidardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C329",
+    "latitudine": 45.255927,
+    "longitudine": 9.401966
+  },
+  {
+    "id": "98016",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Cavacurta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C362",
+    "latitudine": 45.19031,
+    "longitudine": 9.743296
+  },
+  {
+    "id": "98017",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Cavenago d'Adda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C394",
+    "latitudine": 45.283918,
+    "longitudine": 9.599862
+  },
+  {
+    "id": "98018",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Cervignano d'Adda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C555",
+    "latitudine": 45.373309,
+    "longitudine": 9.42609
+  },
+  {
+    "id": "98019",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Codogno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C816",
+    "latitudine": 45.161057,
+    "longitudine": 9.700947
+  },
+  {
+    "id": "98020",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Comazzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C917",
+    "latitudine": 45.441296,
+    "longitudine": 9.464139
+  },
+  {
+    "id": "98021",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Cornegliano Laudense",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D021",
+    "latitudine": 45.286386,
+    "longitudine": 9.489297
+  },
+  {
+    "id": "98022",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Corno Giovine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D028",
+    "latitudine": 45.135559,
+    "longitudine": 9.758876
+  },
+  {
+    "id": "98023",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Cornovecchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D029",
+    "latitudine": 45.136994,
+    "longitudine": 9.799212
+  },
+  {
+    "id": "98024",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Corte Palasio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D068",
+    "latitudine": 45.309643,
+    "longitudine": 9.564183
+  },
+  {
+    "id": "98025",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Crespiatica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D159",
+    "latitudine": 45.355018,
+    "longitudine": 9.575089
+  },
+  {
+    "id": "98026",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Fombio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D660",
+    "latitudine": 45.138324,
+    "longitudine": 9.685177
+  },
+  {
+    "id": "98027",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Galgagnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D868",
+    "latitudine": 45.357895,
+    "longitudine": 9.442673
+  },
+  {
+    "id": "98028",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Graffignana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E127",
+    "latitudine": 45.209967,
+    "longitudine": 9.453087
+  },
+  {
+    "id": "98029",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Guardamiglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E238",
+    "latitudine": 45.109454,
+    "longitudine": 9.682492
+  },
+  {
+    "id": "98030",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Livraga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E627",
+    "latitudine": 45.191258,
+    "longitudine": 9.54491
+  },
+  {
+    "id": "98031",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Lodi",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E648",
+    "latitudine": 45.309723,
+    "longitudine": 9.503716
+  },
+  {
+    "id": "98032",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Lodi Vecchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E651",
+    "latitudine": 45.30133,
+    "longitudine": 9.416338
+  },
+  {
+    "id": "98033",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Maccastorna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E777",
+    "latitudine": 45.146281,
+    "longitudine": 9.854813
+  },
+  {
+    "id": "98034",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Mairago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E840",
+    "latitudine": 45.252184,
+    "longitudine": 9.579934
+  },
+  {
+    "id": "98035",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Maleo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E852",
+    "latitudine": 45.166868,
+    "longitudine": 9.763325
+  },
+  {
+    "id": "98036",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Marudo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E994",
+    "latitudine": 45.252567,
+    "longitudine": 9.375287
+  },
+  {
+    "id": "98037",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Massalengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F028",
+    "latitudine": 45.263718,
+    "longitudine": 9.488827
+  },
+  {
+    "id": "98038",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Meleti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F102",
+    "latitudine": 45.11916,
+    "longitudine": 9.835853
+  },
+  {
+    "id": "98039",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Merlino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F149",
+    "latitudine": 45.433201,
+    "longitudine": 9.430506
+  },
+  {
+    "id": "98040",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Montanaso Lombardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F423",
+    "latitudine": 45.335065,
+    "longitudine": 9.465753
+  },
+  {
+    "id": "98041",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Mulazzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F801",
+    "latitudine": 45.373944,
+    "longitudine": 9.399866
+  },
+  {
+    "id": "98042",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Orio Litta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G107",
+    "latitudine": 45.158065,
+    "longitudine": 9.5551
+  },
+  {
+    "id": "98043",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Ospedaletto Lodigiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G166",
+    "latitudine": 45.165967,
+    "longitudine": 9.582515
+  },
+  {
+    "id": "98044",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Ossago Lodigiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G171",
+    "latitudine": 45.243015,
+    "longitudine": 9.53774
+  },
+  {
+    "id": "98045",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Pieve Fissiraga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G096",
+    "latitudine": 45.263773,
+    "longitudine": 9.459172
+  },
+  {
+    "id": "98046",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Salerano sul Lambro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H701",
+    "latitudine": 45.295952,
+    "longitudine": 9.388078
+  },
+  {
+    "id": "98047",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "San Fiorano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H844",
+    "latitudine": 45.137451,
+    "longitudine": 9.723181
+  },
+  {
+    "id": "98048",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "San Martino in Strada",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I012",
+    "latitudine": 45.27318,
+    "longitudine": 9.534398
+  },
+  {
+    "id": "98049",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "San Rocco al Porto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I140",
+    "latitudine": 45.083276,
+    "longitudine": 9.696073
+  },
+  {
+    "id": "98050",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Sant'Angelo Lodigiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I274",
+    "latitudine": 45.232325,
+    "longitudine": 9.412307
+  },
+  {
+    "id": "98051",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Santo Stefano Lodigiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I362",
+    "latitudine": 45.11978,
+    "longitudine": 9.736626
+  },
+  {
+    "id": "98052",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Secugnago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I561",
+    "latitudine": 45.231118,
+    "longitudine": 9.593458
+  },
+  {
+    "id": "98053",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Senna Lodigiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I612",
+    "latitudine": 45.13089,
+    "longitudine": 9.597066
+  },
+  {
+    "id": "98054",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Somaglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I815",
+    "latitudine": 45.149572,
+    "longitudine": 9.636134
+  },
+  {
+    "id": "98055",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Sordio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I848",
+    "latitudine": 45.34109,
+    "longitudine": 9.361917
+  },
+  {
+    "id": "98056",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Tavazzano con Villavesco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F260",
+    "latitudine": 45.329042,
+    "longitudine": 9.40352
+  },
+  {
+    "id": "98057",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Terranova dei Passerini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L125",
+    "latitudine": 45.215499,
+    "longitudine": 9.660891
+  },
+  {
+    "id": "98058",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Turano Lodigiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L469",
+    "latitudine": 45.248825,
+    "longitudine": 9.622805
+  },
+  {
+    "id": "98059",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Valera Fratta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L572",
+    "latitudine": 45.255985,
+    "longitudine": 9.334032
+  },
+  {
+    "id": "98060",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Villanova del Sillaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L977",
+    "latitudine": 45.237709,
+    "longitudine": 9.481114
+  },
+  {
+    "id": "98061",
+    "id_regione": "3",
+    "id_provincia": "98",
+    "nome": "Zelo Buon Persico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M158",
+    "latitudine": 45.411907,
+    "longitudine": 9.432044
+  }
+]
