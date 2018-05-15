@@ -70,7 +70,7 @@ public class MainPageActivity extends AppCompatActivity {
 
     private class ScreenSlidePagerAdapter extends FragmentPagerAdapter {
 
-        private final static int NUM_PAGES = 2;
+        private final static int NUM_PAGES = 3;
 
         public ScreenSlidePagerAdapter(FragmentManager fm) {
             super(fm);
@@ -87,7 +87,7 @@ public class MainPageActivity extends AppCompatActivity {
                     fragment = Fragment.instantiate(context, MyBookList.class.getName());
                     break;
                 case 2:
-                    //fragment = Fragment.instantiate(context, Chat.class.getName());
+                    fragment = Fragment.instantiate(context, Chat.class.getName());
                     break;
             }
             return fragment;
