@@ -1,6 +1,7 @@
 package com.example.andrea.lab11;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -90,6 +91,50 @@ public class SearchBookFragment extends Fragment {
         titleEditText = view.findViewById(R.id.searchTitle);
         publisherEditText = view.findViewById(R.id.searchPublisher);
         ISBNEditText = view.findViewById(R.id.searchISBN);
+
+        authorSearchButton.setOnClickListener(v -> {
+            if(authorEditText.getText().toString().equals("")){
+                //field cannot be empty
+                authorEditText.setError(getString(R.string.empty_search));
+            }else{
+                Intent intent = new Intent(context, ResultsList.class);
+                intent.putExtra("author",authorEditText.getText().toString());
+                startActivity(intent);
+            }
+        });
+
+        titleSearchButton.setOnClickListener(v -> {
+            if(titleEditText.getText().toString().equals("")){
+                //field cannot be empty
+                titleEditText.setError(getString(R.string.empty_search));
+            }else{
+                Intent intent = new Intent(context,ResultsList.class);
+                intent.putExtra("bookTitle",titleEditText.getText().toString());
+                startActivity(intent);
+            }
+        });
+
+        publisherSearchButton.setOnClickListener(v -> {
+            if(publisherEditText.getText().toString().equals("")){
+                //field cannot be empty
+                publisherEditText.setError(getString(R.string.empty_search));
+            }else{
+                Intent intent = new Intent(context,ResultsList.class);
+                intent.putExtra("publisher",publisherEditText.getText().toString());
+                startActivity(intent);
+            }
+        });
+
+        ISBNSearchButton.setOnClickListener(v -> {
+            if(ISBNEditText.getText().toString().equals("")){
+                //field cannot be empty
+                ISBNEditText.setError(getString(R.string.empty_search));
+            }else{
+                Intent intent = new Intent(context,ResultsList.class);
+                intent.putExtra("ISBN",ISBNEditText.getText().toString());
+                startActivity(intent);
+            }
+        });
 
         return view;
     }
