@@ -36,6 +36,11 @@ public class MainPageActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.pageViewer);
         tab = findViewById(R.id.tabLayout);
 
+        //set service
+        Intent intent = new Intent("MadProject.SERVICE");
+        intent.setPackage(this.getPackageName());
+        startService(intent);
+
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
         tab.setupWithViewPager(viewPager);

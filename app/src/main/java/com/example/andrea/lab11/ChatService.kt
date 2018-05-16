@@ -16,16 +16,16 @@ import android.app.NotificationManager
 import android.content.Context
 import android.support.v4.app.NotificationCompat
 import android.app.NotificationChannel
-
-
+import com.google.firebase.FirebaseApp
 
 
 class ChatService : Service(){
 
     val deBugTag = "ChatService"
 
-    override fun onBind(intent: Intent?): IBinder {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    override fun onBind(intent: Intent?): IBinder? {
+        Log.d(deBugTag,"onBind")
+        return null
     }
 
     override fun onCreate() {
@@ -35,6 +35,7 @@ class ChatService : Service(){
 
         val userId = MyUser(applicationContext).userID
 
+        FirebaseApp.initializeApp(this)
         val dbRef = FirebaseDatabase.getInstance().reference;
 
         dbRef.child("usersChat").child(userId).addListenerForSingleValueEvent( object : ValueEventListener{
