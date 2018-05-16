@@ -90,7 +90,7 @@ class PersonalChat : AppCompatActivity() {
 
             // Read the input field and push a new instance
             // of ChatMessage to the Firebase database
-            dbRef.push().setValue(ChatMessageModel(input.text.toString(),myUserName!!))
+            dbRef.push().setValue(ChatMessageModel(input.text.toString(),myUserName!!,myUserId!!))
 
             // Clear the input
             input.setText("")
@@ -99,7 +99,11 @@ class PersonalChat : AppCompatActivity() {
         //set adapter
         val options = FirebaseRecyclerOptions.Builder<ChatMessageModel>()
                 .setQuery(dbRef, SnapshotParser<ChatMessageModel> {snapshot ->
-                    ChatMessageModel(snapshot.child("messageText").value.toString(),snapshot.child("messageUser").value.toString(),snapshot.child("messageTime").value.toString().toLong())
+                    val messageUserId = snapshot.child("messageUserId").value.toString()
+                    if(!messageUserId.equals(myUserId)){
+                        dbRef.child(snapshot.key).child("messageRead").setValue(true)
+                    }
+                    ChatMessageModel(snapshot.child("messageText").value.toString(),snapshot.child("messageUser").value.toString(),snapshot.child("messageTime").value.toString().toLong(),messageUserId, snapshot.child("messageRead").value.toString().toBoolean())
                 })
                 .setLifecycleOwner(this)
                 .build()
@@ -115,12 +119,14 @@ class PersonalChat : AppCompatActivity() {
 
             override fun onBindViewHolder(holder: ChatMessage, position: Int, model: ChatMessageModel) {
 
-                holder.bindData(model.messageText!!,model.messageUser!!,model.messageTime!!)
+                holder.bindData(model.messageText!!,model.messageUser!!,model.messageTime!!, model.messageRead!!, myUserId!!, model.messageUserId!!)
             }
 
         }
 
-        listOfMessages?.layoutManager = LinearLayoutManager(applicationContext)
+        val layoutManager = LinearLayoutManager(applicationContext)
+        layoutManager.stackFromEnd = true
+        listOfMessages?.layoutManager = layoutManager
         listOfMessages?.adapter = adapter
     }
 }

@@ -83,6 +83,14 @@
 
         <activity android:name=".MainPageActivity" />
         <activity android:name=".PersonalChat"></activity>
+        <service
+            android:name=".ChatService"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="SERVICE" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

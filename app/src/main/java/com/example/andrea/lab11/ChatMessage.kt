@@ -2,6 +2,7 @@ package com.example.andrea.lab11
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import java.text.SimpleDateFormat
 import java.util.*
@@ -9,23 +10,34 @@ import java.util.*
 class ChatMessage(view: View): RecyclerView.ViewHolder(view){
 
     val deBugTag = "ChatMessage"
-    var message_user : TextView? = null
-    var message_time : TextView? = null
-    var message_text : TextView? = null
+    var messageUser : TextView? = null
+    var messageTime : TextView? = null
+    var messageText : TextView? = null
+    var readSymbol : ImageView? = null
 
     init {
-        message_text = view.findViewById<TextView>(R.id.message_text)
-        message_time = view.findViewById<TextView>(R.id.message_time)
-        message_user = view.findViewById<TextView>(R.id.message_user)
+        messageText = view.findViewById<TextView>(R.id.message_text)
+        messageTime = view.findViewById<TextView>(R.id.message_time)
+        messageUser = view.findViewById<TextView>(R.id.message_user)
+        readSymbol = view.findViewById<ImageView>(R.id.readCheck)
     }
 
-    fun bindData(m_text:String, m_user:String, m_time:Long ){
-        message_text?.text = m_text
-        message_user?.text = m_user
+    fun bindData(m_text:String, m_user:String, m_time:Long , m_read: Boolean, myUserId :String, m_userId:String){
+        messageText?.text = m_text
+        messageUser?.text = m_user
         val calendar = Calendar.getInstance()
         calendar.timeInMillis = m_time
         val date = calendar.time
-        val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-        message_time?.text = sdf.format(date)
+        val sdf = SimpleDateFormat("yyyy-MM-dd HH:mm")
+        messageTime?.text = sdf.format(date)
+
+        if(myUserId.equals(m_userId) && m_read){
+
+            readSymbol?.visibility = View.VISIBLE
+
+        }else{
+
+            readSymbol?.visibility = View.GONE
+        }
     }
 }

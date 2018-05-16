@@ -85,6 +85,7 @@ public class MyBookList extends Fragment {
         context = getActivity().getApplicationContext();
         deBugTag = this.getClass().getName();
 
+
     }
 
     @Override
