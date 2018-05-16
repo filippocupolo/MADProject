@@ -5,11 +5,37 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
+import com.firebase.geofire.GeoFire;
+import com.firebase.geofire.GeoLocation;
+import com.firebase.geofire.LocationCallback;
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 /**
@@ -20,7 +46,7 @@ import android.widget.ImageButton;
  * Use the {@link SearchBookFragment} factory method to
  * create an instance of this fragment.
  */
-public class SearchBookFragment extends Fragment {
+public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
     private String deBugTag;
     private ImageButton authorSearchButton;
@@ -32,6 +58,12 @@ public class SearchBookFragment extends Fragment {
     private EditText publisherEditText;
     private EditText ISBNEditText;
     private Context context;
+    private GoogleMap googleMap;
+    private MapView mapView;
+    private Query mapQuery;
+    private ConcurrentHashMap<Marker,HashSet<String>> position_users;
+    private ConcurrentHashMap<String,HashSet<String>> user_books;
+    private MyUser user;
 
     /*
     // TODO: Rename parameter arguments, choose names that match
@@ -75,6 +107,10 @@ public class SearchBookFragment extends Fragment {
         //initialization
         deBugTag = this.getClass().getName();
         context = getActivity().getApplicationContext();
+        mapQuery = FirebaseDatabase.getInstance().getReference().child("books").limitToFirst(10);
+        position_users = new ConcurrentHashMap<>();
+        user_books = new ConcurrentHashMap<>();
+        user = new MyUser(context);
 
     }
 
@@ -84,13 +120,15 @@ public class SearchBookFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_search_book, container, false);
         authorSearchButton = view.findViewById(R.id.authorSearchButton);
-        titleSearchButton = view.findViewById(R.id.titleSearchButton);
-        publisherSearchButton = view.findViewById(R.id.publisherSearchButton);
-        ISBNSearchButton = view.findViewById(R.id.ISBNSearchButton);
+        //titleSearchButton = view.findViewById(R.id.titleSearchButton);
+        //publisherSearchButton = view.findViewById(R.id.publisherSearchButton);
+        //ISBNSearchButton = view.findViewById(R.id.ISBNSearchButton);
         authorEditText = view.findViewById(R.id.searchAuthor);
-        titleEditText = view.findViewById(R.id.searchTitle);
-        publisherEditText = view.findViewById(R.id.searchPublisher);
-        ISBNEditText = view.findViewById(R.id.searchISBN);
+        //titleEditText = view.findViewById(R.id.searchTitle);
+        //publisherEditText = view.findViewById(R.id.searchPublisher);
+        //ISBNEditText = view.findViewById(R.id.searchISBN);
+        mapView = view.findViewById(R.id.mapViewSearchBook);
+        mapView.onCreate(savedInstanceState);
 
         authorSearchButton.setOnClickListener(v -> {
             if(authorEditText.getText().toString().equals("")){
@@ -103,6 +141,9 @@ public class SearchBookFragment extends Fragment {
             }
         });
 
+        mapView.getMapAsync(this);
+
+        /*
         titleSearchButton.setOnClickListener(v -> {
             if(titleEditText.getText().toString().equals("")){
                 //field cannot be empty
@@ -134,9 +175,204 @@ public class SearchBookFragment extends Fragment {
                 intent.putExtra("ISBN",ISBNEditText.getText().toString());
                 startActivity(intent);
             }
-        });
+        });*/
 
         return view;
+    }
+
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        this.googleMap = googleMap;
+        googleMap.getUiSettings().setMyLocationButtonEnabled(false);
+
+        GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
+        geoFire.getLocation(user.getUserID(), new LocationCallback() {
+            @Override
+            public void onLocationResult(String key, GeoLocation location) {
+                if (location != null) {
+                    //set map zoom on user location
+                    LatLng latlng = new LatLng(location.latitude,location.longitude);
+                    CameraPosition cameraPosition = new CameraPosition.Builder()
+                            .target(latlng)
+                            .zoom(10)
+                            .bearing(0)
+                            .tilt(30)
+                            .build();
+                    googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
+                } else {
+                    //When location is null
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                //LogDatabase error
+            }
+        });
+
+        //add childs
+        mapQuery.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                String ownerID = dataSnapshot.child("owner").getValue().toString();
+                String bookID = dataSnapshot.getKey();
+
+                //set ownerID and book ID on user_books map
+                HashSet<String> booksSet = user_books.get(ownerID);
+                if(booksSet==null){
+                    booksSet = new HashSet<>();
+                    booksSet.add(bookID);
+                    user_books.put(ownerID,booksSet);
+                }else{
+                    booksSet.add(bookID);
+                }
+
+                //search owner position
+                DatabaseReference positionRef = FirebaseDatabase.getInstance().getReference().child("usersPosition");
+                GeoFire geoFire = new GeoFire(positionRef);
+                geoFire.getLocation(ownerID, new LocationCallback() {
+                    @Override
+                    public void onLocationResult(String key, GeoLocation location) {
+
+                        if (location == null) {
+                            Log.e(deBugTag, "NOT location for key: " + key);
+                        } else {
+
+                            LatLng userLocation = new LatLng(location.latitude, location.longitude);
+
+                            //add marker on map
+                            Marker marker = googleMap.addMarker(new MarkerOptions().position(userLocation));
+
+                            //set position and userID on position_users map
+                            HashSet<String> usersSet = position_users.get(userLocation);
+                            if(usersSet==null){
+                                usersSet = new HashSet<>();
+                                usersSet.add(key);
+                                position_users.put(marker,usersSet);
+                            }else{
+                                if(!usersSet.contains(key))
+                                    usersSet.add(key);
+                            }
+
+
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                    }
+                });
+            }
+
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            public void onChildRemoved(DataSnapshot dataSnapshot){
+                //todo testare l'eliminazione di un oggetto
+
+                String ownerID = dataSnapshot.child("owner").getValue().toString();
+                String bookID = dataSnapshot.getKey();
+
+                HashSet <String> bookList = user_books.get(ownerID);
+
+                if(bookList.size()>1){
+                    bookList.remove(bookID);
+                }else{
+
+                    user_books.remove(ownerID);
+
+                    Marker toRemove = null;
+
+                    for (Map.Entry<Marker, HashSet<String>> entry : position_users.entrySet()) {
+
+                        if (entry.getValue().contains(ownerID)) {
+                            toRemove = entry.getKey();
+                            break;
+                        }
+                    }
+
+                    HashSet <String> userList = position_users.get(toRemove);
+
+                    if(userList.size()>1){
+                        userList.remove(ownerID);
+                    }else {
+
+                        position_users.remove(toRemove);
+                        toRemove.remove();
+                    }
+
+                }
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+            }
+        });
+
+        //markers
+        googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                HashSet<String> usersAtPosition = position_users.get(marker);
+                LinkedList<String> selectedBook = new LinkedList<>();
+                for(String user : usersAtPosition){
+                    selectedBook.addAll(user_books.get(user));
+                }
+
+                if(selectedBook.size()==1){
+
+                    //open show book
+                    Intent intent = new Intent(context, ShowBook.class);
+                    intent.putExtra("bookId",selectedBook.get(0));
+                    startActivity(intent);
+
+                }else{
+
+                    //open a list of the selected books
+                    Intent intent = new Intent(context,ResultsList.class);
+                    intent.putExtra("bookIdList",selectedBook);
+                    startActivity(intent);
+                }
+
+                for(String s : selectedBook)
+                    Log.d(deBugTag, "libro selezionato: " + s);
+
+                return true;
+            }
+        });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        mapView.onResume();
+    }
+
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        mapView.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mapView.onDestroy();
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mapView.onLowMemory();
     }
 
     /*
