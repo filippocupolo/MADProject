@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
+import com.firebase.geofire.GeoQuery;
+import com.firebase.geofire.GeoQueryEventListener;
 import com.firebase.geofire.LocationCallback;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -61,9 +63,11 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
     private GoogleMap googleMap;
     private MapView mapView;
     private Query mapQuery;
+    private GeoQuery geoQuery;
     private ConcurrentHashMap<Marker,HashSet<String>> position_users;
     private ConcurrentHashMap<String,HashSet<String>> user_books;
     private MyUser user;
+    private final static double RADIUS = 30.0;
 
     /*
     // TODO: Rename parameter arguments, choose names that match
@@ -185,6 +189,9 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
         this.googleMap = googleMap;
         googleMap.getUiSettings().setMyLocationButtonEnabled(false);
 
+        //geoQuery radius
+        //geoQuery.setRadius(RADIUS);
+
         GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
         geoFire.getLocation(user.getUserID(), new LocationCallback() {
             @Override
@@ -200,6 +207,11 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
                             .build();
                     googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
+                    //geoquery center
+                    //geoQuery.setCenter(location);
+
+                    geoQuery = geoFire.queryAtLocation(new GeoLocation(location.latitude, location.longitude), RADIUS);
+
                 } else {
                     //When location is null
                 }
@@ -211,6 +223,46 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
             }
         });
 
+        /*
+        geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
+              @Override
+              public void onKeyEntered(String key, GeoLocation location) {
+                  databaseReference.child("help-requests").addListenerForSingleValueEvent(new ValueEventListener() {
+                      @Override
+                      public void onDataChange(DataSnapshot dataSnapshot) {
+
+                      }
+
+                      @Override
+                      public void onCancelled(DatabaseError databaseError) {
+
+                      }
+                  });
+
+              }
+
+              @Override
+              public void onKeyExited(String key) {
+
+              }
+
+              @Override
+              public void onKeyMoved(String key, GeoLocation location) {
+
+              }
+
+              @Override
+              public void onGeoQueryReady() {
+
+              }
+
+              @Override
+              public void onGeoQueryError(DatabaseError error) {
+
+              }
+              )};*/
+
+        /*
         //add childs
         mapQuery.addChildEventListener(new ChildEventListener() {
             @Override
@@ -314,7 +366,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
             @Override
             public void onCancelled(DatabaseError databaseError) {
             }
-        });
+        }); */
 
         //markers
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {

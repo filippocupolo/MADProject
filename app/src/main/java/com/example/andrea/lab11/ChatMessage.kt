@@ -26,7 +26,6 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
     fun bindData(m_text:String, m_user:String, m_time:Long ){
         message_text?.text = m_text
         message_user?.text = m_user
-        val date = Calendar(m_time)
         message_time?.text = m_time.toString()
     }
 }
