@@ -160,7 +160,7 @@
 
                 android:onClick="reset_login"
                 android:text="@string/back_to_login"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#FFFFFF"
                 android:textSize="14sp" />
 
             <RelativeLayout
@@ -169,43 +169,124 @@
                 android:layout_below="@id/pwd_forgotten_link"
                 android:layout_marginTop="25dp">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="3"
+                    android:id="@+id/registerAccount"
+                    android:text="@string/not_registered"
+                    android:background="@drawable/button_border"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="85dp"
+                    android:layout_marginEnd="85dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@id/register_link"
+                    android:layout_toStartOf="@id/register_link"
+                    android:layout_alignParentTop="true"
+                    android:paddingStart="12dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textIcons"
+                    android:textSize="14sp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/register_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:lines="3"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_alignParentTop="true"
+                    android:paddingRight="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingStart="12dp"
+                    android:text="@string/register"
+                    android:background="@drawable/button_border"
+                    android:textColor="@color/textIcons"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/alreadyRegistered"
+                    android:lines="3"
+                    android:text="@string/registered"
+                    android:layout_alignEnd="@id/registerAccount"
+                    android:layout_alignRight="@id/registerAccount"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/button_border"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@color/textIcons"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingStart="12dp"
+                    android:layout_below="@id/register_link"
+                    />
+
                 <Button
                     android:id="@+id/login_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:lines="3"
 
-                    android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/register_link"
+                    android:layout_alignLeft="@id/register_link"
+                    android:layout_alignStart="@id/register_link"
+                    android:layout_alignRight="@id/register_link"
+                    android:layout_alignEnd="@id/register_link"
+                    android:layout_toEndOf="@id/alreadyRegistered"
+                    android:layout_toRightOf="@id/alreadyRegistered"
                     android:background="@drawable/button_border"
                     android:onClick="loginEmailUser"
                     android:text="@string/login"
-                    android:textColor="@color/textIcons" />
+                    android:paddingRight="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingStart="12dp"
+                    android:textColor="#FFFFFF" />
 
-                <Button
+                <TextView
                     android:id="@+id/reset_pwd_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
-
                     android:layout_below="@id/login_button"
-                    android:background="@drawable/button_border"
+                    android:layout_marginBottom="15dp"
                     android:onClick="resetPasswordButton"
                     android:text="@string/reset"
-                    android:textColor="@color/textIcons" />
+                    android:textColor="@color/colorPrimary" />
 
-                <TextView
-                    android:id="@+id/register_link"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/reset_pwd_button"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
-                    android:text="@string/register"
-                    android:textColor="@color/colorPrimary"
-                    android:textSize="14sp" />
+
             </RelativeLayout>
 
         </RelativeLayout>

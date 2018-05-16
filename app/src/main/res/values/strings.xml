@@ -62,7 +62,8 @@
     <string name="hint_keyWords_textV">Search  by keywords </string>
     <string name="book_search_results">Search Results</string>
     <string name="book_details">Book\'s Details</string>
-
+    <string name="registered">Already have an account?</string>
+    <string name="not_registered">Don\'t have an account?</string>
     <string-array name="conditions_array">
         <item>Very Bad</item>
         <item>Bad</item>
