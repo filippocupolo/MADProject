@@ -5,37 +5,34 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
-import com.google.firebase.database.FirebaseDatabase
 import android.widget.EditText
 import android.support.design.widget.FloatingActionButton
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.firebase.ui.database.SnapshotParser
-import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.*
 
 class PersonalChat : AppCompatActivity() {
 
-    var userName : String? = null
-    var userId : String? = null
-    var chatKey : String? = null
-    var myUserID : String? = null
+    private var fab :FloatingActionButton? = null
+    private var listOfMessages : RecyclerView? = null
+    private val deBugTag : String = "PersonalChat"
+    private var myUserName :String? = null
+    private var myUserId :String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_personal_chat)
 
         //get element from intent
-        userName = intent.getStringExtra("userName")
-        userId = intent.getStringExtra("userId")
-        chatKey = intent.getStringExtra("chat")
-
-        //initialization
-        val myUserName = MyUser(applicationContext).name + " " + MyUser(applicationContext).surname
-        val dbRef = FirebaseDatabase.getInstance().reference.child("chat").child(chatKey)
+        val userName = intent.getStringExtra("userName")
+        val userId = intent.getStringExtra("userId")
+        val chatKey = intent.getStringExtra("chat")
 
         //set toolbar
         val toolbarTitle = findViewById<TextView>(R.id.back_toolbar_text)
@@ -43,15 +40,57 @@ class PersonalChat : AppCompatActivity() {
         findViewById<ImageButton>(R.id.imageButton).setOnClickListener(View.OnClickListener {onBackPressed()})
 
         //get elements
-        val fab = findViewById<FloatingActionButton>(R.id.fab)
-        val listOfMessages = findViewById<RecyclerView>(R.id.list_of_messages)
+        fab = findViewById<FloatingActionButton>(R.id.fab)
+        listOfMessages = findViewById<RecyclerView>(R.id.list_of_messages)
 
-        fab.setOnClickListener {
-            val input = findViewById<View>(R.id.input) as EditText
+        //set myUserName and my myUserId
+        val myUser = MyUser(applicationContext)
+        myUserName = myUser.name + " " + myUser.surname
+        myUserId = myUser.userID
+
+        if (chatKey != null){
+            receive_send_message(chatKey)
+        }else{
+            val dbRef = FirebaseDatabase.getInstance().reference.child("usersChat")
+            dbRef.child(myUserId).orderByChild("userId").equalTo(userId).addListenerForSingleValueEvent(object : ValueEventListener {
+
+                override fun onDataChange(dataSnapshot: DataSnapshot?) {
+
+                    if(dataSnapshot == null || dataSnapshot.value == null){
+                        val cK = myUserId + userId
+                        dbRef.child(myUserId).child(cK).child("userId").setValue(userId)
+                        dbRef.child(userId).child(cK).child("userId").setValue(myUserId)
+                        dbRef.child(myUserId).child(cK).child("userName").setValue(userName)
+                        dbRef.child(userId).child(cK).child("userName").setValue(myUserName)
+                        receive_send_message(cK)
+                    }else{
+                        Log.d(deBugTag,dataSnapshot.children.iterator().next().key)
+                        receive_send_message(dataSnapshot.children.iterator().next().key)
+                    }
+
+                }
+
+                override fun onCancelled(databaseError: DatabaseError) {
+                    Log.e(deBugTag,databaseError.getMessage()+databaseError.getCode());
+                    //todo gestire
+                }
+            })
+        }
+
+    }
+
+    private fun receive_send_message(chatKey:String){
+
+        //initialization
+        val dbRef = FirebaseDatabase.getInstance().reference.child("chat").child(chatKey)
+
+        //send message
+        fab?.setOnClickListener {
+            val input = findViewById<EditText>(R.id.input)
 
             // Read the input field and push a new instance
             // of ChatMessage to the Firebase database
-            dbRef.push().setValue(ChatMessageModel(input.text.toString(),myUserName))
+            dbRef.push().setValue(ChatMessageModel(input.text.toString(),myUserName!!))
 
             // Clear the input
             input.setText("")
@@ -81,8 +120,7 @@ class PersonalChat : AppCompatActivity() {
 
         }
 
-        listOfMessages.layoutManager = LinearLayoutManager(applicationContext)
-        listOfMessages.adapter = adapter
-
+        listOfMessages?.layoutManager = LinearLayoutManager(applicationContext)
+        listOfMessages?.adapter = adapter
     }
 }

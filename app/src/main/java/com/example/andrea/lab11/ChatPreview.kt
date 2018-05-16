@@ -3,14 +3,11 @@ package com.example.andrea.lab11
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
-import android.net.Uri
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-import com.google.android.gms.tasks.OnFailureListener
-import com.google.android.gms.tasks.OnSuccessListener
 import com.google.firebase.storage.FirebaseStorage
 
 class ChatPreview(view: View): RecyclerView.ViewHolder(view){
@@ -28,11 +25,10 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
         lastMessage = view.findViewById<TextView>(R.id.last_message)
     }
 
-    fun bindData(ck:String, uId:String, u:String,lm:String ){
+    fun bindData(ck:String, uId:String, u:String ){
         chatKey?.text = ck
         userId = uId
         userName?.text = u
-        lastMessage?.text = lm
 
         //open Show Book if card is pressed
         val context = itemView.context

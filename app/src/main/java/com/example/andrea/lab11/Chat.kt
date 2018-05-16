@@ -24,10 +24,10 @@ import com.google.firebase.database.FirebaseDatabase
 import java.util.*
 
 
-// TODO: Rename parameter arguments, choose names that match
+/* TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+private const val ARG_PARAM2 = "param2"*/
 
 /**
  * A simple [Fragment] subclass.
@@ -59,7 +59,7 @@ class Chat : Fragment() {
 
         //get elements
         val recyclerView = view.findViewById<RecyclerView>(R.id.chat_rv)
-        val noChatMessage = view.findViewById<TextView>(R.id.no_chat_message) //todo mattere visible questo messaggio se non ci sono chat attive
+        val noChatMessage = view.findViewById<TextView>(R.id.no_chat_message) //todo mettere visible questo messaggio se non ci sono chat attive
 
         //set adapter
         val adapter =  object : RecyclerView.Adapter <ChatPreview>() {
@@ -74,7 +74,7 @@ class Chat : Fragment() {
 
                 val chat = list[position]
 
-                holder.bindData(chat.chatKey, chat.userId, chat.userName,chat.lastMessage)
+                holder.bindData(chat.chatKey, chat.userId, chat.userName)
 
             }
 
@@ -95,7 +95,7 @@ class Chat : Fragment() {
 
                 for(data in dataSnapshot.children){
 
-                    var model = ChatPreviewModel(data.key,data.child("userId").value.toString(),data.child("userName").value.toString(),data.child("lastMessage").value.toString())
+                    var model = ChatPreviewModel(data.key,data.child("userId").value.toString(),data.child("userName").value.toString())
                     list.add(model)
                     adapter.notifyDataSetChanged()
                 }
@@ -108,7 +108,7 @@ class Chat : Fragment() {
                     return
 
                 for(data in dataSnapshot.children){
-                    var model = ChatPreviewModel(data.key,data.child("userId").value.toString(),data.child("userName").value.toString(),data.child("lastMessage").value.toString())
+                    var model = ChatPreviewModel(data.key,data.child("userId").value.toString(),data.child("userName").value.toString())
                     list.add(model)
                     adapter.notifyDataSetChanged()
                 }
