@@ -2,9 +2,9 @@
 <android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
     android:layout_marginTop="12dp"
     android:layout_marginRight="12dp"
     android:layout_marginEnd="12dp"
@@ -15,7 +15,7 @@
     android:id="@+id/cardViewBook"
     >
 
-        <RelativeLayout
+        <android.support.constraint.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -29,27 +29,30 @@
 
 
             <TextView
+                android:id="@+id/user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/user_name"
-                android:ellipsize="end"
                 android:layout_margin="4dp"
-                android:layout_toRightOf="@id/imageResult"
-                android:layout_toEndOf="@id/imageResult"
-                android:layout_alignTop="@id/imageResult"/>
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:text="user"
+                app:layout_constraintStart_toEndOf="@+id/imageUser" />
 
             <TextView
+                android:id="@+id/last_message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/last_message"
                 android:layout_margin="4dp"
-                android:ellipsize="end"
-                android:layout_below="@id/titleResult"
-                android:layout_toRightOf="@id/imageResult"
-                android:layout_toEndOf="@id/imageResult"
-                />
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="last message"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageUser"
+                app:layout_constraintTop_toBottomOf="@+id/user_name" />
 
-        </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
 
 </android.support.v7.widget.CardView>
 

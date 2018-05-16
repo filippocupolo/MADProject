@@ -299,7 +299,7 @@ public class editProfile extends AppCompatActivity {
 
             String caller = getIntent().getStringExtra("caller");
 
-            if(caller != "nulll") {
+            if(caller != null) {
                 if (caller.equals("login")) {
                     Intent intent = new Intent(
                             getApplicationContext(),
