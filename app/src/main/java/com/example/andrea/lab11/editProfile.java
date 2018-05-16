@@ -183,7 +183,7 @@ public class editProfile extends AppCompatActivity {
     @Override
     public void onBackPressed() {
 
-        if(previousActivity.equals("login")){
+        if(previousActivity!=null && previousActivity.equals("login")){
 
             if (doubleBackToExitPressedOnce) {
 

@@ -52,6 +52,7 @@ public class ShowBook extends AppCompatActivity {
     private BookInfo book;
     private ConstraintLayout container;
     private ImageButton goToProfileButton;
+    private ImageButton send_message_button;
     private CopyOnWriteArrayList<Drawable> imagesList;
 
     @Override
@@ -75,6 +76,7 @@ public class ShowBook extends AppCompatActivity {
         cityOwner = findViewById(R.id.ownerCity);
         container = findViewById(R.id.constrTop);
         goToProfileButton = findViewById(R.id.gotoProfileButton);
+        send_message_button = findViewById(R.id.send_message_button);
         GridView gridView = findViewById(R.id.imageBook);
 
         //set toolbar
@@ -185,6 +187,19 @@ public class ShowBook extends AppCompatActivity {
                         ISBN.setText(book.get_ISBN());
                         owner.setText(name_surname);
                         cityOwner.setText(city);
+
+                        String owner = name_surname;
+                        if(!book.getOwner().equals(new MyUser(context).getUserID())){
+                            send_message_button.setOnClickListener(v->{
+                                Intent chatIntent = new Intent(getApplicationContext(),PersonalChat.class);
+                                chatIntent.putExtra("userId",book.getOwner());
+                                Log.d(deBugTag,book.getOwner());
+                                chatIntent.putExtra("userName",owner);
+                                startActivity(chatIntent);
+                            });
+                        }else{
+                            send_message_button.setVisibility(View.GONE);
+                        }
                         if(showProfile){
                             goToProfileButton.setOnClickListener(v->{
                                 Intent showProfileIntent = new Intent(getApplicationContext(),showProfile.class);
