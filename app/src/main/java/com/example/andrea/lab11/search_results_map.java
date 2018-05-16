@@ -121,7 +121,18 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
         //get position of the user
         MyUser researcher  = new MyUser(getApplicationContext());
-        Location location = new Location(this.getApplicationContext());
+        Location location = new Location(getApplicationContext());
+
+        //TODO capire perchè non va getTownCoordinates
+        /*researcherLoc = location.getTownCoordinates(researcher.getTown(), researcher.getCity(), getApplicationContext());
+        LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(latlng)
+                .zoom(10)
+                .bearing(0)
+                .tilt(30)
+                .build();
+        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));*/
 
         GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
         geoFire.getLocation(researcher.getUserID(), new LocationCallback() {
