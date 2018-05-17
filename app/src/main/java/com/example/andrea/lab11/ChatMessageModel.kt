@@ -10,6 +10,7 @@ class ChatMessageModel {
     var messageTime: Long = 0
     var messageUserId: String? = null
     var messageRead: Boolean? = null
+    var messageReceived: Boolean? = null
 
     constructor(messageText: String, messageUser: String,messageUserId: String) {
         this.messageText = messageText
@@ -19,13 +20,15 @@ class ChatMessageModel {
         // Initialize to current time
         messageTime = Date().getTime()
         messageRead = false
+        messageReceived = false
     }
 
-    constructor(messageText: String, messageUser: String, messageTime:Long,messageUserId: String, messageRead: Boolean) {
+    constructor(messageText: String, messageUser: String, messageTime:Long,messageUserId: String, messageRead: Boolean, messageReceived:Boolean) {
         this.messageText = messageText
         this.messageUser = messageUser
         this.messageTime = messageTime
         this.messageUserId = messageUserId
         this.messageRead = messageRead
+        this.messageReceived = messageReceived
     }
 }

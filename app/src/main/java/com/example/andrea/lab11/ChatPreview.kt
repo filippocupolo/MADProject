@@ -2,12 +2,17 @@ package com.example.andrea.lab11
 
 import android.content.Intent
 import android.graphics.BitmapFactory
+import android.graphics.Typeface
 import android.graphics.drawable.BitmapDrawable
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 import com.google.firebase.storage.FirebaseStorage
 
 class ChatPreview(view: View): RecyclerView.ViewHolder(view){
@@ -15,7 +20,7 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
     var image : ImageView? = null
     var userName : TextView? = null
     var lastMessage : TextView? = null
-    var chatKey : TextView? = null
+    var chatKey : String? = null
     var userId : String? = null
     val deBugTag = "ChatPreview"
 
@@ -26,9 +31,28 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
     }
 
     fun bindData(ck:String, uId:String, u:String ){
-        chatKey?.text = ck
+        chatKey = ck
         userId = uId
         userName?.text = u
+
+        FirebaseDatabase.getInstance().reference.child("chat").child(ck).orderByKey().limitToLast(1).addListenerForSingleValueEvent(object :ValueEventListener{
+
+            override fun onDataChange(p0: DataSnapshot?) {
+                val message = p0!!.children!!.iterator().next()
+
+                lastMessage?.text = message.child("messageText").value.toString()
+                if(message.child("messageRead").value.toString().toBoolean())
+                    lastMessage!!.setTypeface(null, Typeface.BOLD)
+                else
+                    lastMessage!!.setTypeface(null, Typeface.NORMAL)
+
+
+                Log.d(deBugTag,message.child("messageText").value.toString())
+            }
+            override fun onCancelled(p0: DatabaseError?) {
+                //todo gestire
+            }
+        })
 
         //open Show Book if card is pressed
         val context = itemView.context

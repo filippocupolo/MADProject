@@ -59,7 +59,7 @@ class Chat : Fragment() {
 
         //get elements
         val recyclerView = view.findViewById<RecyclerView>(R.id.chat_rv)
-        val noChatMessage = view.findViewById<TextView>(R.id.no_chat_message) //todo mettere visible questo messaggio se non ci sono chat attive
+        val noChatMessage = view.findViewById<TextView>(R.id.no_chat_message)
 
         //set adapter
         val adapter =  object : RecyclerView.Adapter <ChatPreview>() {
@@ -79,6 +79,11 @@ class Chat : Fragment() {
             }
 
             override fun getItemCount(): Int {
+                if(list.size==0)
+                    noChatMessage.visibility = View.VISIBLE
+                else
+                    noChatMessage.visibility = View.GONE
+
                 return list.size
             }
         }

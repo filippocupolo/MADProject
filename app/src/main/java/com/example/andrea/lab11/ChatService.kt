@@ -5,10 +5,6 @@ import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.util.Log
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
 import android.app.PendingIntent
 import com.example.andrea.lab11.R.mipmap.ic_launcher
 import android.content.Context.NOTIFICATION_SERVICE
@@ -17,6 +13,7 @@ import android.content.Context
 import android.support.v4.app.NotificationCompat
 import android.app.NotificationChannel
 import com.google.firebase.FirebaseApp
+import com.google.firebase.database.*
 
 
 class ChatService : Service(){
@@ -38,33 +35,47 @@ class ChatService : Service(){
         FirebaseApp.initializeApp(this)
         val dbRef = FirebaseDatabase.getInstance().reference;
 
-        dbRef.child("usersChat").child(userId).addListenerForSingleValueEvent( object : ValueEventListener{
+        dbRef.child("usersChat").child(userId).addChildEventListener( object : ChildEventListener{
 
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                var it = dataSnapshot.children.iterator()
-                while(it.hasNext()){
-                    dbRef.child("chat").child(it.next().key).addValueEventListener(object : ValueEventListener{
-                        override fun onDataChange(dataSnapshot: DataSnapshot) {
-                            postNotification("title","messaggio")
-                        }
-                        override fun onCancelled(databaseError: DatabaseError) {
-                            //todo gestire
-                        }
-                    })
-                }
-                dbRef.child("usersChat").child(userId).addValueEventListener(object : ValueEventListener{
+            override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
+                if(p0==null)
+                    return
+
+                dbRef.child("chat").child(p0.key).orderByChild("messageReceived").equalTo(false).addValueEventListener( object : ValueEventListener {
                     override fun onDataChange(dataSnapshot: DataSnapshot) {
-                        postNotification("title","messaggio")
+                        val it = dataSnapshot.children.iterator()
+                        val chat = dataSnapshot.key
+                        while (it.hasNext()){
+                            val data = it.next()
+                            if(!data.child("messageUserId").equals(userId)){
+                                dbRef.child("chat").child(chat).child(data.key).child("messageReceived").setValue(true)
+                                postNotification(data.child("messageUser").value.toString(),data.child("messageText").value.toString())
+                            }
+                        }
                     }
-                    override fun onCancelled(databaseError: DatabaseError) {
+
+                    override fun onCancelled(p0: DatabaseError?) {
                         //todo gestire
                     }
                 })
             }
 
-            override fun onCancelled(databaseError: DatabaseError) {
+            override fun onCancelled(p0: DatabaseError?) {
                 //todo gestire
             }
+
+            override fun onChildChanged(p0: DataSnapshot?, p1: String?) {
+
+            }
+
+            override fun onChildMoved(p0: DataSnapshot?, p1: String?) {
+
+            }
+
+            override fun onChildRemoved(p0: DataSnapshot?) {
+
+            }
+
         })
     }
 
