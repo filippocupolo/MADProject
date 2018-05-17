@@ -41,6 +41,8 @@ public class ResultsList extends AppCompatActivity {
     private TextView emptyListMessage;
     private CopyOnWriteArrayList<BookInfo> bookList;
     private List<String> bookIdList;
+    private HashSet<String> usersId;
+    private Query query;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -51,9 +53,10 @@ public class ResultsList extends AppCompatActivity {
 
         //set query based on the user research
         Intent intent = getIntent();
-        Query query = FirebaseDatabase.getInstance().getReference().child("books");
+        query = FirebaseDatabase.getInstance().getReference().child("books");
         String keyExtra;
         String valueExtra;
+
 
         if(intent.getStringExtra("author")!=null){
             keyExtra = "author";
@@ -63,6 +66,9 @@ public class ResultsList extends AppCompatActivity {
             keyExtra = "ISBN";
         }else if(intent.getStringExtra("publisher")!=null){
             keyExtra = "publisher";
+        }else if(intent.getSerializableExtra("usersList")!=null){
+            keyExtra = "usersList";
+            usersId = (HashSet<String>) intent.getSerializableExtra("usersList");
         }else{
             keyExtra = null;
             bookIdList = (List<String>) intent.getSerializableExtra("bookIdList");
@@ -76,9 +82,10 @@ public class ResultsList extends AppCompatActivity {
         ImageButton mapButton = findViewById(R.id.mapButton);
         if(keyExtra==null){
             mapButton.setVisibility(View.GONE);
-        }else {
+        }else if(keyExtra != "usersList"){
             valueExtra = intent.getStringExtra(keyExtra);
-            query = query.orderByChild(keyExtra).equalTo(valueExtra);
+
+            normalResearch(valueExtra);
 
             mapButton.setOnClickListener((v) -> {
                 Intent mapIntent = new Intent(getApplicationContext(),search_results_map.class);
@@ -86,6 +93,8 @@ public class ResultsList extends AppCompatActivity {
                 startActivity(mapIntent);
                 finish();
             });
+        } else {
+            mapButton.setVisibility(View.GONE);
         }
 
         //get elements
@@ -118,62 +127,210 @@ public class ResultsList extends AppCompatActivity {
             }
         };
 
-        if(keyExtra!=null)
-            normalResearch(query);
-        else
+        if(keyExtra == null)
             searchFromMapMarker(query);
+        else if(keyExtra.equals("usersList"))
+            searchFromUsers();
+
 
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
     }
 
-    //normal research of book based author, title, ecc.
-    private void normalResearch(Query query){
+    //normal research of book based on author, title, ecc.
+    private void normalResearch(String valueExtra){
 
-        //download items and put them or remove them from the list
-        ChildEventListener childEventListener = new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+        if (valueExtra.matches("[0-9]+")) {
+            Query query4 = query.orderByChild("ISBN").equalTo(valueExtra);
+            //event listener for ISBN query
+            ChildEventListener childEventListener = new ChildEventListener() {
+                @Override
+                public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                if(book == null)
-                    return;
-                bookList.add(book);
-                adapter.notifyDataSetChanged();
-                emptyListMessage.setVisibility(View.GONE);
+                    BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                    if(book == null)
+                        return;
+                    bookList.add(book);
+                    adapter.notifyDataSetChanged();
+                    emptyListMessage.setVisibility(View.GONE);
+                }
+
+                @Override
+                public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                }
+
+                @Override
+                public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                    //todo testare
+                    BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                    if(book == null)
+                        return;
+                    bookList.remove(book);
+                    if(bookList.size()==0)
+                        emptyListMessage.setVisibility(View.VISIBLE);
+                    adapter.notifyDataSetChanged();
+
+                }
+
+                @Override
+                public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Log.d(deBugTag,databaseError.getMessage()+databaseError.getCode());
+                    networkProblem(databaseError);
+                }
+            };
+
+            query4.addChildEventListener(childEventListener);
+        }
+        else {
+            for(int i=0; i<3; i++){
+                if(i==0) {
+                    Query query1 = query.orderByChild("author").equalTo(valueExtra);
+                    ChildEventListener childEventListener = new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+
+                            BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                            if (book == null)
+                                return;
+                            bookList.add(book);
+                            adapter.notifyDataSetChanged();
+                            emptyListMessage.setVisibility(View.GONE);
+                        }
+
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                            //todo testare
+                            BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                            if (book == null)
+                                return;
+                            bookList.remove(book);
+                            if (bookList.size() == 0)
+                                emptyListMessage.setVisibility(View.VISIBLE);
+                            adapter.notifyDataSetChanged();
+
+                        }
+
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            Log.d(deBugTag, databaseError.getMessage() + databaseError.getCode());
+                            networkProblem(databaseError);
+                        }
+                    };
+                    query1.addChildEventListener(childEventListener);
+                }
+                else if(i==1) {
+                    Query query2 = query.orderByChild("bookTitle").equalTo(valueExtra);
+                    ChildEventListener childEventListener = new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+
+                            BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                            if (book == null)
+                                return;
+                            bookList.add(book);
+                            adapter.notifyDataSetChanged();
+                            emptyListMessage.setVisibility(View.GONE);
+                        }
+
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                            //todo testare
+                            BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                            if (book == null)
+                                return;
+                            bookList.remove(book);
+                            if (bookList.size() == 0)
+                                emptyListMessage.setVisibility(View.VISIBLE);
+                            adapter.notifyDataSetChanged();
+
+                        }
+
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+                            Log.d(deBugTag, databaseError.getMessage() + databaseError.getCode());
+                            networkProblem(databaseError);
+                        }
+                    };
+                    query2.addChildEventListener(childEventListener);
+                }
+                else{
+                    Query query3 = query.orderByChild("publisher").equalTo(valueExtra);
+                    ChildEventListener childEventListener = new ChildEventListener() {
+                    @Override
+                    public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+
+                        BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                        if(book == null)
+                            return;
+                        bookList.add(book);
+                        adapter.notifyDataSetChanged();
+                        emptyListMessage.setVisibility(View.GONE);
+                    }
+
+                    @Override
+                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                    }
+
+                    @Override
+                    public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                        //todo testare
+                        BookInfo book = parseDataSnapshotBook(dataSnapshot);
+                        if(book == null)
+                            return;
+                        bookList.remove(book);
+                        if(bookList.size()==0)
+                            emptyListMessage.setVisibility(View.VISIBLE);
+                        adapter.notifyDataSetChanged();
+
+                    }
+
+                    @Override
+                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        Log.d(deBugTag,databaseError.getMessage()+databaseError.getCode());
+                        networkProblem(databaseError);
+                    }
+                };
+                    query3.addChildEventListener(childEventListener);
+                }
             }
 
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                //todo testare
-                BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                if(book == null)
-                    return;
-                bookList.remove(book);
-                if(bookList.size()==0)
-                    emptyListMessage.setVisibility(View.VISIBLE);
-                adapter.notifyDataSetChanged();
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                Log.d(deBugTag,databaseError.getMessage()+databaseError.getCode());
-                networkProblem(databaseError);
-            }
-        };
-        query.addChildEventListener(childEventListener);
+        }
     }
 
     //search of userID passed by the Map activity
@@ -200,6 +357,30 @@ public class ResultsList extends AppCompatActivity {
             });
         }
 
+    }
+
+    //search from map markers without a research
+    private void searchFromUsers(){
+        for(String userId : usersId){
+            Query query = FirebaseDatabase.getInstance().getReference().child("books").orderByChild("owner").equalTo(userId);
+            query.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+
+                    BookInfo book = parseDataSnapshotBook(dataSnapshot.getChildren().iterator().next());
+                    if(book == null)
+                        return;
+                    bookList.add(book);
+                    adapter.notifyDataSetChanged();
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    Log.d(deBugTag,databaseError.getMessage());
+                    networkProblem(databaseError);
+                }
+            });
+        }
     }
 
     public static BookInfo parseDataSnapshotBook(DataSnapshot dataSnapshot){
@@ -242,6 +423,7 @@ public class ResultsList extends AppCompatActivity {
 
         return book;
     }
+
 
     private void networkProblem(DatabaseError databaseError){
         if(databaseError.getCode()!=-3){
