@@ -24,6 +24,7 @@ class PersonalChat : AppCompatActivity() {
     private val deBugTag : String = "PersonalChat"
     private var myUserName :String? = null
     private var myUserId :String? = null
+    private var input : EditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,6 +43,7 @@ class PersonalChat : AppCompatActivity() {
         //get elements
         fab = findViewById<FloatingActionButton>(R.id.fab)
         listOfMessages = findViewById<RecyclerView>(R.id.list_of_messages)
+        input = findViewById<EditText>(R.id.input)
 
         //set myUserName and my myUserId
         val myUser = MyUser(applicationContext)
@@ -86,14 +88,20 @@ class PersonalChat : AppCompatActivity() {
 
         //send message
         fab?.setOnClickListener {
-            val input = findViewById<EditText>(R.id.input)
 
-            // Read the input field and push a new instance
-            // of ChatMessage to the Firebase database
-            dbRef.push().setValue(ChatMessageModel(input.text.toString(),myUserName!!,myUserId!!))
+            //get input
+            val txt = input!!.text.toString()
 
-            // Clear the input
-            input.setText("")
+            //check if input is just spaces
+            if(!txt.trim().isEmpty()){
+
+                // Read the input field and push a new instance
+                // of ChatMessage to the Firebase database
+                dbRef.push().setValue(ChatMessageModel(txt,myUserName!!,myUserId!!))
+
+                // Clear the input
+                input!!.setText("")
+            }
         }
 
         //set adapter

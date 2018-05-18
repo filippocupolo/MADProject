@@ -1,7 +1,6 @@
 package com.example.andrea.lab11
 
-import android.content.Context
-import android.net.Uri
+
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
@@ -10,17 +9,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.ViewParent
-import android.widget.BaseAdapter
 import android.widget.TextView
-import com.firebase.ui.database.FirebaseListAdapter
-import com.firebase.ui.database.FirebaseRecyclerAdapter
-import com.firebase.ui.database.FirebaseRecyclerOptions
-import com.firebase.ui.database.SnapshotParser
-import com.google.firebase.database.ChildEventListener
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.*
 import java.util.*
 
 
@@ -79,12 +69,6 @@ class Chat : Fragment() {
             }
 
             override fun getItemCount(): Int {
-                //todo togliere da qui il messaggio di errore
-                if(list.size==0)
-                    noChatMessage.visibility = View.VISIBLE
-                else
-                    noChatMessage.visibility = View.GONE
-
                 return list.size
             }
         }
@@ -92,12 +76,28 @@ class Chat : Fragment() {
         //set Query
         val query = FirebaseDatabase.getInstance().reference.child("usersChat").orderByKey().equalTo(MyUser(applicationContext).userID)
 
+        query.addListenerForSingleValueEvent( object: ValueEventListener{
+
+            override fun onDataChange(p0: DataSnapshot?) {
+                if(p0==null || !p0.exists())
+                    noChatMessage.visibility = View.VISIBLE
+            }
+
+            override fun onCancelled(p0: DatabaseError?) {
+                //do not handle this. The error will be handle by the ChildEventListener below
+            }
+
+        })
+
         query.addChildEventListener(object : ChildEventListener {
 
             override fun onChildAdded( dataSnapshot:DataSnapshot?,  s:String?) {
 
                 if(dataSnapshot == null)
                     return
+
+                if(noChatMessage.visibility == View.VISIBLE)
+                        noChatMessage.visibility = View.GONE
 
                 for(data in dataSnapshot.children){
 

@@ -412,6 +412,8 @@ public class login extends AppCompatActivity implements
                             user.setEmail(d.getValue(String.class));
                         }else if(d.getKey().equals("city")){
                             user.setCity(d.getValue(String.class));
+                        }else if(d.getKey().equals("town")){
+                            user.setTown(d.getValue(String.class));
                         }else if(d.getKey().equals("biography")){
                             user.setBiography(d.getValue(String.class));
                         }else if(d.getKey().equals("image")){

@@ -162,87 +162,6 @@ public class Utilities {
         context.startActivity(intent);
     }
 
-    public static void goToShowProfile(Context context, String previousCaller, String callerClass, Activity activity){
-        //String caller = previousIntent.getStringExtra("caller");
-
-        if(previousCaller != null) {
-            if (!previousCaller.equals("showProfile")) {
-                Intent intent = new Intent(
-                        context,
-                        showProfile.class
-                );
-                intent.putExtra("caller", callerClass);
-                context.startActivity(intent);
-            } else {
-                activity.onBackPressed();
-            }
-        }
-        else{
-            Intent intent = new Intent(
-                    context,
-                    showProfile.class
-            );
-            intent.putExtra("caller", callerClass);
-            activity.startActivity(intent);
-        }
-    }
-
-    public static void goToEditProfile(Context context, String previousCaller, String callerClass, Activity activity){
-
-        if(previousCaller != null) {
-            /*
-            if (!previousCaller.equals("editProfile")) {
-                Intent intent = new Intent(
-                        context,
-                        editProfile.class
-                );
-                intent.putExtra("caller", callerClass);
-                activity.startActivity(intent);
-            } else {
-                activity.onBackPressed();
-            }*/
-            Intent intent = new Intent(
-                    context,
-                    editProfile.class
-            );
-            intent.putExtra("caller", callerClass);
-            activity.startActivity(intent);
-        }
-        else{
-            Intent intent = new Intent(
-                    context,
-                    editProfile.class
-            );
-            intent.putExtra("caller", callerClass);
-            activity.startActivity(intent);
-        }
-    }
-
-    public static void goToAddBook(Context context, String previousCaller, String callerClass, Activity activity){
-
-        if(previousCaller != null){
-            if(!previousCaller.equals("addBookAutomatic")){
-                Intent intent = new Intent(
-                        context,
-                        AddBookAutomatic.class
-                );
-                intent.putExtra("caller", callerClass);
-                activity.startActivity(intent);
-            }
-            else{
-                activity.onBackPressed();
-            }
-        }else{
-            Intent intent = new Intent(
-                    context,
-                    AddBookAutomatic.class
-            );
-            intent.putExtra("caller", callerClass);
-            activity.startActivity(intent);
-        }
-
-    }
-
     public static void loading_and_blur_background(View v, ProgressBar spinner){
         AlphaAnimation alpha = new AlphaAnimation(0.6F, 0.6F);
         alpha.setDuration(0); // Make animation instant
@@ -261,4 +180,14 @@ public class Utilities {
         return;
     }
 
+    public static String setStringForResearch(String string){
+
+        //put all letter lowercase
+        string = string.toLowerCase();
+
+        //remove all spaces
+        string = string.replaceAll("\\s+","");
+
+        return string;
+    }
 }

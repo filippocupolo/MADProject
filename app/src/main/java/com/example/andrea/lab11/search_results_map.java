@@ -5,7 +5,6 @@ import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.ArraySet;
 import android.util.Log;
-import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -50,7 +49,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import cz.msebera.android.httpclient.Header;
 
-//TODO set message when offline
 public class search_results_map extends FragmentActivity implements OnMapReadyCallback {
 
     private ConcurrentHashMap<Marker,HashSet<String>> position_users;
@@ -58,8 +56,6 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
     private GeoLocation researcherLoc;
     private String deBugTag;
     private GoogleMap googleMap;
-    private Query bookQuery;
-    private String valueExtra;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,30 +68,9 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
         //get query from previous activity
         Intent intent = getIntent();
-        bookQuery = FirebaseDatabase.getInstance().getReference().child("books");
+        Query bookQuery = FirebaseDatabase.getInstance().getReference().child("books");
 
-        String keyExtra;
-        if(intent.getStringExtra("author")!=null){
-
-            keyExtra = "author";
-            valueExtra = intent.getStringExtra("author");
-            //bookQuery = bookQuery.orderByChild("author").equalTo(intent.getStringExtra("author"));
-
-        }else if(intent.getStringExtra("bookTitle")!=null){
-
-            keyExtra = "bookTitle";
-            bookQuery = bookQuery.orderByChild("bookTitle").equalTo(intent.getStringExtra("bookTitle"));
-
-        }else if(intent.getStringExtra("ISBN")!=null){
-
-            keyExtra = "ISBN";
-            bookQuery = bookQuery.orderByChild("ISBN").equalTo(intent.getStringExtra("ISBN"));
-
-        }else {
-
-            keyExtra = "publisher";
-            bookQuery = bookQuery.orderByChild("publisher").equalTo(intent.getStringExtra("publisher"));
-        }
+        String valueExtra = intent.getStringExtra("keyword");
 
         //set buttons
         ImageButton backButton = findViewById(R.id.backButton);
@@ -103,7 +78,7 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
         ImageButton listButton = findViewById(R.id.mapButton);
         listButton.setOnClickListener(v->{
             Intent listIntent = new Intent(getApplicationContext(),ResultsList.class);
-            listIntent.putExtra(keyExtra,intent.getStringExtra(keyExtra));
+            listIntent.putExtra("keyword",valueExtra);
             startActivity(listIntent);
             finish();
         });
@@ -113,94 +88,20 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
                 .findFragmentById(R.id.mapFragment);
         mapFragment.getMapAsync(this);
 
-    }
-
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-
-        this.googleMap = googleMap;
-
-        UiSettings settings = googleMap.getUiSettings();
-        settings.setMapToolbarEnabled(false);
-
         //get position of the user
         MyUser researcher  = new MyUser(getApplicationContext());
         Location location = new Location(getApplicationContext());
+        researcherLoc = location.getCoordinates(researcher.getCity());
 
-        researcherLoc = location.getTownCoordinates(researcher.getTown(), researcher.getCity(), getApplicationContext());
-        LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
-        CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(latlng)
-                .zoom(10)
-                .bearing(0)
-                .tilt(30)
-                .build();
-        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+        String[] valueVector;
 
-        /*
-        GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
-        geoFire.getLocation(researcher.getUserID(), new LocationCallback() {
-            @Override
-            public void onLocationResult(String key, GeoLocation location) {
-                if (location != null) {
-                    researcherLoc = location;
-                    //set map zoom on user location
-                    LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
-                    CameraPosition cameraPosition = new CameraPosition.Builder()
-                            .target(latlng)
-                            .zoom(10)
-                            .bearing(0)
-                            .tilt(30)
-                            .build();
-                    googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+        if (valueExtra.matches("[0-9]+"))
+            valueVector = new String[]{"ISBN"};
+        else
+            valueVector = new String[]{"authorSearch","bookTitleSearch","publisherSearch"};
 
-                } else {
-                    //When location is null
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                //LogDatabase error
-            }
-        });*/
-
-        googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
-
-            @Override
-            public boolean onMarkerClick(Marker marker) {
-                HashSet<String> usersAtPosition = position_users.get(marker);
-                LinkedList<String> selectedBook = new LinkedList<>();
-                for(String user : usersAtPosition){
-                    selectedBook.addAll(user_books.get(user));
-                }
-
-                if(selectedBook.size()==1){
-
-                    //open show book
-                    Intent intent = new Intent(getApplicationContext(), ShowBook.class);
-                    intent.putExtra("bookId",selectedBook.get(0));
-                    startActivity(intent);
-
-                }else{
-
-                    //open a list of the selected books
-                    Intent intent = new Intent(getApplicationContext(),ResultsList.class);
-                    intent.putExtra("bookIdList",selectedBook);
-                    startActivity(intent);
-                }
-
-                for(String s : selectedBook)
-                    Log.d(deBugTag, "libro selezionato: " + s);
-
-                return true;
-            }
-        });
-
-        //only number query
-        if (valueExtra.matches("[0-9]+")) {
-            Query query4 = bookQuery.orderByChild("ISBN").equalTo(valueExtra);
-            query4.addChildEventListener(new ChildEventListener() {
+        for(int i = 0; i<valueVector.length; i++){
+            bookQuery.orderByChild(valueVector[i]).equalTo(valueExtra).addChildEventListener(new ChildEventListener() {
 
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -313,357 +214,59 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
                 }
             });
         }
-        else {
-            //text query - get all results from author bookTitle and publisher
-            for(int i=0; i<3; i++){
-                if(i==0) {
-                    Query query1 = bookQuery.orderByChild("author").equalTo(valueExtra);
-                    query1.addChildEventListener(new ChildEventListener() {
+    }
 
-                        @Override
-                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
 
-                            String ownerID = dataSnapshot.child("owner").getValue().toString();
-                            String bookID = dataSnapshot.getKey();
+        this.googleMap = googleMap;
 
-                            //set ownerID and book ID on user_books map
-                            HashSet<String> booksSet = user_books.get(ownerID);
-                            if(booksSet==null){
-                                booksSet = new HashSet<>();
-                                booksSet.add(bookID);
-                                user_books.put(ownerID,booksSet);
-                            }else{
-                                booksSet.add(bookID);
-                            }
+        UiSettings settings = googleMap.getUiSettings();
+        settings.setMapToolbarEnabled(false);
 
-                            //search owner position
-                            DatabaseReference positionRef = FirebaseDatabase.getInstance().getReference().child("usersPosition");
-                            GeoFire geoFire = new GeoFire(positionRef);
-                            geoFire.getLocation(ownerID, new LocationCallback() {
-                                @Override
-                                public void onLocationResult(String key, GeoLocation location) {
+        //set map zoom on user location
+        LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(latlng)
+                .zoom(8)
+                .bearing(0)
+                .tilt(30)
+                .build();
 
-                                    if (location == null) {
-                                        Log.e(deBugTag, "NOT location for key: " + key);
-                                    } else {
+        googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
-                                        LatLng userLocation = new LatLng(location.latitude, location.longitude);
+        googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
 
-                                        //add marker on map
-                                        Marker marker = googleMap.addMarker(new MarkerOptions().position(userLocation));
-
-                                        //set position and userID on position_users map
-                                        HashSet<String> usersSet = position_users.get(userLocation);
-                                        if(usersSet==null){
-                                            usersSet = new HashSet<>();
-                                            usersSet.add(key);
-                                            position_users.put(marker,usersSet);
-                                        }else{
-                                            if(!usersSet.contains(key))
-                                                usersSet.add(key);
-                                        }
-
-
-                                    }
-                                }
-
-                                @Override
-                                public void onCancelled(DatabaseError databaseError) {
-                                    networkProblem(databaseError);
-                                }
-                            });
-
-                        }
-
-                        @Override
-                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                            //todo testare l'eliminazione di un oggetto
-
-                            String ownerID = dataSnapshot.child("owner").getValue().toString();
-                            String bookID = dataSnapshot.getKey();
-
-                            HashSet <String> bookList = user_books.get(ownerID);
-
-                            if(bookList.size()>1){
-                                bookList.remove(bookID);
-                            }else{
-
-                                user_books.remove(ownerID);
-
-                                Marker toRemove = null;
-
-                                for (Map.Entry<Marker, HashSet<String>> entry : position_users.entrySet()) {
-
-                                    if (entry.getValue().contains(ownerID)) {
-                                        toRemove = entry.getKey();
-                                        break;
-                                    }
-                                }
-
-                                HashSet <String> userList = position_users.get(toRemove);
-
-                                if(userList.size()>1){
-                                    userList.remove(ownerID);
-                                }else {
-
-                                    position_users.remove(toRemove);
-                                    toRemove.remove();
-                                }
-
-                            }
-
-                        }
-
-                        @Override
-                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
-                            networkProblem(databaseError);
-                        }
-                    });
+            @Override
+            public boolean onMarkerClick(Marker marker) {
+                HashSet<String> usersAtPosition = position_users.get(marker);
+                LinkedList<String> selectedBook = new LinkedList<>();
+                for(String user : usersAtPosition){
+                    selectedBook.addAll(user_books.get(user));
                 }
-                else if(i==1) {
-                    Query query2 = bookQuery.orderByChild("bookTitle").equalTo(valueExtra);
-                    query2.addChildEventListener(new ChildEventListener() {
 
-                        @Override
-                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                if(selectedBook.size()==1){
 
-                            String ownerID = dataSnapshot.child("owner").getValue().toString();
-                            String bookID = dataSnapshot.getKey();
+                    //open show book
+                    Intent intent = new Intent(getApplicationContext(), ShowBook.class);
+                    intent.putExtra("bookId",selectedBook.get(0));
+                    startActivity(intent);
 
-                            //set ownerID and book ID on user_books map
-                            HashSet<String> booksSet = user_books.get(ownerID);
-                            if(booksSet==null){
-                                booksSet = new HashSet<>();
-                                booksSet.add(bookID);
-                                user_books.put(ownerID,booksSet);
-                            }else{
-                                booksSet.add(bookID);
-                            }
+                }else{
 
-                            //search owner position
-                            DatabaseReference positionRef = FirebaseDatabase.getInstance().getReference().child("usersPosition");
-                            GeoFire geoFire = new GeoFire(positionRef);
-                            geoFire.getLocation(ownerID, new LocationCallback() {
-                                @Override
-                                public void onLocationResult(String key, GeoLocation location) {
-
-                                    if (location == null) {
-                                        Log.e(deBugTag, "NOT location for key: " + key);
-                                    } else {
-
-                                        LatLng userLocation = new LatLng(location.latitude, location.longitude);
-
-                                        //add marker on map
-                                        Marker marker = googleMap.addMarker(new MarkerOptions().position(userLocation));
-
-                                        //set position and userID on position_users map
-                                        HashSet<String> usersSet = position_users.get(userLocation);
-                                        if(usersSet==null){
-                                            usersSet = new HashSet<>();
-                                            usersSet.add(key);
-                                            position_users.put(marker,usersSet);
-                                        }else{
-                                            if(!usersSet.contains(key))
-                                                usersSet.add(key);
-                                        }
-
-
-                                    }
-                                }
-
-                                @Override
-                                public void onCancelled(DatabaseError databaseError) {
-                                    networkProblem(databaseError);
-                                }
-                            });
-
-                        }
-
-                        @Override
-                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                            //todo testare l'eliminazione di un oggetto
-
-                            String ownerID = dataSnapshot.child("owner").getValue().toString();
-                            String bookID = dataSnapshot.getKey();
-
-                            HashSet <String> bookList = user_books.get(ownerID);
-
-                            if(bookList.size()>1){
-                                bookList.remove(bookID);
-                            }else{
-
-                                user_books.remove(ownerID);
-
-                                Marker toRemove = null;
-
-                                for (Map.Entry<Marker, HashSet<String>> entry : position_users.entrySet()) {
-
-                                    if (entry.getValue().contains(ownerID)) {
-                                        toRemove = entry.getKey();
-                                        break;
-                                    }
-                                }
-
-                                HashSet <String> userList = position_users.get(toRemove);
-
-                                if(userList.size()>1){
-                                    userList.remove(ownerID);
-                                }else {
-
-                                    position_users.remove(toRemove);
-                                    toRemove.remove();
-                                }
-
-                            }
-
-                        }
-
-                        @Override
-                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
-                            networkProblem(databaseError);
-                        }
-                    });
+                    //open a list of the selected books
+                    Intent intent = new Intent(getApplicationContext(),ResultsList.class);
+                    intent.putExtra("bookIdList",selectedBook);
+                    startActivity(intent);
                 }
-                else{
-                    Query query3 = bookQuery.orderByChild("publisher").equalTo(valueExtra);
-                    query3.addChildEventListener(new ChildEventListener() {
 
-                        @Override
-                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                for(String s : selectedBook)
+                    Log.d(deBugTag, "libro selezionato: " + s);
 
-                            String ownerID = dataSnapshot.child("owner").getValue().toString();
-                            String bookID = dataSnapshot.getKey();
-
-                            //set ownerID and book ID on user_books map
-                            HashSet<String> booksSet = user_books.get(ownerID);
-                            if(booksSet==null){
-                                booksSet = new HashSet<>();
-                                booksSet.add(bookID);
-                                user_books.put(ownerID,booksSet);
-                            }else{
-                                booksSet.add(bookID);
-                            }
-
-                            //search owner position
-                            DatabaseReference positionRef = FirebaseDatabase.getInstance().getReference().child("usersPosition");
-                            GeoFire geoFire = new GeoFire(positionRef);
-                            geoFire.getLocation(ownerID, new LocationCallback() {
-                                @Override
-                                public void onLocationResult(String key, GeoLocation location) {
-
-                                    if (location == null) {
-                                        Log.e(deBugTag, "NOT location for key: " + key);
-                                    } else {
-
-                                        LatLng userLocation = new LatLng(location.latitude, location.longitude);
-
-                                        //add marker on map
-                                        Marker marker = googleMap.addMarker(new MarkerOptions().position(userLocation));
-
-                                        //set position and userID on position_users map
-                                        HashSet<String> usersSet = position_users.get(userLocation);
-                                        if(usersSet==null){
-                                            usersSet = new HashSet<>();
-                                            usersSet.add(key);
-                                            position_users.put(marker,usersSet);
-                                        }else{
-                                            if(!usersSet.contains(key))
-                                                usersSet.add(key);
-                                        }
-
-
-                                    }
-                                }
-
-                                @Override
-                                public void onCancelled(DatabaseError databaseError) {
-                                    networkProblem(databaseError);
-                                }
-                            });
-
-                        }
-
-                        @Override
-                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                            //todo testare l'eliminazione di un oggetto
-
-                            String ownerID = dataSnapshot.child("owner").getValue().toString();
-                            String bookID = dataSnapshot.getKey();
-
-                            HashSet <String> bookList = user_books.get(ownerID);
-
-                            if(bookList.size()>1){
-                                bookList.remove(bookID);
-                            }else{
-
-                                user_books.remove(ownerID);
-
-                                Marker toRemove = null;
-
-                                for (Map.Entry<Marker, HashSet<String>> entry : position_users.entrySet()) {
-
-                                    if (entry.getValue().contains(ownerID)) {
-                                        toRemove = entry.getKey();
-                                        break;
-                                    }
-                                }
-
-                                HashSet <String> userList = position_users.get(toRemove);
-
-                                if(userList.size()>1){
-                                    userList.remove(ownerID);
-                                }else {
-
-                                    position_users.remove(toRemove);
-                                    toRemove.remove();
-                                }
-
-                            }
-
-                        }
-
-                        @Override
-                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
-                            networkProblem(databaseError);
-                        }
-                    });
-                }
+                return true;
             }
+        });
 
-        }
     }
 
     private void networkProblem(DatabaseError databaseError){

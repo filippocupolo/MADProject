@@ -47,7 +47,6 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
                     lastMessage!!.setTypeface(null, Typeface.NORMAL)
                 }
 
-                Log.d(deBugTag,message.child("messageText").value.toString())
             }
 
             override fun onCancelled(p0: DatabaseError?) {

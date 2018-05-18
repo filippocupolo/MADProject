@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
@@ -138,7 +139,11 @@ public class BookInfo implements Serializable {
         bookID = ISBN + owner + timestamp;
 
         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("books");
-        dbRef.child(bookID).child("ISBN").setValue(ISBN);
+
+        dbRef.child(bookID).child("ISBN").setValue(ISBN.replaceAll("\\s+",""));
+        dbRef.child(bookID).child("bookTitleSearch").setValue(Utilities.setStringForResearch(bookTitle));
+        dbRef.child(bookID).child("authorSearch").setValue(Utilities.setStringForResearch(author));
+        dbRef.child(bookID).child("publisherSearch").setValue(Utilities.setStringForResearch(publisher));
         dbRef.child(bookID).child("bookTitle").setValue(bookTitle);
         dbRef.child(bookID).child("author").setValue(author);
         dbRef.child(bookID).child("publisher").setValue(publisher);

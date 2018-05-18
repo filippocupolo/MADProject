@@ -198,7 +198,7 @@ public class insertBook extends AppCompatActivity{
         error = false;
 
         //check if ISBN is empty and in case put red background
-        if(ISBNView.getText().length()==0){
+        if(ISBNView.getText().toString().trim().length()==0){
             ISBNView.setError(getString(R.string.required));
 
             Log.d(deBugTag,"ISBNView è 0");
@@ -206,7 +206,7 @@ public class insertBook extends AppCompatActivity{
         }
 
         //check if title is empty and in case put red background
-        if(titleView.getText().length()==0){
+        if(titleView.getText().toString().trim().length()==0){
             titleView.setError(getString(R.string.required));
 
             Log.d(deBugTag,"titleView è 0");
@@ -214,7 +214,7 @@ public class insertBook extends AppCompatActivity{
         }
 
         //check if author is empty and in case put red background
-        if(authorView.getText().length()==0){
+        if(authorView.getText().toString().trim().length()==0){
             authorView.setError(getString(R.string.required));
 
             Log.d(deBugTag,"publisherView è 0");
@@ -222,7 +222,7 @@ public class insertBook extends AppCompatActivity{
         }
 
         //check if publisher is empty and in case put red background
-        if(publisherView.getText().length()==0){
+        if(publisherView.getText().toString().trim().length()==0){
             publisherView.setError(getString(R.string.required));
 
             Log.d(deBugTag,"publisherView è 0");
@@ -230,7 +230,7 @@ public class insertBook extends AppCompatActivity{
         }
 
         //check if edition year is empty and in case put red background
-        if(editionView.getText().length()==0){
+        if(editionView.getText().toString().trim().length()==0){
             editionView.setError(getString(R.string.required));
 
             Log.d(deBugTag,"editionView è 0");

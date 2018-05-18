@@ -25,8 +25,6 @@ class ChatService : Service(){
     override fun onCreate() {
         super.onCreate()
 
-        Log.d(deBugTag,"onCreate")
-
         val userId = MyUser(applicationContext).userID
 
         FirebaseApp.initializeApp(this)

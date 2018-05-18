@@ -40,8 +40,7 @@ public class ResultsList extends AppCompatActivity {
     private RecyclerView list;
     private TextView emptyListMessage;
     private CopyOnWriteArrayList<BookInfo> bookList;
-    private List<String> bookIdList;
-    private HashSet<String> usersId;
+    private HashSet<String> bookIdList;
     private Query query;
 
     @Override
@@ -54,24 +53,15 @@ public class ResultsList extends AppCompatActivity {
         //set query based on the user research
         Intent intent = getIntent();
         query = FirebaseDatabase.getInstance().getReference().child("books");
-        String keyExtra;
         String valueExtra;
 
 
-        if(intent.getStringExtra("author")!=null){
-            keyExtra = "author";
-        }else if(intent.getStringExtra("bookTitle")!=null){
-            keyExtra = "bookTitle";
-        }else if(intent.getStringExtra("ISBN")!=null){
-            keyExtra = "ISBN";
-        }else if(intent.getStringExtra("publisher")!=null){
-            keyExtra = "publisher";
-        }else if(intent.getSerializableExtra("usersList")!=null){
-            keyExtra = "usersList";
-            usersId = (HashSet<String>) intent.getSerializableExtra("usersList");
+        if(intent.getStringExtra("keyword")!=null){
+            valueExtra = intent.getStringExtra("keyword");
+            Log.d(deBugTag,"valueExtra: "+valueExtra);
         }else{
-            keyExtra = null;
-            bookIdList = (List<String>) intent.getSerializableExtra("bookIdList");
+            valueExtra = null;
+            bookIdList = (HashSet<String>) intent.getSerializableExtra("bookIdList");
         }
 
         setContentView(R.layout.recycler_view_search_list);
@@ -80,21 +70,16 @@ public class ResultsList extends AppCompatActivity {
         ImageButton backArrow = findViewById(R.id.backButton);
         backArrow.setOnClickListener((v) -> {onBackPressed();});
         ImageButton mapButton = findViewById(R.id.mapButton);
-        if(keyExtra==null){
+        if(valueExtra==null){
             mapButton.setVisibility(View.GONE);
-        }else if(keyExtra != "usersList"){
-            valueExtra = intent.getStringExtra(keyExtra);
-
-            normalResearch(valueExtra);
-
+        }else {
+            mapButton.setVisibility(View.VISIBLE);
             mapButton.setOnClickListener((v) -> {
                 Intent mapIntent = new Intent(getApplicationContext(),search_results_map.class);
-                mapIntent.putExtra(keyExtra,valueExtra);
+                mapIntent.putExtra("keyword",valueExtra);
                 startActivity(mapIntent);
                 finish();
             });
-        } else {
-            mapButton.setVisibility(View.GONE);
         }
 
         //get elements
@@ -125,13 +110,13 @@ public class ResultsList extends AppCompatActivity {
             public int getItemCount() {
                 return bookList.size();
             }
+
         };
 
-        if(keyExtra == null)
-            searchFromMapMarker(query);
-        else if(keyExtra.equals("usersList"))
-            searchFromUsers();
-
+        if(valueExtra == null)
+            searchFromMapMarker();
+        else
+            normalResearch(valueExtra);
 
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(adapter);
@@ -140,10 +125,19 @@ public class ResultsList extends AppCompatActivity {
     //normal research of book based on author, title, ecc.
     private void normalResearch(String valueExtra){
 
-        if (valueExtra.matches("[0-9]+")) {
-            Query query4 = query.orderByChild("ISBN").equalTo(valueExtra);
-            //event listener for ISBN query
-            ChildEventListener childEventListener = new ChildEventListener() {
+        String[] valueVector;
+
+        if (valueExtra.matches("[0-9]+"))
+            valueVector = new String[]{"ISBN"};
+        else
+            valueVector = new String[]{"authorSearch","bookTitleSearch","publisherSearch"};
+
+        for(int i=0; i<valueVector.length; i++){
+
+            //todo pensare a unmodo per settare il messaggio non ci sono libri adesso è visible di default
+
+            query.orderByChild(valueVector[i]).equalTo(valueExtra).addChildEventListener(new ChildEventListener() {
+
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
@@ -171,7 +165,6 @@ public class ResultsList extends AppCompatActivity {
                     if(bookList.size()==0)
                         emptyListMessage.setVisibility(View.VISIBLE);
                     adapter.notifyDataSetChanged();
-
                 }
 
                 @Override
@@ -184,157 +177,12 @@ public class ResultsList extends AppCompatActivity {
                     Log.d(deBugTag,databaseError.getMessage()+databaseError.getCode());
                     networkProblem(databaseError);
                 }
-            };
-
-            query4.addChildEventListener(childEventListener);
-        }
-        else {
-            for(int i=0; i<3; i++){
-                if(i==0) {
-                    Query query1 = query.orderByChild("author").equalTo(valueExtra);
-                    ChildEventListener childEventListener = new ChildEventListener() {
-                        @Override
-                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                            BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                            if (book == null)
-                                return;
-                            bookList.add(book);
-                            adapter.notifyDataSetChanged();
-                            emptyListMessage.setVisibility(View.GONE);
-                        }
-
-                        @Override
-                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                            //todo testare
-                            BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                            if (book == null)
-                                return;
-                            bookList.remove(book);
-                            if (bookList.size() == 0)
-                                emptyListMessage.setVisibility(View.VISIBLE);
-                            adapter.notifyDataSetChanged();
-
-                        }
-
-                        @Override
-                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
-                            Log.d(deBugTag, databaseError.getMessage() + databaseError.getCode());
-                            networkProblem(databaseError);
-                        }
-                    };
-                    query1.addChildEventListener(childEventListener);
-                }
-                else if(i==1) {
-                    Query query2 = query.orderByChild("bookTitle").equalTo(valueExtra);
-                    ChildEventListener childEventListener = new ChildEventListener() {
-                        @Override
-                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                            BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                            if (book == null)
-                                return;
-                            bookList.add(book);
-                            adapter.notifyDataSetChanged();
-                            emptyListMessage.setVisibility(View.GONE);
-                        }
-
-                        @Override
-                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                            //todo testare
-                            BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                            if (book == null)
-                                return;
-                            bookList.remove(book);
-                            if (bookList.size() == 0)
-                                emptyListMessage.setVisibility(View.VISIBLE);
-                            adapter.notifyDataSetChanged();
-
-                        }
-
-                        @Override
-                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-                        }
-
-                        @Override
-                        public void onCancelled(DatabaseError databaseError) {
-                            Log.d(deBugTag, databaseError.getMessage() + databaseError.getCode());
-                            networkProblem(databaseError);
-                        }
-                    };
-                    query2.addChildEventListener(childEventListener);
-                }
-                else{
-                    Query query3 = query.orderByChild("publisher").equalTo(valueExtra);
-                    ChildEventListener childEventListener = new ChildEventListener() {
-                    @Override
-                    public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                        BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                        if(book == null)
-                            return;
-                        bookList.add(book);
-                        adapter.notifyDataSetChanged();
-                        emptyListMessage.setVisibility(View.GONE);
-                    }
-
-                    @Override
-                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
-                    }
-
-                    @Override
-                    public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-                        //todo testare
-                        BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                        if(book == null)
-                            return;
-                        bookList.remove(book);
-                        if(bookList.size()==0)
-                            emptyListMessage.setVisibility(View.VISIBLE);
-                        adapter.notifyDataSetChanged();
-
-                    }
-
-                    @Override
-                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-                    }
-
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-                        Log.d(deBugTag,databaseError.getMessage()+databaseError.getCode());
-                        networkProblem(databaseError);
-                    }
-                };
-                    query3.addChildEventListener(childEventListener);
-                }
-            }
-
+            });
         }
     }
 
     //search of userID passed by the Map activity
-    private void searchFromMapMarker(Query query){
+    private void searchFromMapMarker(){
         query = query.orderByKey();
 
         for(String bookId : bookIdList){
@@ -346,6 +194,7 @@ public class ResultsList extends AppCompatActivity {
                     if(book == null)
                         return;
                     bookList.add(book);
+                    emptyListMessage.setVisibility(View.GONE);
                     adapter.notifyDataSetChanged();
                 }
 
@@ -357,44 +206,6 @@ public class ResultsList extends AppCompatActivity {
             });
         }
 
-    }
-
-    //search from map markers without a research
-    private void searchFromUsers(){
-        for(String userId : usersId){
-            Query query = FirebaseDatabase.getInstance().getReference().child("books").orderByChild("owner").equalTo(userId);
-            query.addChildEventListener(new ChildEventListener() {
-                @Override
-                public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName){
-
-                    BookInfo book = parseDataSnapshotBook(dataSnapshot);
-                    if(book == null)
-                        return;
-                    bookList.add(book);
-                    adapter.notifyDataSetChanged();
-                }
-
-                @Override
-                public void onChildRemoved(DataSnapshot snapshot){
-                }
-
-                @Override
-                public void onChildChanged(DataSnapshot snapshot, String previousChildName){
-
-                }
-
-                @Override
-                public void onChildMoved(DataSnapshot snapshot, String previousChildName){
-
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-                    Log.d(deBugTag,databaseError.getMessage());
-                    networkProblem(databaseError);
-                }
-            });
-        }
     }
 
     public static BookInfo parseDataSnapshotBook(DataSnapshot dataSnapshot){

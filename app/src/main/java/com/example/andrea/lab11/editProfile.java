@@ -270,19 +270,19 @@ public class editProfile extends AppCompatActivity {
     private boolean canExit(){
 
         //check if name is empty and in case put red background
-        if(nameView.getText().length()==0){
+        if(nameView.getText().toString().trim().length()==0){
             nameView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }
 
         //check if surname is empty and in case put red background
-        if(surnameView.getText().length()==0){
+        if(surnameView.getText().toString().trim().length()==0){
             surnameView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }
 
         //check if city is empty and in case put red background
-        if(cityView.getSelectedItem().toString().length()==0){
+        if(cityView.getSelectedItem().toString().trim().length()==0){
             cityView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }

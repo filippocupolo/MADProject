@@ -14,6 +14,7 @@ import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.PopupMenu;
 
 public class MainPageActivity extends AppCompatActivity {
@@ -41,6 +42,7 @@ public class MainPageActivity extends AppCompatActivity {
         intent.setPackage(this.getPackageName());
         startService(intent);
 
+        //set ViewPager
         pagerAdapter = new ScreenSlidePagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(pagerAdapter);
         tab.setupWithViewPager(viewPager);

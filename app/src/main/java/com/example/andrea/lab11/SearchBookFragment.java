@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -40,65 +41,25 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import static android.content.Context.INPUT_METHOD_SERVICE;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link SearchBookFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link SearchBookFragment} factory method to
- * create an instance of this fragment.
- */
 public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
+
+    //todo nascondere la tastiera all'apertura
 
     private String deBugTag;
     private ImageButton authorSearchButton;
     private EditText authorEditText;
     private Context context;
-    private GoogleMap googleMap;
     private MapView mapView;
-    private Query mapQuery;
-    private GeoQuery geoQuery;
-    private GeoLocation researcherLoc;
-    private ConcurrentHashMap<LatLng,HashSet<String>> position_users;
-    private ConcurrentHashMap<String,HashSet<String>> user_books;
-    private MyUser user;
-    private final static double RADIUS = 100.0;
+    private ConcurrentHashMap<String,LatLng> user_position;
+    private ConcurrentHashMap<LatLng,HashSet<String>> position_books;
+    private final static double RADIUS = 45.0;
 
-    /*
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    private OnFragmentInteractionListener mListener;
-    */
     public SearchBookFragment() {
         // Required empty public constructor
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * //@param param1 Parameter 1.
-     * //@param param2 Parameter 2.
-     * @return A new instance of fragment SearchBookFragment.
-     */
-    /*
-    // TODO: Rename and change types and number of parameters
-    public static SearchBookFragment newInstance(String param1, String param2) {
-        SearchBookFragment fragment = new SearchBookFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }*/
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -107,10 +68,8 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
         //initialization
         deBugTag = this.getClass().getName();
         context = getActivity().getApplicationContext();
-        mapQuery = FirebaseDatabase.getInstance().getReference().child("books").limitToFirst(10);
-        position_users = new ConcurrentHashMap<>();
-        user_books = new ConcurrentHashMap<>();
-        user = new MyUser(context);
+        user_position = new ConcurrentHashMap<>();
+        position_books = new ConcurrentHashMap<>();
     }
 
     @Override
@@ -124,12 +83,12 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
         mapView.onCreate(savedInstanceState);
 
         authorSearchButton.setOnClickListener(v -> {
-            if(authorEditText.getText().toString().equals("")){
+            if(authorEditText.getText().toString().trim().length()==0){
                 //field cannot be empty
                 authorEditText.setError(getString(R.string.empty_search));
             }else{
                 Intent intent = new Intent(context, ResultsList.class);
-                intent.putExtra("author",authorEditText.getText().toString());
+                intent.putExtra("keyword",Utilities.setStringForResearch(authorEditText.getText().toString()));
                 startActivity(intent);
             }
         });
@@ -141,46 +100,78 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        this.googleMap = googleMap;
+
         googleMap.getUiSettings().setMyLocationButtonEnabled(false);
+        googleMap.getUiSettings().setZoomGesturesEnabled(false);
+        googleMap.getUiSettings().setScrollGesturesEnabled(false);
 
         //get position of the user
         MyUser researcher  = new MyUser(context);
         Location location = new Location(context);
 
-        researcherLoc = location.getTownCoordinates(researcher.getTown(), researcher.getCity(), context);
+        GeoLocation researcherLoc = location.getTownCoordinates(researcher.getTown(), researcher.getCity(), context);
 
+        //todo cambiare lo zoom e il radius
         LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
         CameraPosition cameraPosition = new CameraPosition.Builder()
                 .target(latlng)
-                .zoom(10)
+                .zoom(9)
                 .bearing(0)
                 .tilt(30)
                 .build();
         googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
-        GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
+        //set queries of
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
+        GeoFire geoFire = new GeoFire(dbRef.child("usersPosition"));
 
         //geoquery with center and radius
-        geoQuery = geoFire.queryAtLocation(new GeoLocation(researcherLoc.latitude, researcherLoc.longitude), RADIUS);
-        geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
+        geoFire.queryAtLocation(new GeoLocation(researcherLoc.latitude, researcherLoc.longitude), RADIUS).addGeoQueryEventListener(new GeoQueryEventListener() {
+
             @Override
             public void onKeyEntered(String key, GeoLocation location) {
-                Log.d(deBugTag, "k: "+ key + "l: " + location);
+
                 LatLng userLocation = new LatLng(location.latitude, location.longitude);
-                googleMap.addMarker(new MarkerOptions().position(userLocation));
+                user_position.put(key,userLocation);
 
-                //set position and userID on position_users map
-                HashSet<String> usersSet = position_users.get(userLocation);
-                if(usersSet==null){
-                    usersSet = new HashSet<>();
-                    usersSet.add(key);
-                    position_users.put(userLocation, usersSet);
-                } else {
-                    usersSet.add(key);
-                    //position_users.put(userLocation, usersSet);
-                }
+                dbRef.child("books").orderByChild("owner").equalTo(key).addChildEventListener(new ChildEventListener() {
+                    @Override
+                    public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
+                        LatLng bookLocation = user_position.get(dataSnapshot.child("owner").getValue());
+
+                        HashSet<String> bookSet = position_books.get(bookLocation);
+                        if(bookSet==null){
+                            bookSet = new HashSet<>();
+                            bookSet.add(dataSnapshot.getKey());
+                            position_books.put(bookLocation,bookSet);
+                        }else{
+                            bookSet.add(dataSnapshot.getKey());
+                        }
+
+                        googleMap.addMarker(new MarkerOptions().position(bookLocation));
+                    }
+
+                    @Override
+                    public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                    }
+
+                    @Override
+                    public void onChildRemoved(DataSnapshot dataSnapshot) {
+                        //todo implemntare
+                    }
+
+                    @Override
+                    public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        //todo gestire
+                    }
+                });
             }
 
             @Override
@@ -201,79 +192,9 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
             @Override
             public void onGeoQueryError(DatabaseError error) {
                 //todo gestisci
-
-                Log.d(deBugTag, "error");
+                Log.e(deBugTag, "error");
             }
         });
-
-/*
-        GeoFire geoFire = new GeoFire(FirebaseDatabase.getInstance().getReference("usersPosition"));
-        geoFire.getLocation(user.getUserID(), new LocationCallback() {
-            @Override
-            public void onLocationResult(String key, GeoLocation location) {
-                if (location != null) {
-                    //set map zoom on user location
-                    LatLng latlng = new LatLng(location.latitude,location.longitude);
-                    CameraPosition cameraPosition = new CameraPosition.Builder()
-                            .target(latlng)
-                            .zoom(10)
-                            .bearing(0)
-                            .tilt(30)
-                            .build();
-                    googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-
-                    //geoquery with center and radius
-                    geoQuery = geoFire.queryAtLocation(new GeoLocation(location.latitude, location.longitude), RADIUS);
-                    geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
-                        @Override
-                        public void onKeyEntered(String key, GeoLocation location) {
-                            LatLng userLocation = new LatLng(location.latitude, location.longitude);
-                            Marker marker = googleMap.addMarker(new MarkerOptions().position(userLocation));
-
-                            //set position and userID on position_users map
-                            HashSet<String> usersSet = position_users.get(userLocation);
-                            if(usersSet==null){
-                                usersSet = new HashSet<>();
-                                usersSet.add(key);
-                                position_users.put(marker, usersSet);
-                            } else {
-                                usersSet.add(key);
-                            }
-
-                        }
-
-                        @Override
-                        public void onKeyExited(String key) {
-
-                        }
-
-                        @Override
-                        public void onKeyMoved(String key, GeoLocation location) {
-
-                        }
-
-                        @Override
-                        public void onGeoQueryReady() {
-
-                        }
-
-                        @Override
-                        public void onGeoQueryError(DatabaseError error) {
-
-                        }
-                    });
-
-                } else {
-                    //When location is null
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                //LogDatabase error
-            }
-        });*/
-
 
         //markers
         googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
@@ -281,11 +202,12 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                HashSet<String> usersAtPosition = position_users.get(marker.getPosition());
+                HashSet<String> booksAtPosition = position_books.get(marker.getPosition());
 
                 //open a list of the selected books
                 Intent intent = new Intent(context,ResultsList.class);
-                intent.putExtra("usersList",usersAtPosition);
+                Log.d(deBugTag,booksAtPosition.size()+"");
+                intent.putExtra("bookIdList",booksAtPosition);
                 startActivity(intent);
 
                 return true;
@@ -316,45 +238,5 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
     public void onLowMemory() {
         super.onLowMemory();
         mapView.onLowMemory();
-    }
-
-    /*
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
     }
 }
