@@ -44,7 +44,7 @@ class ChatService : Service(){
                         val chat = dataSnapshot.key
                         while (it.hasNext()){
                             val data = it.next()
-                            if(!data.child("messageUserId").equals(userId)){
+                            if(!data.child("messageUserId").value!!.toString().equals(userId)){
                                 dbRef.child("chat").child(chat).child(data.key).child("messageReceived").setValue(true)
                                 postNotification(data.child("messageUser").value.toString(),data.child("messageText").value.toString())
                             }

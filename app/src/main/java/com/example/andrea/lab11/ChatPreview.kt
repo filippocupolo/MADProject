@@ -35,16 +35,17 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
         userId = uId
         userName?.text = u
 
-        FirebaseDatabase.getInstance().reference.child("chat").child(ck).orderByKey().limitToLast(1).addListenerForSingleValueEvent(object :ValueEventListener{
+        FirebaseDatabase.getInstance().reference.child("chat").child(ck).orderByKey().limitToLast(1).addValueEventListener(object :ValueEventListener{
 
             override fun onDataChange(p0: DataSnapshot?) {
                 val message = p0!!.children!!.iterator().next()
 
                 lastMessage?.text = message.child("messageText").value.toString()
-                if(!message.child("messageRead").value.toString().toBoolean() && !message.child("messageUserId").value.toString().equals(userId))
+                if(!message.child("messageRead").value.toString().toBoolean() && message.child("messageUserId").value.toString().equals(userId)) {
                     lastMessage!!.setTypeface(null, Typeface.BOLD)
-                else
+                }else{
                     lastMessage!!.setTypeface(null, Typeface.NORMAL)
+                }
 
                 Log.d(deBugTag,message.child("messageText").value.toString())
             }

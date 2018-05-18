@@ -79,6 +79,7 @@ class Chat : Fragment() {
             }
 
             override fun getItemCount(): Int {
+                //todo togliere da qui il messaggio di errore
                 if(list.size==0)
                     noChatMessage.visibility = View.VISIBLE
                 else
