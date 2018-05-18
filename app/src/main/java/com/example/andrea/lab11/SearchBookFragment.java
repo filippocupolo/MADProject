@@ -166,6 +166,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
         geoQuery.addGeoQueryEventListener(new GeoQueryEventListener() {
             @Override
             public void onKeyEntered(String key, GeoLocation location) {
+                Log.d(deBugTag, "k: "+ key + "l: " + location);
                 LatLng userLocation = new LatLng(location.latitude, location.longitude);
                 googleMap.addMarker(new MarkerOptions().position(userLocation));
 
