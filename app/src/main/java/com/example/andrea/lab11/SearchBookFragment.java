@@ -198,7 +198,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
             @Override
             public void onGeoQueryError(DatabaseError error) {
-
+                //todo gestisci
             }
         });
 
@@ -278,6 +278,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
             public boolean onMarkerClick(Marker marker) {
                 HashSet<String> usersAtPosition = position_users.get(marker);
                 Log.d(deBugTag, "c:"+usersAtPosition.size());
+
                 //open a list of the selected books
                 Intent intent = new Intent(context,ResultsList.class);
                 intent.putExtra("usersList",usersAtPosition);

@@ -1,13 +1,10 @@
 package com.example.andrea.lab11
 
-import android.app.Notification
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.util.Log
 import android.app.PendingIntent
-import com.example.andrea.lab11.R.mipmap.ic_launcher
-import android.content.Context.NOTIFICATION_SERVICE
 import android.app.NotificationManager
 import android.content.Context
 import android.support.v4.app.NotificationCompat
@@ -93,7 +90,7 @@ class ChatService : Service(){
                 .setContentTitle(title) // title for notification
                 .setContentText(content)// message for notification
                 .setAutoCancel(true) // clear notification after click
-        val intent = Intent(applicationContext, MainPageActivity::class.java)
+        val intent = Intent(applicationContext, Chat::class.java)
         val pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
         mBuilder.setContentIntent(pi)
         mNotificationManager.notify(0, mBuilder.build())
