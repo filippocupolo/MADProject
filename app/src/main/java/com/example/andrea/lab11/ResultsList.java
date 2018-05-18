@@ -363,15 +363,29 @@ public class ResultsList extends AppCompatActivity {
     private void searchFromUsers(){
         for(String userId : usersId){
             Query query = FirebaseDatabase.getInstance().getReference().child("books").orderByChild("owner").equalTo(userId);
-            query.addListenerForSingleValueEvent(new ValueEventListener() {
+            query.addChildEventListener(new ChildEventListener() {
                 @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
+                public void onChildAdded(DataSnapshot dataSnapshot, String previousChildName){
 
-                    BookInfo book = parseDataSnapshotBook(dataSnapshot.getChildren().iterator().next());
+                    BookInfo book = parseDataSnapshotBook(dataSnapshot);
                     if(book == null)
                         return;
                     bookList.add(book);
                     adapter.notifyDataSetChanged();
+                }
+
+                @Override
+                public void onChildRemoved(DataSnapshot snapshot){
+                }
+
+                @Override
+                public void onChildChanged(DataSnapshot snapshot, String previousChildName){
+
+                }
+
+                @Override
+                public void onChildMoved(DataSnapshot snapshot, String previousChildName){
+
                 }
 
                 @Override
