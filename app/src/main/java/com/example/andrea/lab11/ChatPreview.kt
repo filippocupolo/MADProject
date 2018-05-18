@@ -41,14 +41,14 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
                 val message = p0!!.children!!.iterator().next()
 
                 lastMessage?.text = message.child("messageText").value.toString()
-                if(message.child("messageRead").value.toString().toBoolean())
+                if(!message.child("messageRead").value.toString().toBoolean() && !message.child("messageUserId").value.toString().equals(userId))
                     lastMessage!!.setTypeface(null, Typeface.BOLD)
                 else
                     lastMessage!!.setTypeface(null, Typeface.NORMAL)
 
-
                 Log.d(deBugTag,message.child("messageText").value.toString())
             }
+
             override fun onCancelled(p0: DatabaseError?) {
                 //todo gestire
             }

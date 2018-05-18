@@ -45,6 +45,11 @@ public class MainPageActivity extends AppCompatActivity {
         viewPager.setAdapter(pagerAdapter);
         tab.setupWithViewPager(viewPager);
 
+        //check if intent wants to open a specific page
+        int numPage = getIntent().getIntExtra("page",0);
+        viewPager.setCurrentItem(numPage);
+
+
     }
 
     public void showPopup(View v){
