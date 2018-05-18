@@ -60,10 +60,10 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
     private Query mapQuery;
     private GeoQuery geoQuery;
     private GeoLocation researcherLoc;
-    private ConcurrentHashMap<Marker,HashSet<String>> position_users;
+    private ConcurrentHashMap<LatLng,HashSet<String>> position_users;
     private ConcurrentHashMap<String,HashSet<String>> user_books;
     private MyUser user;
-    private final static double RADIUS = 30.0;
+    private final static double RADIUS = 100.0;
 
     /*
     // TODO: Rename parameter arguments, choose names that match
@@ -167,38 +167,39 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
             @Override
             public void onKeyEntered(String key, GeoLocation location) {
                 LatLng userLocation = new LatLng(location.latitude, location.longitude);
-                Marker marker = googleMap.addMarker(new MarkerOptions().position(userLocation));
+                googleMap.addMarker(new MarkerOptions().position(userLocation));
 
                 //set position and userID on position_users map
                 HashSet<String> usersSet = position_users.get(userLocation);
                 if(usersSet==null){
                     usersSet = new HashSet<>();
                     usersSet.add(key);
-                    position_users.put(marker, usersSet);
+                    position_users.put(userLocation, usersSet);
                 } else {
                     usersSet.add(key);
+                    //position_users.put(userLocation, usersSet);
                 }
 
             }
 
             @Override
             public void onKeyExited(String key) {
-
+                Log.d(deBugTag, "exited");
             }
 
             @Override
             public void onKeyMoved(String key, GeoLocation location) {
-
+                Log.d(deBugTag, "moved");
             }
 
             @Override
             public void onGeoQueryReady() {
-
+                Log.d(deBugTag, "ready");
             }
 
             @Override
             public void onGeoQueryError(DatabaseError error) {
-
+                Log.d(deBugTag, "error");
             }
         });
 
@@ -276,8 +277,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
             @Override
             public boolean onMarkerClick(Marker marker) {
-                HashSet<String> usersAtPosition = position_users.get(marker);
-                Log.d(deBugTag, "c:"+usersAtPosition.size());
+                HashSet<String> usersAtPosition = position_users.get(marker.getPosition());
                 //open a list of the selected books
                 Intent intent = new Intent(context,ResultsList.class);
                 intent.putExtra("usersList",usersAtPosition);
