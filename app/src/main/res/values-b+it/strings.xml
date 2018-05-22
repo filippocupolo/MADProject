@@ -92,4 +92,7 @@
     <string name="empty_search">Il campo non può essere vuoto</string>
     <string name="book_info">Info sul libro</string>
     <string name="user_info">Info sull\'utente</string>
+    <string name="chat">There are no chats yet</string>
+    <string name="nearby_books">Libri intorno a te</string>
+    <string name="no_books">Non hai ancora caricato nessun libro</string>
 </resources>

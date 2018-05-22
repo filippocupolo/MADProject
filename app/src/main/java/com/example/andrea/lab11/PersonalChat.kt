@@ -43,6 +43,7 @@ class PersonalChat : AppCompatActivity() {
         //get elements
         fab = findViewById<FloatingActionButton>(R.id.fab)
         listOfMessages = findViewById<RecyclerView>(R.id.list_of_messages)
+        input = findViewById<EditText>(R.id.input)
 
         //set myUserName and my myUserId
         val myUser = MyUser(applicationContext)

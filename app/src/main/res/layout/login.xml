@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true">
 
         <RelativeLayout
@@ -56,20 +57,29 @@
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/google_sign_in_button"
                 android:layout_width="wrap_content"
-                android:layout_height="56dp"
-                android:layout_alignStart="@+id/login_email"
-                android:layout_below="@+id/login_error"
-                android:layout_marginTop="-3dp" />
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/login_error"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@id/facebook_sign_in_button" />
 
             <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/facebook_sign_in_button"
                 android:layout_width="wrap_content"
-                android:layout_height="56dp"
+                android:layout_height="20dp"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="210dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/login_error"
+                android:layout_centerHorizontal="false"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="3.6dp"
                 android:paddingBottom="7dp"
-                android:paddingTop="9dp"
+                android:paddingTop="7dp"
                 android:textSize="15sp"
                 facebook:com_facebook_login_text="@string/login" />
 
@@ -85,9 +95,8 @@
                 android:id="@+id/login_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/buttons"
+                android:layout_below="@id/facebook_sign_in_button"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="15dp"
                 android:background="@drawable/my_border"
                 android:ems="10"
                 android:hint="@string/email"
@@ -103,7 +112,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/login_email"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="15dp"
                 android:layout_marginTop="25dp"
                 android:background="@drawable/my_border"
                 android:ems="10"
@@ -128,71 +136,57 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/reset_pwd_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/pwd_forgotten_link"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="20dp"
-                android:onClick="resetPasswordButton"
-                android:text="@string/reset"
-                android:textColor="@color/colorPrimary" />
-
-            <TextView
                 android:id="@+id/reset_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/pwd_forgotten_link"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="20dp"
                 android:clickable="true"
+
                 android:onClick="reset_login"
                 android:text="@string/back_to_login"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="14sp" />
 
             <RelativeLayout
-                android:id="@+id/buttons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/google_sign_in_button"
+                android:layout_below="@id/pwd_forgotten_link"
                 android:layout_marginTop="25dp">
-
-                <Button
-                    android:id="@+id/register_link"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginEnd="66dp"
-                    android:layout_marginRight="66dp"
-                    android:background="@drawable/button_border"
-                    android:gravity="center"
-                    android:lines="3"
-                    android:text="@string/register"
-                    android:textAlignment="center"
-                    android:textColor="@color/textIcons"
-                    android:textSize="14sp" />
 
                 <Button
                     android:id="@+id/login_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginLeft="73dp"
-                    android:layout_marginStart="73dp"
+
+                    android:layout_centerHorizontal="true"
                     android:background="@drawable/button_border"
-                    android:lines="3"
                     android:onClick="loginEmailUser"
                     android:text="@string/login"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/reset_pwd_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button_border"
+                    android:onClick="resetPasswordButton"
+                    android:text="@string/reset"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/register_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/login_button"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/register"
+                    android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp" />
-
-
             </RelativeLayout>
 
         </RelativeLayout>

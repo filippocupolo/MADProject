@@ -5,11 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="12dp"
-    android:layout_marginRight="12dp"
-    android:layout_marginEnd="12dp"
-    android:layout_marginLeft="12dp"
-    android:layout_marginStart="12dp"
     android:elevation="45dp"
     android:layout_below="@id/resultBook"
     android:id="@+id/cardViewBook"
@@ -17,7 +12,8 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="15dp">
 
         <ImageView
             android:id="@+id/imageUser"
@@ -27,16 +23,18 @@
             android:background="@null"
             android:elevation="50dp" />
 
-
         <TextView
             android:id="@+id/user_name"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
             android:text="user"
-            app:layout_constraintStart_toEndOf="@+id/imageUser" />
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/imageUser"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/last_message"
@@ -44,15 +42,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="8dp"
             android:ellipsize="end"
             android:maxLines="1"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/imageUser"
             app:layout_constraintStart_toEndOf="@+id/imageUser"
             app:layout_constraintTop_toBottomOf="@+id/user_name" />
 

@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -46,15 +47,14 @@ import static android.content.Context.INPUT_METHOD_SERVICE;
 
 public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
-    //todo nascondere la tastiera all'apertura
-
     private String deBugTag;
     private ImageButton authorSearchButton;
     private EditText authorEditText;
     private Context context;
     private MapView mapView;
     private ConcurrentHashMap<String,LatLng> user_position;
-    private ConcurrentHashMap<LatLng,HashSet<String>> position_books;
+    private ConcurrentHashMap<LatLng,Marker> position_marker;
+    private ConcurrentHashMap<Marker,HashSet<String>> position_books;
     private final static double RADIUS = 45.0;
 
 
@@ -70,6 +70,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
         deBugTag = this.getClass().getName();
         context = getActivity().getApplicationContext();
         user_position = new ConcurrentHashMap<>();
+        position_marker = new ConcurrentHashMap<>();
         position_books = new ConcurrentHashMap<>();
     }
 
@@ -144,17 +145,18 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
                         LatLng bookLocation = user_position.get(dataSnapshot.child("owner").getValue());
+                        Marker marker = googleMap.addMarker(new MarkerOptions().position(bookLocation));
 
                         HashSet<String> bookSet = position_books.get(bookLocation);
                         if(bookSet==null){
                             bookSet = new HashSet<>();
                             bookSet.add(dataSnapshot.getKey());
-                            position_books.put(bookLocation,bookSet);
+                            position_books.put(marker,bookSet);
+                            position_marker.put(bookLocation,marker);
                         }else{
                             bookSet.add(dataSnapshot.getKey());
                         }
 
-                        googleMap.addMarker(new MarkerOptions().position(bookLocation));
                     }
 
                     @Override
@@ -164,7 +166,23 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
                     @Override
                     public void onChildRemoved(DataSnapshot dataSnapshot) {
-                        //todo implemntare
+                        //todo testare se facendo cosi rimuove tutti i libri da quella location
+                        Log.d(deBugTag,"re");
+                        if(dataSnapshot == null)
+                            return;
+
+                        LatLng bookLocation = user_position.get(dataSnapshot.child("owner").getValue().toString());
+                        Marker m = position_marker.get(bookLocation);
+                        Log.d(deBugTag, dataSnapshot.child("bookTitle").getValue().toString()+"");
+                        position_books.get(m).remove(dataSnapshot.getKey());
+
+                        if(position_books.get(m).size() == 0){
+                            position_books.remove(bookLocation);
+                            m.remove();
+                            position_marker.remove(bookLocation);
+
+                        }
+
                     }
 
                     @Override
@@ -174,7 +192,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
-                        //todo gestire
+                        networkProblem(databaseError);
                     }
                 });
             }
@@ -207,7 +225,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                HashSet<String> booksAtPosition = position_books.get(marker.getPosition());
+                HashSet<String> booksAtPosition = position_books.get(marker);
 
                 //open a list of the selected books
                 Intent intent = new Intent(context,ResultsList.class);
@@ -243,5 +261,11 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
     public void onLowMemory() {
         super.onLowMemory();
         mapView.onLowMemory();
+    }
+
+    private void networkProblem(DatabaseError databaseError){
+        if(databaseError.getCode()!=-3){
+            Toast.makeText(context,R.string.network_problem,Toast.LENGTH_SHORT).show();
+        }
     }
 }

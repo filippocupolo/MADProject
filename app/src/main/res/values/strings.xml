@@ -95,8 +95,10 @@
     <string name="empty_search">Field cannot be empty</string>
     <string name="book_info">Book info</string>
     <string name="user_info">User info</string>
-
+    <string name="chat">There are no chats yet</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nearby_books">Nearby books</string>
+    <string name="no_books">Still you haven\'t updated any book</string>
 
 </resources>
