@@ -43,10 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/personal_chat_toolbar"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_above="@id/fab"
-        android:dividerHeight="16dp"
+        android:dividerHeight="10dp"
         android:divider="@android:color/transparent"
         android:id="@+id/list_of_messages"
         android:layout_marginBottom="16dp"/>
