@@ -17,7 +17,6 @@ import android.widget.LinearLayout
 class ChatMessage(view: View): RecyclerView.ViewHolder(view){
 
     val deBugTag = "ChatMessage"
-    var messageUser : TextView? = null
     var messageTime : TextView? = null
     var messageText : TextView? = null
     var readSymbol : ImageView? = null
@@ -25,7 +24,6 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
     init {
         messageText = view.findViewById<TextView>(R.id.message_text)
         messageTime = view.findViewById<TextView>(R.id.message_time)
-        messageUser = view.findViewById<TextView>(R.id.message_user)
         readSymbol = view.findViewById<ImageView>(R.id.readCheck)
     }
 
@@ -40,7 +38,6 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
 
         //bind data
         messageText?.text = m_text
-        messageUser?.text = m_user
         val calendar = Calendar.getInstance()
         calendar.timeInMillis = m_time
         val date = calendar.time
@@ -58,7 +55,8 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
             //params.gravity = Gravity.LEFT
             params.leftMargin = margin
             params.rightMargin = 10
-            itemView.setBackgroundColor(Color.parseColor("#EEEEEE"))
+            itemView.setBackgroundColor(itemView.resources.getColor(R.color.lightPrimaryColor))
+
 
         }else{
 
@@ -66,7 +64,8 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
             //params.gravity = Gravity.RIGHT
             params.rightMargin = margin
             params.leftMargin = 10
-            itemView.setBackgroundColor(itemView.resources.getColor(R.color.lightPrimaryColor))
+            itemView.setBackgroundResource(R.drawable.my_border)
+            //itemView.setBackgroundColor(Color.parseColor("#EEEEEE"))
         }
 
         itemView.layoutParams = params
