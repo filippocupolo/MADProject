@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -69,14 +70,8 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
         //request for userImage
         val ref = FirebaseStorage.getInstance().reference.child("profileImages/$userId")
 
-        //todo ref.getBytes lancia degli errori cercare di capire cosa sono
-        //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
         ref.downloadUrl.addOnSuccessListener { uri ->
-            FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes((1024 * 1024).toLong()).addOnSuccessListener { bytes ->
-
-                image!!.setImageDrawable(BitmapDrawable(BitmapFactory.decodeByteArray(bytes, 0, bytes.size)))
-
-            }.addOnFailureListener { e -> Log.e(deBugTag, e.message) }
+            Glide.with(itemView).load(uri).into(image!!)
         }.addOnFailureListener { e -> Log.e(deBugTag, e.message) }
     }
 }

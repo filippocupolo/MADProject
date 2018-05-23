@@ -159,24 +159,7 @@ public class showProfile extends AppCompatActivity{
 
                                 });
                             }
-                        }/*new OnSuccessListener<byte[]>() {
-
-                            @Override
-                            public void onSuccess(byte[] bytes) {
-
-                                profileView.setImageDrawable(new BitmapDrawable(BitmapFactory.decodeByteArray(bytes, 0, bytes.length)));
-                                profileView.setOnClickListener(v -> {
-                                    Intent fullImageIntent = new Intent(
-                                            getApplicationContext(),
-                                            fullScreenImage.class
-                                    );
-                                    fullImageIntent.putExtra("image", bytes);
-                                    startActivity(fullImageIntent);
-
-                                });
-                            }
-
-                        }*/).addOnFailureListener(new OnFailureListener() {
+                        }).addOnFailureListener(new OnFailureListener() {
                             @Override
                             public void onFailure(@NonNull Exception e) {
                                 Log.e(deBugTag,e.getMessage());

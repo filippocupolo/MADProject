@@ -23,6 +23,7 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -216,10 +217,10 @@ public class ShowBook extends AppCompatActivity {
                             StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/" + i);
 
                             //todo ref.getBytes lancia degli errori cercare di capire cosa sono
-                            //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
                             ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
+
                                     FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes(1024 * 1024).addOnSuccessListener(new OnSuccessListener<byte[]>() {
 
                                         @Override
