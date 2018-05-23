@@ -72,7 +72,7 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
         //todo ref.getBytes lancia degli errori cercare di capire cosa sono
         //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
         ref.downloadUrl.addOnSuccessListener { uri ->
-            FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes((10 * 1024 * 1024).toLong()).addOnSuccessListener { bytes ->
+            FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes((2 * 1024 * 1024).toLong()).addOnSuccessListener { bytes ->
 
                 image!!.setImageDrawable(BitmapDrawable(BitmapFactory.decodeByteArray(bytes, 0, bytes.size)))
 

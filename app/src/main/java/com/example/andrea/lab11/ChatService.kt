@@ -22,10 +22,12 @@ class ChatService : Service(){
         return null
     }
 
-    override fun onCreate() {
-        super.onCreate()
+    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+
+        //todo studia documentazione
 
         val userId = MyUser(applicationContext).userID
+        Log.d(deBugTag,"onStartCommand()")
 
         FirebaseApp.initializeApp(this)
         val dbRef = FirebaseDatabase.getInstance().reference;
@@ -72,6 +74,12 @@ class ChatService : Service(){
             }
 
         })
+        return super.onStartCommand(intent, flags, startId)
+    }
+    override fun onCreate() {
+        super.onCreate()
+
+
     }
 
     fun postNotification(title: String, content: String) {

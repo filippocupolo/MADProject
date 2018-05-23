@@ -143,7 +143,7 @@ public class MyBookList extends Fragment {
 
         };
 
-        list.setLayoutManager(new LinearLayoutManager(context));
+        list.setLayoutManager(new LinearLayoutManager(getContext()));
         list.setAdapter(adapter);
 
         //set addBookButton

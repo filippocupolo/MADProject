@@ -6,10 +6,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import java.text.SimpleDateFormat
 import java.util.*
-import android.view.Gravity
-import android.R.attr.gravity
-import android.graphics.Color
-import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
 import android.widget.LinearLayout
 
 
@@ -29,12 +25,9 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
 
     fun bindData(m_text:String, m_user:String, m_time:Long , m_read: Boolean, myUserId :String, m_userId:String){
 
-        //set margin and get parameters layout
-        val dpValue = 50 // margin in dips
-        val d = itemView.getResources().getDisplayMetrics().density
-        val margin = (dpValue * d).toInt()
+        //set parameters layout
         val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
-        params.bottomMargin = 20
+        params.bottomMargin = getIndb(10)
 
         //bind data
         messageText?.text = m_text
@@ -53,21 +46,25 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
                 readSymbol?.visibility = View.GONE
 
             //params.gravity = Gravity.LEFT
-            params.leftMargin = margin
-            params.rightMargin = 20
             itemView.setBackgroundResource(R.drawable.other_message)
+            params.leftMargin = getIndb(50)
+            params.rightMargin = getIndb(10)
 
 
         }else{
 
             readSymbol?.visibility = View.GONE
             //params.gravity = Gravity.RIGHT
-            params.rightMargin = margin
-            params.leftMargin = 20
             itemView.setBackgroundResource(R.drawable.my_message)
+            params.rightMargin = getIndb(50)
+            params.leftMargin = getIndb(10)
             //itemView.setBackgroundColor(Color.parseColor("#EEEEEE"))
         }
 
         itemView.layoutParams = params
+    }
+
+    private fun getIndb(dpValue: Int): Int {
+        return (dpValue * itemView.resources.displayMetrics.density).toInt()
     }
 }
