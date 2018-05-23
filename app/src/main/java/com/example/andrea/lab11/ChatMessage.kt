@@ -34,7 +34,7 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
         val d = itemView.getResources().getDisplayMetrics().density
         val margin = (dpValue * d).toInt()
         val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT)
-        params.bottomMargin = 10
+        params.bottomMargin = 20
 
         //bind data
         messageText?.text = m_text
@@ -54,8 +54,8 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
 
             //params.gravity = Gravity.LEFT
             params.leftMargin = margin
-            params.rightMargin = 10
-            itemView.setBackgroundColor(itemView.resources.getColor(R.color.lightPrimaryColor))
+            params.rightMargin = 20
+            itemView.setBackgroundResource(R.drawable.other_message)
 
 
         }else{
@@ -63,8 +63,8 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
             readSymbol?.visibility = View.GONE
             //params.gravity = Gravity.RIGHT
             params.rightMargin = margin
-            params.leftMargin = 10
-            itemView.setBackgroundResource(R.drawable.my_border)
+            params.leftMargin = 20
+            itemView.setBackgroundResource(R.drawable.my_message)
             //itemView.setBackgroundColor(Color.parseColor("#EEEEEE"))
         }
 
