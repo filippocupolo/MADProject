@@ -11,41 +11,47 @@ import android.support.v4.app.NotificationCompat
 import android.app.NotificationChannel
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.*
+import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.CopyOnWriteArrayList
 
 
 class ChatService : Service(){
 
     val deBugTag = "ChatService"
+    var chilListener : ChildEventListener? = null
+    var dbRef : DatabaseReference? = null
+    var valueListeners : CopyOnWriteArrayList<ValueEventListener>? = null
 
     override fun onBind(intent: Intent?): IBinder? {
         Log.d(deBugTag,"onBind")
         return null
     }
 
-    override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+    override fun onCreate() {
 
-        //todo studia documentazione
-
+        super.onCreate()
         val userId = MyUser(applicationContext).userID
-        Log.d(deBugTag,"onStartCommand()")
+        Log.d(deBugTag,"onCreate()")
 
         FirebaseApp.initializeApp(this)
-        val dbRef = FirebaseDatabase.getInstance().reference;
+        dbRef = FirebaseDatabase.getInstance().reference
 
-        dbRef.child("usersChat").child(userId).addChildEventListener( object : ChildEventListener{
+        valueListeners = CopyOnWriteArrayList<ValueEventListener>()
+
+        chilListener = dbRef!!.child("usersChat").child(userId).addChildEventListener( object : ChildEventListener{
 
             override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
                 if(p0==null)
                     return
 
-                dbRef.child("chat").child(p0.key).orderByChild("messageReceived").equalTo(false).addValueEventListener( object : ValueEventListener {
+                val l = dbRef!!.child("chat").child(p0.key).orderByChild("messageReceived").equalTo(false).addValueEventListener( object : ValueEventListener {
                     override fun onDataChange(dataSnapshot: DataSnapshot) {
                         val it = dataSnapshot.children.iterator()
                         val chat = dataSnapshot.key
                         while (it.hasNext()){
                             val data = it.next()
                             if(!data.child("messageUserId").value!!.toString().equals(userId)){
-                                dbRef.child("chat").child(chat).child(data.key).child("messageReceived").setValue(true)
+                                dbRef!!.child("chat").child(chat).child(data.key).child("messageReceived").setValue(true)
                                 postNotification(data.child("messageUser").value.toString(),data.child("messageText").value.toString())
                             }
                         }
@@ -55,6 +61,8 @@ class ChatService : Service(){
                         //todo gestire
                     }
                 })
+
+                valueListeners!!.add(l)
             }
 
             override fun onCancelled(p0: DatabaseError?) {
@@ -74,12 +82,23 @@ class ChatService : Service(){
             }
 
         })
-        return super.onStartCommand(intent, flags, startId)
+
     }
-    override fun onCreate() {
-        super.onCreate()
 
+    override fun onDestroy() {
+        super.onDestroy()
 
+        Log.d(deBugTag,"onDestroy")
+
+        //remove all listeners
+        dbRef?.removeEventListener(chilListener)
+        if(valueListeners == null)
+            return
+        val it = valueListeners!!.iterator()
+
+        while (it.hasNext()){
+            dbRef?.removeEventListener(it.next())
+        }
     }
 
     fun postNotification(title: String, content: String) {
