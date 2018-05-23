@@ -205,7 +205,6 @@ public class ResultsList extends AppCompatActivity {
                 }
             });
         }
-
     }
 
     public static BookInfo parseDataSnapshotBook(DataSnapshot dataSnapshot){

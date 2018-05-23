@@ -8,6 +8,9 @@
     <string name="profile">Profile</string>
     <string name="home">Home</string>
     <string name="wishlist">Wishlist</string>
+    <string name="connectWith">Connect with:</string>
+    <string name="noAccount">You don\'t have an account?</string>
+    <string name="connectAlternatives">or sign in with your account</string>
     <string name="name">Name</string>
     <string name="surname">Surname</string>
     <string name="name_surname">Name Surname</string>

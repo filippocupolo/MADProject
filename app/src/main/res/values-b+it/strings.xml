@@ -62,6 +62,9 @@
     <string name="book_details">Dettagli Libro</string>
     <string name="registered">Hai già un profilo?</string>
     <string name="not_registered">Non hai un profilo?</string>
+    <string name="connectWith">Connettiti con:</string>
+    <string name="noAccount">Non hai un account?</string>
+    <string name="connectAlternatives">o accedi con il tuo account</string>
     <string-array name="conditions_array">
         <item>Pessime</item>
         <item>Cattive</item>

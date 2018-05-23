@@ -46,18 +46,18 @@ class ChatMessage(view: View): RecyclerView.ViewHolder(view){
                 readSymbol?.visibility = View.GONE
 
             //params.gravity = Gravity.LEFT
+            itemView.setBackgroundResource(R.drawable.other_message)
             params.leftMargin = getIndb(50)
             params.rightMargin = getIndb(10)
-            itemView.setBackgroundColor(itemView.resources.getColor(R.color.lightPrimaryColor))
 
 
         }else{
 
             readSymbol?.visibility = View.GONE
             //params.gravity = Gravity.RIGHT
+            itemView.setBackgroundResource(R.drawable.my_message)
             params.rightMargin = getIndb(50)
             params.leftMargin = getIndb(10)
-            itemView.setBackgroundResource(R.drawable.my_border)
             //itemView.setBackgroundColor(Color.parseColor("#EEEEEE"))
         }
 

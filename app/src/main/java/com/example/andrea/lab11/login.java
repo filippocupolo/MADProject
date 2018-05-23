@@ -78,7 +78,7 @@ public class login extends AppCompatActivity implements
 
         //HIDE SOME ELEMENTS
         findViewById(R.id.reset_login).setVisibility(View.GONE);
-        findViewById(R.id.reset_pwd_button).setVisibility(View.GONE);
+        //findViewById(R.id.reset_pwd_button).setVisibility(View.GONE);
         //findViewById(R.id.reset_pwd_help).setVisibility(View.GONE);
 
         /*-----GOOGLE------*/
@@ -145,7 +145,7 @@ public class login extends AppCompatActivity implements
         findViewById(R.id.pwd_forgotten_link).setVisibility(View.GONE);
         findViewById(R.id.register_link).setVisibility(View.GONE);
         findViewById(R.id.reset_login).setVisibility(View.VISIBLE);
-        findViewById(R.id.reset_pwd_button).setVisibility(View.VISIBLE);
+        //findViewById(R.id.reset_pwd_button).setVisibility(View.VISIBLE);
         findViewById(R.id.login_button).setVisibility(View.GONE);
         //findViewById(R.id.reset_pwd_help).setVisibility(View.VISIBLE);
     }
@@ -158,7 +158,7 @@ public class login extends AppCompatActivity implements
         findViewById(R.id.pwd_forgotten_link).setVisibility(View.VISIBLE);
         findViewById(R.id.register_link).setVisibility(View.VISIBLE);
         findViewById(R.id.reset_login).setVisibility(View.GONE);
-        findViewById(R.id.reset_pwd_button).setVisibility(View.GONE);
+        //findViewById(R.id.reset_pwd_button).setVisibility(View.GONE);
         findViewById(R.id.login_button).setVisibility(View.VISIBLE);
         //findViewById(R.id.reset_pwd_help).setVisibility(View.GONE);
     }
