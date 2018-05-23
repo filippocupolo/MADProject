@@ -77,7 +77,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
-                FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes(2 * 1024 * 1024).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+                FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes(1024 * 1024).addOnSuccessListener(new OnSuccessListener<byte[]>() {
 
                     @Override
                     public void onSuccess(byte[] bytes) {

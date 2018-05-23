@@ -84,6 +84,9 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
         mapView = view.findViewById(R.id.mapViewSearchBook);
         mapView.onCreate(savedInstanceState);
 
+        //hide keyboard
+        getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
+
         authorSearchButton.setOnClickListener(v -> {
             if(authorEditText.getText().toString().trim().length()==0){
                 //field cannot be empty
