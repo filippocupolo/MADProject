@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -41,6 +42,7 @@ public class ResultsList extends AppCompatActivity {
     private TextView emptyListMessage;
     private CopyOnWriteArrayList<BookInfo> bookList;
     private HashSet<String> bookIdList;
+    private ProgressBar spinner;
     private Query query;
 
     @Override
@@ -55,7 +57,6 @@ public class ResultsList extends AppCompatActivity {
         query = FirebaseDatabase.getInstance().getReference().child("books");
         String valueExtra;
 
-
         if(intent.getStringExtra("keyword")!=null){
             valueExtra = intent.getStringExtra("keyword");
             Log.d(deBugTag,"valueExtra: "+valueExtra);
@@ -65,6 +66,10 @@ public class ResultsList extends AppCompatActivity {
         }
 
         setContentView(R.layout.recycler_view_search_list);
+
+        //hide spinner
+        spinner = findViewById(R.id.progressBarLogin);
+        spinner.setVisibility(View.GONE);
 
         //set toolbar
         ImageButton backArrow = findViewById(R.id.backButton);
@@ -85,6 +90,7 @@ public class ResultsList extends AppCompatActivity {
         //get elements
         list = findViewById(R.id.rv);
         emptyListMessage = findViewById(R.id.emptyListMessage);
+        emptyListMessage.setVisibility(View.VISIBLE);
 
         //set adapter
         adapter = new RecyclerView.Adapter <CardViewBook>() {
@@ -132,9 +138,9 @@ public class ResultsList extends AppCompatActivity {
         else
             valueVector = new String[]{"authorSearch","bookTitleSearch","publisherSearch"};
 
-        for(int i=0; i<valueVector.length; i++){
+        Utilities.loading_and_blur_background(list, spinner);
 
-            //todo pensare a unmodo per settare il messaggio non ci sono libri adesso è visible di default
+        for(int i=0; i<valueVector.length; i++){
 
             query.orderByChild(valueVector[i]).equalTo(valueExtra).addChildEventListener(new ChildEventListener() {
 
@@ -145,13 +151,12 @@ public class ResultsList extends AppCompatActivity {
                     if(book == null)
                         return;
                     bookList.add(book);
-                    adapter.notifyDataSetChanged();
                     emptyListMessage.setVisibility(View.GONE);
+                    adapter.notifyDataSetChanged();
                 }
 
                 @Override
                 public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
                 }
 
                 @Override
@@ -176,6 +181,21 @@ public class ResultsList extends AppCompatActivity {
                 public void onCancelled(DatabaseError databaseError) {
                     Log.d(deBugTag,databaseError.getMessage()+databaseError.getCode());
                     networkProblem(databaseError);
+                }
+            });
+
+            query.orderByChild(valueVector[i]).equalTo(valueExtra).addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    Utilities.show_background(list, spinner);
+                    if(dataSnapshot.getValue() != null) {
+                        emptyListMessage.setVisibility(View.GONE);
+                    }
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+
                 }
             });
         }
@@ -255,5 +275,6 @@ public class ResultsList extends AppCompatActivity {
             onBackPressed();
         }
     }
+
 
 }
