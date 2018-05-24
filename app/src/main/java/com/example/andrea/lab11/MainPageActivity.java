@@ -10,10 +10,13 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
+
+import static android.webkit.ConsoleMessage.MessageLevel.LOG;
 
 public class MainPageActivity extends AppCompatActivity {
 
@@ -36,7 +39,7 @@ public class MainPageActivity extends AppCompatActivity {
         tab = findViewById(R.id.tabLayout);
 
         //set service
-        Intent intent = new Intent("MadProject.SERVICE");
+        Intent intent = new Intent(this, ChatService.class);
         intent.setPackage(this.getPackageName());
         startService(intent);
 

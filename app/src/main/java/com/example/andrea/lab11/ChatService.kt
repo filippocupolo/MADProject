@@ -52,6 +52,7 @@ class ChatService : Service(){
                             val data = it.next()
                             if(!data.child("messageUserId").value!!.toString().equals(userId)){
                                 dbRef!!.child("chat").child(chat).child(data.key).child("messageReceived").setValue(true)
+                                Log.d(deBugTag,"notifica")
                                 postNotification(data.child("messageUser").value.toString(),data.child("messageText").value.toString())
                             }
                         }
@@ -99,6 +100,10 @@ class ChatService : Service(){
         while (it.hasNext()){
             dbRef?.removeEventListener(it.next())
         }
+
+        Log.d(deBugTag,"before stopSelf")
+        stopSelf()
+        Log.d(deBugTag,"after stopSelf")
     }
 
     fun postNotification(title: String, content: String) {

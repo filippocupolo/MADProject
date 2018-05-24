@@ -86,24 +86,6 @@ class PersonalChat : AppCompatActivity() {
         //initialization
         val dbRef = FirebaseDatabase.getInstance().reference.child("chat").child(chatKey)
 
-        //send message
-        fab?.setOnClickListener {
-
-            //get input
-            val txt = input!!.text.toString()
-
-            //check if input is just spaces
-            if(!txt.trim().isEmpty()){
-
-                // Read the input field and push a new instance
-                // of ChatMessage to the Firebase database
-                dbRef.push().setValue(ChatMessageModel(txt,myUserName!!,myUserId!!))
-
-                // Clear the input
-                input!!.setText("")
-            }
-        }
-
         //set adapter
         val options = FirebaseRecyclerOptions.Builder<ChatMessageModel>()
                 .setQuery(dbRef, SnapshotParser<ChatMessageModel> {snapshot ->
@@ -133,9 +115,31 @@ class PersonalChat : AppCompatActivity() {
 
         }
 
+        //set linear layout and adapter to recycleView
         val layoutManager = LinearLayoutManager(applicationContext)
         layoutManager.stackFromEnd = true
         listOfMessages?.layoutManager = layoutManager
         listOfMessages?.adapter = adapter
+
+        //send message
+        fab?.setOnClickListener {
+
+            //get input
+            val txt = input!!.text.toString()
+
+            //check if input is just spaces
+            if(!txt.trim().isEmpty()){
+
+                // Read the input field and push a new instance
+                // of ChatMessage to the Firebase database
+                dbRef.push().setValue(ChatMessageModel(txt,myUserName!!,myUserId!!))
+
+                // Clear the input
+                input!!.setText("")
+
+                //go to bottom
+                listOfMessages!!.smoothScrollToPosition(adapter.itemCount)
+            }
+        }
     }
 }

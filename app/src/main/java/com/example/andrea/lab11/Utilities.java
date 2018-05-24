@@ -40,6 +40,7 @@ public class Utilities {
     /**
      * This is a static class that contains all the constants and useful methods in common whit more classes
      **/
+    public final static String deBugTag = "Utilities";
 
     private Utilities(){}
 
@@ -153,6 +154,9 @@ public class Utilities {
     public static void signOut(Context context){
         FirebaseAuth.getInstance().signOut();
         LoginManager.getInstance().logOut(); //facebook
+
+        Log.d(deBugTag,"elimino il service");
+        context.stopService(new Intent(context, ChatService.class));
 
         Intent intent = new Intent(
                 context,

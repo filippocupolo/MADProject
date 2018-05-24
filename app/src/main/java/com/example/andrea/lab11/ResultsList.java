@@ -296,6 +296,7 @@ public class ResultsList extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+
         for(ChildEventListener c : childEventListeners){
             query.removeEventListener(c);
         }
