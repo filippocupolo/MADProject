@@ -124,6 +124,24 @@
                 android:maxLength="20"
                 android:imeOptions="actionDone"/>
 
+            <Spinner
+                android:id="@+id/townEdit"
+                android:layout_height="500dp"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/cityEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/my_border"
+                android:ems="10"
+                android:hint="@string/city"
+                android:textColor="@color/primaryText"
+                android:textColorHint="@color/secondaryText"
+                android:inputType="text"
+                android:labelFor="@id/cityEdit"
+                android:padding="8dp"
+                android:maxLength="20"
+                android:imeOptions="actionDone"/>
+
             <EditText
                 android:id="@+id/emailEdit"
                 android:layout_width="match_parent"
@@ -131,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/surnameEdit"
                 android:layout_alignRight="@+id/surnameEdit"
-                android:layout_below="@+id/cityEdit"
+                android:layout_below="@+id/townEdit"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/my_border"
                 android:ems="10"
