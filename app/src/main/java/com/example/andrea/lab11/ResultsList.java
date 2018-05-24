@@ -235,10 +235,10 @@ public class ResultsList extends AppCompatActivity {
 
                     BookInfo book = parseDataSnapshotBook(dataSnapshot.getChildren().iterator().next());
                     if(book == null){
-                        emptyListMessage.setVisibility(View.VISIBLE);
                         return;
                     }
 
+                    emptyListMessage.setVisibility(View.GONE);
                     bookList.add(book);
                     adapter.notifyDataSetChanged();
                 }
