@@ -32,6 +32,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -43,9 +44,9 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
     private EditText authorEditText;
     private Context context;
     private MapView mapView;
-    private ConcurrentHashMap<String,LatLng> user_position;
-    private ConcurrentHashMap<LatLng,Marker> position_marker;
-    private ConcurrentHashMap<Marker,HashSet<String>> position_books;
+    private HashMap<String,LatLng> user_position;
+    private HashMap<LatLng,Marker> position_marker;
+    private HashMap<Marker,HashSet<String>> position_books;
     private final static double RADIUS = 45.0;
 
 
@@ -60,9 +61,9 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
         //initialization
         deBugTag = this.getClass().getName();
         context = getActivity().getApplicationContext();
-        user_position = new ConcurrentHashMap<>();
-        position_marker = new ConcurrentHashMap<>();
-        position_books = new ConcurrentHashMap<>();
+        user_position = new HashMap<>();
+        position_marker = new HashMap<>();
+        position_books = new HashMap<>();
     }
 
     @Override
@@ -138,11 +139,14 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                        LatLng bookLocation = user_position.get(dataSnapshot.child("owner").getValue());
+                        LatLng bookLocation = user_position.get(dataSnapshot.child("owner").getValue().toString());
                         Marker marker = googleMap.addMarker(new MarkerOptions().position(bookLocation));
 
-                        HashSet<String> bookSet = position_books.get(bookLocation);
+                        Log.d(deBugTag,dataSnapshot.child("bookTitle").getValue().toString());
+
+                        HashSet<String> bookSet = position_books.get(marker);
                         if(bookSet==null){
+                            
                             bookSet = new HashSet<>();
                             bookSet.add(dataSnapshot.getKey());
                             position_books.put(marker,bookSet);
@@ -223,7 +227,6 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
                 //open a list of the selected books
                 Intent intent = new Intent(context,ResultsList.class);
-                Log.d(deBugTag,booksAtPosition.size()+"");
                 intent.putExtra("bookIdList",booksAtPosition);
                 startActivity(intent);
 

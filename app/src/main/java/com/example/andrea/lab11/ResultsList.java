@@ -42,7 +42,7 @@ public class ResultsList extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private RecyclerView list;
     private TextView emptyListMessage;
-    private CopyOnWriteArrayList<BookInfo> bookList;
+    private ArrayList<BookInfo> bookList;
     private ArrayList<String> bookIdList;
     private ProgressBar spinner;
     private Query query;
@@ -55,7 +55,7 @@ public class ResultsList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         deBugTag = this.getClass().getName();
-        bookList = new CopyOnWriteArrayList<>();
+        bookList = new ArrayList<>();
         childEventListeners = new HashSet<>();
 
         //set query based on the user research

@@ -51,8 +51,8 @@ import cz.msebera.android.httpclient.Header;
 
 public class search_results_map extends FragmentActivity implements OnMapReadyCallback {
 
-    private ConcurrentHashMap<Marker,HashSet<String>> position_users;
-    private ConcurrentHashMap<String,HashSet<String>> user_books;
+    private HashMap<Marker,HashSet<String>> position_users;
+    private HashMap<String,HashSet<String>> user_books;
     private GeoLocation researcherLoc;
     private String deBugTag;
     private GoogleMap googleMap;
@@ -62,8 +62,8 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
 
         super.onCreate(savedInstanceState);
         deBugTag = this.getClass().getName();
-        position_users = new ConcurrentHashMap<>();
-        user_books = new ConcurrentHashMap<>();
+        position_users = new HashMap<>();
+        user_books = new HashMap<>();
         setContentView(R.layout.search_results_map);
 
         //get query from previous activity
