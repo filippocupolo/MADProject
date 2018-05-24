@@ -46,7 +46,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
     private MapView mapView;
     private HashMap<String,LatLng> user_position;
     private HashMap<LatLng,Marker> position_marker;
-    private HashMap<Marker,HashSet<String>> position_books;
+    private HashMap<LatLng,HashSet<String>> position_books;
     private final static double RADIUS = 45.0;
 
 
@@ -144,12 +144,12 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
                         Log.d(deBugTag,dataSnapshot.child("bookTitle").getValue().toString());
 
-                        HashSet<String> bookSet = position_books.get(marker);
+                        HashSet<String> bookSet = position_books.get(bookLocation);
                         if(bookSet==null){
-                            
+
                             bookSet = new HashSet<>();
                             bookSet.add(dataSnapshot.getKey());
-                            position_books.put(marker,bookSet);
+                            position_books.put(bookLocation,bookSet);
                             position_marker.put(bookLocation,marker);
                         }else{
                             bookSet.add(dataSnapshot.getKey());
@@ -172,9 +172,9 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
                         LatLng bookLocation = user_position.get(dataSnapshot.child("owner").getValue().toString());
                         Marker m = position_marker.get(bookLocation);
                         Log.d(deBugTag, dataSnapshot.child("bookTitle").getValue().toString()+"");
-                        position_books.get(m).remove(dataSnapshot.getKey());
+                        position_books.get(bookLocation).remove(dataSnapshot.getKey());
 
-                        if(position_books.get(m).size() == 0){
+                        if(position_books.get(bookLocation).size() == 0){
                             position_books.remove(bookLocation);
                             m.remove();
                             position_marker.remove(bookLocation);
@@ -223,7 +223,7 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                ArrayList<String> booksAtPosition = new ArrayList<>(position_books.get(marker));
+                ArrayList<String> booksAtPosition = new ArrayList<>(position_books.get(marker.getPosition()));
 
                 //open a list of the selected books
                 Intent intent = new Intent(context,ResultsList.class);
