@@ -16,7 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
 
-import static android.webkit.ConsoleMessage.MessageLevel.LOG;
 
 public class MainPageActivity extends AppCompatActivity {
 

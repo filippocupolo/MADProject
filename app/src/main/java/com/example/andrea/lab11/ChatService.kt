@@ -92,18 +92,17 @@ class ChatService : Service(){
         Log.d(deBugTag,"onDestroy")
 
         //remove all listeners
-        dbRef?.removeEventListener(chilListener)
+        dbRef!!.removeEventListener(chilListener)
         if(valueListeners == null)
             return
         val it = valueListeners!!.iterator()
 
         while (it.hasNext()){
             dbRef?.removeEventListener(it.next())
+            Log.d(deBugTag,"rimosso")
         }
 
-        Log.d(deBugTag,"before stopSelf")
         stopSelf()
-        Log.d(deBugTag,"after stopSelf")
     }
 
     fun postNotification(title: String, content: String) {
