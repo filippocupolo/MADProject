@@ -81,7 +81,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
             @Override
             public void onSuccess(Uri uri) {
 
-                Glide.with(itemView).load(uri).into(photo);
+                Glide.with(context).load(uri).into(photo);
 
             }
         }).addOnFailureListener(new OnFailureListener() {

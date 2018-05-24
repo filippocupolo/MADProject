@@ -30,7 +30,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="133dp"
         android:text="@string/no_results"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/rv"
         app:layout_constraintStart_toStartOf="@+id/rv"

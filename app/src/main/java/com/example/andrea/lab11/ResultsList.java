@@ -29,8 +29,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -41,9 +43,12 @@ public class ResultsList extends AppCompatActivity {
     private RecyclerView list;
     private TextView emptyListMessage;
     private CopyOnWriteArrayList<BookInfo> bookList;
-    private HashSet<String> bookIdList;
+    private ArrayList<String> bookIdList;
     private ProgressBar spinner;
     private Query query;
+    private HashSet<ChildEventListener> childEventListeners = null;
+    private static Integer counterEmpty = 0;
+    private static int counterFinished = 0;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -51,6 +56,7 @@ public class ResultsList extends AppCompatActivity {
 
         deBugTag = this.getClass().getName();
         bookList = new CopyOnWriteArrayList<>();
+        childEventListeners = new HashSet<>();
 
         //set query based on the user research
         Intent intent = getIntent();
@@ -62,7 +68,7 @@ public class ResultsList extends AppCompatActivity {
             Log.d(deBugTag,"valueExtra: "+valueExtra);
         }else{
             valueExtra = null;
-            bookIdList = (HashSet<String>) intent.getSerializableExtra("bookIdList");
+            bookIdList = (ArrayList<String>) intent.getSerializableExtra("bookIdList");
         }
 
         setContentView(R.layout.recycler_view_search_list);
@@ -138,11 +144,11 @@ public class ResultsList extends AppCompatActivity {
         else
             valueVector = new String[]{"authorSearch","bookTitleSearch","publisherSearch"};
 
-        Utilities.loading_and_blur_background(list, spinner);
+        //Utilities.loading_and_blur_background(list, spinner);
 
         for(int i=0; i<valueVector.length; i++){
 
-            query.orderByChild(valueVector[i]).equalTo(valueExtra).addChildEventListener(new ChildEventListener() {
+            ChildEventListener c = query.orderByChild(valueVector[i]).equalTo(valueExtra).addChildEventListener(new ChildEventListener() {
 
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -184,20 +190,37 @@ public class ResultsList extends AppCompatActivity {
                 }
             });
 
+            childEventListeners.add(c);
+
+            /*
             query.orderByChild(valueVector[i]).equalTo(valueExtra).addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
-                    Utilities.show_background(list, spinner);
-                    if(dataSnapshot.getValue() != null) {
-                        emptyListMessage.setVisibility(View.GONE);
+
+                    synchronized (counterEmpty) {
+
+                        counterFinished++;
+
+                        if (dataSnapshot.getValue() == null) {
+                            counterEmpty++;
+                        }
+
+                        if(counterFinished!=counterEmpty)
+                            Utilities.show_background(list, spinner);
+
+                        if (counterEmpty == 3)
+                                emptyListMessage.setVisibility(View.VISIBLE);
+
                     }
+
+
                 }
 
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
 
                 }
-            });
+            });*/
         }
     }
 
@@ -211,10 +234,12 @@ public class ResultsList extends AppCompatActivity {
                 public void onDataChange(DataSnapshot dataSnapshot) {
 
                     BookInfo book = parseDataSnapshotBook(dataSnapshot.getChildren().iterator().next());
-                    if(book == null)
+                    if(book == null){
+                        emptyListMessage.setVisibility(View.VISIBLE);
                         return;
+                    }
+
                     bookList.add(book);
-                    emptyListMessage.setVisibility(View.GONE);
                     adapter.notifyDataSetChanged();
                 }
 
@@ -268,6 +293,13 @@ public class ResultsList extends AppCompatActivity {
         return book;
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        for(ChildEventListener c : childEventListeners){
+            query.removeEventListener(c);
+        }
+    }
 
     private void networkProblem(DatabaseError databaseError){
         if(databaseError.getCode()!=-3){
