@@ -54,6 +54,7 @@ public class showProfile extends AppCompatActivity{
     private String deBugTag;
     private AppCompatActivity activity;
     private FirebaseRecyclerAdapter<BookInfo, CardViewBook> adapter;
+    private FirebaseRecyclerAdapter<String, CardViewComment> commentAdapter;
     private String name = null;
     private String surname = null;
     private String email = null;
@@ -92,6 +93,150 @@ public class showProfile extends AppCompatActivity{
         //set FireBaseReference
         DatabaseReference fireBaseRef = FirebaseDatabase.getInstance().getReference();
 
+        //aboutMeList expandable adapter
+        BaseExpandableListAdapter aboutMeAdapter = new BaseExpandableListAdapter() {
+
+            private int lastExpandedGroupPosition;
+            @Override
+            public int getGroupCount() {
+                Log.d(deBugTag, "1");
+                return groups.length;
+            }
+
+            @Override
+            public int getChildrenCount(int groupPosition) {
+                int returnValue = 0;
+                switch(groupPosition){
+                    case 0:
+                        returnValue = 1;
+                        break;
+                    case 1:
+                        returnValue = 1;
+                        break;
+                    case 2:
+                        returnValue = 0;
+                }
+                return returnValue;
+            }
+
+            @Override
+            public Object getGroup(int groupPosition) {
+                Log.d(deBugTag, "3");
+                return groups[groupPosition];
+            }
+
+            @Override
+            public Object getChild(int groupPosition, int childPosition) {
+                Log.d(deBugTag, "4");
+                return null;
+            }
+
+            @Override
+            public long getGroupId(int groupPosition) {
+                Log.d(deBugTag, "5");
+                return 0;
+            }
+
+            @Override
+            public long getChildId(int groupPosition, int childPosition) {
+                Log.d(deBugTag, "6");
+                return 0;
+            }
+
+            @Override
+            public boolean hasStableIds() {
+                Log.d(deBugTag, "7");
+                return false;
+            }
+
+            @Override
+            public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
+                Log.d(deBugTag, "8");
+                if(convertView==null){
+                    LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    convertView = li.inflate(R.layout.show_profile_groups, null);
+                }
+
+                TextView title = convertView.findViewById(R.id.heading);
+                title.setText(groups[groupPosition]);
+                return convertView;
+            }
+
+            @Override
+            public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+                Log.d(deBugTag, "9");
+
+                switch (groupPosition){
+                    case 0:
+                        if(convertView==null || convertView.getId() != R.id.about_me_childs){
+                            LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                            convertView = li.inflate(R.layout.about_me_childs, null);
+                        }
+
+                        TextView cityView = convertView.findViewById(R.id.showProfileCity);
+                        cityView.setText(city);
+
+                        TextView bioView = convertView.findViewById(R.id.showProfileBio);
+                        bioView.setText(biography);
+
+                        TextView nameView = convertView.findViewById(R.id.showProfileNameSurname);
+                        nameView.setText(name+" "+surname);
+
+                        TextView emailView = convertView.findViewById(R.id.showProfileEmail);
+                        emailView.setText(email);
+
+
+                        break;
+
+                    case 1:
+                        if(convertView==null || convertView.getId() != R.id.book_list_childs){
+                            LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                            convertView = li.inflate(R.layout.book_list_childs, null);
+                        }
+
+                        //convertView.setLayoutParams(new ConstraintLayout.LayoutParams("300dp", MA));
+                        RecyclerView list = convertView.findViewById(R.id.published_books_rv);
+                        TextView noBooksMessage = convertView.findViewById(R.id.noBookMessage);
+
+
+                        if(noBook)
+                            noBooksMessage.setVisibility(View.VISIBLE);
+                        else
+                            noBooksMessage.setVisibility(View.GONE);
+
+                        list.setItemAnimator(new DefaultItemAnimator());
+                        list.setLayoutManager(new LinearLayoutManager(context));
+                        list.setAdapter(adapter);
+
+                        break;
+                }
+
+                return convertView;
+            }
+
+            @Override
+            public boolean isChildSelectable(int groupPosition, int childPosition) {
+                Log.d(deBugTag, "10");
+                return false;
+            }
+
+            @Override
+            public void onGroupExpanded(int groupPosition){
+                //collapse the old expanded group, if not the same
+                //as new group to expand
+                if(groupPosition != lastExpandedGroupPosition){
+                    aboutMeList.collapseGroup(lastExpandedGroupPosition);
+                }
+
+                super.onGroupExpanded(groupPosition);
+                lastExpandedGroupPosition = groupPosition;
+            }
+        };
+
+        aboutMeList.setAdapter(aboutMeAdapter);
+        aboutMeAdapter.getChildView(0,0,true,null, null);
+        aboutMeList.expandGroup(0);
+
         //Get information from FireBase
         fireBaseRef.child("users").orderByKey().equalTo(userId).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
@@ -123,7 +268,10 @@ public class showProfile extends AppCompatActivity{
                 //biographyView.setText(biography);
                 //cityView.setText(city);
 
-                //aboutMeList.notifyAll();
+                synchronized(aboutMeAdapter){
+                    aboutMeAdapter.notifyDataSetChanged();
+                }
+
                 //set default image
                 profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
 
@@ -231,136 +379,11 @@ public class showProfile extends AppCompatActivity{
             }
         };
 
-        //aboutMeList expandable adapter
-        BaseExpandableListAdapter aboutMeAdapter = new BaseExpandableListAdapter() {
-            @Override
-            public int getGroupCount() {
-                Log.d(deBugTag, "1");
-                return groups.length;
-            }
+        //comment list
 
-            @Override
-            public int getChildrenCount(int groupPosition) {
-                int returnValue = 0;
-                switch(groupPosition){
-                    case 0:
-                        returnValue = 1;
-                        break;
-                    case 1:
-                        returnValue = 1;
-                        break;
-                    case 2:
-                        //todo returnvalue
-                        returnValue = 0;
-                }
-                return returnValue;
-            }
+        Query commentQueyr = fireBaseRef.child("commentsDB").equalTo(userId);
 
-            @Override
-            public Object getGroup(int groupPosition) {
-                Log.d(deBugTag, "3");
-                return groups[groupPosition];
-            }
-
-            @Override
-            public Object getChild(int groupPosition, int childPosition) {
-                Log.d(deBugTag, "4");
-                return null;
-            }
-
-            @Override
-            public long getGroupId(int groupPosition) {
-                Log.d(deBugTag, "5");
-                return 0;
-            }
-
-            @Override
-            public long getChildId(int groupPosition, int childPosition) {
-                Log.d(deBugTag, "6");
-                return 0;
-            }
-
-            @Override
-            public boolean hasStableIds() {
-                Log.d(deBugTag, "7");
-                return false;
-            }
-
-            @Override
-            public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
-                Log.d(deBugTag, "8");
-                if(convertView==null){
-                    LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                    convertView = li.inflate(R.layout.show_profile_groups, null);
-                }
-
-                TextView title = convertView.findViewById(R.id.heading);
-                title.setText(groups[groupPosition]);
-                return convertView;
-            }
-
-            @Override
-            public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-                Log.d(deBugTag, "9");
-
-                switch (groupPosition){
-                    case 0:
-                        if(convertView==null || convertView.getId() != R.id.about_me_childs){
-                            LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            convertView = li.inflate(R.layout.about_me_childs, null);
-                        }
-
-                        TextView cityView = convertView.findViewById(R.id.showProfileCity);
-                        cityView.setText(city);
-
-                        TextView bioView = convertView.findViewById(R.id.showProfileBio);
-                        bioView.setText(biography);
-
-                        TextView nameView = convertView.findViewById(R.id.showProfileNameSurname);
-                        nameView.setText(name+" "+surname);
-
-                        TextView emailView = convertView.findViewById(R.id.showProfileEmail);
-                        emailView.setText(email);
-
-
-                        break;
-
-                    case 1:
-                        if(convertView==null || convertView.getId() != R.id.book_list_childs){
-                            LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                            convertView = li.inflate(R.layout.book_list_childs, null);
-                        }
-
-                        //convertView.setLayoutParams(new ConstraintLayout.LayoutParams("300dp", MA));
-                        RecyclerView list = convertView.findViewById(R.id.published_books_rv);
-                        TextView noBooksMessage = convertView.findViewById(R.id.noBookMessage);
-
-
-                        if(noBook)
-                            noBooksMessage.setVisibility(View.VISIBLE);
-                        else
-                            noBooksMessage.setVisibility(View.GONE);
-
-                        list.setItemAnimator(new DefaultItemAnimator());
-                        list.setLayoutManager(new LinearLayoutManager(context));
-                        list.setAdapter(adapter);
-
-                        break;
-                }
-
-                return convertView;
-            }
-
-            @Override
-            public boolean isChildSelectable(int groupPosition, int childPosition) {
-                Log.d(deBugTag, "10");
-                return false;
-            }
-        };
-
-        aboutMeList.setAdapter(aboutMeAdapter);
-        //aboutMeAdapter.getChildView(0,0,true,null, null);
-        //aboutMeList.expandGroup(0);
+        FirebaseRecyclerOptions<>
 
     }
 
