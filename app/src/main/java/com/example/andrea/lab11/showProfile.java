@@ -227,6 +227,12 @@ public class showProfile extends AppCompatActivity{
         list.setAdapter(adapter);
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        adapter.stopListening();
+    }
+
     private void networkProblem(){
         Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
         onBackPressed();

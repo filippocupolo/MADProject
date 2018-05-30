@@ -50,6 +50,7 @@ public class MyBookList extends Fragment {
     private RecyclerView list;
     private ImageButton addBookButton;
     private TextView noItemMessage;
+    private FirebaseRecyclerAdapter<BookInfo, CardViewBook> adapter;
 
     public MyBookList() {
         // Required empty public constructor
@@ -114,7 +115,7 @@ public class MyBookList extends Fragment {
                 .setLifecycleOwner(this)
                 .build();
 
-        FirebaseRecyclerAdapter<BookInfo, CardViewBook> adapter = new FirebaseRecyclerAdapter<BookInfo, CardViewBook>(options) {
+        adapter = new FirebaseRecyclerAdapter<BookInfo, CardViewBook>(options) {
 
             @NonNull
             @Override

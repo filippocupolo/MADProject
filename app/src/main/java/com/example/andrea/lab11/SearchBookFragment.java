@@ -112,6 +112,9 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
         GeoLocation researcherLoc = location.getTownCoordinates(researcher.getTown(), researcher.getCity(), context);
 
+        if(researcherLoc == null)
+            Log.d(deBugTag,"problema");
+
         //todo cambiare lo zoom e il radius
         LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
         CameraPosition cameraPosition = new CameraPosition.Builder()
