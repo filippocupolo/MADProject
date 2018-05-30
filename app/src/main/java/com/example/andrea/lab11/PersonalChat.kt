@@ -94,7 +94,12 @@ class PersonalChat : AppCompatActivity() {
                         dbRef.child(snapshot.key).child("messageRead").setValue(true)
                         dbRef.child(snapshot.key).child("messageReceived").setValue(true)
                     }
-                    ChatMessageModel(snapshot.child("messageText").value.toString(),snapshot.child("messageUser").value.toString(),snapshot.child("messageTime").value.toString().toLong(),messageUserId, snapshot.child("messageRead").value.toString().toBoolean(),snapshot.child("messageReceived").value.toString().toBoolean())
+                    ChatMessageModel(snapshot.child("messageText").value.toString(),
+                            snapshot.child("messageUser").value.toString(),
+                            snapshot.child("messageTime").value.toString().toLong(),messageUserId,
+                            snapshot.child("messageRead").value.toString().toBoolean(),
+                            snapshot.child("messageReceived").value.toString().toBoolean()
+                    )
                 })
                 .setLifecycleOwner(this)
                 .build()
@@ -110,7 +115,13 @@ class PersonalChat : AppCompatActivity() {
 
             override fun onBindViewHolder(holder: ChatMessage, position: Int, model: ChatMessageModel) {
 
-                holder.bindData(model.messageText!!,model.messageUser!!,model.messageTime!!, model.messageRead!!, myUserId!!, model.messageUserId!!)
+                holder.bindData(
+                        model.messageText!!,
+                        model.messageUser!!,
+                        model.messageTime!!,
+                        model.messageRead!!,
+                        myUserId!!,
+                        model.messageUserId!!)
             }
 
         }

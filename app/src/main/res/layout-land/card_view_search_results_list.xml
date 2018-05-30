@@ -8,16 +8,15 @@
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
         android:elevation="45dp"
         android:layout_below="@id/resultBook"
+        style="@style/MyCardViewStyle"
         android:id="@+id/cardViewBook"
-        app:cardCornerRadius="15dp"
-        app:cardBackgroundColor="@color/lightPrimaryColor">
+        >
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -33,17 +32,13 @@
 
 
             <TextView
+                android:id="@+id/titleResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/titleResult"
-                android:text="TITLE"
+                android:layout_alignStart="@+id/ISBNresult"
+                android:layout_alignTop="@+id/imageResult"
                 android:ellipsize="end"
-                android:layout_margin="4dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginStart="15dp"
-                android:layout_toRightOf="@id/imageResult"
-                android:layout_toEndOf="@id/imageResult"
-                android:layout_alignTop="@id/imageResult"/>
+                android:text="TITLE" />
 
             <TextView
                 android:layout_width="wrap_content"

@@ -120,12 +120,11 @@ public class insertBook extends AppCompatActivity{
         bookImageGrid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.d("ciao", "p: "+ position);
                 if(position == myAdapter.getCount()-1){
                     selectedImageUri = Utilities.requestImage(compatActivity, activity, CAMERA_REQUEST_CODE, PICK_IMAGE);
 
                 }else{
-
+                    //todo apri foto
                 }
             }
         });
