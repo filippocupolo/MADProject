@@ -27,7 +27,6 @@
         android:layout_height="match_parent"
         android:id="@+id/rv"
         android:layout_below="@id/resultBook"
-        android:layout_margin="8dp"
         />
 
     <TextView

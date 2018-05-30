@@ -2,12 +2,15 @@ package com.example.andrea.lab11;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,7 +18,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseExpandableListAdapter;
+import android.widget.ExpandableListAdapter;
+import android.widget.ExpandableListView;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +43,8 @@ import com.google.firebase.storage.StorageReference;
 
 import java.io.File;
 
+import kotlin.collections.SlidingWindowKt;
+
 import static android.graphics.drawable.Drawable.createFromPath;
 
 
@@ -45,6 +54,12 @@ public class showProfile extends AppCompatActivity{
     private String deBugTag;
     private AppCompatActivity activity;
     private FirebaseRecyclerAdapter<BookInfo, CardViewBook> adapter;
+    private String name = null;
+    private String surname = null;
+    private String email = null;
+    private String biography = null;
+    private String city = null;
+    private Boolean noBook = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -59,14 +74,15 @@ public class showProfile extends AppCompatActivity{
 
         String userId = getIntent().getStringExtra("userId");
 
+        //expandableView data
+        String groups[] = {getString(R.string.bio_label_show), getString(R.string.my_books), getString(R.string.ratings)};
+
         //get elements
-        TextView nameSurnameView = findViewById(R.id.nameSurnameShow);
-        TextView emailView = findViewById(R.id.emailShow);
-        TextView biographyView = findViewById(R.id.showProfileBio);
-        TextView cityView = findViewById(R.id.showProfileCity);
-        TextView noBookMessage = findViewById(R.id.noBookMessage);
+        //TextView nameSurnameView = findViewById(R.id.nameSurnameShow);
+        //TextView emailView = findViewById(R.id.emailShow);
         ImageView profileView = findViewById(R.id.imageViewShow);
-        RecyclerView list = findViewById(R.id.published_books_rv);
+        //RecyclerView list = findViewById(R.id.published_books_rv);
+        ExpandableListView aboutMeList = findViewById(R.id.aboutMe);
 
         //set toolbar
         TextView toolbarTitle = findViewById(R.id.back_toolbar_text);
@@ -81,12 +97,6 @@ public class showProfile extends AppCompatActivity{
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 dataSnapshot = dataSnapshot.getChildren().iterator().next();
-
-                String name = null;
-                String surname = null;
-                String email = null;
-                String biography = null;
-                String city = null;
 
                 for(DataSnapshot child : dataSnapshot.getChildren()){
 
@@ -108,16 +118,17 @@ public class showProfile extends AppCompatActivity{
                             break;
                     }
                 }
-                nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
-                emailView.setText(email);
-                biographyView.setText(biography);
-                cityView.setText(city);
+                //nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
+                //emailView.setText(email);
+                //biographyView.setText(biography);
+                //cityView.setText(city);
 
+                //aboutMeList.notifyAll();
                 //set default image
                 profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
 
                 //set container visible
-                findViewById(R.id.show_form_wrapper).setVisibility(View.VISIBLE);
+                //findViewById(R.id.show_form_wrapper).setVisibility(View.VISIBLE);
 
                 //check if the profile image is available and load it
                 StorageReference ref = FirebaseStorage.getInstance().getReference().child("profileImages/"+ userId);
@@ -168,7 +179,6 @@ public class showProfile extends AppCompatActivity{
             }
         });
 
-
         //fill up the published book list
         Log.d(deBugTag,"userId: "+ userId);
         Query publishedBookQuery = fireBaseRef.child("books").orderByChild("owner").equalTo(userId);
@@ -216,15 +226,142 @@ public class showProfile extends AppCompatActivity{
             public void onDataChanged() {
                 super.onDataChanged();
                 if(getItemCount()==0)
-                    noBookMessage.setVisibility(View.VISIBLE);
-                else
-                    noBookMessage.setVisibility(View.GONE);
+                    noBook = true;
                 Log.d(deBugTag,"ondatachanged");
             }
         };
-        list.setItemAnimator(new DefaultItemAnimator());
-        list.setLayoutManager(new LinearLayoutManager(this));
-        list.setAdapter(adapter);
+
+        //aboutMeList expandable adapter
+        BaseExpandableListAdapter aboutMeAdapter = new BaseExpandableListAdapter() {
+            @Override
+            public int getGroupCount() {
+                Log.d(deBugTag, "1");
+                return groups.length;
+            }
+
+            @Override
+            public int getChildrenCount(int groupPosition) {
+                int returnValue = 0;
+                switch(groupPosition){
+                    case 0:
+                        returnValue = 1;
+                        break;
+                    case 1:
+                        returnValue = 1;
+                        break;
+                    case 2:
+                        //todo returnvalue
+                        returnValue = 0;
+                }
+                return returnValue;
+            }
+
+            @Override
+            public Object getGroup(int groupPosition) {
+                Log.d(deBugTag, "3");
+                return groups[groupPosition];
+            }
+
+            @Override
+            public Object getChild(int groupPosition, int childPosition) {
+                Log.d(deBugTag, "4");
+                return null;
+            }
+
+            @Override
+            public long getGroupId(int groupPosition) {
+                Log.d(deBugTag, "5");
+                return 0;
+            }
+
+            @Override
+            public long getChildId(int groupPosition, int childPosition) {
+                Log.d(deBugTag, "6");
+                return 0;
+            }
+
+            @Override
+            public boolean hasStableIds() {
+                Log.d(deBugTag, "7");
+                return false;
+            }
+
+            @Override
+            public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
+                Log.d(deBugTag, "8");
+                if(convertView==null){
+                    LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    convertView = li.inflate(R.layout.show_profile_groups, null);
+                }
+
+                TextView title = convertView.findViewById(R.id.heading);
+                title.setText(groups[groupPosition]);
+                return convertView;
+            }
+
+            @Override
+            public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+                Log.d(deBugTag, "9");
+
+                switch (groupPosition){
+                    case 0:
+                        if(convertView==null || convertView.getId() != R.id.about_me_childs){
+                            LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                            convertView = li.inflate(R.layout.about_me_childs, null);
+                        }
+
+                        TextView cityView = convertView.findViewById(R.id.showProfileCity);
+                        cityView.setText(city);
+
+                        TextView bioView = convertView.findViewById(R.id.showProfileBio);
+                        bioView.setText(biography);
+
+                        TextView nameView = convertView.findViewById(R.id.showProfileNameSurname);
+                        nameView.setText(name+" "+surname);
+
+                        TextView emailView = convertView.findViewById(R.id.showProfileEmail);
+                        emailView.setText(email);
+
+
+                        break;
+
+                    case 1:
+                        if(convertView==null || convertView.getId() != R.id.book_list_childs){
+                            LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                            convertView = li.inflate(R.layout.book_list_childs, null);
+                        }
+
+                        //convertView.setLayoutParams(new ConstraintLayout.LayoutParams("300dp", MA));
+                        RecyclerView list = convertView.findViewById(R.id.published_books_rv);
+                        TextView noBooksMessage = convertView.findViewById(R.id.noBookMessage);
+
+
+                        if(noBook)
+                            noBooksMessage.setVisibility(View.VISIBLE);
+                        else
+                            noBooksMessage.setVisibility(View.GONE);
+
+                        list.setItemAnimator(new DefaultItemAnimator());
+                        list.setLayoutManager(new LinearLayoutManager(context));
+                        list.setAdapter(adapter);
+
+                        break;
+                }
+
+                return convertView;
+            }
+
+            @Override
+            public boolean isChildSelectable(int groupPosition, int childPosition) {
+                Log.d(deBugTag, "10");
+                return false;
+            }
+        };
+
+        aboutMeList.setAdapter(aboutMeAdapter);
+        //aboutMeAdapter.getChildView(0,0,true,null, null);
+        //aboutMeList.expandGroup(0);
+
     }
 
     @Override
@@ -237,4 +374,5 @@ public class showProfile extends AppCompatActivity{
         Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
         onBackPressed();
     }
+
 }

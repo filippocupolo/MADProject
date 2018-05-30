@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/about_me_childs"
+    android:layout_height="match_parent" android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/labelNameSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/name" />
+
+    <TextView
+        android:id="@+id/showProfileNameSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/labelNameSurname"
+        android:layout_marginStart="134dp"
+        android:layout_marginLeft="134dp"
+        android:textColor="@color/primaryText"
+        android:textColorHint="@color/secondaryText"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/labelEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/labelNameSurname"
+        android:layout_alignLeft="@id/labelNameSurname"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/showProfileBio"
+        android:text="@string/email" />
+
+    <TextView
+        android:id="@+id/showProfileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/showProfileNameSurname"
+        android:layout_alignLeft="@id/showProfileNameSurname"
+        android:layout_alignTop="@+id/labelEmail"
+        android:textColor="@color/primaryText"
+        android:textColorHint="@color/secondaryText"
+        android:textSize="13sp" />
+
+
+    <TextView
+        android:id="@+id/labelCity"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/labelNameSurname"
+        android:layout_alignLeft="@id/showProfileNameSurname"
+        android:layout_below="@id/labelNameSurname"
+        android:text="@string/city_label_show" />
+
+    <TextView
+        android:id="@+id/showProfileCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/showProfileNameSurname"
+        android:layout_alignLeft="@id/showProfileNameSurname"
+        android:layout_alignTop="@+id/labelCity"
+        android:layout_below="@id/showProfileNameSurname"
+        android:textColor="@color/primaryText"
+        android:textColorHint="@color/secondaryText"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/labelBio"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/labelNameSurname"
+        android:layout_alignLeft="@id/labelNameSurname"
+        android:layout_below="@id/labelCity"
+        android:text="@string/bio_label_show" />
+
+    <TextView
+        android:id="@+id/showProfileBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryText"
+        android:textColorHint="@color/secondaryText"
+        android:layout_alignStart="@+id/showProfileNameSurname"
+        android:layout_alignLeft="@id/showProfileNameSurname"
+        android:layout_alignTop="@id/labelBio"
+        android:textSize="13sp" />
+
+</RelativeLayout>

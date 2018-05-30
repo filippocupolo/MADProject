@@ -20,7 +20,7 @@
     <string name="toast_MyUser_setImage">Impossibile salvare l\'immagine</string>
     <string name="toast_EditProfile_onFocusChange">Email non valida</string>
     <string name="bio_label_show">Su di me</string>
-    <string name="city_label_show">Vive a: </string>
+    <string name="city_label_show">Vive a</string>
     <string name="toast_EditProfile_onRequestPermissionsResult">Permesso per la fotocamera non concesso</string>
     <string name="book_overview">Panoramica Libro</string>
     <string name="login">Accedi</string>
@@ -98,4 +98,5 @@
     <string name="chat">There are no chats yet</string>
     <string name="nearby_books">Libri intorno a te</string>
     <string name="no_books">Non hai ancora caricato nessun libro</string>
+    <string name="ratings">Recensioni</string>
 </resources>
