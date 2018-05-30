@@ -25,13 +25,10 @@ public class Location {
     private HashMap<String, GeoLocation> italianTowns_coordinates_Map;
     private JSONArray italianSuburbsJSON;
     private JSONArray italianTownsJSON;
-    private String selectedCity;
-    private Integer selectedCityId;
 
     public Location(Context context){
 
         deBugTag = this.getClass().getName();
-        Log.d(deBugTag,"inizio");
         italianSuburbs_coordinates_Map = new HashMap<>();
 
         try{

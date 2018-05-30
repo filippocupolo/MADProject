@@ -11,12 +11,15 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ListAdapter;
@@ -24,6 +27,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.firebase.ui.database.SnapshotParser;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
@@ -50,11 +56,19 @@ public class ShowBook extends AppCompatActivity {
     private TextView ISBN;
     private TextView owner;
     private TextView cityOwner;
+    private TextView statusTextView;
+    private Button sendRequestButton;
     private BookInfo book;
     private ConstraintLayout container;
+    private ConstraintLayout containerListRequest;
+    private ConstraintLayout containerRequestButton;
     private ImageButton goToProfileButton;
     private ImageButton send_message_button;
+    private RecyclerView requestRecycleListView;
     private CopyOnWriteArrayList<Drawable> imagesList;
+    private FirebaseRecyclerAdapter<UserModel,BookRequest> adapter = null;
+
+    //todo stampa le condizioni del libro
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -63,6 +77,7 @@ public class ShowBook extends AppCompatActivity {
         deBugTag = this.getClass().getName();
         imagesList = new CopyOnWriteArrayList<>();
         context = getApplicationContext();
+        MyUser myUser = new MyUser(context);
 
         //set layout
         setContentView(R.layout.book_result_show_details);
@@ -75,9 +90,14 @@ public class ShowBook extends AppCompatActivity {
         ISBN = findViewById(R.id.bookISBN);
         owner = findViewById(R.id.bookOwner);
         cityOwner = findViewById(R.id.ownerCity);
+        statusTextView = findViewById(R.id.status);
+        sendRequestButton = findViewById(R.id.sendRequest);
         container = findViewById(R.id.constrTop);
+        containerListRequest=findViewById(R.id.requestList);
+        containerRequestButton = findViewById(R.id.requestBookButton);
         goToProfileButton = findViewById(R.id.gotoProfileButton);
         send_message_button = findViewById(R.id.send_message_button);
+        requestRecycleListView = findViewById(R.id.requestRecycleListView);
         GridView gridView = findViewById(R.id.imageBook);
 
         //set toolbar
@@ -189,8 +209,10 @@ public class ShowBook extends AppCompatActivity {
                         owner.setText(name_surname);
                         cityOwner.setText(city);
 
+                        //check if the user is the owner of the book
                         String owner = name_surname;
-                        if(!book.getOwner().equals(new MyUser(context).getUserID())){
+                        if(!book.getOwner().equals(myUser.getUserID())){
+
                             send_message_button.setOnClickListener(v->{
                                 Intent chatIntent = new Intent(getApplicationContext(),PersonalChat.class);
                                 chatIntent.putExtra("userId",book.getOwner());
@@ -198,8 +220,26 @@ public class ShowBook extends AppCompatActivity {
                                 chatIntent.putExtra("userName",owner);
                                 startActivity(chatIntent);
                             });
+
+                            //set visible requestButton
+                            containerRequestButton.setVisibility(View.VISIBLE);
+                            //todo set strings Libero occupato
+                            statusTextView.setText(book.getStatus()== 0?"Libero":"Occupato");
+                            sendRequestButton.setOnClickListener( v ->{
+                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(myUser.getName() + " " + myUser.getSurname());
+                            });
+
+
                         }else{
+
                             send_message_button.setVisibility(View.GONE);
+
+                            //todo fai un stato che permette di finire il prestito
+
+                            //set visible requestList
+                            containerListRequest.setVisibility(View.VISIBLE);
+                            getRequestList(dbRef, book, myUser.getUserID());
+
                         }
                         if(showProfile){
                             goToProfileButton.setOnClickListener(v->{
@@ -265,6 +305,67 @@ public class ShowBook extends AppCompatActivity {
             }
         });
 
+    }
+
+    private class UserModel{
+
+        private String userId;
+        private String nameSurname;
+
+        public UserModel(String userId, String nameSurname){
+            this.userId = userId;
+            this.nameSurname = nameSurname;
+        }
+
+        public String getNameSurname(){
+            return  nameSurname;
+        }
+
+        public String getUserId(){
+            return  userId;
+        }
+    }
+
+    private void getRequestList(DatabaseReference dbRef, BookInfo book, String myUserId){
+
+        //set query
+        Query query = dbRef.child("bookRequests").child(book.getBookID());
+
+        //get and populate list
+        FirebaseRecyclerOptions<UserModel> options = new FirebaseRecyclerOptions.Builder<UserModel>()
+                .setQuery(query, new SnapshotParser<UserModel>() {
+                    @NonNull
+                    @Override
+                    public UserModel parseSnapshot(@NonNull DataSnapshot snapshot) {
+
+                        if(snapshot==null && snapshot.getValue()==null)
+                            return null;
+
+                        return new UserModel(snapshot.getKey(),snapshot.getValue().toString());
+                    }
+                })
+                .setLifecycleOwner(this)
+                .build();
+
+        adapter = new FirebaseRecyclerAdapter<UserModel,BookRequest>(options) {
+
+            @NonNull
+            @Override
+            public  BookRequest onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View view = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.view_holder_book_request, parent, false);
+
+                return new BookRequest(view);
+            }
+
+            @Override
+            protected void onBindViewHolder(@NonNull BookRequest holder, int position, @NonNull UserModel model) {
+                holder.bindData(model.userId, book.getBookID(), myUserId , model.nameSurname, book.getStatus(), book.getBorrower());
+            }
+        };
+
+        requestRecycleListView.setLayoutManager(new LinearLayoutManager(context));
+        requestRecycleListView.setAdapter(adapter);
     }
 
     private void errorMethod(int txt){

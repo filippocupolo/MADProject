@@ -25,6 +25,7 @@ class PersonalChat : AppCompatActivity() {
     private var myUserName :String? = null
     private var myUserId :String? = null
     private var input : EditText? = null
+    private var adapter : FirebaseRecyclerAdapter<ChatMessageModel, ChatMessage>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -104,7 +105,7 @@ class PersonalChat : AppCompatActivity() {
                 .setLifecycleOwner(this)
                 .build()
 
-        val adapter = object : FirebaseRecyclerAdapter<ChatMessageModel, ChatMessage>(options) {
+        adapter = object : FirebaseRecyclerAdapter<ChatMessageModel, ChatMessage>(options) {
 
             override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatMessage {
                 val view = LayoutInflater.from(parent.context)
@@ -149,8 +150,13 @@ class PersonalChat : AppCompatActivity() {
                 input!!.setText("")
 
                 //go to bottom
-                listOfMessages!!.smoothScrollToPosition(adapter.itemCount)
+                listOfMessages!!.smoothScrollToPosition(adapter?.itemCount!!)
             }
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        adapter?.stopListening()
     }
 }

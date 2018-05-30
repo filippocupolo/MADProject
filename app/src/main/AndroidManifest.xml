@@ -82,12 +82,14 @@
             android:value="@string/google_maps_key" />
 
         <activity android:name=".MainPageActivity" />
-        <activity android:name=".PersonalChat"></activity>
+        <activity android:name=".PersonalChat" />
+
         <service
             android:name=".ChatService"
             android:exported="false"
-            android:process=":remote" >
-        </service>
+            android:process=":remote" />
+
+        <activity android:name=".CommentActivity"></activity>
     </application>
 
 </manifest>

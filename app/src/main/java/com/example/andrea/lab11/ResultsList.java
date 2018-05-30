@@ -153,6 +153,8 @@ public class ResultsList extends AppCompatActivity {
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
+                    //todo se un libro ha ad esempio titolo = autore viene stampato 2 volte
+
                     BookInfo book = parseDataSnapshotBook(dataSnapshot);
                     if(book == null)
                         return;
@@ -284,6 +286,12 @@ public class ResultsList extends AppCompatActivity {
                         break;
                     case "publisher":
                         book.setPublisher((String) child.getValue());
+                        break;
+                    case "borrower":
+                        book.setBorrower((String) child.getValue());
+                        break;
+                    case "status":
+                        book.setStatus(Integer.parseInt(child.getValue().toString()));
                         break;
                 }
 

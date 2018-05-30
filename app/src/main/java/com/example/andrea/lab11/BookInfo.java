@@ -45,6 +45,8 @@ public class BookInfo implements Serializable {
     private String owner = null;
     private String editionYear;
     private String conditions = null;
+    private int status = 0;
+    private String borrower = null;
     private LinkedList<Bitmap> imageList;
 
     public BookInfo()
@@ -92,6 +94,12 @@ public class BookInfo implements Serializable {
         return owner;
     }
 
+    public int getStatus(){return status;}
+
+    public String getBorrower() {
+        return borrower;
+    }
+
     public void setOwner(String owner) {
         this.owner = owner;
     }
@@ -124,6 +132,12 @@ public class BookInfo implements Serializable {
         this.conditions = conditions;
     }
 
+    public void setStatus(int status){this.status = status;}
+
+    public void setBorrower(String borrower) {
+        this.borrower = borrower;
+    }
+
     public LinkedList<Bitmap> getImageList()
     {
         return imageList;
@@ -150,6 +164,8 @@ public class BookInfo implements Serializable {
         dbRef.child(bookID).child("owner").setValue(owner);
         dbRef.child(bookID).child("editionYear").setValue(editionYear);
         dbRef.child(bookID).child("conditions").setValue(conditions);
+        dbRef.child(bookID).child("status").setValue(status);
+        dbRef.child(bookID).child("borrower").setValue(borrower);
 
         StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+bookID);
         int count = 0;

@@ -30,7 +30,9 @@ private const val ARG_PARAM2 = "param2"*/
  */
 class Chat : Fragment() {
 
-    val deBugTag = "Chat"
+    private val deBugTag = "Chat"
+    private var query: Query? = null
+    private var childListener: ChildEventListener? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,9 +76,9 @@ class Chat : Fragment() {
         }
 
         //set Query
-        val query = FirebaseDatabase.getInstance().reference.child("usersChat").orderByKey().equalTo(MyUser(applicationContext).userID)
+        query = FirebaseDatabase.getInstance().reference.child("usersChat").orderByKey().equalTo(MyUser(applicationContext).userID)
 
-        query.addListenerForSingleValueEvent( object: ValueEventListener{
+        query?.addListenerForSingleValueEvent( object: ValueEventListener{
 
             override fun onDataChange(p0: DataSnapshot?) {
                 if(p0==null || !p0.exists())
@@ -89,7 +91,7 @@ class Chat : Fragment() {
 
         })
 
-        query.addChildEventListener(object : ChildEventListener {
+        childListener = object : ChildEventListener {
 
             override fun onChildAdded( dataSnapshot:DataSnapshot?,  s:String?) {
 
@@ -97,7 +99,7 @@ class Chat : Fragment() {
                     return
 
                 if(noChatMessage.visibility == View.VISIBLE)
-                        noChatMessage.visibility = View.GONE
+                    noChatMessage.visibility = View.GONE
 
                 for(data in dataSnapshot.children){
 
@@ -134,12 +136,19 @@ class Chat : Fragment() {
                 Log.e("Chat",databaseError.getMessage()+databaseError.getCode());
                 //todo gestire
             }
-        })
+        }
+
+        query?.addChildEventListener(childListener)
 
         recyclerView.layoutManager = LinearLayoutManager(applicationContext)
         recyclerView.adapter = adapter
 
         return view
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        query?.removeEventListener(childListener)
     }
 
 }
