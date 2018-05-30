@@ -234,9 +234,11 @@ public class ShowBook extends AppCompatActivity {
 
                             send_message_button.setVisibility(View.GONE);
 
+                            //todo fai un stato che permette di finire il prestito
+
                             //set visible requestList
                             containerListRequest.setVisibility(View.VISIBLE);
-                            getRequestList(dbRef, book.getBookID(), myUser.getUserID());
+                            getRequestList(dbRef, book, myUser.getUserID());
 
                         }
                         if(showProfile){
@@ -309,12 +311,10 @@ public class ShowBook extends AppCompatActivity {
 
         private String userId;
         private String nameSurname;
-        private String bookId;
 
-        public UserModel(String userId, String bookId, String nameSurname){
+        public UserModel(String userId, String nameSurname){
             this.userId = userId;
             this.nameSurname = nameSurname;
-            this.bookId = bookId;
         }
 
         public String getNameSurname(){
@@ -326,10 +326,10 @@ public class ShowBook extends AppCompatActivity {
         }
     }
 
-    private void getRequestList(DatabaseReference dbRef, String bookId, String myUserId){
+    private void getRequestList(DatabaseReference dbRef, BookInfo book, String myUserId){
 
         //set query
-        Query query = dbRef.child("bookRequests").child(bookId);
+        Query query = dbRef.child("bookRequests").child(book.getBookID());
 
         //get and populate list
         FirebaseRecyclerOptions<UserModel> options = new FirebaseRecyclerOptions.Builder<UserModel>()
@@ -341,7 +341,7 @@ public class ShowBook extends AppCompatActivity {
                         if(snapshot==null && snapshot.getValue()==null)
                             return null;
 
-                        return new UserModel(snapshot.getKey(),bookId,snapshot.getValue().toString());
+                        return new UserModel(snapshot.getKey(),snapshot.getValue().toString());
                     }
                 })
                 .setLifecycleOwner(this)
@@ -360,7 +360,7 @@ public class ShowBook extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(@NonNull BookRequest holder, int position, @NonNull UserModel model) {
-                holder.bindData(model.userId, model.bookId, myUserId , model.nameSurname);
+                holder.bindData(model.userId, book.getBookID(), myUserId , model.nameSurname, book.getStatus(), book.getBorrower());
             }
         };
 
