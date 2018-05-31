@@ -381,9 +381,27 @@ public class showProfile extends AppCompatActivity{
 
         //comment list
 
-        Query commentQueyr = fireBaseRef.child("commentsDB").equalTo(userId);
+        /*
+        Query commentQuery = fireBaseRef.child("commentsDB").child(userId).child("comments");
 
-        FirebaseRecyclerOptions<>
+        FirebaseRecyclerOptions<CommentModel> commentOptions = new FirebaseRecyclerOptions<CommentModel>()
+                .setQuery(commentQuery).setLifecycleOwner(this).build();
+
+        commentAdapter = new FirebaseRecyclerAdapter<CommentModel, CardViewComment>() {
+            @Override
+            protected void onBindViewHolder(@NonNull CardViewComment holder, int position, @NonNull CommentModel model) {
+                holder.bindData(model.getUser(), model.getRating(), model.getText(), model.getDate());
+            }
+
+            @NonNull
+            @Override
+            public CardViewComment onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+                View v = LayoutInflater.from(parent.getContext())
+                        .inflate(R.layout.cardview_comment, parent, false);
+
+                return new CardViewComment(v);
+            }
+        };*/
 
     }
 

@@ -15,4 +15,11 @@ public class CommentModel {
         this.user = user;
         this.date = date;
     }
+
+    public String getText(){return text;}
+    public float getRating(){return rating;}
+    public Date getDate(){return date;}
+    public String getUser(){return user;}
+
+
 }
