@@ -36,5 +36,4 @@ public class CommentModel {
     public void setDay(int value){day = value;}
     public void setUser(String value){user = value;}
 
-
 }

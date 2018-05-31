@@ -28,11 +28,11 @@ public class CardViewComment extends RecyclerView.ViewHolder {
         commentTime = v.findViewById(R.id.comment_time);
     }
 
-    public void bindData(String author, Integer stars, String text, String time){
+    public void bindData(String author, float stars, String text, String time){
 
         this.commentTime.setText(time);
         this.commentText.setText(text);
-        this.commentStars.setNumStars(stars);
+        this.commentStars.setRating(stars);
         this.commentAuthor.setText(author);
 
     }
