@@ -57,7 +57,9 @@ public class ShowBook extends AppCompatActivity {
     private TextView owner;
     private TextView cityOwner;
     private TextView statusTextView;
+    private TextView lendingMessage;
     private Button sendRequestButton;
+    private Button endLendingButton;
     private BookInfo book;
     private ConstraintLayout container;
     private ConstraintLayout containerListRequest;
@@ -96,6 +98,8 @@ public class ShowBook extends AppCompatActivity {
         containerListRequest=findViewById(R.id.requestList);
         containerRequestButton = findViewById(R.id.requestBookButton);
         goToProfileButton = findViewById(R.id.gotoProfileButton);
+        endLendingButton = findViewById(R.id.lending_end_button);
+        lendingMessage = findViewById(R.id.bookAlreadyLend);
         send_message_button = findViewById(R.id.send_message_button);
         requestRecycleListView = findViewById(R.id.requestRecycleListView);
         GridView gridView = findViewById(R.id.imageBook);
@@ -154,7 +158,8 @@ public class ShowBook extends AppCompatActivity {
 
         //make FireBase request for book
         Query bookQuery = dbRef.child("books").orderByKey().equalTo(bookId);
-        bookQuery.addListenerForSingleValueEvent(new ValueEventListener() {
+        //todo rilasciare questo listener
+        bookQuery.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -235,9 +240,18 @@ public class ShowBook extends AppCompatActivity {
                             send_message_button.setVisibility(View.GONE);
 
                             //todo fai un stato che permette di finire il prestito
-
                             //set visible requestList
-                            containerListRequest.setVisibility(View.VISIBLE);
+                            if(book.getStatus() == 1){
+                                //todo make string
+                                lendingMessage.setText("il libro è in prestito a " + book.getBorrowerName());
+                                endLendingButton.setOnClickListener(v->{
+                                    dbRef.child("books").child(bookId).child("status").setValue(0);
+                                    lendingMessage.setVisibility(View.GONE);
+                                    endLendingButton.setVisibility(View.GONE);
+                                });
+                                lendingMessage.setVisibility(View.VISIBLE);
+                                endLendingButton.setVisibility(View.VISIBLE);
+                            }
                             getRequestList(dbRef, book, myUser.getUserID());
 
                         }
@@ -361,6 +375,12 @@ public class ShowBook extends AppCompatActivity {
             @Override
             protected void onBindViewHolder(@NonNull BookRequest holder, int position, @NonNull UserModel model) {
                 holder.bindData(model.userId, book.getBookID(), myUserId , model.nameSurname, book.getStatus(), book.getBorrower());
+            }
+
+            @Override
+            public void onDataChanged() {
+                super.onDataChanged();
+                containerListRequest.setVisibility(getItemCount() == 0 ? View.GONE : View.VISIBLE);
             }
         };
 

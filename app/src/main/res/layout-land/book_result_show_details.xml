@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
 
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/author_textV"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookTitle" />
 
                 <TextView
@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="ISBN"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookAuthor" />
 
                 <TextView
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/publisher_textV"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookISBN" />
 
                 <TextView
@@ -83,7 +83,7 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/bookEdition"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookPublisher" />
 
 
@@ -107,7 +107,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/owner"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -115,7 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/owner"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/hintOwner" />
 
                 <TextView
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/city"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookOwner" />
 
                 <ImageButton

@@ -39,6 +39,7 @@ public class BookRequest extends RecyclerView.ViewHolder {
                 dbRef.child("books").child(bookId).child("status").setValue(1);
                 status = 1;
                 dbRef.child("books").child(bookId).child("borrower").setValue(userId);
+                dbRef.child("books").child(bookId).child("borrowerName").setValue(nameSurname);
                 dbRef.child("bookRequests").child(bookId).child(userId).removeValue();
                 dbRef.child("commentsDB").child(myUserId).child("can_comment").child(userId).setValue(true);
                 dbRef.child("commentsDB").child(userId).child("can_comment").child(myUserId).setValue(true);

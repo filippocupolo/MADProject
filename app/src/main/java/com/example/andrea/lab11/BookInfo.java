@@ -47,6 +47,7 @@ public class BookInfo implements Serializable {
     private String conditions = null;
     private int status = 0;
     private String borrower = null;
+    private String borrowerName = null;
     private LinkedList<Bitmap> imageList;
 
     public BookInfo()
@@ -88,6 +89,10 @@ public class BookInfo implements Serializable {
 
     public String getConditions() {
         return conditions;
+    }
+
+    public String getBorrowerName() {
+        return borrowerName;
     }
 
     public String getOwner() {
@@ -138,6 +143,8 @@ public class BookInfo implements Serializable {
         this.borrower = borrower;
     }
 
+    public void setBorrowerName(String borrowerName){this.borrowerName = borrowerName;}
+
     public LinkedList<Bitmap> getImageList()
     {
         return imageList;
@@ -166,6 +173,7 @@ public class BookInfo implements Serializable {
         dbRef.child(bookID).child("conditions").setValue(conditions);
         dbRef.child(bookID).child("status").setValue(status);
         dbRef.child(bookID).child("borrower").setValue(borrower);
+        dbRef.child(bookID).child("borrowerName").setValue(borrowerName);
 
         StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+bookID);
         int count = 0;

@@ -383,7 +383,6 @@ public class showProfile extends AppCompatActivity{
 
         Query commentQueyr = fireBaseRef.child("commentsDB").equalTo(userId);
 
-        FirebaseRecyclerOptions<>
 
     }
 

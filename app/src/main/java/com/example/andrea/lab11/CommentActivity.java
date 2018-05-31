@@ -9,7 +9,10 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Date;
 
 public class CommentActivity extends AppCompatActivity {
 
@@ -61,11 +64,16 @@ public class CommentActivity extends AppCompatActivity {
             if(text.trim().length() == 0)
                 text = null;
 
-            //CommentModel commentModel = new CommentModel();
+            Date date = new Date();
+            String myUserId = new MyUser(this).getUserID();
 
-            //FirebaseDatabase.getInstance().getReference().child("commentsDB").child(userId).child("comments").push().setValue(commentModel);
+            CommentModel commentModel = new CommentModel(myUserId,ratingCounter,text,date.getYear(),date.getMonth(),date.getDay());
 
+            DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("commentsDB").child(userId);
+            dbRef.child("comments").push().setValue(commentModel);
+            dbRef.child("can_comment").child(myUserId).removeValue();
 
+            onBackPressed();
 
         });
 

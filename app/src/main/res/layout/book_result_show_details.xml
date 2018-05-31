@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ShowBook">
 
     <include
@@ -44,8 +44,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title"
-                    android:textStyle="bold"
-                    android:textSize="18dp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
 
                 <TextView
@@ -54,7 +54,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/author_textV"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookTitle" />
 
                 <TextView
@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="ISBN"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookAuthor" />
 
                 <TextView
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/publisher_textV"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookISBN" />
 
                 <TextView
@@ -81,9 +81,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:layout_marginRight="16dp"
-                    android:text="@string/bookEdition"
-                    android:textSize="15dp"
                     android:layout_marginTop="5dp"
+                    android:text="@string/bookEdition"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookPublisher" />
 
 
@@ -105,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:text="@string/owner"
-                    android:textSize="18dp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -113,26 +113,26 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/owner"
-                    android:textSize="15dp"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/hintOwner" />
 
                 <TextView
                     android:id="@+id/ownerCity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/city"
-                    android:textSize="15dp"
                     android:layout_marginTop="5dp"
+                    android:text="@string/city"
+                    android:textSize="15sp"
                     app:layout_constraintTop_toBottomOf="@id/bookOwner" />
 
                 <ImageButton
+                    android:id="@+id/gotoProfileButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/gotoProfileButton"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:src="@drawable/ic_person_24dp"
+                    android:background="@drawable/button_border"
                     android:padding="3dp"
-                    android:background="@drawable/button_border"/>
+                    android:src="@drawable/ic_person_24dp"
+                    app:layout_constraintEnd_toEndOf="parent" />
 
                 <ImageButton
                     android:id="@+id/send_message_button"
@@ -159,14 +159,14 @@
                 app:layout_constraintTop_toBottomOf="@id/owner_info_wrap" />
 
             <android.support.constraint.ConstraintLayout
-                android:visibility="gone"
+                android:id="@+id/requestBookButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/my_border"
                 android:padding="15dp"
-                android:id="@+id/requestBookButton"
+                android:visibility="gone"
                 app:layout_constraintTop_toBottomOf="@id/imageBook">
 
                 <TextView
@@ -199,17 +199,20 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
 
-
             </android.support.constraint.ConstraintLayout>
+
             <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
+                android:id="@+id/requestList"
+                android:layout_width="337dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="25dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/my_border"
                 android:padding="15dp"
                 android:visibility="gone"
-                android:id="@+id/requestList"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/imageBook">
 
                 <!--todo fai stringhe-->
@@ -222,8 +225,8 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
-                    android:text="@Richieste"
-                    android:textSize="18dp"
+                    android:text="Richieste"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -240,9 +243,36 @@
                     android:layout_marginTop="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/relist">
+                    app:layout_constraintTop_toBottomOf="@+id/lending_end_button">
 
                 </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/bookAlreadyLend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="TextView"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/lending_end_button"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/relist" />
+
+                <!--todo fai stringa -->
+                <Button
+                    android:id="@+id/lending_end_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:text="Finisci Prestito"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/bookAlreadyLend"
+                    app:layout_constraintTop_toBottomOf="@+id/relist" />
 
             </android.support.constraint.ConstraintLayout>
         </android.support.constraint.ConstraintLayout>

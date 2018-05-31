@@ -293,6 +293,9 @@ public class ResultsList extends AppCompatActivity {
                     case "status":
                         book.setStatus(Integer.parseInt(child.getValue().toString()));
                         break;
+                    case "borrowerName":
+                        book.setBorrowerName((String) child.getValue());
+                        break;
                 }
 
             }
