@@ -21,7 +21,9 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,6 +33,7 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -64,6 +67,8 @@ public class showProfile extends AppCompatActivity{
     private String city = null;
     private Boolean noBook = false;
     private Boolean noComments = false;
+    private String userId;
+    private ImageButton canCommentButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -76,7 +81,7 @@ public class showProfile extends AppCompatActivity{
         //+++++++++++++set fields+++++++++++++
         setContentView(R.layout.show_profile);
 
-        String userId = getIntent().getStringExtra("userId");
+        userId = getIntent().getStringExtra("userId");
 
         //expandableView data
         String groups[] = {getString(R.string.bio_label_show), getString(R.string.my_books), getString(R.string.ratings)};
@@ -87,6 +92,10 @@ public class showProfile extends AppCompatActivity{
         ImageView profileView = findViewById(R.id.imageViewShow);
         //RecyclerView list = findViewById(R.id.published_books_rv);
         ExpandableListView aboutMeList = findViewById(R.id.aboutMe);
+        canCommentButton = findViewById(R.id.send_comment_button);
+
+        RatingBar ratings = findViewById(R.id.comment_stars);
+        ratings.setRating(5); //todo set average stars
 
         //set toolbar
         TextView toolbarTitle = findViewById(R.id.back_toolbar_text);
@@ -151,6 +160,7 @@ public class showProfile extends AppCompatActivity{
 
                 TextView title = convertView.findViewById(R.id.heading);
                 title.setText(groups[groupPosition]);
+
                 return convertView;
             }
 
@@ -248,6 +258,54 @@ public class showProfile extends AppCompatActivity{
         aboutMeList.setAdapter(aboutMeAdapter);
         aboutMeAdapter.getChildView(0,0,true,null, null);
         aboutMeList.expandGroup(0);
+
+        //check if the user has to leave comment
+        MyUser myUser = new MyUser(context);
+        Query leaveCommentQuery = fireBaseRef.child("commentsDB").child(userId).child("can_comment");
+
+        leaveCommentQuery.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                if(dataSnapshot.getKey().equals(myUser.getUserID())) {
+                    if (dataSnapshot.exists())
+                        canCommentButton.setVisibility(View.VISIBLE);
+                    else
+                        canCommentButton.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                if(dataSnapshot.getKey().equals(myUser.getUserID())) {
+                    if (dataSnapshot.exists())
+                        canCommentButton.setVisibility(View.VISIBLE);
+                    else
+                        canCommentButton.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.getKey().equals(myUser.getUserID())) {
+                    canCommentButton.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                if(dataSnapshot.getKey().equals(myUser.getUserID())) {
+                    if (dataSnapshot.exists())
+                        canCommentButton.setVisibility(View.VISIBLE);
+                    else
+                        canCommentButton.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
 
         //Get information from FireBase
         fireBaseRef.child("users").orderByKey().equalTo(userId).addListenerForSingleValueEvent(new ValueEventListener() {
@@ -433,6 +491,15 @@ public class showProfile extends AppCompatActivity{
     private void networkProblem(){
         Toast.makeText(getApplicationContext(),R.string.network_problem,Toast.LENGTH_SHORT).show();
         onBackPressed();
+    }
+
+    public void gotoComment(View v){
+        Intent commentIntent = new Intent(
+                getApplicationContext(),
+                CommentActivity.class
+        );
+        commentIntent.putExtra("userId", userId);
+        startActivity(commentIntent);
     }
 
 }
