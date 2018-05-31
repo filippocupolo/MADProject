@@ -11,6 +11,10 @@ public class CommentModel {
     private int day;
     private String user;
 
+    public CommentModel(){
+
+    }
+
     public CommentModel(String user, float rating, String text, int year, int month, int day){
         this.text = text;
         this.rating = rating;

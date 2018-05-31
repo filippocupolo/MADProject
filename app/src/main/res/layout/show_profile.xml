@@ -20,6 +20,16 @@
         android:layout_marginTop="72dp"
         app:civ_border_color="@color/colorAccent"
         app:civ_border_width="1dp" />
+
+    <RatingBar
+        android:id="@+id/comment_stars"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="62dp"
+        android:layout_marginTop="172dp" />
             <!--
 
             <TextView

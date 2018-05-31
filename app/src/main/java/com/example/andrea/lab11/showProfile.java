@@ -41,6 +41,8 @@ import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
+import org.w3c.dom.Comment;
+
 import java.io.File;
 
 import kotlin.collections.SlidingWindowKt;
@@ -54,13 +56,14 @@ public class showProfile extends AppCompatActivity{
     private String deBugTag;
     private AppCompatActivity activity;
     private FirebaseRecyclerAdapter<BookInfo, CardViewBook> adapter;
-    private FirebaseRecyclerAdapter<String, CardViewComment> commentAdapter;
+    private FirebaseRecyclerAdapter<CommentModel, CardViewComment> commentAdapter;
     private String name = null;
     private String surname = null;
     private String email = null;
     private String biography = null;
     private String city = null;
     private Boolean noBook = false;
+    private Boolean noComments = false;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -105,18 +108,7 @@ public class showProfile extends AppCompatActivity{
 
             @Override
             public int getChildrenCount(int groupPosition) {
-                int returnValue = 0;
-                switch(groupPosition){
-                    case 0:
-                        returnValue = 1;
-                        break;
-                    case 1:
-                        returnValue = 1;
-                        break;
-                    case 2:
-                        returnValue = 0;
-                }
-                return returnValue;
+                return 1;
             }
 
             @Override
@@ -209,6 +201,26 @@ public class showProfile extends AppCompatActivity{
                         list.setAdapter(adapter);
 
                         break;
+
+                    case 2:
+                        if(convertView==null || convertView.getId() != R.id.comment_list_childs){
+                            LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                            convertView = li.inflate(R.layout.comment_list_childs, null);
+                        }
+
+                        RecyclerView commentList = convertView.findViewById(R.id.comments_list_rv);
+                        TextView noCommentsMessage = convertView.findViewById(R.id.noCommentMessage);
+
+                        if(noComments)
+                            noCommentsMessage.setVisibility(View.VISIBLE);
+                        else
+                            noCommentsMessage.setVisibility(View.GONE);
+
+                        commentList.setItemAnimator(new DefaultItemAnimator());
+                        commentList.setLayoutManager(new LinearLayoutManager(context));
+                        commentList.setAdapter(commentAdapter);
+
+                        break;
                 }
 
                 return convertView;
@@ -222,13 +234,13 @@ public class showProfile extends AppCompatActivity{
 
             @Override
             public void onGroupExpanded(int groupPosition){
+                super.onGroupExpanded(groupPosition);
                 //collapse the old expanded group, if not the same
                 //as new group to expand
                 if(groupPosition != lastExpandedGroupPosition){
                     aboutMeList.collapseGroup(lastExpandedGroupPosition);
                 }
 
-                super.onGroupExpanded(groupPosition);
                 lastExpandedGroupPosition = groupPosition;
             }
         };
@@ -380,17 +392,16 @@ public class showProfile extends AppCompatActivity{
         };
 
         //comment list
-
-        /*
         Query commentQuery = fireBaseRef.child("commentsDB").child(userId).child("comments");
 
-        FirebaseRecyclerOptions<CommentModel> commentOptions = new FirebaseRecyclerOptions<CommentModel>()
-                .setQuery(commentQuery).setLifecycleOwner(this).build();
+        FirebaseRecyclerOptions<CommentModel> commentOptions = new FirebaseRecyclerOptions.Builder<CommentModel>()
+                .setQuery(commentQuery, CommentModel.class).setLifecycleOwner(this).build();
 
-        commentAdapter = new FirebaseRecyclerAdapter<CommentModel, CardViewComment>() {
+        commentAdapter = new FirebaseRecyclerAdapter<CommentModel, CardViewComment>(commentOptions) {
             @Override
             protected void onBindViewHolder(@NonNull CardViewComment holder, int position, @NonNull CommentModel model) {
-                holder.bindData(model.getUser(), model.getRating(), model.getText(), model.getDate());
+                String data = model.getDay() + "/" + model.getMonth() + "/" + model.getYear();
+                holder.bindData(model.getUser().substring(0,5), model.getRating(), model.getText(), data);
             }
 
             @NonNull
@@ -401,7 +412,15 @@ public class showProfile extends AppCompatActivity{
 
                 return new CardViewComment(v);
             }
-        };*/
+
+            @Override
+            public void onDataChanged() {
+                super.onDataChanged();
+                if(getItemCount()==0)
+                    noComments = true;
+                Log.d(deBugTag,"ondatachanged");
+            }
+        };
 
     }
 

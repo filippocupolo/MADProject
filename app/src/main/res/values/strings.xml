@@ -104,5 +104,6 @@
     <string name="nearby_books">Nearby books</string>
     <string name="no_books">Still you haven\'t updated any book</string>
     <string name="ratings">Ratings</string>
+    <string name="no_comments">No reviews yet</string>
 
 </resources>
