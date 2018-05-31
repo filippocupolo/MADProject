@@ -243,14 +243,21 @@ public class ShowBook extends AppCompatActivity {
                             //set visible requestList
                             if(book.getStatus() == 1){
                                 //todo make string
+                                Log.d(deBugTag,"status occuopato");
                                 lendingMessage.setText("il libro è in prestito a " + book.getBorrowerName());
                                 endLendingButton.setOnClickListener(v->{
                                     dbRef.child("books").child(bookId).child("status").setValue(0);
                                     lendingMessage.setVisibility(View.GONE);
                                     endLendingButton.setVisibility(View.GONE);
+
+                                    if(adapter.getCount()==0){
+                                        containerListRequest.setVisibility(View.GONE);
+                                    }
+
                                 });
                                 lendingMessage.setVisibility(View.VISIBLE);
                                 endLendingButton.setVisibility(View.VISIBLE);
+                                containerListRequest.setVisibility(View.VISIBLE);
                             }
                             getRequestList(dbRef, book, myUser.getUserID());
 
@@ -380,7 +387,7 @@ public class ShowBook extends AppCompatActivity {
             @Override
             public void onDataChanged() {
                 super.onDataChanged();
-                containerListRequest.setVisibility(getItemCount() == 0 ? View.GONE : View.VISIBLE);
+                containerListRequest.setVisibility(getItemCount() == 0 && containerListRequest.getVisibility() == View.GONE? View.GONE : View.VISIBLE);
             }
         };
 

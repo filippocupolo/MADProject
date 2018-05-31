@@ -65,13 +65,13 @@ public class CommentActivity extends AppCompatActivity {
                 text = null;
 
             Date date = new Date();
-            String myUserId = new MyUser(this).getUserID();
+            MyUser myUser = new MyUser(this);
 
-            CommentModel commentModel = new CommentModel(myUserId,ratingCounter,text,date.getYear(),date.getMonth(),date.getDay());
+            CommentModel commentModel = new CommentModel(myUser.getUserID(),myUser.getName() +" "+myUser.getSurname(),ratingCounter,text,date.getYear(),date.getMonth(),date.getDay());
 
             DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("commentsDB").child(userId);
             dbRef.child("comments").push().setValue(commentModel);
-            dbRef.child("can_comment").child(myUserId).removeValue();
+            dbRef.child("can_comment").child(myUser.getUserID()).removeValue();
 
             onBackPressed();
 

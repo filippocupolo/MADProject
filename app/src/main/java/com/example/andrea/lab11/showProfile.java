@@ -401,7 +401,7 @@ public class showProfile extends AppCompatActivity{
             @Override
             protected void onBindViewHolder(@NonNull CardViewComment holder, int position, @NonNull CommentModel model) {
                 String data = model.getDay() + "/" + model.getMonth() + "/" + model.getYear();
-                holder.bindData(model.getUser().substring(0,5), model.getRating(), model.getText(), data);
+                holder.bindData(model.getUserNameSurname().substring(0,5), model.getRating(), model.getText(), data);
             }
 
             @NonNull
