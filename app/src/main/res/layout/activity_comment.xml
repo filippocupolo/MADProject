@@ -18,11 +18,10 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
-    <!--todo fai stringa -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -32,12 +31,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:text="aggiungi anche un commeto"
+        android:text="@string/add_comment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 
-    <!--todo fai stringa -->
     <EditText
         android:id="@+id/commentEditText"
         android:layout_width="0dp"
@@ -49,7 +47,7 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:hint="Commento"
+        android:hint="@string/comment"
         android:maxLength="300"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"

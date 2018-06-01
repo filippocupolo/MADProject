@@ -15,6 +15,7 @@ public class CardViewComment extends RecyclerView.ViewHolder {
     private TextView commentText;
     private Context context;
 
+
     public CardViewComment(View v){
         super(v);
 

@@ -67,6 +67,7 @@ public class CommentActivity extends AppCompatActivity {
             Date date = new Date();
             MyUser myUser = new MyUser(this);
 
+            //todo getYear sbaglia
             CommentModel commentModel = new CommentModel(myUser.getUserID(),myUser.getName() +" "+myUser.getSurname(),ratingCounter,text,date.getYear(),date.getMonth(),date.getDay());
 
             DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("commentsDB").child(userId);

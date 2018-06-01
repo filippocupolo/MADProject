@@ -33,6 +33,18 @@
         android:layout_marginStart="63dp"
         android:layout_marginLeft="63dp"/>
 
+    <ImageButton
+        android:id="@+id/send_comment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/comment_stars"
+        android:layout_alignEnd="@+id/imageViewShow"
+        android:background="@android:color/transparent"
+        android:onClick="gotoComment"
+        android:padding="3dp"
+        android:src="@drawable/ic_warning_black_24dp"
+        android:visibility="visible" />
+
             <!--
 
             <TextView

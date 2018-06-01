@@ -26,6 +26,7 @@ import java.net.URI;
 import java.util.LinkedList;
 import java.util.List;
 
+//todo delete book button
 public class bookImageAdapter extends BaseAdapter{
 
     private Context appContext;

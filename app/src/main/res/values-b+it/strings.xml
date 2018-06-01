@@ -100,4 +100,6 @@
     <string name="no_books">Non hai ancora caricato nessun libro</string>
     <string name="ratings">Recensioni</string>
     <string name="no_comments">Nessuno ha lasciato alcuna recensione ancora</string>
+    <string name="add_comment">Aggiungi anche un commento</string>
+    <string name="comment">Comment</string>
 </resources>
