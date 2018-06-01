@@ -231,7 +231,16 @@ public class ShowBook extends AppCompatActivity {
                             //todo set strings Libero occupato
                             statusTextView.setText(book.getStatus()== 0?"Libero":"Occupato");
                             sendRequestButton.setOnClickListener( v ->{
+
+                                //if you own already the book
+                                if(book.getStatus() == 1 && book.getBorrower().equals(myUser.getUserID())){
+                                    //todo make stringa
+                                    Toast.makeText(context,"possiedi già questo libro in prestito",Toast.LENGTH_SHORT).show();
+                                    return;
+                                }
+
                                 dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(myUser.getName() + " " + myUser.getSurname());
+                                Toast.makeText(context,"la tua richiesta è stata effettuata",Toast.LENGTH_SHORT).show();
                             });
 
 

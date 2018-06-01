@@ -9,8 +9,12 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.MutableData;
+import com.google.firebase.database.Transaction;
 
 import java.util.Date;
 
@@ -73,6 +77,32 @@ public class CommentActivity extends AppCompatActivity {
             DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("commentsDB").child(userId);
             dbRef.child("comments").push().setValue(commentModel);
             dbRef.child("can_comment").child(myUser.getUserID()).removeValue();
+            FirebaseDatabase.getInstance().getReference().child("users").child(userId).child("avgVotes").runTransaction(new Transaction.Handler() {
+                @Override
+                public Transaction.Result doTransaction(MutableData mutableData) {
+                    if(mutableData.getValue() == null){
+                        mutableData.child("numVotes").setValue(1);
+                        mutableData.child("vote").setValue(ratingCounter);
+                    }else{
+                        int numOfVotes = Integer.parseInt(mutableData.child("numVotes").getValue().toString());
+                        float avgVote = Float.parseFloat(mutableData.child("vote").getValue().toString());
+                        avgVote = ((avgVote *numOfVotes)+ratingCounter)/(numOfVotes+1);
+                        mutableData.child("numVotes").setValue(numOfVotes+1);
+                        mutableData.child("vote").setValue(avgVote);
+                    }
+                    return Transaction.success(mutableData);
+                }
+
+                @Override
+                public void onComplete(DatabaseError databaseError, boolean b, DataSnapshot dataSnapshot) {
+                    if(databaseError!=null)
+                        Log.e(debugTag,databaseError.getMessage());
+                    else
+                        Log.d(debugTag,dataSnapshot.toString());
+                    //todo gestire
+                }
+            });
+
 
             onBackPressed();
 
