@@ -1,6 +1,7 @@
 package com.example.andrea.lab11;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -44,12 +45,13 @@ public class insertBook extends AppCompatActivity{
     private EditText authorView;
     private EditText publisherView;
     private EditText editionView;
+    private Spinner spinner;
 
     //gridview
     private GridView bookImageGrid;
 
     //loading spinner
-    private ProgressBar spinner;
+    private ProgressBar spinnerPB;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -64,8 +66,8 @@ public class insertBook extends AppCompatActivity{
         //set fields
         setContentView(R.layout.activity_add_book_manual);
 
-        spinner = findViewById(R.id.progressBarAddBook);
-        spinner.setVisibility(View.GONE);
+        spinnerPB = findViewById(R.id.progressBarAddBook);
+        spinnerPB.setVisibility(View.GONE);
 
         //get Book from previous activity
         Intent intent = getIntent();
@@ -100,7 +102,7 @@ public class insertBook extends AppCompatActivity{
 
         //set conditions
         SL = new spinnerListener(getApplicationContext(),book);
-        Spinner spinner = (Spinner) findViewById(R.id.conditions_spinner);
+        spinner = (Spinner) findViewById(R.id.conditions_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.conditions_array, android.R.layout.simple_spinner_item);
@@ -186,9 +188,9 @@ public class insertBook extends AppCompatActivity{
         book.setOwner(myUser.getUserID());
         book.setPublisher(publisherView.getText().toString());
 
-        Utilities.loading_and_blur_background(view, spinner);
+        Utilities.loading_and_blur_background(view, spinnerPB);
         book.loadBook();
-        Utilities.show_background(view, spinner);
+        Utilities.show_background(view, spinnerPB);
         onBackPressed();
     }
 
@@ -233,6 +235,11 @@ public class insertBook extends AppCompatActivity{
             editionView.setError(getString(R.string.required));
 
             Log.d(deBugTag,"editionView è 0");
+            error = true;
+        }
+
+        //check if conditions are empty
+        if(spinner.getSelectedItem().toString().equals(getResources().getStringArray(R.array.conditions_array)[0])){
             error = true;
         }
 

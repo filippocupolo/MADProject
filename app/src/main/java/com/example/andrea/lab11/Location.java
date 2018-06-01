@@ -134,6 +134,7 @@ public class Location {
         }
 
         List<String> list = new LinkedList<>();
+        list.add("");
         list.addAll(italianTowns_coordinates_Map.keySet());
         Collections.sort(list, new Comparator<String>() {
             @Override

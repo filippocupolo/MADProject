@@ -66,6 +66,7 @@
     <string name="noAccount">Non hai un account?</string>
     <string name="connectAlternatives">o accedi con il tuo account</string>
     <string-array name="conditions_array">
+        <item>-Inserisci le condizioni-</item>
         <item>Pessime</item>
         <item>Cattive</item>
         <item>Normali</item>

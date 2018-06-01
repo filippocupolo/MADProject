@@ -229,7 +229,7 @@ public class ShowBook extends AppCompatActivity {
                             //set visible requestButton
                             containerRequestButton.setVisibility(View.VISIBLE);
                             //todo set strings Libero occupato
-                            statusTextView.setText(book.getStatus()== 0?"Libero":"Occupato");
+                            statusTextView.setText(book.getStatus()== 0?"Libero":book.getBorrower().equals(myUser.getUserID())?"Possiedi già il libro":"Occupato");
                             sendRequestButton.setOnClickListener( v ->{
 
                                 //if you own already the book

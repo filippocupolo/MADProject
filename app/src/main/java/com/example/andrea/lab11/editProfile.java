@@ -253,6 +253,8 @@ public class editProfile extends AppCompatActivity {
     //function to call before leave activity if true ok else error occurred and the activity cannot be leaved
     private boolean saveUser(){
 
+        error = false;
+
         if(canExit()){
 
             myUser.setName(nameView.getText().toString());
@@ -284,6 +286,12 @@ public class editProfile extends AppCompatActivity {
         //check if city is empty and in case put red background
         if(cityView.getSelectedItem().toString().trim().length()==0){
             cityView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
+            error = true;
+        }
+
+        //check if city is empty and in case put red background
+        if(townView.getSelectedItem().toString().trim().length()==0){
+            townView.setBackgroundDrawable(getResources().getDrawable(R.drawable.my_border_red));
             error = true;
         }
 

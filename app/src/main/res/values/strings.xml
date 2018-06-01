@@ -68,6 +68,7 @@
     <string name="registered">Already have an account?</string>
     <string name="not_registered">Don\'t have an account?</string>
     <string-array name="conditions_array">
+        <item>-Insert conditions-</item>
         <item>Very Bad</item>
         <item>Bad</item>
         <item>Normal</item>
