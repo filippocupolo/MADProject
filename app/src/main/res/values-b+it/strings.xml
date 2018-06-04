@@ -103,4 +103,13 @@
     <string name="no_comments">Nessuno ha lasciato alcuna recensione ancora</string>
     <string name="add_comment">Aggiungi anche un commento</string>
     <string name="comment">Comment</string>
+    <string name="terminate_loan">Termina prestito</string>
+    <string name="loan_requests">Richieste di prestito</string>
+    <string name="lent">Concesso a</string>
+    <string name="book_free">Libero</string>
+    <string name="book_borrowed">Già in prestito</string>
+    <string name="book_mine">Hai tu questo libro in prestito</string>
+    <string name="ask_for_book">Chiedi prestito</string>
+    <string name="lending_req_sent">Hai già richiesto questo libro in prestito</string>
+    <string name="add_to_wishlist">Aggiungi alla wish list</string>
 </resources>

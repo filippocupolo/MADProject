@@ -486,6 +486,7 @@ public class showProfile extends AppCompatActivity{
     protected void onDestroy() {
         super.onDestroy();
         adapter.stopListening();
+        commentAdapter.stopListening();
     }
 
     private void networkProblem(){
