@@ -437,7 +437,7 @@ public class showProfile extends AppCompatActivity{
             @Override
             protected void onBindViewHolder(@NonNull CardViewBook holder, int position, @NonNull BookInfo model) {
 
-                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID(),false);
+                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID(),false,false);
             }
 
             @Override

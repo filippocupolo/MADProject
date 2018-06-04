@@ -1,6 +1,9 @@
 package com.example.andrea.lab11;
 
+import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageButton;
@@ -36,13 +39,24 @@ public class BookRequest extends RecyclerView.ViewHolder {
 
         acceptRequest.setOnClickListener( v ->{
             if(status==0){
-                dbRef.child("books").child(bookId).child("status").setValue(1);
+
                 status = 1;
+
+                dbRef.child("books").child(bookId).child("status").setValue(status);
                 dbRef.child("books").child(bookId).child("borrower").setValue(userId);
                 dbRef.child("books").child(bookId).child("borrowerName").setValue(nameSurname);
+
                 dbRef.child("bookRequests").child(bookId).child(userId).removeValue();
+
                 dbRef.child("commentsDB").child(myUserId).child("can_comment").child(userId).setValue(true);
                 dbRef.child("commentsDB").child(userId).child("can_comment").child(myUserId).setValue(true);
+
+                //set bookAccepted
+                dbRef.child("bookAccepted").child(userId).child("userId").setValue(myUserId);
+
+                //send message box to ask if someone want to comment
+                Utilities.showDialogForComment(itemView.getContext(),"LENDER_COMMENT",userId);
+
             }else{
                 //todo fai stringa
                 Toast.makeText(itemView.getContext(),"libro già in prestito",Toast.LENGTH_SHORT).show();
@@ -55,4 +69,5 @@ public class BookRequest extends RecyclerView.ViewHolder {
 
         //todo open show profil se preme sul nome
     }
+
 }

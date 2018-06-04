@@ -3,6 +3,7 @@ package com.example.andrea.lab11;
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -12,6 +13,7 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
@@ -193,5 +195,39 @@ public class Utilities {
         string = string.replaceAll("\\s+","");
 
         return string;
+    }
+
+    public static void showDialogForComment(Context context, String type, String userID) {
+
+        //todo fai stringe
+
+        String title;
+        String message;
+
+        if(type.equals("LENDER_COMMENT")){
+            title = "Commenta";
+            message = "Vuoi dare un voto";
+        }else{
+            return;
+        }
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.setPositiveButton("OK",  new DialogInterface.OnClickListener(){
+            @Override
+            public void onClick(DialogInterface d,int i) {
+                Log.d(deBugTag,"premuto messaggio positivo");
+                Intent intent = new Intent(context,CommentActivity.class);
+                intent.putExtra("userId",userID);
+                context.startActivity(intent);
+            }
+        });
+
+        builder.setNegativeButton("Cancel", null);
+
+        builder.show();
+
     }
 }

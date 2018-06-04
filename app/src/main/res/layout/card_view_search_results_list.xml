@@ -30,7 +30,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/ISBNresult"
+            android:layout_alignLeft="@+id/ISBNresult"
             android:layout_alignTop="@+id/imageResult"
+            android:layout_toLeftOf="@id/deleteButton"
+            android:layout_toStartOf="@id/deleteButton"
             android:ellipsize="end"
             android:text="TITLE" />
 
@@ -66,6 +69,20 @@
             android:layout_toRightOf="@id/imageResult"
             android:layout_toEndOf="@id/imageResult"
             android:text="YEAR"/>
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:visibility="visible"/>
 
     </RelativeLayout>
 

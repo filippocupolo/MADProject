@@ -114,7 +114,7 @@ public class ResultsList extends AppCompatActivity {
             public void onBindViewHolder(@NonNull CardViewBook holder, int position) {
 
                 BookInfo book = new BookInfo(bookList.get(position));
-                holder.bindData(book.getBookTitle(),book.getAuthor(),book.get_ISBN(), book.getEditionYear(), book.getBookID(),true);
+                holder.bindData(book.getBookTitle(),book.getAuthor(),book.get_ISBN(), book.getEditionYear(), book.getBookID(),true,false);
 
             }
 

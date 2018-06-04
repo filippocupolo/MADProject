@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,6 +23,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
@@ -38,6 +41,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
     private TextView ISBN;
     private TextView editionYear;
     private ImageView photo;
+    private ImageButton deleteButton;
     private Context context;
 
     public CardViewBook(View view){
@@ -52,9 +56,10 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         ISBN = itemView.findViewById(R.id.ISBNresult);
         editionYear = itemView.findViewById(R.id.yearResult);
         photo = itemView.findViewById(R.id.imageResult);
+        deleteButton = itemView.findViewById(R.id.deleteButton);
     }
 
-    public void bindData(String title, String author, String ISBN, String editionYear, String bookId, Boolean showProfile){
+    public void bindData(String title, String author, String ISBN, String editionYear, String bookId, Boolean showProfile, Boolean deleteButtonRequested){
 
         this.title.setText(title);
         this.author.setText(author);
@@ -71,6 +76,15 @@ public class CardViewBook extends RecyclerView.ViewHolder {
             context.startActivity(intent);
         });
 
+        //set deleteButton if request
+        if(deleteButtonRequested){
+            deleteButton.setOnClickListener(v->{
+                DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
+                dbRef.child("books").child(bookId).removeValue();
+                dbRef.child("bookRequests").child(bookId).removeValue();
+            });
+            deleteButton.setVisibility(View.VISIBLE);
+        }
 
         StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/0");
 

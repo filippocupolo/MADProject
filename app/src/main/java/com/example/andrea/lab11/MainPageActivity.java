@@ -1,12 +1,17 @@
 package com.example.andrea.lab11;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.NotificationCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,14 +21,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.PopupMenu;
 
+import com.google.firebase.database.ChildEventListener;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 public class MainPageActivity extends AppCompatActivity {
 
     private String deBugTag;
+    private DatabaseReference dbRef;
     private Context context;
     private ViewPager viewPager;
     private FragmentPagerAdapter pagerAdapter;
     private TabLayout tab;
+    private ChildEventListener childEventListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +64,43 @@ public class MainPageActivity extends AppCompatActivity {
         int numPage = getIntent().getIntExtra("page",0);
         viewPager.setCurrentItem(numPage);
 
+        //check for notification
+        dbRef = FirebaseDatabase.getInstance().getReference().child("bookAccepted")
+                .child(new MyUser(getApplicationContext()).getUserID());
+        childEventListener = new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                //todo fai stringa
+                String userId = dataSnapshot.child("userId").toString();
+                String message = "Complimenti hai ricevuto un nuovo libro.\nVuoi lasciare un commento?";
+                String title = "Hai ricevuto un libro";
+
+                dbRef.child(dataSnapshot.getKey()).removeValue();
+
+                sendNotification(title,message,userId);
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        };
+        dbRef.addChildEventListener(childEventListener);
 
     }
 
@@ -127,5 +177,35 @@ public class MainPageActivity extends AppCompatActivity {
         public int getCount() {
             return NUM_PAGES;
         }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (dbRef!=null){
+            dbRef.removeEventListener(childEventListener);
+            childEventListener=null;
+            dbRef=null;
+        }
+    }
+
+    private void sendNotification(String messageTitle, String messageBody, String user_id) {
+        Intent intent = new Intent(getApplicationContext(), showProfile.class);
+        intent.putExtra("userId", user_id);
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, intent,
+                PendingIntent.FLAG_ONE_SHOT);
+
+        Uri defaultSoundUri= RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this);
+        notificationBuilder.setSmallIcon(R.drawable.ic_launcher_foreground)
+                .setContentTitle(messageTitle)
+                .setContentText(messageBody)
+                .setAutoCancel(true)
+                .setSound(defaultSoundUri)
+                .setContentIntent(pendingIntent);
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        notificationManager.notify(0, notificationBuilder.build());
     }
 }
