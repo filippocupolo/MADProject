@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -45,6 +46,7 @@ import com.google.firebase.storage.StorageReference;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class ShowBook extends AppCompatActivity {
 
@@ -58,6 +60,7 @@ public class ShowBook extends AppCompatActivity {
     private TextView owner;
     private TextView cityOwner;
     private TextView statusTextView;
+    private TextView request_list_title;
     private TextView lendingMessage;
     private Button sendRequestButton;
     private Button endLendingButton;
@@ -69,7 +72,7 @@ public class ShowBook extends AppCompatActivity {
     private ImageButton send_message_button;
     private RecyclerView requestRecycleListView;
     private CopyOnWriteArrayList<Drawable> imagesList;
-    private FirebaseRecyclerAdapter<UserModel,BookRequest> adapter = null;
+    private FirebaseRecyclerAdapter<UserModel,BookRequest> requestAdapter = null;
 
     //todo stampa le condizioni del libro
 
@@ -103,6 +106,7 @@ public class ShowBook extends AppCompatActivity {
         lendingMessage = findViewById(R.id.bookAlreadyLend);
         send_message_button = findViewById(R.id.send_message_button);
         requestRecycleListView = findViewById(R.id.requestRecycleListView);
+        request_list_title = findViewById(R.id.relist);
         GridView gridView = findViewById(R.id.imageBook);
 
         //set toolbar
@@ -219,6 +223,7 @@ public class ShowBook extends AppCompatActivity {
                         String owner = name_surname;
                         if(!book.getOwner().equals(myUser.getUserID())){
 
+                            //chat button
                             send_message_button.setOnClickListener(v->{
                                 Intent chatIntent = new Intent(getApplicationContext(),PersonalChat.class);
                                 chatIntent.putExtra("userId",book.getOwner());
@@ -229,16 +234,31 @@ public class ShowBook extends AppCompatActivity {
 
                             //set visible requestButton
                             containerRequestButton.setVisibility(View.VISIBLE);
-                            //todo set strings Libero occupato
-                            statusTextView.setText(book.getStatus()== 0?"Libero":book.getBorrower().equals(myUser.getUserID())?"Possiedi già il libro":"Occupato");
+
+                            if(book.getStatus()==0){
+                                //libro libero
+
+                                //aggiorna view se ho già richiesto il prestito
+                                bookRequested(dbRef, book, myUser.getUserID());
+
+                                sendRequestButton.setVisibility(View.VISIBLE);
+                                statusTextView.setText(R.string.book_free);
+                            }
+                            else if(book.getStatus() == 1 && !book.getBorrower().equals(myUser.getUserID())){
+                                //il libro è in prestito e non a me
+                                statusTextView.setText(R.string.book_borrowed);
+                                sendRequestButton.setText(getString(R.string.add_to_wishlist));
+                            }else{
+                                //libro in prestito a me
+                                statusTextView.setText(R.string.book_mine);
+                                sendRequestButton.setVisibility(View.GONE);
+                            }
+
+
                             sendRequestButton.setOnClickListener( v ->{
 
-                                //if you own already the book
-                                if(book.getStatus() == 1 && book.getBorrower().equals(myUser.getUserID())){
-                                    //todo make stringa
-                                    Toast.makeText(context,"possiedi già questo libro in prestito",Toast.LENGTH_SHORT).show();
-                                    return;
-                                }
+                                sendRequestButton.setVisibility(View.GONE);
+                                statusTextView.setText(R.string.lending_req_sent);
 
                                 dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(myUser.getName() + " " + myUser.getSurname());
                                 Toast.makeText(context,"la tua richiesta è stata effettuata",Toast.LENGTH_SHORT).show();
@@ -248,28 +268,36 @@ public class ShowBook extends AppCompatActivity {
                         }else{
 
                             send_message_button.setVisibility(View.GONE);
+                            containerListRequest.setVisibility(View.VISIBLE);
 
-                            //todo fai un stato che permette di finire il prestito
-                            //set visible requestList
-                            if(book.getStatus() == 1){
-                                //todo make string
-                                Log.d(deBugTag,"status occuopato");
-                                lendingMessage.setText("il libro è in prestito a " + book.getBorrowerName());
+                            if(book.getStatus() == 1){ //libro in prestito
+
+                                String borrowerName = getString(R.string.lent) + " <b>"+ book.getBorrowerName() + "</b>";
+
+                                endLendingButton.setVisibility(View.VISIBLE);
+                                lendingMessage.setVisibility(View.VISIBLE);
+                                lendingMessage.setText(Html.fromHtml(borrowerName));
+                                request_list_title.setVisibility(View.GONE);
+                                requestRecycleListView.setVisibility(View.GONE);
+
                                 endLendingButton.setOnClickListener(v->{
                                     dbRef.child("books").child(bookId).child("status").setValue(0);
                                     lendingMessage.setVisibility(View.GONE);
                                     endLendingButton.setVisibility(View.GONE);
-
-                                    if(adapter.getCount()==0){
-                                        containerListRequest.setVisibility(View.GONE);
-                                    }
-
                                 });
-                                lendingMessage.setVisibility(View.VISIBLE);
-                                endLendingButton.setVisibility(View.VISIBLE);
-                                containerListRequest.setVisibility(View.VISIBLE);
                             }
-                            getRequestList(dbRef, book, myUser.getUserID());
+                            else {  //non ancora in prestito
+
+                                requestRecycleListView.setVisibility(View.VISIBLE);
+                                getRequestList(dbRef, book, myUser.getUserID());
+                                if(requestAdapter.getItemCount() > 0) {
+                                    //almeno una richiesta
+                                    request_list_title.setVisibility(View.VISIBLE);
+                                }else{
+                                    //nessuna richiesta
+                                    containerListRequest.setVisibility(View.GONE);
+                                }
+                            }
 
                         }
                         if(showProfile){
@@ -357,6 +385,27 @@ public class ShowBook extends AppCompatActivity {
         }
     }
 
+    private void bookRequested(DatabaseReference dbRef, BookInfo book, String user){
+
+        Query query = dbRef.child("bookRequests").child(book.getBookID()).child(user);
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                if(dataSnapshot.exists()) {
+                    sendRequestButton.setVisibility(View.GONE);
+                    statusTextView.setText(R.string.lending_req_sent);
+                }
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+    }
+
     private void getRequestList(DatabaseReference dbRef, BookInfo book, String myUserId){
 
         //set query
@@ -378,7 +427,7 @@ public class ShowBook extends AppCompatActivity {
                 .setLifecycleOwner(this)
                 .build();
 
-        adapter = new FirebaseRecyclerAdapter<UserModel,BookRequest>(options) {
+        requestAdapter = new FirebaseRecyclerAdapter<UserModel,BookRequest>(options) {
 
             @NonNull
             @Override
@@ -402,7 +451,8 @@ public class ShowBook extends AppCompatActivity {
         };
 
         requestRecycleListView.setLayoutManager(new LinearLayoutManager(context));
-        requestRecycleListView.setAdapter(adapter);
+        requestRecycleListView.setAdapter(requestAdapter);
+
     }
 
     private void errorMethod(int txt){

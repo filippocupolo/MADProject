@@ -33,8 +33,7 @@ public class CommentActivity extends AppCompatActivity {
         //set toolbar
         TextView toolbarTitle = findViewById(R.id.back_toolbar_text);
         findViewById(R.id.imageButton).setOnClickListener(v -> onBackPressed());
-        //todo fai stringa
-        toolbarTitle.setText("Scrivi commento");
+        toolbarTitle.setText(R.string.add_comment);
 
         //get userId from intent
         String userId = getIntent().getStringExtra("userId");
