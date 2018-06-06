@@ -39,6 +39,12 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
         FirebaseDatabase.getInstance().reference.child("chat").child(ck).orderByKey().limitToLast(1).addValueEventListener(object :ValueEventListener{
 
             override fun onDataChange(p0: DataSnapshot?) {
+
+                if(p0 ==null || p0.value==null){
+                    lastMessage?.text = ""
+                    return
+                }
+
                 val message = p0!!.children!!.iterator().next()
 
                 lastMessage?.text = message.child("messageText").value.toString()

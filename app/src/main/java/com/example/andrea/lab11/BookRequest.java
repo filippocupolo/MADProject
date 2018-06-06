@@ -67,7 +67,11 @@ public class BookRequest extends RecyclerView.ViewHolder {
             dbRef.child("bookRequests").child(bookId).child(userId).removeValue();
         });
 
-        //todo open show profil se preme sul nome
+        this.nameSurname.setOnClickListener( v ->{
+            Intent showProfileIntent = new Intent(itemView.getContext(),showProfile.class);
+            showProfileIntent.putExtra("userId",userId);
+            itemView.getContext().startActivity(showProfileIntent);
+        });
     }
 
 }

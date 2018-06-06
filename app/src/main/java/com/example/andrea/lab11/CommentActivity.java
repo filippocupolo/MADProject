@@ -50,6 +50,8 @@ public class CommentActivity extends AppCompatActivity {
         ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                if(rating<0.5f)
+                    ratingBar.setRating(0.5f);
                ratingCounter = rating;
             }
         });
@@ -70,8 +72,7 @@ public class CommentActivity extends AppCompatActivity {
             Date date = new Date();
             MyUser myUser = new MyUser(this);
 
-            //todo getYear sbaglia
-            CommentModel commentModel = new CommentModel(myUser.getUserID(),myUser.getName() +" "+myUser.getSurname(),ratingCounter,text,date.getYear(),date.getMonth(),date.getDay());
+            CommentModel commentModel = new CommentModel(myUser.getUserID(),myUser.getName() +" "+myUser.getSurname(),ratingCounter,text,date.getYear() + 1900,date.getMonth(),date.getDay());
 
             DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("commentsDB").child(userId);
             dbRef.child("comments").push().setValue(commentModel);

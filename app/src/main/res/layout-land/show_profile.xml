@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
@@ -9,89 +11,91 @@
         layout="@layout/back_button_toolbar" />
 
 
-    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/imageViewShow"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        app:civ_border_color="@color/colorPrimaryDark"
-        app:civ_border_width="1dp" />
-
-    <RatingBar
-        android:id="@+id/comment_stars"
-        style="?android:attr/ratingBarStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="46dp"
-        android:layout_marginStart="63dp"
-        android:layout_marginLeft="63dp"/>
-
-    <ImageButton
-        android:id="@+id/send_comment_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/comment_stars"
-        android:layout_alignEnd="@+id/imageViewShow"
-        android:background="@android:color/transparent"
-        android:onClick="gotoComment"
-        android:padding="3dp"
-        android:src="@drawable/ic_warning_black_24dp"
-        android:visibility="visible" />
-
-            <!--
-
-            <TextView
-                android:id="@+id/nameSurnameShow"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="51dp"
-                android:ems="20"
-                android:gravity="start"
-                android:labelFor="@+id/nameSurnameShow"
-                android:padding="8dp"
-                android:text="@string/name_surname"
-                android:textAlignment="textStart"
-                android:textSize="13sp"
-                android:background="@drawable/show_profile_main_info_background"/>
-
-            <TextView
-                android:id="@+id/emailShow"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/nameSurnameShow"
-                android:layout_alignLeft="@id/nameSurnameShow"
-                android:layout_below="@+id/nameSurnameShow"
-                android:layout_marginTop="15dp"
-                android:ems="10"
-                android:text="@string/email"
-                android:textSize="13sp"
-                android:textAlignment="textStart"
-                android:gravity="start"
-                android:labelFor="@+id/cityShow"
-                android:padding="8dp"
-                android:background="@drawable/show_profile_main_info_background"/> !-->
-
     <ExpandableListView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="202dp"
         android:id="@+id/aboutMe"
-        android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:gravity="center"
+        android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorLeft"
         android:orientation="vertical"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scrollView3"
+        app:layout_constraintTop_toBottomOf="@+id/show_profile_toolbar" />
 
 
-</RelativeLayout>
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_profile_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imageViewShow"
+                android:layout_width="176dp"
+                android:layout_height="180dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                app:civ_border_width="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/show_profile_toolbar" />
+
+
+
+            <RatingBar
+                android:id="@+id/comment_stars"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageViewShow"
+                app:layout_constraintTop_toBottomOf="@+id/show_profile_toolbar" />
+
+            <Button
+                android:id="@+id/send_message_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_shape"
+                android:text="Chat"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="@+id/send_comment_button"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/send_comment_button"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewShow" />
+
+            <Button
+                android:id="@+id/send_comment_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shape"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:clickable="false"
+                android:text="@string/comment"
+                app:layout_constraintEnd_toStartOf="@+id/aboutMe"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/send_message_button" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

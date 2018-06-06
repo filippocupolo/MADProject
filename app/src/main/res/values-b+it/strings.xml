@@ -102,7 +102,7 @@
     <string name="ratings">Recensioni</string>
     <string name="no_comments">Nessuno ha lasciato alcuna recensione ancora</string>
     <string name="add_comment">Aggiungi anche un commento</string>
-    <string name="comment">Comment</string>
+    <string name="comment">Commenta</string>
     <string name="terminate_loan">Termina prestito</string>
     <string name="loan_requests">Richieste di prestito</string>
     <string name="lent">Concesso a</string>

@@ -1,10 +1,7 @@
 package com.example.andrea.lab11;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.BitmapFactory;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -14,7 +11,6 @@ import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -24,7 +20,6 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageButton;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,13 +35,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FileDownloadTask;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
-import java.util.concurrent.atomic.AtomicBoolean;
+import java.io.File;
+import java.util.ArrayList;
 
 public class ShowBook extends AppCompatActivity {
 
@@ -71,7 +65,7 @@ public class ShowBook extends AppCompatActivity {
     private ImageButton goToProfileButton;
     private ImageButton send_message_button;
     private RecyclerView requestRecycleListView;
-    private CopyOnWriteArrayList<Drawable> imagesList;
+    private ArrayList<Drawable> imagesList;
     private FirebaseRecyclerAdapter<UserModel,BookRequest> requestAdapter = null;
 
     //todo stampa le condizioni del libro
@@ -81,7 +75,7 @@ public class ShowBook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         deBugTag = this.getClass().getName();
-        imagesList = new CopyOnWriteArrayList<>();
+        imagesList = new ArrayList<>();
         context = getApplicationContext();
         MyUser myUser = new MyUser(context);
 
@@ -146,7 +140,18 @@ public class ShowBook extends AppCompatActivity {
                 ImageButton bookPhoto = convertView.findViewById(R.id.bookPhoto);
                 ImageButton deleteButton = convertView.findViewById(R.id.deleteButton);
                 deleteButton.setVisibility(View.GONE);
-                bookPhoto.setClickable(false);
+
+                bookPhoto.setOnClickListener(v -> {
+                    Intent fullImageIntent = new Intent(
+                        getApplicationContext(),
+                        fullScreenImage.class
+                    );
+                    fullImageIntent.putExtra("path", getFilesDir() + "/bookImage"+ position +".jpg");
+                    startActivity(fullImageIntent);
+
+                });
+
+
                 bookPhoto.setImageDrawable(imagesList.get(position));
                 bookPhoto.setScaleType(ImageButton.ScaleType.FIT_XY);
                 return convertView;
@@ -315,29 +320,31 @@ public class ShowBook extends AppCompatActivity {
                             //request for Images
                             StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/" + i);
 
+                            final int c = i;
+
                             //todo ref.getBytes lancia degli errori cercare di capire cosa sono
                             ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
 
-                                    FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getBytes(1024 * 1024).addOnSuccessListener(new OnSuccessListener<byte[]>() {
+                                    //create File
+                                    File file = new File(getFilesDir(), "bookImage"+ c +".jpg");
 
+                                    FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
                                         @Override
-                                        public void onSuccess(byte[] bytes) {
+                                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
 
-                                            imagesList.add(new BitmapDrawable(BitmapFactory.decodeByteArray(bytes, 0, bytes.length)));
+                                            imagesList.add(Drawable.createFromPath(file.getPath()));
                                             adapter.notifyDataSetChanged();
-                                        }
 
+                                        }
                                     }).addOnFailureListener(new OnFailureListener() {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
-
                                             Log.e(deBugTag,e.getMessage());
 
                                         }
                                     });
-
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
@@ -453,6 +460,13 @@ public class ShowBook extends AppCompatActivity {
         requestRecycleListView.setLayoutManager(new LinearLayoutManager(context));
         requestRecycleListView.setAdapter(requestAdapter);
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        //todo liberare risorse (listeners)
     }
 
     private void errorMethod(int txt){

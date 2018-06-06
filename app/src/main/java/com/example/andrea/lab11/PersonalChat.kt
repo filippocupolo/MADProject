@@ -2,6 +2,7 @@ package com.example.andrea.lab11
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.constraint.solver.widgets.Snapshot
 import android.view.View
 import android.widget.ImageButton
 import android.widget.TextView
@@ -15,7 +16,10 @@ import android.view.ViewGroup
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
 import com.firebase.ui.database.SnapshotParser
+import com.google.android.gms.tasks.Task
 import com.google.firebase.database.*
+import com.google.firebase.storage.CancellableTask
+import com.google.firebase.storage.UploadTask
 
 class PersonalChat : AppCompatActivity() {
 
@@ -61,10 +65,16 @@ class PersonalChat : AppCompatActivity() {
 
                     if(dataSnapshot == null || dataSnapshot.value == null){
                         val cK = myUserId + userId
+
+                        if(userId!=null && cK!= null && myUserId!=null && dbRef!=null){
+                            Log.d(deBugTag,"kotlin fa schifo")
+                        }
+
                         dbRef.child(myUserId).child(cK).child("userId").setValue(userId)
                         dbRef.child(userId).child(cK).child("userId").setValue(myUserId)
                         dbRef.child(myUserId).child(cK).child("userName").setValue(userName)
                         dbRef.child(userId).child(cK).child("userName").setValue(myUserName)
+
                         receive_send_message(cK)
                     }else{
                         Log.d(deBugTag,dataSnapshot.children.iterator().next().key)
@@ -73,8 +83,8 @@ class PersonalChat : AppCompatActivity() {
 
                 }
 
-                override fun onCancelled(databaseError: DatabaseError) {
-                    Log.e(deBugTag,databaseError.getMessage()+databaseError.getCode());
+                override fun onCancelled(databaseError: DatabaseError?) {
+                    Log.e(deBugTag,databaseError?.getMessage()+databaseError?.getCode());
                     //todo gestire
                 }
             })
@@ -90,6 +100,7 @@ class PersonalChat : AppCompatActivity() {
         //set adapter
         val options = FirebaseRecyclerOptions.Builder<ChatMessageModel>()
                 .setQuery(dbRef, SnapshotParser<ChatMessageModel> {snapshot ->
+
                     val messageUserId = snapshot.child("messageUserId").value.toString()
                     if(!messageUserId.equals(myUserId)){
                         dbRef.child(snapshot.key).child("messageRead").setValue(true)

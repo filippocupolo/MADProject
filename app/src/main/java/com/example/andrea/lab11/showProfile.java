@@ -19,6 +19,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.Button;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
 import android.widget.ImageButton;
@@ -68,7 +69,8 @@ public class showProfile extends AppCompatActivity{
     private Boolean noBook = false;
     private Boolean noComments = false;
     private String userId;
-    private ImageButton canCommentButton;
+    private Float vote = -1.f;
+    private Button canCommentButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -95,7 +97,7 @@ public class showProfile extends AppCompatActivity{
         canCommentButton = findViewById(R.id.send_comment_button);
 
         RatingBar ratings = findViewById(R.id.comment_stars);
-        ratings.setRating(5); //todo set average stars
+
 
         //set toolbar
         TextView toolbarTitle = findViewById(R.id.back_toolbar_text);
@@ -111,7 +113,6 @@ public class showProfile extends AppCompatActivity{
             private int lastExpandedGroupPosition;
             @Override
             public int getGroupCount() {
-                Log.d(deBugTag, "1");
                 return groups.length;
             }
 
@@ -122,37 +123,31 @@ public class showProfile extends AppCompatActivity{
 
             @Override
             public Object getGroup(int groupPosition) {
-                Log.d(deBugTag, "3");
                 return groups[groupPosition];
             }
 
             @Override
             public Object getChild(int groupPosition, int childPosition) {
-                Log.d(deBugTag, "4");
                 return null;
             }
 
             @Override
             public long getGroupId(int groupPosition) {
-                Log.d(deBugTag, "5");
                 return 0;
             }
 
             @Override
             public long getChildId(int groupPosition, int childPosition) {
-                Log.d(deBugTag, "6");
                 return 0;
             }
 
             @Override
             public boolean hasStableIds() {
-                Log.d(deBugTag, "7");
                 return false;
             }
 
             @Override
             public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
-                Log.d(deBugTag, "8");
                 if(convertView==null){
                     LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                     convertView = li.inflate(R.layout.show_profile_groups, null);
@@ -166,7 +161,6 @@ public class showProfile extends AppCompatActivity{
 
             @Override
             public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
-                Log.d(deBugTag, "9");
 
                 switch (groupPosition){
                     case 0:
@@ -238,7 +232,6 @@ public class showProfile extends AppCompatActivity{
 
             @Override
             public boolean isChildSelectable(int groupPosition, int childPosition) {
-                Log.d(deBugTag, "10");
                 return false;
             }
 
@@ -261,44 +254,27 @@ public class showProfile extends AppCompatActivity{
 
         //check if the user has to leave comment
         MyUser myUser = new MyUser(context);
-        Query leaveCommentQuery = fireBaseRef.child("commentsDB").child(userId).child("can_comment");
+        Query leaveCommentQuery = fireBaseRef.child("commentsDB").child(userId).child("can_comment").orderByKey().equalTo(myUser.getUserID());
 
-        leaveCommentQuery.addChildEventListener(new ChildEventListener() {
+        leaveCommentQuery.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                if(dataSnapshot.getKey().equals(myUser.getUserID())) {
-                    if (dataSnapshot.exists())
-                        canCommentButton.setVisibility(View.VISIBLE);
-                    else
-                        canCommentButton.setVisibility(View.GONE);
-                }
-            }
+            public void onDataChange(DataSnapshot dataSnapshot) {
 
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                if(dataSnapshot.getKey().equals(myUser.getUserID())) {
-                    if (dataSnapshot.exists())
-                        canCommentButton.setVisibility(View.VISIBLE);
-                    else
-                        canCommentButton.setVisibility(View.GONE);
-                }
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-                if(dataSnapshot.getKey().equals(myUser.getUserID())) {
-                    canCommentButton.setVisibility(View.GONE);
-                }
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-                if(dataSnapshot.getKey().equals(myUser.getUserID())) {
-                    if (dataSnapshot.exists())
-                        canCommentButton.setVisibility(View.VISIBLE);
-                    else
-                        canCommentButton.setVisibility(View.GONE);
-                }
+                canCommentButton.setClickable(true);
+                canCommentButton.setOnClickListener(v->{
+                    if(dataSnapshot!=null && dataSnapshot.getValue()!=null){
+                        Log.d(deBugTag,dataSnapshot.getValue().toString());
+                        Intent commentIntent = new Intent(
+                                getApplicationContext(),
+                                CommentActivity.class
+                        );
+                        commentIntent.putExtra("userId", userId);
+                        startActivity(commentIntent);
+                    }else{
+                        //todo fai stringa
+                        Toast.makeText(context,"Non puoi scrivere un commento se non hai scambiato un libro con questo utente",Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
 
             @Override
@@ -331,16 +307,31 @@ public class showProfile extends AppCompatActivity{
                         case "city":
                             city = (String) child.getValue();
                             break;
+                        case "avgVotes":
+                            vote = Float.parseFloat(child.child("vote").getValue().toString());
+                            break;
                     }
                 }
+
+                if(vote>0){
+                    ratings.setRating(vote);
+                }
+
+                findViewById(R.id.send_message_button).setOnClickListener(v->{
+                    Intent chatIntent = new Intent(getApplicationContext(),PersonalChat.class);
+                    chatIntent.putExtra("userId",userId);
+                    chatIntent.putExtra("userName",name + " " + surname);
+                    startActivity(chatIntent);
+                });
+
                 //nameSurnameView.setText(getString(R.string.nameSurname,name,surname));
                 //emailView.setText(email);
                 //biographyView.setText(biography);
                 //cityView.setText(city);
 
-                synchronized(aboutMeAdapter){
-                    aboutMeAdapter.notifyDataSetChanged();
-                }
+
+                aboutMeAdapter.notifyDataSetChanged();
+
 
                 //set default image
                 profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
@@ -494,13 +485,5 @@ public class showProfile extends AppCompatActivity{
         onBackPressed();
     }
 
-    public void gotoComment(View v){
-        Intent commentIntent = new Intent(
-                getApplicationContext(),
-                CommentActivity.class
-        );
-        commentIntent.putExtra("userId", userId);
-        startActivity(commentIntent);
-    }
 
 }
