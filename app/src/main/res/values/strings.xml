@@ -117,5 +117,7 @@
     <string name="ask_for_book">Lending request</string>
     <string name="lending_req_sent">You have already sent a lending request to the owner</string>
     <string name="add_to_wishlist">Add to wish list</string>
+    <string name="create_new_account">Create a new account</string>
+    <string name="continue_fb">Continue with Facebook</string>
 
 </resources>
