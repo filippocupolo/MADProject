@@ -14,7 +14,7 @@
         android:id="@+id/comment_stars"
         style="?android:attr/ratingBarStyleSmall"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="21dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginEnd="8dp"
@@ -23,6 +23,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageViewShow" />
 
@@ -64,10 +65,10 @@
 
     <Button
         android:id="@+id/send_message_button"
-        android:layout_width="0dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/button_shape"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:text="Chat"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/send_comment_button"
@@ -77,13 +78,13 @@
 
     <Button
         android:id="@+id/send_comment_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/button_shape"
+        android:clickable="false"
         android:text="@string/comment"
         android:textColor="@android:color/white"
-        android:clickable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageViewShow"
@@ -94,7 +95,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_below="@id/comment_stars"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:indicatorRight="?android:attr/expandableListPreferredItemIndicatorLeft"
         android:orientation="vertical"
