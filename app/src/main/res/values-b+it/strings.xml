@@ -112,4 +112,6 @@
     <string name="ask_for_book">Chiedi prestito</string>
     <string name="lending_req_sent">Hai già richiesto questo libro in prestito</string>
     <string name="add_to_wishlist">Aggiungi alla wish list</string>
+    <string name="create_new_account">Crea un nuovo profilo</string>
+    <string name="continue_fb">Continua con Facebook</string>
 </resources>

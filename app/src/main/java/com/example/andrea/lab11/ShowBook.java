@@ -265,7 +265,7 @@ public class ShowBook extends AppCompatActivity {
                             });
 
 
-                        }else{
+                        }else{ //i am the book owner
 
                             send_message_button.setVisibility(View.GONE);
                             containerListRequest.setVisibility(View.VISIBLE);
