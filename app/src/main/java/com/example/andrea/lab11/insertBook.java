@@ -173,7 +173,6 @@ public class insertBook extends AppCompatActivity{
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        finish();
     }
 
     public void uploadBook(View view) {
@@ -191,7 +190,13 @@ public class insertBook extends AppCompatActivity{
         Utilities.loading_and_blur_background(view, spinnerPB);
         book.loadBook();
         Utilities.show_background(view, spinnerPB);
-        onBackPressed();
+        //onBackPressed();
+
+        Intent myBooks = new Intent(getApplicationContext(), MainPageActivity.class);
+        myBooks.putExtra("page", 1); //go to myBookList
+        myBooks.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(myBooks);
+        finish();
     }
 
     private boolean canUpload(){
