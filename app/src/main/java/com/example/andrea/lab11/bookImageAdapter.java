@@ -26,7 +26,6 @@ import java.net.URI;
 import java.util.LinkedList;
 import java.util.List;
 
-//todo delete book button
 public class bookImageAdapter extends BaseAdapter{
 
     private Context appContext;
@@ -100,24 +99,6 @@ public class bookImageAdapter extends BaseAdapter{
         bookPhoto.setClickable(false);
 
         bookPhoto.setScaleType(ImageButton.ScaleType.FIT_XY);
-        /*bookPhoto.setOnClickListener(v->{
-            if(position == getCount()-1){
-                selectedImageUri = Utilities.requestImage(activityCompat, (insertBook)appContext, CAMERA_REQUEST_CODE, PICK_IMAGE);
-            }else{
-                //TODO add try catch finally
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-
-                images.get(position).compress(Bitmap.CompressFormat.JPEG, 100, stream);
-
-                byte[] byteArray = stream.toByteArray();
-                Intent intent = new Intent(
-                        appContext,
-                        fullScreenImage.class
-                );
-                intent.putExtra("image", byteArray);
-                appContext.startActivity(intent);
-            }
-        });*/
 
         deleteButton.setImageResource(R.drawable.ic_delete_black_24dp);
         deleteButton.setOnClickListener(e->{

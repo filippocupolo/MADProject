@@ -76,6 +76,8 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
         //request for userImage
         val ref = FirebaseStorage.getInstance().reference.child("profileImages/$userId")
 
+        image!!.setImageDrawable(context.resources.getDrawable(R.drawable.ic_person_black_40dp))
+
         ref.downloadUrl.addOnSuccessListener { uri ->
             Glide.with(itemView).load(uri).into(image!!)
         }.addOnFailureListener { e -> Log.e(deBugTag, e.message) }

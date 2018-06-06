@@ -20,7 +20,7 @@ class ChatService : Service(){
     val deBugTag = "ChatService"
     var chilListener : ChildEventListener? = null
     var dbRef : DatabaseReference? = null
-    var valueListeners : CopyOnWriteArrayList<ValueEventListener>? = null
+    var valueListeners : ArrayList<ValueEventListener>? = null
 
     override fun onBind(intent: Intent?): IBinder? {
         Log.d(deBugTag,"onBind")
@@ -36,7 +36,7 @@ class ChatService : Service(){
         FirebaseApp.initializeApp(this)
         dbRef = FirebaseDatabase.getInstance().reference
 
-        valueListeners = CopyOnWriteArrayList<ValueEventListener>()
+        valueListeners = ArrayList<ValueEventListener>()
 
         chilListener = dbRef!!.child("usersChat").child(userId).addChildEventListener( object : ChildEventListener{
 
@@ -87,7 +87,7 @@ class ChatService : Service(){
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        return START_NOT_STICKY
+        return START_STICKY
     }
 
     override fun onDestroy() {
@@ -106,7 +106,7 @@ class ChatService : Service(){
             Log.d(deBugTag,"rimosso")
         }
 
-        stopSelf()
+        FirebaseDatabase.getInstance().goOffline()
     }
 
     fun postNotification(title: String, content: String) {

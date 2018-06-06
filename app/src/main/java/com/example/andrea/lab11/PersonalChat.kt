@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.Task
 import com.google.firebase.database.*
 import com.google.firebase.storage.CancellableTask
 import com.google.firebase.storage.UploadTask
+import java.lang.IllegalStateException
 
 class PersonalChat : AppCompatActivity() {
 

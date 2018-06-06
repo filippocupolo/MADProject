@@ -110,7 +110,7 @@ class Chat : Fragment() {
             }
 
 
-            override fun onChildChanged(dataSnapshot:DataSnapshot,  s:String) {
+            override fun onChildChanged(dataSnapshot:DataSnapshot,  s:String?) {
 
                 if(dataSnapshot == null)
                     return
