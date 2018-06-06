@@ -124,7 +124,7 @@ public class editProfile extends AppCompatActivity {
         cityView.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 //towns spinner according to the city selected
-                ArrayAdapter<String> townAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_spinner_item,
+                ArrayAdapter<String> townAdapter = new ArrayAdapter<>(activity, android.R.layout.simple_spinner_item,
                         location.getItalianTowns(cityView.getSelectedItem().toString(), getApplicationContext()));
 
                 townAdapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);

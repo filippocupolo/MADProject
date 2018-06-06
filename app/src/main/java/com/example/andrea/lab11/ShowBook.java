@@ -286,7 +286,12 @@ public class ShowBook extends AppCompatActivity {
                                 requestRecycleListView.setVisibility(View.GONE);
 
                                 endLendingButton.setOnClickListener(v->{
+
                                     dbRef.child("books").child(bookId).child("status").setValue(0);
+
+                                    dbRef.child("commentsDB").child(myUser.getUserID()).child("can_comment").child(book.getBorrower()).setValue(true);
+                                    dbRef.child("commentsDB").child(book.getBorrower()).child("can_comment").child(myUser.getUserID()).setValue(true);
+
                                     lendingMessage.setVisibility(View.GONE);
                                     endLendingButton.setVisibility(View.GONE);
                                 });

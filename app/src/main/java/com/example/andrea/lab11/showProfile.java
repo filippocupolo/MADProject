@@ -149,7 +149,7 @@ public class showProfile extends AppCompatActivity{
             @Override
             public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
                 if(convertView==null){
-                    LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                    LayoutInflater li = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                     convertView = li.inflate(R.layout.show_profile_groups, null);
                 }
 
@@ -165,7 +165,7 @@ public class showProfile extends AppCompatActivity{
                 switch (groupPosition){
                     case 0:
                         if(convertView==null || convertView.getId() != R.id.about_me_childs){
-                            LayoutInflater li = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+                            LayoutInflater li = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                             convertView = li.inflate(R.layout.about_me_childs, null);
                         }
 
@@ -419,7 +419,7 @@ public class showProfile extends AppCompatActivity{
             @NonNull
             @Override
             public CardViewBook onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext())
+                View view = LayoutInflater.from(activity)
                         .inflate(R.layout.card_view_search_results_list, parent, false);
 
                 return new CardViewBook(view);
@@ -456,7 +456,7 @@ public class showProfile extends AppCompatActivity{
             @NonNull
             @Override
             public CardViewComment onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View v = LayoutInflater.from(parent.getContext())
+                View v = LayoutInflater.from(activity)
                         .inflate(R.layout.cardview_comment, parent, false);
 
                 return new CardViewComment(v);

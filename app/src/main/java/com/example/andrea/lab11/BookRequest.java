@@ -48,9 +48,6 @@ public class BookRequest extends RecyclerView.ViewHolder {
 
                 dbRef.child("bookRequests").child(bookId).child(userId).removeValue();
 
-                dbRef.child("commentsDB").child(myUserId).child("can_comment").child(userId).setValue(true);
-                dbRef.child("commentsDB").child(userId).child("can_comment").child(myUserId).setValue(true);
-
                 //set bookAccepted
                 dbRef.child("bookAccepted").child(userId).child("userId").setValue(myUserId);
 
