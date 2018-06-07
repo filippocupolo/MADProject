@@ -61,7 +61,7 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
             }
         })
 
-        //open Show Book if card is pressed
+        //open chat if card is pressed
         val context = itemView.context
         itemView.isClickable = true
         itemView.setOnClickListener { v ->

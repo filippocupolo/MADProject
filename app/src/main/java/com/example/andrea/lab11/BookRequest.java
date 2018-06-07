@@ -52,7 +52,7 @@ public class BookRequest extends RecyclerView.ViewHolder {
                 dbRef.child("bookAccepted").child(userId).child("userId").setValue(myUserId);
 
                 //send message box to ask if someone want to comment
-                Utilities.showDialogForComment(itemView.getContext(),"LENDER_COMMENT",userId);
+                //Utilities.showDialogForComment(itemView.getContext(),"LENDER_COMMENT",userId);
 
             }else{
                 //todo fai stringa

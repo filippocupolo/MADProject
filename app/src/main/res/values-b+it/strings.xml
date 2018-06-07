@@ -114,4 +114,9 @@
     <string name="add_to_wishlist">Aggiungi alla wish list</string>
     <string name="create_new_account">Crea un nuovo profilo</string>
     <string name="continue_fb">Continua con Facebook</string>
+    <string name="send_comment">Invia commento</string>
+    <string name="new_book_received_congrats">Complimenti hai ricevuto un nuovo libro.
+Vuoi lasciare un commento?</string>
+    <string name="new_book_received">Hai ricevuto un nuovo libro</string>
+    <string name="request_sent">Richiesta inviata</string>
 </resources>
