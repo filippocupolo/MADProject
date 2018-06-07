@@ -42,6 +42,8 @@ import com.google.firebase.storage.StorageReference;
 import java.io.File;
 import java.util.ArrayList;
 
+import static com.google.firebase.database.DatabaseError.NETWORK_ERROR;
+
 public class ShowBook extends AppCompatActivity {
 
     private String deBugTag;
@@ -67,6 +69,9 @@ public class ShowBook extends AppCompatActivity {
     private RecyclerView requestRecycleListView;
     private ArrayList<Drawable> imagesList;
     private FirebaseRecyclerAdapter<UserModel,BookRequest> requestAdapter = null;
+    private ValueEventListener bookRequestedListener;
+    private ValueEventListener bookQueryListener;
+    private DatabaseReference dbRef;
 
     //todo stampa le condizioni del libro
 
@@ -164,12 +169,12 @@ public class ShowBook extends AppCompatActivity {
         Boolean showProfile = getIntent().getBooleanExtra("showProfile",true);
 
         //set database Ref
-        DatabaseReference dbRef =  FirebaseDatabase.getInstance().getReference();
+        dbRef =  FirebaseDatabase.getInstance().getReference();
 
         //make FireBase request for book
         Query bookQuery = dbRef.child("books").orderByKey().equalTo(bookId);
-        //todo rilasciare questo listener
-        bookQuery.addValueEventListener(new ValueEventListener() {
+
+        bookQueryListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
@@ -262,11 +267,12 @@ public class ShowBook extends AppCompatActivity {
 
                             sendRequestButton.setOnClickListener( v ->{
 
+
                                 sendRequestButton.setVisibility(View.GONE);
                                 statusTextView.setText(R.string.lending_req_sent);
 
                                 dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(myUser.getName() + " " + myUser.getSurname());
-                                Toast.makeText(context,"la tua richiesta è stata effettuata",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(context,getString(R.string.request_sent),Toast.LENGTH_SHORT).show();
                             });
 
 
@@ -285,9 +291,12 @@ public class ShowBook extends AppCompatActivity {
                                 request_list_title.setVisibility(View.GONE);
                                 requestRecycleListView.setVisibility(View.GONE);
 
+
                                 endLendingButton.setOnClickListener(v->{
 
                                     dbRef.child("books").child(bookId).child("status").setValue(0);
+
+                                    Utilities.showDialogForComment(v.getContext(),"LENDER_COMMENT", book.getBorrower());
 
                                     dbRef.child("commentsDB").child(myUser.getUserID()).child("can_comment").child(book.getBorrower()).setValue(true);
                                     dbRef.child("commentsDB").child(book.getBorrower()).child("can_comment").child(myUser.getUserID()).setValue(true);
@@ -364,7 +373,8 @@ public class ShowBook extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
-                        errorMethod(R.string.network_problem);
+                        if(databaseError.getCode() == NETWORK_ERROR)
+                            errorMethod(R.string.network_problem);
                     }
                 });
 
@@ -372,9 +382,11 @@ public class ShowBook extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                errorMethod(R.string.network_problem);
+                if(databaseError.getCode() == NETWORK_ERROR)
+                    errorMethod(R.string.network_problem);
             }
-        });
+        };
+        bookQuery.addValueEventListener(bookQueryListener);
 
     }
 
@@ -400,7 +412,7 @@ public class ShowBook extends AppCompatActivity {
     private void bookRequested(DatabaseReference dbRef, BookInfo book, String user){
 
         Query query = dbRef.child("bookRequests").child(book.getBookID()).child(user);
-        query.addListenerForSingleValueEvent(new ValueEventListener() {
+        bookRequestedListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()) {
@@ -414,7 +426,8 @@ public class ShowBook extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        };
+        query.addValueEventListener(bookRequestedListener);
 
     }
 
@@ -471,7 +484,12 @@ public class ShowBook extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
 
-        //todo liberare risorse (listeners)
+        if(dbRef != null ) {
+            if(bookRequestedListener != null)
+                dbRef.removeEventListener(bookRequestedListener);
+            if(bookQueryListener != null)
+                dbRef.removeEventListener(bookQueryListener);
+        }
     }
 
     private void errorMethod(int txt){

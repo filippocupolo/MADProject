@@ -115,9 +115,13 @@
     <string name="book_borrowed">Already lent</string>
     <string name="book_mine">You have borrowed this book already</string>
     <string name="ask_for_book">Lending request</string>
-    <string name="lending_req_sent">You have already sent a lending request to the owner</string>
+    <string name="lending_req_sent">You have sent a lending request to the owner</string>
     <string name="add_to_wishlist">Add to wish list</string>
     <string name="create_new_account">Create a new account</string>
     <string name="continue_fb">Continue with Facebook</string>
-
+    <string name="send_comment">Send comment</string>
+    <string name="new_book_received_congrats">You received a new book!
+Would you like to leave a review?</string>
+    <string name="new_book_received">You received a new book!</string>
+    <string name="request_sent">Request sent</string>
 </resources>

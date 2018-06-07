@@ -16,6 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.MutableData;
 import com.google.firebase.database.Transaction;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class CommentActivity extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class CommentActivity extends AppCompatActivity {
         //set toolbar
         TextView toolbarTitle = findViewById(R.id.back_toolbar_text);
         findViewById(R.id.imageButton).setOnClickListener(v -> onBackPressed());
-        toolbarTitle.setText(R.string.add_comment);
+        toolbarTitle.setText(R.string.comment);
 
         //get userId from intent
         String userId = getIntent().getStringExtra("userId");
@@ -70,9 +71,11 @@ public class CommentActivity extends AppCompatActivity {
                 text = null;
 
             Date date = new Date();
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(date);
             MyUser myUser = new MyUser(this);
 
-            CommentModel commentModel = new CommentModel(myUser.getUserID(),myUser.getName() +" "+myUser.getSurname(),ratingCounter,text,date.getYear() + 1900,date.getMonth(),date.getDay());
+            CommentModel commentModel = new CommentModel(myUser.getUserID(),myUser.getName() +" "+myUser.getSurname(),ratingCounter,text,cal.get(Calendar.YEAR),cal.get(Calendar.MONTH)+1,cal.get(Calendar.DAY_OF_MONTH));
 
             DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference().child("commentsDB").child(userId);
             dbRef.child("comments").push().setValue(commentModel);

@@ -74,6 +74,7 @@ public class showProfile extends AppCompatActivity{
     private String userId;
     private Float vote = -1.f;
     private Button canCommentButton;
+    private Button canChatButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -82,6 +83,8 @@ public class showProfile extends AppCompatActivity{
         deBugTag = this.getClass().getName();
         activity = this;
         context = getApplicationContext();
+
+        MyUser myUser = new MyUser(context);
 
         //+++++++++++++set fields+++++++++++++
         setContentView(R.layout.show_profile);
@@ -98,6 +101,14 @@ public class showProfile extends AppCompatActivity{
         //RecyclerView list = findViewById(R.id.published_books_rv);
         ExpandableListView aboutMeList = findViewById(R.id.aboutMe);
         canCommentButton = findViewById(R.id.send_comment_button);
+        canChatButton = findViewById(R.id.send_message_button);
+
+
+
+        if(userId.equals(myUser.getUserID())){
+            canCommentButton.setVisibility(View.GONE);
+            canChatButton.setVisibility(View.GONE);
+        }
 
         RatingBar ratings = findViewById(R.id.comment_stars);
 
@@ -256,7 +267,6 @@ public class showProfile extends AppCompatActivity{
         aboutMeList.expandGroup(0);
 
         //check if the user has to leave comment
-        MyUser myUser = new MyUser(context);
         Query leaveCommentQuery = fireBaseRef.child("commentsDB").child(userId).child("can_comment").orderByKey().equalTo(myUser.getUserID());
 
         leaveCommentQuery.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -334,7 +344,6 @@ public class showProfile extends AppCompatActivity{
 
 
                 aboutMeAdapter.notifyDataSetChanged();
-
 
                 //set default image
                 profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));

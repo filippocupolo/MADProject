@@ -1,5 +1,6 @@
 package com.example.andrea.lab11
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.constraint.solver.widgets.Snapshot
@@ -44,6 +45,12 @@ class PersonalChat : AppCompatActivity() {
         //set toolbar
         val toolbarTitle = findViewById<TextView>(R.id.back_toolbar_text)
         toolbarTitle.text = userName
+        toolbarTitle.setOnClickListener(View.OnClickListener {
+            val intent = Intent(applicationContext, showProfile::class.java)
+            intent.putExtra("userId", userId)
+            applicationContext.startActivity(intent)
+        })
+
         findViewById<ImageButton>(R.id.imageButton).setOnClickListener(View.OnClickListener {onBackPressed()})
 
         //get elements
@@ -55,6 +62,7 @@ class PersonalChat : AppCompatActivity() {
         val myUser = MyUser(applicationContext)
         myUserName = myUser.name + " " + myUser.surname
         myUserId = myUser.userID
+
 
         if (chatKey != null){
             receive_send_message(chatKey)
