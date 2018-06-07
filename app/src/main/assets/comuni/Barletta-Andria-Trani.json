@@ -1,0 +1,102 @@
+[
+  {
+    "id": "110001",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Andria",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A285",
+    "latitudine": 41.227252,
+    "longitudine": 16.296641
+  },
+  {
+    "id": "110002",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Barletta",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A669",
+    "latitudine": 41.319664,
+    "longitudine": 16.283821
+  },
+  {
+    "id": "110003",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Bisceglie",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A883",
+    "latitudine": 41.242726,
+    "longitudine": 16.502065
+  },
+  {
+    "id": "110004",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Canosa di Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B619",
+    "latitudine": 41.222432,
+    "longitudine": 16.066071
+  },
+  {
+    "id": "110005",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Margherita di Savoia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E946",
+    "latitudine": 41.37397,
+    "longitudine": 16.151165
+  },
+  {
+    "id": "110006",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Minervino Murge",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F220",
+    "latitudine": 41.085617,
+    "longitudine": 16.077382
+  },
+  {
+    "id": "110007",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "San Ferdinando di Puglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H839",
+    "latitudine": 41.301757,
+    "longitudine": 16.069148
+  },
+  {
+    "id": "110008",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Spinazzola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I907",
+    "latitudine": 40.968454,
+    "longitudine": 16.089517
+  },
+  {
+    "id": "110009",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Trani",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L328",
+    "latitudine": 41.277486,
+    "longitudine": 16.417833
+  },
+  {
+    "id": "110010",
+    "id_regione": "16",
+    "id_provincia": "110",
+    "nome": "Trinitapoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B915",
+    "latitudine": 41.359243,
+    "longitudine": 16.078841
+  }
+]

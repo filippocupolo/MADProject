@@ -1,0 +1,1392 @@
+[
+  {
+    "id": "12001",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Agra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A085",
+    "latitudine": 46.034695,
+    "longitudine": 8.772689
+  },
+  {
+    "id": "12002",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Albizzate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A167",
+    "latitudine": 45.720911,
+    "longitudine": 8.802844
+  },
+  {
+    "id": "12003",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Angera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A290",
+    "latitudine": 45.773599,
+    "longitudine": 8.581327
+  },
+  {
+    "id": "12004",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Arcisate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A371",
+    "latitudine": 45.860249,
+    "longitudine": 8.859409
+  },
+  {
+    "id": "12005",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Arsago Seprio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A441",
+    "latitudine": 45.689337,
+    "longitudine": 8.735973
+  },
+  {
+    "id": "12006",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Azzate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A531",
+    "latitudine": 45.777501,
+    "longitudine": 8.798926
+  },
+  {
+    "id": "12007",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Azzio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A532",
+    "latitudine": 45.886746,
+    "longitudine": 8.707254
+  },
+  {
+    "id": "12008",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Barasso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A619",
+    "latitudine": 45.840091,
+    "longitudine": 8.756919
+  },
+  {
+    "id": "12009",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Bardello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A645",
+    "latitudine": 45.834812,
+    "longitudine": 8.698145
+  },
+  {
+    "id": "12010",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Bedero Valcuvia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A728",
+    "latitudine": 45.911422,
+    "longitudine": 8.794271
+  },
+  {
+    "id": "12011",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Besano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A819",
+    "latitudine": 45.888264,
+    "longitudine": 8.888544
+  },
+  {
+    "id": "12012",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Besnate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A825",
+    "latitudine": 45.698369,
+    "longitudine": 8.765044
+  },
+  {
+    "id": "12013",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Besozzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A826",
+    "latitudine": 45.843593,
+    "longitudine": 8.670847
+  },
+  {
+    "id": "12014",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Biandronno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A845",
+    "latitudine": 45.818694,
+    "longitudine": 8.71142
+  },
+  {
+    "id": "12015",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Bisuschio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A891",
+    "latitudine": 45.87402,
+    "longitudine": 8.871187
+  },
+  {
+    "id": "12016",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Bodio Lomnago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A918",
+    "latitudine": 45.789637,
+    "longitudine": 8.751243
+  },
+  {
+    "id": "12017",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Brebbia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B126",
+    "latitudine": 45.828623,
+    "longitudine": 8.649186
+  },
+  {
+    "id": "12018",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Bregano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B131",
+    "latitudine": 45.825389,
+    "longitudine": 8.690155
+  },
+  {
+    "id": "12019",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Brenta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B150",
+    "latitudine": 45.893223,
+    "longitudine": 8.687094
+  },
+  {
+    "id": "12020",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Brezzo di Bedero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B166",
+    "latitudine": 45.970956,
+    "longitudine": 8.714803
+  },
+  {
+    "id": "12021",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Brinzio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B182",
+    "latitudine": 45.889059,
+    "longitudine": 8.788748
+  },
+  {
+    "id": "12022",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Brissago-Valtravaglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B191",
+    "latitudine": 45.953822,
+    "longitudine": 8.73972
+  },
+  {
+    "id": "12023",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Brunello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B219",
+    "latitudine": 45.766042,
+    "longitudine": 8.795393
+  },
+  {
+    "id": "12024",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Brusimpiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B228",
+    "latitudine": 45.949337,
+    "longitudine": 8.889302
+  },
+  {
+    "id": "12025",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Buguggiate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B258",
+    "latitudine": 45.779204,
+    "longitudine": 8.807818
+  },
+  {
+    "id": "12026",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Busto Arsizio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B300",
+    "latitudine": 45.611892,
+    "longitudine": 8.853127
+  },
+  {
+    "id": "12027",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cadegliano-Viconago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B326",
+    "latitudine": 45.962124,
+    "longitudine": 8.83765
+  },
+  {
+    "id": "12028",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cadrezzate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B347",
+    "latitudine": 45.797127,
+    "longitudine": 8.643642
+  },
+  {
+    "id": "12029",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cairate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B368",
+    "latitudine": 45.69066,
+    "longitudine": 8.869131
+  },
+  {
+    "id": "12030",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cantello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B634",
+    "latitudine": 45.820969,
+    "longitudine": 8.895961
+  },
+  {
+    "id": "12031",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Caravate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B732",
+    "latitudine": 45.875504,
+    "longitudine": 8.648181
+  },
+  {
+    "id": "12032",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cardano al Campo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B754",
+    "latitudine": 45.64888,
+    "longitudine": 8.75949
+  },
+  {
+    "id": "12033",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Carnago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B796",
+    "latitudine": 45.722546,
+    "longitudine": 8.841248
+  },
+  {
+    "id": "12034",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Caronno Pertusella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B805",
+    "latitudine": 45.598508,
+    "longitudine": 9.04504
+  },
+  {
+    "id": "12035",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Caronno Varesino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B807",
+    "latitudine": 45.743112,
+    "longitudine": 8.831362
+  },
+  {
+    "id": "12036",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Casale Litta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B875",
+    "latitudine": 45.766703,
+    "longitudine": 8.741975
+  },
+  {
+    "id": "12037",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Casalzuigno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B921",
+    "latitudine": 45.906746,
+    "longitudine": 8.711008
+  },
+  {
+    "id": "12038",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Casciago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B949",
+    "latitudine": 45.833373,
+    "longitudine": 8.781687
+  },
+  {
+    "id": "12039",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Casorate Sempione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B987",
+    "latitudine": 45.674144,
+    "longitudine": 8.740076
+  },
+  {
+    "id": "12040",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cassano Magnago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C004",
+    "latitudine": 45.67173,
+    "longitudine": 8.827263
+  },
+  {
+    "id": "12041",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cassano Valcuvia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B999",
+    "latitudine": 45.931417,
+    "longitudine": 8.76874
+  },
+  {
+    "id": "12042",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Castellanza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C139",
+    "latitudine": 45.605391,
+    "longitudine": 8.8915
+  },
+  {
+    "id": "12043",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Castello Cabiaglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B312",
+    "latitudine": 45.891542,
+    "longitudine": 8.756608
+  },
+  {
+    "id": "12044",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Castelseprio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C273",
+    "latitudine": 45.716895,
+    "longitudine": 8.862761
+  },
+  {
+    "id": "12045",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Castelveccana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C181",
+    "latitudine": 45.947199,
+    "longitudine": 8.661779
+  },
+  {
+    "id": "12046",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Castiglione Olona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C300",
+    "latitudine": 45.752642,
+    "longitudine": 8.87141
+  },
+  {
+    "id": "12047",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Castronno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C343",
+    "latitudine": 45.747718,
+    "longitudine": 8.81191
+  },
+  {
+    "id": "12048",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cavaria con Premezzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C382",
+    "latitudine": 45.694647,
+    "longitudine": 8.802949
+  },
+  {
+    "id": "12049",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cazzago Brabbia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C409",
+    "latitudine": 45.795867,
+    "longitudine": 8.734848
+  },
+  {
+    "id": "12050",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cislago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C732",
+    "latitudine": 45.660827,
+    "longitudine": 8.974002
+  },
+  {
+    "id": "12051",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cittiglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C751",
+    "latitudine": 45.8967,
+    "longitudine": 8.664525
+  },
+  {
+    "id": "12052",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Clivio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C796",
+    "latitudine": 45.864266,
+    "longitudine": 8.930947
+  },
+  {
+    "id": "12053",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cocquio-Trevisago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C810",
+    "latitudine": 45.86368,
+    "longitudine": 8.697448
+  },
+  {
+    "id": "12054",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Comabbio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C911",
+    "latitudine": 45.769983,
+    "longitudine": 8.674772
+  },
+  {
+    "id": "12055",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Comerio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C922",
+    "latitudine": 45.841541,
+    "longitudine": 8.746907
+  },
+  {
+    "id": "12056",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cremenaga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D144",
+    "latitudine": 45.990062,
+    "longitudine": 8.804219
+  },
+  {
+    "id": "12057",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Crosio della Valle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D185",
+    "latitudine": 45.759535,
+    "longitudine": 8.769841
+  },
+  {
+    "id": "12058",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cuasso al Monte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D192",
+    "latitudine": 45.915779,
+    "longitudine": 8.880261
+  },
+  {
+    "id": "12059",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cugliate-Fabiasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D199",
+    "latitudine": 45.942248,
+    "longitudine": 8.823836
+  },
+  {
+    "id": "12060",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cunardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D204",
+    "latitudine": 45.934416,
+    "longitudine": 8.803523
+  },
+  {
+    "id": "12061",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Curiglia con Monteviasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D217",
+    "latitudine": 46.061764,
+    "longitudine": 8.804687
+  },
+  {
+    "id": "12062",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cuveglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D238",
+    "latitudine": 45.904415,
+    "longitudine": 8.733214
+  },
+  {
+    "id": "12063",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Cuvio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D239",
+    "latitudine": 45.89772,
+    "longitudine": 8.734039
+  },
+  {
+    "id": "12064",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Daverio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D256",
+    "latitudine": 45.778033,
+    "longitudine": 8.770453
+  },
+  {
+    "id": "12065",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Dumenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D384",
+    "latitudine": 46.018519,
+    "longitudine": 8.787767
+  },
+  {
+    "id": "12066",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Duno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D385",
+    "latitudine": 45.912828,
+    "longitudine": 8.740049
+  },
+  {
+    "id": "12067",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Fagnano Olona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D467",
+    "latitudine": 45.66834,
+    "longitudine": 8.866763
+  },
+  {
+    "id": "12068",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Ferno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D543",
+    "latitudine": 45.612477,
+    "longitudine": 8.757714
+  },
+  {
+    "id": "12069",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Ferrera di Varese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D551",
+    "latitudine": 45.931444,
+    "longitudine": 8.787184
+  },
+  {
+    "id": "12070",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Gallarate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D869",
+    "latitudine": 45.662363,
+    "longitudine": 8.792127
+  },
+  {
+    "id": "12071",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Galliate Lombardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D871",
+    "latitudine": 45.785098,
+    "longitudine": 8.770449
+  },
+  {
+    "id": "12072",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Gavirate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D946",
+    "latitudine": 45.845905,
+    "longitudine": 8.712234
+  },
+  {
+    "id": "12073",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Gazzada Schianno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D951",
+    "latitudine": 45.779842,
+    "longitudine": 8.83566
+  },
+  {
+    "id": "12074",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Gemonio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D963",
+    "latitudine": 45.881645,
+    "longitudine": 8.673041
+  },
+  {
+    "id": "12075",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Gerenzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D981",
+    "latitudine": 45.639673,
+    "longitudine": 9.000745
+  },
+  {
+    "id": "12076",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Germignaga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D987",
+    "latitudine": 45.990994,
+    "longitudine": 8.72347
+  },
+  {
+    "id": "12077",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Golasecca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E079",
+    "latitudine": 45.696913,
+    "longitudine": 8.655646
+  },
+  {
+    "id": "12078",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Gorla Maggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E101",
+    "latitudine": 45.665126,
+    "longitudine": 8.896784
+  },
+  {
+    "id": "12079",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Gorla Minore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E102",
+    "latitudine": 45.64349,
+    "longitudine": 8.89871
+  },
+  {
+    "id": "12080",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Gornate Olona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E104",
+    "latitudine": 45.739573,
+    "longitudine": 8.859922
+  },
+  {
+    "id": "12081",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Grantola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E144",
+    "latitudine": 45.948485,
+    "longitudine": 8.772679
+  },
+  {
+    "id": "12082",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Inarzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E292",
+    "latitudine": 45.784158,
+    "longitudine": 8.735095
+  },
+  {
+    "id": "12083",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Induno Olona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E299",
+    "latitudine": 45.850654,
+    "longitudine": 8.838511
+  },
+  {
+    "id": "12084",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Ispra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E367",
+    "latitudine": 45.813958,
+    "longitudine": 8.612078
+  },
+  {
+    "id": "12085",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Jerago con Orago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E386",
+    "latitudine": 45.706165,
+    "longitudine": 8.798483
+  },
+  {
+    "id": "12086",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Lavena Ponte Tresa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E494",
+    "latitudine": 45.956462,
+    "longitudine": 8.872574
+  },
+  {
+    "id": "12087",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Laveno-Mombello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E496",
+    "latitudine": 45.901458,
+    "longitudine": 8.625614
+  },
+  {
+    "id": "12088",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Leggiuno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E510",
+    "latitudine": 45.874769,
+    "longitudine": 8.62076
+  },
+  {
+    "id": "12089",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Lonate Ceppino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E665",
+    "latitudine": 45.704773,
+    "longitudine": 8.876665
+  },
+  {
+    "id": "12090",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Lonate Pozzolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E666",
+    "latitudine": 45.599313,
+    "longitudine": 8.753802
+  },
+  {
+    "id": "12091",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Lozza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E707",
+    "latitudine": 45.775226,
+    "longitudine": 8.856913
+  },
+  {
+    "id": "12092",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Luino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E734",
+    "latitudine": 46.001802,
+    "longitudine": 8.7464
+  },
+  {
+    "id": "12093",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Luvinate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E769",
+    "latitudine": 45.838686,
+    "longitudine": 8.771583
+  },
+  {
+    "id": "12142",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Maccagno con Pino e Veddasca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M339",
+    "latitudine": 46.038529,
+    "longitudine": 8.736649
+  },
+  {
+    "id": "12095",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Malgesso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E856",
+    "latitudine": 45.827804,
+    "longitudine": 8.679602
+  },
+  {
+    "id": "12096",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Malnate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E863",
+    "latitudine": 45.797132,
+    "longitudine": 8.882743
+  },
+  {
+    "id": "12097",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Marchirolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E929",
+    "latitudine": 45.952216,
+    "longitudine": 8.835949
+  },
+  {
+    "id": "12098",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Marnate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E965",
+    "latitudine": 45.629061,
+    "longitudine": 8.898311
+  },
+  {
+    "id": "12099",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Marzio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F002",
+    "latitudine": 45.937883,
+    "longitudine": 8.859215
+  },
+  {
+    "id": "12100",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Masciago Primo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F007",
+    "latitudine": 45.917078,
+    "longitudine": 8.781966
+  },
+  {
+    "id": "12101",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Mercallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F134",
+    "latitudine": 45.749122,
+    "longitudine": 8.669429
+  },
+  {
+    "id": "12102",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Mesenzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F154",
+    "latitudine": 45.947788,
+    "longitudine": 8.757438
+  },
+  {
+    "id": "12103",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Montegrino Valtravaglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F526",
+    "latitudine": 45.97373,
+    "longitudine": 8.767692
+  },
+  {
+    "id": "12104",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Monvalle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F703",
+    "latitudine": 45.85521,
+    "longitudine": 8.634394
+  },
+  {
+    "id": "12105",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Morazzone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F711",
+    "latitudine": 45.76502,
+    "longitudine": 8.831489
+  },
+  {
+    "id": "12106",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Mornago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F736",
+    "latitudine": 45.750181,
+    "longitudine": 8.753827
+  },
+  {
+    "id": "12107",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Oggiona con Santo Stefano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G008",
+    "latitudine": 45.704742,
+    "longitudine": 8.815272
+  },
+  {
+    "id": "12108",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Olgiate Olona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G028",
+    "latitudine": 45.633268,
+    "longitudine": 8.88761
+  },
+  {
+    "id": "12109",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Origgio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G103",
+    "latitudine": 45.598457,
+    "longitudine": 9.015084
+  },
+  {
+    "id": "12110",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Orino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G105",
+    "latitudine": 45.885992,
+    "longitudine": 8.720602
+  },
+  {
+    "id": "12111",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Osmate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E529",
+    "latitudine": 45.791074,
+    "longitudine": 8.657179
+  },
+  {
+    "id": "12113",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Porto Ceresio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G906",
+    "latitudine": 45.904286,
+    "longitudine": 8.89948
+  },
+  {
+    "id": "12114",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Porto Valtravaglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G907",
+    "latitudine": 45.960787,
+    "longitudine": 8.676525
+  },
+  {
+    "id": "12115",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Rancio Valcuvia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H173",
+    "latitudine": 45.914801,
+    "longitudine": 8.772613
+  },
+  {
+    "id": "12116",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Ranco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H174",
+    "latitudine": 44.031112,
+    "longitudine": 8.036802
+  },
+  {
+    "id": "12117",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Saltrio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H723",
+    "latitudine": 45.874223,
+    "longitudine": 8.921527
+  },
+  {
+    "id": "12118",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Samarate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H736",
+    "latitudine": 45.626036,
+    "longitudine": 8.787032
+  },
+  {
+    "id": "12141",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Sangiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H872",
+    "latitudine": 45.877399,
+    "longitudine": 8.629778
+  },
+  {
+    "id": "12119",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Saronno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I441",
+    "latitudine": 45.624249,
+    "longitudine": 9.035961
+  },
+  {
+    "id": "12120",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Sesto Calende",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I688",
+    "latitudine": 45.730702,
+    "longitudine": 8.636597
+  },
+  {
+    "id": "12121",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Solbiate Arno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I793",
+    "latitudine": 45.71864,
+    "longitudine": 8.814124
+  },
+  {
+    "id": "12122",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Solbiate Olona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I794",
+    "latitudine": 45.655194,
+    "longitudine": 8.882941
+  },
+  {
+    "id": "12123",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Somma Lombardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I819",
+    "latitudine": 45.682744,
+    "longitudine": 8.706802
+  },
+  {
+    "id": "12124",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Sumirago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L003",
+    "latitudine": 45.738649,
+    "longitudine": 8.781264
+  },
+  {
+    "id": "12125",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Taino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L032",
+    "latitudine": 45.763164,
+    "longitudine": 8.616325
+  },
+  {
+    "id": "12126",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Ternate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L115",
+    "latitudine": 45.783752,
+    "longitudine": 8.691814
+  },
+  {
+    "id": "12127",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Tradate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L319",
+    "latitudine": 45.711543,
+    "longitudine": 8.907067
+  },
+  {
+    "id": "12128",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Travedona-Monate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L342",
+    "latitudine": 45.800828,
+    "longitudine": 8.675322
+  },
+  {
+    "id": "12129",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Tronzano Lago Maggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A705",
+    "latitudine": 46.088803,
+    "longitudine": 8.734261
+  },
+  {
+    "id": "12130",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Uboldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L480",
+    "latitudine": 45.614223,
+    "longitudine": 9.004362
+  },
+  {
+    "id": "12131",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Valganna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L577",
+    "latitudine": 45.902352,
+    "longitudine": 8.82288
+  },
+  {
+    "id": "12132",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Varano Borghi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L671",
+    "latitudine": 45.7759,
+    "longitudine": 8.704032
+  },
+  {
+    "id": "12133",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Varese",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L682",
+    "latitudine": 45.820599,
+    "longitudine": 8.825058
+  },
+  {
+    "id": "12134",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Vedano Olona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L703",
+    "latitudine": 45.777173,
+    "longitudine": 8.887207
+  },
+  {
+    "id": "12136",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Venegono Inferiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L733",
+    "latitudine": 45.737978,
+    "longitudine": 8.900474
+  },
+  {
+    "id": "12137",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Venegono Superiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L734",
+    "latitudine": 45.754765,
+    "longitudine": 8.901756
+  },
+  {
+    "id": "12138",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Vergiate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L765",
+    "latitudine": 45.721729,
+    "longitudine": 8.694245
+  },
+  {
+    "id": "12139",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Viggiù",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L876",
+    "latitudine": 45.870079,
+    "longitudine": 8.908459
+  },
+  {
+    "id": "12140",
+    "id_regione": "3",
+    "id_provincia": "12",
+    "nome": "Vizzola Ticino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M101",
+    "latitudine": 45.629502,
+    "longitudine": 8.687344
+  }
+]

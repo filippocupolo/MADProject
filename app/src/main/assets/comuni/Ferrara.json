@@ -1,0 +1,242 @@
+[
+    {
+        "id": "38001",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Argenta",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A393",
+        "latitudine": 44.617142,
+        "longitudine": 11.836908
+    },
+    {
+        "id": "38002",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Berra",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A806",
+        "latitudine": 44.980024,
+        "longitudine": 11.979232
+    },
+    {
+        "id": "38003",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Bondeno",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A965",
+        "latitudine": 44.886223,
+        "longitudine": 11.423004
+    },
+    {
+        "id": "38004",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Cento",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C469",
+        "latitudine": 44.731532,
+        "longitudine": 11.290816
+    },
+    {
+        "id": "38005",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Codigoro",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C814",
+        "latitudine": 44.829955,
+        "longitudine": 12.107007
+    },
+    {
+        "id": "38006",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Comacchio",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C912",
+        "latitudine": 44.694005,
+        "longitudine": 12.179353
+    },
+    {
+        "id": "38007",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Copparo",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C980",
+        "latitudine": 44.893327,
+        "longitudine": 11.830689
+    },
+    {
+        "id": "38008",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Ferrara",
+        "capoluogo_provincia": true,
+        "codice_catastale": "D548",
+        "latitudine": 44.838124,
+        "longitudine": 11.619787
+    },
+    {
+        "id": "38027",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Fiscaglia",
+        "capoluogo_provincia": false,
+        "codice_catastale": "M323",
+        "latitudine": 44.797977,
+        "longitudine": 11.971074
+    },
+    {
+        "id": "38009",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Formignana",
+        "capoluogo_provincia": false,
+        "codice_catastale": "D713",
+        "latitudine": 44.8412,
+        "longitudine": 11.862821
+    },
+    {
+        "id": "38025",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Goro",
+        "capoluogo_provincia": false,
+        "codice_catastale": "E107",
+        "latitudine": 44.853338,
+        "longitudine": 12.297067
+    },
+    {
+        "id": "38010",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Jolanda di Savoia",
+        "capoluogo_provincia": false,
+        "codice_catastale": "E320",
+        "latitudine": 44.88598,
+        "longitudine": 11.977181
+    },
+    {
+        "id": "38011",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Lagosanto",
+        "capoluogo_provincia": false,
+        "codice_catastale": "E410",
+        "latitudine": 44.765525,
+        "longitudine": 12.141111
+    },
+    {
+        "id": "38012",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Masi Torello",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F016",
+        "latitudine": 44.794177,
+        "longitudine": 11.797329
+    },
+    {
+        "id": "38014",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Mesola",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F156",
+        "latitudine": 44.921919,
+        "longitudine": 12.229752
+    },
+    {
+        "id": "38016",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Mirabello",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F235",
+        "latitudine": 44.829835,
+        "longitudine": 11.466461
+    },
+    {
+        "id": "38017",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Ostellato",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G184",
+        "latitudine": 44.745207,
+        "longitudine": 11.94185
+    },
+    {
+        "id": "38018",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Poggio Renatico",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G768",
+        "latitudine": 44.76282,
+        "longitudine": 11.481542
+    },
+    {
+        "id": "38019",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Portomaggiore",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G916",
+        "latitudine": 44.697612,
+        "longitudine": 11.805685
+    },
+    {
+        "id": "38020",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Ro",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H360",
+        "latitudine": 44.9449,
+        "longitudine": 11.760455
+    },
+    {
+        "id": "38021",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Sant'Agostino",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I209",
+        "latitudine": 44.793697,
+        "longitudine": 11.381872
+    },
+    {
+        "id": "38024",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Tresigallo",
+        "capoluogo_provincia": false,
+        "codice_catastale": "L390",
+        "latitudine": 44.817671,
+        "longitudine": 11.89712
+    },
+    {
+        "id": "38022",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Vigarano Mainarda",
+        "capoluogo_provincia": false,
+        "codice_catastale": "L868",
+        "latitudine": 44.839716,
+        "longitudine": 11.499706
+    },
+    {
+        "id": "38023",
+        "id_regione": "8",
+        "id_provincia": "38",
+        "nome": "Voghiera",
+        "capoluogo_provincia": false,
+        "codice_catastale": "M110",
+        "latitudine": 44.757606,
+        "longitudine": 11.750093
+    }
+]

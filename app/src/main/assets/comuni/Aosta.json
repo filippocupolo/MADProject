@@ -1,0 +1,742 @@
+[
+  {
+    "id": "7001",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Allein",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A205",
+    "latitudine": 45.807414,
+    "longitudine": 7.272966
+  },
+  {
+    "id": "7002",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Antey-Saint-André",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A305",
+    "latitudine": 45.799222,
+    "longitudine": 7.59543
+  },
+  {
+    "id": "7003",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Aosta",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A326",
+    "latitudine": 45.734955,
+    "longitudine": 7.313076
+  },
+  {
+    "id": "7004",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Arnad",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A424",
+    "latitudine": 45.642022,
+    "longitudine": 7.723785
+  },
+  {
+    "id": "7005",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Arvier",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A452",
+    "latitudine": 45.701756,
+    "longitudine": 7.167447
+  },
+  {
+    "id": "7006",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Avise",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A521",
+    "latitudine": 45.708638,
+    "longitudine": 7.139644
+  },
+  {
+    "id": "7007",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Ayas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A094",
+    "latitudine": 45.812671,
+    "longitudine": 7.696847
+  },
+  {
+    "id": "7008",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Aymavilles",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A108",
+    "latitudine": 45.701095,
+    "longitudine": 7.240775
+  },
+  {
+    "id": "7009",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Bard",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A643",
+    "latitudine": 45.609095,
+    "longitudine": 7.74553
+  },
+  {
+    "id": "7010",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Bionaz",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A877",
+    "latitudine": 45.874077,
+    "longitudine": 7.422959
+  },
+  {
+    "id": "7011",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Brissogne",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B192",
+    "latitudine": 45.725573,
+    "longitudine": 7.391567
+  },
+  {
+    "id": "7012",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Brusson",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B230",
+    "latitudine": 45.758063,
+    "longitudine": 7.72956
+  },
+  {
+    "id": "7013",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Challand-Saint-Anselme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C593",
+    "latitudine": 45.716685,
+    "longitudine": 7.737115
+  },
+  {
+    "id": "7014",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Challand-Saint-Victor",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C594",
+    "latitudine": 45.697736,
+    "longitudine": 7.71438
+  },
+  {
+    "id": "7015",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Chambave",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C595",
+    "latitudine": 45.744289,
+    "longitudine": 7.548068
+  },
+  {
+    "id": "7016",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Chamois",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B491",
+    "latitudine": 45.837088,
+    "longitudine": 7.622672
+  },
+  {
+    "id": "7017",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Champdepraz",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C596",
+    "latitudine": 45.685306,
+    "longitudine": 7.656864
+  },
+  {
+    "id": "7018",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Champorcher",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B540",
+    "latitudine": 45.624317,
+    "longitudine": 7.621894
+  },
+  {
+    "id": "7019",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Charvensod",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C598",
+    "latitudine": 45.720297,
+    "longitudine": 7.324163
+  },
+  {
+    "id": "7020",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Châtillon",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C294",
+    "latitudine": 45.748582,
+    "longitudine": 7.612802
+  },
+  {
+    "id": "7021",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Cogne",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C821",
+    "latitudine": 45.607622,
+    "longitudine": 7.359093
+  },
+  {
+    "id": "7022",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Courmayeur",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D012",
+    "latitudine": 45.796922,
+    "longitudine": 6.968963
+  },
+  {
+    "id": "7023",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Donnas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D338",
+    "latitudine": 45.602861,
+    "longitudine": 7.772361
+  },
+  {
+    "id": "7024",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Doues",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D356",
+    "latitudine": 45.818398,
+    "longitudine": 7.305053
+  },
+  {
+    "id": "7025",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Emarèse",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D402",
+    "latitudine": 45.72542,
+    "longitudine": 7.700864
+  },
+  {
+    "id": "7026",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Etroubles",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D444",
+    "latitudine": 45.822184,
+    "longitudine": 7.237926
+  },
+  {
+    "id": "7027",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Fénis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D537",
+    "latitudine": 45.733067,
+    "longitudine": 7.496921
+  },
+  {
+    "id": "7028",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Fontainemore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D666",
+    "latitudine": 45.648018,
+    "longitudine": 7.859544
+  },
+  {
+    "id": "7029",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Gaby",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D839",
+    "latitudine": 45.716401,
+    "longitudine": 7.880362
+  },
+  {
+    "id": "7030",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Gignod",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E029",
+    "latitudine": 45.779741,
+    "longitudine": 7.295149
+  },
+  {
+    "id": "7031",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Gressan",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E165",
+    "latitudine": 45.721445,
+    "longitudine": 7.289894
+  },
+  {
+    "id": "7032",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Gressoney-La-Trinité",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E167",
+    "latitudine": 45.873471,
+    "longitudine": 7.838423
+  },
+  {
+    "id": "7033",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Gressoney-Saint-Jean",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E168",
+    "latitudine": 45.780331,
+    "longitudine": 7.825048
+  },
+  {
+    "id": "7034",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Hône",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E273",
+    "latitudine": 45.609528,
+    "longitudine": 7.726313
+  },
+  {
+    "id": "7035",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Introd",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E306",
+    "latitudine": 45.692065,
+    "longitudine": 7.184827
+  },
+  {
+    "id": "7036",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Issime",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E369",
+    "latitudine": 45.687129,
+    "longitudine": 7.853969
+  },
+  {
+    "id": "7037",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Issogne",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E371",
+    "latitudine": 45.655763,
+    "longitudine": 7.690405
+  },
+  {
+    "id": "7038",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Jovençan",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E391",
+    "latitudine": 45.715293,
+    "longitudine": 7.271927
+  },
+  {
+    "id": "7039",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "La Magdeleine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A308",
+    "latitudine": 45.810735,
+    "longitudine": 7.619286
+  },
+  {
+    "id": "7040",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "La Salle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E458",
+    "latitudine": 45.747095,
+    "longitudine": 7.069189
+  },
+  {
+    "id": "7041",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "La Thuile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E470",
+    "latitudine": 45.716853,
+    "longitudine": 6.948686
+  },
+  {
+    "id": "7042",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Lillianes",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E587",
+    "latitudine": 45.631033,
+    "longitudine": 7.843052
+  },
+  {
+    "id": "7043",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Montjovet",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F367",
+    "latitudine": 45.706473,
+    "longitudine": 7.674878
+  },
+  {
+    "id": "7044",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Morgex",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F726",
+    "latitudine": 45.75644,
+    "longitudine": 7.037616
+  },
+  {
+    "id": "7045",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Nus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F987",
+    "latitudine": 45.739933,
+    "longitudine": 7.467472
+  },
+  {
+    "id": "7046",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Ollomont",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G045",
+    "latitudine": 45.848938,
+    "longitudine": 7.310823
+  },
+  {
+    "id": "7047",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Oyace",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G012",
+    "latitudine": 45.852018,
+    "longitudine": 7.383464
+  },
+  {
+    "id": "7048",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Perloz",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G459",
+    "latitudine": 45.613765,
+    "longitudine": 7.808461
+  },
+  {
+    "id": "7049",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Pollein",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G794",
+    "latitudine": 45.728457,
+    "longitudine": 7.349251
+  },
+  {
+    "id": "7052",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Pont-Saint-Martin",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G854",
+    "latitudine": 45.594928,
+    "longitudine": 7.798357
+  },
+  {
+    "id": "7050",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Pontboset",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G545",
+    "latitudine": 45.607424,
+    "longitudine": 7.686944
+  },
+  {
+    "id": "7051",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Pontey",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G860",
+    "latitudine": 45.738777,
+    "longitudine": 7.58907
+  },
+  {
+    "id": "7053",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Pré-Saint-Didier",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H042",
+    "latitudine": 45.75959,
+    "longitudine": 6.946585
+  },
+  {
+    "id": "7054",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Quart",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H110",
+    "latitudine": 45.749608,
+    "longitudine": 7.422401
+  },
+  {
+    "id": "7055",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Rhêmes-Notre-Dame",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H262",
+    "latitudine": 45.548731,
+    "longitudine": 7.129875
+  },
+  {
+    "id": "7056",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Rhêmes-Saint-Georges",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H263",
+    "latitudine": 45.654147,
+    "longitudine": 7.156102
+  },
+  {
+    "id": "7057",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Roisan",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H497",
+    "latitudine": 45.78368,
+    "longitudine": 7.311264
+  },
+  {
+    "id": "7058",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Saint-Christophe",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H669",
+    "latitudine": 45.746458,
+    "longitudine": 7.353542
+  },
+  {
+    "id": "7059",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Saint-Denis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H670",
+    "latitudine": 45.752747,
+    "longitudine": 7.55495
+  },
+  {
+    "id": "7060",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Saint-Marcel",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H671",
+    "latitudine": 45.729887,
+    "longitudine": 7.448726
+  },
+  {
+    "id": "7061",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Saint-Nicolas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H672",
+    "latitudine": 45.715981,
+    "longitudine": 7.166291
+  },
+  {
+    "id": "7062",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Saint-Oyen",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H673",
+    "latitudine": 45.824659,
+    "longitudine": 7.216742
+  },
+  {
+    "id": "7063",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Saint-Pierre",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H674",
+    "latitudine": 45.710136,
+    "longitudine": 7.231977
+  },
+  {
+    "id": "7064",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Saint-Rhémy-en-Bosses",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H675",
+    "latitudine": 45.823727,
+    "longitudine": 7.142544
+  },
+  {
+    "id": "7065",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Saint-Vincent",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H676",
+    "latitudine": 45.751571,
+    "longitudine": 7.64208
+  },
+  {
+    "id": "7066",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Sarre",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I442",
+    "latitudine": 45.723228,
+    "longitudine": 7.258972
+  },
+  {
+    "id": "7067",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Torgnon",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L217",
+    "latitudine": 45.803146,
+    "longitudine": 7.571287
+  },
+  {
+    "id": "7068",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Valgrisenche",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L582",
+    "latitudine": 45.630219,
+    "longitudine": 7.064506
+  },
+  {
+    "id": "7069",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Valpelline",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L643",
+    "latitudine": 45.825775,
+    "longitudine": 7.326755
+  },
+  {
+    "id": "7070",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Valsavarenche",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L647",
+    "latitudine": 45.585704,
+    "longitudine": 7.211341
+  },
+  {
+    "id": "7071",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Valtournenche",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L654",
+    "latitudine": 45.877207,
+    "longitudine": 7.622204
+  },
+  {
+    "id": "7072",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Verrayes",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L783",
+    "latitudine": 45.761795,
+    "longitudine": 7.532843
+  },
+  {
+    "id": "7073",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Verrès",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C282",
+    "latitudine": 45.662435,
+    "longitudine": 7.693805
+  },
+  {
+    "id": "7074",
+    "id_regione": "2",
+    "id_provincia": "7",
+    "nome": "Villeneuve",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L981",
+    "latitudine": 45.70256,
+    "longitudine": 7.207338
+  }
+]

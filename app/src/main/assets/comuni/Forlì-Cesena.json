@@ -1,0 +1,302 @@
+[
+  {
+    "id": "40001",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Bagno di Romagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A565",
+    "latitudine": 43.839106,
+    "longitudine": 11.965612
+  },
+  {
+    "id": "40003",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Bertinoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A809",
+    "latitudine": 44.149228,
+    "longitudine": 12.13515
+  },
+  {
+    "id": "40004",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Borghi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B001",
+    "latitudine": 44.031578,
+    "longitudine": 12.355368
+  },
+  {
+    "id": "40005",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Castrocaro Terme e Terra del Sole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C339",
+    "latitudine": 44.176595,
+    "longitudine": 11.946219
+  },
+  {
+    "id": "40007",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Cesena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C573",
+    "latitudine": 44.139644,
+    "longitudine": 12.246429
+  },
+  {
+    "id": "40008",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Cesenatico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C574",
+    "latitudine": 44.200847,
+    "longitudine": 12.405202
+  },
+  {
+    "id": "40009",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Civitella di Romagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C777",
+    "latitudine": 44.006589,
+    "longitudine": 11.942056
+  },
+  {
+    "id": "40011",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Dovadola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D357",
+    "latitudine": 44.123454,
+    "longitudine": 11.884489
+  },
+  {
+    "id": "40012",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Forlì",
+    "capoluogo_provincia": true,
+    "codice_catastale": "D704",
+    "latitudine": 44.22274,
+    "longitudine": 12.040731
+  },
+  {
+    "id": "40013",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Forlimpopoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D705",
+    "latitudine": 44.18791,
+    "longitudine": 12.128529
+  },
+  {
+    "id": "40014",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Galeata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D867",
+    "latitudine": 43.996352,
+    "longitudine": 11.910119
+  },
+  {
+    "id": "40015",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Gambettola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D899",
+    "latitudine": 44.116989,
+    "longitudine": 12.342916
+  },
+  {
+    "id": "40016",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Gatteo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D935",
+    "latitudine": 44.109817,
+    "longitudine": 12.385842
+  },
+  {
+    "id": "40018",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Longiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E675",
+    "latitudine": 44.075108,
+    "longitudine": 12.327975
+  },
+  {
+    "id": "40019",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Meldola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F097",
+    "latitudine": 44.127033,
+    "longitudine": 12.060778
+  },
+  {
+    "id": "40020",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Mercato Saraceno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F139",
+    "latitudine": 43.959797,
+    "longitudine": 12.196651
+  },
+  {
+    "id": "40022",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Modigliana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F259",
+    "latitudine": 44.157998,
+    "longitudine": 11.790883
+  },
+  {
+    "id": "40028",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Montiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F668",
+    "latitudine": 44.082637,
+    "longitudine": 12.304799
+  },
+  {
+    "id": "40031",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Portico e San Benedetto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G904",
+    "latitudine": 43.994064,
+    "longitudine": 11.718217
+  },
+  {
+    "id": "40032",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Predappio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H017",
+    "latitudine": 44.106734,
+    "longitudine": 11.981599
+  },
+  {
+    "id": "40033",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Premilcuore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H034",
+    "latitudine": 43.975854,
+    "longitudine": 11.777011
+  },
+  {
+    "id": "40036",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Rocca San Casciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H437",
+    "latitudine": 44.061587,
+    "longitudine": 11.841893
+  },
+  {
+    "id": "40037",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Roncofreddo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H542",
+    "latitudine": 44.04231,
+    "longitudine": 12.318472
+  },
+  {
+    "id": "40041",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "San Mauro Pascoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I027",
+    "latitudine": 44.106758,
+    "longitudine": 12.414345
+  },
+  {
+    "id": "40043",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Santa Sofia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I310",
+    "latitudine": 43.947303,
+    "longitudine": 11.908539
+  },
+  {
+    "id": "40044",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Sarsina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I444",
+    "latitudine": 43.919703,
+    "longitudine": 12.144909
+  },
+  {
+    "id": "40045",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Savignano sul Rubicone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I472",
+    "latitudine": 44.093683,
+    "longitudine": 12.400739
+  },
+  {
+    "id": "40046",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Sogliano al Rubicone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I779",
+    "latitudine": 44.003303,
+    "longitudine": 12.298279
+  },
+  {
+    "id": "40049",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Tredozio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L361",
+    "latitudine": 44.086123,
+    "longitudine": 11.748412
+  },
+  {
+    "id": "40050",
+    "id_regione": "8",
+    "id_provincia": "40",
+    "nome": "Verghereto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L764",
+    "latitudine": 43.793334,
+    "longitudine": 12.004003
+  }
+]

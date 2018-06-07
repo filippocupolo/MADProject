@@ -1,0 +1,982 @@
+[
+  {
+    "id": "23001",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Affi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A061",
+    "latitudine": 45.552506,
+    "longitudine": 10.772053
+  },
+  {
+    "id": "23002",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Albaredo d'Adige",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A137",
+    "latitudine": 45.316997,
+    "longitudine": 11.276161
+  },
+  {
+    "id": "23003",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Angiari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A292",
+    "latitudine": 45.217926,
+    "longitudine": 11.283351
+  },
+  {
+    "id": "23004",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Arcole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A374",
+    "latitudine": 45.35852,
+    "longitudine": 11.284535
+  },
+  {
+    "id": "23005",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Badia Calavena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A540",
+    "latitudine": 45.563836,
+    "longitudine": 11.156081
+  },
+  {
+    "id": "23006",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Bardolino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A650",
+    "latitudine": 45.551817,
+    "longitudine": 10.721468
+  },
+  {
+    "id": "23007",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Belfiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A737",
+    "latitudine": 45.382198,
+    "longitudine": 11.20955
+  },
+  {
+    "id": "23008",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Bevilacqua",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A837",
+    "latitudine": 45.233676,
+    "longitudine": 11.397891
+  },
+  {
+    "id": "23009",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Bonavigo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A964",
+    "latitudine": 45.258327,
+    "longitudine": 11.276297
+  },
+  {
+    "id": "23010",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Boschi Sant'Anna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B070",
+    "latitudine": 45.218347,
+    "longitudine": 11.355891
+  },
+  {
+    "id": "23011",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Bosco Chiesanuova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B073",
+    "latitudine": 45.620138,
+    "longitudine": 11.027074
+  },
+  {
+    "id": "23012",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Bovolone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B107",
+    "latitudine": 45.257693,
+    "longitudine": 11.120608
+  },
+  {
+    "id": "23013",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Brentino Belluno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B152",
+    "latitudine": 45.642809,
+    "longitudine": 10.872471
+  },
+  {
+    "id": "23014",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Brenzone sul Garda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B154",
+    "latitudine": 45.708429,
+    "longitudine": 10.767539
+  },
+  {
+    "id": "23015",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Bussolengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B296",
+    "latitudine": 45.473254,
+    "longitudine": 10.850728
+  },
+  {
+    "id": "23016",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Buttapietra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B304",
+    "latitudine": 45.341315,
+    "longitudine": 10.998986
+  },
+  {
+    "id": "23017",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Caldiero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B402",
+    "latitudine": 45.409128,
+    "longitudine": 11.182778
+  },
+  {
+    "id": "23018",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Caprino Veronese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B709",
+    "latitudine": 45.606184,
+    "longitudine": 10.794827
+  },
+  {
+    "id": "23019",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Casaleone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B886",
+    "latitudine": 45.172595,
+    "longitudine": 11.197329
+  },
+  {
+    "id": "23020",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Castagnaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C041",
+    "latitudine": 45.120374,
+    "longitudine": 11.410995
+  },
+  {
+    "id": "23021",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Castel d'Azzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C078",
+    "latitudine": 45.355741,
+    "longitudine": 10.956838
+  },
+  {
+    "id": "23022",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Castelnuovo del Garda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C225",
+    "latitudine": 45.441379,
+    "longitudine": 10.758215
+  },
+  {
+    "id": "23023",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Cavaion Veronese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C370",
+    "latitudine": 45.54025,
+    "longitudine": 10.770114
+  },
+  {
+    "id": "23024",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Cazzano di Tramigna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C412",
+    "latitudine": 45.473825,
+    "longitudine": 11.202907
+  },
+  {
+    "id": "23025",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Cerea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C498",
+    "latitudine": 45.193124,
+    "longitudine": 11.210085
+  },
+  {
+    "id": "23026",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Cerro Veronese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C538",
+    "latitudine": 45.574109,
+    "longitudine": 11.038567
+  },
+  {
+    "id": "23027",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Cologna Veneta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C890",
+    "latitudine": 45.308947,
+    "longitudine": 11.379592
+  },
+  {
+    "id": "23028",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Colognola ai Colli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C897",
+    "latitudine": 45.433305,
+    "longitudine": 11.194288
+  },
+  {
+    "id": "23029",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Concamarise",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C943",
+    "latitudine": 45.206596,
+    "longitudine": 11.139744
+  },
+  {
+    "id": "23030",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Costermano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D118",
+    "latitudine": 45.585834,
+    "longitudine": 10.743281
+  },
+  {
+    "id": "23031",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Dolcè",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D317",
+    "latitudine": 45.60104,
+    "longitudine": 10.852023
+  },
+  {
+    "id": "23032",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Erbè",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D419",
+    "latitudine": 45.23951,
+    "longitudine": 10.968833
+  },
+  {
+    "id": "23033",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Erbezzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D420",
+    "latitudine": 45.636731,
+    "longitudine": 11.00107
+  },
+  {
+    "id": "23034",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Ferrara di Monte Baldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D549",
+    "latitudine": 45.676669,
+    "longitudine": 10.853268
+  },
+  {
+    "id": "23035",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Fumane",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D818",
+    "latitudine": 45.546487,
+    "longitudine": 10.884877
+  },
+  {
+    "id": "23036",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Garda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D915",
+    "latitudine": 45.577101,
+    "longitudine": 10.705568
+  },
+  {
+    "id": "23037",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Gazzo Veronese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D957",
+    "latitudine": 45.1428,
+    "longitudine": 11.076074
+  },
+  {
+    "id": "23038",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Grezzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E171",
+    "latitudine": 45.519529,
+    "longitudine": 11.016543
+  },
+  {
+    "id": "23039",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Illasi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E284",
+    "latitudine": 45.468023,
+    "longitudine": 11.180201
+  },
+  {
+    "id": "23040",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Isola della Scala",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E349",
+    "latitudine": 45.274713,
+    "longitudine": 11.032325
+  },
+  {
+    "id": "23041",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Isola Rizza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E358",
+    "latitudine": 45.290986,
+    "longitudine": 11.199568
+  },
+  {
+    "id": "23042",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Lavagno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E489",
+    "latitudine": 45.440655,
+    "longitudine": 11.132258
+  },
+  {
+    "id": "23043",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Lazise",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E502",
+    "latitudine": 45.50602,
+    "longitudine": 10.735072
+  },
+  {
+    "id": "23044",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Legnago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E512",
+    "latitudine": 45.193597,
+    "longitudine": 11.303213
+  },
+  {
+    "id": "23045",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Malcesine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E848",
+    "latitudine": 45.764234,
+    "longitudine": 10.810093
+  },
+  {
+    "id": "23046",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Marano di Valpolicella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E911",
+    "latitudine": 45.556593,
+    "longitudine": 10.916093
+  },
+  {
+    "id": "23047",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Mezzane di Sotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F172",
+    "latitudine": 45.48202,
+    "longitudine": 11.127018
+  },
+  {
+    "id": "23048",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Minerbe",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F218",
+    "latitudine": 45.24095,
+    "longitudine": 11.329595
+  },
+  {
+    "id": "23049",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Montecchia di Crosara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F461",
+    "latitudine": 45.479761,
+    "longitudine": 11.252963
+  },
+  {
+    "id": "23050",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Monteforte d'Alpone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F508",
+    "latitudine": 45.422437,
+    "longitudine": 11.28544
+  },
+  {
+    "id": "23051",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Mozzecane",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F789",
+    "latitudine": 45.30881,
+    "longitudine": 10.816966
+  },
+  {
+    "id": "23052",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Negrar",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F861",
+    "latitudine": 45.536146,
+    "longitudine": 10.939353
+  },
+  {
+    "id": "23053",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Nogara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F918",
+    "latitudine": 45.178931,
+    "longitudine": 11.063743
+  },
+  {
+    "id": "23054",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Nogarole Rocca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F921",
+    "latitudine": 45.293817,
+    "longitudine": 10.878755
+  },
+  {
+    "id": "23055",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Oppeano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G080",
+    "latitudine": 45.309392,
+    "longitudine": 11.176659
+  },
+  {
+    "id": "23056",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Palù",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G297",
+    "latitudine": 45.325791,
+    "longitudine": 11.153167
+  },
+  {
+    "id": "23057",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Pastrengo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G365",
+    "latitudine": 45.49469,
+    "longitudine": 10.799512
+  },
+  {
+    "id": "23058",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Pescantina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G481",
+    "latitudine": 45.482761,
+    "longitudine": 10.86749
+  },
+  {
+    "id": "23059",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Peschiera del Garda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G489",
+    "latitudine": 45.439639,
+    "longitudine": 10.686545
+  },
+  {
+    "id": "23060",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Povegliano Veronese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G945",
+    "latitudine": 45.348397,
+    "longitudine": 10.881254
+  },
+  {
+    "id": "23061",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Pressana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H048",
+    "latitudine": 45.28327,
+    "longitudine": 11.404064
+  },
+  {
+    "id": "23062",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Rivoli Veronese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H356",
+    "latitudine": 45.571806,
+    "longitudine": 10.811826
+  },
+  {
+    "id": "23063",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Roncà",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H522",
+    "latitudine": 45.47925,
+    "longitudine": 11.28987
+  },
+  {
+    "id": "23064",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Ronco all'Adige",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H540",
+    "latitudine": 45.337814,
+    "longitudine": 11.242209
+  },
+  {
+    "id": "23065",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Roverchiara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H606",
+    "latitudine": 45.26941,
+    "longitudine": 11.244837
+  },
+  {
+    "id": "23067",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Roverè Veronese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H608",
+    "latitudine": 45.599769,
+    "longitudine": 11.068746
+  },
+  {
+    "id": "23066",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Roveredo di Guà",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H610",
+    "latitudine": 45.273056,
+    "longitudine": 11.443294
+  },
+  {
+    "id": "23068",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Salizzole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H714",
+    "latitudine": 45.242834,
+    "longitudine": 11.093653
+  },
+  {
+    "id": "23069",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "San Bonifacio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H783",
+    "latitudine": 45.395371,
+    "longitudine": 11.2742
+  },
+  {
+    "id": "23070",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "San Giovanni Ilarione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H916",
+    "latitudine": 45.52371,
+    "longitudine": 11.235576
+  },
+  {
+    "id": "23071",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "San Giovanni Lupatoto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H924",
+    "latitudine": 45.382366,
+    "longitudine": 11.044491
+  },
+  {
+    "id": "23073",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "San Martino Buon Albergo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I003",
+    "latitudine": 45.42318,
+    "longitudine": 11.094291
+  },
+  {
+    "id": "23074",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "San Mauro di Saline",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H712",
+    "latitudine": 45.564079,
+    "longitudine": 11.116863
+  },
+  {
+    "id": "23075",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "San Pietro di Morubio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I105",
+    "latitudine": 45.239825,
+    "longitudine": 11.22837
+  },
+  {
+    "id": "23076",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "San Pietro in Cariano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I109",
+    "latitudine": 45.516632,
+    "longitudine": 10.886143
+  },
+  {
+    "id": "23079",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "San Zeno di Montagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I414",
+    "latitudine": 45.631134,
+    "longitudine": 10.723979
+  },
+  {
+    "id": "23072",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Sanguinetto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H944",
+    "latitudine": 45.180652,
+    "longitudine": 11.152624
+  },
+  {
+    "id": "23077",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Sant'Ambrogio di Valpolicella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I259",
+    "latitudine": 45.521702,
+    "longitudine": 10.837934
+  },
+  {
+    "id": "23078",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Sant'Anna d'Alfaedo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I292",
+    "latitudine": 45.627837,
+    "longitudine": 10.951175
+  },
+  {
+    "id": "23080",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Selva di Progno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I594",
+    "latitudine": 45.611079,
+    "longitudine": 11.13902
+  },
+  {
+    "id": "23081",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Soave",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I775",
+    "latitudine": 45.419791,
+    "longitudine": 11.248134
+  },
+  {
+    "id": "23082",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Sommacampagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I821",
+    "latitudine": 45.402821,
+    "longitudine": 10.84281
+  },
+  {
+    "id": "23083",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Sona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I826",
+    "latitudine": 45.43542,
+    "longitudine": 10.8296
+  },
+  {
+    "id": "23084",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Sorgà",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I850",
+    "latitudine": 45.213911,
+    "longitudine": 10.980928
+  },
+  {
+    "id": "23085",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Terrazzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L136",
+    "latitudine": 45.174278,
+    "longitudine": 11.398134
+  },
+  {
+    "id": "23086",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Torri del Benaco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L287",
+    "latitudine": 45.610103,
+    "longitudine": 10.686826
+  },
+  {
+    "id": "23087",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Tregnago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L364",
+    "latitudine": 45.521671,
+    "longitudine": 11.162412
+  },
+  {
+    "id": "23088",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Trevenzuolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L396",
+    "latitudine": 45.268702,
+    "longitudine": 10.932212
+  },
+  {
+    "id": "23089",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Valeggio sul Mincio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L567",
+    "latitudine": 45.354692,
+    "longitudine": 10.734379
+  },
+  {
+    "id": "23090",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Velo Veronese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L722",
+    "latitudine": 45.605645,
+    "longitudine": 11.095198
+  },
+  {
+    "id": "23091",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Verona",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L781",
+    "latitudine": 45.438384,
+    "longitudine": 10.991622
+  },
+  {
+    "id": "23092",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Veronella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D193",
+    "latitudine": 45.321081,
+    "longitudine": 11.324784
+  },
+  {
+    "id": "23093",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Vestenanova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L810",
+    "latitudine": 45.574612,
+    "longitudine": 11.232329
+  },
+  {
+    "id": "23094",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Vigasio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L869",
+    "latitudine": 45.316913,
+    "longitudine": 10.942101
+  },
+  {
+    "id": "23095",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Villa Bartolomea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L912",
+    "latitudine": 45.158779,
+    "longitudine": 11.35302
+  },
+  {
+    "id": "23096",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Villafranca di Verona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L949",
+    "latitudine": 45.355255,
+    "longitudine": 10.847427
+  },
+  {
+    "id": "23097",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Zevio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M172",
+    "latitudine": 45.371702,
+    "longitudine": 11.133549
+  },
+  {
+    "id": "23098",
+    "id_regione": "5",
+    "id_provincia": "23",
+    "nome": "Zimella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M178",
+    "latitudine": 45.334055,
+    "longitudine": 11.376878
+  }
+]

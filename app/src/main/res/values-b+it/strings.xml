@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab 1</string>
+    <string name="app_name">BookAround</string>
     <string name="show_profile"> Mostra Profilo </string>
     <string name="edit_profile"> Modifica Profilo </string>
     <string name="switchEdit"> Modifica Profilo </string>
@@ -13,6 +13,105 @@
     <string name="name_surname">Nome Cognome</string>
     <string name="email">E-mail</string>
     <string name="bio">Biografia</string>
+    <string name="pwd">Password</string>
     <string name="city">Città</string>
     <string name="nameSurname">%s %s</string>
+    <string name="toast_EditProfile_onActivityResult">Impossibile trovare l\'immagine</string>
+    <string name="toast_MyUser_setImage">Impossibile salvare l\'immagine</string>
+    <string name="toast_EditProfile_onFocusChange">Email non valida</string>
+    <string name="bio_label_show">Su di me</string>
+    <string name="city_label_show">Vive a</string>
+    <string name="toast_EditProfile_onRequestPermissionsResult">Permesso per la fotocamera non concesso</string>
+    <string name="book_overview">Panoramica Libro</string>
+    <string name="login">Accedi</string>
+    <string name="register">Crea\nProfilo</string>
+    <string name="confirm_pwd">Conferma Password</string>
+    <string name="required">Obbligatoria</string>
+    <string name="pwd_unmatch">Le password non corrispondono</string>
+    <string name="pwd_short">La password deve contenere almeno 6 caratteri</string>
+    <string name="verify_email">Verifica il tuo indirizzo e-mail per completare la registrazione</string>
+    <string name="fb_auth_error">Errore durante l\'autenticazione con Facebook</string>
+    <string name="google_auth_error">Errore durante l\'autenticazione con Google</string>
+    <string name="email_auth_error">Errore durante l\'autenticazione</string>
+    <string name="unknown_user">Utente e/o password errati</string>
+    <string name="error_account_creation">Errore durante la creazione dell\'account</string>
+    <string name="pwd_forgotten">Password dimenticata?</string>
+    <string name="back_to_login">Torna al login</string>
+    <string name="reset">Reset</string>
+    <string name="reset_pwd_help">Inserisci l\'indirizzo e-mail con il quale sei iscritto.
+        Riceverai un\'e-email con la procedura di reset.</string>
+    <string name="reset_email_sent">Mail di reset inviata!</string>
+    <string name="reset_email_error">Errore nell\'inviare la mail di reset. Riprovare</string>
+    <string name="already_registered">Account già in uso, effettua il login!</string>
+    <string name="add_book">Aggiungi Libro</string>
+    <string name="automatic_or_manual_ISBN">Inserisci ISBN o scannerizzalo</string>
+    <string name="add_manual_button">Inserisci manualmente le informazioni sul libro</string>
+    <string name="title_textV">Titolo</string>
+    <string name="author_textV">Autore</string>
+    <string name="publisher_textV">Editore</string>
+    <string name="year_textV">Anno Pubblicazione</string>
+    <string name="conditions_textV">Condizioni</string>
+    <string name="upload_book">Carica Libro</string>
+    <string name="search_book">Cerca</string>
+    <string name="keyWords_textV">Parole Chiave</string>
+    <string name="hint_author_textV">Cerca per autore, titolo, editore o ISBN</string>
+    <string name="hint_title_textV">Cerca per titolo</string>
+    <string name="hint_publisher_textV">Cerca per editore</string>
+    <string name="hint_keyWords_textV">Cerca per parole chiave</string>
+    <string name="book_search_results">Risultati della Ricerca</string>
+    <string name="book_details">Dettagli Libro</string>
+    <string name="registered">Hai già un profilo?</string>
+    <string name="not_registered">Non hai un profilo?</string>
+    <string name="connectWith">Connettiti con:</string>
+    <string name="noAccount">Non hai un account?</string>
+    <string name="connectAlternatives">o accedi con il tuo account</string>
+    <string-array name="conditions_array">
+        <item>-Inserisci le condizioni-</item>
+        <item>Pessime</item>
+        <item>Cattive</item>
+        <item>Normali</item>
+        <item>Buone</item>
+        <item>Perfette</item>
+    </string-array>
+    <string name="logout">Log out</string>
+    <string name="or">Oppure</string>
+    <string name="saveEditProfileButton">Salva</string>
+    <string name="click_to_exit">Clicca indietro un\'altra volta per uscire</string>
+    <string name="mandatory_fields">Nome, Cognome e Città sono obbligatori</string>
+    <string name="all_fields_mandatory">Tutti i campi sono obbligatori</string>
+    <string name="camera_permission">Per proseguire devi acconsentire all\'utilizzo della fotocamera</string>
+    <string name="book_not_found">Libro non trovato, aggiungilo manualmente</string>
+    <string name="book_uploaded">Libro aggiunto correttamente!</string>
+    <string name="image_uploaded">Immagine aggiunta correttamente!</string>
+    <string name="connection_error">Errore di connessione</string>
+    <string name="my_books">I miei libri</string>
+    <string name="published_books">Libri pubblicati</string>
+    <string name="not_existing_user">L\'utente non esiste</string>
+    <string name="network_problem">Errore di connesione riprovare più tardi</string>
+    <string name="title">Titolo</string>
+    <string name="bookEdition">Anno</string>
+    <string name="owner">Proprietario</string>
+    <string name="no_results">La ricerca non ha prodotto risultati</string>
+    <string name="no_book_uploaded_profile">Questo utente non ha condiviso nessun libro</string>
+    <string name="empty_search">Il campo non può essere vuoto</string>
+    <string name="book_info">Info sul libro</string>
+    <string name="user_info">Info sull\'utente</string>
+    <string name="chat">There are no chats yet</string>
+    <string name="nearby_books">Libri intorno a te</string>
+    <string name="no_books">Non hai ancora caricato nessun libro</string>
+    <string name="ratings">Recensioni</string>
+    <string name="no_comments">Nessuno ha lasciato alcuna recensione ancora</string>
+    <string name="add_comment">Aggiungi anche un commento</string>
+    <string name="comment">Commenta</string>
+    <string name="terminate_loan">Termina prestito</string>
+    <string name="loan_requests">Richieste di prestito</string>
+    <string name="lent">Concesso a</string>
+    <string name="book_free">Libero</string>
+    <string name="book_borrowed">Già in prestito</string>
+    <string name="book_mine">Hai tu questo libro in prestito</string>
+    <string name="ask_for_book">Chiedi prestito</string>
+    <string name="lending_req_sent">Hai già richiesto questo libro in prestito</string>
+    <string name="add_to_wishlist">Aggiungi alla wish list</string>
+    <string name="create_new_account">Crea un nuovo profilo</string>
+    <string name="continue_fb">Continua con Facebook</string>
 </resources>

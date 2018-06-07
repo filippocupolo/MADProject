@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Lab 1</string>
+    <string name="app_name">BookAround</string>
     <string name="show_profile"> Show Profile </string>
     <string name="edit_profile"> Edit Profile </string>
     <string name="switchEdit"> Edit Profile </string>
@@ -7,11 +8,116 @@
     <string name="profile">Profile</string>
     <string name="home">Home</string>
     <string name="wishlist">Wishlist</string>
+    <string name="connectWith">Connect with:</string>
+    <string name="noAccount">You don\'t have an account?</string>
+    <string name="connectAlternatives">or sign in with your account</string>
     <string name="name">Name</string>
     <string name="surname">Surname</string>
     <string name="name_surname">Name Surname</string>
     <string name="email">E-mail</string>
-    <string name="bio">Bio</string>
+    <string name="pwd">Password</string>
+    <string name="bio">Biography</string>
     <string name="city">City</string>
     <string name="nameSurname">%s %s</string>
+    <string name="toast_EditProfile_onActivityResult">Cannot find the image</string>
+    <string name="toast_MyUser_setImage">Cannot save the image</string>
+    <string name="toast_EditProfile_onFocusChange">Email is not valid</string>
+    <string name="bio_label_show">About me</string>
+    <string name="city_label_show">Lives in</string>
+    <string name="toast_EditProfile_onRequestPermissionsResult">Camera permission denied</string>
+    <string name="book_overview">Book Overview</string>
+    <string name="facebook_app_id">1668597253224052</string>
+    <string name="fb_login_protocol_scheme">fb1668597253224052</string>
+    <string name="login">Sign In</string>
+    <string name="register">Sign up</string>
+    <string name="confirm_pwd">Password confirmation</string>
+    <string name="required">Required</string>
+    <string name="pwd_unmatch">Password don\'t match</string>
+    <string name="pwd_short">Password must be 6 characters long at least</string>
+    <string name="verify_email">Please verify your e-mail address to complete the registration</string>
+    <string name="fb_auth_error">Error with Facebook Authentication</string>
+    <string name="google_auth_error">Error with Google Authentication</string>
+    <string name="email_auth_error">Error during authentication</string>
+    <string name="unknown_user">Username and/or password are wrong</string>
+    <string name="error_account_creation">Error during the account creation</string>
+    <string name="pwd_forgotten">Password forgotten?</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="reset">Reset</string>
+    <string name="reset_pwd_help">Type the e-mail address you are registered with.
+        You will receive an e-mail with the password reset procedure.</string>
+    <string name="reset_email_sent">Reset e-mail sent!</string>
+    <string name="reset_email_error">Error sending reset e-mail. Retry.</string>
+    <string name="already_registered">Account already in use, please sign in</string>
+    <string name="add_book">Add Book</string>
+    <string name="automatic_or_manual_ISBN">Insert ISBN or scan it </string>
+    <string name="add_manual_button">Insert book\'s info manually</string>
+    <string name="title_textV">Title</string>
+    <string name="author_textV">Author</string>
+    <string name="publisher_textV">Publisher</string>
+    <string name="year_textV">Edition Year</string>
+    <string name="conditions_textV">Conditions</string>
+    <string name="upload_book">Upload Book</string>
+    <string name="search_book">Search</string>
+    <string name="keyWords_textV">Key words</string>
+    <string name="hint_author_textV">Search by author, title, ISBN or publisher</string>
+    <string name="hint_title_textV">Search by title</string>
+    <string name="hint_publisher_textV">Search by publisher</string>
+    <string name="hint_keyWords_textV">Search  by keywords </string>
+    <string name="book_search_results">Search Results</string>
+    <string name="book_details">Book\'s Details</string>
+    <string name="registered">Already have an account?</string>
+    <string name="not_registered">Don\'t have an account?</string>
+    <string-array name="conditions_array">
+        <item>-Insert conditions-</item>
+        <item>Very Bad</item>
+        <item>Bad</item>
+        <item>Normal</item>
+        <item>Good</item>
+        <item>Perfect</item>
+    </string-array>
+    <string name="logout">Log out</string>
+    <string name="or">Or</string>
+    <string name="saveEditProfileButton">Save</string>
+    <string name="click_to_exit">Click back button again to exit</string>
+    <string name="mandatory_fields">Name, Surname and City are required</string>
+    <string name="all_fields_mandatory">All fields are required</string>
+    <string name="camera_permission">You should grant camera permission to proceed</string>
+    <string name="book_not_found">Book not found, please add it manually</string>
+    <string name="book_uploaded">Book correctly uploaded!</string>
+    <string name="image_uploaded">Image correctly uploaded</string>
+    <string name="connection_error">Connection error</string>
+    <string name="title_activity_search_results_map">Map</string>
+    <string name="my_books">My Books</string>
+    <string name="published_books">Published books</string>
+    <string name="not_existing_user">User does not exist</string>
+    <string name="network_problem">Network problem try later</string>
+    <string name="title">Title</string>
+    <string name="bookEdition">Year</string>
+    <string name="owner">Owner</string>
+    <string name="no_results">Research did not produce any results</string>
+    <string name="no_book_uploaded_profile">This user did not shared any book</string>
+    <string name="empty_search">Field cannot be empty</string>
+    <string name="book_info">Book info</string>
+    <string name="user_info">User info</string>
+    <string name="chat">There are no chats yet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nearby_books">Nearby books</string>
+    <string name="no_books">Still you haven\'t updated any book</string>
+    <string name="ratings">Ratings</string>
+    <string name="no_comments">No reviews yet</string>
+    <string name="add_comment">Add a comment as well</string>
+    <string name="comment">Comment</string>
+    <string name="terminate_loan">End loan</string>
+    <string name="loan_requests">Loan requests</string>
+    <string name="lent">Lent to</string>
+    <string name="book_free">Free</string>
+    <string name="book_borrowed">Already lent</string>
+    <string name="book_mine">You have borrowed this book already</string>
+    <string name="ask_for_book">Lending request</string>
+    <string name="lending_req_sent">You have already sent a lending request to the owner</string>
+    <string name="add_to_wishlist">Add to wish list</string>
+    <string name="create_new_account">Create a new account</string>
+    <string name="continue_fb">Continue with Facebook</string>
+
 </resources>

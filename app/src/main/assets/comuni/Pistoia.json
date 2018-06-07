@@ -1,0 +1,222 @@
+[
+  {
+    "id": "47001",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Abetone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A012",
+    "latitudine": 44.144689,
+    "longitudine": 10.663658
+  },
+  {
+    "id": "47002",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Agliana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A071",
+    "latitudine": 43.900421,
+    "longitudine": 10.999923
+  },
+  {
+    "id": "47003",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Buggiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B251",
+    "latitudine": 42.84307,
+    "longitudine": 12.90291
+  },
+  {
+    "id": "47022",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Chiesina Uzzanese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C631",
+    "latitudine": 43.839035,
+    "longitudine": 10.719492
+  },
+  {
+    "id": "47004",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Cutigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D235",
+    "latitudine": 44.10145,
+    "longitudine": 10.754332
+  },
+  {
+    "id": "47005",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Lamporecchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E432",
+    "latitudine": 43.817032,
+    "longitudine": 10.896342
+  },
+  {
+    "id": "47006",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Larciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E451",
+    "latitudine": 43.832661,
+    "longitudine": 10.889399
+  },
+  {
+    "id": "47007",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Marliana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E960",
+    "latitudine": 43.93383,
+    "longitudine": 10.769238
+  },
+  {
+    "id": "47008",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Massa e Cozzile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F025",
+    "latitudine": 43.909431,
+    "longitudine": 10.743188
+  },
+  {
+    "id": "47009",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Monsummano Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F384",
+    "latitudine": 43.86922,
+    "longitudine": 10.814644
+  },
+  {
+    "id": "47010",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Montale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F410",
+    "latitudine": 43.934742,
+    "longitudine": 11.017563
+  },
+  {
+    "id": "47011",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Montecatini-Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A561",
+    "latitudine": 43.880847,
+    "longitudine": 10.775436
+  },
+  {
+    "id": "47012",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Pescia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G491",
+    "latitudine": 43.907321,
+    "longitudine": 10.689131
+  },
+  {
+    "id": "47013",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Pieve a Nievole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G636",
+    "latitudine": 43.882198,
+    "longitudine": 10.803874
+  },
+  {
+    "id": "47014",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Pistoia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G713",
+    "latitudine": 43.930348,
+    "longitudine": 10.907859
+  },
+  {
+    "id": "47015",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Piteglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G715",
+    "latitudine": 44.028334,
+    "longitudine": 10.764862
+  },
+  {
+    "id": "47016",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Ponte Buggianese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G833",
+    "latitudine": 43.839409,
+    "longitudine": 10.747684
+  },
+  {
+    "id": "47017",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Quarrata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H109",
+    "latitudine": 43.847899,
+    "longitudine": 10.977967
+  },
+  {
+    "id": "47018",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Sambuca Pistoiese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H744",
+    "latitudine": 44.108099,
+    "longitudine": 11.004554
+  },
+  {
+    "id": "47019",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "San Marcello Pistoiese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H980",
+    "latitudine": 44.055936,
+    "longitudine": 10.795913
+  },
+  {
+    "id": "47020",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Serravalle Pistoiese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I660",
+    "latitudine": 43.905908,
+    "longitudine": 10.833033
+  },
+  {
+    "id": "47021",
+    "id_regione": "9",
+    "id_provincia": "47",
+    "nome": "Uzzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L522",
+    "latitudine": 43.896934,
+    "longitudine": 10.70408
+  }
+]

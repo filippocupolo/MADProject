@@ -1,0 +1,202 @@
+[
+  {
+    "id": "86001",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Agira",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A070",
+    "latitudine": 37.65668,
+    "longitudine": 14.518902
+  },
+  {
+    "id": "86002",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Aidone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A098",
+    "latitudine": 37.415915,
+    "longitudine": 14.445497
+  },
+  {
+    "id": "86003",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Assoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A478",
+    "latitudine": 37.627346,
+    "longitudine": 14.422311
+  },
+  {
+    "id": "86004",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Barrafranca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A676",
+    "latitudine": 37.375433,
+    "longitudine": 14.200865
+  },
+  {
+    "id": "86005",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Calascibetta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B381",
+    "latitudine": 37.589522,
+    "longitudine": 14.270521
+  },
+  {
+    "id": "86006",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Catenanuova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C353",
+    "latitudine": 37.570955,
+    "longitudine": 14.691877
+  },
+  {
+    "id": "86007",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Centuripe",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C471",
+    "latitudine": 37.62223,
+    "longitudine": 14.740754
+  },
+  {
+    "id": "86008",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Cerami",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C480",
+    "latitudine": 37.809461,
+    "longitudine": 14.508181
+  },
+  {
+    "id": "86009",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Enna",
+    "capoluogo_provincia": true,
+    "codice_catastale": "C342",
+    "latitudine": 37.565555,
+    "longitudine": 14.275191
+  },
+  {
+    "id": "86010",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Gagliano Castelferrato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D849",
+    "latitudine": 37.710763,
+    "longitudine": 14.534717
+  },
+  {
+    "id": "86011",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Leonforte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E536",
+    "latitudine": 37.639206,
+    "longitudine": 14.391633
+  },
+  {
+    "id": "86012",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Nicosia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F892",
+    "latitudine": 37.746923,
+    "longitudine": 14.395278
+  },
+  {
+    "id": "86013",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Nissoria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F900",
+    "latitudine": 37.653587,
+    "longitudine": 14.449894
+  },
+  {
+    "id": "86014",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Piazza Armerina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G580",
+    "latitudine": 37.385768,
+    "longitudine": 14.370671
+  },
+  {
+    "id": "86015",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Pietraperzia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G624",
+    "latitudine": 37.420984,
+    "longitudine": 14.139466
+  },
+  {
+    "id": "86016",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Regalbuto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H221",
+    "latitudine": 37.650008,
+    "longitudine": 14.640257
+  },
+  {
+    "id": "86017",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Sperlinga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I891",
+    "latitudine": 37.765671,
+    "longitudine": 14.351403
+  },
+  {
+    "id": "86018",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Troina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L448",
+    "latitudine": 37.784792,
+    "longitudine": 14.600072
+  },
+  {
+    "id": "86019",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Valguarnera Caropepe",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L583",
+    "latitudine": 37.495008,
+    "longitudine": 14.384036
+  },
+  {
+    "id": "86020",
+    "id_regione": "19",
+    "id_provincia": "86",
+    "nome": "Villarosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M011",
+    "latitudine": 37.586537,
+    "longitudine": 14.17353
+  }
+]

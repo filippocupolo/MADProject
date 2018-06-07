@@ -1,0 +1,502 @@
+[
+  {
+    "id": "29001",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Adria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A059",
+    "latitudine": 45.055549,
+    "longitudine": 12.056038
+  },
+  {
+    "id": "29002",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Ariano nel Polesine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A400",
+    "latitudine": 44.947658,
+    "longitudine": 12.122102
+  },
+  {
+    "id": "29003",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Arquà Polesine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A435",
+    "latitudine": 45.010376,
+    "longitudine": 11.7409
+  },
+  {
+    "id": "29004",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Badia Polesine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A539",
+    "latitudine": 45.093021,
+    "longitudine": 11.493056
+  },
+  {
+    "id": "29005",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Bagnolo di Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A574",
+    "latitudine": 45.016166,
+    "longitudine": 11.501275
+  },
+  {
+    "id": "29006",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Bergantino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A795",
+    "latitudine": 45.063433,
+    "longitudine": 11.256454
+  },
+  {
+    "id": "29007",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Bosaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B069",
+    "latitudine": 45.001905,
+    "longitudine": 11.763626
+  },
+  {
+    "id": "29008",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Calto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B432",
+    "latitudine": 44.992453,
+    "longitudine": 11.357789
+  },
+  {
+    "id": "29009",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Canaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B578",
+    "latitudine": 44.932904,
+    "longitudine": 11.676044
+  },
+  {
+    "id": "29010",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Canda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B582",
+    "latitudine": 45.035197,
+    "longitudine": 11.504542
+  },
+  {
+    "id": "29011",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Castelguglielmo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C122",
+    "latitudine": 45.025386,
+    "longitudine": 11.538507
+  },
+  {
+    "id": "29012",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Castelmassa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C207",
+    "latitudine": 45.022199,
+    "longitudine": 11.31141
+  },
+  {
+    "id": "29013",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Castelnovo Bariano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C215",
+    "latitudine": 45.024837,
+    "longitudine": 11.293756
+  },
+  {
+    "id": "29014",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Ceneselli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C461",
+    "latitudine": 45.014574,
+    "longitudine": 11.368721
+  },
+  {
+    "id": "29015",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Ceregnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C500",
+    "latitudine": 45.049887,
+    "longitudine": 11.869691
+  },
+  {
+    "id": "29017",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Corbola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C987",
+    "latitudine": 45.009074,
+    "longitudine": 12.080062
+  },
+  {
+    "id": "29018",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Costa di Rovigo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D105",
+    "latitudine": 45.048563,
+    "longitudine": 11.694882
+  },
+  {
+    "id": "29019",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Crespino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D161",
+    "latitudine": 44.982401,
+    "longitudine": 11.886059
+  },
+  {
+    "id": "29021",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Ficarolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D568",
+    "latitudine": 44.95415,
+    "longitudine": 11.436453
+  },
+  {
+    "id": "29022",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Fiesso Umbertiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D577",
+    "latitudine": 44.961676,
+    "longitudine": 11.60752
+  },
+  {
+    "id": "29023",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Frassinelle Polesine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D776",
+    "latitudine": 44.993313,
+    "longitudine": 11.69854
+  },
+  {
+    "id": "29024",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Fratta Polesine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D788",
+    "latitudine": 45.028773,
+    "longitudine": 11.636095
+  },
+  {
+    "id": "29025",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Gaiba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D855",
+    "latitudine": 44.948246,
+    "longitudine": 11.481726
+  },
+  {
+    "id": "29026",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Gavello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D942",
+    "latitudine": 45.021656,
+    "longitudine": 11.914318
+  },
+  {
+    "id": "29027",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Giacciano con Baruchella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E008",
+    "latitudine": 45.054452,
+    "longitudine": 11.437812
+  },
+  {
+    "id": "29028",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Guarda Veneta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E240",
+    "latitudine": 44.979712,
+    "longitudine": 11.8029
+  },
+  {
+    "id": "29029",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Lendinara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E522",
+    "latitudine": 45.083873,
+    "longitudine": 11.599185
+  },
+  {
+    "id": "29030",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Loreo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E689",
+    "latitudine": 45.062492,
+    "longitudine": 12.186414
+  },
+  {
+    "id": "29031",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Lusia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E761",
+    "latitudine": 45.100537,
+    "longitudine": 11.664113
+  },
+  {
+    "id": "29032",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Melara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F095",
+    "latitudine": 45.062665,
+    "longitudine": 11.204105
+  },
+  {
+    "id": "29033",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Occhiobello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F994",
+    "latitudine": 44.920975,
+    "longitudine": 11.57952
+  },
+  {
+    "id": "29034",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Papozze",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G323",
+    "latitudine": 44.986933,
+    "longitudine": 12.031029
+  },
+  {
+    "id": "29035",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Pettorazza Grimani",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G525",
+    "latitudine": 45.132771,
+    "longitudine": 11.989617
+  },
+  {
+    "id": "29036",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Pincara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G673",
+    "latitudine": 44.998102,
+    "longitudine": 11.614032
+  },
+  {
+    "id": "29037",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Polesella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G782",
+    "latitudine": 44.96412,
+    "longitudine": 11.750203
+  },
+  {
+    "id": "29038",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Pontecchio Polesine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G836",
+    "latitudine": 45.018895,
+    "longitudine": 11.807371
+  },
+  {
+    "id": "29039",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Porto Tolle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G923",
+    "latitudine": 44.950702,
+    "longitudine": 12.326892
+  },
+  {
+    "id": "29052",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Porto Viro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G926",
+    "latitudine": 45.040337,
+    "longitudine": 12.219176
+  },
+  {
+    "id": "29040",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Rosolina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H573",
+    "latitudine": 45.076111,
+    "longitudine": 12.242177
+  },
+  {
+    "id": "29041",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Rovigo",
+    "capoluogo_provincia": true,
+    "codice_catastale": "H620",
+    "latitudine": 45.069812,
+    "longitudine": 11.790216
+  },
+  {
+    "id": "29042",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Salara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H689",
+    "latitudine": 44.984977,
+    "longitudine": 11.426313
+  },
+  {
+    "id": "29043",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "San Bellino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H768",
+    "latitudine": 45.02782,
+    "longitudine": 11.59003
+  },
+  {
+    "id": "29044",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "San Martino di Venezze",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H996",
+    "latitudine": 45.130346,
+    "longitudine": 11.874305
+  },
+  {
+    "id": "29045",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Stienta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I953",
+    "latitudine": 44.942636,
+    "longitudine": 11.542115
+  },
+  {
+    "id": "29046",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Taglio di Po",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L026",
+    "latitudine": 45.005969,
+    "longitudine": 12.208092
+  },
+  {
+    "id": "29047",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Trecenta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L359",
+    "latitudine": 45.034447,
+    "longitudine": 11.46352
+  },
+  {
+    "id": "29048",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Villadose",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L939",
+    "latitudine": 45.073513,
+    "longitudine": 11.890157
+  },
+  {
+    "id": "29049",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Villamarzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L967",
+    "latitudine": 45.014421,
+    "longitudine": 11.693276
+  },
+  {
+    "id": "29050",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Villanova del Ghebbo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L985",
+    "latitudine": 45.058832,
+    "longitudine": 11.643857
+  },
+  {
+    "id": "29051",
+    "id_regione": "5",
+    "id_provincia": "29",
+    "nome": "Villanova Marchesana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L988",
+    "latitudine": 44.99392,
+    "longitudine": 11.967788
+  }
+]

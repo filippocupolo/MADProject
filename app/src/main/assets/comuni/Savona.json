@@ -1,0 +1,692 @@
+[
+  {
+    "id": "9001",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Alassio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A122",
+    "latitudine": 44.014336,
+    "longitudine": 8.181174
+  },
+  {
+    "id": "9002",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Albenga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A145",
+    "latitudine": 44.049425,
+    "longitudine": 8.215611
+  },
+  {
+    "id": "9004",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Albisola Superiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A166",
+    "latitudine": 44.336241,
+    "longitudine": 8.50991
+  },
+  {
+    "id": "9003",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Albissola Marina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A165",
+    "latitudine": 44.32636,
+    "longitudine": 8.501224
+  },
+  {
+    "id": "9005",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Altare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A226",
+    "latitudine": 44.325464,
+    "longitudine": 8.330164
+  },
+  {
+    "id": "9006",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Andora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A278",
+    "latitudine": 43.984823,
+    "longitudine": 8.130599
+  },
+  {
+    "id": "9007",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Arnasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A422",
+    "latitudine": 44.078859,
+    "longitudine": 8.097492
+  },
+  {
+    "id": "9008",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Balestrino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A593",
+    "latitudine": 44.124593,
+    "longitudine": 8.172725
+  },
+  {
+    "id": "9009",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Bardineto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A647",
+    "latitudine": 44.190647,
+    "longitudine": 8.135267
+  },
+  {
+    "id": "9010",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Bergeggi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A796",
+    "latitudine": 44.249107,
+    "longitudine": 8.43863
+  },
+  {
+    "id": "9011",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Boissano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A931",
+    "latitudine": 44.133971,
+    "longitudine": 8.227469
+  },
+  {
+    "id": "9012",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Borghetto Santo Spirito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A999",
+    "latitudine": 44.10875,
+    "longitudine": 8.240535
+  },
+  {
+    "id": "9013",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Borgio Verezzi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B005",
+    "latitudine": 44.159017,
+    "longitudine": 8.310228
+  },
+  {
+    "id": "9014",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Bormida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B048",
+    "latitudine": 44.274543,
+    "longitudine": 8.231569
+  },
+  {
+    "id": "9015",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Cairo Montenotte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B369",
+    "latitudine": 44.400807,
+    "longitudine": 8.273246
+  },
+  {
+    "id": "9016",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Calice Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B409",
+    "latitudine": 44.204555,
+    "longitudine": 8.294813
+  },
+  {
+    "id": "9017",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Calizzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B416",
+    "latitudine": 44.242693,
+    "longitudine": 8.11158
+  },
+  {
+    "id": "9018",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Carcare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B748",
+    "latitudine": 44.358437,
+    "longitudine": 8.288549
+  },
+  {
+    "id": "9019",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Casanova Lerrone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B927",
+    "latitudine": 44.035915,
+    "longitudine": 8.045856
+  },
+  {
+    "id": "9020",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Castelbianco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C063",
+    "latitudine": 44.119747,
+    "longitudine": 8.066611
+  },
+  {
+    "id": "9021",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Castelvecchio di Rocca Barbena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C276",
+    "latitudine": 44.13043,
+    "longitudine": 8.11679
+  },
+  {
+    "id": "9022",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Celle Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C443",
+    "latitudine": 44.348866,
+    "longitudine": 8.533653
+  },
+  {
+    "id": "9023",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Cengio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C463",
+    "latitudine": 44.391779,
+    "longitudine": 8.197106
+  },
+  {
+    "id": "9024",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Ceriale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C510",
+    "latitudine": 44.096966,
+    "longitudine": 8.231979
+  },
+  {
+    "id": "9025",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Cisano sul Neva",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C729",
+    "latitudine": 44.08495,
+    "longitudine": 8.150243
+  },
+  {
+    "id": "9026",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Cosseria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D095",
+    "latitudine": 44.367297,
+    "longitudine": 8.241919
+  },
+  {
+    "id": "9027",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Dego",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D264",
+    "latitudine": 44.447689,
+    "longitudine": 8.313249
+  },
+  {
+    "id": "9028",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Erli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D424",
+    "latitudine": 44.138014,
+    "longitudine": 8.102496
+  },
+  {
+    "id": "9029",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Finale Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D600",
+    "latitudine": 44.168903,
+    "longitudine": 8.341621
+  },
+  {
+    "id": "9030",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Garlenda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D927",
+    "latitudine": 44.033372,
+    "longitudine": 8.093168
+  },
+  {
+    "id": "9031",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Giustenice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E064",
+    "latitudine": 44.168646,
+    "longitudine": 8.257922
+  },
+  {
+    "id": "9032",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Giusvalla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E066",
+    "latitudine": 44.447474,
+    "longitudine": 8.39455
+  },
+  {
+    "id": "9033",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Laigueglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E414",
+    "latitudine": 43.978392,
+    "longitudine": 8.157938
+  },
+  {
+    "id": "9034",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Loano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E632",
+    "latitudine": 44.130641,
+    "longitudine": 8.260967
+  },
+  {
+    "id": "9035",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Magliolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E816",
+    "latitudine": 44.192845,
+    "longitudine": 8.244609
+  },
+  {
+    "id": "9036",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Mallare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E860",
+    "latitudine": 44.291544,
+    "longitudine": 8.294285
+  },
+  {
+    "id": "9037",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Massimino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F046",
+    "latitudine": 44.299858,
+    "longitudine": 8.073689
+  },
+  {
+    "id": "9038",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Millesimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F213",
+    "latitudine": 44.362726,
+    "longitudine": 8.207784
+  },
+  {
+    "id": "9039",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Mioglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F226",
+    "latitudine": 44.489659,
+    "longitudine": 8.411419
+  },
+  {
+    "id": "9040",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Murialdo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F813",
+    "latitudine": 44.316433,
+    "longitudine": 8.163
+  },
+  {
+    "id": "9041",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Nasino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F847",
+    "latitudine": 44.113276,
+    "longitudine": 8.03141
+  },
+  {
+    "id": "9042",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Noli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F926",
+    "latitudine": 44.207053,
+    "longitudine": 8.414134
+  },
+  {
+    "id": "9043",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Onzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G076",
+    "latitudine": 44.069786,
+    "longitudine": 8.05327
+  },
+  {
+    "id": "9044",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Orco Feglino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D522",
+    "latitudine": 44.218438,
+    "longitudine": 8.322369
+  },
+  {
+    "id": "9045",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Ortovero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G144",
+    "latitudine": 44.053679,
+    "longitudine": 8.095588
+  },
+  {
+    "id": "9046",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Osiglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G155",
+    "latitudine": 44.280701,
+    "longitudine": 8.200825
+  },
+  {
+    "id": "9047",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Pallare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G281",
+    "latitudine": 44.327158,
+    "longitudine": 8.274512
+  },
+  {
+    "id": "9048",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Piana Crixia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G542",
+    "latitudine": 44.490616,
+    "longitudine": 8.300151
+  },
+  {
+    "id": "9049",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Pietra Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G605",
+    "latitudine": 44.150285,
+    "longitudine": 8.283452
+  },
+  {
+    "id": "9050",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Plodio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G741",
+    "latitudine": 44.358089,
+    "longitudine": 8.247067
+  },
+  {
+    "id": "9051",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Pontinvrea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G866",
+    "latitudine": 44.444583,
+    "longitudine": 8.434802
+  },
+  {
+    "id": "9052",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Quiliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H126",
+    "latitudine": 44.293441,
+    "longitudine": 8.402763
+  },
+  {
+    "id": "9053",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Rialto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H266",
+    "latitudine": 45.108145,
+    "longitudine": 11.667604
+  },
+  {
+    "id": "9054",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Roccavignale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H452",
+    "latitudine": 44.353251,
+    "longitudine": 8.162957
+  },
+  {
+    "id": "9055",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Sassello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I453",
+    "latitudine": 44.479509,
+    "longitudine": 8.490099
+  },
+  {
+    "id": "9056",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Savona",
+    "capoluogo_provincia": true,
+    "codice_catastale": "I480",
+    "latitudine": 44.29756,
+    "longitudine": 8.4645
+  },
+  {
+    "id": "9057",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Spotorno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I926",
+    "latitudine": 44.230571,
+    "longitudine": 8.423496
+  },
+  {
+    "id": "9058",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Stella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I946",
+    "latitudine": 45.576922,
+    "longitudine": 10.156661
+  },
+  {
+    "id": "9059",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Stellanello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I947",
+    "latitudine": 44.000949,
+    "longitudine": 8.067417
+  },
+  {
+    "id": "9060",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Testico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L152",
+    "latitudine": 44.005908,
+    "longitudine": 8.032551
+  },
+  {
+    "id": "9061",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Toirano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L190",
+    "latitudine": 44.1255,
+    "longitudine": 8.207914
+  },
+  {
+    "id": "9062",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Tovo San Giacomo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L315",
+    "latitudine": 44.174077,
+    "longitudine": 8.268677
+  },
+  {
+    "id": "9063",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Urbe",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L499",
+    "latitudine": 44.486278,
+    "longitudine": 8.590638
+  },
+  {
+    "id": "9064",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Vado Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L528",
+    "latitudine": 44.269105,
+    "longitudine": 8.439782
+  },
+  {
+    "id": "9065",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Varazze",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L675",
+    "latitudine": 44.359434,
+    "longitudine": 8.577313
+  },
+  {
+    "id": "9066",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Vendone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L730",
+    "latitudine": 44.078676,
+    "longitudine": 8.070712
+  },
+  {
+    "id": "9067",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Vezzi Portio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L823",
+    "latitudine": 44.219849,
+    "longitudine": 8.376364
+  },
+  {
+    "id": "9068",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Villanova d'Albenga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L975",
+    "latitudine": 44.04585,
+    "longitudine": 8.143339
+  },
+  {
+    "id": "9069",
+    "id_regione": "7",
+    "id_provincia": "9",
+    "nome": "Zuccarello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M197",
+    "latitudine": 44.111757,
+    "longitudine": 8.11659
+  }
+]

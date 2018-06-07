@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <include
+        android:id="@+id/addBookAutomatic"
+        layout="@layout/back_button_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBookAutomatic"
+        android:layout_below="@id/addBookAutomatic">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            >
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayoutISBN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="#1976d2"
+                android:elevation="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginStart="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/editISBN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/takePhotoISBNButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scanOrManualString" />
+
+                <ImageButton
+                    android:id="@+id/takePhotoISBNButton"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="55dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/take_photo_isbn_button"
+                    android:elevation="25dp"
+                    android:onClick="scanBarcode"
+                    android:shadowColor="@color/text_shadow"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:src="@drawable/ic_photo_camera_24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/editISBN"
+                    app:layout_constraintTop_toBottomOf="@+id/scanOrManualString" />
+
+                <TextView
+                    android:id="@+id/scanOrManualString"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    android:text="@string/automatic_or_manual_ISBN"
+                    android:textColor="@color/textIcons"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/orTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:text="@string/or"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayoutISBN" />
+
+            <Button
+                android:id="@+id/gotoManualButton"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginStart="25dp"
+                android:padding="20dp"
+                android:paddingBottom="50dp"
+                android:background="@drawable/take_photo_isbn_button"
+                android:elevation="15dp"
+                android:onClick="goToManualButtonClick"
+                android:shadowColor="@color/text_shadow"
+                android:shadowRadius="20"
+                android:text="@string/add_manual_button"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/textIcons"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/orTextView" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</RelativeLayout>

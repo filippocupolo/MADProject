@@ -1,0 +1,232 @@
+[
+  {
+    "id": "105001",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Arzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A454",
+    "latitudine": 39.921414,
+    "longitudine": 9.528254
+  },
+  {
+    "id": "105002",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Bari Sardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A663",
+    "latitudine": 39.842528,
+    "longitudine": 9.643148
+  },
+  {
+    "id": "105003",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Baunei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A722",
+    "latitudine": 40.031751,
+    "longitudine": 9.663272
+  },
+  {
+    "id": "105004",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Cardedu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M285",
+    "latitudine": 39.801174,
+    "longitudine": 9.627144
+  },
+  {
+    "id": "105005",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Elini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D395",
+    "latitudine": 39.899819,
+    "longitudine": 9.530741
+  },
+  {
+    "id": "105006",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Gairo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D859",
+    "latitudine": 39.848409,
+    "longitudine": 9.505349
+  },
+  {
+    "id": "105007",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Girasole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E049",
+    "latitudine": 39.953261,
+    "longitudine": 9.661239
+  },
+  {
+    "id": "105008",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Ilbono",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E283",
+    "latitudine": 39.892609,
+    "longitudine": 9.546735
+  },
+  {
+    "id": "105009",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Jerzu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E387",
+    "latitudine": 39.793576,
+    "longitudine": 9.51629
+  },
+  {
+    "id": "105010",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Lanusei",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E441",
+    "latitudine": 39.878816,
+    "longitudine": 9.541246
+  },
+  {
+    "id": "105011",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Loceri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E644",
+    "latitudine": 39.858502,
+    "longitudine": 9.584751
+  },
+  {
+    "id": "105012",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Lotzorai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E700",
+    "latitudine": 39.970176,
+    "longitudine": 9.661514
+  },
+  {
+    "id": "105013",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Osini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G158",
+    "latitudine": 39.823491,
+    "longitudine": 9.496201
+  },
+  {
+    "id": "105014",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Perdasdefogu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G445",
+    "latitudine": 39.681616,
+    "longitudine": 9.440665
+  },
+  {
+    "id": "105015",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Seui",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I706",
+    "latitudine": 39.841972,
+    "longitudine": 9.317017
+  },
+  {
+    "id": "105016",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Talana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L036",
+    "latitudine": 40.041424,
+    "longitudine": 9.496489
+  },
+  {
+    "id": "105017",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Tertenia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L140",
+    "latitudine": 39.691788,
+    "longitudine": 9.581168
+  },
+  {
+    "id": "105018",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Tortolì",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A355",
+    "latitudine": 39.926574,
+    "longitudine": 9.656073
+  },
+  {
+    "id": "105019",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Triei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L423",
+    "latitudine": 40.037127,
+    "longitudine": 9.641369
+  },
+  {
+    "id": "105020",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Ulassai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L489",
+    "latitudine": 39.811146,
+    "longitudine": 9.499526
+  },
+  {
+    "id": "105021",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Urzulei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L506",
+    "latitudine": 40.092885,
+    "longitudine": 9.505339
+  },
+  {
+    "id": "105022",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Ussassai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L514",
+    "latitudine": 39.809749,
+    "longitudine": 9.394369
+  },
+  {
+    "id": "105023",
+    "id_regione": "20",
+    "id_provincia": "105",
+    "nome": "Villagrande Strisaili",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L953",
+    "latitudine": 39.956068,
+    "longitudine": 9.50959
+  }
+]

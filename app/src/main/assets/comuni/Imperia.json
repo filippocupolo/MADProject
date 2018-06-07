@@ -1,0 +1,672 @@
+[
+  {
+    "id": "8001",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Airole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A111",
+    "latitudine": 43.871241,
+    "longitudine": 7.555567
+  },
+  {
+    "id": "8002",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Apricale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A338",
+    "latitudine": 43.881878,
+    "longitudine": 7.656253
+  },
+  {
+    "id": "8003",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Aquila d'Arroscia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A344",
+    "latitudine": 44.095017,
+    "longitudine": 8.008341
+  },
+  {
+    "id": "8004",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Armo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A418",
+    "latitudine": 38.070067,
+    "longitudine": 15.713784
+  },
+  {
+    "id": "8005",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Aurigo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A499",
+    "latitudine": 43.982429,
+    "longitudine": 7.924012
+  },
+  {
+    "id": "8006",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Badalucco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A536",
+    "latitudine": 43.919461,
+    "longitudine": 7.845398
+  },
+  {
+    "id": "8007",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Bajardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A581",
+    "latitudine": 43.902581,
+    "longitudine": 7.717909
+  },
+  {
+    "id": "8008",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Bordighera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A984",
+    "latitudine": 43.780698,
+    "longitudine": 7.67228
+  },
+  {
+    "id": "8009",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Borghetto d'Arroscia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A993",
+    "latitudine": 44.055664,
+    "longitudine": 7.979512
+  },
+  {
+    "id": "8010",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Borgomaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B020",
+    "latitudine": 43.97482,
+    "longitudine": 7.949024
+  },
+  {
+    "id": "8011",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Camporosso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B559",
+    "latitudine": 43.814061,
+    "longitudine": 7.628742
+  },
+  {
+    "id": "8012",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Caravonica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B734",
+    "latitudine": 43.993096,
+    "longitudine": 7.957754
+  },
+  {
+    "id": "8013",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Carpasio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B814",
+    "latitudine": 43.962089,
+    "longitudine": 7.868568
+  },
+  {
+    "id": "8015",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Castel Vittorio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C110",
+    "latitudine": 43.926766,
+    "longitudine": 7.674863
+  },
+  {
+    "id": "8014",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Castellaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C143",
+    "latitudine": 43.864809,
+    "longitudine": 7.868841
+  },
+  {
+    "id": "8016",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Ceriana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C511",
+    "latitudine": 43.884394,
+    "longitudine": 7.772227
+  },
+  {
+    "id": "8017",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Cervo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C559",
+    "latitudine": 43.92503,
+    "longitudine": 8.114189
+  },
+  {
+    "id": "8018",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Cesio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C578",
+    "latitudine": 44.010499,
+    "longitudine": 7.974645
+  },
+  {
+    "id": "8019",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Chiusanico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C657",
+    "latitudine": 43.973514,
+    "longitudine": 7.992491
+  },
+  {
+    "id": "8020",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Chiusavecchia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C660",
+    "latitudine": 43.971165,
+    "longitudine": 7.980336
+  },
+  {
+    "id": "8021",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Cipressa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C718",
+    "latitudine": 43.851455,
+    "longitudine": 7.93039
+  },
+  {
+    "id": "8022",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Civezza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C755",
+    "latitudine": 43.878137,
+    "longitudine": 7.951671
+  },
+  {
+    "id": "8023",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Cosio d'Arroscia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D087",
+    "latitudine": 44.076863,
+    "longitudine": 7.831027
+  },
+  {
+    "id": "8024",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Costarainera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D114",
+    "latitudine": 43.856407,
+    "longitudine": 7.940899
+  },
+  {
+    "id": "8025",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Diano Arentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D293",
+    "latitudine": 43.953021,
+    "longitudine": 8.04104
+  },
+  {
+    "id": "8026",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Diano Castello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D296",
+    "latitudine": 43.926101,
+    "longitudine": 8.064406
+  },
+  {
+    "id": "8027",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Diano Marina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D297",
+    "latitudine": 43.908864,
+    "longitudine": 8.082802
+  },
+  {
+    "id": "8028",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Diano San Pietro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D298",
+    "latitudine": 43.933755,
+    "longitudine": 8.064675
+  },
+  {
+    "id": "8029",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Dolceacqua",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D318",
+    "latitudine": 43.859444,
+    "longitudine": 7.623929
+  },
+  {
+    "id": "8030",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Dolcedo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D319",
+    "latitudine": 43.907499,
+    "longitudine": 7.953327
+  },
+  {
+    "id": "8031",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Imperia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E290",
+    "latitudine": 43.889686,
+    "longitudine": 8.039517
+  },
+  {
+    "id": "8032",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Isolabona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E346",
+    "latitudine": 43.879235,
+    "longitudine": 7.639033
+  },
+  {
+    "id": "8033",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Lucinasco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E719",
+    "latitudine": 43.968226,
+    "longitudine": 7.966362
+  },
+  {
+    "id": "8034",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Mendatica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F123",
+    "latitudine": 44.074,
+    "longitudine": 7.805924
+  },
+  {
+    "id": "8035",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Molini di Triora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F290",
+    "latitudine": 43.986544,
+    "longitudine": 7.777714
+  },
+  {
+    "id": "8036",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Montalto Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F406",
+    "latitudine": 43.927268,
+    "longitudine": 7.834076
+  },
+  {
+    "id": "8037",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Montegrosso Pian Latte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F528",
+    "latitudine": 44.06636,
+    "longitudine": 7.815386
+  },
+  {
+    "id": "8038",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Olivetta San Michele",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G041",
+    "latitudine": 43.879344,
+    "longitudine": 7.518631
+  },
+  {
+    "id": "8039",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Ospedaletti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G164",
+    "latitudine": 43.802091,
+    "longitudine": 7.717656
+  },
+  {
+    "id": "8040",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Perinaldo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G454",
+    "latitudine": 43.865927,
+    "longitudine": 7.667765
+  },
+  {
+    "id": "8041",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Pietrabruna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G607",
+    "latitudine": 43.887816,
+    "longitudine": 7.902747
+  },
+  {
+    "id": "8042",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Pieve di Teco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G632",
+    "latitudine": 44.046561,
+    "longitudine": 7.914992
+  },
+  {
+    "id": "8043",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Pigna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G660",
+    "latitudine": 43.934117,
+    "longitudine": 7.664758
+  },
+  {
+    "id": "8044",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Pompeiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G814",
+    "latitudine": 43.856505,
+    "longitudine": 7.88548
+  },
+  {
+    "id": "8045",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Pontedassio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G840",
+    "latitudine": 43.940734,
+    "longitudine": 8.012822
+  },
+  {
+    "id": "8046",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Pornassio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G890",
+    "latitudine": 44.070229,
+    "longitudine": 7.87205
+  },
+  {
+    "id": "8047",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Prelà",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H027",
+    "latitudine": 43.926858,
+    "longitudine": 7.93736
+  },
+  {
+    "id": "8048",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Ranzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H180",
+    "latitudine": 44.05831,
+    "longitudine": 8.01173
+  },
+  {
+    "id": "8049",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Rezzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H257",
+    "latitudine": 44.021928,
+    "longitudine": 7.873209
+  },
+  {
+    "id": "8050",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Riva Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H328",
+    "latitudine": 43.838292,
+    "longitudine": 7.880531
+  },
+  {
+    "id": "8051",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Rocchetta Nervina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H460",
+    "latitudine": 43.890722,
+    "longitudine": 7.599815
+  },
+  {
+    "id": "8052",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "San Bartolomeo al Mare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H763",
+    "latitudine": 43.921975,
+    "longitudine": 8.103432
+  },
+  {
+    "id": "8053",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "San Biagio della Cima",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H780",
+    "latitudine": 43.819803,
+    "longitudine": 7.647495
+  },
+  {
+    "id": "8054",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "San Lorenzo al Mare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H957",
+    "latitudine": 43.854036,
+    "longitudine": 7.965235
+  },
+  {
+    "id": "8055",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Sanremo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I138",
+    "latitudine": 43.815967,
+    "longitudine": 7.776057
+  },
+  {
+    "id": "8056",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Santo Stefano al Mare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I365",
+    "latitudine": 43.838598,
+    "longitudine": 7.895828
+  },
+  {
+    "id": "8057",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Seborga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I556",
+    "latitudine": 43.830371,
+    "longitudine": 7.700124
+  },
+  {
+    "id": "8058",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Soldano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I796",
+    "latitudine": 43.835119,
+    "longitudine": 7.661757
+  },
+  {
+    "id": "8059",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Taggia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L024",
+    "latitudine": 43.86219,
+    "longitudine": 7.85398
+  },
+  {
+    "id": "8060",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Terzorio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L146",
+    "latitudine": 43.852981,
+    "longitudine": 7.898113
+  },
+  {
+    "id": "8061",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Triora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L430",
+    "latitudine": 43.994302,
+    "longitudine": 7.765714
+  },
+  {
+    "id": "8062",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Vallebona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L596",
+    "latitudine": 43.811709,
+    "longitudine": 7.664319
+  },
+  {
+    "id": "8063",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Vallecrosia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L599",
+    "latitudine": 43.783737,
+    "longitudine": 7.645046
+  },
+  {
+    "id": "8064",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Vasia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L693",
+    "latitudine": 43.933741,
+    "longitudine": 7.952458
+  },
+  {
+    "id": "8065",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Ventimiglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L741",
+    "latitudine": 43.791237,
+    "longitudine": 7.607586
+  },
+  {
+    "id": "8066",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Vessalico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L809",
+    "latitudine": 44.046617,
+    "longitudine": 7.959811
+  },
+  {
+    "id": "8067",
+    "id_regione": "7",
+    "id_provincia": "8",
+    "nome": "Villa Faraldi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L943",
+    "latitudine": 43.967982,
+    "longitudine": 8.091551
+  }
+]

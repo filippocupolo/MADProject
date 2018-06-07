@@ -1,0 +1,432 @@
+[
+  {
+    "id": "84001",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Agrigento",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A089",
+    "latitudine": 37.31109,
+    "longitudine": 13.576548
+  },
+  {
+    "id": "84002",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Alessandria della Rocca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A181",
+    "latitudine": 37.569617,
+    "longitudine": 13.453475
+  },
+  {
+    "id": "84003",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Aragona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A351",
+    "latitudine": 37.407403,
+    "longitudine": 13.618945
+  },
+  {
+    "id": "84004",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Bivona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A896",
+    "latitudine": 37.618361,
+    "longitudine": 13.44053
+  },
+  {
+    "id": "84005",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Burgio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B275",
+    "latitudine": 37.598557,
+    "longitudine": 13.290784
+  },
+  {
+    "id": "84006",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Calamonaci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B377",
+    "latitudine": 37.526165,
+    "longitudine": 13.289355
+  },
+  {
+    "id": "84007",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Caltabellotta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B427",
+    "latitudine": 37.57575,
+    "longitudine": 13.218615
+  },
+  {
+    "id": "84008",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Camastra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B460",
+    "latitudine": 37.251284,
+    "longitudine": 13.794301
+  },
+  {
+    "id": "84009",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Cammarata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B486",
+    "latitudine": 37.632794,
+    "longitudine": 13.638671
+  },
+  {
+    "id": "84010",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Campobello di Licata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B520",
+    "latitudine": 37.258844,
+    "longitudine": 13.917697
+  },
+  {
+    "id": "84011",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Canicattì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B602",
+    "latitudine": 37.358179,
+    "longitudine": 13.85069
+  },
+  {
+    "id": "84012",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Casteltermini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C275",
+    "latitudine": 37.540964,
+    "longitudine": 13.643208
+  },
+  {
+    "id": "84013",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Castrofilippo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C341",
+    "latitudine": 37.347488,
+    "longitudine": 13.749643
+  },
+  {
+    "id": "84014",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Cattolica Eraclea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C356",
+    "latitudine": 37.440822,
+    "longitudine": 13.393837
+  },
+  {
+    "id": "84015",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Cianciana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C668",
+    "latitudine": 37.521316,
+    "longitudine": 13.432789
+  },
+  {
+    "id": "84016",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Comitini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C928",
+    "latitudine": 37.408294,
+    "longitudine": 13.643691
+  },
+  {
+    "id": "84017",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Favara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D514",
+    "latitudine": 37.316048,
+    "longitudine": 13.662348
+  },
+  {
+    "id": "84018",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Grotte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E209",
+    "latitudine": 37.402643,
+    "longitudine": 13.70114
+  },
+  {
+    "id": "84019",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Joppolo Giancaxio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E390",
+    "latitudine": 37.387886,
+    "longitudine": 13.555325
+  },
+  {
+    "id": "84020",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Lampedusa e Linosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E431",
+    "latitudine": 35.507409,
+    "longitudine": 12.6044
+  },
+  {
+    "id": "84021",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Licata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E573",
+    "latitudine": 37.101709,
+    "longitudine": 13.937331
+  },
+  {
+    "id": "84022",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Lucca Sicula",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E714",
+    "latitudine": 37.578822,
+    "longitudine": 13.306716
+  },
+  {
+    "id": "84023",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Menfi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F126",
+    "latitudine": 37.59922,
+    "longitudine": 12.96824
+  },
+  {
+    "id": "84024",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Montallegro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F414",
+    "latitudine": 37.391188,
+    "longitudine": 13.35036
+  },
+  {
+    "id": "84025",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Montevago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F655",
+    "latitudine": 37.705617,
+    "longitudine": 12.985167
+  },
+  {
+    "id": "84026",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Naro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F845",
+    "latitudine": 37.294829,
+    "longitudine": 13.795124
+  },
+  {
+    "id": "84027",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Palma di Montechiaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G282",
+    "latitudine": 37.192928,
+    "longitudine": 13.761947
+  },
+  {
+    "id": "84028",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Porto Empedocle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F299",
+    "latitudine": 37.28818,
+    "longitudine": 13.527172
+  },
+  {
+    "id": "84029",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Racalmuto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H148",
+    "latitudine": 37.408839,
+    "longitudine": 13.732624
+  },
+  {
+    "id": "84030",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Raffadali",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H159",
+    "latitudine": 37.404859,
+    "longitudine": 13.531203
+  },
+  {
+    "id": "84031",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Ravanusa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H194",
+    "latitudine": 37.267919,
+    "longitudine": 13.973316
+  },
+  {
+    "id": "84032",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Realmonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H205",
+    "latitudine": 37.308709,
+    "longitudine": 13.46224
+  },
+  {
+    "id": "84033",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Ribera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H269",
+    "latitudine": 37.50317,
+    "longitudine": 13.266765
+  },
+  {
+    "id": "84034",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Sambuca di Sicilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H743",
+    "latitudine": 37.647714,
+    "longitudine": 13.111111
+  },
+  {
+    "id": "84035",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "San Biagio Platani",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H778",
+    "latitudine": 37.509293,
+    "longitudine": 13.524961
+  },
+  {
+    "id": "84036",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "San Giovanni Gemini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H914",
+    "latitudine": 37.626167,
+    "longitudine": 13.641147
+  },
+  {
+    "id": "84039",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Sant'Angelo Muxaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I290",
+    "latitudine": 37.480744,
+    "longitudine": 13.546203
+  },
+  {
+    "id": "84037",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Santa Elisabetta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I185",
+    "latitudine": 37.432689,
+    "longitudine": 13.554983
+  },
+  {
+    "id": "84038",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Santa Margherita di Belice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I224",
+    "latitudine": 37.691274,
+    "longitudine": 13.022594
+  },
+  {
+    "id": "84040",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Santo Stefano Quisquina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I356",
+    "latitudine": 37.625467,
+    "longitudine": 13.489699
+  },
+  {
+    "id": "84041",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Sciacca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I533",
+    "latitudine": 37.508515,
+    "longitudine": 13.081631
+  },
+  {
+    "id": "84042",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Siculiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I723",
+    "latitudine": 37.335445,
+    "longitudine": 13.421662
+  },
+  {
+    "id": "84043",
+    "id_regione": "19",
+    "id_provincia": "84",
+    "nome": "Villafranca Sicula",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L944",
+    "latitudine": 37.587433,
+    "longitudine": 13.289238
+  }
+]

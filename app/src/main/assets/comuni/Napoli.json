@@ -1,0 +1,922 @@
+[
+  {
+    "id": "63001",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Acerra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A024",
+    "latitudine": 40.944109,
+    "longitudine": 14.371438
+  },
+  {
+    "id": "63002",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Afragola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A064",
+    "latitudine": 40.923039,
+    "longitudine": 14.309304
+  },
+  {
+    "id": "63003",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Agerola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A068",
+    "latitudine": 40.638047,
+    "longitudine": 14.545216
+  },
+  {
+    "id": "63004",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Anacapri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A268",
+    "latitudine": 40.552838,
+    "longitudine": 14.213814
+  },
+  {
+    "id": "63005",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Arzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A455",
+    "latitudine": 40.909576,
+    "longitudine": 14.26503
+  },
+  {
+    "id": "63006",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Bacoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A535",
+    "latitudine": 40.7948,
+    "longitudine": 14.068526
+  },
+  {
+    "id": "63007",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Barano d'Ischia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A617",
+    "latitudine": 40.709077,
+    "longitudine": 13.914048
+  },
+  {
+    "id": "63008",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Boscoreale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B076",
+    "latitudine": 40.772759,
+    "longitudine": 14.481411
+  },
+  {
+    "id": "63009",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Boscotrecase",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B077",
+    "latitudine": 40.774468,
+    "longitudine": 14.46117
+  },
+  {
+    "id": "63010",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Brusciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B227",
+    "latitudine": 40.920846,
+    "longitudine": 14.423693
+  },
+  {
+    "id": "63011",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Caivano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B371",
+    "latitudine": 40.956764,
+    "longitudine": 14.304609
+  },
+  {
+    "id": "63012",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Calvizzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B452",
+    "latitudine": 40.906831,
+    "longitudine": 14.188347
+  },
+  {
+    "id": "63013",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Camposano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B565",
+    "latitudine": 40.955672,
+    "longitudine": 14.53112
+  },
+  {
+    "id": "63014",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Capri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B696",
+    "latitudine": 40.553201,
+    "longitudine": 14.222154
+  },
+  {
+    "id": "63015",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Carbonara di Nola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B740",
+    "latitudine": 40.872798,
+    "longitudine": 14.57868
+  },
+  {
+    "id": "63016",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Cardito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B759",
+    "latitudine": 40.946398,
+    "longitudine": 14.299421
+  },
+  {
+    "id": "63017",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Casalnuovo di Napoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B905",
+    "latitudine": 40.909221,
+    "longitudine": 14.339994
+  },
+  {
+    "id": "63018",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Casamarciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B922",
+    "latitudine": 40.930141,
+    "longitudine": 14.552121
+  },
+  {
+    "id": "63019",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Casamicciola Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B924",
+    "latitudine": 40.74806,
+    "longitudine": 13.904524
+  },
+  {
+    "id": "63020",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Casandrino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B925",
+    "latitudine": 40.93522,
+    "longitudine": 14.24593
+  },
+  {
+    "id": "63021",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Casavatore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B946",
+    "latitudine": 40.900255,
+    "longitudine": 14.277275
+  },
+  {
+    "id": "63022",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Casola di Napoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B980",
+    "latitudine": 40.694951,
+    "longitudine": 14.530136
+  },
+  {
+    "id": "63023",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Casoria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B990",
+    "latitudine": 40.907598,
+    "longitudine": 14.292825
+  },
+  {
+    "id": "63024",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Castellammare di Stabia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C129",
+    "latitudine": 40.695786,
+    "longitudine": 14.482844
+  },
+  {
+    "id": "63025",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Castello di Cisterna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C188",
+    "latitudine": 40.916188,
+    "longitudine": 14.410598
+  },
+  {
+    "id": "63026",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Cercola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C495",
+    "latitudine": 40.857578,
+    "longitudine": 14.353788
+  },
+  {
+    "id": "63027",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Cicciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C675",
+    "latitudine": 40.962361,
+    "longitudine": 14.53794
+  },
+  {
+    "id": "63028",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Cimitile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C697",
+    "latitudine": 40.939829,
+    "longitudine": 14.52921
+  },
+  {
+    "id": "63029",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Comiziano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C929",
+    "latitudine": 40.952221,
+    "longitudine": 14.553671
+  },
+  {
+    "id": "63030",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Crispano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D170",
+    "latitudine": 40.954309,
+    "longitudine": 14.28608
+  },
+  {
+    "id": "63064",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Ercolano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H243",
+    "latitudine": 40.80792,
+    "longitudine": 14.348163
+  },
+  {
+    "id": "63031",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Forio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D702",
+    "latitudine": 40.738291,
+    "longitudine": 13.860551
+  },
+  {
+    "id": "63032",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Frattamaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D789",
+    "latitudine": 40.941629,
+    "longitudine": 14.275962
+  },
+  {
+    "id": "63033",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Frattaminore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D790",
+    "latitudine": 40.953791,
+    "longitudine": 14.271779
+  },
+  {
+    "id": "63034",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Giugliano in Campania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E054",
+    "latitudine": 40.928564,
+    "longitudine": 14.203208
+  },
+  {
+    "id": "63035",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Gragnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E131",
+    "latitudine": 40.685851,
+    "longitudine": 14.519397
+  },
+  {
+    "id": "63036",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Grumo Nevano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E224",
+    "latitudine": 40.937512,
+    "longitudine": 14.260109
+  },
+  {
+    "id": "63037",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Ischia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E329",
+    "latitudine": 40.73793,
+    "longitudine": 13.948618
+  },
+  {
+    "id": "63038",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Lacco Ameno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E396",
+    "latitudine": 40.750288,
+    "longitudine": 13.890354
+  },
+  {
+    "id": "63039",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Lettere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E557",
+    "latitudine": 40.705804,
+    "longitudine": 14.544697
+  },
+  {
+    "id": "63040",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Liveri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E620",
+    "latitudine": 40.905568,
+    "longitudine": 14.5662
+  },
+  {
+    "id": "63041",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Marano di Napoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E906",
+    "latitudine": 40.889959,
+    "longitudine": 14.191674
+  },
+  {
+    "id": "63042",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Mariglianella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E954",
+    "latitudine": 40.930311,
+    "longitudine": 14.438685
+  },
+  {
+    "id": "63043",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Marigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E955",
+    "latitudine": 40.92491,
+    "longitudine": 14.456246
+  },
+  {
+    "id": "63092",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Massa di Somma",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M289",
+    "latitudine": 40.847521,
+    "longitudine": 14.37332
+  },
+  {
+    "id": "63044",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Massa Lubrense",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F030",
+    "latitudine": 40.608875,
+    "longitudine": 14.341385
+  },
+  {
+    "id": "63045",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Melito di Napoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F111",
+    "latitudine": 40.918679,
+    "longitudine": 14.23305
+  },
+  {
+    "id": "63046",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Meta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F162",
+    "latitudine": 40.642887,
+    "longitudine": 14.41734
+  },
+  {
+    "id": "63047",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Monte di Procida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F488",
+    "latitudine": 40.796148,
+    "longitudine": 14.0512
+  },
+  {
+    "id": "63048",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Mugnano di Napoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F799",
+    "latitudine": 40.909335,
+    "longitudine": 14.206645
+  },
+  {
+    "id": "63049",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Napoli",
+    "capoluogo_provincia": true,
+    "codice_catastale": "F839",
+    "latitudine": 40.851775,
+    "longitudine": 14.268124
+  },
+  {
+    "id": "63050",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Nola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F924",
+    "latitudine": 40.927088,
+    "longitudine": 14.528886
+  },
+  {
+    "id": "63051",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Ottaviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G190",
+    "latitudine": 40.852047,
+    "longitudine": 14.477243
+  },
+  {
+    "id": "63052",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Palma Campania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G283",
+    "latitudine": 40.870719,
+    "longitudine": 14.55784
+  },
+  {
+    "id": "63053",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Piano di Sorrento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G568",
+    "latitudine": 40.635024,
+    "longitudine": 14.416643
+  },
+  {
+    "id": "63054",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Pimonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G670",
+    "latitudine": 40.673433,
+    "longitudine": 14.511874
+  },
+  {
+    "id": "63055",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Poggiomarino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G762",
+    "latitudine": 40.80082,
+    "longitudine": 14.535271
+  },
+  {
+    "id": "63056",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Pollena Trocchia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G795",
+    "latitudine": 40.85929,
+    "longitudine": 14.389149
+  },
+  {
+    "id": "63057",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Pomigliano d'Arco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G812",
+    "latitudine": 40.91013,
+    "longitudine": 14.382912
+  },
+  {
+    "id": "63058",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Pompei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G813",
+    "latitudine": 40.746157,
+    "longitudine": 14.498934
+  },
+  {
+    "id": "63059",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Portici",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G902",
+    "latitudine": 40.814122,
+    "longitudine": 14.339067
+  },
+  {
+    "id": "63060",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Pozzuoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G964",
+    "latitudine": 40.845947,
+    "longitudine": 14.093286
+  },
+  {
+    "id": "63061",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Procida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H072",
+    "latitudine": 40.757841,
+    "longitudine": 14.0151
+  },
+  {
+    "id": "63062",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Qualiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H101",
+    "latitudine": 40.918981,
+    "longitudine": 14.153489
+  },
+  {
+    "id": "63063",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Quarto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H114",
+    "latitudine": 40.878431,
+    "longitudine": 14.145242
+  },
+  {
+    "id": "63065",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Roccarainola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H433",
+    "latitudine": 40.970589,
+    "longitudine": 14.56069
+  },
+  {
+    "id": "63066",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "San Gennaro Vesuviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H860",
+    "latitudine": 40.860559,
+    "longitudine": 14.52807
+  },
+  {
+    "id": "63067",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "San Giorgio a Cremano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H892",
+    "latitudine": 40.834483,
+    "longitudine": 14.344744
+  },
+  {
+    "id": "63068",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "San Giuseppe Vesuviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H931",
+    "latitudine": 40.834551,
+    "longitudine": 14.504801
+  },
+  {
+    "id": "63069",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "San Paolo Bel Sito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I073",
+    "latitudine": 40.915373,
+    "longitudine": 14.545497
+  },
+  {
+    "id": "63070",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "San Sebastiano al Vesuvio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I151",
+    "latitudine": 40.83963,
+    "longitudine": 14.364821
+  },
+  {
+    "id": "63075",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "San Vitaliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I391",
+    "latitudine": 40.925098,
+    "longitudine": 14.482095
+  },
+  {
+    "id": "63071",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Sant'Agnello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I208",
+    "latitudine": 40.635104,
+    "longitudine": 14.399896
+  },
+  {
+    "id": "63072",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Sant'Anastasia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I262",
+    "latitudine": 40.869022,
+    "longitudine": 14.40238
+  },
+  {
+    "id": "63073",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Sant'Antimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I293",
+    "latitudine": 40.943098,
+    "longitudine": 14.23684
+  },
+  {
+    "id": "63074",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Sant'Antonio Abate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I300",
+    "latitudine": 40.72189,
+    "longitudine": 14.543231
+  },
+  {
+    "id": "63090",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Santa Maria la Carità",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M273",
+    "latitudine": 40.71822,
+    "longitudine": 14.510184
+  },
+  {
+    "id": "63076",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Saviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I469",
+    "latitudine": 40.906141,
+    "longitudine": 14.51114
+  },
+  {
+    "id": "63077",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Scisciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I540",
+    "latitudine": 40.913075,
+    "longitudine": 14.478706
+  },
+  {
+    "id": "63078",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Serrara Fontana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I652",
+    "latitudine": 40.709682,
+    "longitudine": 13.892323
+  },
+  {
+    "id": "63079",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Somma Vesuviana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I820",
+    "latitudine": 40.87301,
+    "longitudine": 14.43848
+  },
+  {
+    "id": "63080",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Sorrento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I862",
+    "latitudine": 40.626293,
+    "longitudine": 14.375799
+  },
+  {
+    "id": "63081",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Striano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I978",
+    "latitudine": 40.815689,
+    "longitudine": 14.57511
+  },
+  {
+    "id": "63082",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Terzigno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L142",
+    "latitudine": 40.803979,
+    "longitudine": 14.502169
+  },
+  {
+    "id": "63083",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Torre Annunziata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L245",
+    "latitudine": 40.754055,
+    "longitudine": 14.450913
+  },
+  {
+    "id": "63084",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Torre del Greco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L259",
+    "latitudine": 40.789443,
+    "longitudine": 14.367461
+  },
+  {
+    "id": "63091",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Trecase",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M280",
+    "latitudine": 40.771948,
+    "longitudine": 14.433681
+  },
+  {
+    "id": "63085",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Tufino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L460",
+    "latitudine": 40.95551,
+    "longitudine": 14.56432
+  },
+  {
+    "id": "63086",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Vico Equense",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L845",
+    "latitudine": 40.661498,
+    "longitudine": 14.427501
+  },
+  {
+    "id": "63087",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Villaricca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G309",
+    "latitudine": 40.920301,
+    "longitudine": 14.193597
+  },
+  {
+    "id": "63088",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Visciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M072",
+    "latitudine": 40.925952,
+    "longitudine": 14.5822
+  },
+  {
+    "id": "63089",
+    "id_regione": "15",
+    "id_provincia": "63",
+    "nome": "Volla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M115",
+    "latitudine": 40.876702,
+    "longitudine": 14.341157
+  }
+]

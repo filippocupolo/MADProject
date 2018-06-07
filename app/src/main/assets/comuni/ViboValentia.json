@@ -1,0 +1,502 @@
+[
+  {
+    "id": "102001",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Acquaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A043",
+    "latitudine": 38.557879,
+    "longitudine": 16.190391
+  },
+  {
+    "id": "102002",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Arena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A386",
+    "latitudine": -53.144629,
+    "longitudine": -70.883447
+  },
+  {
+    "id": "102003",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Briatico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B169",
+    "latitudine": 38.725017,
+    "longitudine": 16.033104
+  },
+  {
+    "id": "102004",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Brognaturo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B197",
+    "latitudine": 38.601277,
+    "longitudine": 16.342983
+  },
+  {
+    "id": "102005",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Capistrano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B655",
+    "latitudine": 42.267459,
+    "longitudine": 13.767748
+  },
+  {
+    "id": "102006",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Cessaniti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C581",
+    "latitudine": 38.66349,
+    "longitudine": 16.026259
+  },
+  {
+    "id": "102007",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Dasà",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D253",
+    "latitudine": 38.565729,
+    "longitudine": 16.19559
+  },
+  {
+    "id": "102008",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Dinami",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D303",
+    "latitudine": 38.529391,
+    "longitudine": 16.147497
+  },
+  {
+    "id": "102009",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Drapia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D364",
+    "latitudine": 38.665541,
+    "longitudine": 15.912827
+  },
+  {
+    "id": "102010",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Fabrizia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D453",
+    "latitudine": 38.485117,
+    "longitudine": 16.300401
+  },
+  {
+    "id": "102011",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Filadelfia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D587",
+    "latitudine": 38.784376,
+    "longitudine": 16.293338
+  },
+  {
+    "id": "102012",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Filandari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D589",
+    "latitudine": 38.616113,
+    "longitudine": 16.032117
+  },
+  {
+    "id": "102013",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Filogaso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D596",
+    "latitudine": 38.682214,
+    "longitudine": 16.226229
+  },
+  {
+    "id": "102014",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Francavilla Angitola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D762",
+    "latitudine": 38.77586,
+    "longitudine": 16.268301
+  },
+  {
+    "id": "102015",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Francica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D767",
+    "latitudine": 38.619462,
+    "longitudine": 16.100639
+  },
+  {
+    "id": "102016",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Gerocarne",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D988",
+    "latitudine": 38.58763,
+    "longitudine": 16.219313
+  },
+  {
+    "id": "102017",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Ionadi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E321",
+    "latitudine": 38.629407,
+    "longitudine": 16.060059
+  },
+  {
+    "id": "102018",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Joppolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E389",
+    "latitudine": 38.584033,
+    "longitudine": 15.896732
+  },
+  {
+    "id": "102019",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Limbadi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E590",
+    "latitudine": 38.557244,
+    "longitudine": 15.966805
+  },
+  {
+    "id": "102020",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Maierato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E836",
+    "latitudine": 38.706431,
+    "longitudine": 16.192284
+  },
+  {
+    "id": "102021",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Mileto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F207",
+    "latitudine": 38.606075,
+    "longitudine": 16.064038
+  },
+  {
+    "id": "102022",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Mongiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F364",
+    "latitudine": 38.512881,
+    "longitudine": 16.318991
+  },
+  {
+    "id": "102023",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Monterosso Calabro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F607",
+    "latitudine": 38.718202,
+    "longitudine": 16.290313
+  },
+  {
+    "id": "102024",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Nardodipace",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F843",
+    "latitudine": 38.471974,
+    "longitudine": 16.343129
+  },
+  {
+    "id": "102025",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Nicotera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F893",
+    "latitudine": 38.554218,
+    "longitudine": 15.938888
+  },
+  {
+    "id": "102026",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Parghelia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G335",
+    "latitudine": 38.68188,
+    "longitudine": 15.922907
+  },
+  {
+    "id": "102027",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Pizzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G722",
+    "latitudine": 38.733786,
+    "longitudine": 16.162892
+  },
+  {
+    "id": "102028",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Pizzoni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G728",
+    "latitudine": 38.624322,
+    "longitudine": 16.256099
+  },
+  {
+    "id": "102029",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Polia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G785",
+    "latitudine": 38.750415,
+    "longitudine": 16.311541
+  },
+  {
+    "id": "102030",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Ricadi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H271",
+    "latitudine": 38.625782,
+    "longitudine": 15.866653
+  },
+  {
+    "id": "102031",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Rombiolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H516",
+    "latitudine": 38.597219,
+    "longitudine": 16.003921
+  },
+  {
+    "id": "102032",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "San Calogero",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H785",
+    "latitudine": 38.575443,
+    "longitudine": 16.023537
+  },
+  {
+    "id": "102033",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "San Costantino Calabro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H807",
+    "latitudine": 38.632224,
+    "longitudine": 16.076773
+  },
+  {
+    "id": "102034",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "San Gregorio d'Ippona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H941",
+    "latitudine": 38.641111,
+    "longitudine": 16.101925
+  },
+  {
+    "id": "102035",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "San Nicola da Crissa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I058",
+    "latitudine": 38.664773,
+    "longitudine": 16.286113
+  },
+  {
+    "id": "102036",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Sant'Onofrio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I350",
+    "latitudine": 38.695101,
+    "longitudine": 16.144522
+  },
+  {
+    "id": "102037",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Serra San Bruno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I639",
+    "latitudine": 38.578301,
+    "longitudine": 16.332448
+  },
+  {
+    "id": "102038",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Simbario",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I744",
+    "latitudine": 38.612318,
+    "longitudine": 16.335803
+  },
+  {
+    "id": "102039",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Sorianello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I853",
+    "latitudine": 38.591999,
+    "longitudine": 16.234507
+  },
+  {
+    "id": "102040",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Soriano Calabro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I854",
+    "latitudine": 38.597158,
+    "longitudine": 16.230303
+  },
+  {
+    "id": "102041",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Spadola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I884",
+    "latitudine": 38.601997,
+    "longitudine": 16.336781
+  },
+  {
+    "id": "102042",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Spilinga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I905",
+    "latitudine": 38.62967,
+    "longitudine": 15.902487
+  },
+  {
+    "id": "102043",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Stefanaconi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I945",
+    "latitudine": 38.674964,
+    "longitudine": 16.121454
+  },
+  {
+    "id": "102044",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Tropea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L452",
+    "latitudine": 38.676994,
+    "longitudine": 15.897223
+  },
+  {
+    "id": "102045",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Vallelonga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L607",
+    "latitudine": 38.646535,
+    "longitudine": 16.290693
+  },
+  {
+    "id": "102046",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Vazzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L699",
+    "latitudine": 38.632749,
+    "longitudine": 16.244379
+  },
+  {
+    "id": "102047",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Vibo Valentia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "F537",
+    "latitudine": 38.675777,
+    "longitudine": 16.098349
+  },
+  {
+    "id": "102048",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Zaccanopoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M138",
+    "latitudine": 38.66416,
+    "longitudine": 15.927502
+  },
+  {
+    "id": "102049",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Zambrone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M143",
+    "latitudine": 38.697892,
+    "longitudine": 15.991801
+  },
+  {
+    "id": "102050",
+    "id_regione": "18",
+    "id_provincia": "102",
+    "nome": "Zungri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M204",
+    "latitudine": 38.656707,
+    "longitudine": 15.982896
+  }
+]

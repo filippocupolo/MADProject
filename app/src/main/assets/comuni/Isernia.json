@@ -1,0 +1,522 @@
+[
+    {
+        "id": "94001",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Acquaviva d'Isernia",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A051",
+        "latitudine": 41.672547,
+        "longitudine": 14.148474
+    },
+    {
+        "id": "94002",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Agnone",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A080",
+        "latitudine": 41.808674,
+        "longitudine": 14.373929
+    },
+    {
+        "id": "94003",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Bagnoli del Trigno",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A567",
+        "latitudine": 41.702411,
+        "longitudine": 14.457392
+    },
+    {
+        "id": "94004",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Belmonte del Sannio",
+        "capoluogo_provincia": false,
+        "codice_catastale": "A761",
+        "latitudine": 41.821745,
+        "longitudine": 14.421619
+    },
+    {
+        "id": "94005",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Cantalupo nel Sannio",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B630",
+        "latitudine": 41.521459,
+        "longitudine": 14.39314
+    },
+    {
+        "id": "94006",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Capracotta",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B682",
+        "latitudine": 41.834789,
+        "longitudine": 14.267678
+    },
+    {
+        "id": "94007",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Carovilli",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B810",
+        "latitudine": 41.713456,
+        "longitudine": 14.294013
+    },
+    {
+        "id": "94008",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Carpinone",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B830",
+        "latitudine": 41.592203,
+        "longitudine": 14.323959
+    },
+    {
+        "id": "94009",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Castel del Giudice",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C082",
+        "latitudine": 41.854556,
+        "longitudine": 14.232103
+    },
+    {
+        "id": "94012",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Castel San Vincenzo",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C270",
+        "latitudine": 41.65491,
+        "longitudine": 14.05697
+    },
+    {
+        "id": "94010",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Castelpetroso",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C246",
+        "latitudine": 41.560068,
+        "longitudine": 14.346196
+    },
+    {
+        "id": "94011",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Castelpizzuto",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C247",
+        "latitudine": 41.520626,
+        "longitudine": 14.292661
+    },
+    {
+        "id": "94013",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Castelverrino",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C200",
+        "latitudine": 41.767313,
+        "longitudine": 14.397664
+    },
+    {
+        "id": "94014",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Cerro al Volturno",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C534",
+        "latitudine": 41.66782,
+        "longitudine": 14.111749
+    },
+    {
+        "id": "94015",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Chiauci",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C620",
+        "latitudine": 41.678073,
+        "longitudine": 14.385884
+    },
+    {
+        "id": "94016",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Civitanova del Sannio",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C769",
+        "latitudine": 41.66811,
+        "longitudine": 14.402922
+    },
+    {
+        "id": "94017",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Colli a Volturno",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C878",
+        "latitudine": 41.600665,
+        "longitudine": 14.103007
+    },
+    {
+        "id": "94018",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Conca Casale",
+        "capoluogo_provincia": false,
+        "codice_catastale": "C941",
+        "latitudine": 41.495469,
+        "longitudine": 14.006156
+    },
+    {
+        "id": "94019",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Filignano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "D595",
+        "latitudine": 41.544872,
+        "longitudine": 14.057405
+    },
+    {
+        "id": "94020",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Forlì del Sannio",
+        "capoluogo_provincia": false,
+        "codice_catastale": "D703",
+        "latitudine": 41.695379,
+        "longitudine": 14.17827
+    },
+    {
+        "id": "94021",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Fornelli",
+        "capoluogo_provincia": false,
+        "codice_catastale": "D715",
+        "latitudine": 41.606231,
+        "longitudine": 14.139851
+    },
+    {
+        "id": "94022",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Frosolone",
+        "capoluogo_provincia": false,
+        "codice_catastale": "D811",
+        "latitudine": 41.599324,
+        "longitudine": 14.449635
+    },
+    {
+        "id": "94023",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Isernia",
+        "capoluogo_provincia": true,
+        "codice_catastale": "E335",
+        "latitudine": 41.596041,
+        "longitudine": 14.233161
+    },
+    {
+        "id": "94024",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Longano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "E669",
+        "latitudine": 41.52161,
+        "longitudine": 14.247731
+    },
+    {
+        "id": "94025",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Macchia d'Isernia",
+        "capoluogo_provincia": false,
+        "codice_catastale": "E778",
+        "latitudine": 41.562027,
+        "longitudine": 14.167262
+    },
+    {
+        "id": "94026",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Macchiagodena",
+        "capoluogo_provincia": false,
+        "codice_catastale": "E779",
+        "latitudine": 41.56008,
+        "longitudine": 14.407938
+    },
+    {
+        "id": "94027",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Miranda",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F239",
+        "latitudine": 41.647342,
+        "longitudine": 14.243434
+    },
+    {
+        "id": "94028",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Montaquila",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F429",
+        "latitudine": 41.564117,
+        "longitudine": 14.111719
+    },
+    {
+        "id": "94029",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Montenero Val Cocchiara",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F580",
+        "latitudine": 41.715121,
+        "longitudine": 14.068098
+    },
+    {
+        "id": "94030",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Monteroduni",
+        "capoluogo_provincia": false,
+        "codice_catastale": "F601",
+        "latitudine": 41.52157,
+        "longitudine": 14.176503
+    },
+    {
+        "id": "94031",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Pesche",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G486",
+        "latitudine": 41.605657,
+        "longitudine": 14.276662
+    },
+    {
+        "id": "94032",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Pescolanciano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G495",
+        "latitudine": 41.682189,
+        "longitudine": 14.33624
+    },
+    {
+        "id": "94033",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Pescopennataro",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G497",
+        "latitudine": 41.877865,
+        "longitudine": 14.294232
+    },
+    {
+        "id": "94034",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Pettoranello del Molise",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G523",
+        "latitudine": 41.573333,
+        "longitudine": 14.277709
+    },
+    {
+        "id": "94035",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Pietrabbondante",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G606",
+        "latitudine": 41.746962,
+        "longitudine": 14.383216
+    },
+    {
+        "id": "94036",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Pizzone",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G727",
+        "latitudine": 41.675076,
+        "longitudine": 14.036845
+    },
+    {
+        "id": "94037",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Poggio Sannita",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B317",
+        "latitudine": 41.780717,
+        "longitudine": 14.414739
+    },
+    {
+        "id": "94038",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Pozzilli",
+        "capoluogo_provincia": false,
+        "codice_catastale": "G954",
+        "latitudine": 41.511042,
+        "longitudine": 14.063638
+    },
+    {
+        "id": "94039",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Rionero Sannitico",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H308",
+        "latitudine": 41.710751,
+        "longitudine": 14.141856
+    },
+    {
+        "id": "94040",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Roccamandolfi",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H420",
+        "latitudine": 41.495168,
+        "longitudine": 14.352086
+    },
+    {
+        "id": "94041",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Roccasicura",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H445",
+        "latitudine": 41.695924,
+        "longitudine": 14.230371
+    },
+    {
+        "id": "94042",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Rocchetta a Volturno",
+        "capoluogo_provincia": false,
+        "codice_catastale": "H458",
+        "latitudine": 41.628873,
+        "longitudine": 14.071095
+    },
+    {
+        "id": "94043",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "San Pietro Avellana",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I096",
+        "latitudine": 41.790957,
+        "longitudine": 14.183057
+    },
+    {
+        "id": "94044",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Sant'Agapito",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I189",
+        "latitudine": 41.541904,
+        "longitudine": 14.222556
+    },
+    {
+        "id": "94046",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Sant'Angelo del Pesco",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I282",
+        "latitudine": 41.881306,
+        "longitudine": 14.255234
+    },
+    {
+        "id": "94047",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Sant'Elena Sannita",
+        "capoluogo_provincia": false,
+        "codice_catastale": "B466",
+        "latitudine": 41.576361,
+        "longitudine": 14.470113
+    },
+    {
+        "id": "94045",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Santa Maria del Molise",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I238",
+        "latitudine": 41.551852,
+        "longitudine": 14.368387
+    },
+    {
+        "id": "94048",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Scapoli",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I507",
+        "latitudine": 41.615604,
+        "longitudine": 14.058342
+    },
+    {
+        "id": "94049",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Sessano del Molise",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I679",
+        "latitudine": 41.639976,
+        "longitudine": 14.329652
+    },
+    {
+        "id": "94050",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Sesto Campano",
+        "capoluogo_provincia": false,
+        "codice_catastale": "I682",
+        "latitudine": 41.420325,
+        "longitudine": 14.078219
+    },
+    {
+        "id": "94051",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Vastogirardi",
+        "capoluogo_provincia": false,
+        "codice_catastale": "L696",
+        "latitudine": 41.773786,
+        "longitudine": 14.259649
+    },
+    {
+        "id": "94052",
+        "id_regione": "14",
+        "id_provincia": "94",
+        "nome": "Venafro",
+        "capoluogo_provincia": false,
+        "codice_catastale": "L725",
+        "latitudine": 41.481926,
+        "longitudine": 14.040231
+    }
+]

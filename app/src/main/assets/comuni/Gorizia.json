@@ -1,0 +1,252 @@
+[
+  {
+    "id": "31001",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Capriva del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B712",
+    "latitudine": 45.942132,
+    "longitudine": 13.51439
+  },
+  {
+    "id": "31002",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Cormons",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D014",
+    "latitudine": 45.960315,
+    "longitudine": 13.469472
+  },
+  {
+    "id": "31003",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Doberdò del Lago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D312",
+    "latitudine": 45.843387,
+    "longitudine": 13.539406
+  },
+  {
+    "id": "31004",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Dolegna del Collio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D321",
+    "latitudine": 46.031495,
+    "longitudine": 13.479288
+  },
+  {
+    "id": "31005",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Farra d'Isonzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D504",
+    "latitudine": 45.911833,
+    "longitudine": 13.518134
+  },
+  {
+    "id": "31006",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Fogliano Redipuglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D645",
+    "latitudine": 45.867377,
+    "longitudine": 13.48049
+  },
+  {
+    "id": "31007",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Gorizia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E098",
+    "latitudine": 45.940181,
+    "longitudine": 13.620175
+  },
+  {
+    "id": "31008",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Gradisca d'Isonzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E124",
+    "latitudine": 45.892425,
+    "longitudine": 13.500194
+  },
+  {
+    "id": "31009",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Grado",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E125",
+    "latitudine": 45.681774,
+    "longitudine": 13.386399
+  },
+  {
+    "id": "31010",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Mariano del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E952",
+    "latitudine": 45.917791,
+    "longitudine": 13.457899
+  },
+  {
+    "id": "31011",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Medea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F081",
+    "latitudine": 45.91833,
+    "longitudine": 13.416614
+  },
+  {
+    "id": "31012",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Monfalcone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F356",
+    "latitudine": 45.805047,
+    "longitudine": 13.533173
+  },
+  {
+    "id": "31013",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Moraro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F710",
+    "latitudine": 45.93141,
+    "longitudine": 13.496864
+  },
+  {
+    "id": "31014",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Mossa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F767",
+    "latitudine": 45.938831,
+    "longitudine": 13.54977
+  },
+  {
+    "id": "31015",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Romans d'Isonzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H514",
+    "latitudine": 45.887515,
+    "longitudine": 13.440354
+  },
+  {
+    "id": "31016",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Ronchi dei Legionari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H531",
+    "latitudine": 45.827623,
+    "longitudine": 13.499401
+  },
+  {
+    "id": "31017",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Sagrado",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H665",
+    "latitudine": 45.877736,
+    "longitudine": 13.485525
+  },
+  {
+    "id": "31018",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "San Canzian d'Isonzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H787",
+    "latitudine": 45.798881,
+    "longitudine": 13.463928
+  },
+  {
+    "id": "31019",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "San Floriano del Collio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H845",
+    "latitudine": 45.982262,
+    "longitudine": 13.587648
+  },
+  {
+    "id": "31020",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "San Lorenzo Isontino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H964",
+    "latitudine": 45.929132,
+    "longitudine": 13.522724
+  },
+  {
+    "id": "31021",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "San Pier d'Isonzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I082",
+    "latitudine": 45.847553,
+    "longitudine": 13.456402
+  },
+  {
+    "id": "31022",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Savogna d'Isonzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I479",
+    "latitudine": 45.902704,
+    "longitudine": 13.572046
+  },
+  {
+    "id": "31023",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Staranzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I939",
+    "latitudine": 45.806434,
+    "longitudine": 13.502128
+  },
+  {
+    "id": "31024",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Turriaco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L474",
+    "latitudine": 45.82117,
+    "longitudine": 13.444758
+  },
+  {
+    "id": "31025",
+    "id_regione": "6",
+    "id_provincia": "31",
+    "nome": "Villesse",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M043",
+    "latitudine": 45.856601,
+    "longitudine": 13.443561
+  }
+]

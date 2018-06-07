@@ -1,0 +1,522 @@
+[
+  {
+    "id": "91001",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Aritzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A407",
+    "latitudine": 39.952582,
+    "longitudine": 9.194977
+  },
+  {
+    "id": "91003",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Atzara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A492",
+    "latitudine": 39.99286,
+    "longitudine": 9.076492
+  },
+  {
+    "id": "91004",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Austis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A503",
+    "latitudine": 40.070836,
+    "longitudine": 9.086888
+  },
+  {
+    "id": "91007",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Belvì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A776",
+    "latitudine": 39.96551,
+    "longitudine": 9.18506
+  },
+  {
+    "id": "91008",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Birori",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A880",
+    "latitudine": 40.265679,
+    "longitudine": 8.815155
+  },
+  {
+    "id": "91009",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Bitti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A895",
+    "latitudine": 40.480529,
+    "longitudine": 9.38873
+  },
+  {
+    "id": "91010",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Bolotana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A948",
+    "latitudine": 40.327829,
+    "longitudine": 8.955823
+  },
+  {
+    "id": "91011",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Borore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B056",
+    "latitudine": 40.215527,
+    "longitudine": 8.80357
+  },
+  {
+    "id": "91012",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Bortigali",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B062",
+    "latitudine": 40.284591,
+    "longitudine": 8.837633
+  },
+  {
+    "id": "91016",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Desulo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D287",
+    "latitudine": 40.013249,
+    "longitudine": 9.231816
+  },
+  {
+    "id": "91017",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Dorgali",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D345",
+    "latitudine": 40.289132,
+    "longitudine": 9.591323
+  },
+  {
+    "id": "91018",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Dualchi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D376",
+    "latitudine": 40.229503,
+    "longitudine": 8.89577
+  },
+  {
+    "id": "91024",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Fonni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D665",
+    "latitudine": 40.12094,
+    "longitudine": 9.254149
+  },
+  {
+    "id": "91025",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Gadoni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D842",
+    "latitudine": 39.914225,
+    "longitudine": 9.185372
+  },
+  {
+    "id": "91027",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Galtellì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D888",
+    "latitudine": 40.384897,
+    "longitudine": 9.612155
+  },
+  {
+    "id": "91028",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Gavoi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D947",
+    "latitudine": 40.16305,
+    "longitudine": 9.194395
+  },
+  {
+    "id": "91033",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Irgoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E323",
+    "latitudine": 40.408826,
+    "longitudine": 9.633311
+  },
+  {
+    "id": "91038",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Lei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E517",
+    "latitudine": 40.307733,
+    "longitudine": 8.920044
+  },
+  {
+    "id": "91040",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Loculi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E646",
+    "latitudine": 40.406946,
+    "longitudine": 9.609311
+  },
+  {
+    "id": "91041",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Lodè",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E647",
+    "latitudine": 40.591257,
+    "longitudine": 9.538841
+  },
+  {
+    "id": "91104",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Lodine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E649",
+    "latitudine": 40.148448,
+    "longitudine": 9.218189
+  },
+  {
+    "id": "91043",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Lula",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E736",
+    "latitudine": 40.471019,
+    "longitudine": 9.489738
+  },
+  {
+    "id": "91044",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Macomer",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E788",
+    "latitudine": 40.266225,
+    "longitudine": 8.777309
+  },
+  {
+    "id": "91046",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Mamoiada",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E874",
+    "latitudine": 40.211557,
+    "longitudine": 9.283897
+  },
+  {
+    "id": "91047",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Meana Sardo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F073",
+    "latitudine": 39.945101,
+    "longitudine": 9.072546
+  },
+  {
+    "id": "91050",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Noragugume",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F933",
+    "latitudine": 40.225111,
+    "longitudine": 8.918715
+  },
+  {
+    "id": "91051",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Nuoro",
+    "capoluogo_provincia": true,
+    "codice_catastale": "F979",
+    "latitudine": 40.320242,
+    "longitudine": 9.326438
+  },
+  {
+    "id": "91055",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Oliena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G031",
+    "latitudine": 40.276642,
+    "longitudine": 9.401877
+  },
+  {
+    "id": "91056",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Ollolai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G044",
+    "latitudine": 40.169246,
+    "longitudine": 9.175856
+  },
+  {
+    "id": "91057",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Olzai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G058",
+    "latitudine": 40.18227,
+    "longitudine": 9.147394
+  },
+  {
+    "id": "91058",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Onanì",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G064",
+    "latitudine": 40.484615,
+    "longitudine": 9.441572
+  },
+  {
+    "id": "91059",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Onifai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G070",
+    "latitudine": 40.405449,
+    "longitudine": 9.650823
+  },
+  {
+    "id": "91060",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Oniferi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G071",
+    "latitudine": 40.263634,
+    "longitudine": 9.164989
+  },
+  {
+    "id": "91061",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Orani",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G084",
+    "latitudine": 40.248528,
+    "longitudine": 9.17686
+  },
+  {
+    "id": "91062",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Orgosolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G097",
+    "latitudine": 40.205506,
+    "longitudine": 9.34839
+  },
+  {
+    "id": "91063",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Orosei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G119",
+    "latitudine": 40.376785,
+    "longitudine": 9.696746
+  },
+  {
+    "id": "91064",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Orotelli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G120",
+    "latitudine": 40.301947,
+    "longitudine": 9.109681
+  },
+  {
+    "id": "91066",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Ortueri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G146",
+    "latitudine": 40.035325,
+    "longitudine": 8.987044
+  },
+  {
+    "id": "91067",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Orune",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G147",
+    "latitudine": 40.412898,
+    "longitudine": 9.366566
+  },
+  {
+    "id": "91068",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Osidda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G154",
+    "latitudine": 40.523561,
+    "longitudine": 9.221017
+  },
+  {
+    "id": "91070",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Ottana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G191",
+    "latitudine": 40.234294,
+    "longitudine": 9.042556
+  },
+  {
+    "id": "91071",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Ovodda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G201",
+    "latitudine": 40.094874,
+    "longitudine": 9.161887
+  },
+  {
+    "id": "91073",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Posada",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G929",
+    "latitudine": 40.63036,
+    "longitudine": 9.714892
+  },
+  {
+    "id": "91077",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Sarule",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I448",
+    "latitudine": 40.22668,
+    "longitudine": 9.164503
+  },
+  {
+    "id": "91083",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Silanus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I730",
+    "latitudine": 40.289684,
+    "longitudine": 8.888961
+  },
+  {
+    "id": "91084",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Sindia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I748",
+    "latitudine": 40.296174,
+    "longitudine": 8.658177
+  },
+  {
+    "id": "91085",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Siniscola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I751",
+    "latitudine": 40.576627,
+    "longitudine": 9.693566
+  },
+  {
+    "id": "91086",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Sorgono",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I851",
+    "latitudine": 40.027199,
+    "longitudine": 9.101962
+  },
+  {
+    "id": "91090",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Teti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L153",
+    "latitudine": 40.096421,
+    "longitudine": 9.120225
+  },
+  {
+    "id": "91091",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Tiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L160",
+    "latitudine": 40.066578,
+    "longitudine": 9.149629
+  },
+  {
+    "id": "91093",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Tonara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L202",
+    "latitudine": 40.024311,
+    "longitudine": 9.170759
+  },
+  {
+    "id": "91094",
+    "id_regione": "20",
+    "id_provincia": "91",
+    "nome": "Torpè",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L231",
+    "latitudine": 40.629075,
+    "longitudine": 9.677072
+  }
+]

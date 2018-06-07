@@ -1,0 +1,372 @@
+[
+  {
+    "id": "50001",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Bientina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A864",
+    "latitudine": 43.710285,
+    "longitudine": 10.621409
+  },
+  {
+    "id": "50002",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Buti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B303",
+    "latitudine": 43.727633,
+    "longitudine": 10.585595
+  },
+  {
+    "id": "50003",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Calci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B390",
+    "latitudine": 43.726235,
+    "longitudine": 10.513451
+  },
+  {
+    "id": "50004",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Calcinaia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B392",
+    "latitudine": 43.683762,
+    "longitudine": 10.614234
+  },
+  {
+    "id": "50005",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Capannoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B647",
+    "latitudine": 43.583276,
+    "longitudine": 10.68065
+  },
+  {
+    "id": "50006",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Casale Marittimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B878",
+    "latitudine": 43.296395,
+    "longitudine": 10.614267
+  },
+  {
+    "id": "50040",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Casciana Terme Lari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M327",
+    "latitudine": 43.565336,
+    "longitudine": 10.591575
+  },
+  {
+    "id": "50008",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Cascina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B950",
+    "latitudine": 43.675914,
+    "longitudine": 10.555897
+  },
+  {
+    "id": "50009",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Castelfranco di Sotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C113",
+    "latitudine": 43.699737,
+    "longitudine": 10.744854
+  },
+  {
+    "id": "50010",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Castellina Marittima",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C174",
+    "latitudine": 43.408983,
+    "longitudine": 10.578306
+  },
+  {
+    "id": "50011",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Castelnuovo di Val di Cecina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C244",
+    "latitudine": 43.209692,
+    "longitudine": 10.905079
+  },
+  {
+    "id": "50012",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Chianni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C609",
+    "latitudine": 43.485635,
+    "longitudine": 10.64194
+  },
+  {
+    "id": "50041",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Crespina Lorenzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M328",
+    "latitudine": 43.568895,
+    "longitudine": 10.562678
+  },
+  {
+    "id": "50014",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Fauglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D510",
+    "latitudine": 43.569125,
+    "longitudine": 10.517187
+  },
+  {
+    "id": "50015",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Guardistallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E250",
+    "latitudine": 43.311308,
+    "longitudine": 10.62941
+  },
+  {
+    "id": "50016",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Lajatico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E413",
+    "latitudine": 43.475776,
+    "longitudine": 10.728672
+  },
+  {
+    "id": "50019",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Montecatini Val di Cecina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F458",
+    "latitudine": 43.394888,
+    "longitudine": 10.748467
+  },
+  {
+    "id": "50020",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Montescudaio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F640",
+    "latitudine": 43.326165,
+    "longitudine": 10.626565
+  },
+  {
+    "id": "50021",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Monteverdi Marittimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F661",
+    "latitudine": 43.176693,
+    "longitudine": 10.715802
+  },
+  {
+    "id": "50022",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Montopoli in Val d'Arno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F686",
+    "latitudine": 43.675262,
+    "longitudine": 10.743608
+  },
+  {
+    "id": "50023",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Orciano Pisano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G090",
+    "latitudine": 43.494424,
+    "longitudine": 10.510332
+  },
+  {
+    "id": "50024",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Palaia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G254",
+    "latitudine": 43.605502,
+    "longitudine": 10.775582
+  },
+  {
+    "id": "50025",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Peccioli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G395",
+    "latitudine": 43.544962,
+    "longitudine": 10.720062
+  },
+  {
+    "id": "50026",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Pisa",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G702",
+    "latitudine": 43.722839,
+    "longitudine": 10.401689
+  },
+  {
+    "id": "50027",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Pomarance",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G804",
+    "latitudine": 43.299041,
+    "longitudine": 10.872188
+  },
+  {
+    "id": "50028",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Ponsacco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G822",
+    "latitudine": 43.620998,
+    "longitudine": 10.62994
+  },
+  {
+    "id": "50029",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Pontedera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G843",
+    "latitudine": 43.662516,
+    "longitudine": 10.636359
+  },
+  {
+    "id": "50030",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Riparbella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H319",
+    "latitudine": 43.366388,
+    "longitudine": 10.600971
+  },
+  {
+    "id": "50031",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "San Giuliano Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A562",
+    "latitudine": 43.759664,
+    "longitudine": 10.441865
+  },
+  {
+    "id": "50032",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "San Miniato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I046",
+    "latitudine": 43.682964,
+    "longitudine": 10.85512
+  },
+  {
+    "id": "50033",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Santa Croce sull'Arno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I177",
+    "latitudine": 43.710925,
+    "longitudine": 10.783619
+  },
+  {
+    "id": "50034",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Santa Luce",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I217",
+    "latitudine": 43.472669,
+    "longitudine": 10.564949
+  },
+  {
+    "id": "50035",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Santa Maria a Monte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I232",
+    "latitudine": 43.69876,
+    "longitudine": 10.689434
+  },
+  {
+    "id": "50036",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Terricciola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L138",
+    "latitudine": 43.522324,
+    "longitudine": 10.676001
+  },
+  {
+    "id": "50037",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Vecchiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L702",
+    "latitudine": 43.783338,
+    "longitudine": 10.388927
+  },
+  {
+    "id": "50038",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Vicopisano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L850",
+    "latitudine": 43.699145,
+    "longitudine": 10.583101
+  },
+  {
+    "id": "50039",
+    "id_regione": "9",
+    "id_provincia": "50",
+    "nome": "Volterra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M126",
+    "latitudine": 43.399395,
+    "longitudine": 10.866033
+  }
+]

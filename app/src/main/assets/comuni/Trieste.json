@@ -1,0 +1,62 @@
+[
+  {
+    "id": "32001",
+    "id_regione": "6",
+    "id_provincia": "32",
+    "nome": "Duino-Aurisina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D383",
+    "latitudine": 45.773446,
+    "longitudine": 13.642582
+  },
+  {
+    "id": "32002",
+    "id_regione": "6",
+    "id_provincia": "32",
+    "nome": "Monrupino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F378",
+    "latitudine": 45.722441,
+    "longitudine": 13.79176
+  },
+  {
+    "id": "32003",
+    "id_regione": "6",
+    "id_provincia": "32",
+    "nome": "Muggia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F795",
+    "latitudine": 45.603154,
+    "longitudine": 13.766797
+  },
+  {
+    "id": "32004",
+    "id_regione": "6",
+    "id_provincia": "32",
+    "nome": "San Dorligo della Valle-Dolina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D324",
+    "latitudine": 45.602723,
+    "longitudine": 13.854955
+  },
+  {
+    "id": "32005",
+    "id_regione": "6",
+    "id_provincia": "32",
+    "nome": "Sgonico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I715",
+    "latitudine": 45.736734,
+    "longitudine": 13.749002
+  },
+  {
+    "id": "32006",
+    "id_regione": "6",
+    "id_provincia": "32",
+    "nome": "Trieste",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L424",
+    "latitudine": 45.649526,
+    "longitudine": 13.776818
+  }
+]

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "11001",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Ameglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A261",
+    "latitudine": 44.0677,
+    "longitudine": 9.955594
+  },
+  {
+    "id": "11002",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Arcola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A373",
+    "latitudine": 44.113361,
+    "longitudine": 9.9046
+  },
+  {
+    "id": "11003",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Beverino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A836",
+    "latitudine": 44.19798,
+    "longitudine": 9.785592
+  },
+  {
+    "id": "11004",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Bolano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A932",
+    "latitudine": 44.186928,
+    "longitudine": 9.894618
+  },
+  {
+    "id": "11005",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Bonassola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A961",
+    "latitudine": 44.18213,
+    "longitudine": 9.583522
+  },
+  {
+    "id": "11006",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Borghetto di Vara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A992",
+    "latitudine": 44.222903,
+    "longitudine": 9.719693
+  },
+  {
+    "id": "11007",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Brugnato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B214",
+    "latitudine": 44.236275,
+    "longitudine": 9.720985
+  },
+  {
+    "id": "11008",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Calice al Cornoviglio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B410",
+    "latitudine": 44.247433,
+    "longitudine": 9.845977
+  },
+  {
+    "id": "11009",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Carro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B838",
+    "latitudine": 44.273191,
+    "longitudine": 9.604491
+  },
+  {
+    "id": "11010",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Carrodano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B839",
+    "latitudine": 44.240351,
+    "longitudine": 9.657681
+  },
+  {
+    "id": "11011",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Castelnuovo Magra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C240",
+    "latitudine": 44.101585,
+    "longitudine": 10.017428
+  },
+  {
+    "id": "11012",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Deiva Marina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D265",
+    "latitudine": 44.215995,
+    "longitudine": 9.51531
+  },
+  {
+    "id": "11013",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Follo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D655",
+    "latitudine": 44.167792,
+    "longitudine": 9.846185
+  },
+  {
+    "id": "11014",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Framura",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D758",
+    "latitudine": 44.206729,
+    "longitudine": 9.556032
+  },
+  {
+    "id": "11015",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "La Spezia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E463",
+    "latitudine": 44.10245,
+    "longitudine": 9.824083
+  },
+  {
+    "id": "11016",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Lerici",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E542",
+    "latitudine": 44.075633,
+    "longitudine": 9.916934
+  },
+  {
+    "id": "11017",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Levanto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E560",
+    "latitudine": 44.168614,
+    "longitudine": 9.610654
+  },
+  {
+    "id": "11018",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Maissana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E842",
+    "latitudine": 44.336517,
+    "longitudine": 9.535275
+  },
+  {
+    "id": "11019",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Monterosso al Mare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F609",
+    "latitudine": 44.148772,
+    "longitudine": 9.654408
+  },
+  {
+    "id": "11020",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Ortonovo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G143",
+    "latitudine": 44.089381,
+    "longitudine": 10.054239
+  },
+  {
+    "id": "11021",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Pignone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G664",
+    "latitudine": 44.179358,
+    "longitudine": 9.724118
+  },
+  {
+    "id": "11022",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Portovenere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G925",
+    "latitudine": 44.054126,
+    "longitudine": 9.836628
+  },
+  {
+    "id": "11023",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Riccò del Golfo di Spezia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H275",
+    "latitudine": 44.154787,
+    "longitudine": 9.764421
+  },
+  {
+    "id": "11024",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Riomaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H304",
+    "latitudine": 44.099049,
+    "longitudine": 9.737485
+  },
+  {
+    "id": "11025",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Rocchetta di Vara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H461",
+    "latitudine": 44.253221,
+    "longitudine": 9.779023
+  },
+  {
+    "id": "11026",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Santo Stefano di Magra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I363",
+    "latitudine": 44.161346,
+    "longitudine": 9.915649
+  },
+  {
+    "id": "11027",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Sarzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I449",
+    "latitudine": 44.111424,
+    "longitudine": 9.963122
+  },
+  {
+    "id": "11028",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Sesta Godano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E070",
+    "latitudine": 44.291837,
+    "longitudine": 9.673575
+  },
+  {
+    "id": "11029",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Varese Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L681",
+    "latitudine": 44.37793,
+    "longitudine": 9.591235
+  },
+  {
+    "id": "11030",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Vernazza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L774",
+    "latitudine": 44.134921,
+    "longitudine": 9.684994
+  },
+  {
+    "id": "11031",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Vezzano Ligure",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L819",
+    "latitudine": 44.14013,
+    "longitudine": 9.89059
+  },
+  {
+    "id": "11032",
+    "id_regione": "7",
+    "id_provincia": "11",
+    "nome": "Zignago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M177",
+    "latitudine": 44.297839,
+    "longitudine": 9.739652
+  }
+]

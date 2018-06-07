@@ -1,0 +1,172 @@
+[
+  {
+    "id": "45001",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Aulla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A496",
+    "latitudine": 44.216671,
+    "longitudine": 9.967497
+  },
+  {
+    "id": "45002",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Bagnone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A576",
+    "latitudine": 44.31468,
+    "longitudine": 9.994511
+  },
+  {
+    "id": "45003",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Carrara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B832",
+    "latitudine": 44.079325,
+    "longitudine": 10.097677
+  },
+  {
+    "id": "45004",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Casola in Lunigiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B979",
+    "latitudine": 44.20018,
+    "longitudine": 10.175478
+  },
+  {
+    "id": "45005",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Comano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C914",
+    "latitudine": 44.291519,
+    "longitudine": 10.130141
+  },
+  {
+    "id": "45006",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Filattiera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D590",
+    "latitudine": 44.33243,
+    "longitudine": 9.936329
+  },
+  {
+    "id": "45007",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Fivizzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D629",
+    "latitudine": 44.238246,
+    "longitudine": 10.127161
+  },
+  {
+    "id": "45008",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Fosdinovo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D735",
+    "latitudine": 44.132455,
+    "longitudine": 10.017247
+  },
+  {
+    "id": "45009",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Licciana Nardi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E574",
+    "latitudine": 44.26537,
+    "longitudine": 10.039111
+  },
+  {
+    "id": "45010",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Massa",
+    "capoluogo_provincia": true,
+    "codice_catastale": "F023",
+    "latitudine": 44.035444,
+    "longitudine": 10.139322
+  },
+  {
+    "id": "45011",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Montignoso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F679",
+    "latitudine": 43.982833,
+    "longitudine": 10.150538
+  },
+  {
+    "id": "45012",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Mulazzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F802",
+    "latitudine": 44.315259,
+    "longitudine": 9.889879
+  },
+  {
+    "id": "45013",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Podenzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G746",
+    "latitudine": 44.205497,
+    "longitudine": 9.939587
+  },
+  {
+    "id": "45014",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Pontremoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G870",
+    "latitudine": 44.37129,
+    "longitudine": 9.881598
+  },
+  {
+    "id": "45015",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Tresana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L386",
+    "latitudine": 44.254573,
+    "longitudine": 9.911779
+  },
+  {
+    "id": "45016",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Villafranca in Lunigiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L946",
+    "latitudine": 44.295157,
+    "longitudine": 9.950648
+  },
+  {
+    "id": "45017",
+    "id_regione": "9",
+    "id_provincia": "45",
+    "nome": "Zeri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M169",
+    "latitudine": 44.351594,
+    "longitudine": 9.77388
+  }
+]

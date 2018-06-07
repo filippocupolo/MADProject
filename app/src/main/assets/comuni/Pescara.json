@@ -1,0 +1,462 @@
+[
+  {
+    "id": "68001",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Abbateggio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A008",
+    "latitudine": 42.225629,
+    "longitudine": 14.010708
+  },
+  {
+    "id": "68002",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Alanno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A120",
+    "latitudine": 42.296299,
+    "longitudine": 13.967752
+  },
+  {
+    "id": "68003",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Bolognano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A945",
+    "latitudine": 42.217901,
+    "longitudine": 13.960891
+  },
+  {
+    "id": "68004",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Brittoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B193",
+    "latitudine": 42.313924,
+    "longitudine": 13.859136
+  },
+  {
+    "id": "68005",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Bussi sul Tirino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B294",
+    "latitudine": 42.213585,
+    "longitudine": 13.825392
+  },
+  {
+    "id": "68006",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Cappelle sul Tavo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B681",
+    "latitudine": 42.464752,
+    "longitudine": 14.10321
+  },
+  {
+    "id": "68007",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Caramanico Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B722",
+    "latitudine": 42.161112,
+    "longitudine": 14.008598
+  },
+  {
+    "id": "68008",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Carpineto della Nora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B827",
+    "latitudine": 42.333697,
+    "longitudine": 13.860142
+  },
+  {
+    "id": "68009",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Castiglione a Casauria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C308",
+    "latitudine": 42.236227,
+    "longitudine": 13.894203
+  },
+  {
+    "id": "68010",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Catignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C354",
+    "latitudine": 42.345165,
+    "longitudine": 13.945379
+  },
+  {
+    "id": "68011",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Cepagatti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C474",
+    "latitudine": 42.365664,
+    "longitudine": 14.072314
+  },
+  {
+    "id": "68012",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Città Sant'Angelo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C750",
+    "latitudine": 42.517648,
+    "longitudine": 14.060208
+  },
+  {
+    "id": "68013",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Civitaquana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C771",
+    "latitudine": 42.325417,
+    "longitudine": 13.901432
+  },
+  {
+    "id": "68014",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Civitella Casanova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C779",
+    "latitudine": 42.364151,
+    "longitudine": 13.884656
+  },
+  {
+    "id": "68015",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Collecorvino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C853",
+    "latitudine": 42.458406,
+    "longitudine": 14.016527
+  },
+  {
+    "id": "68016",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Corvara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D078",
+    "latitudine": 46.552591,
+    "longitudine": 11.874275
+  },
+  {
+    "id": "68017",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Cugnoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D201",
+    "latitudine": 42.306557,
+    "longitudine": 13.932504
+  },
+  {
+    "id": "68018",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Elice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D394",
+    "latitudine": 42.521475,
+    "longitudine": 13.970078
+  },
+  {
+    "id": "68019",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Farindola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D501",
+    "latitudine": 42.444087,
+    "longitudine": 13.819989
+  },
+  {
+    "id": "68020",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Lettomanoppello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E558",
+    "latitudine": 42.236144,
+    "longitudine": 14.036153
+  },
+  {
+    "id": "68021",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Loreto Aprutino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E691",
+    "latitudine": 42.433185,
+    "longitudine": 13.986668
+  },
+  {
+    "id": "68022",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Manoppello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E892",
+    "latitudine": 42.257617,
+    "longitudine": 14.061213
+  },
+  {
+    "id": "68023",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Montebello di Bertona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F441",
+    "latitudine": 42.416616,
+    "longitudine": 13.869555
+  },
+  {
+    "id": "68024",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Montesilvano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F646",
+    "latitudine": 42.510208,
+    "longitudine": 14.1437
+  },
+  {
+    "id": "68025",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Moscufo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F765",
+    "latitudine": 42.427376,
+    "longitudine": 14.053668
+  },
+  {
+    "id": "68026",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Nocciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F908",
+    "latitudine": 42.334385,
+    "longitudine": 13.985786
+  },
+  {
+    "id": "68027",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Penne",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G438",
+    "latitudine": 42.456912,
+    "longitudine": 13.928129
+  },
+  {
+    "id": "68028",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Pescara",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G482",
+    "latitudine": 42.46179,
+    "longitudine": 14.21609
+  },
+  {
+    "id": "68029",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Pescosansonesco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G499",
+    "latitudine": 42.25459,
+    "longitudine": 13.883739
+  },
+  {
+    "id": "68030",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Pianella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G555",
+    "latitudine": 42.398036,
+    "longitudine": 14.044994
+  },
+  {
+    "id": "68031",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Picciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G589",
+    "latitudine": 42.472949,
+    "longitudine": 13.990637
+  },
+  {
+    "id": "68032",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Pietranico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G621",
+    "latitudine": 42.277749,
+    "longitudine": 13.910504
+  },
+  {
+    "id": "68033",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Popoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G878",
+    "latitudine": 42.169443,
+    "longitudine": 13.830501
+  },
+  {
+    "id": "68034",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Roccamorice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H425",
+    "latitudine": 42.213663,
+    "longitudine": 14.024197
+  },
+  {
+    "id": "68035",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Rosciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H562",
+    "latitudine": 42.322479,
+    "longitudine": 14.046214
+  },
+  {
+    "id": "68036",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Salle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H715",
+    "latitudine": 42.17853,
+    "longitudine": 13.96184
+  },
+  {
+    "id": "68038",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "San Valentino in Abruzzo Citeriore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I376",
+    "latitudine": 42.234976,
+    "longitudine": 13.987589
+  },
+  {
+    "id": "68037",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Sant'Eufemia a Maiella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I332",
+    "latitudine": 42.105013,
+    "longitudine": 14.042064
+  },
+  {
+    "id": "68039",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Scafa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I482",
+    "latitudine": 42.2672,
+    "longitudine": 13.995906
+  },
+  {
+    "id": "68040",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Serramonacesca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I649",
+    "latitudine": 42.248955,
+    "longitudine": 14.093094
+  },
+  {
+    "id": "68041",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Spoltore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I922",
+    "latitudine": 42.454518,
+    "longitudine": 14.138817
+  },
+  {
+    "id": "68042",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Tocco da Casauria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L186",
+    "latitudine": 42.215013,
+    "longitudine": 13.913079
+  },
+  {
+    "id": "68043",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Torre de' Passeri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L263",
+    "latitudine": 42.24241,
+    "longitudine": 13.930961
+  },
+  {
+    "id": "68044",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Turrivalignani",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L475",
+    "latitudine": 42.262102,
+    "longitudine": 14.028306
+  },
+  {
+    "id": "68045",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Vicoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L846",
+    "latitudine": 42.341262,
+    "longitudine": 13.896835
+  },
+  {
+    "id": "68046",
+    "id_regione": "13",
+    "id_provincia": "68",
+    "nome": "Villa Celiera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L922",
+    "latitudine": 42.382302,
+    "longitudine": 13.859046
+  }
+]

@@ -1,0 +1,372 @@
+[
+  {
+    "id": "51001",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Anghiari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A291",
+    "latitudine": 43.540118,
+    "longitudine": 12.052159
+  },
+  {
+    "id": "51002",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Arezzo",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A390",
+    "latitudine": 43.463284,
+    "longitudine": 11.879634
+  },
+  {
+    "id": "51003",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Badia Tedalda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A541",
+    "latitudine": 43.70703,
+    "longitudine": 12.184508
+  },
+  {
+    "id": "51004",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Bibbiena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A851",
+    "latitudine": 43.694125,
+    "longitudine": 11.815856
+  },
+  {
+    "id": "51005",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Bucine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B243",
+    "latitudine": 43.478065,
+    "longitudine": 11.614893
+  },
+  {
+    "id": "51006",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Capolona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B670",
+    "latitudine": 43.565303,
+    "longitudine": 11.859124
+  },
+  {
+    "id": "51007",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Caprese Michelangelo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B693",
+    "latitudine": 43.641424,
+    "longitudine": 11.98719
+  },
+  {
+    "id": "51008",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Castel Focognano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C102",
+    "latitudine": 43.652285,
+    "longitudine": 11.787078
+  },
+  {
+    "id": "51010",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Castel San Niccolò",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C263",
+    "latitudine": 43.752326,
+    "longitudine": 11.722725
+  },
+  {
+    "id": "51040",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Castelfranco Piandiscò",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M322",
+    "latitudine": 43.621213,
+    "longitudine": 11.556909
+  },
+  {
+    "id": "51011",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Castiglion Fibocchi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C318",
+    "latitudine": 43.530658,
+    "longitudine": 11.762486
+  },
+  {
+    "id": "51012",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Castiglion Fiorentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C319",
+    "latitudine": 43.344702,
+    "longitudine": 11.91879
+  },
+  {
+    "id": "51013",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Cavriglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C407",
+    "latitudine": 43.522434,
+    "longitudine": 11.489002
+  },
+  {
+    "id": "51014",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Chitignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C648",
+    "latitudine": 43.660112,
+    "longitudine": 11.880045
+  },
+  {
+    "id": "51015",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Chiusi della Verna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C663",
+    "latitudine": 43.699301,
+    "longitudine": 11.935169
+  },
+  {
+    "id": "51016",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Civitella in Val di Chiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C774",
+    "latitudine": 43.396939,
+    "longitudine": 11.729605
+  },
+  {
+    "id": "51017",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Cortona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D077",
+    "latitudine": 43.275063,
+    "longitudine": 11.98512
+  },
+  {
+    "id": "51018",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Foiano della Chiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D649",
+    "latitudine": 43.254001,
+    "longitudine": 11.815962
+  },
+  {
+    "id": "51019",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Laterina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E468",
+    "latitudine": 43.507972,
+    "longitudine": 11.723536
+  },
+  {
+    "id": "51020",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Loro Ciuffenna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E693",
+    "latitudine": 43.592769,
+    "longitudine": 11.631905
+  },
+  {
+    "id": "51021",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Lucignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E718",
+    "latitudine": 43.27429,
+    "longitudine": 11.747409
+  },
+  {
+    "id": "51022",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Marciano della Chiana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E933",
+    "latitudine": 43.305243,
+    "longitudine": 11.787304
+  },
+  {
+    "id": "51025",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Monte San Savino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F628",
+    "latitudine": 43.329196,
+    "longitudine": 11.729206
+  },
+  {
+    "id": "51023",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Montemignaio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F565",
+    "latitudine": 43.743709,
+    "longitudine": 11.626818
+  },
+  {
+    "id": "51024",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Monterchi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F594",
+    "latitudine": 43.483176,
+    "longitudine": 12.113181
+  },
+  {
+    "id": "51026",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Montevarchi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F656",
+    "latitudine": 43.530781,
+    "longitudine": 11.563953
+  },
+  {
+    "id": "51027",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Ortignano Raggiolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G139",
+    "latitudine": 43.681707,
+    "longitudine": 11.75261
+  },
+  {
+    "id": "51028",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Pergine Valdarno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G451",
+    "latitudine": 43.469396,
+    "longitudine": 11.685278
+  },
+  {
+    "id": "51030",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Pieve Santo Stefano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G653",
+    "latitudine": 43.667571,
+    "longitudine": 12.043238
+  },
+  {
+    "id": "51031",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Poppi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G879",
+    "latitudine": 43.723377,
+    "longitudine": 11.770025
+  },
+  {
+    "id": "51041",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Pratovecchio Stia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M329",
+    "latitudine": 43.809734,
+    "longitudine": 11.691109
+  },
+  {
+    "id": "51033",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "San Giovanni Valdarno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H901",
+    "latitudine": 43.572487,
+    "longitudine": 11.523005
+  },
+  {
+    "id": "51034",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Sansepolcro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I155",
+    "latitudine": 43.572621,
+    "longitudine": 12.138261
+  },
+  {
+    "id": "51035",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Sestino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I681",
+    "latitudine": 43.707621,
+    "longitudine": 12.295209
+  },
+  {
+    "id": "51037",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Subbiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I991",
+    "latitudine": 43.571195,
+    "longitudine": 11.869063
+  },
+  {
+    "id": "51038",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Talla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L038",
+    "latitudine": 43.601195,
+    "longitudine": 11.787589
+  },
+  {
+    "id": "51039",
+    "id_regione": "9",
+    "id_provincia": "51",
+    "nome": "Terranuova Bracciolini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L123",
+    "latitudine": 43.551944,
+    "longitudine": 11.585273
+  }
+]

@@ -7,3 +7,6 @@
 /build
 /captures
 .externalNativeBuild
+app/src/main/AndroidManifest.xml
+app/src/main/java/com/example/andrea/lab11/bookImageAdapter.java
+app/src/main/java/com/example/andrea/lab11/insertBook.java

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/backButtonToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appToolbar"
+        popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolBar_h"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_arrow_back_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/back_toolbar_text"
+            android:textAlignment="center"
+            android:paddingRight="70dp"
+            android:paddingEnd="70dp"
+            android:textColor="#ffffffff"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="@string/add_book"
+            android:textSize="25dp"
+
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+</RelativeLayout>

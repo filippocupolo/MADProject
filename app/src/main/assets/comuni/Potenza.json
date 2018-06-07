@@ -1,0 +1,1002 @@
+[
+  {
+    "id": "76001",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Abriola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A013",
+    "latitudine": 40.50735,
+    "longitudine": 15.813881
+  },
+  {
+    "id": "76002",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Acerenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A020",
+    "latitudine": 40.79615,
+    "longitudine": 15.942972
+  },
+  {
+    "id": "76003",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Albano di Lucania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A131",
+    "latitudine": 40.587058,
+    "longitudine": 16.037129
+  },
+  {
+    "id": "76004",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Anzi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A321",
+    "latitudine": 40.516652,
+    "longitudine": 15.921301
+  },
+  {
+    "id": "76005",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Armento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A415",
+    "latitudine": 40.306075,
+    "longitudine": 16.06567
+  },
+  {
+    "id": "76006",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Atella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A482",
+    "latitudine": 40.875831,
+    "longitudine": 15.656975
+  },
+  {
+    "id": "76007",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Avigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A519",
+    "latitudine": 40.7299,
+    "longitudine": 15.714597
+  },
+  {
+    "id": "76008",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Balvano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A604",
+    "latitudine": 40.650928,
+    "longitudine": 15.511861
+  },
+  {
+    "id": "76009",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Banzi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A612",
+    "latitudine": 40.862238,
+    "longitudine": 16.012855
+  },
+  {
+    "id": "76010",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Baragiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A615",
+    "latitudine": 40.679962,
+    "longitudine": 15.593268
+  },
+  {
+    "id": "76011",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Barile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A666",
+    "latitudine": 40.947458,
+    "longitudine": 15.673837
+  },
+  {
+    "id": "76012",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Bella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A743",
+    "latitudine": 40.75897,
+    "longitudine": 15.537775
+  },
+  {
+    "id": "76013",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Brienza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B173",
+    "latitudine": 40.476416,
+    "longitudine": 15.627619
+  },
+  {
+    "id": "76014",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Brindisi Montagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B181",
+    "latitudine": 40.610424,
+    "longitudine": 15.939289
+  },
+  {
+    "id": "76015",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Calvello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B440",
+    "latitudine": 40.475023,
+    "longitudine": 15.850499
+  },
+  {
+    "id": "76016",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Calvera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B443",
+    "latitudine": 40.148987,
+    "longitudine": 16.143112
+  },
+  {
+    "id": "76017",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Campomaggiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B549",
+    "latitudine": 40.564769,
+    "longitudine": 16.070411
+  },
+  {
+    "id": "76018",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Cancellara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B580",
+    "latitudine": 40.730603,
+    "longitudine": 15.925666
+  },
+  {
+    "id": "76019",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Carbone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B743",
+    "latitudine": 40.141614,
+    "longitudine": 16.086786
+  },
+  {
+    "id": "76021",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Castelgrande",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C120",
+    "latitudine": 40.789363,
+    "longitudine": 15.433097
+  },
+  {
+    "id": "76022",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Castelluccio Inferiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C199",
+    "latitudine": 40.001349,
+    "longitudine": 15.982288
+  },
+  {
+    "id": "76023",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Castelluccio Superiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C201",
+    "latitudine": 40.010069,
+    "longitudine": 15.972984
+  },
+  {
+    "id": "76024",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Castelmezzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C209",
+    "latitudine": 40.528627,
+    "longitudine": 16.045491
+  },
+  {
+    "id": "76025",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Castelsaraceno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C271",
+    "latitudine": 40.163512,
+    "longitudine": 15.99252
+  },
+  {
+    "id": "76026",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Castronuovo di Sant'Andrea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C345",
+    "latitudine": 40.190109,
+    "longitudine": 16.184096
+  },
+  {
+    "id": "76027",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Cersosimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C539",
+    "latitudine": 40.04783,
+    "longitudine": 16.350138
+  },
+  {
+    "id": "76028",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Chiaromonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C619",
+    "latitudine": 40.124099,
+    "longitudine": 16.21645
+  },
+  {
+    "id": "76029",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Corleto Perticara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D010",
+    "latitudine": 40.38044,
+    "longitudine": 16.04154
+  },
+  {
+    "id": "76030",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Episcopia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D414",
+    "latitudine": 40.072852,
+    "longitudine": 16.099207
+  },
+  {
+    "id": "76031",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Fardella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D497",
+    "latitudine": 40.11331,
+    "longitudine": 16.16962
+  },
+  {
+    "id": "76032",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Filiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D593",
+    "latitudine": 40.810144,
+    "longitudine": 15.708444
+  },
+  {
+    "id": "76033",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Forenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D696",
+    "latitudine": 40.854853,
+    "longitudine": 15.861142
+  },
+  {
+    "id": "76034",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Francavilla in Sinni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D766",
+    "latitudine": 40.080128,
+    "longitudine": 16.202715
+  },
+  {
+    "id": "76035",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Gallicchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D876",
+    "latitudine": 40.291283,
+    "longitudine": 16.137254
+  },
+  {
+    "id": "76036",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Genzano di Lucania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D971",
+    "latitudine": 40.849003,
+    "longitudine": 16.032231
+  },
+  {
+    "id": "76099",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Ginestra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E033",
+    "latitudine": 40.930439,
+    "longitudine": 15.729718
+  },
+  {
+    "id": "76037",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Grumento Nova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E221",
+    "latitudine": 40.287459,
+    "longitudine": 15.890535
+  },
+  {
+    "id": "76038",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Guardia Perticara",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E246",
+    "latitudine": 40.360997,
+    "longitudine": 16.098979
+  },
+  {
+    "id": "76039",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Lagonegro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E409",
+    "latitudine": 40.123986,
+    "longitudine": 15.765325
+  },
+  {
+    "id": "76040",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Latronico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E474",
+    "latitudine": 40.088139,
+    "longitudine": 16.01028
+  },
+  {
+    "id": "76041",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Laurenzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E482",
+    "latitudine": 40.459496,
+    "longitudine": 15.969878
+  },
+  {
+    "id": "76042",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Lauria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E483",
+    "latitudine": 40.051193,
+    "longitudine": 15.838715
+  },
+  {
+    "id": "76043",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Lavello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E493",
+    "latitudine": 41.048228,
+    "longitudine": 15.788649
+  },
+  {
+    "id": "76044",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Maratea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E919",
+    "latitudine": 39.998522,
+    "longitudine": 15.718511
+  },
+  {
+    "id": "76045",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Marsico Nuovo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E976",
+    "latitudine": 40.422209,
+    "longitudine": 15.733473
+  },
+  {
+    "id": "76046",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Marsicovetere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E977",
+    "latitudine": 40.377129,
+    "longitudine": 15.822682
+  },
+  {
+    "id": "76047",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Maschito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F006",
+    "latitudine": 40.909407,
+    "longitudine": 15.830566
+  },
+  {
+    "id": "76048",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Melfi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F104",
+    "latitudine": 40.993314,
+    "longitudine": 15.653109
+  },
+  {
+    "id": "76049",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Missanello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F249",
+    "latitudine": 40.284448,
+    "longitudine": 16.167249
+  },
+  {
+    "id": "76050",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Moliterno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F295",
+    "latitudine": 40.239969,
+    "longitudine": 15.869126
+  },
+  {
+    "id": "76051",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Montemilone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F568",
+    "latitudine": 41.030698,
+    "longitudine": 15.969878
+  },
+  {
+    "id": "76052",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Montemurro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F573",
+    "latitudine": 40.297166,
+    "longitudine": 15.991624
+  },
+  {
+    "id": "76053",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Muro Lucano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F817",
+    "latitudine": 40.753807,
+    "longitudine": 15.486491
+  },
+  {
+    "id": "76054",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Nemoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F866",
+    "latitudine": 40.065384,
+    "longitudine": 15.798622
+  },
+  {
+    "id": "76055",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Noepoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F917",
+    "latitudine": 40.087357,
+    "longitudine": 16.327848
+  },
+  {
+    "id": "76056",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Oppido Lucano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G081",
+    "latitudine": 40.764857,
+    "longitudine": 15.991016
+  },
+  {
+    "id": "76057",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Palazzo San Gervasio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G261",
+    "latitudine": 40.932037,
+    "longitudine": 15.987783
+  },
+  {
+    "id": "76100",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Paterno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M269",
+    "latitudine": 40.379662,
+    "longitudine": 15.734439
+  },
+  {
+    "id": "76058",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Pescopagano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G496",
+    "latitudine": 40.835676,
+    "longitudine": 15.398009
+  },
+  {
+    "id": "76059",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Picerno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G590",
+    "latitudine": 40.641391,
+    "longitudine": 15.643863
+  },
+  {
+    "id": "76060",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Pietragalla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G616",
+    "latitudine": 40.746436,
+    "longitudine": 15.884883
+  },
+  {
+    "id": "76061",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Pietrapertosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G623",
+    "latitudine": 40.516186,
+    "longitudine": 16.063021
+  },
+  {
+    "id": "76062",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Pignola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G663",
+    "latitudine": 40.575448,
+    "longitudine": 15.781659
+  },
+  {
+    "id": "76063",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Potenza",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G942",
+    "latitudine": 40.640407,
+    "longitudine": 15.805604
+  },
+  {
+    "id": "76064",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Rapolla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H186",
+    "latitudine": 40.97662,
+    "longitudine": 15.673787
+  },
+  {
+    "id": "76065",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Rapone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H187",
+    "latitudine": 40.846187,
+    "longitudine": 15.499119
+  },
+  {
+    "id": "76066",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Rionero in Vulture",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H307",
+    "latitudine": 40.926358,
+    "longitudine": 15.669732
+  },
+  {
+    "id": "76067",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Ripacandida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H312",
+    "latitudine": 40.912033,
+    "longitudine": 15.721296
+  },
+  {
+    "id": "76068",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Rivello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H348",
+    "latitudine": 40.077124,
+    "longitudine": 15.754662
+  },
+  {
+    "id": "76069",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Roccanova",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H426",
+    "latitudine": 40.213155,
+    "longitudine": 16.204924
+  },
+  {
+    "id": "76070",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Rotonda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H590",
+    "latitudine": 39.952463,
+    "longitudine": 16.039041
+  },
+  {
+    "id": "76071",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Ruoti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H641",
+    "latitudine": 40.718174,
+    "longitudine": 15.67559
+  },
+  {
+    "id": "76072",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Ruvo del Monte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H646",
+    "latitudine": 40.847651,
+    "longitudine": 15.540469
+  },
+  {
+    "id": "76073",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "San Chirico Nuovo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H795",
+    "latitudine": 40.677323,
+    "longitudine": 16.07748
+  },
+  {
+    "id": "76074",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "San Chirico Raparo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H796",
+    "latitudine": 40.192104,
+    "longitudine": 16.076809
+  },
+  {
+    "id": "76075",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "San Costantino Albanese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H808",
+    "latitudine": 40.039228,
+    "longitudine": 16.304236
+  },
+  {
+    "id": "76076",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "San Fele",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H831",
+    "latitudine": 40.819272,
+    "longitudine": 15.540194
+  },
+  {
+    "id": "76077",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "San Martino d'Agri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H994",
+    "latitudine": 40.240091,
+    "longitudine": 16.05253
+  },
+  {
+    "id": "76020",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "San Paolo Albanese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B906",
+    "latitudine": 40.024027,
+    "longitudine": 16.334606
+  },
+  {
+    "id": "76078",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "San Severino Lucano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I157",
+    "latitudine": 40.021299,
+    "longitudine": 16.135344
+  },
+  {
+    "id": "76079",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Sant'Angelo Le Fratte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I288",
+    "latitudine": 40.545637,
+    "longitudine": 15.558049
+  },
+  {
+    "id": "76080",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Sant'Arcangelo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I305",
+    "latitudine": 40.256682,
+    "longitudine": 16.272657
+  },
+  {
+    "id": "76081",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Sarconi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I426",
+    "latitudine": 40.24866,
+    "longitudine": 15.889265
+  },
+  {
+    "id": "76082",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Sasso di Castalda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I457",
+    "latitudine": 40.482826,
+    "longitudine": 15.677855
+  },
+  {
+    "id": "76083",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Satriano di Lucania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G614",
+    "latitudine": 40.540789,
+    "longitudine": 15.639652
+  },
+  {
+    "id": "76084",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Savoia di Lucania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H730",
+    "latitudine": 40.569528,
+    "longitudine": 15.551644
+  },
+  {
+    "id": "76085",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Senise",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I610",
+    "latitudine": 40.149028,
+    "longitudine": 16.287448
+  },
+  {
+    "id": "76086",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Spinoso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I917",
+    "latitudine": 40.271093,
+    "longitudine": 15.967718
+  },
+  {
+    "id": "76087",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Teana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L082",
+    "latitudine": 40.125213,
+    "longitudine": 16.151773
+  },
+  {
+    "id": "76088",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Terranova di Pollino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L126",
+    "latitudine": 39.978598,
+    "longitudine": 16.296321
+  },
+  {
+    "id": "76089",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Tito",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L181",
+    "latitudine": 40.582938,
+    "longitudine": 15.676653
+  },
+  {
+    "id": "76090",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Tolve",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L197",
+    "latitudine": 40.695932,
+    "longitudine": 16.018884
+  },
+  {
+    "id": "76091",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Tramutola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L326",
+    "latitudine": 40.315495,
+    "longitudine": 15.792006
+  },
+  {
+    "id": "76092",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Trecchina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L357",
+    "latitudine": 40.026149,
+    "longitudine": 15.777597
+  },
+  {
+    "id": "76093",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Trivigno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L439",
+    "latitudine": 40.580146,
+    "longitudine": 15.988101
+  },
+  {
+    "id": "76094",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Vaglio Basilicata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L532",
+    "latitudine": 40.668483,
+    "longitudine": 15.918727
+  },
+  {
+    "id": "76095",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Venosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L738",
+    "latitudine": 40.960767,
+    "longitudine": 15.815423
+  },
+  {
+    "id": "76096",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Vietri di Potenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L859",
+    "latitudine": 40.599755,
+    "longitudine": 15.50683
+  },
+  {
+    "id": "76097",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Viggianello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L873",
+    "latitudine": 39.973207,
+    "longitudine": 16.084394
+  },
+  {
+    "id": "76098",
+    "id_regione": "17",
+    "id_provincia": "76",
+    "nome": "Viggiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L874",
+    "latitudine": 40.347039,
+    "longitudine": 15.899555
+  }
+]

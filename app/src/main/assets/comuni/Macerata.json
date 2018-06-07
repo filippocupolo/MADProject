@@ -1,0 +1,572 @@
+[
+  {
+    "id": "43001",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Acquacanina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A031",
+    "latitudine": 43.02821,
+    "longitudine": 13.177086
+  },
+  {
+    "id": "43002",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Apiro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A329",
+    "latitudine": 43.39105,
+    "longitudine": 13.131941
+  },
+  {
+    "id": "43003",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Appignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A334",
+    "latitudine": 43.363636,
+    "longitudine": 13.347078
+  },
+  {
+    "id": "43004",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Belforte del Chienti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A739",
+    "latitudine": 43.160082,
+    "longitudine": 13.23817
+  },
+  {
+    "id": "43005",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Bolognola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A947",
+    "latitudine": 42.997593,
+    "longitudine": 13.217427
+  },
+  {
+    "id": "43006",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Caldarola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B398",
+    "latitudine": 43.139787,
+    "longitudine": 13.224746
+  },
+  {
+    "id": "43007",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Camerino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B474",
+    "latitudine": 43.13565,
+    "longitudine": 13.068325
+  },
+  {
+    "id": "43008",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Camporotondo di Fiastrone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B562",
+    "latitudine": 43.132163,
+    "longitudine": 13.266831
+  },
+  {
+    "id": "43009",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Castelraimondo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C251",
+    "latitudine": 43.207143,
+    "longitudine": 13.057432
+  },
+  {
+    "id": "43010",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Castelsantangelo sul Nera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C267",
+    "latitudine": 42.894646,
+    "longitudine": 13.155185
+  },
+  {
+    "id": "43011",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Cessapalombo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C582",
+    "latitudine": 43.108065,
+    "longitudine": 13.257204
+  },
+  {
+    "id": "43012",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Cingoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C704",
+    "latitudine": 43.377335,
+    "longitudine": 13.213912
+  },
+  {
+    "id": "43013",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Civitanova Marche",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C770",
+    "latitudine": 43.304849,
+    "longitudine": 13.721835
+  },
+  {
+    "id": "43014",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Colmurano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C886",
+    "latitudine": 43.163981,
+    "longitudine": 13.35743
+  },
+  {
+    "id": "43015",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Corridonia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D042",
+    "latitudine": 43.250208,
+    "longitudine": 13.513169
+  },
+  {
+    "id": "43016",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Esanatoglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D429",
+    "latitudine": 43.252786,
+    "longitudine": 12.949535
+  },
+  {
+    "id": "43017",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Fiastra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D564",
+    "latitudine": 43.035951,
+    "longitudine": 13.156045
+  },
+  {
+    "id": "43018",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Fiordimonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D609",
+    "latitudine": 43.033547,
+    "longitudine": 13.093934
+  },
+  {
+    "id": "43019",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Fiuminata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D628",
+    "latitudine": 43.188436,
+    "longitudine": 12.934872
+  },
+  {
+    "id": "43020",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Gagliole",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D853",
+    "latitudine": 43.239109,
+    "longitudine": 13.068079
+  },
+  {
+    "id": "43021",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Gualdo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E228",
+    "latitudine": 42.881232,
+    "longitudine": 13.16603
+  },
+  {
+    "id": "43022",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Loro Piceno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E694",
+    "latitudine": 43.16522,
+    "longitudine": 13.417015
+  },
+  {
+    "id": "43023",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Macerata",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E783",
+    "latitudine": 43.298427,
+    "longitudine": 13.453477
+  },
+  {
+    "id": "43024",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Matelica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F051",
+    "latitudine": 43.251153,
+    "longitudine": 13.009196
+  },
+  {
+    "id": "43025",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Mogliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F268",
+    "latitudine": 43.185679,
+    "longitudine": 13.476115
+  },
+  {
+    "id": "43027",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Monte Cavallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F460",
+    "latitudine": 42.983783,
+    "longitudine": 12.978098
+  },
+  {
+    "id": "43031",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Monte San Giusto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F621",
+    "latitudine": 43.235056,
+    "longitudine": 13.593066
+  },
+  {
+    "id": "43032",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Monte San Martino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F622",
+    "latitudine": 43.03154,
+    "longitudine": 13.439585
+  },
+  {
+    "id": "43026",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Montecassiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F454",
+    "latitudine": 43.364433,
+    "longitudine": 13.437496
+  },
+  {
+    "id": "43028",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Montecosaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F482",
+    "latitudine": 43.316362,
+    "longitudine": 13.639233
+  },
+  {
+    "id": "43029",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Montefano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F496",
+    "latitudine": 43.412554,
+    "longitudine": 13.441086
+  },
+  {
+    "id": "43030",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Montelupone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F552",
+    "latitudine": 43.342889,
+    "longitudine": 13.570069
+  },
+  {
+    "id": "43033",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Morrovalle",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F749",
+    "latitudine": 43.314953,
+    "longitudine": 13.58253
+  },
+  {
+    "id": "43034",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Muccia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F793",
+    "latitudine": 43.080516,
+    "longitudine": 13.041525
+  },
+  {
+    "id": "43035",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Penna San Giovanni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G436",
+    "latitudine": 43.056696,
+    "longitudine": 13.423214
+  },
+  {
+    "id": "43036",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Petriolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G515",
+    "latitudine": 43.220093,
+    "longitudine": 13.463933
+  },
+  {
+    "id": "43038",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Pieve Torina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G657",
+    "latitudine": 43.043293,
+    "longitudine": 13.04594
+  },
+  {
+    "id": "43037",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Pievebovigliana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G637",
+    "latitudine": 43.062344,
+    "longitudine": 13.084647
+  },
+  {
+    "id": "43039",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Pioraco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G690",
+    "latitudine": 43.181056,
+    "longitudine": 12.974192
+  },
+  {
+    "id": "43040",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Poggio San Vicino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D566",
+    "latitudine": 43.37537,
+    "longitudine": 13.079148
+  },
+  {
+    "id": "43041",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Pollenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F567",
+    "latitudine": 43.27022,
+    "longitudine": 13.346623
+  },
+  {
+    "id": "43042",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Porto Recanati",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G919",
+    "latitudine": 43.432096,
+    "longitudine": 13.664128
+  },
+  {
+    "id": "43043",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Potenza Picena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F632",
+    "latitudine": 43.367398,
+    "longitudine": 13.623404
+  },
+  {
+    "id": "43044",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Recanati",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H211",
+    "latitudine": 43.403565,
+    "longitudine": 13.549532
+  },
+  {
+    "id": "43045",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Ripe San Ginesio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H323",
+    "latitudine": 43.142904,
+    "longitudine": 13.36744
+  },
+  {
+    "id": "43046",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "San Ginesio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H876",
+    "latitudine": 43.108441,
+    "longitudine": 13.318282
+  },
+  {
+    "id": "43047",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "San Severino Marche",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I156",
+    "latitudine": 43.230415,
+    "longitudine": 13.16538
+  },
+  {
+    "id": "43048",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Sant'Angelo in Pontano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I286",
+    "latitudine": 43.096541,
+    "longitudine": 13.399965
+  },
+  {
+    "id": "43049",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Sarnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I436",
+    "latitudine": 43.035532,
+    "longitudine": 13.299696
+  },
+  {
+    "id": "43050",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Sefro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I569",
+    "latitudine": 43.14733,
+    "longitudine": 12.949763
+  },
+  {
+    "id": "43051",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Serrapetrona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I651",
+    "latitudine": 43.176145,
+    "longitudine": 13.187246
+  },
+  {
+    "id": "43052",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Serravalle di Chienti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I661",
+    "latitudine": 43.074951,
+    "longitudine": 12.956802
+  },
+  {
+    "id": "43053",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Tolentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L191",
+    "latitudine": 43.208883,
+    "longitudine": 13.284743
+  },
+  {
+    "id": "43054",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Treia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L366",
+    "latitudine": 43.309177,
+    "longitudine": 13.312886
+  },
+  {
+    "id": "43055",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Urbisaglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L501",
+    "latitudine": 43.198171,
+    "longitudine": 13.377765
+  },
+  {
+    "id": "43056",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Ussita",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L517",
+    "latitudine": 42.943305,
+    "longitudine": 13.138218
+  },
+  {
+    "id": "43057",
+    "id_regione": "11",
+    "id_provincia": "43",
+    "nome": "Visso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M078",
+    "latitudine": 42.929273,
+    "longitudine": 13.087669
+  }
+]

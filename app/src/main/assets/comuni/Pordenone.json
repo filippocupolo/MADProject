@@ -1,0 +1,502 @@
+[
+  {
+    "id": "93001",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Andreis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A283",
+    "latitudine": 46.201338,
+    "longitudine": 12.612899
+  },
+  {
+    "id": "93002",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Arba",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A354",
+    "latitudine": 46.147181,
+    "longitudine": 12.786858
+  },
+  {
+    "id": "93004",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Aviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A516",
+    "latitudine": 46.069545,
+    "longitudine": 12.588139
+  },
+  {
+    "id": "93005",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Azzano Decimo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A530",
+    "latitudine": 45.881321,
+    "longitudine": 12.71447
+  },
+  {
+    "id": "93006",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Barcis",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A640",
+    "latitudine": 46.190718,
+    "longitudine": 12.559284
+  },
+  {
+    "id": "93007",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Brugnera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B215",
+    "latitudine": 45.901993,
+    "longitudine": 12.526491
+  },
+  {
+    "id": "93008",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Budoia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B247",
+    "latitudine": 46.048296,
+    "longitudine": 12.534714
+  },
+  {
+    "id": "93009",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Caneva",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B598",
+    "latitudine": 45.968126,
+    "longitudine": 12.448013
+  },
+  {
+    "id": "93010",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Casarsa della Delizia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B940",
+    "latitudine": 45.957339,
+    "longitudine": 12.842406
+  },
+  {
+    "id": "93011",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Castelnovo del Friuli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C217",
+    "latitudine": 46.2005,
+    "longitudine": 12.90224
+  },
+  {
+    "id": "93012",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Cavasso Nuovo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C385",
+    "latitudine": 46.194011,
+    "longitudine": 12.769078
+  },
+  {
+    "id": "93013",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Chions",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C640",
+    "latitudine": 45.846274,
+    "longitudine": 12.715768
+  },
+  {
+    "id": "93014",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Cimolais",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C699",
+    "latitudine": 46.2891,
+    "longitudine": 12.438541
+  },
+  {
+    "id": "93015",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Claut",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C790",
+    "latitudine": 46.268336,
+    "longitudine": 12.514373
+  },
+  {
+    "id": "93016",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Clauzetto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C791",
+    "latitudine": 46.227682,
+    "longitudine": 12.917363
+  },
+  {
+    "id": "93017",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Cordenons",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C991",
+    "latitudine": 45.985841,
+    "longitudine": 12.703551
+  },
+  {
+    "id": "93018",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Cordovado",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C993",
+    "latitudine": 45.845256,
+    "longitudine": 12.880459
+  },
+  {
+    "id": "93019",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Erto e Casso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D426",
+    "latitudine": 46.260516,
+    "longitudine": 12.366163
+  },
+  {
+    "id": "93020",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Fanna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D487",
+    "latitudine": 46.184825,
+    "longitudine": 12.751076
+  },
+  {
+    "id": "93021",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Fiume Veneto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D621",
+    "latitudine": 45.927436,
+    "longitudine": 12.73219
+  },
+  {
+    "id": "93022",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Fontanafredda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D670",
+    "latitudine": 45.974713,
+    "longitudine": 12.56818
+  },
+  {
+    "id": "93024",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Frisanco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D804",
+    "latitudine": 46.21249,
+    "longitudine": 12.726449
+  },
+  {
+    "id": "93025",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Maniago",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E889",
+    "latitudine": 46.165086,
+    "longitudine": 12.706567
+  },
+  {
+    "id": "93026",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Meduno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F089",
+    "latitudine": 46.217051,
+    "longitudine": 12.788202
+  },
+  {
+    "id": "93027",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Montereale Valcellina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F596",
+    "latitudine": 46.162886,
+    "longitudine": 12.661214
+  },
+  {
+    "id": "93028",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Morsano al Tagliamento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F750",
+    "latitudine": 45.858452,
+    "longitudine": 12.929484
+  },
+  {
+    "id": "93029",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Pasiano di Pordenone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G353",
+    "latitudine": 45.850292,
+    "longitudine": 12.628027
+  },
+  {
+    "id": "93030",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Pinzano al Tagliamento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G680",
+    "latitudine": 46.183094,
+    "longitudine": 12.94559
+  },
+  {
+    "id": "93031",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Polcenigo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G780",
+    "latitudine": 46.036914,
+    "longitudine": 12.497398
+  },
+  {
+    "id": "93032",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Porcia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G886",
+    "latitudine": 45.957371,
+    "longitudine": 12.618366
+  },
+  {
+    "id": "93033",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Pordenone",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G888",
+    "latitudine": 45.96264,
+    "longitudine": 12.655136
+  },
+  {
+    "id": "93034",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Prata di Pordenone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G994",
+    "latitudine": 45.902015,
+    "longitudine": 12.600708
+  },
+  {
+    "id": "93035",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Pravisdomini",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H010",
+    "latitudine": 45.818867,
+    "longitudine": 12.69409
+  },
+  {
+    "id": "93036",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Roveredo in Piano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H609",
+    "latitudine": 46.010254,
+    "longitudine": 12.619861
+  },
+  {
+    "id": "93037",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Sacile",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H657",
+    "latitudine": 45.952091,
+    "longitudine": 12.498583
+  },
+  {
+    "id": "93038",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "San Giorgio della Richinvelda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H891",
+    "latitudine": 46.045579,
+    "longitudine": 12.868027
+  },
+  {
+    "id": "93039",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "San Martino al Tagliamento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H999",
+    "latitudine": 46.020645,
+    "longitudine": 12.86407
+  },
+  {
+    "id": "93040",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "San Quirino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I136",
+    "latitudine": 46.036736,
+    "longitudine": 12.680074
+  },
+  {
+    "id": "93041",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "San Vito al Tagliamento",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I403",
+    "latitudine": 45.917978,
+    "longitudine": 12.857311
+  },
+  {
+    "id": "93042",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Sequals",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I621",
+    "latitudine": 46.164722,
+    "longitudine": 12.831288
+  },
+  {
+    "id": "93043",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Sesto al Reghena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I686",
+    "latitudine": 45.848377,
+    "longitudine": 12.815395
+  },
+  {
+    "id": "93044",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Spilimbergo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I904",
+    "latitudine": 46.117279,
+    "longitudine": 12.899296
+  },
+  {
+    "id": "93045",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Tramonti di Sopra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L324",
+    "latitudine": 46.308836,
+    "longitudine": 12.789695
+  },
+  {
+    "id": "93046",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Tramonti di Sotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L325",
+    "latitudine": 46.283383,
+    "longitudine": 12.79603
+  },
+  {
+    "id": "93047",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Travesio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L347",
+    "latitudine": 46.197803,
+    "longitudine": 12.868153
+  },
+  {
+    "id": "93052",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Vajont",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M265",
+    "latitudine": 46.147562,
+    "longitudine": 12.698492
+  },
+  {
+    "id": "93053",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Valvasone Arzene",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M346",
+    "latitudine": 46.011594,
+    "longitudine": 12.873135
+  },
+  {
+    "id": "93049",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Vito d'Asio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M085",
+    "latitudine": 46.228175,
+    "longitudine": 12.939525
+  },
+  {
+    "id": "93050",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Vivaro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M096",
+    "latitudine": 46.078226,
+    "longitudine": 12.776906
+  },
+  {
+    "id": "93051",
+    "id_regione": "6",
+    "id_provincia": "93",
+    "nome": "Zoppola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M190",
+    "latitudine": 45.963452,
+    "longitudine": 12.768807
+  }
+]

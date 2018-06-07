@@ -1,0 +1,332 @@
+[
+  {
+    "id": "44001",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Acquasanta Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A044",
+    "latitudine": 42.769109,
+    "longitudine": 13.409437
+  },
+  {
+    "id": "44002",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Acquaviva Picena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A047",
+    "latitudine": 42.944552,
+    "longitudine": 13.816105
+  },
+  {
+    "id": "44005",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Appignano del Tronto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A335",
+    "latitudine": 42.899268,
+    "longitudine": 13.657951
+  },
+  {
+    "id": "44006",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Arquata del Tronto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A437",
+    "latitudine": 42.772287,
+    "longitudine": 13.294913
+  },
+  {
+    "id": "44007",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Ascoli Piceno",
+    "capoluogo_provincia": true,
+    "codice_catastale": "A462",
+    "latitudine": 42.853604,
+    "longitudine": 13.574944
+  },
+  {
+    "id": "44010",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Carassai",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B727",
+    "latitudine": 43.031736,
+    "longitudine": 13.68484
+  },
+  {
+    "id": "44011",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Castel di Lama",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C093",
+    "latitudine": 42.881005,
+    "longitudine": 13.707048
+  },
+  {
+    "id": "44012",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Castignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C321",
+    "latitudine": 42.938556,
+    "longitudine": 13.62197
+  },
+  {
+    "id": "44013",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Castorano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C331",
+    "latitudine": 42.897771,
+    "longitudine": 13.730291
+  },
+  {
+    "id": "44014",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Colli del Tronto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C877",
+    "latitudine": 42.877085,
+    "longitudine": 13.747372
+  },
+  {
+    "id": "44015",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Comunanza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C935",
+    "latitudine": 42.954653,
+    "longitudine": 13.412039
+  },
+  {
+    "id": "44016",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Cossignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D096",
+    "latitudine": 42.983412,
+    "longitudine": 13.690337
+  },
+  {
+    "id": "44017",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Cupra Marittima",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D210",
+    "latitudine": 43.026527,
+    "longitudine": 13.858192
+  },
+  {
+    "id": "44020",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Folignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D652",
+    "latitudine": 42.820507,
+    "longitudine": 13.63363
+  },
+  {
+    "id": "44021",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Force",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D691",
+    "latitudine": 42.960614,
+    "longitudine": 13.486929
+  },
+  {
+    "id": "44023",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Grottammare",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E207",
+    "latitudine": 42.985343,
+    "longitudine": 13.868367
+  },
+  {
+    "id": "44027",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Maltignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E868",
+    "latitudine": 42.831742,
+    "longitudine": 13.684222
+  },
+  {
+    "id": "44029",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Massignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F044",
+    "latitudine": 43.050085,
+    "longitudine": 13.798106
+  },
+  {
+    "id": "44031",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Monsampolo del Tronto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F380",
+    "latitudine": 42.897558,
+    "longitudine": 13.792113
+  },
+  {
+    "id": "44032",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Montalto delle Marche",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F415",
+    "latitudine": 42.988785,
+    "longitudine": 13.608673
+  },
+  {
+    "id": "44034",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Montedinove",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F487",
+    "latitudine": 42.973573,
+    "longitudine": 13.590372
+  },
+  {
+    "id": "44036",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Montefiore dell'Aso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F501",
+    "latitudine": 43.051851,
+    "longitudine": 13.753639
+  },
+  {
+    "id": "44038",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Montegallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F516",
+    "latitudine": 42.840506,
+    "longitudine": 13.332957
+  },
+  {
+    "id": "44044",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Montemonaco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F570",
+    "latitudine": 42.89857,
+    "longitudine": 13.332451
+  },
+  {
+    "id": "44045",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Monteprandone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F591",
+    "latitudine": 42.9195,
+    "longitudine": 13.834459
+  },
+  {
+    "id": "44054",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Offida",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G005",
+    "latitudine": 42.940863,
+    "longitudine": 13.696505
+  },
+  {
+    "id": "44056",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Palmiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G289",
+    "latitudine": 42.899357,
+    "longitudine": 13.459886
+  },
+  {
+    "id": "44063",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Ripatransone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H321",
+    "latitudine": 42.997564,
+    "longitudine": 13.763242
+  },
+  {
+    "id": "44064",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Roccafluvione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H390",
+    "latitudine": 42.859595,
+    "longitudine": 13.476561
+  },
+  {
+    "id": "44065",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Rotella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H588",
+    "latitudine": 42.953948,
+    "longitudine": 13.559434
+  },
+  {
+    "id": "44066",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "San Benedetto del Tronto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H769",
+    "latitudine": 42.960979,
+    "longitudine": 13.874647
+  },
+  {
+    "id": "44071",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Spinetoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I912",
+    "latitudine": 42.889036,
+    "longitudine": 13.772663
+  },
+  {
+    "id": "44073",
+    "id_regione": "11",
+    "id_provincia": "44",
+    "nome": "Venarotta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L728",
+    "latitudine": 42.881568,
+    "longitudine": 13.493166
+  }
+]

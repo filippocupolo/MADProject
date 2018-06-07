@@ -1,0 +1,262 @@
+[
+  {
+    "id": "104001",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Aggius",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A069",
+    "latitudine": 40.930038,
+    "longitudine": 9.064927
+  },
+  {
+    "id": "104002",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Aglientu",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H848",
+    "latitudine": 41.078041,
+    "longitudine": 9.112743
+  },
+  {
+    "id": "104003",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Alà dei Sardi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A115",
+    "latitudine": 40.650803,
+    "longitudine": 9.327082
+  },
+  {
+    "id": "104004",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Arzachena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A453",
+    "latitudine": 41.078012,
+    "longitudine": 9.390154
+  },
+  {
+    "id": "104005",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Badesi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M214",
+    "latitudine": 40.967447,
+    "longitudine": 8.878624
+  },
+  {
+    "id": "104006",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Berchidda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A789",
+    "latitudine": 40.785907,
+    "longitudine": 9.164277
+  },
+  {
+    "id": "104007",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Bortigiadas",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B063",
+    "latitudine": 40.890928,
+    "longitudine": 9.042498
+  },
+  {
+    "id": "104008",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Buddusò",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B246",
+    "latitudine": 40.577041,
+    "longitudine": 9.255044
+  },
+  {
+    "id": "104009",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Budoni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B248",
+    "latitudine": 40.703939,
+    "longitudine": 9.705294
+  },
+  {
+    "id": "104010",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Calangianus",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B378",
+    "latitudine": 40.921119,
+    "longitudine": 9.192996
+  },
+  {
+    "id": "104011",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Golfo Aranci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M274",
+    "latitudine": 40.996124,
+    "longitudine": 9.625291
+  },
+  {
+    "id": "104012",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "La Maddalena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E425",
+    "latitudine": 41.216554,
+    "longitudine": 9.404712
+  },
+  {
+    "id": "104013",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Loiri Porto San Paolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M275",
+    "latitudine": 40.844723,
+    "longitudine": 9.493946
+  },
+  {
+    "id": "104014",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Luogosanto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E747",
+    "latitudine": 41.049657,
+    "longitudine": 9.206654
+  },
+  {
+    "id": "104015",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Luras",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E752",
+    "latitudine": 40.939858,
+    "longitudine": 9.171842
+  },
+  {
+    "id": "104016",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Monti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F667",
+    "latitudine": 40.80511,
+    "longitudine": 9.321366
+  },
+  {
+    "id": "104017",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Olbia",
+    "capoluogo_provincia": true,
+    "codice_catastale": "G015",
+    "latitudine": 40.923576,
+    "longitudine": 9.496443
+  },
+  {
+    "id": "104018",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Oschiri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G153",
+    "latitudine": 40.718775,
+    "longitudine": 9.099784
+  },
+  {
+    "id": "104019",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Padru",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M301",
+    "latitudine": 40.765973,
+    "longitudine": 9.52109
+  },
+  {
+    "id": "104020",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Palau",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G258",
+    "latitudine": 41.182368,
+    "longitudine": 9.381087
+  },
+  {
+    "id": "104023",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "San Teodoro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I329",
+    "latitudine": 40.772284,
+    "longitudine": 9.669546
+  },
+  {
+    "id": "104021",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Sant'Antonio di Gallura",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M276",
+    "latitudine": 40.989943,
+    "longitudine": 9.301778
+  },
+  {
+    "id": "104022",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Santa Teresa Gallura",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I312",
+    "latitudine": 41.238987,
+    "longitudine": 9.188079
+  },
+  {
+    "id": "104024",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Telti",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L088",
+    "latitudine": 40.871237,
+    "longitudine": 9.358199
+  },
+  {
+    "id": "104025",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Tempio Pausania",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L093",
+    "latitudine": 40.903136,
+    "longitudine": 9.104067
+  },
+  {
+    "id": "104026",
+    "id_regione": "20",
+    "id_provincia": "104",
+    "nome": "Trinità d'Agultu e Vignola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L428",
+    "latitudine": 40.986446,
+    "longitudine": 8.914406
+  }
+]

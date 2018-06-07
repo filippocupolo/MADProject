@@ -1,0 +1,332 @@
+[
+  {
+    "id": "46001",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Altopascio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A241",
+    "latitudine": 43.812488,
+    "longitudine": 10.677101
+  },
+  {
+    "id": "46002",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Bagni di Lucca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A560",
+    "latitudine": 44.010925,
+    "longitudine": 10.591651
+  },
+  {
+    "id": "46003",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Barga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A657",
+    "latitudine": 44.075634,
+    "longitudine": 10.482283
+  },
+  {
+    "id": "46004",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Borgo a Mozzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B007",
+    "latitudine": 43.978408,
+    "longitudine": 10.543041
+  },
+  {
+    "id": "46005",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Camaiore",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B455",
+    "latitudine": 43.94214,
+    "longitudine": 10.296908
+  },
+  {
+    "id": "46006",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Camporgiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B557",
+    "latitudine": 44.157203,
+    "longitudine": 10.334853
+  },
+  {
+    "id": "46007",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Capannori",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B648",
+    "latitudine": 43.841893,
+    "longitudine": 10.573325
+  },
+  {
+    "id": "46008",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Careggine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B760",
+    "latitudine": 44.120839,
+    "longitudine": 10.323661
+  },
+  {
+    "id": "46009",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Castelnuovo di Garfagnana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C236",
+    "latitudine": 44.109475,
+    "longitudine": 10.413547
+  },
+  {
+    "id": "46010",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Castiglione di Garfagnana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C303",
+    "latitudine": 44.152669,
+    "longitudine": 10.411279
+  },
+  {
+    "id": "46011",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Coreglia Antelminelli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C996",
+    "latitudine": 44.06336,
+    "longitudine": 10.527239
+  },
+  {
+    "id": "46036",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Fabbriche di Vergemoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M319",
+    "latitudine": 43.997451,
+    "longitudine": 10.428412
+  },
+  {
+    "id": "46013",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Forte dei Marmi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D730",
+    "latitudine": 43.957962,
+    "longitudine": 10.167279
+  },
+  {
+    "id": "46014",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Fosciandora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D734",
+    "latitudine": 44.114381,
+    "longitudine": 10.45589
+  },
+  {
+    "id": "46015",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Gallicano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D874",
+    "latitudine": 44.062227,
+    "longitudine": 10.438713
+  },
+  {
+    "id": "46017",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Lucca",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E715",
+    "latitudine": 43.837621,
+    "longitudine": 10.495061
+  },
+  {
+    "id": "46018",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Massarosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F035",
+    "latitudine": 43.872063,
+    "longitudine": 10.337366
+  },
+  {
+    "id": "46019",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Minucciano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F225",
+    "latitudine": 44.171308,
+    "longitudine": 10.208159
+  },
+  {
+    "id": "46020",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Molazzana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F283",
+    "latitudine": 44.071443,
+    "longitudine": 10.417759
+  },
+  {
+    "id": "46021",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Montecarlo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F452",
+    "latitudine": 43.853471,
+    "longitudine": 10.665801
+  },
+  {
+    "id": "46022",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Pescaglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G480",
+    "latitudine": 43.967427,
+    "longitudine": 10.411927
+  },
+  {
+    "id": "46023",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Piazza al Serchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G582",
+    "latitudine": 44.183284,
+    "longitudine": 10.301576
+  },
+  {
+    "id": "46024",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Pietrasanta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G628",
+    "latitudine": 43.959551,
+    "longitudine": 10.228632
+  },
+  {
+    "id": "46025",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Pieve Fosciana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G648",
+    "latitudine": 44.133415,
+    "longitudine": 10.414257
+  },
+  {
+    "id": "46026",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Porcari",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G882",
+    "latitudine": 43.841981,
+    "longitudine": 10.617661
+  },
+  {
+    "id": "46027",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "San Romano in Garfagnana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I142",
+    "latitudine": 44.168972,
+    "longitudine": 10.348886
+  },
+  {
+    "id": "46028",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Seravezza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I622",
+    "latitudine": 43.994113,
+    "longitudine": 10.230096
+  },
+  {
+    "id": "46037",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Sillano Giuncugnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M347",
+    "latitudine": 44.2107,
+    "longitudine": 10.246345
+  },
+  {
+    "id": "46030",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Stazzema",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I942",
+    "latitudine": 43.994016,
+    "longitudine": 10.313264
+  },
+  {
+    "id": "46031",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Vagli Sotto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L533",
+    "latitudine": 44.11575,
+    "longitudine": 10.27123
+  },
+  {
+    "id": "46033",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Viareggio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L833",
+    "latitudine": 43.865727,
+    "longitudine": 10.25131
+  },
+  {
+    "id": "46034",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Villa Basilica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L913",
+    "latitudine": 43.925707,
+    "longitudine": 10.64466
+  },
+  {
+    "id": "46035",
+    "id_regione": "9",
+    "id_provincia": "46",
+    "nome": "Villa Collemandina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L926",
+    "latitudine": 44.159861,
+    "longitudine": 10.396803
+  }
+]

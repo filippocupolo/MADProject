@@ -1,0 +1,272 @@
+[
+  {
+    "id": "101001",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Belvedere di Spinello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A772",
+    "latitudine": 39.207776,
+    "longitudine": 16.890119
+  },
+  {
+    "id": "101002",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Caccuri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B319",
+    "latitudine": 39.226722,
+    "longitudine": 16.776354
+  },
+  {
+    "id": "101003",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Carfizzi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B771",
+    "latitudine": 39.305873,
+    "longitudine": 16.975591
+  },
+  {
+    "id": "101004",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Casabona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B857",
+    "latitudine": 39.249826,
+    "longitudine": 16.952957
+  },
+  {
+    "id": "101005",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Castelsilano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B968",
+    "latitudine": 39.268426,
+    "longitudine": 16.765426
+  },
+  {
+    "id": "101006",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Cerenzia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C501",
+    "latitudine": 39.242907,
+    "longitudine": 16.787073
+  },
+  {
+    "id": "101007",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Cirò",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C725",
+    "latitudine": 39.381486,
+    "longitudine": 17.065017
+  },
+  {
+    "id": "101008",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Cirò Marina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C726",
+    "latitudine": 39.367614,
+    "longitudine": 17.127775
+  },
+  {
+    "id": "101009",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Cotronei",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D123",
+    "latitudine": 39.159121,
+    "longitudine": 16.777938
+  },
+  {
+    "id": "101010",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Crotone",
+    "capoluogo_provincia": true,
+    "codice_catastale": "D122",
+    "latitudine": 39.080793,
+    "longitudine": 17.12711
+  },
+  {
+    "id": "101011",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Crucoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D189",
+    "latitudine": 39.421958,
+    "longitudine": 17.005962
+  },
+  {
+    "id": "101012",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Cutro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D236",
+    "latitudine": 39.035915,
+    "longitudine": 16.974633
+  },
+  {
+    "id": "101013",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Isola di Capo Rizzuto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E339",
+    "latitudine": 38.957965,
+    "longitudine": 17.090622
+  },
+  {
+    "id": "101014",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Melissa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F108",
+    "latitudine": 39.309112,
+    "longitudine": 17.027126
+  },
+  {
+    "id": "101015",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Mesoraca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F157",
+    "latitudine": 39.082908,
+    "longitudine": 16.791183
+  },
+  {
+    "id": "101016",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Pallagorio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G278",
+    "latitudine": 39.308288,
+    "longitudine": 16.907472
+  },
+  {
+    "id": "101017",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Petilia Policastro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G508",
+    "latitudine": 39.113008,
+    "longitudine": 16.78429
+  },
+  {
+    "id": "101019",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Rocca di Neto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H403",
+    "latitudine": 39.190742,
+    "longitudine": 16.998961
+  },
+  {
+    "id": "101018",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Roccabernarda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H383",
+    "latitudine": 39.135656,
+    "longitudine": 16.873377
+  },
+  {
+    "id": "101020",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "San Mauro Marchesato",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I026",
+    "latitudine": 39.100612,
+    "longitudine": 16.923094
+  },
+  {
+    "id": "101021",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "San Nicola dell'Alto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I057",
+    "latitudine": 39.293421,
+    "longitudine": 16.969528
+  },
+  {
+    "id": "101022",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Santa Severina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I308",
+    "latitudine": 39.147807,
+    "longitudine": 16.915862
+  },
+  {
+    "id": "101023",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Savelli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I468",
+    "latitudine": 39.31247,
+    "longitudine": 16.782601
+  },
+  {
+    "id": "101024",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Scandale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I494",
+    "latitudine": 39.123897,
+    "longitudine": 16.958834
+  },
+  {
+    "id": "101025",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Strongoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I982",
+    "latitudine": 39.267088,
+    "longitudine": 17.050383
+  },
+  {
+    "id": "101026",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Umbriatico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L492",
+    "latitudine": 39.354107,
+    "longitudine": 16.920704
+  },
+  {
+    "id": "101027",
+    "id_regione": "18",
+    "id_provincia": "101",
+    "nome": "Verzino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L802",
+    "latitudine": 39.311151,
+    "longitudine": 16.86066
+  }
+]

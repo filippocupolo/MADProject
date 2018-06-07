@@ -1,0 +1,732 @@
+[
+  {
+    "id": "57001",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Accumoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A019",
+    "latitudine": 42.694592,
+    "longitudine": 13.245461
+  },
+  {
+    "id": "57002",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Amatrice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A258",
+    "latitudine": 42.628016,
+    "longitudine": 13.292479
+  },
+  {
+    "id": "57003",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Antrodoco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A315",
+    "latitudine": 42.421094,
+    "longitudine": 13.080453
+  },
+  {
+    "id": "57004",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Ascrea",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A464",
+    "latitudine": 42.197317,
+    "longitudine": 12.995281
+  },
+  {
+    "id": "57005",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Belmonte in Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A765",
+    "latitudine": 42.3143,
+    "longitudine": 12.891615
+  },
+  {
+    "id": "57006",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Borbona",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A981",
+    "latitudine": 42.513763,
+    "longitudine": 13.133476
+  },
+  {
+    "id": "57008",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Borgo Velino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A996",
+    "latitudine": 42.405665,
+    "longitudine": 13.059474
+  },
+  {
+    "id": "57007",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Borgorose",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B008",
+    "latitudine": 42.192769,
+    "longitudine": 13.235852
+  },
+  {
+    "id": "57009",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Cantalice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B627",
+    "latitudine": 42.46709,
+    "longitudine": 12.904476
+  },
+  {
+    "id": "57010",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Cantalupo in Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B631",
+    "latitudine": 42.305899,
+    "longitudine": 12.644935
+  },
+  {
+    "id": "57011",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Casaprota",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B934",
+    "latitudine": 42.252304,
+    "longitudine": 12.804706
+  },
+  {
+    "id": "57012",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Casperia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A472",
+    "latitudine": 42.337013,
+    "longitudine": 12.670063
+  },
+  {
+    "id": "57013",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Castel di Tora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C098",
+    "latitudine": 42.216394,
+    "longitudine": 12.965971
+  },
+  {
+    "id": "57015",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Castel Sant'Angelo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C268",
+    "latitudine": 41.903063,
+    "longitudine": 12.466276
+  },
+  {
+    "id": "57014",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Castelnuovo di Farfa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C224",
+    "latitudine": 42.232104,
+    "longitudine": 12.741934
+  },
+  {
+    "id": "57016",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Cittaducale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C746",
+    "latitudine": 42.388505,
+    "longitudine": 12.951607
+  },
+  {
+    "id": "57017",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Cittareale",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C749",
+    "latitudine": 42.617992,
+    "longitudine": 13.158765
+  },
+  {
+    "id": "57018",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Collalto Sabino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C841",
+    "latitudine": 42.136726,
+    "longitudine": 13.047011
+  },
+  {
+    "id": "57019",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Colle di Tora",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C857",
+    "latitudine": 42.208704,
+    "longitudine": 12.9472
+  },
+  {
+    "id": "57020",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Collegiove",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C859",
+    "latitudine": 42.175254,
+    "longitudine": 13.03761
+  },
+  {
+    "id": "57021",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Collevecchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C876",
+    "latitudine": 42.334999,
+    "longitudine": 12.552151
+  },
+  {
+    "id": "57022",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Colli sul Velino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C880",
+    "latitudine": 42.498968,
+    "longitudine": 12.779247
+  },
+  {
+    "id": "57023",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Concerviano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C946",
+    "latitudine": 42.322091,
+    "longitudine": 12.984993
+  },
+  {
+    "id": "57024",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Configni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C959",
+    "latitudine": 42.42688,
+    "longitudine": 12.645705
+  },
+  {
+    "id": "57025",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Contigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C969",
+    "latitudine": 42.410681,
+    "longitudine": 12.766553
+  },
+  {
+    "id": "57026",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Cottanello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D124",
+    "latitudine": 42.408797,
+    "longitudine": 12.687244
+  },
+  {
+    "id": "57027",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Fara in Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D493",
+    "latitudine": 42.209266,
+    "longitudine": 12.729304
+  },
+  {
+    "id": "57028",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Fiamignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D560",
+    "latitudine": 42.264634,
+    "longitudine": 13.121127
+  },
+  {
+    "id": "57029",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Forano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D689",
+    "latitudine": 42.29529,
+    "longitudine": 12.595142
+  },
+  {
+    "id": "57030",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Frasso Sabino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D785",
+    "latitudine": 42.229422,
+    "longitudine": 12.807342
+  },
+  {
+    "id": "57031",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Greccio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E160",
+    "latitudine": 42.445233,
+    "longitudine": 12.750297
+  },
+  {
+    "id": "57032",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Labro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E393",
+    "latitudine": 42.525357,
+    "longitudine": 12.801584
+  },
+  {
+    "id": "57033",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Leonessa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E535",
+    "latitudine": 42.566072,
+    "longitudine": 12.962445
+  },
+  {
+    "id": "57034",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Longone Sabino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E681",
+    "latitudine": 42.272961,
+    "longitudine": 12.969127
+  },
+  {
+    "id": "57035",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Magliano Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E812",
+    "latitudine": 42.364143,
+    "longitudine": 12.478807
+  },
+  {
+    "id": "57036",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Marcetelli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E927",
+    "latitudine": 42.226386,
+    "longitudine": 13.044811
+  },
+  {
+    "id": "57037",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Micigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F193",
+    "latitudine": 42.451486,
+    "longitudine": 13.052983
+  },
+  {
+    "id": "57038",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Mompeo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F319",
+    "latitudine": 42.246584,
+    "longitudine": 12.752508
+  },
+  {
+    "id": "57039",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Montasola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F430",
+    "latitudine": 42.384243,
+    "longitudine": 12.681906
+  },
+  {
+    "id": "57043",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Monte San Giovanni in Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F619",
+    "latitudine": 42.329144,
+    "longitudine": 12.779219
+  },
+  {
+    "id": "57040",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Montebuono",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F446",
+    "latitudine": 42.367404,
+    "longitudine": 12.597368
+  },
+  {
+    "id": "57041",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Monteleone Sabino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F541",
+    "latitudine": 42.233004,
+    "longitudine": 12.859311
+  },
+  {
+    "id": "57042",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Montenero Sabino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F579",
+    "latitudine": 42.281439,
+    "longitudine": 12.813188
+  },
+  {
+    "id": "57044",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Montopoli di Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F687",
+    "latitudine": 42.241783,
+    "longitudine": 12.688648
+  },
+  {
+    "id": "57045",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Morro Reatino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F746",
+    "latitudine": 42.526608,
+    "longitudine": 12.83266
+  },
+  {
+    "id": "57046",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Nespolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F876",
+    "latitudine": 42.155801,
+    "longitudine": 13.069404
+  },
+  {
+    "id": "57047",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Orvinio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B595",
+    "latitudine": 42.134044,
+    "longitudine": 12.937576
+  },
+  {
+    "id": "57048",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Paganico Sabino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G232",
+    "latitudine": 41.936603,
+    "longitudine": 12.625874
+  },
+  {
+    "id": "57049",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Pescorocchiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G498",
+    "latitudine": 42.20826,
+    "longitudine": 13.147916
+  },
+  {
+    "id": "57050",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Petrella Salto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G513",
+    "latitudine": 42.294361,
+    "longitudine": 13.068755
+  },
+  {
+    "id": "57051",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Poggio Bustone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G756",
+    "latitudine": 42.501206,
+    "longitudine": 12.887802
+  },
+  {
+    "id": "57052",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Poggio Catino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G757",
+    "latitudine": 42.295742,
+    "longitudine": 12.691022
+  },
+  {
+    "id": "57053",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Poggio Mirteto",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G763",
+    "latitudine": 42.268267,
+    "longitudine": 12.687625
+  },
+  {
+    "id": "57054",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Poggio Moiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G764",
+    "latitudine": 42.203018,
+    "longitudine": 12.875237
+  },
+  {
+    "id": "57055",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Poggio Nativo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G765",
+    "latitudine": 42.215343,
+    "longitudine": 12.794883
+  },
+  {
+    "id": "57056",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Poggio San Lorenzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G770",
+    "latitudine": 42.253139,
+    "longitudine": 12.845473
+  },
+  {
+    "id": "57057",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Posta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G934",
+    "latitudine": 17.047984,
+    "longitudine": -96.697485
+  },
+  {
+    "id": "57058",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Pozzaglia Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G951",
+    "latitudine": 42.157154,
+    "longitudine": 12.955067
+  },
+  {
+    "id": "57059",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Rieti",
+    "capoluogo_provincia": true,
+    "codice_catastale": "H282",
+    "latitudine": 42.404509,
+    "longitudine": 12.856728
+  },
+  {
+    "id": "57060",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Rivodutri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H354",
+    "latitudine": 42.517821,
+    "longitudine": 12.855546
+  },
+  {
+    "id": "57062",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Rocca Sinibalda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H446",
+    "latitudine": 42.274892,
+    "longitudine": 12.925655
+  },
+  {
+    "id": "57061",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Roccantica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H427",
+    "latitudine": 42.320211,
+    "longitudine": 12.692881
+  },
+  {
+    "id": "57063",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Salisano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H713",
+    "latitudine": 42.261244,
+    "longitudine": 12.748484
+  },
+  {
+    "id": "57064",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Scandriglia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I499",
+    "latitudine": 42.164283,
+    "longitudine": 12.841636
+  },
+  {
+    "id": "57065",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Selci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I581",
+    "latitudine": 42.319278,
+    "longitudine": 12.622142
+  },
+  {
+    "id": "57066",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Stimigliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I959",
+    "latitudine": 42.30099,
+    "longitudine": 12.562858
+  },
+  {
+    "id": "57067",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Tarano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L046",
+    "latitudine": 42.357777,
+    "longitudine": 12.59683
+  },
+  {
+    "id": "57068",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Toffia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L189",
+    "latitudine": 42.212454,
+    "longitudine": 12.753571
+  },
+  {
+    "id": "57070",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Torri in Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L286",
+    "latitudine": 42.35387,
+    "longitudine": 12.639145
+  },
+  {
+    "id": "57069",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Torricella in Sabina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L293",
+    "latitudine": 42.262143,
+    "longitudine": 12.869935
+  },
+  {
+    "id": "57071",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Turania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G507",
+    "latitudine": 42.13806,
+    "longitudine": 13.009213
+  },
+  {
+    "id": "57072",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Vacone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L525",
+    "latitudine": 42.385423,
+    "longitudine": 12.643606
+  },
+  {
+    "id": "57073",
+    "id_regione": "12",
+    "id_provincia": "57",
+    "nome": "Varco Sabino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L676",
+    "latitudine": 42.241373,
+    "longitudine": 13.021695
+  }
+]

@@ -1,0 +1,602 @@
+[
+  {
+    "id": "56001",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Acquapendente",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A040",
+    "latitudine": 42.747723,
+    "longitudine": 11.86302
+  },
+  {
+    "id": "56002",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Arlena di Castro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A412",
+    "latitudine": 42.462671,
+    "longitudine": 11.823377
+  },
+  {
+    "id": "56003",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Bagnoregio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A577",
+    "latitudine": 42.626881,
+    "longitudine": 12.091154
+  },
+  {
+    "id": "56004",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Barbarano Romano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A628",
+    "latitudine": 42.249392,
+    "longitudine": 12.067175
+  },
+  {
+    "id": "56006",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Bassano in Teverina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A706",
+    "latitudine": 42.465991,
+    "longitudine": 12.311246
+  },
+  {
+    "id": "56005",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Bassano Romano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A704",
+    "latitudine": 42.220572,
+    "longitudine": 12.188064
+  },
+  {
+    "id": "56007",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Blera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A857",
+    "latitudine": 42.275908,
+    "longitudine": 12.025464
+  },
+  {
+    "id": "56008",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Bolsena",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A949",
+    "latitudine": 42.644204,
+    "longitudine": 11.986438
+  },
+  {
+    "id": "56009",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Bomarzo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A955",
+    "latitudine": 42.48672,
+    "longitudine": 12.25028
+  },
+  {
+    "id": "56010",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Calcata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B388",
+    "latitudine": 42.21656,
+    "longitudine": 12.42115
+  },
+  {
+    "id": "56011",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Canepina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B597",
+    "latitudine": 42.379487,
+    "longitudine": 12.235381
+  },
+  {
+    "id": "56012",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Canino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B604",
+    "latitudine": 42.466403,
+    "longitudine": 11.750676
+  },
+  {
+    "id": "56013",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Capodimonte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B663",
+    "latitudine": 42.549667,
+    "longitudine": 11.912184
+  },
+  {
+    "id": "56014",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Capranica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B688",
+    "latitudine": 42.259545,
+    "longitudine": 12.174631
+  },
+  {
+    "id": "56015",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Caprarola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B691",
+    "latitudine": 42.327231,
+    "longitudine": 12.238749
+  },
+  {
+    "id": "56016",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Carbognano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B735",
+    "latitudine": 42.328343,
+    "longitudine": 12.262405
+  },
+  {
+    "id": "56017",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Castel Sant'Elia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C269",
+    "latitudine": 42.248525,
+    "longitudine": 12.365719
+  },
+  {
+    "id": "56018",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Castiglione in Teverina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C315",
+    "latitudine": 42.653432,
+    "longitudine": 12.191864
+  },
+  {
+    "id": "56019",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Celleno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C446",
+    "latitudine": 42.561161,
+    "longitudine": 12.139623
+  },
+  {
+    "id": "56020",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Cellere",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C447",
+    "latitudine": 42.511464,
+    "longitudine": 11.77475
+  },
+  {
+    "id": "56021",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Civita Castellana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C765",
+    "latitudine": 42.289148,
+    "longitudine": 12.414317
+  },
+  {
+    "id": "56022",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Civitella d'Agliano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C780",
+    "latitudine": 42.604293,
+    "longitudine": 12.185903
+  },
+  {
+    "id": "56023",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Corchiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C988",
+    "latitudine": 42.34455,
+    "longitudine": 12.360569
+  },
+  {
+    "id": "56024",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Fabrica di Roma",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D452",
+    "latitudine": 42.334755,
+    "longitudine": 12.294928
+  },
+  {
+    "id": "56025",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Faleria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D475",
+    "latitudine": 42.226172,
+    "longitudine": 12.443122
+  },
+  {
+    "id": "56026",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Farnese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D503",
+    "latitudine": 42.54736,
+    "longitudine": 11.723278
+  },
+  {
+    "id": "56027",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Gallese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D870",
+    "latitudine": 42.371691,
+    "longitudine": 12.402601
+  },
+  {
+    "id": "56028",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Gradoli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E126",
+    "latitudine": 42.645222,
+    "longitudine": 11.857297
+  },
+  {
+    "id": "56029",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Graffignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E128",
+    "latitudine": 42.576312,
+    "longitudine": 12.198297
+  },
+  {
+    "id": "56030",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Grotte di Castro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E210",
+    "latitudine": 42.671858,
+    "longitudine": 11.867182
+  },
+  {
+    "id": "56031",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Ischia di Castro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E330",
+    "latitudine": 42.544076,
+    "longitudine": 11.760934
+  },
+  {
+    "id": "56032",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Latera",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E467",
+    "latitudine": 42.63,
+    "longitudine": 11.828068
+  },
+  {
+    "id": "56033",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Lubriano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E713",
+    "latitudine": 42.636558,
+    "longitudine": 12.110039
+  },
+  {
+    "id": "56034",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Marta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E978",
+    "latitudine": 42.533896,
+    "longitudine": 11.924699
+  },
+  {
+    "id": "56035",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Montalto di Castro",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F419",
+    "latitudine": 42.351566,
+    "longitudine": 11.60701
+  },
+  {
+    "id": "56037",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Monte Romano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F603",
+    "latitudine": 42.268102,
+    "longitudine": 11.898421
+  },
+  {
+    "id": "56036",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Montefiascone",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F499",
+    "latitudine": 42.540238,
+    "longitudine": 12.033791
+  },
+  {
+    "id": "56038",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Monterosi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F606",
+    "latitudine": 42.198111,
+    "longitudine": 12.306365
+  },
+  {
+    "id": "56039",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Nepi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F868",
+    "latitudine": 42.242991,
+    "longitudine": 12.347616
+  },
+  {
+    "id": "56040",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Onano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G065",
+    "latitudine": 42.690607,
+    "longitudine": 11.816737
+  },
+  {
+    "id": "56041",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Oriolo Romano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G111",
+    "latitudine": 42.157351,
+    "longitudine": 12.138697
+  },
+  {
+    "id": "56042",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Orte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G135",
+    "latitudine": 42.457441,
+    "longitudine": 12.386984
+  },
+  {
+    "id": "56043",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Piansano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G571",
+    "latitudine": 42.520059,
+    "longitudine": 11.828866
+  },
+  {
+    "id": "56044",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Proceno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H071",
+    "latitudine": 42.758667,
+    "longitudine": 11.82666
+  },
+  {
+    "id": "56045",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Ronciglione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H534",
+    "latitudine": 42.293598,
+    "longitudine": 12.220722
+  },
+  {
+    "id": "56047",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "San Lorenzo Nuovo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H969",
+    "latitudine": 42.677186,
+    "longitudine": 11.923396
+  },
+  {
+    "id": "56048",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Soriano nel Cimino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I855",
+    "latitudine": 42.420624,
+    "longitudine": 12.236679
+  },
+  {
+    "id": "56049",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Sutri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L017",
+    "latitudine": 42.243903,
+    "longitudine": 12.218538
+  },
+  {
+    "id": "56050",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Tarquinia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D024",
+    "latitudine": 42.254185,
+    "longitudine": 11.757568
+  },
+  {
+    "id": "56051",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Tessennano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L150",
+    "latitudine": 42.478993,
+    "longitudine": 11.79119
+  },
+  {
+    "id": "56052",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Tuscania",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L310",
+    "latitudine": 42.418573,
+    "longitudine": 11.870309
+  },
+  {
+    "id": "56053",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Valentano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L569",
+    "latitudine": 42.566494,
+    "longitudine": 11.818399
+  },
+  {
+    "id": "56054",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Vallerano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L612",
+    "latitudine": 42.383527,
+    "longitudine": 12.263895
+  },
+  {
+    "id": "56055",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Vasanello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A701",
+    "latitudine": 42.417291,
+    "longitudine": 12.346059
+  },
+  {
+    "id": "56056",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Vejano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L713",
+    "latitudine": 42.216591,
+    "longitudine": 12.095637
+  },
+  {
+    "id": "56057",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Vetralla",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L814",
+    "latitudine": 42.318861,
+    "longitudine": 12.058817
+  },
+  {
+    "id": "56058",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Vignanello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L882",
+    "latitudine": 42.383745,
+    "longitudine": 12.278159
+  },
+  {
+    "id": "56046",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Villa San Giovanni in Tuscia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H913",
+    "latitudine": 42.280176,
+    "longitudine": 12.051464
+  },
+  {
+    "id": "56059",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Viterbo",
+    "capoluogo_provincia": true,
+    "codice_catastale": "M082",
+    "latitudine": 42.420677,
+    "longitudine": 12.107669
+  },
+  {
+    "id": "56060",
+    "id_regione": "12",
+    "id_provincia": "56",
+    "nome": "Vitorchiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M086",
+    "latitudine": 42.469193,
+    "longitudine": 12.172101
+  }
+]

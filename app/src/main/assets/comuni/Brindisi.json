@@ -1,0 +1,202 @@
+[
+  {
+    "id": "74001",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Brindisi",
+    "capoluogo_provincia": true,
+    "codice_catastale": "B180",
+    "latitudine": 40.632728,
+    "longitudine": 17.941762
+  },
+  {
+    "id": "74002",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Carovigno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B809",
+    "latitudine": 40.702252,
+    "longitudine": 17.661578
+  },
+  {
+    "id": "74003",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Ceglie Messapica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C424",
+    "latitudine": 40.644327,
+    "longitudine": 17.51778
+  },
+  {
+    "id": "74004",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Cellino San Marco",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C448",
+    "latitudine": 40.471663,
+    "longitudine": 17.96546
+  },
+  {
+    "id": "74005",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Cisternino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C741",
+    "latitudine": 40.743182,
+    "longitudine": 17.42489
+  },
+  {
+    "id": "74006",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Erchie",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D422",
+    "latitudine": 40.439144,
+    "longitudine": 17.73521
+  },
+  {
+    "id": "74007",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Fasano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D508",
+    "latitudine": 40.836659,
+    "longitudine": 17.360935
+  },
+  {
+    "id": "74008",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Francavilla Fontana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D761",
+    "latitudine": 40.530498,
+    "longitudine": 17.582782
+  },
+  {
+    "id": "74009",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Latiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E471",
+    "latitudine": 40.551613,
+    "longitudine": 17.717497
+  },
+  {
+    "id": "74010",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Mesagne",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F152",
+    "latitudine": 40.557725,
+    "longitudine": 17.810177
+  },
+  {
+    "id": "74011",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Oria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G098",
+    "latitudine": 40.499341,
+    "longitudine": 17.63888
+  },
+  {
+    "id": "74012",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Ostuni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G187",
+    "latitudine": 40.729524,
+    "longitudine": 17.577998
+  },
+  {
+    "id": "74013",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "San Donaci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H822",
+    "latitudine": 40.447514,
+    "longitudine": 17.922539
+  },
+  {
+    "id": "74014",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "San Michele Salentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I045",
+    "latitudine": 40.630702,
+    "longitudine": 17.635571
+  },
+  {
+    "id": "74015",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "San Pancrazio Salentino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I066",
+    "latitudine": 40.418531,
+    "longitudine": 17.840282
+  },
+  {
+    "id": "74016",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "San Pietro Vernotico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I119",
+    "latitudine": 40.487512,
+    "longitudine": 17.996729
+  },
+  {
+    "id": "74017",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "San Vito dei Normanni",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I396",
+    "latitudine": 40.658316,
+    "longitudine": 17.706466
+  },
+  {
+    "id": "74018",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Torchiarolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L213",
+    "latitudine": 40.482073,
+    "longitudine": 18.053639
+  },
+  {
+    "id": "74019",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Torre Santa Susanna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L280",
+    "latitudine": 40.464107,
+    "longitudine": 17.738528
+  },
+  {
+    "id": "74020",
+    "id_regione": "16",
+    "id_provincia": "74",
+    "nome": "Villa Castelli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L920",
+    "latitudine": 40.582762,
+    "longitudine": 17.477821
+  }
+]

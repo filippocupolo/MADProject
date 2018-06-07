@@ -1,0 +1,252 @@
+[
+  {
+    "id": "99001",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Bellaria-Igea Marina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A747",
+    "latitudine": 44.13436,
+    "longitudine": 12.46672
+  },
+  {
+    "id": "99021",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Casteldelci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C080",
+    "latitudine": 43.792106,
+    "longitudine": 12.153532
+  },
+  {
+    "id": "99002",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Cattolica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C357",
+    "latitudine": 43.963318,
+    "longitudine": 12.738432
+  },
+  {
+    "id": "99003",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Coriano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D004",
+    "latitudine": 43.963891,
+    "longitudine": 12.603362
+  },
+  {
+    "id": "99004",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Gemmano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D961",
+    "latitudine": 43.904943,
+    "longitudine": 12.580226
+  },
+  {
+    "id": "99022",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Maiolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E838",
+    "latitudine": 43.874146,
+    "longitudine": 12.310523
+  },
+  {
+    "id": "99005",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Misano Adriatico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F244",
+    "latitudine": 43.982546,
+    "longitudine": 12.694686
+  },
+  {
+    "id": "99006",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Mondaino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F346",
+    "latitudine": 43.857429,
+    "longitudine": 12.671921
+  },
+  {
+    "id": "99008",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Montefiore Conca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F502",
+    "latitudine": 43.888399,
+    "longitudine": 12.611423
+  },
+  {
+    "id": "99009",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Montegridolfo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F523",
+    "latitudine": 43.85848,
+    "longitudine": 12.687897
+  },
+  {
+    "id": "99029",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Montescudo - Monte Colombo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M368",
+    "latitudine": 43.918661,
+    "longitudine": 12.532931
+  },
+  {
+    "id": "99011",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Morciano di Romagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F715",
+    "latitudine": 43.911153,
+    "longitudine": 12.647942
+  },
+  {
+    "id": "99023",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Novafeltria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F137",
+    "latitudine": 43.890911,
+    "longitudine": 12.288228
+  },
+  {
+    "id": "99024",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Pennabilli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G433",
+    "latitudine": 43.817647,
+    "longitudine": 12.265999
+  },
+  {
+    "id": "99028",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Poggio Torriana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M324",
+    "latitudine": 43.990595,
+    "longitudine": 12.386494
+  },
+  {
+    "id": "99013",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Riccione",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H274",
+    "latitudine": 43.999296,
+    "longitudine": 12.655549
+  },
+  {
+    "id": "99014",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Rimini",
+    "capoluogo_provincia": true,
+    "codice_catastale": "H294",
+    "latitudine": 44.067829,
+    "longitudine": 12.569516
+  },
+  {
+    "id": "99015",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Saludecio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H724",
+    "latitudine": 43.874374,
+    "longitudine": 12.668391
+  },
+  {
+    "id": "99016",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "San Clemente",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H801",
+    "latitudine": 41.062169,
+    "longitudine": 14.366098
+  },
+  {
+    "id": "99017",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "San Giovanni in Marignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H921",
+    "latitudine": 43.940158,
+    "longitudine": 12.709322
+  },
+  {
+    "id": "99025",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "San Leo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H949",
+    "latitudine": 43.896619,
+    "longitudine": 12.343226
+  },
+  {
+    "id": "99026",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Sant'Agata Feltria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I201",
+    "latitudine": 43.86382,
+    "longitudine": 12.211215
+  },
+  {
+    "id": "99018",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Santarcangelo di Romagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I304",
+    "latitudine": 44.06336,
+    "longitudine": 12.452388
+  },
+  {
+    "id": "99027",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Talamello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L034",
+    "latitudine": 43.905299,
+    "longitudine": 12.28567
+  },
+  {
+    "id": "99020",
+    "id_regione": "8",
+    "id_provincia": "99",
+    "nome": "Verucchio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L797",
+    "latitudine": 43.983423,
+    "longitudine": 12.422454
+  }
+]

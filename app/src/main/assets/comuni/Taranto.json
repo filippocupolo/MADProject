@@ -1,0 +1,292 @@
+[
+  {
+    "id": "73001",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Avetrana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A514",
+    "latitudine": 40.350725,
+    "longitudine": 17.726671
+  },
+  {
+    "id": "73002",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Carosino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B808",
+    "latitudine": 40.466923,
+    "longitudine": 17.401359
+  },
+  {
+    "id": "73003",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Castellaneta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C136",
+    "latitudine": 40.628042,
+    "longitudine": 16.939739
+  },
+  {
+    "id": "73004",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Crispiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D171",
+    "latitudine": 40.603618,
+    "longitudine": 17.228581
+  },
+  {
+    "id": "73005",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Faggiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D463",
+    "latitudine": 40.421679,
+    "longitudine": 17.386961
+  },
+  {
+    "id": "73006",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Fragagnano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D754",
+    "latitudine": 40.427977,
+    "longitudine": 17.475268
+  },
+  {
+    "id": "73007",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Ginosa",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E036",
+    "latitudine": 40.577403,
+    "longitudine": 16.755808
+  },
+  {
+    "id": "73008",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Grottaglie",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E205",
+    "latitudine": 40.537954,
+    "longitudine": 17.435493
+  },
+  {
+    "id": "73009",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Laterza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E469",
+    "latitudine": 40.624944,
+    "longitudine": 16.798088
+  },
+  {
+    "id": "73010",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Leporano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E537",
+    "latitudine": 40.382072,
+    "longitudine": 17.333061
+  },
+  {
+    "id": "73011",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Lizzano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E630",
+    "latitudine": 40.390035,
+    "longitudine": 17.447597
+  },
+  {
+    "id": "73012",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Manduria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E882",
+    "latitudine": 40.398042,
+    "longitudine": 17.637686
+  },
+  {
+    "id": "73013",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Martina Franca",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E986",
+    "latitudine": 40.702867,
+    "longitudine": 17.339265
+  },
+  {
+    "id": "73014",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Maruggio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E995",
+    "latitudine": 40.326714,
+    "longitudine": 17.572958
+  },
+  {
+    "id": "73015",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Massafra",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F027",
+    "latitudine": 40.591085,
+    "longitudine": 17.118406
+  },
+  {
+    "id": "73016",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Monteiasi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F531",
+    "latitudine": 40.499984,
+    "longitudine": 17.382193
+  },
+  {
+    "id": "73017",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Montemesola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F563",
+    "latitudine": 40.5637,
+    "longitudine": 17.339174
+  },
+  {
+    "id": "73018",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Monteparano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F587",
+    "latitudine": 40.444133,
+    "longitudine": 17.413619
+  },
+  {
+    "id": "73019",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Mottola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F784",
+    "latitudine": 40.634925,
+    "longitudine": 17.032961
+  },
+  {
+    "id": "73020",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Palagianello",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G251",
+    "latitudine": 40.611073,
+    "longitudine": 16.973774
+  },
+  {
+    "id": "73021",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Palagiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G252",
+    "latitudine": 40.579077,
+    "longitudine": 17.035966
+  },
+  {
+    "id": "73022",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Pulsano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H090",
+    "latitudine": 40.384582,
+    "longitudine": 17.35466
+  },
+  {
+    "id": "73023",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Roccaforzata",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H409",
+    "latitudine": 40.437835,
+    "longitudine": 17.390061
+  },
+  {
+    "id": "73024",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "San Giorgio Ionico",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H882",
+    "latitudine": 40.456393,
+    "longitudine": 17.381926
+  },
+  {
+    "id": "73025",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "San Marzano di San Giuseppe",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I018",
+    "latitudine": 40.45072,
+    "longitudine": 17.507924
+  },
+  {
+    "id": "73026",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Sava",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I467",
+    "latitudine": 40.403712,
+    "longitudine": 17.557323
+  },
+  {
+    "id": "73029",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Statte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M298",
+    "latitudine": 40.562521,
+    "longitudine": 17.208791
+  },
+  {
+    "id": "73027",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Taranto",
+    "capoluogo_provincia": true,
+    "codice_catastale": "L049",
+    "latitudine": 40.464361,
+    "longitudine": 17.24703
+  },
+  {
+    "id": "73028",
+    "id_regione": "16",
+    "id_provincia": "73",
+    "nome": "Torricella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L294",
+    "latitudine": 40.354532,
+    "longitudine": 17.500905
+  }
+]

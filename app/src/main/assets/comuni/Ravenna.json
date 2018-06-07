@@ -1,0 +1,182 @@
+[
+  {
+    "id": "39001",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Alfonsine",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A191",
+    "latitudine": 44.505904,
+    "longitudine": 12.043067
+  },
+  {
+    "id": "39002",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Bagnacavallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A547",
+    "latitudine": 44.419736,
+    "longitudine": 11.976675
+  },
+  {
+    "id": "39003",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Bagnara di Romagna",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A551",
+    "latitudine": 44.389511,
+    "longitudine": 11.824849
+  },
+  {
+    "id": "39004",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Brisighella",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B188",
+    "latitudine": 44.221807,
+    "longitudine": 11.769046
+  },
+  {
+    "id": "39005",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Casola Valsenio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B982",
+    "latitudine": 44.223761,
+    "longitudine": 11.623818
+  },
+  {
+    "id": "39006",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Castel Bolognese",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C065",
+    "latitudine": 44.321262,
+    "longitudine": 11.795426
+  },
+  {
+    "id": "39007",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Cervia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C553",
+    "latitudine": 44.263549,
+    "longitudine": 12.347682
+  },
+  {
+    "id": "39008",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Conselice",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C963",
+    "latitudine": 44.515101,
+    "longitudine": 11.828529
+  },
+  {
+    "id": "39009",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Cotignola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D121",
+    "latitudine": 44.38353,
+    "longitudine": 11.943418
+  },
+  {
+    "id": "39010",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Faenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D458",
+    "latitudine": 44.289853,
+    "longitudine": 11.877409
+  },
+  {
+    "id": "39011",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Fusignano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D829",
+    "latitudine": 44.46693,
+    "longitudine": 11.963957
+  },
+  {
+    "id": "39012",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Lugo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E730",
+    "latitudine": 44.421831,
+    "longitudine": 11.911684
+  },
+  {
+    "id": "39013",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Massa Lombarda",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F029",
+    "latitudine": 44.447914,
+    "longitudine": 11.822924
+  },
+  {
+    "id": "39014",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Ravenna",
+    "capoluogo_provincia": true,
+    "codice_catastale": "H199",
+    "latitudine": 44.41836,
+    "longitudine": 12.203529
+  },
+  {
+    "id": "39015",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Riolo Terme",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H302",
+    "latitudine": 44.276383,
+    "longitudine": 11.73069
+  },
+  {
+    "id": "39016",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Russi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H642",
+    "latitudine": 44.373004,
+    "longitudine": 12.031541
+  },
+  {
+    "id": "39017",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Sant'Agata sul Santerno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I196",
+    "latitudine": 44.439424,
+    "longitudine": 11.863414
+  },
+  {
+    "id": "39018",
+    "id_regione": "8",
+    "id_provincia": "39",
+    "nome": "Solarolo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I787",
+    "latitudine": 44.36037,
+    "longitudine": 11.843491
+  }
+]

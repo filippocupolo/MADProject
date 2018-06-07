@@ -1,0 +1,332 @@
+[
+  {
+    "id": "59001",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Aprilia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A341",
+    "latitudine": 41.594402,
+    "longitudine": 12.656031
+  },
+  {
+    "id": "59002",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Bassiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A707",
+    "latitudine": 41.552207,
+    "longitudine": 13.026961
+  },
+  {
+    "id": "59003",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Campodimele",
+    "capoluogo_provincia": false,
+    "codice_catastale": "B527",
+    "latitudine": 41.386974,
+    "longitudine": 13.532632
+  },
+  {
+    "id": "59004",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Castelforte",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C104",
+    "latitudine": 41.298772,
+    "longitudine": 13.822532
+  },
+  {
+    "id": "59005",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Cisterna di Latina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C740",
+    "latitudine": 41.588941,
+    "longitudine": 12.829612
+  },
+  {
+    "id": "59006",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Cori",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D003",
+    "latitudine": 41.644507,
+    "longitudine": 12.912999
+  },
+  {
+    "id": "59007",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Fondi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D662",
+    "latitudine": 41.359119,
+    "longitudine": 13.426568
+  },
+  {
+    "id": "59008",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Formia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D708",
+    "latitudine": 41.255996,
+    "longitudine": 13.606867
+  },
+  {
+    "id": "59009",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Gaeta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "D843",
+    "latitudine": 41.21073,
+    "longitudine": 13.571429
+  },
+  {
+    "id": "59010",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Itri",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E375",
+    "latitudine": 41.290437,
+    "longitudine": 13.532163
+  },
+  {
+    "id": "59011",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Latina",
+    "capoluogo_provincia": true,
+    "codice_catastale": "E472",
+    "latitudine": 41.467567,
+    "longitudine": 12.903597
+  },
+  {
+    "id": "59012",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Lenola",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E527",
+    "latitudine": 41.409124,
+    "longitudine": 13.458688
+  },
+  {
+    "id": "59013",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Maenza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E798",
+    "latitudine": 41.523144,
+    "longitudine": 13.182108
+  },
+  {
+    "id": "59014",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Minturno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F224",
+    "latitudine": 41.265743,
+    "longitudine": 13.744364
+  },
+  {
+    "id": "59015",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Monte San Biagio",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F616",
+    "latitudine": 41.347665,
+    "longitudine": 13.353792
+  },
+  {
+    "id": "59016",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Norma",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F937",
+    "latitudine": 41.584572,
+    "longitudine": 12.975238
+  },
+  {
+    "id": "59017",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Pontinia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G865",
+    "latitudine": 41.404399,
+    "longitudine": 13.043743
+  },
+  {
+    "id": "59018",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Ponza",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G871",
+    "latitudine": 40.895574,
+    "longitudine": 12.958975
+  },
+  {
+    "id": "59019",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Priverno",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G698",
+    "latitudine": 41.469922,
+    "longitudine": 13.183253
+  },
+  {
+    "id": "59020",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Prossedi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H076",
+    "latitudine": 41.517681,
+    "longitudine": 13.260898
+  },
+  {
+    "id": "59022",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Rocca Massima",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H421",
+    "latitudine": 41.677779,
+    "longitudine": 12.920815
+  },
+  {
+    "id": "59021",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Roccagorga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H413",
+    "latitudine": 41.527144,
+    "longitudine": 13.155534
+  },
+  {
+    "id": "59023",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Roccasecca dei Volsci",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H444",
+    "latitudine": 41.480107,
+    "longitudine": 13.214752
+  },
+  {
+    "id": "59024",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Sabaudia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H647",
+    "latitudine": 41.301582,
+    "longitudine": 13.027576
+  },
+  {
+    "id": "59025",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "San Felice Circeo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "H836",
+    "latitudine": 41.259475,
+    "longitudine": 13.093317
+  },
+  {
+    "id": "59026",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Santi Cosma e Damiano",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I339",
+    "latitudine": 41.298891,
+    "longitudine": 13.812618
+  },
+  {
+    "id": "59027",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Sermoneta",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I634",
+    "latitudine": 41.549971,
+    "longitudine": 12.983687
+  },
+  {
+    "id": "59028",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Sezze",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I712",
+    "latitudine": 41.499416,
+    "longitudine": 13.061758
+  },
+  {
+    "id": "59029",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Sonnino",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I832",
+    "latitudine": 41.415979,
+    "longitudine": 13.241605
+  },
+  {
+    "id": "59030",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Sperlonga",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I892",
+    "latitudine": 41.263674,
+    "longitudine": 13.427141
+  },
+  {
+    "id": "59031",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Spigno Saturnia",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I902",
+    "latitudine": 41.305769,
+    "longitudine": 13.736182
+  },
+  {
+    "id": "59032",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Terracina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L120",
+    "latitudine": 41.296373,
+    "longitudine": 13.233266
+  },
+  {
+    "id": "59033",
+    "id_regione": "12",
+    "id_provincia": "59",
+    "nome": "Ventotene",
+    "capoluogo_provincia": false,
+    "codice_catastale": "L742",
+    "latitudine": 40.79831,
+    "longitudine": 13.432064
+  }
+]

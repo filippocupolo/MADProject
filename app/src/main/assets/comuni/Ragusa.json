@@ -1,0 +1,122 @@
+[
+  {
+    "id": "88001",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Acate",
+    "capoluogo_provincia": false,
+    "codice_catastale": "A014",
+    "latitudine": 37.025286,
+    "longitudine": 14.492466
+  },
+  {
+    "id": "88002",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Chiaramonte Gulfi",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C612",
+    "latitudine": 37.031075,
+    "longitudine": 14.703172
+  },
+  {
+    "id": "88003",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Comiso",
+    "capoluogo_provincia": false,
+    "codice_catastale": "C927",
+    "latitudine": 36.947379,
+    "longitudine": 14.603677
+  },
+  {
+    "id": "88004",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Giarratana",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E016",
+    "latitudine": 37.048544,
+    "longitudine": 14.793396
+  },
+  {
+    "id": "88005",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Ispica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "E366",
+    "latitudine": 36.788137,
+    "longitudine": 14.910157
+  },
+  {
+    "id": "88006",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Modica",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F258",
+    "latitudine": 36.858836,
+    "longitudine": 14.760815
+  },
+  {
+    "id": "88007",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Monterosso Almo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "F610",
+    "latitudine": 37.090417,
+    "longitudine": 14.765596
+  },
+  {
+    "id": "88008",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Pozzallo",
+    "capoluogo_provincia": false,
+    "codice_catastale": "G953",
+    "latitudine": 36.729861,
+    "longitudine": 14.849113
+  },
+  {
+    "id": "88009",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Ragusa",
+    "capoluogo_provincia": true,
+    "codice_catastale": "H163",
+    "latitudine": 36.926927,
+    "longitudine": 14.725513
+  },
+  {
+    "id": "88010",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Santa Croce Camerina",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I178",
+    "latitudine": 36.828466,
+    "longitudine": 14.524106
+  },
+  {
+    "id": "88011",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Scicli",
+    "capoluogo_provincia": false,
+    "codice_catastale": "I535",
+    "latitudine": 36.793212,
+    "longitudine": 14.706973
+  },
+  {
+    "id": "88012",
+    "id_regione": "19",
+    "id_provincia": "88",
+    "nome": "Vittoria",
+    "capoluogo_provincia": false,
+    "codice_catastale": "M088",
+    "latitudine": 36.9521,
+    "longitudine": 14.537265
+  }
+]
