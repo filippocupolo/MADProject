@@ -13,8 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.bumptech.glide.util.Util;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
@@ -29,6 +31,7 @@ public class MyBookList extends Fragment {
     private RecyclerView list;
     private ImageButton addBookButton;
     private TextView noItemMessage;
+    private ProgressBar spinner;
     private FirebaseRecyclerAdapter<BookInfo, CardViewBook> adapter;
 
     public MyBookList() {
@@ -56,6 +59,9 @@ public class MyBookList extends Fragment {
         list = view.findViewById(R.id.my_books_rv);
         addBookButton = view.findViewById(R.id.imageViewEditButton);
         noItemMessage = view.findViewById(R.id.my_books_emptyListMessage);
+        spinner = view.findViewById(R.id.progressBarBooks);
+
+        Utilities.loading_and_blur_background(view, spinner);
 
         //set query
         Query query = FirebaseDatabase.getInstance().getReference().child("books").orderByChild("owner").equalTo(new MyUser(context).getUserID());
@@ -94,6 +100,7 @@ public class MyBookList extends Fragment {
             @Override
             public void onDataChanged() {
                 super.onDataChanged();
+                Utilities.show_background(view, spinner);
                 noItemMessage.setVisibility(
                         getItemCount() == 0 ? View.VISIBLE : View.INVISIBLE
                 );
