@@ -61,7 +61,6 @@ class ChatService : Service(){
                     }
 
                     override fun onCancelled(p0: DatabaseError?) {
-                        //todo gestire
                     }
                 })
 
@@ -69,7 +68,6 @@ class ChatService : Service(){
             }
 
             override fun onCancelled(p0: DatabaseError?) {
-                //todo gestire
             }
 
             override fun onChildChanged(p0: DataSnapshot?, p1: String?) {

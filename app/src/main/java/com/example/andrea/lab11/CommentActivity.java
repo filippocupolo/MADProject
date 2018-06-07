@@ -101,7 +101,6 @@ public class CommentActivity extends AppCompatActivity {
                         Log.e(debugTag,databaseError.getMessage());
                     else
                         Log.d(debugTag,dataSnapshot.toString());
-                    //todo gestire
                 }
             });
 

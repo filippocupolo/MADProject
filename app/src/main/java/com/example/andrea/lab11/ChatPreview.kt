@@ -57,7 +57,6 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
             }
 
             override fun onCancelled(p0: DatabaseError?) {
-                //todo gestire
             }
         })
 

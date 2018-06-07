@@ -350,8 +350,6 @@ public class showProfile extends AppCompatActivity{
                 //check if the profile image is available and load it
                 StorageReference ref = FirebaseStorage.getInstance().getReference().child("profileImages/"+ userId);
 
-                //todo ref.getBytes lancia degli errori cercare di capire cosa sono
-                //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
                 ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
                     public void onSuccess(Uri uri) {

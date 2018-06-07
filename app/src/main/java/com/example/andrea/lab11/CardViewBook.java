@@ -88,8 +88,6 @@ public class CardViewBook extends RecyclerView.ViewHolder {
 
         StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/0");
 
-        //todo ref.getBytes lancia degli errori cercare di capire cosa sono
-        //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
         ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
 
             @Override

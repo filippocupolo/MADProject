@@ -152,9 +152,6 @@ public class ResultsList extends AppCompatActivity {
 
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                    //todo se un libro ha ad esempio titolo = autore viene stampato 2 volte
-
                     BookInfo book = parseDataSnapshotBook(dataSnapshot);
                     if(book == null)
                         return;
@@ -170,7 +167,6 @@ public class ResultsList extends AppCompatActivity {
                 @Override
                 public void onChildRemoved(DataSnapshot dataSnapshot) {
 
-                    //todo testare
                     BookInfo book = parseDataSnapshotBook(dataSnapshot);
                     if(book == null)
                         return;

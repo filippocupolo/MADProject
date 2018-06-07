@@ -94,7 +94,6 @@ class PersonalChat : AppCompatActivity() {
 
                 override fun onCancelled(databaseError: DatabaseError?) {
                     Log.e(deBugTag,databaseError?.getMessage()+databaseError?.getCode());
-                    //todo gestire
                 }
             })
         }

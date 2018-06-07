@@ -73,8 +73,6 @@ public class ShowBook extends AppCompatActivity {
     private ValueEventListener bookQueryListener;
     private DatabaseReference dbRef;
 
-    //todo stampa le condizioni del libro
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
 
@@ -305,7 +303,6 @@ public class ShowBook extends AppCompatActivity {
                                     dbRef.child("commentsDB").child(book.getBorrower()).child("can_comment").child(myUser.getUserID()).setValue(true);
 
                                     //set bookAccepted
-                                    //todo non funziona
                                     //dbRef.child("bookAccepted").child(book.getBorrower()).child("userId").setValue(myUser.getUserID());
                                     //Log.d(deBugTag,"bookAccepted");
 
@@ -363,7 +360,6 @@ public class ShowBook extends AppCompatActivity {
 
             final int c = i;
             Log.d(deBugTag,"faccio richiesta" + i);
-            //todo ref.getBytes lancia degli errori cercare di capire cosa sono
             ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override
                 public void onSuccess(Uri uri) {

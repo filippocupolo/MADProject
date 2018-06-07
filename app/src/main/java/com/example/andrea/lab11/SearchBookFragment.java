@@ -115,7 +115,6 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
         if(researcherLoc == null)
             Log.d(deBugTag,"problema");
 
-        //todo cambiare lo zoom e il radius
         LatLng latlng = new LatLng(researcherLoc.latitude,researcherLoc.longitude);
         CameraPosition cameraPosition = new CameraPosition.Builder()
                 .target(latlng)
@@ -167,7 +166,6 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
                     @Override
                     public void onChildRemoved(DataSnapshot dataSnapshot) {
-                        //todo testare se facendo cosi rimuove tutti i libri da quella location
                         Log.d(deBugTag,"re");
                         if(dataSnapshot == null)
                             return;
@@ -215,7 +213,6 @@ public class SearchBookFragment extends Fragment implements OnMapReadyCallback {
 
             @Override
             public void onGeoQueryError(DatabaseError error) {
-                //todo gestisci
                 Log.e(deBugTag, "error");
             }
         });
