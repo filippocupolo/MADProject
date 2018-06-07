@@ -36,6 +36,8 @@ class ChatService : Service(){
         FirebaseApp.initializeApp(this)
         dbRef = FirebaseDatabase.getInstance().reference
 
+
+
         valueListeners = ArrayList<ValueEventListener>()
 
         chilListener = dbRef!!.child("usersChat").child(userId).addChildEventListener( object : ChildEventListener{

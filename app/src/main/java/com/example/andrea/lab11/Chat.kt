@@ -95,6 +95,8 @@ class Chat : Fragment() {
 
             override fun onChildAdded( dataSnapshot:DataSnapshot?,  s:String?) {
 
+                Log.d(deBugTag,"onChildAdded")
+
                 if(dataSnapshot == null)
                     return
 
@@ -112,8 +114,12 @@ class Chat : Fragment() {
 
             override fun onChildChanged(dataSnapshot:DataSnapshot,  s:String?) {
 
+                Log.d(deBugTag,"onChildChanged")
+
                 if(dataSnapshot == null)
                     return
+
+                list.clear()
 
                 for(data in dataSnapshot.children){
                     var model = ChatPreviewModel(data.key,data.child("userId").value.toString(),data.child("userName").value.toString())
@@ -124,6 +130,8 @@ class Chat : Fragment() {
 
             override fun onChildRemoved(dataSnapshot:DataSnapshot) {
 
+
+                Log.d(deBugTag,"onChildRemoved")
                 list.clear()
                 adapter.notifyDataSetChanged()
             }

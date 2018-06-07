@@ -201,14 +201,12 @@ public class Utilities {
 
     public static void showDialogForComment(Context context, String type, String userID) {
 
-        //todo fai stringe
-
         String title;
         String message;
 
         if(type.equals("LENDER_COMMENT")){
-            title = "Commenta";
-            message = "Vuoi dare un voto";
+            title = context.getResources().getString(R.string.comment);
+            message = context.getResources().getString(R.string.give_rate_question);
         }else{
             return;
         }
@@ -220,7 +218,6 @@ public class Utilities {
         builder.setPositiveButton("OK",  new DialogInterface.OnClickListener(){
             @Override
             public void onClick(DialogInterface d,int i) {
-                Log.d(deBugTag,"premuto messaggio positivo");
                 Intent intent = new Intent(context,CommentActivity.class);
                 intent.putExtra("userId",userID);
                 context.startActivity(intent);

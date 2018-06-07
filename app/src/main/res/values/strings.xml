@@ -124,4 +124,9 @@
 Would you like to leave a review?</string>
     <string name="new_book_received">You received a new book!</string>
     <string name="request_sent">Request sent</string>
+    <string name="book_already_on_loan">The book is already on loan</string>
+    <string name="give_rate">You must give a rate</string>
+    <string name="cannot_comment">You cannot comment until you do not share and return a book with this person</string>
+    <string name="give_rate_question">Do you want give a rate to this person?</string>
+
 </resources>

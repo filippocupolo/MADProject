@@ -77,6 +77,9 @@ public class ShowBook extends AppCompatActivity {
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+
+        Log.d(deBugTag,"onCreate");
+
         super.onCreate(savedInstanceState);
 
         deBugTag = this.getClass().getName();
@@ -301,6 +304,11 @@ public class ShowBook extends AppCompatActivity {
                                     dbRef.child("commentsDB").child(myUser.getUserID()).child("can_comment").child(book.getBorrower()).setValue(true);
                                     dbRef.child("commentsDB").child(book.getBorrower()).child("can_comment").child(myUser.getUserID()).setValue(true);
 
+                                    //set bookAccepted
+                                    //todo non funziona
+                                    //dbRef.child("bookAccepted").child(book.getBorrower()).child("userId").setValue(myUser.getUserID());
+                                    //Log.d(deBugTag,"bookAccepted");
+
                                     lendingMessage.setVisibility(View.GONE);
                                     endLendingButton.setVisibility(View.GONE);
                                 });
@@ -328,46 +336,6 @@ public class ShowBook extends AppCompatActivity {
                         }else{
                             goToProfileButton.setVisibility(View.GONE);
                         }
-
-                        for (int i = 0; i<4; i++){
-
-                            //request for Images
-                            StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/" + i);
-
-                            final int c = i;
-
-                            //todo ref.getBytes lancia degli errori cercare di capire cosa sono
-                            ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                @Override
-                                public void onSuccess(Uri uri) {
-
-                                    //create File
-                                    File file = new File(getFilesDir(), "bookImage"+ c +".jpg");
-
-                                    FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                                        @Override
-                                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-
-                                            imagesList.add(Drawable.createFromPath(file.getPath()));
-                                            adapter.notifyDataSetChanged();
-
-                                        }
-                                    }).addOnFailureListener(new OnFailureListener() {
-                                        @Override
-                                        public void onFailure(@NonNull Exception e) {
-                                            Log.e(deBugTag,e.getMessage());
-
-                                        }
-                                    });
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-
-                                    Log.e(deBugTag,e.getMessage());
-                                }
-                            });
-                        }
                     }
 
 
@@ -387,6 +355,47 @@ public class ShowBook extends AppCompatActivity {
             }
         };
         bookQuery.addValueEventListener(bookQueryListener);
+
+        for (int i = 0; i<4; i++){
+
+            //request for Images
+            StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/" + i);
+
+            final int c = i;
+            Log.d(deBugTag,"faccio richiesta" + i);
+            //todo ref.getBytes lancia degli errori cercare di capire cosa sono
+            ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                @Override
+                public void onSuccess(Uri uri) {
+
+                    //create File
+                    File file = new File(getFilesDir(), "bookImage"+ c +".jpg");
+
+                    FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
+
+                            Log.d(deBugTag,"ricevuto task: "+ taskSnapshot.toString());
+                            imagesList.add(Drawable.createFromPath(file.getPath()));
+                            adapter.notifyDataSetChanged();
+
+                        }
+                    }).addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
+                            Log.e(deBugTag,e.getMessage());
+
+                        }
+                    });
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+
+                    Log.e(deBugTag,e.getMessage());
+                }
+            });
+        }
 
     }
 

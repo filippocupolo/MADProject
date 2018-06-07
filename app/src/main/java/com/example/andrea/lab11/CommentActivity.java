@@ -59,9 +59,8 @@ public class CommentActivity extends AppCompatActivity {
 
         uploadComment.setOnClickListener(v->{
 
-            //todo make stringa toast
             if(ratingCounter == -1){
-                Toast.makeText(this, "devi prima dare un rating", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.give_rate, Toast.LENGTH_SHORT).show();
                 return;
             }
 

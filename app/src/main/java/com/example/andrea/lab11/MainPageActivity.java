@@ -64,7 +64,7 @@ public class MainPageActivity extends AppCompatActivity {
         int numPage = getIntent().getIntExtra("page",0);
         viewPager.setCurrentItem(numPage);
 
-        //check for notification
+        /*check for notification
         dbRef = FirebaseDatabase.getInstance().getReference().child("bookAccepted")
                 .child(new MyUser(getApplicationContext()).getUserID());
         childEventListener = new ChildEventListener() {
@@ -99,7 +99,7 @@ public class MainPageActivity extends AppCompatActivity {
 
             }
         };
-        dbRef.addChildEventListener(childEventListener);
+        dbRef.addChildEventListener(childEventListener);*/
 
     }
 

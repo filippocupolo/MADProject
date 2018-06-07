@@ -119,4 +119,8 @@
 Vuoi lasciare un commento?</string>
     <string name="new_book_received">Hai ricevuto un nuovo libro</string>
     <string name="request_sent">Richiesta inviata</string>
+    <string name="book_already_on_loan">Il libro è già in prestito</string>
+    <string name="give_rate">Devi prima dare un voto</string>
+    <string name="cannot_comment">Non puoi commentare finchè non hai scambiato e restituito un libro con questa persona</string>
+    <string name="give_rate_question">Vuoi dare un voto a questa persona?</string>
 </resources>

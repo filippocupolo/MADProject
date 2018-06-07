@@ -56,9 +56,6 @@ import static android.graphics.drawable.Drawable.createFromPath;
 
 public class showProfile extends AppCompatActivity{
 
-    //todo se sai sul tuo profilo non puoi mandarti messaggi o commenti se vai su chat e poi apri una chat da un profilo e poi ritorni sulla chat le chat raddopiano (2 chat con dine 2 con mario ecc..)
-
-
     private Context context;
     private String deBugTag;
     private AppCompatActivity activity;
@@ -284,8 +281,7 @@ public class showProfile extends AppCompatActivity{
                         commentIntent.putExtra("userId", userId);
                         startActivity(commentIntent);
                     }else{
-                        //todo fai stringa
-                        Toast.makeText(context,"Non puoi scrivere un commento se non hai scambiato un libro con questo utente",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context,R.string.cannot_comment,Toast.LENGTH_SHORT).show();
                     }
                 });
             }
