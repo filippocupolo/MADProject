@@ -56,6 +56,9 @@ import static android.graphics.drawable.Drawable.createFromPath;
 
 public class showProfile extends AppCompatActivity{
 
+    //todo se sai sul tuo profilo non puoi mandarti messaggi o commenti se vai su chat e poi apri una chat da un profilo e poi ritorni sulla chat le chat raddopiano (2 chat con dine 2 con mario ecc..)
+
+
     private Context context;
     private String deBugTag;
     private AppCompatActivity activity;
