@@ -127,5 +127,7 @@ Would you like to leave a review?</string>
     <string name="give_rate">You must give a rate</string>
     <string name="cannot_comment">You cannot comment until you do not share and return a book with this person</string>
     <string name="give_rate_question">Do you want give a rate to this person?</string>
-
+    <string name="newBookRequest">New book lenting request received!</string>
+    <string name="checkBookRequest">Check it out now</string>
+    <string name="newCommentReceived">You have received a new comment from: </string>
 </resources>

@@ -261,7 +261,12 @@ public class showProfile extends AppCompatActivity{
 
         aboutMeList.setAdapter(aboutMeAdapter);
         aboutMeAdapter.getChildView(0,0,true,null, null);
-        aboutMeList.expandGroup(0);
+
+        //check if user is coming from a new comment notification
+        if(getIntent().getStringExtra("newComment").equals("true"))
+            aboutMeList.expandGroup(2);
+        else
+            aboutMeList.expandGroup(0);
 
         //check if the user has to leave comment
         Query leaveCommentQuery = fireBaseRef.child("commentsDB").child(userId).child("can_comment").orderByKey().equalTo(myUser.getUserID());

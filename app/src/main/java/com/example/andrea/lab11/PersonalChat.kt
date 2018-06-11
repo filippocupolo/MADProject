@@ -48,6 +48,7 @@ class PersonalChat : AppCompatActivity() {
         toolbarTitle.setOnClickListener(View.OnClickListener {
             val intent = Intent(applicationContext, showProfile::class.java)
             intent.putExtra("userId", userId)
+            intent.putExtra("newComment", "false")
             applicationContext.startActivity(intent)
         })
 

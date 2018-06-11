@@ -328,6 +328,7 @@ public class ShowBook extends AppCompatActivity {
                             goToProfileButton.setOnClickListener(v->{
                                 Intent showProfileIntent = new Intent(getApplicationContext(),showProfile.class);
                                 showProfileIntent.putExtra("userId",book.getOwner());
+                                showProfileIntent.putExtra("newComment", "false");
                                 startActivity(showProfileIntent);
                             });
                         }else{
