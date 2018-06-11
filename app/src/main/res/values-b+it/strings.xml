@@ -126,4 +126,5 @@ Vuoi lasciare un commento?</string>
     <string name="newBookRequest">Nuova richiesta di prestito!</string>
     <string name="checkBookRequest">Clicca per visualizzare subito</string>
     <string name="newCommentReceived">Hai ricevuto un nuovo commento da: </string>
+    <string name="removeBookMessage">Vuoi davvero eliminare questo libro?</string>
 </resources>

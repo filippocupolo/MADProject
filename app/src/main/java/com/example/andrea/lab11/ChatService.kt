@@ -22,9 +22,11 @@ class ChatService : Service(){
     var newBookListener : ChildEventListener? = null
     var myBooksListener : ChildEventListener? = null
     var newCommentListener : ChildEventListener? = null
+    var endLendingListener : ChildEventListener? = null
     var dbRef : DatabaseReference? = null
     var valueListeners : ArrayList<ValueEventListener>? = null
     var myBooks : ArrayList<String>? = null
+    var myBorrowedBooks : ArrayList<String>? = null
 
     override fun onBind(intent: Intent?): IBinder? {
         Log.d(deBugTag,"onBind")
@@ -43,6 +45,7 @@ class ChatService : Service(){
 
         valueListeners = ArrayList<ValueEventListener>()
         myBooks = ArrayList<String>()
+        myBorrowedBooks = ArrayList<String>()
 
         //chat notification
         chilListener = dbRef!!.child("usersChat").child(userId).addChildEventListener( object : ChildEventListener{
@@ -93,11 +96,10 @@ class ChatService : Service(){
         myBooksListener = dbRef!!.child("books").addChildEventListener( object : ChildEventListener{
 
             override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
-                //add the book to my books
                 if(p0 == null)
                     return
 
-                if(p0.child("owner").value!!.toString().equals(userId))
+                if(p0.child("owner")?.value!!.toString().equals(userId))
                     myBooks?.add(p0.key)
 
             }
@@ -107,6 +109,22 @@ class ChatService : Service(){
             }
 
             override fun onChildChanged(p0: DataSnapshot?, p1: String?) {
+                if(p0 == null)
+                    return
+
+                Log.d(deBugTag, "changed: ${p0.key}")
+
+                if (myBorrowedBooks?.contains(p0.key) ?: return) {
+                    if(p0.child("status")?.value!!.toString().equals("0")) {
+                        //i had this book and now it's terminated
+                        postDoCommentNotification("Il tuo prestito è terminato", "Lascia un commento", p0.child("owner")?.value!!.toString())
+                        myBorrowedBooks?.remove(p0.key)
+                    }
+                } else {
+                    if (p0.hasChild("borrower"))
+                        if (p0.child("borrower")?.value!!.toString().equals(userId))
+                            myBorrowedBooks?.add(p0.key)
+                }
 
             }
 
@@ -203,6 +221,9 @@ class ChatService : Service(){
             Log.d(deBugTag,"rimosso")
         }
 
+        myBorrowedBooks?.clear()
+        myBooks?.clear()
+
         FirebaseDatabase.getInstance().goOffline()
     }
 
@@ -266,6 +287,27 @@ class ChatService : Service(){
         val intent = Intent(applicationContext, showProfile::class.java)
         intent.putExtra("userId",myUserId)
         intent.putExtra("newComment", "true")
+        val pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        mBuilder.setContentIntent(pi)
+        mNotificationManager.notify(0, mBuilder.build())
+    }
+
+    fun postDoCommentNotification(title: String, subtitle: String , userId: String){
+        val mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            val channel = NotificationChannel("default",
+                    "YOUR_CHANNEL_NAME",
+                    NotificationManager.IMPORTANCE_DEFAULT)
+            channel.description = "YOUR_NOTIFICATION_CHANNEL_DISCRIPTION"
+            mNotificationManager.createNotificationChannel(channel)
+        }
+        val mBuilder = NotificationCompat.Builder(applicationContext, "default")
+                .setSmallIcon(R.mipmap.ic_launcher) // notification icon
+                .setContentTitle(title) // title for notification
+                .setContentText(subtitle)// message for notification
+                .setAutoCancel(true) // clear notification after click
+        val intent = Intent(applicationContext, CommentActivity::class.java)
+        intent.putExtra("userId",userId)
         val pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
         mBuilder.setContentIntent(pi)
         mNotificationManager.notify(0, mBuilder.build())

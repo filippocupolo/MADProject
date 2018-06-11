@@ -130,4 +130,5 @@ Would you like to leave a review?</string>
     <string name="newBookRequest">New book lenting request received!</string>
     <string name="checkBookRequest">Check it out now</string>
     <string name="newCommentReceived">You have received a new comment from: </string>
+    <string name="removeBookMessage">Do you really want to delete this book?</string>
 </resources>

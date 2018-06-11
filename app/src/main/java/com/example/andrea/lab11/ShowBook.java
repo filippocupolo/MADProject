@@ -302,6 +302,9 @@ public class ShowBook extends AppCompatActivity {
                                     dbRef.child("commentsDB").child(myUser.getUserID()).child("can_comment").child(book.getBorrower()).setValue(true);
                                     dbRef.child("commentsDB").child(book.getBorrower()).child("can_comment").child(myUser.getUserID()).setValue(true);
 
+                                    dbRef.child("books").child(bookId).child("borrower").removeValue();
+                                    dbRef.child("books").child(bookId).child("borrowerName").removeValue();
+
                                     //set bookAccepted
                                     //dbRef.child("bookAccepted").child(book.getBorrower()).child("userId").setValue(myUser.getUserID());
                                     //Log.d(deBugTag,"bookAccepted");
