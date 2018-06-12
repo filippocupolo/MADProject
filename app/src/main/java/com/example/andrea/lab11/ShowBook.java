@@ -272,8 +272,10 @@ public class ShowBook extends AppCompatActivity {
                                 sendRequestButton.setVisibility(View.GONE);
                                 statusTextView.setText(R.string.lending_req_sent);
 
-                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(myUser.getName() + " " + myUser.getSurname());
-                                dbRef.child("bookRequests").child(book.getBookID()).child("notificationSent").setValue(false);
+                                dbRef.child("bookRequests").child(book.getBookID()).child("bookOwner").setValue(book.getOwner());
+                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID());
+                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).child("username").setValue(myUser.getName() + " " + myUser.getSurname());
+                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).child("notificationSent").setValue(false);
                                 Toast.makeText(context,getString(R.string.request_sent),Toast.LENGTH_SHORT).show();
                             });
 
@@ -453,10 +455,16 @@ public class ShowBook extends AppCompatActivity {
                     @Override
                     public UserModel parseSnapshot(@NonNull DataSnapshot snapshot) {
 
-                        if(snapshot==null && snapshot.getValue()==null)
+                        Log.d(deBugTag, snapshot.toString());
+                        if(snapshot.getValue()==null)
                             return null;
+                        //|| snapshot.getKey().equals("bookOwner") || snapshot.getKey().equals("notificationSent"
+
+                        //if(snapshot.getKey().equals("bookOwner") || snapshot.getKey().equals("notificationSent"))
+                            //return null;
 
                         return new UserModel(snapshot.getKey(),snapshot.getValue().toString());
+
                     }
                 })
                 .setLifecycleOwner(this)

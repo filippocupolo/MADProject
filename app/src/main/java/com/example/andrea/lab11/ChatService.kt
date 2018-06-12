@@ -24,7 +24,6 @@ class ChatService : Service(){
     var newCommentListener : ChildEventListener? = null
     var dbRef : DatabaseReference? = null
     var valueListeners : ArrayList<ValueEventListener>? = null
-    var myBooks : ArrayList<String>? = null
     var myBorrowedBooks : ArrayList<String>? = null
 
     override fun onBind(intent: Intent?): IBinder? {
@@ -41,9 +40,7 @@ class ChatService : Service(){
         FirebaseApp.initializeApp(this)
         dbRef = FirebaseDatabase.getInstance().reference
 
-
         valueListeners = ArrayList<ValueEventListener>()
-        myBooks = ArrayList<String>()
         myBorrowedBooks = ArrayList<String>()
 
         //chat notification
@@ -91,16 +88,10 @@ class ChatService : Service(){
 
         })
 
-        //new book request notification -> first i need to get all my books
+        //notification to the borrower when the lent is ended
         myBooksListener = dbRef!!.child("books").addChildEventListener( object : ChildEventListener{
 
             override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
-                if(p0 == null)
-                    return
-
-                if(p0.child("owner")?.value!!.toString().equals(userId))
-                    myBooks?.add(p0.key)
-
             }
 
             override fun onCancelled(p0: DatabaseError?) {
@@ -133,27 +124,22 @@ class ChatService : Service(){
             }
 
             override fun onChildRemoved(p0: DataSnapshot?) {
-                //remove the book from my books
-                if(p0 == null)
-                    return
 
-                if(p0.child("owner").value!!.toString().equals(userId))
-                    myBooks?.remove(p0.key)
             }
         })
 
         //now check if there are requests for my books and send notification
-        newBookListener = dbRef!!.child("bookRequests").addChildEventListener( object : ChildEventListener{
+        newBookListener = dbRef!!.child("bookRequests").orderByChild("bookOwner").equalTo(userId).addChildEventListener(object : ChildEventListener{
             override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
                 if(p0 == null)
                     return
 
-                if(myBooks?.contains(p0.key) ?: return)
-                    if(p0.hasChild("notificationSent"))
-                        if(p0.child("notificationSent").value!!.toString().equals("false")) {
-                            postNewBookNotification(getString(R.string.newBookRequest), p0.key)
-                            p0.child("notificationSent").ref.setValue("true")
-                        }
+                Log.d(deBugTag, "$p0");
+                //if(myBooks?.contains(p0.key) ?: return)
+                if(p0.child("notificationSent").value!!.toString().equals("false")) {
+                    postNewBookNotification(getString(R.string.newBookRequest), p0.key)
+                    p0.child("notificationSent").ref.setValue("true")
+                }
             }
 
             override fun onCancelled(p0: DatabaseError?) {
@@ -226,7 +212,6 @@ class ChatService : Service(){
         }
 
         myBorrowedBooks?.clear()
-        myBooks?.clear()
 
         FirebaseDatabase.getInstance().goOffline()
     }
