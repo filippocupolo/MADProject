@@ -179,6 +179,9 @@ public class ShowBook extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
+                if(dataSnapshot==null || dataSnapshot.getValue()==null)
+                    return;
+
                 //get book
                 book = ResultsList.parseDataSnapshotBook(dataSnapshot.getChildren().iterator().next());
                 if(book == null){
@@ -273,9 +276,8 @@ public class ShowBook extends AppCompatActivity {
                                 statusTextView.setText(R.string.lending_req_sent);
 
                                 dbRef.child("bookRequests").child(book.getBookID()).child("bookOwner").setValue(book.getOwner());
-                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID());
-                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).child("username").setValue(myUser.getName() + " " + myUser.getSurname());
-                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).child("notificationSent").setValue(false);
+                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(new RequestBookModel(myUser.getName() + " " + myUser.getSurname(),false));
+
                                 Toast.makeText(context,getString(R.string.request_sent),Toast.LENGTH_SHORT).show();
                             });
 
@@ -456,14 +458,11 @@ public class ShowBook extends AppCompatActivity {
                     public UserModel parseSnapshot(@NonNull DataSnapshot snapshot) {
 
                         Log.d(deBugTag, snapshot.toString());
-                        if(snapshot.getValue()==null)
-                            return null;
-                        //|| snapshot.getKey().equals("bookOwner") || snapshot.getKey().equals("notificationSent"
 
-                        //if(snapshot.getKey().equals("bookOwner") || snapshot.getKey().equals("notificationSent"))
-                            //return null;
+                        if(snapshot.getKey().equals("bookOwner"))
+                            return new UserModel(null,null);
 
-                        return new UserModel(snapshot.getKey(),snapshot.getValue().toString());
+                        return new UserModel(snapshot.getKey(),snapshot.child("username").getValue().toString());
 
                     }
                 })
@@ -483,6 +482,9 @@ public class ShowBook extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(@NonNull BookRequest holder, int position, @NonNull UserModel model) {
+
+
+
                 holder.bindData(model.userId, book.getBookID(), myUserId , model.nameSurname, book.getStatus(), book.getBorrower());
             }
 
@@ -515,5 +517,26 @@ public class ShowBook extends AppCompatActivity {
         Toast.makeText(context,txt,Toast.LENGTH_SHORT).show();
         Log.e(deBugTag,"dataSnapshot non esiste");
         onBackPressed();
+    }
+
+    private class RequestBookModel {
+
+        String username;
+        boolean notificationSent;
+
+        public RequestBookModel(String username, boolean notificationSent){
+            this.username = username;
+            this.notificationSent = notificationSent;
+        }
+
+        //getters
+        public String getUsername(){return username;}
+        public boolean getNotificationSent(){return notificationSent;}
+
+        //setters
+        public void getUsername(String value){username = value;}
+        public void getNotificationSent(boolean value){notificationSent = value;}
+
+
     }
 }

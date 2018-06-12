@@ -20,7 +20,6 @@ class ChatService : Service(){
     val deBugTag = "ChatService"
     var chilListener : ChildEventListener? = null
     var newBookListener : ChildEventListener? = null
-    var myBooksListener : ChildEventListener? = null
     var newCommentListener : ChildEventListener? = null
     var dbRef : DatabaseReference? = null
     var valueListeners : ArrayList<ValueEventListener>? = null
@@ -88,64 +87,49 @@ class ChatService : Service(){
 
         })
 
-        //notification to the borrower when the lent is ended
-        myBooksListener = dbRef!!.child("books").addChildEventListener( object : ChildEventListener{
-
-            override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
-            }
-
-            override fun onCancelled(p0: DatabaseError?) {
-
-            }
-
-            override fun onChildChanged(p0: DataSnapshot?, p1: String?) {
-                if(p0 == null)
-                    return
-
-                Log.d(deBugTag, "changed: ${p0.key}")
-
-                if(myBorrowedBooks?.contains(p0.key) ?: return) {
-                    if (p0.child("status")?.value!!.toString().equals("0")) {
-                        //i had this book and now it's terminated
-                        postDoCommentNotification("Il tuo prestito è terminato", "Lascia un commento", p0.child("owner")?.value!!.toString())
-                        myBorrowedBooks?.remove(p0.key)
-                    }
-                }
-                else{
-                    if (p0.hasChild("borrower"))
-                        if (p0.child("borrower")?.value!!.toString().equals(userId))
-                            myBorrowedBooks?.add(p0.key)
-                }
-
-            }
-
-            override fun onChildMoved(p0: DataSnapshot?, p1: String?) {
-
-            }
-
-            override fun onChildRemoved(p0: DataSnapshot?) {
-
-            }
-        })
-
         //now check if there are requests for my books and send notification
         newBookListener = dbRef!!.child("bookRequests").orderByChild("bookOwner").equalTo(userId).addChildEventListener(object : ChildEventListener{
             override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
-                if(p0 == null)
+                if(p0 == null || p0.value==null)
                     return
 
-                Log.d(deBugTag, "$p0");
-                //if(myBooks?.contains(p0.key) ?: return)
-                if(p0.child("notificationSent").value!!.toString().equals("false")) {
-                    postNewBookNotification(getString(R.string.newBookRequest), p0.key)
-                    p0.child("notificationSent").ref.setValue("true")
+                Log.d(deBugTag, "$p0")
+
+                var it = p0.children.iterator()
+
+                while(it.hasNext()){
+
+                    val temp = it.next()
+
+                    if(!temp.key.equals("bookOwner") && temp.child("notificationSent").value!!.toString().equals("false")){
+                        postNewBookNotification(getString(R.string.newBookRequest), p0.key)
+                        temp.child("notificationSent").ref.setValue("true")
+                    }
                 }
+
             }
 
             override fun onCancelled(p0: DatabaseError?) {
             }
 
             override fun onChildChanged(p0: DataSnapshot?, p1: String?) {
+
+                if(p0 == null || p0.value==null)
+                    return
+
+                Log.d(deBugTag, "$p0")
+
+                var it = p0.children.iterator()
+
+                while(it.hasNext()){
+
+                    val temp = it.next()
+
+                    if(!temp.key.equals("bookOwner") && temp.child("notificationSent").value!!.toString().equals("false")){
+                        postNewBookNotification(getString(R.string.newBookRequest), p0.key)
+                        temp.child("notificationSent").ref.setValue("true")
+                    }
+                }
             }
 
             override fun onChildMoved(p0: DataSnapshot?, p1: String?) {
@@ -198,7 +182,6 @@ class ChatService : Service(){
 
         //remove all listeners
         dbRef!!.removeEventListener(chilListener)
-        dbRef!!.removeEventListener(myBooksListener)
         dbRef!!.removeEventListener(newBookListener)
         dbRef!!.removeEventListener(newCommentListener)
 
