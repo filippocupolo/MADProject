@@ -273,6 +273,7 @@ public class ShowBook extends AppCompatActivity {
                                 statusTextView.setText(R.string.lending_req_sent);
 
                                 dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(myUser.getName() + " " + myUser.getSurname());
+                                dbRef.child("bookRequests").child(book.getBookID()).child("notificationSent").setValue(false);
                                 Toast.makeText(context,getString(R.string.request_sent),Toast.LENGTH_SHORT).show();
                             });
 

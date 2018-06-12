@@ -22,7 +22,6 @@ class ChatService : Service(){
     var newBookListener : ChildEventListener? = null
     var myBooksListener : ChildEventListener? = null
     var newCommentListener : ChildEventListener? = null
-    var endLendingListener : ChildEventListener? = null
     var dbRef : DatabaseReference? = null
     var valueListeners : ArrayList<ValueEventListener>? = null
     var myBooks : ArrayList<String>? = null
@@ -114,13 +113,14 @@ class ChatService : Service(){
 
                 Log.d(deBugTag, "changed: ${p0.key}")
 
-                if (myBorrowedBooks?.contains(p0.key) ?: return) {
-                    if(p0.child("status")?.value!!.toString().equals("0")) {
+                if(myBorrowedBooks?.contains(p0.key) ?: return) {
+                    if (p0.child("status")?.value!!.toString().equals("0")) {
                         //i had this book and now it's terminated
                         postDoCommentNotification("Il tuo prestito è terminato", "Lascia un commento", p0.child("owner")?.value!!.toString())
                         myBorrowedBooks?.remove(p0.key)
                     }
-                } else {
+                }
+                else{
                     if (p0.hasChild("borrower"))
                         if (p0.child("borrower")?.value!!.toString().equals(userId))
                             myBorrowedBooks?.add(p0.key)
@@ -138,7 +138,7 @@ class ChatService : Service(){
                     return
 
                 if(p0.child("owner").value!!.toString().equals(userId))
-                    myBooks?.remove(p0?.key)
+                    myBooks?.remove(p0.key)
             }
         })
 
@@ -149,7 +149,11 @@ class ChatService : Service(){
                     return
 
                 if(myBooks?.contains(p0.key) ?: return)
-                    postNewBookNotification(getString(R.string.newBookRequest), p0.key)
+                    if(p0.hasChild("notificationSent"))
+                        if(p0.child("notificationSent").value!!.toString().equals("false")) {
+                            postNewBookNotification(getString(R.string.newBookRequest), p0.key)
+                            p0.child("notificationSent").ref.setValue("true")
+                        }
             }
 
             override fun onCancelled(p0: DatabaseError?) {
