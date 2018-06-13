@@ -67,7 +67,7 @@ public class ShowBook extends AppCompatActivity {
     private ImageButton goToProfileButton;
     private ImageButton send_message_button;
     private RecyclerView requestRecycleListView;
-    private ArrayList<Drawable> imagesList;
+    private ArrayList<File> imagesList;
     private FirebaseRecyclerAdapter<UserModel,BookRequest> requestAdapter = null;
     private ValueEventListener bookRequestedListener;
     private ValueEventListener bookQueryListener;
@@ -126,7 +126,7 @@ public class ShowBook extends AppCompatActivity {
 
             @Override
             public Object getItem(int position) {
-                return imagesList.get(position);
+                return null;
             }
 
             @Override
@@ -157,9 +157,8 @@ public class ShowBook extends AppCompatActivity {
 
                 });
 
+                Glide.with(context).load(imagesList.get(position)).into(bookPhoto);
 
-                bookPhoto.setImageDrawable(imagesList.get(position));
-                bookPhoto.setScaleType(ImageButton.ScaleType.FIT_XY);
                 return convertView;
             }
         };
@@ -381,7 +380,7 @@ public class ShowBook extends AppCompatActivity {
                         public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
 
                             Log.d(deBugTag,"ricevuto task: "+ taskSnapshot.toString());
-                            imagesList.add(Drawable.createFromPath(file.getPath()));
+                            imagesList.add(file);
                             adapter.notifyDataSetChanged();
 
                         }
