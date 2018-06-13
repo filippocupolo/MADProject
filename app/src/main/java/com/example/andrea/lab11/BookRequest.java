@@ -35,8 +35,9 @@ public class BookRequest extends RecyclerView.ViewHolder {
         this.nameSurname.setText(nameSurname);
         this.status = statusPar;
 
-        if(userId == null)
+        if(userId == null) {
             itemView.setVisibility(View.GONE);
+        }
         else
             itemView.setVisibility(View.VISIBLE);
 

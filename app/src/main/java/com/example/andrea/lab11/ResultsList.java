@@ -292,6 +292,9 @@ public class ResultsList extends AppCompatActivity {
                     case "borrowerName":
                         book.setBorrowerName((String) child.getValue());
                         break;
+                    case "conditions":
+                        book.setConditions((String) child.getValue());
+                        break;
                 }
 
             }
