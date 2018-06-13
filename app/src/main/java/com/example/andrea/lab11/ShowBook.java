@@ -67,7 +67,7 @@ public class ShowBook extends AppCompatActivity {
     private ImageButton goToProfileButton;
     private ImageButton send_message_button;
     private RecyclerView requestRecycleListView;
-    private ArrayList<File> imagesList;
+    private ArrayList<Uri> imagesList;
     private FirebaseRecyclerAdapter<UserModel,BookRequest> requestAdapter = null;
     private ValueEventListener bookRequestedListener;
     private ValueEventListener bookQueryListener;
@@ -152,7 +152,7 @@ public class ShowBook extends AppCompatActivity {
                         getApplicationContext(),
                         fullScreenImage.class
                     );
-                    fullImageIntent.putExtra("path", getFilesDir() + "/bookImage"+ position +".jpg");
+                    fullImageIntent.putExtra("uri", imagesList.get(position).toString());
                     startActivity(fullImageIntent);
 
                 });
@@ -366,31 +366,13 @@ public class ShowBook extends AppCompatActivity {
             //request for Images
             StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/" + i);
 
-            final int c = i;
-            Log.d(deBugTag,"faccio richiesta" + i);
             ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override
                 public void onSuccess(Uri uri) {
 
-                    //create File
-                    File file = new File(getFilesDir(), "bookImage"+ c +".jpg");
+                    imagesList.add(uri);
+                    adapter.notifyDataSetChanged();
 
-                    FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-
-                            Log.d(deBugTag,"ricevuto task: "+ taskSnapshot.toString());
-                            imagesList.add(file);
-                            adapter.notifyDataSetChanged();
-
-                        }
-                    }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Log.e(deBugTag,e.getMessage());
-
-                        }
-                    });
                 }
             }).addOnFailureListener(new OnFailureListener() {
                 @Override

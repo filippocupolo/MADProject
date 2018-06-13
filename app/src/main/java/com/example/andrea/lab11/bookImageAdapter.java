@@ -18,6 +18,8 @@ import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.graphics.drawable.Drawable;
+
+import com.bumptech.glide.Glide;
 import com.example.andrea.lab11.Utilities;
 
 import java.io.ByteArrayOutputStream;
@@ -88,10 +90,10 @@ public class bookImageAdapter extends BaseAdapter{
 
         if(position==getCount()-1 && !allImages){
             deleteButton.setVisibility(View.GONE);
-            bookPhoto.setImageURI(drawableUri);
+            Glide.with(appContext).load(drawableUri).into(bookPhoto);
         }else{
             deleteButton.setVisibility(View.VISIBLE);
-            bookPhoto.setImageBitmap(images.get(position));
+            Glide.with(appContext).load(images.get(position)).into(bookPhoto);
         }
 
         bookPhoto.setFocusable(false);
