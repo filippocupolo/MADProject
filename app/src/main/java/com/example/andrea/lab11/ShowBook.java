@@ -53,6 +53,7 @@ public class ShowBook extends AppCompatActivity {
     private TextView editionYear;
     private TextView publisher;
     private TextView ISBN;
+    private TextView conditions;
     private TextView owner;
     private TextView cityOwner;
     private TextView statusTextView;
@@ -94,6 +95,7 @@ public class ShowBook extends AppCompatActivity {
         editionYear = findViewById(R.id.bookEdition);
         publisher = findViewById(R.id.bookPublisher);
         ISBN = findViewById(R.id.bookISBN);
+        conditions = findViewById(R.id.bookCondition);
         owner = findViewById(R.id.bookOwner);
         cityOwner = findViewById(R.id.ownerCity);
         statusTextView = findViewById(R.id.status);
@@ -230,6 +232,8 @@ public class ShowBook extends AppCompatActivity {
                         editionYear.setText(book.getEditionYear());
                         publisher.setText(book.getPublisher());
                         ISBN.setText(book.get_ISBN());
+                        Log.d(deBugTag, book.getConditions());
+                        conditions.setText(getString(R.string.conditions_textV) + " " + book.getConditions());
                         owner.setText(name_surname);
                         cityOwner.setText(city);
 
@@ -380,7 +384,7 @@ public class ShowBook extends AppCompatActivity {
                         @Override
                         public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
 
-                            Log.d(deBugTag,"ricevuto task: "+ taskSnapshot.toString());
+                            Log.d(deBugTag,"ricevuto task: "+ imagesList.size());
                             imagesList.add(Drawable.createFromPath(file.getPath()));
                             adapter.notifyDataSetChanged();
 
@@ -510,6 +514,7 @@ public class ShowBook extends AppCompatActivity {
             if(bookQueryListener != null)
                 dbRef.removeEventListener(bookQueryListener);
         }
+
     }
 
     private void errorMethod(int txt){
