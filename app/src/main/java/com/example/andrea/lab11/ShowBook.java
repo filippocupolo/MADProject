@@ -325,7 +325,7 @@ public class ShowBook extends AppCompatActivity {
 
                                 requestRecycleListView.setVisibility(View.VISIBLE);
                                 getRequestList(dbRef, book, myUser.getUserID());
-                                if(requestAdapter.getItemCount() > 0) {
+                                if(requestAdapter.getItemCount() > 1) {
                                     //almeno una richiesta
                                     request_list_title.setVisibility(View.VISIBLE);
                                 }else{
@@ -494,7 +494,7 @@ public class ShowBook extends AppCompatActivity {
             @Override
             public void onDataChanged() {
                 super.onDataChanged();
-                containerListRequest.setVisibility(getItemCount() == 0 && containerListRequest.getVisibility() == View.GONE? View.GONE : View.VISIBLE);
+                containerListRequest.setVisibility(getItemCount() < 2 && containerListRequest.getVisibility() == View.GONE? View.GONE : View.VISIBLE);
             }
         };
 
