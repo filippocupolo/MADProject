@@ -19,6 +19,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -61,7 +62,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         deleteButton = itemView.findViewById(R.id.deleteButton);
     }
 
-    public void bindData(String title, String author, String ISBN, String editionYear, String bookId, Boolean showProfile, Boolean deleteButtonRequested){
+    public void bindData(String title, String author, String ISBN, String editionYear, String bookId, Boolean showProfile, Boolean deleteButtonRequested, int status){
 
         this.title.setText(title);
         this.author.setText(author);
@@ -82,16 +83,20 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         if(deleteButtonRequested){
             deleteButton.setOnClickListener(v->{
 
-                //ask for confirmation
-                new AlertDialog.Builder(context)
-                        .setMessage(context.getString(R.string.removeBookMessage))
-                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int whichButton) {
-                                DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
-                                dbRef.child("books").child(bookId).removeValue();
-                                dbRef.child("bookRequests").child(bookId).removeValue();
-                            }})
-                        .setNegativeButton(android.R.string.no, null).show();
+                if(status == 1){
+                    Toast.makeText(context,R.string.cannot_delete_book,Toast.LENGTH_SHORT).show();
+                }else{
+                    //ask for confirmation
+                    new AlertDialog.Builder(context)
+                            .setMessage(context.getString(R.string.removeBookMessage))
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
+                                    dbRef.child("books").child(bookId).removeValue();
+                                    dbRef.child("bookRequests").child(bookId).removeValue();
+                                }})
+                            .setNegativeButton(android.R.string.no, null).show();
+                }
             });
             deleteButton.setVisibility(View.VISIBLE);
         }

@@ -131,4 +131,5 @@ Would you like to leave a review?</string>
     <string name="checkBookRequest">Check it out now</string>
     <string name="newCommentReceived">You have received a new comment from: </string>
     <string name="removeBookMessage">Do you really want to delete this book?</string>
+    <string name="cannot_delete_book">You cannot delete a book while it is on loan</string>
 </resources>

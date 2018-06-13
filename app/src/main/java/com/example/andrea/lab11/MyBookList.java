@@ -94,7 +94,7 @@ public class MyBookList extends Fragment {
             @Override
             protected void onBindViewHolder(@NonNull CardViewBook holder, int position, @NonNull BookInfo model) {
 
-                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID(),true, true );
+                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID(),true, true ,model.getStatus());
             }
 
             @Override
