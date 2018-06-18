@@ -166,8 +166,6 @@ public class search_results_map extends FragmentActivity implements OnMapReadyCa
                 @Override
                 public void onChildRemoved(DataSnapshot dataSnapshot) {
 
-                    //todo testare l'eliminazione di un oggetto
-
                     String ownerID = dataSnapshot.child("owner").getValue().toString();
                     String bookID = dataSnapshot.getKey();
 

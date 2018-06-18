@@ -64,16 +64,15 @@ public class MainPageActivity extends AppCompatActivity {
         int numPage = getIntent().getIntExtra("page",0);
         viewPager.setCurrentItem(numPage);
 
-        //check for notification
+        /*check for notification
         dbRef = FirebaseDatabase.getInstance().getReference().child("bookAccepted")
                 .child(new MyUser(getApplicationContext()).getUserID());
         childEventListener = new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-                //todo fai stringa
                 String userId = dataSnapshot.child("userId").toString();
-                String message = "Complimenti hai ricevuto un nuovo libro.\nVuoi lasciare un commento?";
-                String title = "Hai ricevuto un libro";
+                String message = getString(R.string.new_book_received_congrats);
+                String title = getString(R.string.new_book_received);
 
                 dbRef.child(dataSnapshot.getKey()).removeValue();
 
@@ -100,7 +99,7 @@ public class MainPageActivity extends AppCompatActivity {
 
             }
         };
-        dbRef.addChildEventListener(childEventListener);
+        dbRef.addChildEventListener(childEventListener);*/
 
     }
 

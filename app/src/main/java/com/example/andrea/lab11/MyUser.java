@@ -151,8 +151,6 @@ public class MyUser {
             @Override
             public void onComplete(String key, DatabaseError error) {
                 if(error!= null){
-
-                    //todo testare
                     Log.e(deBugTag,error.getMessage());
                     dbRef.child(userID).removeValue();
                 }

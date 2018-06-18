@@ -114,4 +114,18 @@
     <string name="add_to_wishlist">Aggiungi alla wish list</string>
     <string name="create_new_account">Crea un nuovo profilo</string>
     <string name="continue_fb">Continua con Facebook</string>
+    <string name="send_comment">Invia commento</string>
+    <string name="new_book_received_congrats">Complimenti hai ricevuto un nuovo libro.
+Vuoi lasciare un commento?</string>
+    <string name="new_book_received">Hai ricevuto un nuovo libro</string>
+    <string name="request_sent">Richiesta inviata</string>
+    <string name="book_already_on_loan">Il libro è già in prestito</string>
+    <string name="give_rate">Devi prima dare un voto</string>
+    <string name="cannot_comment">Non puoi commentare finchè non hai scambiato e restituito un libro con questa persona</string>
+    <string name="give_rate_question">Vuoi dare un voto a questa persona?</string>
+    <string name="newBookRequest">Nuova richiesta di prestito!</string>
+    <string name="checkBookRequest">Clicca per visualizzare subito</string>
+    <string name="newCommentReceived">Hai ricevuto un nuovo commento da: </string>
+    <string name="removeBookMessage">Vuoi davvero eliminare questo libro?</string>
+    <string name="cannot_delete_book">Non puoi eliminare un libro mentre è in prestito</string>
 </resources>

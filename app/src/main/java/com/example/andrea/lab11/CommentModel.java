@@ -11,12 +11,13 @@ public class CommentModel {
     private int day;
     private String userId;
     private String userNameSurname;
+    private Boolean commentRead;
 
     public CommentModel(){
 
     }
 
-    public CommentModel(String userId, String userNameSurname, float rating, String text, int year, int month, int day){
+    public CommentModel(String userId, String userNameSurname, float rating, String text, int year, int month, int day, Boolean commentRead){
         this.text = text;
         this.rating = rating;
         this.userId = userId;
@@ -24,6 +25,7 @@ public class CommentModel {
         this.year = year;
         this.month = month;
         this.day = day;
+        this.commentRead = commentRead;
     }
 
     //getters
@@ -34,6 +36,9 @@ public class CommentModel {
     public int getDay(){return day;}
     public String getUserId(){return userId;}
     public String getUserNameSurname(){return userNameSurname;}
+    public Boolean getCommentRead() {
+        return commentRead;
+    }
 
     //setters
     public void setText(String value){text = value;}
@@ -43,5 +48,7 @@ public class CommentModel {
     public void setDay(int value){day = value;}
     public void setUserId(String value){userId = value;}
     public void setUserNameSurname(String value){userNameSurname = value;}
-
+    public void setCommentRead(Boolean commentRead) {
+        this.commentRead = commentRead;
+    }
 }

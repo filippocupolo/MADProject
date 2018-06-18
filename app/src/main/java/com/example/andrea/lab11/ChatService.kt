@@ -19,8 +19,11 @@ class ChatService : Service(){
 
     val deBugTag = "ChatService"
     var chilListener : ChildEventListener? = null
+    var newBookListener : ChildEventListener? = null
+    var newCommentListener : ChildEventListener? = null
     var dbRef : DatabaseReference? = null
     var valueListeners : ArrayList<ValueEventListener>? = null
+    var myBorrowedBooks : ArrayList<String>? = null
 
     override fun onBind(intent: Intent?): IBinder? {
         Log.d(deBugTag,"onBind")
@@ -37,7 +40,9 @@ class ChatService : Service(){
         dbRef = FirebaseDatabase.getInstance().reference
 
         valueListeners = ArrayList<ValueEventListener>()
+        myBorrowedBooks = ArrayList<String>()
 
+        //chat notification
         chilListener = dbRef!!.child("usersChat").child(userId).addChildEventListener( object : ChildEventListener{
 
             override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
@@ -53,13 +58,12 @@ class ChatService : Service(){
                             if(!data.child("messageUserId").value!!.toString().equals(userId)){
                                 dbRef!!.child("chat").child(chat).child(data.key).child("messageReceived").setValue(true)
                                 Log.d(deBugTag,"notifica")
-                                postNotification(data.child("messageUser").value.toString(),data.child("messageText").value.toString())
+                                postChatNotification(data.child("messageUser").value.toString(),data.child("messageText").value.toString())
                             }
                         }
                     }
 
                     override fun onCancelled(p0: DatabaseError?) {
-                        //todo gestire
                     }
                 })
 
@@ -67,7 +71,6 @@ class ChatService : Service(){
             }
 
             override fun onCancelled(p0: DatabaseError?) {
-                //todo gestire
             }
 
             override fun onChildChanged(p0: DataSnapshot?, p1: String?) {
@@ -84,6 +87,88 @@ class ChatService : Service(){
 
         })
 
+        //now check if there are requests for my books and send notification
+        newBookListener = dbRef!!.child("bookRequests").orderByChild("bookOwner").equalTo(userId).addChildEventListener(object : ChildEventListener{
+            override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
+                if(p0 == null || p0.value==null)
+                    return
+
+                Log.d(deBugTag, "$p0")
+
+                var it = p0.children.iterator()
+
+                while(it.hasNext()){
+
+                    val temp = it.next()
+
+                    if(!temp.key.equals("bookOwner") && temp.child("notificationSent").value!!.toString().equals("false")){
+                        postNewBookNotification(getString(R.string.newBookRequest), p0.key)
+                        temp.child("notificationSent").ref.setValue("true")
+                    }
+                }
+
+            }
+
+            override fun onCancelled(p0: DatabaseError?) {
+            }
+
+            override fun onChildChanged(p0: DataSnapshot?, p1: String?) {
+
+                if(p0 == null || p0.value==null)
+                    return
+
+                Log.d(deBugTag, "$p0")
+
+                var it = p0.children.iterator()
+
+                while(it.hasNext()){
+
+                    val temp = it.next()
+
+                    if(!temp.key.equals("bookOwner") && temp.child("notificationSent").value!!.toString().equals("false")){
+                        postNewBookNotification(getString(R.string.newBookRequest), p0.key)
+                        temp.child("notificationSent").ref.setValue("true")
+                    }
+                }
+            }
+
+            override fun onChildMoved(p0: DataSnapshot?, p1: String?) {
+            }
+
+            override fun onChildRemoved(p0: DataSnapshot?) {
+            }
+        })
+
+        //new comments notification
+        newCommentListener = dbRef!!.child("commentsDB").child(userId).child("comments").addChildEventListener(object : ChildEventListener{
+            override fun onChildChanged(p0: DataSnapshot?, p1: String?) {
+
+            }
+
+            override fun onChildAdded(p0: DataSnapshot?, p1: String?) {
+                if(p0 == null)
+                    return
+
+                if(p0.child("commentRead").value?.equals(false) ?: return) {
+                    postNewCommentNotification(getString(R.string.newCommentReceived),
+                            p0.child("userNameSurname").value?.toString() ?: "", userId)
+                    p0.child("commentRead").ref.setValue(true)
+                }
+            }
+
+            override fun onCancelled(p0: DatabaseError?) {
+
+            }
+
+            override fun onChildMoved(p0: DataSnapshot?, p1: String?) {
+
+            }
+
+            override fun onChildRemoved(p0: DataSnapshot?) {
+
+            }
+        })
+
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -97,6 +182,9 @@ class ChatService : Service(){
 
         //remove all listeners
         dbRef!!.removeEventListener(chilListener)
+        dbRef!!.removeEventListener(newBookListener)
+        dbRef!!.removeEventListener(newCommentListener)
+
         if(valueListeners == null)
             return
         val it = valueListeners!!.iterator()
@@ -106,10 +194,12 @@ class ChatService : Service(){
             Log.d(deBugTag,"rimosso")
         }
 
+        myBorrowedBooks?.clear()
+
         FirebaseDatabase.getInstance().goOffline()
     }
 
-    fun postNotification(title: String, content: String) {
+    fun postChatNotification(title: String, content: String) {
         val mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             val channel = NotificationChannel("default",
@@ -125,6 +215,71 @@ class ChatService : Service(){
                 .setAutoCancel(true) // clear notification after click
         val intent = Intent(applicationContext, MainPageActivity::class.java)
         intent.putExtra("page",2)
+        val pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        mBuilder.setContentIntent(pi)
+        mNotificationManager.notify(0, mBuilder.build())
+    }
+
+    fun postNewBookNotification(title: String, bookRequestedKId: String){
+        val mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            val channel = NotificationChannel("default",
+                    "YOUR_CHANNEL_NAME",
+                    NotificationManager.IMPORTANCE_DEFAULT)
+            channel.description = "YOUR_NOTIFICATION_CHANNEL_DISCRIPTION"
+            mNotificationManager.createNotificationChannel(channel)
+        }
+        val mBuilder = NotificationCompat.Builder(applicationContext, "default")
+                .setSmallIcon(R.mipmap.ic_launcher) // notification icon
+                .setContentTitle(title) // title for notification
+                .setContentText(getString(R.string.checkBookRequest))// message for notification
+                .setAutoCancel(true) // clear notification after click
+        val intent = Intent(applicationContext, ShowBook::class.java)
+        intent.putExtra("bookId",bookRequestedKId)
+        intent.putExtra("showProfile", true)
+        val pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        mBuilder.setContentIntent(pi)
+        mNotificationManager.notify(0, mBuilder.build())
+    }
+
+    fun postNewCommentNotification(title: String, user: String, myUserId: String){
+        val mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            val channel = NotificationChannel("default",
+                    "YOUR_CHANNEL_NAME",
+                    NotificationManager.IMPORTANCE_DEFAULT)
+            channel.description = "YOUR_NOTIFICATION_CHANNEL_DISCRIPTION"
+            mNotificationManager.createNotificationChannel(channel)
+        }
+        val mBuilder = NotificationCompat.Builder(applicationContext, "default")
+                .setSmallIcon(R.mipmap.ic_launcher) // notification icon
+                .setContentTitle("$title $user") // title for notification
+                .setContentText(getString(R.string.checkBookRequest))// message for notification
+                .setAutoCancel(true) // clear notification after click
+        val intent = Intent(applicationContext, showProfile::class.java)
+        intent.putExtra("userId",myUserId)
+        intent.putExtra("newComment", "true")
+        val pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        mBuilder.setContentIntent(pi)
+        mNotificationManager.notify(0, mBuilder.build())
+    }
+
+    fun postDoCommentNotification(title: String, subtitle: String , userId: String){
+        val mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
+            val channel = NotificationChannel("default",
+                    "YOUR_CHANNEL_NAME",
+                    NotificationManager.IMPORTANCE_DEFAULT)
+            channel.description = "YOUR_NOTIFICATION_CHANNEL_DISCRIPTION"
+            mNotificationManager.createNotificationChannel(channel)
+        }
+        val mBuilder = NotificationCompat.Builder(applicationContext, "default")
+                .setSmallIcon(R.mipmap.ic_launcher) // notification icon
+                .setContentTitle(title) // title for notification
+                .setContentText(subtitle)// message for notification
+                .setAutoCancel(true) // clear notification after click
+        val intent = Intent(applicationContext, CommentActivity::class.java)
+        intent.putExtra("userId",userId)
         val pi = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
         mBuilder.setContentIntent(pi)
         mNotificationManager.notify(0, mBuilder.build())

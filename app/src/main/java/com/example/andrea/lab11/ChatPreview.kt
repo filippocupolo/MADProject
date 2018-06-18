@@ -57,11 +57,10 @@ class ChatPreview(view: View): RecyclerView.ViewHolder(view){
             }
 
             override fun onCancelled(p0: DatabaseError?) {
-                //todo gestire
             }
         })
 
-        //open Show Book if card is pressed
+        //open chat if card is pressed
         val context = itemView.context
         itemView.isClickable = true
         itemView.setOnClickListener { v ->

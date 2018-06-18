@@ -71,6 +71,7 @@ public class showProfile extends AppCompatActivity{
     private String userId;
     private Float vote = -1.f;
     private Button canCommentButton;
+    private Button canChatButton;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -79,6 +80,8 @@ public class showProfile extends AppCompatActivity{
         deBugTag = this.getClass().getName();
         activity = this;
         context = getApplicationContext();
+
+        MyUser myUser = new MyUser(context);
 
         //+++++++++++++set fields+++++++++++++
         setContentView(R.layout.show_profile);
@@ -95,6 +98,14 @@ public class showProfile extends AppCompatActivity{
         //RecyclerView list = findViewById(R.id.published_books_rv);
         ExpandableListView aboutMeList = findViewById(R.id.aboutMe);
         canCommentButton = findViewById(R.id.send_comment_button);
+        canChatButton = findViewById(R.id.send_message_button);
+
+
+
+        if(userId.equals(myUser.getUserID())){
+            canCommentButton.setVisibility(View.GONE);
+            canChatButton.setVisibility(View.GONE);
+        }
 
         RatingBar ratings = findViewById(R.id.comment_stars);
 
@@ -250,10 +261,14 @@ public class showProfile extends AppCompatActivity{
 
         aboutMeList.setAdapter(aboutMeAdapter);
         aboutMeAdapter.getChildView(0,0,true,null, null);
-        aboutMeList.expandGroup(0);
+
+        //check if user is coming from a new comment notification
+        if(getIntent().getStringExtra("newComment").equals("true"))
+            aboutMeList.expandGroup(2);
+        else
+            aboutMeList.expandGroup(0);
 
         //check if the user has to leave comment
-        MyUser myUser = new MyUser(context);
         Query leaveCommentQuery = fireBaseRef.child("commentsDB").child(userId).child("can_comment").orderByKey().equalTo(myUser.getUserID());
 
         leaveCommentQuery.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -271,8 +286,7 @@ public class showProfile extends AppCompatActivity{
                         commentIntent.putExtra("userId", userId);
                         startActivity(commentIntent);
                     }else{
-                        //todo fai stringa
-                        Toast.makeText(context,"Non puoi scrivere un commento se non hai scambiato un libro con questo utente",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(context,R.string.cannot_comment,Toast.LENGTH_SHORT).show();
                     }
                 });
             }
@@ -332,7 +346,6 @@ public class showProfile extends AppCompatActivity{
 
                 aboutMeAdapter.notifyDataSetChanged();
 
-
                 //set default image
                 profileView.setImageDrawable(getResources().getDrawable(R.drawable.ic_person_black_40dp));
 
@@ -342,8 +355,6 @@ public class showProfile extends AppCompatActivity{
                 //check if the profile image is available and load it
                 StorageReference ref = FirebaseStorage.getInstance().getReference().child("profileImages/"+ userId);
 
-                //todo ref.getBytes lancia degli errori cercare di capire cosa sono
-                //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
                 ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                     @Override
                     public void onSuccess(Uri uri) {
@@ -428,7 +439,7 @@ public class showProfile extends AppCompatActivity{
             @Override
             protected void onBindViewHolder(@NonNull CardViewBook holder, int position, @NonNull BookInfo model) {
 
-                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID(),false,false);
+                holder.bindData(model.getBookTitle(),model.getAuthor(),model.get_ISBN(), model.getEditionYear(), model.getBookID(),false,false, model.getStatus());
             }
 
             @Override

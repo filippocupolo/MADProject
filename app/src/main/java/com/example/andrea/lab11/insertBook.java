@@ -95,7 +95,6 @@ public class insertBook extends AppCompatActivity{
         publisherView = findViewById(R.id.PublisherAddManual);
         publisherView.setText(book.getPublisher(), TextView.BufferType.NORMAL);
 
-        //TODO make list
         //set edition year
         editionView = findViewById(R.id.EditionYearAddManual);
         editionView.setText(book.getEditionYear(), TextView.BufferType.NORMAL);
@@ -126,7 +125,6 @@ public class insertBook extends AppCompatActivity{
                     selectedImageUri = Utilities.requestImage(compatActivity, activity, CAMERA_REQUEST_CODE, PICK_IMAGE);
 
                 }else{
-                    //todo apri foto
                 }
             }
         });

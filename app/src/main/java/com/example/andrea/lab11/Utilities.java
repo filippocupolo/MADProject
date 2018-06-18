@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -19,6 +20,7 @@ import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.PopupMenu;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -201,14 +203,12 @@ public class Utilities {
 
     public static void showDialogForComment(Context context, String type, String userID) {
 
-        //todo fai stringe
-
         String title;
         String message;
 
         if(type.equals("LENDER_COMMENT")){
-            title = "Commenta";
-            message = "Vuoi dare un voto";
+            title = context.getResources().getString(R.string.comment);
+            message = context.getResources().getString(R.string.give_rate_question);
         }else{
             return;
         }
@@ -220,7 +220,6 @@ public class Utilities {
         builder.setPositiveButton("OK",  new DialogInterface.OnClickListener(){
             @Override
             public void onClick(DialogInterface d,int i) {
-                Log.d(deBugTag,"premuto messaggio positivo");
                 Intent intent = new Intent(context,CommentActivity.class);
                 intent.putExtra("userId",userID);
                 context.startActivity(intent);

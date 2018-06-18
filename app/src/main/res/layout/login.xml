@@ -88,13 +88,16 @@
                     facebook:com_facebook_login_text="@string/continue_fb" />
             </LinearLayout>
 
-            <!--<TextView
+            <TextView
                 android:id="@+id/reset_pwd_help"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/reset_pwd_help"
+                android:layout_below="@id/logo"
+                android:visibility="gone"
+                android:textColor="@color/colorAccent"
                 android:textSize="15sp"
-                android:textAlignment="center"/> !-->
+                android:textAlignment="center"/>
 
            <!-- <TextView
                 android:layout_width="match_parent"
@@ -159,24 +162,24 @@
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="14sp" />
 
-           <!-- <TextView
+            <TextView
                 android:id="@+id/reset_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/pwd_forgotten_link"
+                android:layout_marginTop="15dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
+                android:visibility="gone"
                 android:clickable="true"
-
                 android:onClick="reset_login"
                 android:text="@string/back_to_login"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="14sp" /> !-->
+                android:textSize="14sp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/pwd_forgotten_link"
+                android:layout_below="@id/reset_login"
                 android:layout_alignParentBottom="true"
                 android:layout_marginTop="15dp">
 
@@ -190,16 +193,16 @@
                     android:text="@string/login"
                     android:textColor="#FFFFFF" />
 
-               <!-- <Button
+               <Button
                     android:id="@+id/reset_pwd_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="40dp"
                     android:background="@drawable/button_border"
                     android:onClick="resetPasswordButton"
+                    android:visibility="gone"
                     android:text="@string/reset"
-                    android:textColor="#FFFFFF" /> -->
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/register_link"

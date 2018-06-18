@@ -42,6 +42,8 @@ import com.google.firebase.storage.StorageReference;
 import java.io.File;
 import java.util.ArrayList;
 
+import static com.google.firebase.database.DatabaseError.NETWORK_ERROR;
+
 public class ShowBook extends AppCompatActivity {
 
     private String deBugTag;
@@ -51,6 +53,7 @@ public class ShowBook extends AppCompatActivity {
     private TextView editionYear;
     private TextView publisher;
     private TextView ISBN;
+    private TextView conditions;
     private TextView owner;
     private TextView cityOwner;
     private TextView statusTextView;
@@ -65,13 +68,17 @@ public class ShowBook extends AppCompatActivity {
     private ImageButton goToProfileButton;
     private ImageButton send_message_button;
     private RecyclerView requestRecycleListView;
-    private ArrayList<Drawable> imagesList;
+    private ArrayList<Uri> imagesList;
     private FirebaseRecyclerAdapter<UserModel,BookRequest> requestAdapter = null;
-
-    //todo stampa le condizioni del libro
+    private ValueEventListener bookRequestedListener;
+    private ValueEventListener bookQueryListener;
+    private DatabaseReference dbRef;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
+
+        Log.d(deBugTag,"onCreate");
+
         super.onCreate(savedInstanceState);
 
         deBugTag = this.getClass().getName();
@@ -88,6 +95,7 @@ public class ShowBook extends AppCompatActivity {
         editionYear = findViewById(R.id.bookEdition);
         publisher = findViewById(R.id.bookPublisher);
         ISBN = findViewById(R.id.bookISBN);
+        conditions = findViewById(R.id.bookCondition);
         owner = findViewById(R.id.bookOwner);
         cityOwner = findViewById(R.id.ownerCity);
         statusTextView = findViewById(R.id.status);
@@ -120,7 +128,7 @@ public class ShowBook extends AppCompatActivity {
 
             @Override
             public Object getItem(int position) {
-                return imagesList.get(position);
+                return null;
             }
 
             @Override
@@ -146,14 +154,13 @@ public class ShowBook extends AppCompatActivity {
                         getApplicationContext(),
                         fullScreenImage.class
                     );
-                    fullImageIntent.putExtra("path", getFilesDir() + "/bookImage"+ position +".jpg");
+                    fullImageIntent.putExtra("uri", imagesList.get(position).toString());
                     startActivity(fullImageIntent);
 
                 });
 
+                Glide.with(context).load(imagesList.get(position)).into(bookPhoto);
 
-                bookPhoto.setImageDrawable(imagesList.get(position));
-                bookPhoto.setScaleType(ImageButton.ScaleType.FIT_XY);
                 return convertView;
             }
         };
@@ -164,14 +171,17 @@ public class ShowBook extends AppCompatActivity {
         Boolean showProfile = getIntent().getBooleanExtra("showProfile",true);
 
         //set database Ref
-        DatabaseReference dbRef =  FirebaseDatabase.getInstance().getReference();
+        dbRef =  FirebaseDatabase.getInstance().getReference();
 
         //make FireBase request for book
         Query bookQuery = dbRef.child("books").orderByKey().equalTo(bookId);
-        //todo rilasciare questo listener
-        bookQuery.addValueEventListener(new ValueEventListener() {
+
+        bookQueryListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
+
+                if(dataSnapshot==null || dataSnapshot.getValue()==null)
+                    return;
 
                 //get book
                 book = ResultsList.parseDataSnapshotBook(dataSnapshot.getChildren().iterator().next());
@@ -221,6 +231,8 @@ public class ShowBook extends AppCompatActivity {
                         editionYear.setText(book.getEditionYear());
                         publisher.setText(book.getPublisher());
                         ISBN.setText(book.get_ISBN());
+                        Log.d(deBugTag, book.getConditions());
+                        conditions.setText(getString(R.string.conditions_textV) + " " + book.getConditions());
                         owner.setText(name_surname);
                         cityOwner.setText(city);
 
@@ -262,11 +274,14 @@ public class ShowBook extends AppCompatActivity {
 
                             sendRequestButton.setOnClickListener( v ->{
 
+
                                 sendRequestButton.setVisibility(View.GONE);
                                 statusTextView.setText(R.string.lending_req_sent);
 
-                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(myUser.getName() + " " + myUser.getSurname());
-                                Toast.makeText(context,"la tua richiesta è stata effettuata",Toast.LENGTH_SHORT).show();
+                                dbRef.child("bookRequests").child(book.getBookID()).child("bookOwner").setValue(book.getOwner());
+                                dbRef.child("bookRequests").child(book.getBookID()).child(myUser.getUserID()).setValue(new RequestBookModel(myUser.getName() + " " + myUser.getSurname(),false));
+
+                                Toast.makeText(context,getString(R.string.request_sent),Toast.LENGTH_SHORT).show();
                             });
 
 
@@ -285,12 +300,22 @@ public class ShowBook extends AppCompatActivity {
                                 request_list_title.setVisibility(View.GONE);
                                 requestRecycleListView.setVisibility(View.GONE);
 
+
                                 endLendingButton.setOnClickListener(v->{
 
                                     dbRef.child("books").child(bookId).child("status").setValue(0);
 
+                                    Utilities.showDialogForComment(v.getContext(),"LENDER_COMMENT", book.getBorrower());
+
                                     dbRef.child("commentsDB").child(myUser.getUserID()).child("can_comment").child(book.getBorrower()).setValue(true);
                                     dbRef.child("commentsDB").child(book.getBorrower()).child("can_comment").child(myUser.getUserID()).setValue(true);
+
+                                    dbRef.child("books").child(bookId).child("borrower").removeValue();
+                                    dbRef.child("books").child(bookId).child("borrowerName").removeValue();
+
+                                    //set bookAccepted
+                                    //dbRef.child("bookAccepted").child(book.getBorrower()).child("userId").setValue(myUser.getUserID());
+                                    //Log.d(deBugTag,"bookAccepted");
 
                                     lendingMessage.setVisibility(View.GONE);
                                     endLendingButton.setVisibility(View.GONE);
@@ -300,7 +325,7 @@ public class ShowBook extends AppCompatActivity {
 
                                 requestRecycleListView.setVisibility(View.VISIBLE);
                                 getRequestList(dbRef, book, myUser.getUserID());
-                                if(requestAdapter.getItemCount() > 0) {
+                                if(requestAdapter.getItemCount() > 1) {
                                     //almeno una richiesta
                                     request_list_title.setVisibility(View.VISIBLE);
                                 }else{
@@ -314,57 +339,19 @@ public class ShowBook extends AppCompatActivity {
                             goToProfileButton.setOnClickListener(v->{
                                 Intent showProfileIntent = new Intent(getApplicationContext(),showProfile.class);
                                 showProfileIntent.putExtra("userId",book.getOwner());
+                                showProfileIntent.putExtra("newComment", "false");
                                 startActivity(showProfileIntent);
                             });
                         }else{
                             goToProfileButton.setVisibility(View.GONE);
-                        }
-
-                        for (int i = 0; i<4; i++){
-
-                            //request for Images
-                            StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/" + i);
-
-                            final int c = i;
-
-                            //todo ref.getBytes lancia degli errori cercare di capire cosa sono
-                            ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                @Override
-                                public void onSuccess(Uri uri) {
-
-                                    //create File
-                                    File file = new File(getFilesDir(), "bookImage"+ c +".jpg");
-
-                                    FirebaseStorage.getInstance().getReferenceFromUrl(uri.toString()).getFile(file).addOnSuccessListener(new OnSuccessListener<FileDownloadTask.TaskSnapshot>() {
-                                        @Override
-                                        public void onSuccess(FileDownloadTask.TaskSnapshot taskSnapshot) {
-
-                                            imagesList.add(Drawable.createFromPath(file.getPath()));
-                                            adapter.notifyDataSetChanged();
-
-                                        }
-                                    }).addOnFailureListener(new OnFailureListener() {
-                                        @Override
-                                        public void onFailure(@NonNull Exception e) {
-                                            Log.e(deBugTag,e.getMessage());
-
-                                        }
-                                    });
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                                @Override
-                                public void onFailure(@NonNull Exception e) {
-
-                                    Log.e(deBugTag,e.getMessage());
-                                }
-                            });
                         }
                     }
 
 
                     @Override
                     public void onCancelled(DatabaseError databaseError) {
-                        errorMethod(R.string.network_problem);
+                        if(databaseError.getCode() == NETWORK_ERROR)
+                            errorMethod(R.string.network_problem);
                     }
                 });
 
@@ -372,9 +359,33 @@ public class ShowBook extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                errorMethod(R.string.network_problem);
+                if(databaseError.getCode() == NETWORK_ERROR)
+                    errorMethod(R.string.network_problem);
             }
-        });
+        };
+        bookQuery.addValueEventListener(bookQueryListener);
+
+        for (int i = 0; i<4; i++){
+
+            //request for Images
+            StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/" + i);
+
+            ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                @Override
+                public void onSuccess(Uri uri) {
+
+                    imagesList.add(uri);
+                    adapter.notifyDataSetChanged();
+
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+
+                    Log.e(deBugTag,e.getMessage());
+                }
+            });
+        }
 
     }
 
@@ -400,7 +411,7 @@ public class ShowBook extends AppCompatActivity {
     private void bookRequested(DatabaseReference dbRef, BookInfo book, String user){
 
         Query query = dbRef.child("bookRequests").child(book.getBookID()).child(user);
-        query.addListenerForSingleValueEvent(new ValueEventListener() {
+        bookRequestedListener = new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if(dataSnapshot.exists()) {
@@ -414,7 +425,8 @@ public class ShowBook extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
 
             }
-        });
+        };
+        query.addValueEventListener(bookRequestedListener);
 
     }
 
@@ -430,10 +442,13 @@ public class ShowBook extends AppCompatActivity {
                     @Override
                     public UserModel parseSnapshot(@NonNull DataSnapshot snapshot) {
 
-                        if(snapshot==null && snapshot.getValue()==null)
-                            return null;
+                        Log.d(deBugTag, snapshot.toString());
 
-                        return new UserModel(snapshot.getKey(),snapshot.getValue().toString());
+                        if(snapshot.getKey().equals("bookOwner"))
+                            return new UserModel(null,null);
+
+                        return new UserModel(snapshot.getKey(),snapshot.child("username").getValue().toString());
+
                     }
                 })
                 .setLifecycleOwner(this)
@@ -452,13 +467,16 @@ public class ShowBook extends AppCompatActivity {
 
             @Override
             protected void onBindViewHolder(@NonNull BookRequest holder, int position, @NonNull UserModel model) {
+
+
+
                 holder.bindData(model.userId, book.getBookID(), myUserId , model.nameSurname, book.getStatus(), book.getBorrower());
             }
 
             @Override
             public void onDataChanged() {
                 super.onDataChanged();
-                containerListRequest.setVisibility(getItemCount() == 0 && containerListRequest.getVisibility() == View.GONE? View.GONE : View.VISIBLE);
+                containerListRequest.setVisibility(getItemCount() < 2 && containerListRequest.getVisibility() == View.GONE? View.GONE : View.VISIBLE);
             }
         };
 
@@ -471,7 +489,13 @@ public class ShowBook extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
 
-        //todo liberare risorse (listeners)
+        if(dbRef != null ) {
+            if(bookRequestedListener != null)
+                dbRef.removeEventListener(bookRequestedListener);
+            if(bookQueryListener != null)
+                dbRef.removeEventListener(bookQueryListener);
+        }
+
     }
 
     private void errorMethod(int txt){
@@ -479,5 +503,26 @@ public class ShowBook extends AppCompatActivity {
         Toast.makeText(context,txt,Toast.LENGTH_SHORT).show();
         Log.e(deBugTag,"dataSnapshot non esiste");
         onBackPressed();
+    }
+
+    private class RequestBookModel {
+
+        String username;
+        boolean notificationSent;
+
+        public RequestBookModel(String username, boolean notificationSent){
+            this.username = username;
+            this.notificationSent = notificationSent;
+        }
+
+        //getters
+        public String getUsername(){return username;}
+        public boolean getNotificationSent(){return notificationSent;}
+
+        //setters
+        public void getUsername(String value){username = value;}
+        public void getNotificationSent(boolean value){notificationSent = value;}
+
+
     }
 }

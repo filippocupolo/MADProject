@@ -1,6 +1,7 @@
 package com.example.andrea.lab11;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -17,6 +19,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -59,7 +62,7 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         deleteButton = itemView.findViewById(R.id.deleteButton);
     }
 
-    public void bindData(String title, String author, String ISBN, String editionYear, String bookId, Boolean showProfile, Boolean deleteButtonRequested){
+    public void bindData(String title, String author, String ISBN, String editionYear, String bookId, Boolean showProfile, Boolean deleteButtonRequested, int status){
 
         this.title.setText(title);
         this.author.setText(author);
@@ -79,17 +82,27 @@ public class CardViewBook extends RecyclerView.ViewHolder {
         //set deleteButton if request
         if(deleteButtonRequested){
             deleteButton.setOnClickListener(v->{
-                DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
-                dbRef.child("books").child(bookId).removeValue();
-                dbRef.child("bookRequests").child(bookId).removeValue();
+
+                if(status == 1){
+                    Toast.makeText(context,R.string.cannot_delete_book,Toast.LENGTH_SHORT).show();
+                }else{
+                    //ask for confirmation
+                    new AlertDialog.Builder(context)
+                            .setMessage(context.getString(R.string.removeBookMessage))
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int whichButton) {
+                                    DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
+                                    dbRef.child("books").child(bookId).removeValue();
+                                    dbRef.child("bookRequests").child(bookId).removeValue();
+                                }})
+                            .setNegativeButton(android.R.string.no, null).show();
+                }
             });
             deleteButton.setVisibility(View.VISIBLE);
         }
 
         StorageReference ref = FirebaseStorage.getInstance().getReference().child("bookImages/"+ bookId + "/0");
 
-        //todo ref.getBytes lancia degli errori cercare di capire cosa sono
-        //todo ridurre la dimensione del file ma per fare questo bisogna comprimere tutte le immagini e forse è meglio sostituite bitmap con drawable per migliorare le prestazioni
         ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
 
             @Override

@@ -13,21 +13,6 @@ import android.widget.TextView
 import com.google.firebase.database.*
 import java.util.*
 
-
-/* TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"*/
-
-/**
- * A simple [Fragment] subclass.
- * Activities that contain this fragment must implement the
- * [Chat.OnFragmentInteractionListener] interface
- * to handle interaction events.
- * Use the [Chat.newInstance] factory method to
- * create an instance of this fragment.
- *
- */
 class Chat : Fragment() {
 
     private val deBugTag = "Chat"
@@ -95,6 +80,8 @@ class Chat : Fragment() {
 
             override fun onChildAdded( dataSnapshot:DataSnapshot?,  s:String?) {
 
+                Log.d(deBugTag,"onChildAdded")
+
                 if(dataSnapshot == null)
                     return
 
@@ -112,8 +99,12 @@ class Chat : Fragment() {
 
             override fun onChildChanged(dataSnapshot:DataSnapshot,  s:String?) {
 
+                Log.d(deBugTag,"onChildChanged")
+
                 if(dataSnapshot == null)
                     return
+
+                list.clear()
 
                 for(data in dataSnapshot.children){
                     var model = ChatPreviewModel(data.key,data.child("userId").value.toString(),data.child("userName").value.toString())
@@ -124,6 +115,8 @@ class Chat : Fragment() {
 
             override fun onChildRemoved(dataSnapshot:DataSnapshot) {
 
+
+                Log.d(deBugTag,"onChildRemoved")
                 list.clear()
                 adapter.notifyDataSetChanged()
             }
@@ -134,7 +127,6 @@ class Chat : Fragment() {
 
             override fun onCancelled(databaseError: DatabaseError) {
                 Log.e("Chat",databaseError.getMessage()+databaseError.getCode());
-                //todo gestire
             }
         }
 

@@ -35,6 +35,12 @@ public class BookRequest extends RecyclerView.ViewHolder {
         this.nameSurname.setText(nameSurname);
         this.status = statusPar;
 
+        if(userId == null) {
+            itemView.setVisibility(View.GONE);
+        }
+        else
+            itemView.setVisibility(View.VISIBLE);
+
         DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
 
         acceptRequest.setOnClickListener( v ->{
@@ -48,15 +54,11 @@ public class BookRequest extends RecyclerView.ViewHolder {
 
                 dbRef.child("bookRequests").child(bookId).child(userId).removeValue();
 
-                //set bookAccepted
-                dbRef.child("bookAccepted").child(userId).child("userId").setValue(myUserId);
-
                 //send message box to ask if someone want to comment
-                Utilities.showDialogForComment(itemView.getContext(),"LENDER_COMMENT",userId);
+                //Utilities.showDialogForComment(itemView.getContext(),"LENDER_COMMENT",userId);
 
             }else{
-                //todo fai stringa
-                Toast.makeText(itemView.getContext(),"libro già in prestito",Toast.LENGTH_SHORT).show();
+                Toast.makeText(itemView.getContext(),R.string.book_already_on_loan,Toast.LENGTH_SHORT).show();
             }
         });
 

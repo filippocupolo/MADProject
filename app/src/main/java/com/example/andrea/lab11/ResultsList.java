@@ -114,7 +114,7 @@ public class ResultsList extends AppCompatActivity {
             public void onBindViewHolder(@NonNull CardViewBook holder, int position) {
 
                 BookInfo book = new BookInfo(bookList.get(position));
-                holder.bindData(book.getBookTitle(),book.getAuthor(),book.get_ISBN(), book.getEditionYear(), book.getBookID(),true,false);
+                holder.bindData(book.getBookTitle(),book.getAuthor(),book.get_ISBN(), book.getEditionYear(), book.getBookID(),true,false, book.getStatus());
 
             }
 
@@ -152,9 +152,6 @@ public class ResultsList extends AppCompatActivity {
 
                 @Override
                 public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-                    //todo se un libro ha ad esempio titolo = autore viene stampato 2 volte
-
                     BookInfo book = parseDataSnapshotBook(dataSnapshot);
                     if(book == null)
                         return;
@@ -170,7 +167,6 @@ public class ResultsList extends AppCompatActivity {
                 @Override
                 public void onChildRemoved(DataSnapshot dataSnapshot) {
 
-                    //todo testare
                     BookInfo book = parseDataSnapshotBook(dataSnapshot);
                     if(book == null)
                         return;
@@ -295,6 +291,9 @@ public class ResultsList extends AppCompatActivity {
                         break;
                     case "borrowerName":
                         book.setBorrowerName((String) child.getValue());
+                        break;
+                    case "conditions":
+                        book.setConditions((String) child.getValue());
                         break;
                 }
 
